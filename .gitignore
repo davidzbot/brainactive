@@ -1,0 +1,10 @@
+node_modules/
+dist/
+android/
+.DS_Store
+*.log
+.swc/
+project.private.config.json
+.env
+unpackage/
+.temp/

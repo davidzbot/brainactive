@@ -1,0 +1,166 @@
+.result-container {
+  min-height: 100vh;
+  background: #0f172a;
+  padding: 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.result-card {
+  background: rgba(30, 41, 59, 0.7);
+  border-radius: 32rpx;
+  padding: 40rpx;
+  border: 2rpx solid rgba(56, 189, 248, 0.2);
+}
+
+.score-section {
+  text-align: center;
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid rgba(255, 255, 255, 0.1);
+}
+
+.score-label {
+  display: block;
+  font-size: 28rpx;
+  color: #94a3b8;
+  margin-bottom: 16rpx;
+}
+
+.score-value {
+  display: block;
+  font-size: 120rpx;
+  font-weight: bold;
+  color: #38bdf8;
+  line-height: 1.2;
+}
+
+.time-info {
+  display: block;
+  font-size: 28rpx;
+  color: #64748b;
+  margin-top: 10rpx;
+}
+
+.performance-section {
+  padding: 30rpx 0;
+  text-align: center;
+}
+
+.performance-level {
+  display: block;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #10b981;
+  margin-bottom: 16rpx;
+}
+
+.fun-summary {
+  display: block;
+  font-size: 28rpx;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+.streak-section {
+  padding: 30rpx 0;
+  border-top: 1rpx solid rgba(255, 255, 255, 0.1);
+}
+
+.streak-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16rpx;
+}
+
+.streak-label {
+  font-size: 28rpx;
+  color: #94a3b8;
+}
+
+.streak-count {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #f59e0b;
+}
+
+.progress-bar-bg {
+  height: 16rpx;
+  background: #1e293b;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+  border-radius: 8rpx;
+  transition: width 0.3s ease;
+}
+
+.streak-message {
+  display: block;
+  font-size: 26rpx;
+  color: #64748b;
+  margin-top: 16rpx;
+  text-align: center;
+}
+
+.tip-section {
+  padding: 30rpx 0;
+  border-top: 1rpx solid rgba(255, 255, 255, 0.1);
+}
+
+.tip-label {
+  display: block;
+  font-size: 28rpx;
+  color: #38bdf8;
+  margin-bottom: 12rpx;
+}
+
+.tip-text {
+  display: block;
+  font-size: 26rpx;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+/* Action Buttons */
+.action-buttons {
+  margin-top: auto;
+  padding-top: 40rpx;
+}
+
+.btn-primary {
+  width: 100%;
+  height: 110rpx;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: white;
+  font-size: 36rpx;
+  font-weight: bold;
+  border-radius: 55rpx;
+  margin-bottom: 30rpx;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20rpx 40rpx rgba(37, 99, 235, 0.25);
+}
+
+.secondary-actions {
+  display: flex;
+  gap: 20rpx;
+}
+
+.btn-home-small, .btn-share-small {
+  flex: 1;
+  height: 90rpx;
+  background: rgba(30, 41, 59, 0.5);
+  color: #94a3b8;
+  font-size: 28rpx;
+  border: 2rpx solid #334155;
+  border-radius: 45rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

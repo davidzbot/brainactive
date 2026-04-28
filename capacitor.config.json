@@ -1,0 +1,9 @@
+{
+  "appId": "com.brainactive.app",
+  "appName": "BrainActive",
+  "webDir": "dist/h5",
+  "bundledWebRuntime": false,
+  "android": {
+    "allowMixed": true
+  }
+}

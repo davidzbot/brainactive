@@ -1,0 +1,98 @@
+# 微信小程序自动部署 workflow
+# 触发: push 到 main 分支
+
+name: Deploy WeChat Mini Program
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    
+    steps:
+      # 1. 检出代码
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      # 2. 安装 Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      # 3. 安装 miniprogram-ci
+      - name: Install miniprogram-ci
+        run: |
+          npm install -g miniprogram-ci@latest
+      
+      # 4. 配置微信密钥
+      - name: Setup WeChat Key
+        env:
+          PRIVATE_KEY: ${{ secrets.WECHAT_CI_PRIVATE_KEY }}
+          APP_ID: ${{ secrets.WECHAT_APP_ID }}
+        run: |
+          echo "$PRIVATE_KEY" > ./private.key
+          chmod 600 ./private.key
+          echo "APP_ID=$APP_ID" >> $GITHUB_ENV
+          echo "已配置微信密钥"
+      
+      # 5. 上传代码并生成体验版
+      - name: Upload & Deploy
+        env:
+          APP_ID: ${{ secrets.WECHAT_APP_ID }}
+          VERSION: ${{ github.sha }}
+          DESC: "GitHub Actions 自动部署 - $(date '+%Y-%m-%d %H:%M')"
+        run: |
+          # 构建预览包 (生成二维码)
+          miniprogram-ci preview \
+            --pp . \
+            --pkp ./private.key \
+            --appid $APP_ID \
+            --qr-dest ./preview.jpg \
+            --qr-format image \
+            --qr-name "preview-qrcode" \
+            --enable-es6 true \
+            --enable-autoprefixwxss true \
+            --ignore-minify true
+      
+      # 6. 上传为体验版
+      - name: Upload as Experience
+        env:
+          APP_ID: ${{ secrets.WECHAT_APP_ID }}
+          VERSION: ${{ github.sha }}
+          DESC: "自动部署 from GitHub - $(date '+%Y-%m-%d %H:%M')"
+        run: |
+          miniprogram-ci upload \
+            --pp . \
+            --pkp ./private.key \
+            --appid $APP_ID \
+            --upload-desc "$DESC" \
+            --enable-es6 true \
+            --enable-autoprefixwxss true
+      
+      # 7. 上传二维码到 GitHub Actions artifacts
+      - name: Upload QR Code
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: wechat-qrcode
+          path: ./preview.jpg
+          retention-days: 7
+      
+      # 8. 生成部署报告
+      - name: Generate Report
+        run: |
+          if [ -f ./preview.jpg ]; then
+            echo "✅ 部署成功!"
+            echo "📱 预览二维码已生成"
+            echo "请从 GitHub Actions Artifacts 下载预览二维码"
+          else
+            echo "❌ 部署失败"
+            exit 1
+          fi

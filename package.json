@@ -1,0 +1,44 @@
+{
+  "name": "brainactive-android",
+  "version": "1.0.0",
+  "description": "PSLE Hero - Android H5 + Capacitor version",
+  "scripts": {
+    "dev:h5": "npm run build:h5 -- --watch",
+    "build:h5": "taro build --type h5",
+    "sync": "npx cap sync",
+    "open:android": "npx cap open android",
+    "build:android": "npm run build:h5 && npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.3.1",
+    "@capacitor/app": "^8.1.0",
+    "@capacitor/cli": "^8.3.1",
+    "@capacitor/core": "^8.3.1",
+    "@capacitor/dialog": "^8.0.1",
+    "@capacitor/share": "^8.0.1",
+    "@capacitor/toast": "^8.0.1",
+    "@tarojs/components": "4.2.0",
+    "@tarojs/plugin-framework-react": "4.2.0",
+    "@tarojs/plugin-platform-h5": "4.2.0",
+    "@tarojs/react": "4.2.0",
+    "@tarojs/runtime": "4.2.0",
+    "@tarojs/taro": "4.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "@babel/preset-react": "^7.22.0",
+    "@babel/preset-typescript": "^7.22.0",
+    "@tarojs/cli": "4.2.0",
+    "@tarojs/webpack5-runner": "4.2.0",
+    "@types/react": "18.2.0",
+    "@types/webpack-env": "1.18.0",
+    "babel-preset-taro": "4.2.0",
+    "sass": "^1.69.0",
+    "sass-loader": "^13.3.2",
+    "typescript": "^5.1.0",
+    "webpack": "5.91.0"
+  }
+}
