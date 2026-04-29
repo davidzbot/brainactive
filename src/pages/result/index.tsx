@@ -1,8 +1,8 @@
-import Taro, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { View, Text, Button } from '@tarojs/components'
-import { useLoad, reLaunch, navigateTo, setNavigationBarTitle } from '@tarojs/taro'
+import Taro, { useLoad, reLaunch, navigateTo } from '@tarojs/taro'
 import { getStorage, setStorage } from '@/utils/storage'
-import { isAdUnlocked, unlockAllModes, formatDate, parseDateSafe, incrementDailyUsage, canPlayMode } from '@/utils/common'
+import { isAdUnlocked, unlockAllModes, formatDate, parseDateSafe, incrementDailyUsage, canPlayMode, setSafeTitle } from '@/utils/common'
 import { watchAdAndUnlock } from '@/utils/ad'
 import { dataUtils } from '@/utils/data'
 import { t } from '@/utils/i18n'
@@ -63,7 +63,7 @@ export default function ResultPage() {
     setFunSummary(t('result.summary', { score: scoreVal }))
 
     updateStreak()
-    setNavigationBarTitle({ title: t('result.title') })
+    setSafeTitle(t('result.title'))
   })
 
   const updateStreak = () => {
@@ -114,12 +114,12 @@ export default function ResultPage() {
   }
 
   const goHome = () => {
-    Taro.reLaunch({ url: '/pages/home/index' })
+    reLaunch({ url: '/pages/home/index' })
   }
 
   const handleContinue = () => {
     if (canPlayMode(difficulty)) {
-      Taro.navigateTo({ url: `/pages/task/index?difficulty=${difficulty}` })
+      navigateTo({ url: `/pages/task/index?difficulty=${difficulty}` })
     } else {
       handleWatchAd()
     }

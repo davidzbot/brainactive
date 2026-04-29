@@ -1,7 +1,8 @@
-import Taro, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { View, Text, Button } from '@tarojs/components'
-import { useLoad } from '@tarojs/taro'
+import Taro, { useLoad, showToast, showModal, reLaunch, navigateTo } from '@tarojs/taro'
 import { getStorage, getLang } from '@/utils/storage'
+import { setSafeTitle } from '@/utils/common'
 import { dataUtils } from '@/utils/data'
 import { fetchBrainActiveContent } from '@/utils/supabase'
 import { t } from '@/utils/i18n'
@@ -50,7 +51,7 @@ export default function TrainingPage() {
     setCombo(0)
     setLoading(true)
     
-    Taro.setNavigationBarTitle({ title: t('task.title') })
+    setSafeTitle(t('task.title'))
     
     // Fetch remote content for Android
     if (process.env.TARO_ENV === 'h5') {
@@ -386,7 +387,7 @@ export default function TrainingPage() {
       const { Toast } = require('@capacitor/toast')
       await Toast.show({ text: msg, duration: 'short', position: 'center' })
     } catch (e) {
-      Taro.showToast({ title: msg, icon: 'none' })
+      showToast({ title: msg, icon: 'none' })
     }
   }
 
@@ -421,18 +422,18 @@ export default function TrainingPage() {
         } catch (e) {
           console.error('runTask error:', e)
           setAnsweringLock(false)
-          await Taro.showModal({
+          await showModal({
             title: 'Error',
             content: 'Task load failed',
             showCancel: false,
           })
-          Taro.reLaunch({ url: '/pages/home/index' })
+          reLaunch({ url: '/pages/home/index' })
         }
       }, 600)
     } else {
       const time = Math.round((Date.now() - startTime) / 1000)
       const url = `/pages/result/index?time=${time}&score=${score}`
-      Taro.navigateTo({ url })
+      navigateTo({ url })
     }
   }
 
@@ -450,7 +451,7 @@ export default function TrainingPage() {
         confirm = window.confirm(t('task.exit_msg'))
       }
     } else {
-      const res = await Taro.showModal({
+      const res = await showModal({
         title: t('task.exit_confirm'),
         content: t('task.exit_msg'),
       })
@@ -458,7 +459,7 @@ export default function TrainingPage() {
     }
 
     if (confirm) {
-      Taro.reLaunch({ url: '/pages/home/index' })
+      reLaunch({ url: '/pages/home/index' })
     }
   }
 

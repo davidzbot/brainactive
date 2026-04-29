@@ -1,4 +1,4 @@
-import Taro from '@tarojs/taro'
+import Taro, { request } from '@tarojs/taro'
 import { getStorage, setStorage } from './storage'
 
 const SUPABASE_URL = 'https://mqpunjvdrkqvionsjosl.supabase.co'
@@ -13,7 +13,7 @@ export async function fetchBrainActiveContent(type?: string, lang: string = 'en'
   }
 
   try {
-    const res = await Taro.request({
+    const res = await request({
       url: `${SUPABASE_URL}/functions/v1/brainactive-get-content?lang=${lang}&limit=${limit}${type ? `&type=${type}` : ''}`,
       method: 'GET',
       header: {

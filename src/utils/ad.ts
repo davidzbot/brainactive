@@ -1,4 +1,4 @@
-import Taro from '@tarojs/taro'
+import Taro, { showLoading, hideLoading } from '@tarojs/taro'
 import { unlockAllModes } from './common'
 import { t } from './i18n'
 import { Toast } from '@capacitor/toast'
@@ -9,11 +9,11 @@ import { Toast } from '@capacitor/toast'
  */
 async function showAd(): Promise<void> {
   return new Promise((resolve, reject) => {
-    Taro.showLoading({ title: t('task.loading') })
+    showLoading({ title: t('task.loading') })
     
     // Simulate ad playback delay
     setTimeout(() => {
-      Taro.hideLoading()
+      hideLoading()
       // 90% success rate for mock
       if (Math.random() > 0.1) {
         resolve()

@@ -1,8 +1,8 @@
-import Taro, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { View, Text, Button } from '@tarojs/components'
-import { useLoad, useDidShow, navigateTo, setNavigationBarTitle, setClipboardData } from '@tarojs/taro'
+import Taro, { useLoad, useDidShow, navigateTo, setClipboardData, showModal, showActionSheet, clearStorage, reLaunch } from '@tarojs/taro'
 import { getLang, setLang, getStorage, setStorage } from '@/utils/storage'
-import { isAdUnlocked, unlockAllModes, canPlayMode, getDailyUsage, formatDate, parseDateSafe } from '@/utils/common'
+import { isAdUnlocked, unlockAllModes, canPlayMode, getDailyUsage, formatDate, parseDateSafe, setSafeTitle } from '@/utils/common'
 import { watchAdAndUnlock } from '@/utils/ad'
 import { dataUtils } from '@/utils/data'
 import { t } from '@/utils/i18n'
@@ -44,7 +44,7 @@ export default function HomePage() {
     setTodayStatus(generateStatus(savedStreak))
     setIsUnlocked(isAdUnlocked())
     
-    setNavigationBarTitle({ title: t('app.title') })
+    setSafeTitle(t('app.title'))
     
     // Simulate a tiny delay for smoother transition
     setTimeout(() => setLoading(false), 300)
@@ -53,14 +53,14 @@ export default function HomePage() {
   useDidShow(() => {
     setIsUnlocked(isAdUnlocked())
     checkStreakGuard()
-    setNavigationBarTitle({ title: t('app.title') })
+    setSafeTitle(t('app.title'))
   })
 
   const toggleLanguage = () => {
     const newLang = language === 'en' ? 'zh' : 'en'
     setLang(newLang)
     setLanguage(newLang)
-    setNavigationBarTitle({ title: t('app.title') })
+    setSafeTitle(t('app.title'))
     setTodayStatus(generateStatus(streak))
     setCurrentTips(getRandomTips(dataUtils.tips))
   }
@@ -105,7 +105,7 @@ export default function HomePage() {
 
   const selectDifficulty = async (level: string) => {
     if (!canPlayMode(level)) {
-      const res = await Taro.showModal({
+      const res = await showModal({
         title: t('mode.limit'),
         content: t('cta.ad'),
         confirmText: language === 'zh' ? '观看解锁' : 'Watch to Unlock',
@@ -172,7 +172,7 @@ export default function HomePage() {
     const newCount = tapCount + 1
     setTapCount(newCount)
     if (newCount >= 5) {
-      Taro.showActionSheet({
+      showActionSheet({
         itemList: ['Force Unlock', 'Reset Storage', 'Simulate API Failure'],
         success: async (res) => {
           if (res.tapIndex === 0) {
@@ -182,8 +182,8 @@ export default function HomePage() {
             const { Toast } = require('@capacitor/toast')
             await Toast.show({ text: 'Unlocked' })
           } else if (res.tapIndex === 1) {
-            Taro.clearStorage()
-            Taro.reLaunch({ url: '/pages/home/index' })
+            clearStorage()
+            reLaunch({ url: '/pages/home/index' })
           } else if (res.tapIndex === 2) {
             setStorage('simulate_api_fail', true)
             const { Toast } = require('@capacitor/toast')

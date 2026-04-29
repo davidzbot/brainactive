@@ -2,7 +2,27 @@
  * BrainActive Common Utils - Migrated from Mini Program
  */
 
+import Taro, { setNavigationBarTitle } from '@tarojs/taro'
 import { getStorage, setStorage } from './storage'
+
+/**
+ * Safely set navigation bar title
+ */
+export function setSafeTitle(title: string): void {
+  try {
+    if (typeof setNavigationBarTitle === 'function') {
+      setNavigationBarTitle({ title })
+    } else if (Taro && typeof Taro.setNavigationBarTitle === 'function') {
+      Taro.setNavigationBarTitle({ title })
+    } else if (typeof document !== 'undefined') {
+      document.title = title
+    }
+  } catch (e) {
+    if (typeof document !== 'undefined') {
+      document.title = title
+    }
+  }
+}
 
 /**
  * Ad Unlock Logic:
