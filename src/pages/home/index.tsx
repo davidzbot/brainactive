@@ -176,10 +176,11 @@ export default function HomePage() {
     const isActive = difficulty === level
     return (
       <View 
-        className={`mode-card ${isActive ? 'active' : ''} ${!isModeUnlocked ? 'locked' : ''}`}
+        className={`mode-card mode-${level} ${isActive ? 'active' : ''} ${!isModeUnlocked ? 'locked' : ''}`}
         onClick={() => selectDifficulty(level)}
       >
-        <Text className="mode-label">{t(labelKey)}</Text>
+        <Text className="mode-label">{t(labelKey).replace(/\(.*\)/, '')}</Text>
+        <Text className="mode-sub-label">{t(labelKey).match(/\(.*\)/)?.[0] || ''}</Text>
         {!isModeUnlocked && <Text className="mode-status">🔒</Text>}
       </View>
     )
@@ -193,22 +194,27 @@ export default function HomePage() {
         </View>
       )}
 
-      <View className="top-bar">
-        <View className="lang-toggle" onClick={toggleLanguage}>
-          <Text>{language === 'en' ? '中' : 'EN'}</Text>
+      <View className="hero-section">
+        <View className="top-bar">
+          <View className="lang-toggle" onClick={toggleLanguage}>
+            <Text>{language === 'en' ? '中' : 'EN'}</Text>
+          </View>
         </View>
-      </View>
-
-      <View className="header-section">
-        <Text className="app-title" onClick={handleTitleTap}>{t('app.title')}</Text>
-        <Text className="app-subtitle">{t('app.subtitle')}</Text>
-        <Text className="app-description">{t('app.description')}</Text>
-        <View className="status-badge">
-          <Text className="status-text">{todayStatus}</Text>
+        
+        <View className="hero-content">
+          <Text className="app-title" onClick={handleTitleTap}>{t('app.title')}</Text>
+          <Text className="app-subtitle">{t('app.subtitle')}</Text>
+          <View className="status-badge">
+            <Text className="status-text">{todayStatus}</Text>
+          </View>
         </View>
       </View>
 
       <View className="main-content">
+        <View className="description-box">
+           <Text className="app-description">{t('app.description')}</Text>
+        </View>
+
         <Text className="section-title">{t('panel.title')}</Text>
         <View className="mode-grid">
           {renderModeCard('easy', 'difficulty.easy')}

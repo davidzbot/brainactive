@@ -39,11 +39,16 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 24px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    
     .step-indicator {
       .step-text {
-        font-size: 16px;
-        font-weight: 700;
-        color: #64748b;
+        font-size: 18px;
+        font-weight: 800;
+        color: #3b82f6;
       }
     }
     .score-display {
@@ -51,12 +56,13 @@
       align-items: center;
       gap: 8px;
       .score-value {
-        font-size: 20px;
-        font-weight: 800;
+        font-size: 24px;
+        font-weight: 900;
         color: #1e293b;
       }
       .combo-badge {
-        font-weight: 700;
+        font-size: 18px;
+        font-weight: 800;
         color: #f59e0b;
       }
     }
