@@ -3,6 +3,7 @@ import { View, Text, Button } from '@tarojs/components'
 import { useLoad, reLaunch, navigateTo, setNavigationBarTitle } from '@tarojs/taro'
 import { getStorage, setStorage } from '@/utils/storage'
 import { isAdUnlocked, unlockAllModes, formatDate, parseDateSafe, incrementDailyUsage, canPlayMode } from '@/utils/common'
+import { watchAdAndUnlock } from '@/utils/ad'
 import { dataUtils } from '@/utils/data'
 import { t } from '@/utils/i18n'
 import './index.scss'
@@ -125,13 +126,10 @@ export default function ResultPage() {
   }
 
   const handleWatchAd = async () => {
-    Taro.showLoading({ title: t('task.loading') })
-    setTimeout(() => {
-      Taro.hideLoading()
-      unlockAllModes()
+    const success = await watchAdAndUnlock()
+    if (success) {
       setIsUnlocked(true)
-      Taro.showToast({ title: t('app.unlimited'), icon: 'success' })
-    }, 2000)
+    }
   }
 
   const handleShare = async () => {

@@ -33,6 +33,7 @@ export default function TrainingPage() {
   const [mathProblem, setMathProblem] = useState<{ op: string, res: number } | null>(null)
   const [sequenceMode, setSequenceMode] = useState(false)
   const [remoteData, setRemoteData] = useState<any>({ names: [], cities: [], sentences: [] })
+  const [loading, setLoading] = useState(true)
   
   const timersRef = useRef<any[]>([])
   const lockTimerRef = useRef<any>(null)
@@ -47,39 +48,48 @@ export default function TrainingPage() {
     setStartTime(Date.now())
     setScore(0)
     setCombo(0)
+    setLoading(true)
     
     Taro.setNavigationBarTitle({ title: t('task.title') })
     
     // Fetch remote content for Android
     if (process.env.TARO_ENV === 'h5') {
       const lang = getLang()
-      const [names, cities, sentences] = await Promise.all([
-        fetchBrainActiveContent('name', lang, 20),
-        fetchBrainActiveContent('city', lang, 20),
-        fetchBrainActiveContent('sentence', lang, 10)
-      ])
-      
-      setRemoteData({
-        names: names?.map(i => i.value) || [],
-        cities: cities?.map(i => i.value) || [],
-        sentences: sentences?.map(i => {
-          try {
-            return JSON.parse(i.value)
-          } catch(e) {
-            return { t: i.value, w: i.value }
-          }
-        }) || []
-      })
-
-      // Handle hardware back button
       try {
-        const { App } = require('@capacitor/app')
-        App.addListener('backButton', () => {
-          goBack()
+        const [names, cities, sentences] = await Promise.all([
+          fetchBrainActiveContent('name', lang, 20),
+          fetchBrainActiveContent('city', lang, 20),
+          fetchBrainActiveContent('sentence', lang, 10)
+        ])
+        
+        setRemoteData({
+          names: names?.map(i => i.value) || [],
+          cities: cities?.map(i => i.value) || [],
+          sentences: sentences?.map(i => {
+            try {
+              return JSON.parse(i.value)
+            } catch(e) {
+              return { t: i.value, w: i.value }
+            }
+          }) || []
         })
+
+        // Handle hardware back button
+        try {
+          const { App } = require('@capacitor/app')
+          App.addListener('backButton', () => {
+            goBack()
+          })
+        } catch (e) {
+          console.error('Capacitor App listener failed', e)
+        }
       } catch (e) {
-        console.error('Capacitor App listener failed', e)
+        console.error('Initial load failed', e)
+      } finally {
+        setLoading(false)
       }
+    } else {
+      setLoading(false)
     }
     
     initTasks()
@@ -496,6 +506,12 @@ export default function TrainingPage() {
 
   return (
     <View className="training-container">
+      {loading && (
+        <View className="loading-overlay">
+          <View className="loading-spinner"></View>
+          <Text className="loading-text">{t('task.loading')}</Text>
+        </View>
+      )}
       <View className="header">
         <View className="step-indicator">
           <Text className="step-text">Lv {currentStep} / {totalSteps}</Text>

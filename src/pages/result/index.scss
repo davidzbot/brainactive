@@ -1,15 +1,17 @@
+@import '@/styles/theme.scss';
+
 .result-container {
   min-height: 100vh;
-  background: #0f172a;
-  padding: 40rpx;
+  background: $bg-dark;
+  padding: $spacing-base;
   display: flex;
   flex-direction: column;
 }
 
 .result-card {
-  background: rgba(30, 41, 59, 0.7);
-  border-radius: 32rpx;
-  padding: 40rpx;
+  background: $card-bg-light;
+  border-radius: $card-radius;
+  padding: $spacing-base;
   border: 2rpx solid rgba(56, 189, 248, 0.2);
 }
 
@@ -21,8 +23,8 @@
 
 .score-label {
   display: block;
-  font-size: 28rpx;
-  color: #94a3b8;
+  font-size: $font-size-body;
+  color: $text-muted;
   margin-bottom: 16rpx;
 }
 
@@ -30,14 +32,14 @@
   display: block;
   font-size: 120rpx;
   font-weight: bold;
-  color: #38bdf8;
+  color: $primary-color;
   line-height: 1.2;
 }
 
 .time-info {
   display: block;
-  font-size: 28rpx;
-  color: #64748b;
+  font-size: $font-size-body;
+  color: $secondary-color;
   margin-top: 10rpx;
 }
 
@@ -50,13 +52,13 @@
   display: block;
   font-size: 40rpx;
   font-weight: bold;
-  color: #10b981;
+  color: $success-color;
   margin-bottom: 16rpx;
 }
 
 .fun-summary {
   display: block;
-  font-size: 28rpx;
+  font-size: $font-size-body;
   color: #e2e8f0;
   line-height: 1.6;
 }
@@ -74,26 +76,26 @@
 }
 
 .streak-label {
-  font-size: 28rpx;
-  color: #94a3b8;
+  font-size: $font-size-body;
+  color: $text-muted;
 }
 
 .streak-count {
   font-size: 36rpx;
   font-weight: bold;
-  color: #f59e0b;
+  color: $warning-color;
 }
 
 .progress-bar-bg {
   height: 16rpx;
-  background: #1e293b;
+  background: $card-bg;
   border-radius: 8rpx;
   overflow: hidden;
 }
 
 .progress-bar-fill {
   height: 100%;
-  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+  background: linear-gradient(90deg, $warning-color, #fbbf24);
   border-radius: 8rpx;
   transition: width 0.3s ease;
 }
@@ -101,7 +103,7 @@
 .streak-message {
   display: block;
   font-size: 26rpx;
-  color: #64748b;
+  color: $secondary-color;
   margin-top: 16rpx;
   text-align: center;
 }
@@ -113,32 +115,32 @@
 
 .tip-label {
   display: block;
-  font-size: 28rpx;
-  color: #38bdf8;
+  font-size: $font-size-body;
+  color: $primary-color;
   margin-bottom: 12rpx;
 }
 
 .tip-text {
   display: block;
   font-size: 26rpx;
-  color: #94a3b8;
+  color: $text-muted;
   line-height: 1.6;
 }
 
 /* Action Buttons */
 .action-buttons {
   margin-top: auto;
-  padding-top: 40rpx;
+  padding-top: $spacing-base;
 }
 
 .btn-primary {
   width: 100%;
-  height: 110rpx;
-  background: linear-gradient(135deg, #38bdf8, #2563eb);
-  color: white;
+  height: $button-height;
+  background: $primary-gradient;
+  color: $text-white;
   font-size: 36rpx;
   font-weight: bold;
-  border-radius: 55rpx;
+  border-radius: $button-radius;
   margin-bottom: 30rpx;
   border: none;
   display: flex;
@@ -156,8 +158,8 @@
   flex: 1;
   height: 90rpx;
   background: rgba(30, 41, 59, 0.5);
-  color: #94a3b8;
-  font-size: 28rpx;
+  color: $text-muted;
+  font-size: $font-size-body;
   border: 2rpx solid #334155;
   border-radius: 45rpx;
   display: flex;

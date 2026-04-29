@@ -3,6 +3,7 @@ import { View, Text, Button } from '@tarojs/components'
 import { useLoad, useDidShow, navigateTo, setNavigationBarTitle, setClipboardData } from '@tarojs/taro'
 import { getLang, setLang, getStorage, setStorage } from '@/utils/storage'
 import { isAdUnlocked, unlockAllModes, canPlayMode, getDailyUsage, formatDate, parseDateSafe } from '@/utils/common'
+import { watchAdAndUnlock } from '@/utils/ad'
 import { dataUtils } from '@/utils/data'
 import { t } from '@/utils/i18n'
 import './index.scss'
@@ -15,8 +16,10 @@ export default function HomePage() {
   const [isUnlocked, setIsUnlocked] = useState(false)
   const [language, setLanguage] = useState(getLang())
   const [tapCount, setTapCount] = useState(0)
+  const [loading, setLoading] = useState(true)
 
   useLoad(() => {
+    setLoading(true)
     // Default to 'en' if no language is set
     const savedLang = getLang()
     if (!savedLang) {
@@ -42,6 +45,9 @@ export default function HomePage() {
     setIsUnlocked(isAdUnlocked())
     
     setNavigationBarTitle({ title: t('app.title') })
+    
+    // Simulate a tiny delay for smoother transition
+    setTimeout(() => setLoading(false), 300)
   })
 
   useDidShow(() => {
@@ -130,16 +136,11 @@ export default function HomePage() {
   }
 
   const handleWatchAd = async () => {
-    Taro.showLoading({ title: t('zh' ? '加载广告...' : 'Loading Ad...' as any) })
-    
-    // Simulate Ad loading and watching
-    setTimeout(() => {
-      Taro.hideLoading()
-      unlockAllModes()
+    const success = await watchAdAndUnlock()
+    if (success) {
       setIsUnlocked(true)
       setTodayStatus(t('app.unlimited'))
-      Taro.showToast({ title: t('app.unlimited'), icon: 'success' })
-    }, 2000)
+    }
   }
 
   const handleShare = async () => {
@@ -156,10 +157,13 @@ export default function HomePage() {
     }
   }
 
-  const copyEmail = () => {
+  const copyEmail = async () => {
     if (navigator.clipboard) {
-      navigator.clipboard.writeText('pslehero@gmail.com').then(() => {
-        Taro.showToast({ title: t('footer.feedback' as any), icon: 'success' })
+      await navigator.clipboard.writeText('pslehero@gmail.com')
+      const { Toast } = require('@capacitor/toast')
+      await Toast.show({
+        text: t('footer.feedback' as any),
+        duration: 'short'
       })
     }
   }
@@ -170,18 +174,20 @@ export default function HomePage() {
     if (newCount >= 5) {
       Taro.showActionSheet({
         itemList: ['Force Unlock', 'Reset Storage', 'Simulate API Failure'],
-        success: (res) => {
+        success: async (res) => {
           if (res.tapIndex === 0) {
             unlockAllModes()
             setIsUnlocked(true)
             setTodayStatus(t('app.unlimited'))
-            Taro.showToast({ title: 'Unlocked' })
+            const { Toast } = require('@capacitor/toast')
+            await Toast.show({ text: 'Unlocked' })
           } else if (res.tapIndex === 1) {
             Taro.clearStorage()
             Taro.reLaunch({ url: '/pages/home/index' })
           } else if (res.tapIndex === 2) {
             setStorage('simulate_api_fail', true)
-            Taro.showToast({ title: 'API will fail next time' })
+            const { Toast } = require('@capacitor/toast')
+            await Toast.show({ text: 'API will fail next time' })
           }
         }
       })
@@ -207,6 +213,12 @@ export default function HomePage() {
 
   return (
     <View className="container">
+      {loading && (
+        <View className="loading-overlay">
+          <View className="loading-spinner"></View>
+          <Text className="loading-text">{t('task.loading')}</Text>
+        </View>
+      )}
       <View className="lang-switcher" onClick={toggleLanguage}>
         <Text>{language === 'en' ? '🇨🇳 中文' : '🇺🇸 English'}</Text>
       </View>

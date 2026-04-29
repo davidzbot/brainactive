@@ -1,7 +1,9 @@
+@import '@/styles/theme.scss';
+
 .container {
   min-height: 100vh;
-  background: #0f172a;
-  padding: 40rpx 40rpx; 
+  background: $bg-dark;
+  padding: $spacing-base $spacing-base; 
   color: #e2e8f0;
   display: flex;
   flex-direction: column;
@@ -12,13 +14,13 @@
   background: rgba(30, 41, 59, 0.5);
   padding: 10rpx 20rpx;
   border-radius: 30rpx;
-  font-size: 24rpx;
-  color: #94a3b8;
+  font-size: $font-size-small;
+  color: $text-muted;
 }
 
 .hero {
   text-align: center;
-  margin: 40rpx 0 50rpx 0; 
+  margin: $spacing-base 0 50rpx 0; 
 }
 
 .title {
@@ -26,14 +28,14 @@
   font-weight: bold;
   letter-spacing: 2rpx;
   display: block;
-  color: #ffffff;
+  color: $text-white;
 }
 
 .status {
   display: block;
   margin-top: 24rpx;
   font-size: 32rpx;
-  color: #38bdf8;
+  color: $primary-color;
   font-weight: 500;
   min-height: 44rpx;
 }
@@ -45,9 +47,9 @@
 .panel-title {
   display: block;
   text-align: center;
-  color: #64748b;
+  color: $secondary-color;
   margin-bottom: 24rpx;
-  font-size: 28rpx;
+  font-size: $font-size-body;
 }
 
 .grid {
@@ -58,7 +60,7 @@
 }
 
 .card {
-  border-radius: 28rpx;
+  border-radius: $card-radius;
   padding: 30rpx;
   transition: all 0.1s ease;
   display: flex;
@@ -83,7 +85,7 @@
 }
 .card-easy.active {
   background: radial-gradient(circle at center, #10b981, #059669);
-  color: white;
+  color: $text-white;
   border: 4rpx solid #34d399;
 }
 
@@ -94,7 +96,7 @@
 }
 .card-normal.active {
   background: radial-gradient(circle at center, #3b82f6, #2563eb);
-  color: white;
+  color: $text-white;
   border: 4rpx solid #93c5fd;
 }
 
@@ -105,7 +107,7 @@
 }
 .card-pro.active {
   background: radial-gradient(circle at center, #f59e0b, #d97706);
-  color: white;
+  color: $text-white;
   border: 4rpx solid #fbbf24;
 }
 
@@ -126,8 +128,8 @@
 }
 
 .lock-text {
-  font-size: 24rpx;
-  color: #ef4444;
+  font-size: $font-size-small;
+  color: $error-color;
   font-weight: bold;
 }
 
@@ -137,7 +139,7 @@
   line-height: 90rpx;
   background: #334155;
   color: #e2e8f0;
-  font-size: 28rpx;
+  font-size: $font-size-body;
   border-radius: 20rpx;
   margin-top: 20rpx;
   border: 2rpx dashed #475569;
@@ -148,11 +150,11 @@
   height: 110rpx;
   line-height: 110rpx;
   margin: 60rpx 0 20rpx 0; 
-  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-  color: white;
+  background: $primary-gradient;
+  color: $text-white;
   font-size: 40rpx;
   font-weight: bold;
-  border-radius: 55rpx;
+  border-radius: $button-radius;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -168,7 +170,7 @@
 
 .share-btn-small {
   background: transparent !important;
-  color: #94a3b8;
+  color: $text-muted;
   font-size: 26rpx;
   border: none;
   text-decoration: underline;
@@ -187,15 +189,15 @@
   padding: 24rpx 32rpx;
   border-radius: 24rpx;
   font-size: 26rpx;
-  color: #64748b;
+  color: $secondary-color;
   line-height: 1.6;
   margin-bottom: 20rpx;
-  border-left: 6rpx solid #38bdf8;
+  border-left: 6rpx solid $primary-color;
 }
 
 .footer {
   text-align: center;
-  font-size: 24rpx;
+  font-size: $font-size-small;
   color: #475569;
   padding: 20rpx 0 40rpx 0;
 }

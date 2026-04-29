@@ -1,7 +1,9 @@
+@import '@/styles/theme.scss';
+
 .training-container {
   min-height: 100vh;
-  background-color: #0f172a;
-  padding: 0 40rpx 40rpx 40rpx;
+  background-color: $bg-dark;
+  padding: 0 $spacing-base $spacing-base $spacing-base;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -12,16 +14,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40rpx;
+  padding-top: $spacing-base;
 }
 
 .step-indicator {
-  font-size: 28rpx;
-  color: #64748b;
+  font-size: $font-size-body;
+  color: $secondary-color;
 }
 
 .step-text {
-  color: #38bdf8;
+  color: $primary-color;
   font-weight: bold;
 }
 
@@ -32,19 +34,19 @@
 }
 
 .score-label {
-  font-size: 24rpx;
-  color: #94a3b8;
+  font-size: $font-size-small;
+  color: $text-muted;
 }
 
 .score-value {
   font-size: 40rpx;
   font-weight: bold;
-  color: #ffffff;
+  color: $text-white;
 }
 
 .combo-badge {
-  font-size: 28rpx;
-  color: #f59e0b;
+  font-size: $font-size-body;
+  color: $warning-color;
   font-weight: bold;
 }
 
@@ -54,8 +56,8 @@
 }
 
 .instruction-text {
-  font-size: 36rpx;
-  color: #ffffff;
+  font-size: $font-size-header;
+  color: $text-white;
   font-weight: bold;
 }
 
@@ -69,11 +71,11 @@
 }
 
 .target-grid {
-  background: rgba(30, 41, 59, 0.7);
+  background: $card-bg-light;
   border: 4rpx solid rgba(56, 189, 248, 0.3);
-  border-radius: 32rpx;
-  padding: 40rpx 60rpx;
-  margin-bottom: 40rpx;
+  border-radius: $card-radius;
+  padding: $spacing-base 60rpx;
+  margin-bottom: $spacing-base;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,7 +90,7 @@
 
 .target-text {
   font-size: 42rpx;
-  color: #ffffff;
+  color: $text-white;
   font-weight: 600;
 }
 
@@ -104,17 +106,17 @@
 
 .shape-text {
   font-size: 32rpx;
-  color: #ffffff;
+  color: $text-white;
   font-weight: bold;
 }
 
 .continue-btn {
   width: 80%;
-  height: 100rpx;
-  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  height: $button-height;
+  background: $primary-gradient;
   color: white;
-  border-radius: 50rpx;
-  font-size: 36rpx;
+  border-radius: $button-radius;
+  font-size: $font-size-header;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -127,11 +129,11 @@
   width: 80%;
   height: 80rpx;
   background: transparent;
-  color: #94a3b8;
-  font-size: 28rpx;
+  color: $text-muted;
+  font-size: $font-size-body;
   border: 2rpx solid #334155;
   border-radius: 40rpx;
-  margin-bottom: 40rpx;
+  margin-bottom: $spacing-base;
 }
 
 /* Answer Phase */
@@ -140,8 +142,8 @@
 }
 
 .options-grid {
-  background: #1e293b;
-  border-radius: 32rpx;
+  background: $card-bg;
+  border-radius: $card-radius;
   border: 1rpx solid rgba(56, 189, 248, 0.1);
   overflow: hidden;
 }
@@ -161,11 +163,11 @@
 
 .option-item.selected {
   background: rgba(56, 189, 248, 0.15);
-  border: 4rpx solid #38bdf8;
+  border: 4rpx solid $primary-color;
 }
 
 .option-text {
-  color: #ffffff;
+  color: $text-white;
   font-size: 40rpx;
   font-weight: 500;
   text-align: center;
@@ -182,14 +184,48 @@
 }
 
 .option-shape.selected {
-  border: 6rpx solid #38bdf8;
+  border: 6rpx solid $primary-color;
   box-shadow: 0 0 30rpx rgba(56, 189, 248, 0.5);
 }
 
 /* Exit Button */
+/* Loading Overlay */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(15, 23, 42, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.loading-spinner {
+  width: 80rpx;
+  height: 80rpx;
+  border: 8rpx solid rgba(56, 189, 248, 0.2);
+  border-top-color: $primary-color;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20rpx;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-text {
+  color: $text-white;
+  font-size: $font-size-body;
+}
+
 .exit-btn {
   padding: 30rpx;
   text-align: center;
-  color: #94a3b8;
-  font-size: 28rpx;
+  color: $text-muted;
+  font-size: $font-size-body;
 }
