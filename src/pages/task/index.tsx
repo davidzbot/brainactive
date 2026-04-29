@@ -49,31 +49,65 @@ export default function TrainingPage() {
     setStartTime(Date.now())
     setScore(0)
     setCombo(0)
-    setLoading(true)
     
     setSafeTitle(t('task.title'))
+
+    // Correctly track daily usage
+    try {
+      const { incrementDailyUsage } = require('@/utils/common')
+      incrementDailyUsage(diff)
+    } catch (e) {
+      console.warn('Usage tracking failed', e)
+    }
+
+    // Initialize tasks immediately with local data so user isn't blocked
+    initTasks()
     
-    // Fetch remote content for Android
+    // Fetch remote content for Android (H5/Capacitor)
     if (process.env.TARO_ENV === 'h5') {
+      setLoading(true)
       const lang = getLang()
+      
+      // Safety timeout to prevent infinite loading screen
+      const safetyTimer = setTimeout(() => {
+        setLoading(false)
+        console.warn('TASK: Loading cleared by safety timeout')
+      }, 5000)
+
       try {
-        const [names, cities, sentences] = await Promise.all([
+        console.log('TASK: Starting remote data load...')
+        const results = await Promise.allSettled([
           fetchBrainActiveContent('name', lang, 20),
           fetchBrainActiveContent('city', lang, 20),
           fetchBrainActiveContent('sentence', lang, 10)
         ])
         
-        setRemoteData({
-          names: names?.map(i => i.value) || [],
-          cities: cities?.map(i => i.value) || [],
-          sentences: sentences?.map(i => {
-            try {
-              return JSON.parse(i.value)
-            } catch(e) {
-              return { t: i.value, w: i.value }
-            }
-          }) || []
+        const names = results[0].status === 'fulfilled' ? results[0].value : []
+        const cities = results[1].status === 'fulfilled' ? results[1].value : []
+        const sentences = results[2].status === 'fulfilled' ? results[2].value : []
+
+        console.log('TASK: Results settled', { 
+          namesCount: names.length, 
+          citiesCount: cities.length, 
+          sentencesCount: sentences.length 
         })
+        
+        if (names.length > 0 || cities.length > 0 || sentences.length > 0) {
+          setRemoteData({
+            names: names.map(i => i.value),
+            cities: cities.map(i => i.value),
+            sentences: sentences.map(i => {
+              try {
+                return typeof i.value === 'string' ? JSON.parse(i.value) : i.value
+              } catch(e) {
+                return { t: i.value, w: i.value }
+              }
+            })
+          })
+          console.log('TASK: Remote data load SUCCESS')
+        } else {
+          console.log('TASK: Remote data empty, using FALLBACK')
+        }
 
         // Handle hardware back button
         try {
@@ -82,18 +116,17 @@ export default function TrainingPage() {
             goBack()
           })
         } catch (e) {
-          console.error('Capacitor App listener failed', e)
+          // ignore
         }
       } catch (e) {
-        console.error('Initial load failed', e)
+        console.error('TASK: Initial load exception', e)
       } finally {
+        clearTimeout(safetyTimer)
         setLoading(false)
       }
     } else {
       setLoading(false)
     }
-    
-    initTasks()
   })
 
   useEffect(() => {
@@ -104,7 +137,7 @@ export default function TrainingPage() {
       timersRef.current.forEach(t => clearTimeout(t))
       if (lockTimerRef.current) clearTimeout(lockTimerRef.current)
     }
-  }, [currentStep, taskQueue, remoteData]) 
+  }, [currentStep, taskQueue]) 
 
   const setSafeTimeout = (fn: () => void, delay: number) => {
     const timer = setTimeout(fn, delay)

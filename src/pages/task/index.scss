@@ -1,231 +1,186 @@
-@import '@/styles/theme.scss';
-
 .training-container {
   min-height: 100vh;
-  background-color: $bg-dark;
-  padding: 0 $spacing-base $spacing-base $spacing-base;
+  background: linear-gradient(180deg, #f8fafc 0%, #eff6ff 100%);
+  padding: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-}
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
-.header {
-  height: 200rpx;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: $spacing-base;
-}
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .loading-spinner {
+      width: 40px;
+      height: 40px;
+      border: 3px solid #e2e8f0;
+      border-top-color: #3b82f6;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 12px;
+    }
+    .loading-text {
+      color: #64748b;
+      font-size: 14px;
+    }
+  }
 
-.step-indicator {
-  font-size: $font-size-body;
-  color: $secondary-color;
-}
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    .step-indicator {
+      .step-text {
+        font-size: 16px;
+        font-weight: 700;
+        color: #64748b;
+      }
+    }
+    .score-display {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      .score-value {
+        font-size: 20px;
+        font-weight: 800;
+        color: #1e293b;
+      }
+      .combo-badge {
+        font-weight: 700;
+        color: #f59e0b;
+      }
+    }
+  }
 
-.step-text {
-  color: $primary-color;
-  font-weight: bold;
-}
+  .instruction {
+    margin-bottom: 32px;
+    .instruction-text {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1e293b;
+      display: block;
+      text-align: center;
+    }
+  }
 
-.score-display {
-  display: flex;
-  align-items: center;
-  gap: 16rpx;
-}
+  .memory-phase {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
 
-.score-label {
-  font-size: $font-size-small;
-  color: $text-muted;
-}
+    .target-grid {
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 24px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+      width: 100%;
+      max-width: 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
 
-.score-value {
-  font-size: 40rpx;
-  font-weight: bold;
-  color: $text-white;
-}
+      .target-item {
+        .target-text {
+          font-size: 24px;
+          font-weight: 600;
+          color: #334155;
+        }
+      }
 
-.combo-badge {
-  font-size: $font-size-body;
-  color: $warning-color;
-  font-weight: bold;
-}
+      .target-shape {
+        padding: 16px;
+        border-radius: 12px;
+        .shape-text {
+          color: #ffffff;
+          font-weight: 700;
+        }
+      }
+    }
 
-.instruction {
-  text-align: center;
-  padding: 30rpx 0;
-}
+    .continue-btn {
+      background: #1e293b;
+      color: #ffffff;
+      padding: 16px 32px;
+      border-radius: 16px;
+      font-size: 18px;
+      font-weight: 700;
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+      line-height: 1.2;
+    }
+    .back-btn {
+      color: #64748b;
+      font-size: 14px;
+      background: transparent;
+      border: none;
+    }
+  }
 
-.instruction-text {
-  font-size: $font-size-header;
-  color: $text-white;
-  font-weight: bold;
-}
+  .answer-phase {
+    flex: 1;
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 400px;
+      margin: 0 auto;
 
-/* Memory Phase */
-.memory-phase {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+      .option-item {
+        background: #ffffff;
+        padding: 18px;
+        border-radius: 16px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        border: 2px solid transparent;
+        transition: all 0.2s ease;
+        &.selected {
+          border-color: #3b82f6;
+          background: #eff6ff;
+        }
+        .option-text {
+          font-size: 18px;
+          font-weight: 600;
+          color: #334155;
+        }
+      }
 
-.target-grid {
-  background: $card-bg-light;
-  border: 4rpx solid rgba(56, 189, 248, 0.3);
-  border-radius: $card-radius;
-  padding: $spacing-base 60rpx;
-  margin-bottom: $spacing-base;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20rpx;
-  min-width: 400rpx;
-}
+      .option-shape {
+        padding: 18px;
+        border-radius: 16px;
+        border: 4px solid transparent;
+        &.selected {
+          border-color: #ffffff;
+          box-shadow: 0 0 0 4px #3b82f6;
+        }
+        .shape-text {
+          color: #ffffff;
+          font-weight: 700;
+        }
+      }
+    }
+  }
 
-.target-item, .target-shape {
-  width: 100%;
-  text-align: center;
-}
-
-.target-text {
-  font-size: 42rpx;
-  color: $text-white;
-  font-weight: 600;
-}
-
-.target-shape {
-  width: 120rpx;
-  height: 120rpx;
-  margin: 10rpx auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16rpx;
-}
-
-.shape-text {
-  font-size: 32rpx;
-  color: $text-white;
-  font-weight: bold;
-}
-
-.continue-btn {
-  width: 80%;
-  height: $button-height;
-  background: $primary-gradient;
-  color: white;
-  border-radius: $button-radius;
-  font-size: $font-size-header;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20rpx;
-  border: none;
-}
-
-.back-btn {
-  width: 80%;
-  height: 80rpx;
-  background: transparent;
-  color: $text-muted;
-  font-size: $font-size-body;
-  border: 2rpx solid #334155;
-  border-radius: 40rpx;
-  margin-bottom: $spacing-base;
-}
-
-/* Answer Phase */
-.answer-phase {
-  flex: 1;
-}
-
-.options-grid {
-  background: $card-bg;
-  border-radius: $card-radius;
-  border: 1rpx solid rgba(56, 189, 248, 0.1);
-  overflow: hidden;
-}
-
-.option-item {
-  padding: 30rpx 40rpx;
-  border-bottom: 1rpx solid rgba(255, 255, 255, 0.05);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100rpx;
-}
-
-.option-item:last-child {
-  border-bottom: none;
-}
-
-.option-item.selected {
-  background: rgba(56, 189, 248, 0.15);
-  border: 4rpx solid $primary-color;
-}
-
-.option-text {
-  color: $text-white;
-  font-size: 40rpx;
-  font-weight: 500;
-  text-align: center;
-}
-
-.option-shape {
-  width: 140rpx;
-  height: 140rpx;
-  margin: 20rpx;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16rpx;
-}
-
-.option-shape.selected {
-  border: 6rpx solid $primary-color;
-  box-shadow: 0 0 30rpx rgba(56, 189, 248, 0.5);
-}
-
-/* Exit Button */
-/* Loading Overlay */
-.loading-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(15, 23, 42, 0.9);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}
-
-.loading-spinner {
-  width: 80rpx;
-  height: 80rpx;
-  border: 8rpx solid rgba(56, 189, 248, 0.2);
-  border-top-color: $primary-color;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-  margin-bottom: 20rpx;
+  .exit-btn {
+    margin-top: 20px;
+    color: #94a3b8;
+    font-size: 14px;
+    text-align: center;
+  }
 }
 
 @keyframes spin {
   to { transform: rotate(360deg); }
-}
-
-.loading-text {
-  color: $text-white;
-  font-size: $font-size-body;
-}
-
-.exit-btn {
-  padding: 30rpx;
-  text-align: center;
-  color: $text-muted;
-  font-size: $font-size-body;
 }

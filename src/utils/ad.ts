@@ -4,23 +4,24 @@ import { t } from './i18n'
 import { Toast } from '@capacitor/toast'
 
 /**
- * Mock function to simulate showing an ad.
- * In a real app, this would integrate with AdMob or another provider.
+ * Professional Ad Simulation
+ * 
+ * FOR GOOGLE PLAY STORE INTEGRATION:
+ * 1. Install @capacitor-community/admob
+ * 2. Follow the setup guide: https://github.com/capacitor-community/admob
+ * 3. Replace the mock delay below with real AdMob lifecycle events:
+ *    - AdMob.showRewardVideoAd()
+ *    - Listen for 'onRewardedVideoAdReward' event to call unlockAllModes()
  */
 async function showAd(): Promise<void> {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     showLoading({ title: t('task.loading') })
     
-    // Simulate ad playback delay
+    // Professional delay (3 seconds) for mock
     setTimeout(() => {
       hideLoading()
-      // 90% success rate for mock
-      if (Math.random() > 0.1) {
-        resolve()
-      } else {
-        reject(new Error('Ad failed to load'))
-      }
-    }, 2000)
+      resolve()
+    }, 3000)
   })
 }
 
@@ -35,9 +36,9 @@ export async function watchAdAndUnlock(): Promise<boolean> {
     })
     return true
   } catch (e) {
-    console.error('Ad failed', e)
+    console.error('Ad session interrupted', e)
     await Toast.show({
-      text: 'Ad failed. Try again.',
+      text: 'Session interrupted. Please try again.',
       duration: 'short',
       position: 'bottom'
     })
