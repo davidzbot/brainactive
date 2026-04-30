@@ -8,7 +8,7 @@ export default defineAppConfig({
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#0f172a',
     backgroundColor: '#0f172a',
-    navigationBarTitleText: 'BrainActive',
+    navigationBarTitleText: '大脑每日练 (BrainActive)',
     navigationBarTextStyle: 'white',
   },
 })

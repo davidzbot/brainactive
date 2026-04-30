@@ -3,7 +3,7 @@ import { View, Text, Button } from '@tarojs/components'
 import Taro, { useLoad, useDidShow, navigateTo, showModal, showActionSheet, clearStorage, reLaunch } from '@tarojs/taro'
 import { getLang, setLang, getStorage, setStorage } from '@/utils/storage'
 import { isAdUnlocked, unlockAllModes, canPlayMode, formatDate, parseDateSafe, setSafeTitle } from '@/utils/common'
-import { watchAdAndUnlock } from '@/utils/ad'
+import { showRewardAd } from '@/utils/ad'
 import { dataUtils } from '@/utils/data'
 import { t } from '@/utils/i18n'
 import './index.scss'
@@ -14,9 +14,12 @@ export default function HomePage() {
   const [currentTips, setCurrentTips] = useState<string[]>([])
   const [todayStatus, setTodayStatus] = useState('')
   const [isUnlocked, setIsUnlocked] = useState(false)
+  const [unlockExpiry, setUnlockExpiry] = useState<number | null>(null)
+  const [remainingTime, setRemainingTime] = useState('')
   const [language, setLanguage] = useState(getLang())
   const [tapCount, setTapCount] = useState(0)
   const [loading, setLoading] = useState(true)
+  const [adLoading, setAdLoading] = useState(false)
 
   const updateStatus = (s: number, unlocked: boolean) => {
     if (unlocked) {
@@ -34,9 +37,55 @@ export default function HomePage() {
 
   const checkUnlockStatus = () => {
     const unlocked = isAdUnlocked()
+    const expiry = getStorage('ad_unlock_until')
     setIsUnlocked(unlocked)
-    return { unlocked }
+    setUnlockExpiry(expiry)
+    if (unlocked && expiry) {
+      updateRemainingTime(expiry)
+    }
+    return { unlocked, expiry }
   }
+
+  const updateRemainingTime = (expiry: number) => {
+    const now = Date.now()
+    const diff = expiry - now
+    if (diff <= 0) {
+      setRemainingTime('')
+      setIsUnlocked(false)
+      return
+    }
+    const h = Math.floor(diff / (1000 * 60 * 60))
+    const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
+    setRemainingTime(t('app.expires_in', { h, m }))
+  }
+
+  useEffect(() => {
+    let backListener: any = null
+    const setupBackBtn = async () => {
+      try {
+        const { App } = require('@capacitor/app')
+        backListener = await App.addListener('backButton', () => {
+          App.exitApp()
+        })
+      } catch (e) {}
+    }
+    setupBackBtn()
+    return () => {
+      if (backListener) backListener.remove()
+    }
+  }, [])
+
+  useEffect(() => {
+    let timer: any = null
+    if (isUnlocked && unlockExpiry) {
+      timer = setInterval(() => {
+        updateRemainingTime(unlockExpiry)
+      }, 60000)
+    }
+    return () => {
+      if (timer) clearInterval(timer)
+    }
+  }, [isUnlocked, unlockExpiry])
 
   useLoad(() => {
     setLoading(true)
@@ -96,14 +145,17 @@ export default function HomePage() {
   }
 
   const handleWatchAd = async () => {
-    const success = await watchAdAndUnlock()
+    if (adLoading) return
+    setAdLoading(true)
+    const success = await showRewardAd()
+    setAdLoading(false)
     if (success) {
       const { unlocked } = checkUnlockStatus()
       updateStatus(streak, unlocked)
     }
   }
 
-  const selectDifficulty = async (level: string) => {
+  const startTraining = async (level: string) => {
     if (!canPlayMode(level)) {
       const res = await showModal({
         title: t('mode.limit'),
@@ -115,14 +167,7 @@ export default function HomePage() {
     }
     setStorage('lastDifficulty', level)
     setDifficulty(level)
-  }
-
-  const startExercise = () => {
-    if (!canPlayMode(difficulty)) {
-      selectDifficulty(difficulty)
-      return
-    }
-    navigateTo({ url: `/pages/task/index?difficulty=${difficulty}` })
+    navigateTo({ url: `/pages/task/index?difficulty=${level}` })
   }
 
   const handleInvite = async () => {
@@ -173,11 +218,10 @@ export default function HomePage() {
 
   const renderModeCard = (level: string, labelKey: any, emoji: string) => {
     const isModeUnlocked = canPlayMode(level)
-    const isActive = difficulty === level
     return (
       <View 
-        className={`mode-card mode-${level} ${isActive ? 'active' : ''} ${!isModeUnlocked ? 'locked' : ''}`}
-        onClick={() => selectDifficulty(level)}
+        className={`mode-card mode-${level} ${!isModeUnlocked ? 'locked' : ''}`}
+        onClick={() => startTraining(level)}
       >
         <View className="mode-info">
           <Text className="mode-label">{t(labelKey).replace(/\(.*\)/, '')}</Text>
@@ -208,7 +252,10 @@ export default function HomePage() {
           <Text className="app-subtitle">{t('app.subtitle')}</Text>
           <View className="streak-card">
             <Text className="streak-emoji">🔥</Text>
-            <Text className="streak-text">{streak} {t('app.status.low').split('训练')[1] || 'Days'}</Text>
+            <View className="streak-info">
+              <Text className="streak-text">{streak}</Text>
+              <Text className="streak-unit">{t('common.days')}</Text>
+            </View>
           </View>
         </View>
       </View>
@@ -218,11 +265,8 @@ export default function HomePage() {
            <Text className="app-description">{t('app.description')}</Text>
         </View>
 
-        <View className="status-section">
+        <View className="mode-grid-header">
           <Text className="section-title">{t('panel.title')}</Text>
-          <View className="status-badge">
-            <Text className="status-text">{todayStatus}</Text>
-          </View>
         </View>
 
         <View className="mode-grid">
@@ -231,16 +275,32 @@ export default function HomePage() {
           {renderModeCard('pro', 'difficulty.pro', '🚀')}
         </View>
 
-        {!isUnlocked && (
-          <View className="unlock-card" onClick={handleWatchAd}>
-            <Text className="unlock-title">📺 {t('cta.ad')}</Text>
-            <Text className="unlock-desc">{t('app.unlock_desc')}</Text>
+        <View className="status-card-section">
+          <View className={`status-card ${isUnlocked ? 'is-unlocked' : 'is-locked'}`}>
+            <View className="status-header">
+              <Text className="status-label">{isUnlocked ? '✅ ' + t('app.unlocked') : '🔒 ' + t('app.locked')}</Text>
+              {isUnlocked && <Text className="status-expiry">{remainingTime}</Text>}
+            </View>
+            <Text className="status-desc">
+              {isUnlocked ? t('app.unlimited') : t('app.unlock_desc')}
+            </Text>
+            
+            <Button 
+              className={`status-cta ${isUnlocked ? 'secondary' : 'primary'} ${adLoading ? 'loading' : ''}`}
+              onClick={handleWatchAd}
+              disabled={adLoading}
+            >
+              {adLoading ? (
+                <View className="btn-loading-content">
+                  <View className="btn-spinner" />
+                  <Text>{t('task.loading').replace('...', '')}</Text>
+                </View>
+              ) : (
+                isUnlocked ? t('button.watch_again') : t('button.watch_to_unlock')
+              )}
+            </Button>
           </View>
-        )}
-
-        <Button className="primary-btn" onClick={startExercise}>
-          {t('button.start')}
-        </Button>
+        </View>
 
         <Button className="invite-btn" onClick={handleInvite}>
           👥 {t('button.invite')}

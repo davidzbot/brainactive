@@ -3,7 +3,7 @@
  * Tone: Calm, Professional, Encouraging
  */
 const zh = {
-  'app.title': '智启脑力 (BrainActive)',
+  'app.title': '大脑每日练 (BrainActive)',
   'app.subtitle': '科学认知训练 · 有效预防认知衰退',
   'app.description': '通过每日科学设计的脑力练习，激活大脑神经连接，帮助银发族有效预防老年痴呆，保持思维常青。',
   'app.status.0': '今日尚未打卡，开始训练保持大脑活力',
@@ -12,9 +12,14 @@ const zh = {
   'app.status.high': '已连续打卡 {s} 天，思维敏锐如初',
   
   'button.invite': '邀请好友共同进步',
-  'invite.text': '我正在使用【智启脑力】进行每日认知训练，预防思维衰退。推荐你也来试试，保持大脑年轻！',
+  'invite.text': '我正在使用【大脑每日练】进行每日认知训练，预防思维衰退。推荐你也来试试，保持大脑年轻！',
   'app.unlimited': '全功能访问已开启',
   'app.unlock_desc': '观看一段短片即可开启 24 小时完整体验',
+  'app.locked': '功能锁定中',
+  'app.unlocked': '全功能已开启',
+  'app.expires_in': '{h}小时{m}分 后到期',
+  'button.watch_to_unlock': '点击观看视频开启 (24h)',
+  'button.watch_again': '再次观看 (延长有效期)',
   
   'difficulty.easy': '认知保健 (适合银发族)',
   'difficulty.normal': '思维强化 (适合上班族)',
@@ -49,6 +54,9 @@ const zh = {
   'task.remember_colorshapes_seq': '请按顺序记住颜色和形状',
   'task.remember_sentences_seq': '请按顺序记住以下句子',
   
+  'task.step_memorize': '第一步：观察并记住',
+  'task.step_answer': '第二步：根据记忆选择',
+  
   'result.title': '训练报告',
   'result.score': '本次得分',
   'result.time': '所用时长',
@@ -58,7 +66,9 @@ const zh = {
   'button.home': '返回主页',
   
   'tip.prefix': '建议：',
-  'footer.feedback': '意见反馈: pslehero@gmail.com'
+  'footer.feedback': '意见反馈: pslehero@gmail.com',
+  'common.days': '天',
+  'common.streak': '连续打卡'
 };
 
 const en = {
@@ -74,6 +84,11 @@ const en = {
   'invite.text': 'I\'m using BrainActive for daily cognitive training to maintain mental sharpness. Join me and keep your brain young!',
   'app.unlimited': 'Full Access Active',
   'app.unlock_desc': 'Watch a short video to unlock all features for 24h',
+  'app.locked': 'Features Locked',
+  'app.unlocked': 'Full Access Active',
+  'app.expires_in': 'Expires in {h}h {m}m',
+  'button.watch_to_unlock': 'Watch Ad to Unlock (24h)',
+  'button.watch_again': 'Watch Again (Extend)',
   
   'difficulty.easy': 'Mental Vitality (Senior Friendly)',
   'difficulty.normal': 'Cognitive Boost (Daily Focus)',
@@ -108,6 +123,9 @@ const en = {
   'task.remember_colorshapes_seq': 'Memorize colors and shapes in order',
   'task.remember_sentences_seq': 'Memorize these sentences in order',
   
+  'task.step_memorize': 'Step 1: Memorize',
+  'task.step_answer': 'Step 2: Answer',
+
   'result.title': 'Session Report',
   'result.score': 'Performance Score',
   'result.time': 'Duration',
@@ -117,7 +135,9 @@ const en = {
   'button.home': 'Return to Home',
   
   'tip.prefix': 'Insight: ',
-  'footer.feedback': 'Feedback: pslehero@gmail.com'
+  'footer.feedback': 'Feedback: pslehero@gmail.com',
+  'common.days': 'Days',
+  'common.streak': 'Day Streak'
 };
 
 export const t = (key: string, params?: any): string => {

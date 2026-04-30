@@ -25,7 +25,7 @@
 - **Interaction**: Extra-large rounded buttons (60px+ radius), polished 3D press effects (shadow-based), and scale feedback.
 
 ## Key Logic & Engagement
-- **Ad Unlock**: One "ad watch" (3s mock) unlocks all modes for 24 hours.
+- **Ad Unlock**: Real AdMob Rewarded Ads integration. One full watch unlocks all modes for 24 hours. Includes a safety fallback that unlocks features even if ad load fails or is dismissed early to maintain UX.
 - **Back to Review**: Answer phase allows returning to the memory phase (Back to Review) to reinforce cognitive retention.
 - **Daily Streak**: Tracks consecutive days of check-ins with prominent "Fire" emoji (🔥) to build addictive healthy habits.
 - **Top Alignment**: All pages (Home, Task, Result) start from the top with consistent padding and professional dashboard alignment.
@@ -39,7 +39,9 @@
   - 4: Sentences (Memory/Typo-detection)
 
 ## Production QA & Security
-- **Console Logs**: All `console.log` and `console.warn` (non-essential) are stripped for production performance and privacy.
+- **AdMob Setup**: Mandatory `meta-data` tag in `AndroidManifest.xml` and `appId` in `capacitor.config.json`. Detailed instructions in `ADMOB_README.md`.
+- **Debug Logs**: Custom `[AdMob]` prefixed logs for tracking ad lifecycle (LOAD, SHOW, REWARD, DISMISS).
+- **Final Result Tracking**: Console outputs `RESULT: REAL_AD_SHOWN` or `RESULT: FALLBACK_TRIGGERED` to verify ad efficacy.
 - **Debug Backdoor**: Tap title 10 times to access debug tools (Action Sheet).
 - **Network Resilience**: Uses `Promise.allSettled` and race-timeouts (8-10s) to ensure the UI never hangs on slow connections.
 - **Memory Optimization**: Minimal asset size and clean build patterns for small APK footprint.

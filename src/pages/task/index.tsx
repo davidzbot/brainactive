@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { View, Text, Button } from '@tarojs/components'
 import Taro, { useLoad, showToast, showModal, reLaunch, navigateTo } from '@tarojs/taro'
 import { getStorage, getLang } from '@/utils/storage'
-import { setSafeTitle } from '@/utils/common'
+import { setSafeTitle, incrementDailyUsage } from '@/utils/common'
 import { dataUtils } from '@/utils/data'
 import { fetchBrainActiveContent } from '@/utils/supabase'
 import { t } from '@/utils/i18n'
@@ -38,6 +38,8 @@ export default function TrainingPage() {
   
   const timersRef = useRef<any[]>([])
   const lockTimerRef = useRef<any>(null)
+  const hasPromptedExitRef = useRef(false)
+  const lastPromptTimeRef = useRef(0)
 
   useLoad(async (loadOptions) => {
     let diff = loadOptions.difficulty || getStorage('lastDifficulty') || 'easy'
@@ -51,26 +53,13 @@ export default function TrainingPage() {
     setCombo(0)
     
     setSafeTitle(t('task.title'))
-
-    // Correctly track daily usage
-    try {
-      const { incrementDailyUsage } = require('@/utils/common')
-      incrementDailyUsage(diff)
-    } catch (e) {
-      console.warn('Usage tracking failed', e)
-    }
-
-    // Initialize tasks immediately with local data so user isn't blocked
+    incrementDailyUsage(diff)
     initTasks()
     
-    // Fetch remote content for Android (H5/Capacitor)
     if (process.env.TARO_ENV === 'h5') {
       setLoading(true)
       const lang = getLang()
-      
-      const safetyTimer = setTimeout(() => {
-        setLoading(false)
-      }, 5000)
+      const safetyTimer = setTimeout(() => setLoading(false), 5000)
 
       try {
         const results = await Promise.allSettled([
@@ -96,16 +85,6 @@ export default function TrainingPage() {
             })
           })
         }
-
-        // Handle hardware back button
-        try {
-          const { App } = require('@capacitor/app')
-          App.addListener('backButton', () => {
-            goBack()
-          })
-        } catch (e) {
-          // ignore
-        }
       } catch (e) {
         console.error('TASK: Initial load exception', e)
       } finally {
@@ -118,12 +97,29 @@ export default function TrainingPage() {
   })
 
   useEffect(() => {
+    let backListener: any = null
+    const setupBack = async () => {
+      try {
+        const { App } = require('@capacitor/app')
+        backListener = await App.addListener('backButton', () => {
+          // Debounce check: Don't prompt if already prompted within last 2s
+          const now = Date.now()
+          if (hasPromptedExitRef.current && (now - lastPromptTimeRef.current < 2000)) {
+             return 
+          }
+          goBack()
+        })
+      } catch (e) {}
+    }
+    setupBack()
+
     if (taskQueue.length > 0 && currentStep <= totalSteps) {
       runTask()
     }
     return () => {
       timersRef.current.forEach(t => clearTimeout(t))
       if (lockTimerRef.current) clearTimeout(lockTimerRef.current)
+      if (backListener) backListener.remove()
     }
   }, [currentStep, taskQueue]) 
 
@@ -168,10 +164,7 @@ export default function TrainingPage() {
       case 3: taskCity(); break
       case 4: taskSentence(); break
     }
-
-    if (!targetArray || targetArray.length === 0) {
-      taskNumber()
-    }
+    if (!targetArray || targetArray.length === 0) taskNumber()
   }
 
   useEffect(() => {
@@ -181,29 +174,17 @@ export default function TrainingPage() {
   const updateInstruction = () => {
     if (showMemoryPhase) {
       switch (taskType) {
-        case 0: // Names
-          setInstruction(t(sequenceMode ? 'task.remember_names_seq' : 'task.remember_names'))
-          break
-        case 1: // Numbers / Calculation
-          setInstruction(t(mathProblem ? 'task.remember_numbers_calc' : 'task.remember_numbers'))
-          break
-        case 2: // Colors/Shapes
-          setInstruction(t(sequenceMode ? 'task.remember_colorshapes_seq' : 'task.remember_colorshapes'))
-          break
-        case 3: // Cities
-          setInstruction(t(sequenceMode ? 'task.remember_cities_seq' : 'task.remember_cities'))
-          break
-        case 4: // Sentences
-          setInstruction(t(sequenceMode ? 'task.remember_sentences_seq' : 'task.remember_sentences'))
-          break
-        default:
-          setInstruction(t('task.remember_names'))
+        case 0: setInstruction(t(sequenceMode ? 'task.remember_names_seq' : 'task.remember_names')); break
+        case 1: setInstruction(t(mathProblem ? 'task.remember_numbers_calc' : 'task.remember_numbers')); break
+        case 2: setInstruction(t(sequenceMode ? 'task.remember_colorshapes_seq' : 'task.remember_colorshapes')); break
+        case 3: setInstruction(t(sequenceMode ? 'task.remember_cities_seq' : 'task.remember_cities')); break
+        case 4: setInstruction(t(sequenceMode ? 'task.remember_sentences_seq' : 'task.remember_sentences')); break
+        default: setInstruction(t('task.remember_names'))
       }
     } else {
       if (mathProblem) {
         const isZh = getLang() === 'zh'
         const opParts = mathProblem.op.split(' ')
-        // opStr = "10 + 20" or "10 + 20 + 30"
         let maskedOp = ''
         let numCount = 1
         opParts.forEach(p => {
@@ -224,303 +205,181 @@ export default function TrainingPage() {
   }
 
   const getPool = (type: 'names' | 'cities' | 'sentences') => {
-    if (remoteData[type] && remoteData[type].length > 0) {
-      return remoteData[type]
-    }
+    if (remoteData[type] && remoteData[type].length > 0) return remoteData[type]
     return dataUtils[type]
   }
 
   const taskName = () => {
-    setTaskType(0)
-    setMathProblem(null)
+    setTaskType(0); setMathProblem(null)
     const pool = shuffle([...getPool('names')])
-    let targetCount = 1
-    if (difficulty === 'normal') targetCount = 3
-    if (difficulty === 'pro') targetCount = 4
-
+    let targetCount = difficulty === 'easy' ? 1 : (difficulty === 'normal' ? 3 : 4)
     const targets = pool.slice(0, targetCount).map((n: string) => ({ display: n, _key: n }))
     const distractors = pool.slice(targetCount, targetCount + (difficulty === 'pro' ? 6 : 5)).map((n: string) => ({ display: n, _key: n }))
-    
-    setTargetArray(targets)
-    setOptions(shuffle([...targets, ...distractors]))
+    setTargetArray(targets); setOptions(shuffle([...targets, ...distractors]))
     setSequenceMode(difficulty !== 'easy')
   }
 
   const taskCity = () => {
-    setTaskType(3)
-    setMathProblem(null)
+    setTaskType(3); setMathProblem(null)
     const pool = shuffle([...getPool('cities')])
-    let targetCount = 1
-    if (difficulty === 'normal') targetCount = 3
-    if (difficulty === 'pro') targetCount = 4
-
+    let targetCount = difficulty === 'easy' ? 1 : (difficulty === 'normal' ? 3 : 4)
     const targets = pool.slice(0, targetCount).map((c: string) => ({ display: c, _key: c }))
     const distractors = pool.slice(targetCount, targetCount + (difficulty === 'pro' ? 6 : 5)).map((c: string) => ({ display: c, _key: c }))
-    
-    setTargetArray(targets)
-    setOptions(shuffle([...targets, ...distractors]))
+    setTargetArray(targets); setOptions(shuffle([...targets, ...distractors]))
     setSequenceMode(difficulty !== 'easy')
   }
 
   const taskNumber = () => {
     setTaskType(1)
-    const diff = difficulty
-    if (diff === 'normal' || diff === 'pro') {
-      const isPro = diff === 'pro'
+    if (difficulty !== 'easy') {
+      const isPro = difficulty === 'pro'
       let n1 = Math.floor(Math.random() * (isPro ? 900 : 80) + 10)
       let n2 = Math.floor(Math.random() * (isPro ? 900 : 80) + 10)
       let n3 = isPro ? Math.floor(Math.random() * 90 + 10) : 0
-      
       const op1 = Math.random() > 0.5 ? '+' : '-'
       const op2 = Math.random() > 0.5 ? '+' : '-'
-
       let result = op1 === '+' ? n1 + n2 : n1 - n2
       const targets: TaskItem[] = [{ display: String(n1), _key: 'n1' }, { display: String(n2), _key: 'n2' }]
-      
       if (isPro) {
         result = op2 === '+' ? result + n3 : result - n3
         targets.push({ display: String(n3), _key: 'n3' })
       }
-
       let optVals = [result]
-      let iterations = 0
-      while(optVals.length < 6 && iterations < 50) {
-        iterations++
+      while(optVals.length < 6) {
         let d = result + (Math.floor(Math.random() * (isPro ? 100 : 40)) - (isPro ? 50 : 20))
         if (!optVals.includes(d) && d > 0) optVals.push(d)
+        if (optVals.length >= 6) break
+        let r = Math.floor(Math.random() * (isPro ? 2000 : 150)) + 1
+        if (!optVals.includes(r)) optVals.push(r)
       }
-      while(optVals.length < 6) {
-        let d = Math.floor(Math.random() * (isPro ? 2000 : 150)) + 1
-        if (!optVals.includes(d)) optVals.push(d)
-      }
-
-      let opStr = `${n1} ${op1} ${n2}`
-      if (isPro) opStr = `${n1} ${op1} ${n2} ${op2} ${n3}`
-
       setTargetArray(targets)
       setOptions(shuffle(optVals).map((o: number) => ({ display: String(o), _key: String(o) })))
-      setMathProblem({ op: opStr, res: result })
+      setMathProblem({ op: isPro ? `${n1} ${op1} ${n2} ${op2} ${n3}` : `${n1} ${op1} ${n2}`, res: result })
       setSequenceMode(false)
     } else {
       const n = Math.floor(Math.random() * 900 + 100)
-      const taskItem: TaskItem = { display: String(n), _key: String(n) }
-      setTargetArray([taskItem])
+      setTargetArray([{ display: String(n), _key: String(n) }])
       setOptions(shuffle([n, n+5, n-3, n+10]).map((o: number) => ({ display: String(o), _key: String(o) })))
-      setMathProblem(null)
-      setSequenceMode(false)
+      setMathProblem(null); setSequenceMode(false)
     }
   }
 
   const taskColorShape = () => {
-    setTaskType(2)
-    setMathProblem(null)
+    setTaskType(2); setMathProblem(null)
+    const isZh = getLang() === 'zh'
     const colors = [
-      { name: 'Red', nameZh: '红', hex: '#ef4444' },
-      { name: 'Blue', nameZh: '蓝', hex: '#3b82f6' },
-      { name: 'Green', nameZh: '绿', hex: '#22c55e' },
-      { name: 'Yellow', nameZh: '黄', hex: '#eab308' },
+      { name: 'Red', nameZh: '红', hex: '#ef4444' }, { name: 'Blue', nameZh: '蓝', hex: '#3b82f6' },
+      { name: 'Green', nameZh: '绿', hex: '#22c55e' }, { name: 'Yellow', nameZh: '黄', hex: '#eab308' },
       { name: 'Purple', nameZh: '紫', hex: '#a855f7' }
     ]
     const shapes = [
-      { name: 'Circle', nameZh: '圆形', class: 'circle' },
-      { name: 'Square', nameZh: '方形', class: 'square' },
-      { name: 'Triangle', nameZh: '三角形', class: 'triangle' },
-      { name: 'Star', nameZh: '星形', class: 'star' }
+      { name: 'Circle', nameZh: '圆形', class: 'circle' }, { name: 'Square', nameZh: '方形', class: 'square' },
+      { name: 'Triangle', nameZh: '三角形', class: 'triangle' }, { name: 'Star', nameZh: '星形', class: 'star' }
     ]
-    
     let pool: TaskItem[] = []
-    const isZh = getLang() === 'zh'
-    
-    colors.forEach(c => {
-      shapes.forEach(s => {
-        pool.push({
-          colorHex: c.hex,
-          shapeClass: s.class,
-          display: isZh ? c.nameZh + s.nameZh : c.name + ' ' + s.name,
-          _key: c.name + s.name,
-          isShapeObj: true 
-        })
+    colors.forEach(c => shapes.forEach(s => {
+      pool.push({
+        colorHex: c.hex, shapeClass: s.class, isShapeObj: true,
+        display: isZh ? c.nameZh + s.nameZh : c.name + ' ' + s.name,
+        _key: c.name + s.name
       })
-    })
-    
-    let targetCount = 1
-    let optionCount = 4
-    if (difficulty === 'normal') { targetCount = 2; optionCount = 6 }
-    if (difficulty === 'pro') { targetCount = 3; optionCount = 8 }
-    
-    const shuffled = shuffle(pool)
-    const targets = shuffled.slice(0, targetCount)
-    const distractors = shuffled.slice(targetCount, optionCount)
-    
-    setTargetArray(targets)
-    setOptions(shuffle([...targets, ...distractors]))
+    }))
+    let targetCount = difficulty === 'easy' ? 1 : (difficulty === 'normal' ? 2 : 3)
+    const shuffledPool = shuffle([...pool])
+    const targets = shuffledPool.slice(0, targetCount)
+    const distractors = shuffledPool.slice(targetCount, targetCount + (difficulty === 'pro' ? 5 : 3))
+    setTargetArray(targets); setOptions(shuffle([...targets, ...distractors]))
     setSequenceMode(difficulty !== 'easy')
   }
 
   const taskSentence = () => {
-    setTaskType(4)
-    setMathProblem(null)
+    setTaskType(4); setMathProblem(null)
     const pool = shuffle([...getPool('sentences')])
-    
-    let targetCount = 1
-    if (difficulty === 'normal') targetCount = 2
-    if (difficulty === 'pro') targetCount = 3
-
+    let targetCount = difficulty === 'easy' ? 1 : (difficulty === 'normal' ? 2 : 3)
     const targets = pool.slice(0, targetCount)
-    const targetArrayItems: TaskItem[] = targets.map((s: any) => ({ display: s.t, _key: s.t }))
-    
     let opts: TaskItem[] = []
     targets.forEach((s: any) => {
       opts.push({ display: s.t, _key: s.t })
       opts.push({ display: s.w, _key: 'typo_' + s.t })
     })
-    
-    let distractorCount = 2
-    if (difficulty === 'normal') distractorCount = 2
-    if (difficulty === 'pro') distractorCount = 3
-
-    const otherSentences = pool.slice(targetCount, targetCount + distractorCount)
-    otherSentences.forEach((s: any) => {
-      opts.push({ display: s.t, _key: s.t })
-    })
-
-    setTargetArray(targetArrayItems)
-    setOptions(shuffle(opts))
-    setSequenceMode(difficulty !== 'easy')
+    const otherSentences = pool.slice(targetCount, targetCount + (difficulty === 'pro' ? 3 : 2))
+    otherSentences.forEach((s: any) => opts.push({ display: s.t, _key: s.t }))
+    setTargetArray(targets.map((s: any) => ({ display: s.t, _key: s.t })))
+    setOptions(shuffle(opts)); setSequenceMode(difficulty !== 'easy')
   }
 
-  const skipMemory = () => {
-    setShowMemoryPhase(false)
-  }
-
-  const backToMemory = () => {
-    setShowMemoryPhase(true)
-    setSelectedOptions([])
-    setAnsweringLock(false)
-  }
+  const skipMemory = () => setShowMemoryPhase(false)
+  const backToMemory = () => { setShowMemoryPhase(true); setSelectedOptions([]); setAnsweringLock(false) }
 
   const selectOption = (item: TaskItem) => {
     if (answeringLock) return
     const val = item._key
     let selected = [...selectedOptions]
-
-    if (selected.includes(val)) {
-      selected = selected.filter(i => i !== val)
-    } else {
-      selected.push(val)
-    }
+    if (selected.includes(val)) selected = selected.filter(i => i !== val)
+    else selected.push(val)
     setSelectedOptions(selected)
 
-    let targetReq = targetArray.length
-    if (mathProblem) targetReq = 1
-
+    let targetReq = mathProblem ? 1 : targetArray.length
     if (selected.length >= targetReq) {
       setAnsweringLock(true)
       let correct = false
-      if (mathProblem) {
-        correct = val == String(mathProblem.res)
-      } else if (sequenceMode) {
+      if (mathProblem) correct = val == String(mathProblem.res)
+      else if (sequenceMode) {
         const targetKeys = targetArray.map(t => t._key)
         correct = selected.every((v, i) => v === targetKeys[i])
       } else {
         const targetKeys = targetArray.map(t => t._key)
         correct = targetKeys.every(t => selected.includes(t))
       }
-      setSafeTimeout(() => { if (correct) { success() } else { fail() } }, 300)
-    }
-  }
-
-  const showCustomToast = async (msg: string) => {
-    try {
-      const { Toast } = require('@capacitor/toast')
-      await Toast.show({ text: msg, duration: 'short', position: 'center' })
-    } catch (e) {
-      showToast({ title: msg, icon: 'none' })
+      setSafeTimeout(() => { if (correct) success(); else fail() }, 300)
     }
   }
 
   const success = () => {
     const newCombo = combo + 1
     const points = 10 + newCombo * 2
-    setCombo(newCombo)
-    setScore(score + points)
-    showCustomToast(`+${points}`)
-    next()
+    setCombo(newCombo); setScore(score + points)
+    showCustomToast(`+${points}`); next()
   }
 
   const fail = () => {
-    setCombo(0)
-    setAnsweringLock(false)
-    setSelectedOptions([])
+    setCombo(0); setAnsweringLock(false); setSelectedOptions([])
     showCustomToast(getLang() === 'zh' ? '再想想 👀' : 'Try Again 👀')
   }
 
   const next = () => {
     if (lockTimerRef.current) clearTimeout(lockTimerRef.current)
-    lockTimerRef.current = setSafeTimeout(() => {
-      if (answeringLock) {
-        setAnsweringLock(false)
-      }
-    }, 5000)
+    lockTimerRef.current = setSafeTimeout(() => { if (answeringLock) setAnsweringLock(false) }, 5000)
 
     if (currentStep < totalSteps) {
-      setSafeTimeout(async () => {
-        try {
-          setCurrentStep(currentStep + 1)
-        } catch (e) {
-          console.error('runTask error:', e)
-          setAnsweringLock(false)
-          await showModal({
-            title: 'Error',
-            content: 'Task load failed',
-            showCancel: false,
-          })
-          reLaunch({ url: '/pages/home/index' })
-        }
-      }, 600)
+      setSafeTimeout(() => setCurrentStep(currentStep + 1), 600)
     } else {
       const time = Math.round((Date.now() - startTime) / 1000)
-      const url = `/pages/result/index?time=${time}&score=${score}`
-      navigateTo({ url })
+      navigateTo({ url: `/pages/result/index?time=${time}&score=${score}` })
     }
   }
 
   const goBack = async () => {
-    let confirm = false
-    if (process.env.TARO_ENV === 'h5') {
-      try {
-        const { Dialog } = require('@capacitor/dialog')
-        const { value } = await Dialog.confirm({
-          title: t('task.exit_confirm'),
-          message: t('task.exit_msg'),
-        })
-        confirm = value
-      } catch (e) {
-        confirm = window.confirm(t('task.exit_msg'))
-      }
-    } else {
-      const res = await showModal({
-        title: t('task.exit_confirm'),
-        content: t('task.exit_msg'),
-      })
-      confirm = res.confirm
-    }
+    hasPromptedExitRef.current = true
+    lastPromptTimeRef.current = Date.now()
+    const res = await showModal({ title: t('task.exit_confirm'), content: t('task.exit_msg') })
+    if (res.confirm) reLaunch({ url: '/pages/home/index' })
+    else hasPromptedExitRef.current = false
+  }
 
-    if (confirm) {
-      reLaunch({ url: '/pages/home/index' })
-    }
+  const showCustomToast = async (msg: string) => {
+    try {
+      const { Toast } = require('@capacitor/toast')
+      await Toast.show({ text: msg, duration: 'short', position: 'center' })
+    } catch (e) { showToast({ title: msg, icon: 'none' }) }
   }
 
   const renderTargetItem = (item: TaskItem, index: number) => {
     if (item.isShapeObj && item.colorHex) {
-      return (
-        <View key={index} className="target-shape" style={{ backgroundColor: item.colorHex }}>
-          <Text className="shape-text">{item.display}</Text>
-        </View>
-      )
+      return <View key={index} className={`target-shape ${item.shapeClass}`} style={{ backgroundColor: item.colorHex }} />
     }
     return (
-      <View key={index} className="target-item">
+      <View key={index} className={`target-item ${taskType === 4 ? 'is-sentence' : ''}`}>
         <Text className="target-text">{item.display}</Text>
       </View>
     )
@@ -528,24 +387,11 @@ export default function TrainingPage() {
 
   const renderOptionItem = (item: TaskItem, index: number) => {
     const isSelected = selectedOptions.includes(item._key)
-    
-    if (item.isShapeObj && item.colorHex) {
-      return (
-        <View 
-          key={index}
-          className={`option-shape ${isSelected ? 'selected' : ''}`}
-          style={{ backgroundColor: item.colorHex }}
-          onClick={() => selectOption(item)}
-        >
-          <Text className="shape-text">{item.display}</Text>
-        </View>
-      )
-    }
-    
+    const isColorShapeAns = item.isShapeObj && taskType === 2
     return (
       <View 
         key={index}
-        className={`option-item ${isSelected ? 'selected' : ''}`}
+        className={`option-item ${isSelected ? 'selected' : ''} ${taskType === 4 ? 'is-sentence' : ''} ${isColorShapeAns ? 'is-colorshape-ans' : ''}`}
         onClick={() => selectOption(item)}
       >
         <Text className="option-text">{item.display}</Text>
@@ -561,6 +407,8 @@ export default function TrainingPage() {
           <Text className="loading-text">{t('task.loading')}</Text>
         </View>
       )}
+      
+      {/* Top Bar Section */}
       <View className="header">
         <View className="step-indicator">
           <Text className="step-text">Lv {currentStep} / {totalSteps}</Text>
@@ -572,29 +420,40 @@ export default function TrainingPage() {
         </View>
       </View>
 
-      <View className="instruction">
-        <Text className="instruction-text">{instruction}</Text>
-      </View>
+      <View className="main-stage">
+        {/* Stage Label */}
+        <View className="stage-clarity">
+          <Text className="stage-text">{t(showMemoryPhase ? 'task.step_memorize' : 'task.step_answer')}</Text>
+        </View>
 
-      {showMemoryPhase ? (
-        <View className="memory-phase">
-          <View className="target-grid">
-            {targetArray.map((item, index) => renderTargetItem(item, index))}
-          </View>
-          <Button className="continue-btn" onClick={skipMemory}>
-            {t('task.got_it')}
-          </Button>
+        {/* Question Text */}
+        <View className="instruction">
+          <Text className="instruction-text">{instruction}</Text>
         </View>
-      ) : (
-        <View className="answer-phase">
-          <View className="options-grid">
-            {options.map((item, index) => renderOptionItem(item, index))}
-          </View>
-          <Button className="back-btn" onClick={backToMemory}>
-            ← {t('task.back')}
-          </Button>
+
+        {/* Core Stimulus / Interaction Area */}
+        <View className="interaction-area">
+          {showMemoryPhase ? (
+            <View className="memory-phase">
+              <View className="target-grid">
+                {targetArray.map((item, index) => renderTargetItem(item, index))}
+              </View>
+              <Button className="continue-btn" onClick={skipMemory}>
+                {t('task.got_it')}
+              </Button>
+            </View>
+          ) : (
+            <View className="answer-phase">
+              <View className="options-grid">
+                {options.map((item, index) => renderOptionItem(item, index))}
+              </View>
+              <Button className="back-btn" onClick={backToMemory}>
+                ← {t('task.back')}
+              </Button>
+            </View>
+          )}
         </View>
-      )}
+      </View>
 
       <View className="exit-btn" onClick={goBack}>
         <Text>{t('task.exit')}</Text>
