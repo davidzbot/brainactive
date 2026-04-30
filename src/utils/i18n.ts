@@ -40,7 +40,14 @@ const zh = {
   'task.remember_names': '请专注并记住以下姓名',
   'task.remember_cities': '请专注并记住以下城市',
   'task.remember_numbers': '请专注并记住这些数字',
+  'task.remember_numbers_calc': '请记住这些数字，稍后需进行计算',
+  'task.remember_colorshapes': '请记住这些颜色和形状',
   'task.remember_sentences': '请仔细阅读并记住以下句子',
+  
+  'task.remember_names_seq': '请按顺序记住以下姓名',
+  'task.remember_cities_seq': '请按顺序记住以下城市',
+  'task.remember_colorshapes_seq': '请按顺序记住颜色和形状',
+  'task.remember_sentences_seq': '请按顺序记住以下句子',
   
   'result.title': '训练报告',
   'result.score': '本次得分',
@@ -92,7 +99,14 @@ const en = {
   'task.remember_names': 'Focus and memorize these names',
   'task.remember_cities': 'Focus and memorize these cities',
   'task.remember_numbers': 'Memorize the following numbers',
+  'task.remember_numbers_calc': 'Memorize these numbers for later calculation',
+  'task.remember_colorshapes': 'Memorize these colors and shapes',
   'task.remember_sentences': 'Carefully read and memorize these sentences',
+
+  'task.remember_names_seq': 'Memorize these names in order',
+  'task.remember_cities_seq': 'Memorize these cities in order',
+  'task.remember_colorshapes_seq': 'Memorize colors and shapes in order',
+  'task.remember_sentences_seq': 'Memorize these sentences in order',
   
   'result.title': 'Session Report',
   'result.score': 'Performance Score',

@@ -180,29 +180,40 @@ export default function TrainingPage() {
 
   const updateInstruction = () => {
     if (showMemoryPhase) {
-      if (taskType === 4) {
-        setInstruction(t('task.remember_sentences')) 
-      } else if (taskType === 1 && mathProblem) {
-        setInstruction(t('task.remember_numbers'))
-      } else if (taskType === 0) {
-        setInstruction(t('task.remember_names'))
-      } else if (taskType === 3) {
-        setInstruction(t('task.remember_cities'))
-      } else {
-        setInstruction(t('task.remember_names'))
+      switch (taskType) {
+        case 0: // Names
+          setInstruction(t(sequenceMode ? 'task.remember_names_seq' : 'task.remember_names'))
+          break
+        case 1: // Numbers / Calculation
+          setInstruction(t(mathProblem ? 'task.remember_numbers_calc' : 'task.remember_numbers'))
+          break
+        case 2: // Colors/Shapes
+          setInstruction(t(sequenceMode ? 'task.remember_colorshapes_seq' : 'task.remember_colorshapes'))
+          break
+        case 3: // Cities
+          setInstruction(t(sequenceMode ? 'task.remember_cities_seq' : 'task.remember_cities'))
+          break
+        case 4: // Sentences
+          setInstruction(t(sequenceMode ? 'task.remember_sentences_seq' : 'task.remember_sentences'))
+          break
+        default:
+          setInstruction(t('task.remember_names'))
       }
     } else {
       if (mathProblem) {
         const opParts = mathProblem.op.split(' ... ')
-        if (opParts.length === 2) {
-          setInstruction(`🧮 ${opParts[0]} ... ${opParts[1]} = ?`)
+        if (opParts.length >= 2) {
+          // opStr = `${n1} ${op1} ${n2} ${op2} ${n3}`
+          // If we want to hide part of it: "10 + ... + 5 = ?"
+          // For simplicity we show the full op now as instructions
+          setInstruction(`🧮 ${mathProblem.op} = ?`)
         } else {
           setInstruction(`🧮 ${mathProblem.op} = ?`)
         }
       } else if (sequenceMode) {
-        setInstruction(t('task.order_them'))
+        setInstruction(`🔢 ${t('task.order_them')}`)
       } else {
-        setInstruction(t('task.pick_them'))
+        setInstruction(`🎯 ${t('task.pick_them')}`)
       }
     }
   }
@@ -215,6 +226,7 @@ export default function TrainingPage() {
   }
 
   const taskName = () => {
+    setTaskType(0)
     const pool = shuffle([...getPool('names')])
     let targetCount = 1
     if (difficulty === 'normal') targetCount = 3
@@ -229,6 +241,7 @@ export default function TrainingPage() {
   }
 
   const taskCity = () => {
+    setTaskType(3)
     const pool = shuffle([...getPool('cities')])
     let targetCount = 1
     if (difficulty === 'normal') targetCount = 3
@@ -243,6 +256,7 @@ export default function TrainingPage() {
   }
 
   const taskNumber = () => {
+    setTaskType(1)
     const diff = difficulty
     if (diff === 'normal' || diff === 'pro') {
       const isPro = diff === 'pro'
@@ -285,10 +299,13 @@ export default function TrainingPage() {
       const taskItem: TaskItem = { display: String(n), _key: String(n) }
       setTargetArray([taskItem])
       setOptions(shuffle([n, n+5, n-3, n+10]).map((o: number) => ({ display: String(o), _key: String(o) })))
+      setMathProblem(null)
+      setSequenceMode(false)
     }
   }
 
   const taskColorShape = () => {
+    setTaskType(2)
     const colors = [
       { name: 'Red', nameZh: '红', hex: '#ef4444' },
       { name: 'Blue', nameZh: '蓝', hex: '#3b82f6' },
@@ -333,6 +350,7 @@ export default function TrainingPage() {
   }
 
   const taskSentence = () => {
+    setTaskType(4)
     const pool = shuffle([...getPool('sentences')])
     
     let targetCount = 1
