@@ -30,6 +30,22 @@
 - **Top Alignment**: All pages (Home, Task, Result) should start from the top with consistent padding, avoiding large middle-screen gaps.
 - **Sharing**: Prominent share/invite buttons to encourage social check-ins.
 
+## Task Generation Logic (Production Standard)
+- **Task Types**: 
+  - 0: Names (Sequence-based in Normal/Pro)
+  - 1: Numbers (Calculation-based in Normal/Pro, Memory-only in Easy)
+  - 2: Colors/Shapes (Sequence-based in Normal/Pro)
+  - 3: Cities (Sequence-based in Normal/Pro)
+  - 4: Sentences (Memory/Typo-detection)
+- **Sequence Validation**: If `sequenceMode` is active, selection order MUST match the target order.
+- **Calculation Logic**: For number tasks in Normal/Pro, memory phase shows operands, and answer phase requires the calculated result.
+
+## Production QA & Security
+- **Console Logs**: All `console.log` and `console.warn` (non-essential) are stripped for production performance and privacy.
+- **Debug Backdoor**: Tap title 10 times to access debug tools (Action Sheet).
+- **Network Resilience**: Uses `Promise.allSettled` and race-timeouts (8-10s) to ensure the UI never hangs on slow connections.
+- **Memory Optimization**: Minimal asset size and clean build patterns for small APK footprint.
+
 ## Build Commands
 ```bash
 npm install
