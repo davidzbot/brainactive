@@ -227,6 +227,7 @@ export default function TrainingPage() {
 
   const taskName = () => {
     setTaskType(0)
+    setMathProblem(null)
     const pool = shuffle([...getPool('names')])
     let targetCount = 1
     if (difficulty === 'normal') targetCount = 3
@@ -242,6 +243,7 @@ export default function TrainingPage() {
 
   const taskCity = () => {
     setTaskType(3)
+    setMathProblem(null)
     const pool = shuffle([...getPool('cities')])
     let targetCount = 1
     if (difficulty === 'normal') targetCount = 3
@@ -306,6 +308,7 @@ export default function TrainingPage() {
 
   const taskColorShape = () => {
     setTaskType(2)
+    setMathProblem(null)
     const colors = [
       { name: 'Red', nameZh: '红', hex: '#ef4444' },
       { name: 'Blue', nameZh: '蓝', hex: '#3b82f6' },
@@ -351,6 +354,7 @@ export default function TrainingPage() {
 
   const taskSentence = () => {
     setTaskType(4)
+    setMathProblem(null)
     const pool = shuffle([...getPool('sentences')])
     
     let targetCount = 1
