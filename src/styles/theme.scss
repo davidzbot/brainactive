@@ -1,27 +1,38 @@
 // BrainActive Theme Tokens
-// Matches WeChat Mini Program UI
+// Matches WeChat Mini Program UI - Cheerful & Accessible
 
-$primary-color: #38bdf8;
-$primary-gradient: linear-gradient(135deg, #38bdf8, #2563eb);
-$secondary-color: #64748b;
-$bg-dark: #0f172a;
-$card-bg: #1e293b;
-$card-bg-light: rgba(30, 41, 59, 0.7);
+$primary-color: #4a90e2; // Trust & Intelligence
+$primary-gradient: linear-gradient(135deg, #4a90e2, #63b3ed);
+$bg-light: #f8fafc;
+$bg-white: #ffffff;
+
+// Domain Colors
+$memory-color: #a855f7; // Purple
+$focus-color: #f5a623;  // Orange
+$speed-color: #4a90e2;  // Blue
+$logic-color: #10b981;  // Green
+
+$text-main: #1e293b;
+$text-muted: #64748b;
 $text-white: #ffffff;
-$text-muted: #94a3b8;
-$success-color: #22c55e;
-$warning-color: #f59e0b;
+
+$success-color: #7ed321;
+$warning-color: #f5a623;
 $error-color: #ef4444;
 
-$card-radius: 32rpx;
-$button-radius: 50rpx;
-$button-height: 100rpx;
+$card-radius: 40rpx;
+$button-radius: 60rpx;
+$button-height: 110rpx;
 
+$font-size-hero: 64rpx;
 $font-size-title: 48rpx;
 $font-size-header: 36rpx;
-$font-size-body: 28rpx;
+$font-size-body: 32rpx;
 $font-size-small: 24rpx;
 
 $spacing-base: 40rpx;
 $spacing-tight: 20rpx;
-$spacing-loose: 60rpx;
+$spacing-loose: 80rpx;
+
+$shadow-soft: 0 10px 25px rgba(0, 0, 0, 0.05);
+$shadow-bold: 0 15px 35px rgba(74, 144, 226, 0.25);

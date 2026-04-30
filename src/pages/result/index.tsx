@@ -60,7 +60,7 @@ export default function ResultPage() {
       <View className="header-section">
         <Text className="result-title">{t('result.title')}</Text>
         <View className="streak-badge">
-          <Text className="streak-text">🔥 {newStreak} {t('app.status.low').split('训练')[1] || 'Days'}</Text>
+          <Text className="streak-text">🔥 {newStreak} {t('app.status.low').includes('训练') ? '天' : 'Days'}</Text>
         </View>
       </View>
 

@@ -153,7 +153,7 @@ export default function HomePage() {
   const handleTitleTap = () => {
     const nc = tapCount + 1
     setTapCount(nc)
-    if (nc >= 5) {
+    if (nc >= 10) {
       showActionSheet({
         itemList: ['Force Unlock', 'Reset Storage'],
         success: (res) => {
@@ -171,7 +171,7 @@ export default function HomePage() {
     }
   }
 
-  const renderModeCard = (level: string, labelKey: any) => {
+  const renderModeCard = (level: string, labelKey: any, emoji: string) => {
     const isModeUnlocked = canPlayMode(level)
     const isActive = difficulty === level
     return (
@@ -179,9 +179,11 @@ export default function HomePage() {
         className={`mode-card mode-${level} ${isActive ? 'active' : ''} ${!isModeUnlocked ? 'locked' : ''}`}
         onClick={() => selectDifficulty(level)}
       >
-        <Text className="mode-label">{t(labelKey).replace(/\(.*\)/, '')}</Text>
-        <Text className="mode-sub-label">{t(labelKey).match(/\(.*\)/)?.[0] || ''}</Text>
-        {!isModeUnlocked && <Text className="mode-status">🔒</Text>}
+        <View className="mode-info">
+          <Text className="mode-label">{t(labelKey).replace(/\(.*\)/, '')}</Text>
+          <Text className="mode-sub-label">{t(labelKey).match(/\(.*\)/)?.[0] || ''}</Text>
+        </View>
+        <Text className="mode-status">{!isModeUnlocked ? '🔒' : emoji}</Text>
       </View>
     )
   }
@@ -204,8 +206,9 @@ export default function HomePage() {
         <View className="hero-content">
           <Text className="app-title" onClick={handleTitleTap}>{t('app.title')}</Text>
           <Text className="app-subtitle">{t('app.subtitle')}</Text>
-          <View className="status-badge">
-            <Text className="status-text">{todayStatus}</Text>
+          <View className="streak-card">
+            <Text className="streak-emoji">🔥</Text>
+            <Text className="streak-text">{streak} {t('app.status.low').split('训练')[1] || 'Days'}</Text>
           </View>
         </View>
       </View>
@@ -215,11 +218,17 @@ export default function HomePage() {
            <Text className="app-description">{t('app.description')}</Text>
         </View>
 
-        <Text className="section-title">{t('panel.title')}</Text>
+        <View className="status-section">
+          <Text className="section-title">{t('panel.title')}</Text>
+          <View className="status-badge">
+            <Text className="status-text">{todayStatus}</Text>
+          </View>
+        </View>
+
         <View className="mode-grid">
-          {renderModeCard('easy', 'difficulty.easy')}
-          {renderModeCard('normal', 'difficulty.normal')}
-          {renderModeCard('pro', 'difficulty.pro')}
+          {renderModeCard('easy', 'difficulty.easy', '🍵')}
+          {renderModeCard('normal', 'difficulty.normal', '⚡')}
+          {renderModeCard('pro', 'difficulty.pro', '🚀')}
         </View>
 
         {!isUnlocked && (

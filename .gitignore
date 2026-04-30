@@ -8,3 +8,4 @@ project.private.config.json
 .env
 unpackage/
 .temp/
+reference_brain-plan/

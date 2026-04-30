@@ -5,8 +5,6 @@ import './styles/index.scss'
 
 function App({ children }: PropsWithChildren<any>) {
   useLaunch(() => {
-    console.log('BrainActive started!')
-    
     // Initialize default language if not set
     if (!getLang()) {
       setLang('en')

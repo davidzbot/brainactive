@@ -1,6 +1,8 @@
+@import "../../styles/theme.scss";
+
 .result-container {
   min-height: 100vh;
-  background-color: #f8fafc;
+  background-color: $bg-light;
   display: flex;
   flex-direction: column;
   padding: 0 0 60px 0;
@@ -9,82 +11,79 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
   .header-section {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-    padding: 60px 20px 100px 20px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    margin-bottom: -50px;
-    box-shadow: 0 15px 30px rgba(16, 185, 129, 0.25);
+    background: $bg-white;
+    padding: 60px 40px 40px 40px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: $shadow-soft;
+    margin-bottom: 40px;
 
     .result-title {
-      font-size: 42px;
+      font-size: 64px;
       font-weight: 900;
-      color: #ffffff;
+      color: $primary-color;
       display: block;
       margin-bottom: 16px;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     .streak-badge {
-      display: inline-block;
-      background: rgba(255, 255, 255, 0.25);
-      backdrop-filter: blur(10px);
+      display: inline-flex;
+      align-items: center; gap: 12px;
+      background: #fff7ed; border: 2px solid #fdba74;
       padding: 12px 32px;
-      border-radius: 40px;
+      border-radius: 50px;
       .streak-text {
-        color: #ffffff;
-        font-size: 22px;
-        font-weight: 800;
+        color: #c2410c;
+        font-size: 32px;
+        font-weight: 900;
       }
     }
   }
 
   .score-panel {
-    background: #ffffff;
+    background: $bg-white;
     border-radius: 40px;
     padding: 48px 32px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    box-shadow: $shadow-soft;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     margin: 0 auto 40px auto;
     width: 88%;
-    position: relative;
-    z-index: 10;
-    border: 1px solid #f1f5f9;
+    border: 2px solid #f1f5f9;
 
     .score-box, .time-box {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 16px;
       .score-label, .time-label {
-        font-size: 18px;
-        color: #64748b;
+        font-size: 28px;
+        color: $text-muted;
         font-weight: 800;
         text-transform: uppercase;
-        letter-spacing: 1.5px;
+        letter-spacing: 2px;
       }
       .score-value, .time-value {
-        font-size: 64px;
+        font-size: 80px;
         font-weight: 900;
-        color: #1e293b;
+        color: $text-main;
         line-height: 1;
       }
     }
     .score-value {
-      color: #2563eb;
+      color: $primary-color;
     }
     .time-value {
-      color: #059669;
+      color: $logic-color;
     }
   }
 
   .eval-section {
-    padding: 0 32px;
+    padding: 0 40px;
     margin-bottom: 60px;
     .eval-text {
-      font-size: 28px;
-      color: #1e293b;
-      line-height: 1.5;
+      font-size: 40px;
+      color: $text-main;
+      line-height: 1.4;
       font-weight: 800;
     }
   }
@@ -92,33 +91,33 @@
   .action-section {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    max-width: 360px;
+    gap: 24px;
+    max-width: 480px;
     margin: 0 auto;
-    width: 100%;
+    width: 90%;
     padding: 0 20px;
 
     .primary-btn {
-      background: #1e293b;
-      color: #ffffff;
-      padding: 24px;
-      border-radius: 24px;
-      font-size: 28px;
+      background: $primary-gradient;
+      color: $text-white;
+      padding: 32px;
+      border-radius: $button-radius;
+      font-size: 48px;
       font-weight: 900;
       border: none;
       height: auto;
       line-height: 1;
-      box-shadow: 0 15px 30px rgba(30, 41, 59, 0.3);
+      box-shadow: $shadow-bold;
     }
 
     .secondary-btn {
-      background: #ffffff;
-      color: #475569;
-      padding: 20px;
-      border-radius: 24px;
-      font-size: 20px;
+      background: $bg-white;
+      color: $primary-color;
+      padding: 24px;
+      border-radius: $button-radius;
+      font-size: 32px;
       font-weight: 800;
-      border: 3px solid #e2e8f0;
+      border: 4px solid #e2e8f0;
       height: auto;
       line-height: 1;
     }

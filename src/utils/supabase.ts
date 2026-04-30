@@ -5,15 +5,7 @@ const SUPABASE_URL = 'https://mqpunjvdrkqvionsjosl.supabase.co'
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1xcHVuanZkcmtxdmlvbnNqb3NsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0NTk5MTYsImV4cCI6MjA5MjAzNTkxNn0.QLjWtVdGvFgTajL5Q51MoAbLyV46inSFsIGtAJBDXbE'
 
 export async function fetchBrainActiveContent(type?: string, lang: string = 'en', limit: number = 20): Promise<any[]> {
-  // Debug: Simulate API failure
-  if (getStorage('simulate_api_fail')) {
-    console.warn('API: [SIMULATED FAILURE]')
-    setStorage('simulate_api_fail', false)
-    return []
-  }
-
   const url = `${SUPABASE_URL}/functions/v1/brainactive-get-content?lang=${lang}&limit=${limit}${type ? `&type=${type}` : ''}`
-  console.log('API START:', url)
 
   const fetchPromise = request({
     url,
@@ -23,27 +15,22 @@ export async function fetchBrainActiveContent(type?: string, lang: string = 'en'
       'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
       'apikey': SUPABASE_ANON_KEY
     },
-    timeout: 8000 // Taro internal timeout
+    timeout: 8000
   })
 
-  // Manual timeout race to ensure it never hangs
   const timeoutPromise = new Promise((_, reject) => {
     setTimeout(() => reject(new Error('TIMEOUT')), 10000)
   })
 
   try {
     const res: any = await Promise.race([fetchPromise, timeoutPromise])
-    console.log('API RESPONSE RAW:', JSON.stringify(res))
 
     if (res.statusCode === 200 && res.data && res.data.success) {
-      console.log('API SUCCESS:', type || 'all')
       return Array.isArray(res.data.data) ? res.data.data : []
     }
     
-    console.error('API FAIL:', res.statusCode, res.data)
     return []
   } catch (e) {
-    console.error('API EXCEPTION:', e.message || e)
     return []
   }
 }

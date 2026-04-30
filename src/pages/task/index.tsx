@@ -68,14 +68,11 @@ export default function TrainingPage() {
       setLoading(true)
       const lang = getLang()
       
-      // Safety timeout to prevent infinite loading screen
       const safetyTimer = setTimeout(() => {
         setLoading(false)
-        console.warn('TASK: Loading cleared by safety timeout')
       }, 5000)
 
       try {
-        console.log('TASK: Starting remote data load...')
         const results = await Promise.allSettled([
           fetchBrainActiveContent('name', lang, 20),
           fetchBrainActiveContent('city', lang, 20),
@@ -86,12 +83,6 @@ export default function TrainingPage() {
         const cities = results[1].status === 'fulfilled' ? results[1].value : []
         const sentences = results[2].status === 'fulfilled' ? results[2].value : []
 
-        console.log('TASK: Results settled', { 
-          namesCount: names.length, 
-          citiesCount: cities.length, 
-          sentencesCount: sentences.length 
-        })
-        
         if (names.length > 0 || cities.length > 0 || sentences.length > 0) {
           setRemoteData({
             names: names.map(i => i.value),
@@ -104,9 +95,6 @@ export default function TrainingPage() {
               }
             })
           })
-          console.log('TASK: Remote data load SUCCESS')
-        } else {
-          console.log('TASK: Remote data empty, using FALLBACK')
         }
 
         // Handle hardware back button
