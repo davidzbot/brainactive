@@ -89,8 +89,8 @@ export default function HomePage() {
 
   useLoad(() => {
     setLoading(true)
-    const savedLang = getLang() || 'en'
-    if (!getLang()) setLang('en')
+    const currentLang = getLang() || 'en'
+    setLanguage(currentLang)
     
     const savedDiff = getStorage('lastDifficulty') || 'easy'
     const savedStreak = getStorage('streak') || 0

@@ -96,8 +96,8 @@ export function getUserId(): string {
 /**
  * Get language preference
  */
-export function getLang(): string {
-  return getStorage('lang') || 'zh'
+export function getLang(): string | null {
+  return getStorage('lang')
 }
 
 /**
