@@ -1,23 +1,23 @@
 // BrainActive Theme Tokens
-// Matches WeChat Mini Program UI - Cheerful & Accessible
+// Matches WeChat Mini Program UI - Dark & Professional
 
-$primary-color: #4a90e2; // Trust & Intelligence
-$primary-gradient: linear-gradient(135deg, #4a90e2, #63b3ed);
-$bg-light: #f8fafc;
-$bg-white: #ffffff;
+$primary-color: #38bdf8; // Sky Blue
+$primary-gradient: linear-gradient(135deg, #38bdf8, #0ea5e9);
+$bg-light: #0f172a; // Dark Navy
+$bg-white: #1e293b; // Slate
 
 // Domain Colors
 $memory-color: #a855f7; // Purple
 $focus-color: #f5a623;  // Orange
-$speed-color: #4a90e2;  // Blue
+$speed-color: #38bdf8;  // Blue
 $logic-color: #10b981;  // Green
 
-$text-main: #1e293b;
-$text-muted: #64748b;
+$text-main: #f1f5f9;
+$text-muted: #94a3b8;
 $text-white: #ffffff;
 
-$success-color: #7ed321;
-$warning-color: #f5a623;
+$success-color: #10b981;
+$warning-color: #f59e0b;
 $error-color: #ef4444;
 
 $card-radius: 40rpx;
@@ -34,5 +34,5 @@ $spacing-base: 40rpx;
 $spacing-tight: 20rpx;
 $spacing-loose: 80rpx;
 
-$shadow-soft: 0 10px 25px rgba(0, 0, 0, 0.05);
-$shadow-bold: 0 15px 35px rgba(74, 144, 226, 0.25);
+$shadow-soft: 0 10px 25px rgba(0, 0, 0, 0.2);
+$shadow-bold: 0 15px 35px rgba(14, 165, 233, 0.3);

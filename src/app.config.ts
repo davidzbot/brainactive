@@ -7,6 +7,7 @@ export default defineAppConfig({
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#0f172a',
+    backgroundColor: '#0f172a',
     navigationBarTitleText: 'BrainActive',
     navigationBarTextStyle: 'white',
   },

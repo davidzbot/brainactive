@@ -201,15 +201,20 @@ export default function TrainingPage() {
       }
     } else {
       if (mathProblem) {
-        const opParts = mathProblem.op.split(' ... ')
-        if (opParts.length >= 2) {
-          // opStr = `${n1} ${op1} ${n2} ${op2} ${n3}`
-          // If we want to hide part of it: "10 + ... + 5 = ?"
-          // For simplicity we show the full op now as instructions
-          setInstruction(`🧮 ${mathProblem.op} = ?`)
-        } else {
-          setInstruction(`🧮 ${mathProblem.op} = ?`)
-        }
+        const isZh = getLang() === 'zh'
+        const opParts = mathProblem.op.split(' ')
+        // opStr = "10 + 20" or "10 + 20 + 30"
+        let maskedOp = ''
+        let numCount = 1
+        opParts.forEach(p => {
+          if (!isNaN(parseInt(p))) {
+            maskedOp += isZh ? `(数字 ${numCount})` : `(number ${numCount})`
+            numCount++
+          } else {
+            maskedOp += ` ${p} `
+          }
+        })
+        setInstruction(`🧮 ${maskedOp} = ?`)
       } else if (sequenceMode) {
         setInstruction(`🔢 ${t('task.order_them')}`)
       } else {
@@ -579,15 +584,15 @@ export default function TrainingPage() {
           <Button className="continue-btn" onClick={skipMemory}>
             {t('task.got_it')}
           </Button>
-          <Button className="back-btn" onClick={backToMemory}>
-            ← {t('task.back')}
-          </Button>
         </View>
       ) : (
         <View className="answer-phase">
           <View className="options-grid">
             {options.map((item, index) => renderOptionItem(item, index))}
           </View>
+          <Button className="back-btn" onClick={backToMemory}>
+            ← {t('task.back')}
+          </Button>
         </View>
       )}
 
