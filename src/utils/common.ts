@@ -17,7 +17,7 @@ export function setSafeTitle(title: string): void {
     } else if (typeof document !== 'undefined') {
       document.title = title
     }
-  } catch (e) {
+  } catch {
     if (typeof document !== 'undefined') {
       document.title = title
     }
@@ -35,7 +35,7 @@ export function isAdUnlocked(): boolean {
     const unlockUntil = getStorage('ad_unlock_until')
     if (!unlockUntil) return false
     return Date.now() < unlockUntil
-  } catch (e) {
+  } catch {
     return false
   }
 }

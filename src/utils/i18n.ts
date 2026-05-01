@@ -2,7 +2,7 @@
  * Professional Bilingual Support
  * Tone: Calm, Professional, Encouraging
  */
-const zh = {
+const zh: Record<string, string> = {
   'app.title': '大脑每日练 (BrainActive)',
   'app.subtitle': '科学认知训练 · 有效预防认知衰退',
   'app.description': '通过每日科学设计的脑力练习，激活大脑神经连接，帮助银发族有效预防老年痴呆，保持思维常青。',
@@ -71,7 +71,7 @@ const zh = {
   'common.streak': '连续打卡'
 };
 
-const en = {
+const en: Record<string, string> = {
   'app.title': 'BrainActive',
   'app.subtitle': 'Scientific Brain Training · Alzheimer\'s Prevention',
   'app.description': 'Daily cognitive exercises designed to activate neural connections, helping seniors maintain mental clarity and effectively prevent cognitive decline.',

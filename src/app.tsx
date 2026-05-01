@@ -12,7 +12,7 @@ function App({ children }: PropsWithChildren<any>) {
         const sysLang = Taro.getSystemInfoSync().language || ''
         const isChinese = sysLang.toLowerCase().includes('zh')
         setLang(isChinese ? 'zh' : 'en')
-      } catch (e) {
+      } catch {
         setLang('en')
       }
     }

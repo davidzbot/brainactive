@@ -30,7 +30,7 @@ export async function fetchBrainActiveContent(type?: string, lang: string = 'en'
     }
     
     return []
-  } catch (e) {
+  } catch {
     return []
   }
 }

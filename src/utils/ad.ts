@@ -2,8 +2,7 @@ import {
   AdMob, 
   RewardAdOptions, 
   RewardAdPluginEvents, 
-  AdLoadInfo, 
-  AdmobAds 
+  AdLoadInfo
 } from '@capacitor-community/admob';
 import { unlockAllModes } from './common';
 import { t } from './i18n';
@@ -31,7 +30,6 @@ export async function showRewardAd(): Promise<boolean> {
   try {
     // 1. Initialize AdMob
     await AdMob.initialize({
-      requestTrackingAuthorization: true,
       testingDevices: [],
       initializeForTesting: false,
     });
@@ -46,42 +44,40 @@ export async function showRewardAd(): Promise<boolean> {
 
     // 3. Define the Promise-based flow
     return new Promise((resolve) => {
-      let rewardEarned = false;
-
       // Event: Reward Received
-      const rewardListener = AdMob.addListener(RewardAdPluginEvents.Rewarded, (reward) => {
-        rewardEarned = true;
+      const rewardListener = AdMob.addListener(RewardAdPluginEvents.Rewarded, () => {
+        // reward earned
       });
 
       // Event: Ad Dismissed
-      const dismissListener = AdMob.addListener(RewardAdPluginEvents.Dismissed, () => {
-        cleanup();
+      const dismissListener = AdMob.addListener(RewardAdPluginEvents.Dismissed, async () => {
+        await cleanup();
         executeUnlock();
         resolve(true);
       });
 
       // Event: Failed to Load
-      const failedListener = AdMob.addListener(RewardAdPluginEvents.FailedToLoad, (info: AdLoadInfo) => {
+      const failedListener = AdMob.addListener(RewardAdPluginEvents.FailedToLoad, async (info: any) => {
         console.error('[AdMob] Failed to Load', info);
-        cleanup();
+        await cleanup();
         executeUnlock();
         resolve(true);
       });
 
       // Event: Failed to Show
-      const showFailedListener = AdMob.addListener(RewardAdPluginEvents.FailedToShow, (error) => {
+      const showFailedListener = AdMob.addListener(RewardAdPluginEvents.FailedToShow, async (error) => {
         console.error('[AdMob] Failed to Show', error);
-        cleanup();
+        await cleanup();
         executeUnlock();
         resolve(true);
       });
 
       // Helper: Remove listeners and hide loading
-      const cleanup = () => {
-        rewardListener.remove();
-        dismissListener.remove();
-        failedListener.remove();
-        showFailedListener.remove();
+      const cleanup = async () => {
+        (await rewardListener).remove();
+        (await dismissListener).remove();
+        (await failedListener).remove();
+        (await showFailedListener).remove();
         hideLoading();
         isAdLoading = false;
       };

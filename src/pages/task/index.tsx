@@ -58,7 +58,7 @@ export default function TrainingPage() {
     
     if (process.env.TARO_ENV === 'h5') {
       setLoading(true)
-      const lang = getLang()
+      const lang = getLang() || 'en'
       const safetyTimer = setTimeout(() => setLoading(false), 5000)
 
       try {
@@ -79,7 +79,7 @@ export default function TrainingPage() {
             sentences: sentences.map(i => {
               try {
                 return typeof i.value === 'string' ? JSON.parse(i.value) : i.value
-              } catch(e) {
+              } catch {
                 return { t: i.value, w: i.value }
               }
             })
@@ -109,7 +109,7 @@ export default function TrainingPage() {
           }
           goBack()
         })
-      } catch (e) {}
+      } catch { }
     }
     setupBack()
 
@@ -371,7 +371,7 @@ export default function TrainingPage() {
     try {
       const { Toast } = require('@capacitor/toast')
       await Toast.show({ text: msg, duration: 'short', position: 'center' })
-    } catch (e) { showToast({ title: msg, icon: 'none' }) }
+    } catch { showToast({ title: msg, icon: 'none' }) }
   }
 
   const renderTargetItem = (item: TaskItem, index: number) => {

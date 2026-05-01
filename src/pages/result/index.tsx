@@ -56,7 +56,7 @@ export default function ResultPage() {
         text: `${t('result.score')}: ${score}. ${evaluation}\n${cfg.text}`,
         url: SHARE_CONFIG.url,
       })
-    } catch (e) {}
+    } catch { }
   }
 
   return (

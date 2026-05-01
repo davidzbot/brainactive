@@ -68,7 +68,7 @@ export default function HomePage() {
         backListener = await App.addListener('backButton', () => {
           App.exitApp()
         })
-      } catch (e) {}
+      } catch { }
     }
     setupBackBtn()
     return () => {
@@ -195,7 +195,7 @@ export default function HomePage() {
         text: cfg.text,
         url: SHARE_CONFIG.url,
       })
-    } catch (e) {}
+    } catch { }
   }
 
   const handleTitleTap = () => {
