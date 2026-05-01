@@ -1,62 +1,64 @@
-# BrainActive Android (Capacitor)
+# BrainActive Android (Capacitor) - Developer Notes
 
-## Isolated Project Details
-- **Target**: H5 + Android (`h5` + Capacitor)
-- **Framework**: Taro 4 + React
-- **Lock System**: 24-hour ad-unlock system (simulated/ready for AdMob)
-- **Native APIs**: Capacitor (Share, Toast, Dialog, App)
-- **Positioning**: Scientific Brain Training & Alzheimer's Prevention for Seniors & Professionals.
-- **Reference**: `reference_brain-plan` (WeChat Mini Program version) used for UI/UX alignment.
+## Project Configuration (Reusable for Android Projects)
+- **Design Width**: `750px` (Configured in `config/index.js`). Use this scale for all pixel-to-viewport calculations.
+- **Base Package**: `com.brainactive.app`
+- **Build System**: Taro 4 + Webpack 5 + Capacitor 6
+- **Target Platform**: Android (API 24+)
+- **Output Directory**: `dist/h5` -> `android/app/src/main/assets/public`
 
-## UI/UX Design Standards (Updated for Professional Dark Theme)
+## Share Messaging & URLs
+Centralized in `src/config/share.ts` for zero-code message updates.
+
+### 1. Official Store Link (Predefined)
+- **URL**: `https://play.google.com/store/apps/details?id=com.brainactive.app`
+- **Purpose**: Direct user acquisition and "Invite Friends" feature.
+
+### 2. Marketing Placeholder (Fallback)
+- **URL**: `https://brainactive.app`
+- **Purpose**: Reserved for future custom landing page/PWA.
+
+### Shared Text Templates
+- **English**: "Train your brain daily with BrainActive. Stay sharp and focused."
+- **Chinese**: "每天训练大脑，保持清晰思维。"
+
+## UI/UX Design Standards (Professional Dark Theme)
 - **Accessibility**: Optimized for older users with significantly enlarged font sizes and high contrast.
-- **Layout**: Top-aligned content with consistent 2-column grid systems for Home and Task pages.
-- **Header Style**: Professional dark headers with linear gradients (linear-gradient(180deg, #1e293b 0%, #0f172a 100%)).
-- **Typography**: 
-  - Titles: 80px+ (Hero section)
-  - Subtitles/Descriptions: 32px - 34px
+- **Header Style**: Professional dark headers with linear gradients (`linear-gradient(180deg, #1e293b 0%, #0f172a 100%)`).
+- **Typography (750px Scale)**: 
+  - Main Titles: 80px+ (Hero section)
+  - Sub-labels: 32px - 34px
   - Instructions: 44px+
-  - Buttons/Cards: 48px+ bold text
-- **Color Palette (Professional Dark)**: 
+  - Buttons/Interactive: 48px+ bold text (min 100px touch target)
+- **Color Palette**: 
   - Primary: Sky Blue (`#38bdf8`)
-  - Easy Mode: Deep Green (`#064e3b`)
-  - Normal Mode: Deep Blue (`#1e3a8a`)
-  - Pro Mode: Deep Amber/Brown (`#451a03`)
-- **Interaction**: Extra-large rounded buttons (60px+ radius), polished 3D press effects (shadow-based), and scale feedback.
+  - Success/Easy: Deep Green (`#064e3b`)
+  - Info/Normal: Deep Blue (`#1e3a8a`)
+  - Warning/Pro: Deep Amber (`#451a03`)
 
-## UI Layout Improvements (Android)
-- **Full-Width Layout**: Removed `max-width` constraints (600px/640px) from all major containers to ensure the app uses the full screen width on Android devices, matching the WeChat version.
-- **Optimized Padding**: Reduced horizontal padding from 40px/24px to 16px to maximize content space and visual balance on mobile screens.
-- **Viewport Fix**: Updated viewport meta tag to `width=device-width, initial-scale=1, maximum-scale=1` for stable rendering.
-- **Edge-to-Edge Root**: Explicitly set `html, body, #app` to 100% width and height with zero margin/padding to prevent narrow "centered" appearance.
+## UI Layout Improvements (Android Specific)
+- **Edge-to-Edge**: `html, body, #app` set to 100% width/height. Removed all fixed `max-width` constraints.
+- **Padding**: Minimal horizontal padding (16px) to maximize screen real estate on narrow devices.
+- **Viewport**: `<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">`
 
-## Key Logic & Engagement
-- **Ad Unlock**: Real AdMob Rewarded Ads integration. One full watch unlocks all modes for 24 hours. Includes a safety fallback that unlocks features even if ad load fails or is dismissed early to maintain UX.
-- **Back to Review**: Answer phase allows returning to the memory phase (Back to Review) to reinforce cognitive retention.
-- **Daily Streak**: Tracks consecutive days of check-ins with prominent "Fire" emoji (🔥) to build addictive healthy habits.
-- **Top Alignment**: All pages (Home, Task, Result) start from the top with consistent padding and professional dashboard alignment.
-
-## Task Generation Logic (Production Standard)
-- **Task Types**: 
-  - 0: Names (Sequence-based in Normal/Pro)
-  - 1: Numbers (Calculation-based in Normal/Pro, Memory-only in Easy). **Answer phase masks real numbers with placeholders like "(number 1)" to test pure memory.**
-  - 2: Colors/Shapes (Sequence-based in Normal/Pro)
-  - 3: Cities (Sequence-based in Normal/Pro)
-  - 4: Sentences (Memory/Typo-detection)
+## Key Logic Components
+- **24-Hour Ad Unlock**: WATCH -> UNLOCK ALL (24h). 
+  - Logic stored in `src/utils/common.ts` (`isAdUnlocked`, `unlockAllModes`).
+  - Native AdMob integration in `src/utils/ad.ts`.
+- **Daily Usage Guard**: `canPlayMode(level)` allows 1 free play per mode per day before requiring ad unlock.
+- **Bilingual Support**: `src/utils/i18n.ts` with auto-detection of system language on first launch.
 
 ## Production QA & Security
-- **AdMob Setup**: Mandatory `meta-data` tag in `AndroidManifest.xml` and `appId` in `capacitor.config.json`. Detailed instructions in `ADMOB_README.md`.
-- **Debug Logs**: Custom `[AdMob]` prefixed logs for tracking ad lifecycle (LOAD, SHOW, REWARD, DISMISS).
-- **Final Result Tracking**: Console outputs `RESULT: REAL_AD_SHOWN` or `RESULT: FALLBACK_TRIGGERED` to verify ad efficacy.
-- **Debug Backdoor**: Tap title 10 times to access debug tools (Action Sheet).
-- **Network Resilience**: Uses `Promise.allSettled` and race-timeouts (8-10s) to ensure the UI never hangs on slow connections.
-- **Memory Optimization**: Minimal asset size and clean build patterns for small APK footprint.
+- **AdMob**: `isTesting: false` and `initializeForTesting: false` for production.
+- **Backdoor**: Tap app title 10 times to trigger debug Action Sheet (Force Unlock / Reset Storage).
+- **Network**: 8-10s race-timeouts on Supabase fetches to prevent UI blocking.
 
 ## Build Commands
 ```bash
 npm install
-npm run build:android
+npm run build:android  # (taro build --type h5 && npx cap sync android)
 ```
 
-## Feedback
+## Feedback & Support
 Email: pslehero@gmail.com
+Project Version: 1.0.0
