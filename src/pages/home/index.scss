@@ -77,11 +77,11 @@
 
   .main-content {
     flex: 1; display: flex; flex-direction: column;
-    gap: 40px; max-width: 640px; margin: 0 auto;
-    width: 92%; padding: 40px 0 80px 0;
+    gap: 40px; width: 100%; margin: 0;
+    padding: 40px 16px 80px 16px;
 
     .description-box {
-      background: rgba(30, 41, 59, 0.7); padding: 40px; border-radius: 48px;
+      background: rgba(30, 41, 59, 0.7); padding: 40px 24px; border-radius: 48px;
       border: 2px solid rgba(255, 255, 255, 0.05);
       .app-description {
         font-size: 34px; color: $text-main; line-height: 1.6; font-weight: 600;
@@ -312,4 +312,6 @@
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+(360deg); }
 }

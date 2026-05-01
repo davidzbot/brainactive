@@ -3,7 +3,7 @@
 .training-container {
   min-height: 100vh;
   background-color: $bg-light;
-  padding: $safe-top 24px 40px 24px;
+  padding: $safe-top 16px 40px 16px;
   padding-top: $safe-top-env;
   box-sizing: border-box;
   display: flex;
@@ -29,12 +29,11 @@
   /* Fixed Top Bar */
   .header {
     width: 100%;
-    max-width: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 24px;
-    padding: 20px 32px;
+    padding: 20px 24px;
     background: rgba(30, 41, 59, 0.6);
     border-radius: 24px;
     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -55,7 +54,6 @@
   .main-stage {
     flex: 1;
     width: 100%;
-    max-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;

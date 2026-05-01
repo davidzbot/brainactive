@@ -24,6 +24,12 @@
   - Pro Mode: Deep Amber/Brown (`#451a03`)
 - **Interaction**: Extra-large rounded buttons (60px+ radius), polished 3D press effects (shadow-based), and scale feedback.
 
+## UI Layout Improvements (Android)
+- **Full-Width Layout**: Removed `max-width` constraints (600px/640px) from all major containers to ensure the app uses the full screen width on Android devices, matching the WeChat version.
+- **Optimized Padding**: Reduced horizontal padding from 40px/24px to 16px to maximize content space and visual balance on mobile screens.
+- **Viewport Fix**: Updated viewport meta tag to `width=device-width, initial-scale=1, maximum-scale=1` for stable rendering.
+- **Edge-to-Edge Root**: Explicitly set `html, body, #app` to 100% width and height with zero margin/padding to prevent narrow "centered" appearance.
+
 ## Key Logic & Engagement
 - **Ad Unlock**: Real AdMob Rewarded Ads integration. One full watch unlocks all modes for 24 hours. Includes a safety fallback that unlocks features even if ad load fails or is dismissed early to maintain UX.
 - **Back to Review**: Answer phase allows returning to the memory phase (Back to Review) to reinforce cognitive retention.

@@ -15,7 +15,7 @@
 
   .header-section {
     background: $bg-white;
-    padding: 60px 40px 40px 40px;
+    padding: 60px 16px 40px 16px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     box-shadow: $shadow-soft;
@@ -50,8 +50,8 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin: 0 auto 40px auto;
-    width: 88%;
+    margin: 0 0 40px 0;
+    width: 100%;
     border: 2px solid #334155;
 
     .score-box, .time-box {
@@ -95,9 +95,8 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    max-width: 480px;
-    margin: 0 auto;
-    width: 90%;
+    width: 100%;
+    margin: 0;
     padding: 0 20px;
 
     .primary-btn {
