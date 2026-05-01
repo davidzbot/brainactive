@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { View, Text, Button } from '@tarojs/components'
 import Taro, { useLoad, navigateTo, reLaunch } from '@tarojs/taro'
-import { getStorage, setStorage } from '@/utils/storage'
+import { getStorage, setStorage, getLang } from '@/utils/storage'
 import { formatDate, setSafeTitle } from '@/utils/common'
 import { t } from '@/utils/i18n'
+import { SHARE_CONFIG } from '@/config/share'
 import './index.scss'
 
 export default function ResultPage() {
@@ -47,10 +48,13 @@ export default function ResultPage() {
   const handleShare = async () => {
     try {
       const { Share } = require('@capacitor/share')
+      const lang = getLang() || 'en'
+      const cfg = lang === 'zh' ? SHARE_CONFIG.zh : SHARE_CONFIG.en
+      
       await Share.share({
-        title: t('app.title'),
-        text: `${t('result.score')}: ${score}. ${evaluation}`,
-        url: 'https://brainactive.app',
+        title: cfg.title,
+        text: `${t('result.score')}: ${score}. ${evaluation}\n${cfg.text}`,
+        url: SHARE_CONFIG.url,
       })
     } catch (e) {}
   }

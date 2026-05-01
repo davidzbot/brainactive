@@ -6,6 +6,7 @@ import { isAdUnlocked, unlockAllModes, canPlayMode, formatDate, parseDateSafe, s
 import { showRewardAd } from '@/utils/ad'
 import { dataUtils } from '@/utils/data'
 import { t } from '@/utils/i18n'
+import { SHARE_CONFIG } from '@/config/share'
 import './index.scss'
 
 export default function HomePage() {
@@ -173,10 +174,11 @@ export default function HomePage() {
   const handleInvite = async () => {
     try {
       const { Share } = require('@capacitor/share')
+      const cfg = language === 'zh' ? SHARE_CONFIG.zh : SHARE_CONFIG.en
       await Share.share({
-        title: t('app.title'),
-        text: t('invite.text'),
-        url: 'https://brainactive.app',
+        title: cfg.title,
+        text: cfg.text,
+        url: SHARE_CONFIG.url,
         dialogTitle: t('button.invite'),
       })
     } catch (e) {
@@ -187,10 +189,11 @@ export default function HomePage() {
   const handleShare = async () => {
     try {
       const { Share } = require('@capacitor/share')
+      const cfg = language === 'zh' ? SHARE_CONFIG.zh : SHARE_CONFIG.en
       await Share.share({
-        title: t('app.title'),
-        text: t('app.subtitle'),
-        url: 'https://brainactive.app',
+        title: cfg.title,
+        text: cfg.text,
+        url: SHARE_CONFIG.url,
       })
     } catch (e) {}
   }
