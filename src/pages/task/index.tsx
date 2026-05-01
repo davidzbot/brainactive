@@ -18,7 +18,7 @@ interface TaskItem {
 
 export default function TrainingPage() {
   const [currentStep, setCurrentStep] = useState(1)
-  const [totalSteps] = useState(3)
+  const [totalSteps] = useState(5)
   const [showMemoryPhase, setShowMemoryPhase] = useState(true)
   const [instruction, setInstruction] = useState('')
   const [taskQueue, setTaskQueue] = useState<number[]>([])
@@ -140,7 +140,7 @@ export default function TrainingPage() {
 
   const initTasks = () => {
     const allTasks = [0, 1, 2, 3, 4]
-    const tasks = shuffle(allTasks).slice(0, 3)
+    const tasks = shuffle(allTasks)
     setTaskQueue(tasks)
   }
 

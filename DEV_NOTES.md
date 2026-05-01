@@ -59,6 +59,19 @@ npm install
 npm run build:android  # (taro build --type h5 && npx cap sync android)
 ```
 
+## Technical Lessons Learned & Best Practices
+- **AdMob Integration (Capacitor)**:
+  - `AdMob.addListener` returns a `Promise<PluginListenerHandle>`. Always `await` the handle before calling `.remove()` to prevent memory leaks and unexpected behavior.
+  - Correct initialization options: `initializeForTesting: false` for production. `requestTrackingAuthorization` is no longer a direct property in recent initialization schemas.
+  - Event type safety: Some events (like `FailedToLoad`) may require `any` or specialized error interfaces instead of generic `AdLoadInfo`.
+- **TypeScript Optimization**:
+  - Use **Optional Catch Binding** (`catch { ... }`) when the error object is not used.
+  - Use explicit `Record<string, string>` types for dictionaries to ensure type safety when indexing with dynamic keys.
+  - Ensure all variables passed to API functions (like `lang` from `getLang()`) have defined fallbacks (e.g., `getLang() || 'en'`) to satisfy strict null checks.
+- **Android Build & Gradle (Groovy)**:
+  - Use `_` for unused catch parameters in `build.gradle` (e.g., `catch(Exception _)` ) to resolve lint warnings.
+  - Use `getDefaultProguardFile('proguard-android-optimize.txt')` in `build.gradle` for production builds to enable more aggressive code shrinking and optimization.
+
 ## Feedback & Support
 Email: pslehero@gmail.com
 Project Version: 1.0.0
