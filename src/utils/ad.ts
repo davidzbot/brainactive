@@ -19,7 +19,7 @@ const TEST_AD_UNIT_ID = 'ca-app-pub-3940256099942544/5224354917';
 
 const REWARD_AD_UNIT_ID = USE_TEST_AD ? TEST_AD_UNIT_ID : REAL_AD_UNIT_ID;
 
-let isAdLoading = false;
+let isShowingAd = false; // Global lock to prevent multiple concurrent ads
 let isInitialized = false;
 let isPrepared = false;
 
@@ -47,7 +47,7 @@ export async function initAdMob(): Promise<void> {
  * Preload a rewarded ad in the background
  */
 async function preloadRewardAd(): Promise<void> {
-  if (!isInitialized || isAdLoading) return;
+  if (!isInitialized || isShowingAd) return;
   
   try {
     const options: RewardAdOptions = {
@@ -75,25 +75,30 @@ function setupAdListeners() {
 
   AdMob.addListener(RewardAdPluginEvents.Dismissed, () => {
     isPrepared = false;
-    preloadRewardAd(); 
+    if (!isShowingAd) preloadRewardAd(); 
   });
 }
 
 /**
- * Integrated showRewardAd function - Event Driven
+ * Integrated showRewardAd function - Event Driven with Global Lock
  */
 export async function showRewardAd(): Promise<boolean> {
   const platform = Capacitor.getPlatform();
   
-  if (isAdLoading) return false;
+  // 1. Check Global Lock
+  if (isShowingAd) {
+    console.log('[AD_DEBUG] SHOW_SKIPPED_ALREADY_SHOWING');
+    return false;
+  }
   
-  // Web/H5 fallback (Mock reward for dev/web environment)
+  // Web/H5 fallback
   if (platform === 'web') {
     executeUnlock();
     return true;
   }
 
-  isAdLoading = true;
+  isShowingAd = true;
+  console.log('[AD_DEBUG] SHOW_CALLED');
   showLoading({ title: t('task.loading'), mask: true });
 
   try {
@@ -124,44 +129,44 @@ export async function showRewardAd(): Promise<boolean> {
         clearTimeout(timeoutId);
         cleanupListeners();
         hideLoading();
-        isAdLoading = false;
+        
+        isShowingAd = false; // Release Global Lock
         isPrepared = false;
         
         if (rewarded) {
           executeUnlock();
         } else {
-          // Fail-open: still grant reward if ad failed to load/show to protect UX
-          // but distinction is kept in logic for future strict enforcement if needed
+          // Fail-open for UX consistency
           executeUnlock();
         }
         
-        preloadRewardAd(); // Fetch next for future use
+        preloadRewardAd(); // Fetch next
         resolve(true);
       };
 
       let listeners: any[] = [];
       const cleanupListeners = async () => {
         for (const l of listeners) {
-          const handler = await l;
-          handler.remove();
+          try {
+            const handler = await l;
+            handler.remove();
+          } catch (e) {}
         }
       };
 
-      // 1. Reward event - The gold standard
+      // Register listeners for this specific show attempt
       listeners.push(AdMob.addListener(RewardAdPluginEvents.Rewarded, () => {
         rewardEarned = true;
       }));
 
-      // 2. Dismiss event - Happens AFTER user closes ad
       listeners.push(AdMob.addListener(RewardAdPluginEvents.Dismissed, () => {
         finish(rewardEarned);
       }));
 
-      // 3. Failure events
       listeners.push(AdMob.addListener(RewardAdPluginEvents.FailedToLoad, () => finish(false)));
       listeners.push(AdMob.addListener(RewardAdPluginEvents.FailedToShow, () => finish(false)));
 
-      // 4. Safety Timeout (20s max for the PLUGIN to trigger the ad)
+      // Safety Timeout (20s)
       const timeoutId = setTimeout(() => {
         finish(false);
       }, 20000);
@@ -177,7 +182,7 @@ export async function showRewardAd(): Promise<boolean> {
 
   } catch (e) {
     hideLoading();
-    isAdLoading = false;
+    isShowingAd = false;
     executeUnlock();
     return true;
   }
