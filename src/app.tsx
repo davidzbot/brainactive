@@ -1,6 +1,7 @@
 import { PropsWithChildren } from 'react'
 import Taro, { useLaunch } from '@tarojs/taro'
 import { getLang, setLang } from '@/utils/storage'
+import { initAdMob } from '@/utils/ad'
 import './styles/index.scss'
 
 function App({ children }: PropsWithChildren<any>) {
@@ -16,6 +17,9 @@ function App({ children }: PropsWithChildren<any>) {
         setLang('en')
       }
     }
+
+    // Initialize AdMob
+    initAdMob()
   })
 
   return children

@@ -379,7 +379,7 @@ export default function TrainingPage() {
       return <View key={index} className={`target-shape ${item.shapeClass}`} style={{ backgroundColor: item.colorHex }} />
     }
     return (
-      <View key={index} className={`target-item ${taskType === 4 ? 'is-sentence' : ''}`}>
+      <View key={index} className={`target-item ${taskType === 4 ? 'is-sentence' : ''} ${taskType === 1 ? 'is-number' : ''}`}>
         <Text className="target-text">{item.display}</Text>
       </View>
     )
@@ -391,7 +391,7 @@ export default function TrainingPage() {
     return (
       <View 
         key={index}
-        className={`option-item ${isSelected ? 'selected' : ''} ${taskType === 4 ? 'is-sentence' : ''} ${isColorShapeAns ? 'is-colorshape-ans' : ''}`}
+        className={`option-item ${isSelected ? 'selected' : ''} ${taskType === 4 ? 'is-sentence' : ''} ${isColorShapeAns ? 'is-colorshape-ans' : ''} ${taskType === 1 ? 'is-number' : ''}`}
         onClick={() => selectOption(item)}
       >
         <Text className="option-text">{item.display}</Text>
@@ -427,7 +427,7 @@ export default function TrainingPage() {
         </View>
 
         {/* Question Text */}
-        <View className="instruction">
+        <View className={`instruction ${taskType === 4 ? 'is-sentence' : ''}`}>
           <Text className="instruction-text">{instruction}</Text>
         </View>
 

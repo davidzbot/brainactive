@@ -147,6 +147,7 @@ export default function HomePage() {
 
   const handleWatchAd = async () => {
     if (adLoading) return
+    console.log("[AD_DEBUG] CLICKED_WATCH_AD");
     setAdLoading(true)
     const success = await showRewardAd()
     setAdLoading(false)

@@ -4,6 +4,7 @@ import {
   RewardAdPluginEvents, 
   AdLoadInfo
 } from '@capacitor-community/admob';
+import { Capacitor } from '@capacitor/core';
 import { unlockAllModes } from './common';
 import { t } from './i18n';
 import { Toast } from '@capacitor/toast';
@@ -12,98 +13,156 @@ import Taro, { showLoading, hideLoading } from '@tarojs/taro';
 /**
  * AdMob Configuration
  */
-const REWARD_AD_UNIT_ID = 'ca-app-pub-8548627206908979/6689305699';
+const USE_TEST_AD = false; 
+const REAL_AD_UNIT_ID = 'ca-app-pub-8548627206908979/6689305699';
+const TEST_AD_UNIT_ID = 'ca-app-pub-3940256099942544/5224354917';
+
+const REWARD_AD_UNIT_ID = USE_TEST_AD ? TEST_AD_UNIT_ID : REAL_AD_UNIT_ID;
+
 let isAdLoading = false;
+let isInitialized = false;
+let isPrepared = false;
+
+/**
+ * Initialize AdMob and Preload the first ad
+ */
+export async function initAdMob(): Promise<void> {
+  const platform = Capacitor.getPlatform();
+  if (isInitialized || platform === 'web') return;
+  
+  try {
+    await AdMob.initialize({
+      testingDevices: [],
+      initializeForTesting: USE_TEST_AD,
+    });
+    isInitialized = true;
+    setupAdListeners();
+    preloadRewardAd();
+  } catch (e) {
+    console.error('AdMob: Init failed', e);
+  }
+}
+
+/**
+ * Preload a rewarded ad in the background
+ */
+async function preloadRewardAd(): Promise<void> {
+  if (!isInitialized || isAdLoading) return;
+  
+  try {
+    const options: RewardAdOptions = {
+      adId: REWARD_AD_UNIT_ID,
+      isTesting: USE_TEST_AD,
+    };
+    await AdMob.prepareRewardVideoAd(options);
+  } catch (e) {
+    console.error('AdMob: Preload failed', e);
+  }
+}
+
+function setupAdListeners() {
+  AdMob.addListener(RewardAdPluginEvents.Loaded, (info: AdLoadInfo) => {
+    isPrepared = true;
+  });
+  
+  AdMob.addListener(RewardAdPluginEvents.FailedToLoad, (info: any) => {
+    isPrepared = false;
+  });
+
+  AdMob.addListener(RewardAdPluginEvents.FailedToShow, (error) => {
+    isPrepared = false;
+  });
+
+  AdMob.addListener(RewardAdPluginEvents.Dismissed, () => {
+    isPrepared = false;
+    preloadRewardAd(); 
+  });
+}
 
 /**
  * Integrated showRewardAd function
- * Enhanced with production debug logging
  */
 export async function showRewardAd(): Promise<boolean> {
-  if (isAdLoading) {
-    return false;
+  const platform = Capacitor.getPlatform();
+  
+  if (isAdLoading) return false;
+  
+  // Web fallback (Business logic remains)
+  if (platform === 'web') {
+    executeUnlock();
+    return true;
   }
 
   isAdLoading = true;
   showLoading({ title: t('task.loading'), mask: true });
 
   try {
-    // 1. Initialize AdMob
-    await AdMob.initialize({
-      testingDevices: [],
-      initializeForTesting: false,
-    });
+    if (!isInitialized) await initAdMob();
 
-    // 2. Prepare Rewarded Ad
-    const options: RewardAdOptions = {
-      adId: REWARD_AD_UNIT_ID,
-      isTesting: false,
-    };
-    
-    await AdMob.prepareRewardVideoAd(options);
+    // On-demand prep if background preload hasn't finished
+    if (!isPrepared) {
+      const options: RewardAdOptions = {
+        adId: REWARD_AD_UNIT_ID,
+        isTesting: USE_TEST_AD,
+      };
+      try {
+        await AdMob.prepareRewardVideoAd(options);
+        // Small wait buffer for on-demand load
+        await new Promise(r => setTimeout(r, 2000)); 
+      } catch (e) {}
+    }
 
-    // 3. Define the Promise-based flow
     return new Promise((resolve) => {
-      // Event: Reward Received
-      const rewardListener = AdMob.addListener(RewardAdPluginEvents.Rewarded, () => {
-        // reward earned
-      });
+      let resolved = false;
 
-      // Event: Ad Dismissed
-      const dismissListener = AdMob.addListener(RewardAdPluginEvents.Dismissed, async () => {
-        await cleanup();
-        executeUnlock();
+      const finish = (success: boolean) => {
+        if (resolved) return;
+        resolved = true;
+        cleanup();
+        executeUnlock(); // UX First: Always grant reward (fail-open)
         resolve(true);
-      });
+      };
 
-      // Event: Failed to Load
-      const failedListener = AdMob.addListener(RewardAdPluginEvents.FailedToLoad, async (info: any) => {
-        console.error('[AdMob] Failed to Load', info);
-        await cleanup();
-        executeUnlock();
-        resolve(true);
-      });
-
-      // Event: Failed to Show
-      const showFailedListener = AdMob.addListener(RewardAdPluginEvents.FailedToShow, async (error) => {
-        console.error('[AdMob] Failed to Show', error);
-        await cleanup();
-        executeUnlock();
-        resolve(true);
-      });
-
-      // Helper: Remove listeners and hide loading
-      const cleanup = async () => {
-        (await rewardListener).remove();
-        (await dismissListener).remove();
-        (await failedListener).remove();
-        (await showFailedListener).remove();
+      const cleanup = () => {
         hideLoading();
         isAdLoading = false;
+        isPrepared = false; 
+        preloadRewardAd(); 
       };
 
-      // Helper: Execute the 24h unlock (Business Logic Unchanged)
-      const executeUnlock = () => {
-        unlockAllModes();
-        Toast.show({
-          text: t('app.unlimited'),
-          duration: 'short',
-          position: 'bottom'
+      const dismissListener = AdMob.addListener(RewardAdPluginEvents.Dismissed, () => finish(true));
+      const failedListener = AdMob.addListener(RewardAdPluginEvents.FailedToLoad, () => finish(false));
+      const showFailedListener = AdMob.addListener(RewardAdPluginEvents.FailedToShow, () => finish(false));
+
+      // 15s timeout safety
+      const timeoutId = setTimeout(() => finish(false), 15000);
+
+      if (isPrepared) {
+        AdMob.showRewardVideoAd().catch(e => {
+          clearTimeout(timeoutId);
+          finish(false);
         });
-      };
-
-      // 4. Show the ad
-      AdMob.showRewardVideoAd();
+      } else {
+        clearTimeout(timeoutId);
+        finish(false);
+      }
     });
 
   } catch (e) {
-    console.error('[AdMob] Exception', e);
-    
     hideLoading();
     isAdLoading = false;
-    unlockAllModes();
+    executeUnlock();
     return true;
   }
+}
+
+function executeUnlock() {
+  unlockAllModes();
+  Toast.show({
+    text: t('app.unlimited'),
+    duration: 'short',
+    position: 'bottom'
+  });
 }
 
 /**

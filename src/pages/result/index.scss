@@ -9,34 +9,34 @@
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   
-  padding-top: $safe-top;
-  padding-top: $safe-top-env;
+  padding-top: 80px;
+  padding-top: calc(env(safe-area-inset-top) + 80px);
   padding-bottom: 60px;
 
   .header-section {
     background: $bg-white;
-    padding: 60px 16px 40px 16px;
+    padding: 40px 16px 40px 16px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
     box-shadow: $shadow-soft;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 
     .result-title {
-      font-size: 64px;
+      font-size: 72px;
       font-weight: 900;
       color: #ffffff;
       display: block;
-      margin-bottom: 16px;
+      margin-bottom: 24px;
     }
     .streak-badge {
       display: inline-flex;
       align-items: center; gap: 12px;
       background: rgba(255, 247, 237, 0.1); border: 2px solid #fdba74;
-      padding: 12px 32px;
+      padding: 16px 40px;
       border-radius: 50px;
       .streak-text {
         color: #fdba74;
-        font-size: 32px;
+        font-size: 36px;
         font-weight: 900;
       }
     }
@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin: 0 0 40px 0;
+    margin: 0 0 32px 0;
     width: 100%;
     border: 2px solid #334155;
 
@@ -59,14 +59,14 @@
       flex-direction: column;
       gap: 16px;
       .score-label, .time-label {
-        font-size: 28px;
+        font-size: 32px;
         color: $text-muted;
         font-weight: 800;
         text-transform: uppercase;
         letter-spacing: 2px;
       }
       .score-value, .time-value {
-        font-size: 80px;
+        font-size: 110px;
         font-weight: 900;
         color: $text-main;
         line-height: 1;
@@ -82,9 +82,9 @@
 
   .eval-section {
     padding: 0 40px;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
     .eval-text {
-      font-size: 40px;
+      font-size: 48px;
       color: $text-main;
       line-height: 1.4;
       font-weight: 800;

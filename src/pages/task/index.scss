@@ -3,8 +3,8 @@
 .training-container {
   min-height: 100vh;
   background-color: $bg-light;
-  padding: $safe-top 16px 40px 16px;
-  padding-top: $safe-top-env;
+  padding: 80px 16px 40px 16px;
+  padding-top: calc(env(safe-area-inset-top) + 80px);
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -50,21 +50,22 @@
     }
   }
 
-  /* Main Content Area - Vertically Centered */
+  /* Main Content Area - Aligned to Top */
   .main-stage {
     flex: 1;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: 20px;
     padding-bottom: 40px;
 
     /* Stage Clarity Label */
     .stage-clarity {
-      margin-bottom: 12px;
+      margin-bottom: 16px;
       text-align: center;
       .stage-text {
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 700;
         color: $primary-color;
         text-transform: uppercase;
@@ -75,15 +76,20 @@
 
     /* Question Section */
     .instruction {
-      margin-bottom: 24px;
+      margin-bottom: 32px;
       padding: 0 16px;
+      width: 100%;
+      box-sizing: border-box;
       .instruction-text {
-        font-size: 38px;
+        font-size: 52px;
         font-weight: 900;
         color: #ffffff;
         display: block;
-        text-align: center;
-        line-height: 1.4;
+        text-align: left;
+        line-height: 1.3;
+      }
+      &.is-sentence .instruction-text {
+        font-size: 44px;
       }
     }
 
@@ -115,14 +121,17 @@
 
           .target-item {
             width: 100%;
-            text-align: center;
+            text-align: left;
             &.is-sentence {
               text-align: left;
-              padding: 16px 24px;
+              padding: 20px 24px;
               background: rgba(14, 165, 233, 0.05);
               border-radius: 16px;
             }
-            .target-text { font-size: 48px; font-weight: 900; color: #ffffff; }
+            &.is-number {
+              text-align: center;
+            }
+            .target-text { font-size: 64px; font-weight: 900; color: #ffffff; }
           }
 
           .target-shape {
@@ -164,27 +173,27 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 32px;
+        gap: 40px;
 
         /* Single Column Answer List */
         .options-grid {
           display: flex;
           flex-direction: column;
-          gap: 16px;
+          gap: 24px;
           width: 100%;
 
           .option-item {
             background: $bg-white;
-            padding: 24px 32px;
-            border-radius: 24px;
-            box-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+            padding: 32px 40px;
+            border-radius: 32px;
+            box-shadow: 0 6px 0 rgba(0, 0, 0, 0.3);
             border: 1px solid rgba(255, 255, 255, 0.05);
             transition: all 0.1s ease;
             text-align: left;
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            min-height: 110px;
+            min-height: 140px;
             height: auto;
             width: 100%;
             box-sizing: border-box;
@@ -193,23 +202,28 @@
               border-color: $primary-color;
               background: rgba(56, 189, 248, 0.1);
               transform: translateY(2px);
-              box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+              box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
             }
             
+            &.is-number {
+              justify-content: center;
+              .option-text { text-align: center; }
+            }
+
             &:active {
               background: rgba(255, 255, 255, 0.05);
               transform: scale(0.99);
             }
 
             .option-text {
-              font-size: 36px;
-              font-weight: 800;
+              font-size: 64px;
+              font-weight: 900;
               color: #ffffff;
               line-height: 1.2;
             }
 
             &.is-sentence .option-text {
-              font-size: 32px;
+              font-size: 52px;
             }
           }
         }
