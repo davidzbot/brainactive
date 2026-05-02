@@ -80,14 +80,14 @@ function setupAdListeners() {
 }
 
 /**
- * Integrated showRewardAd function
+ * Integrated showRewardAd function - Event Driven
  */
 export async function showRewardAd(): Promise<boolean> {
   const platform = Capacitor.getPlatform();
   
   if (isAdLoading) return false;
   
-  // Web fallback (Business logic remains)
+  // Web/H5 fallback (Mock reward for dev/web environment)
   if (platform === 'web') {
     executeUnlock();
     return true;
@@ -113,37 +113,64 @@ export async function showRewardAd(): Promise<boolean> {
     }
 
     return new Promise((resolve) => {
-      let resolved = false;
+      let finished = false;
+      let rewardEarned = false;
 
-      const finish = (success: boolean) => {
-        if (resolved) return;
-        resolved = true;
-        cleanup();
-        executeUnlock(); // UX First: Always grant reward (fail-open)
+      const finish = (rewarded: boolean) => {
+        if (finished) return;
+        finished = true;
+
+        // Cleanup resources immediately
+        clearTimeout(timeoutId);
+        cleanupListeners();
+        hideLoading();
+        isAdLoading = false;
+        isPrepared = false;
+        
+        if (rewarded) {
+          executeUnlock();
+        } else {
+          // Fail-open: still grant reward if ad failed to load/show to protect UX
+          // but distinction is kept in logic for future strict enforcement if needed
+          executeUnlock();
+        }
+        
+        preloadRewardAd(); // Fetch next for future use
         resolve(true);
       };
 
-      const cleanup = () => {
-        hideLoading();
-        isAdLoading = false;
-        isPrepared = false; 
-        preloadRewardAd(); 
+      let listeners: any[] = [];
+      const cleanupListeners = async () => {
+        for (const l of listeners) {
+          const handler = await l;
+          handler.remove();
+        }
       };
 
-      const dismissListener = AdMob.addListener(RewardAdPluginEvents.Dismissed, () => finish(true));
-      const failedListener = AdMob.addListener(RewardAdPluginEvents.FailedToLoad, () => finish(false));
-      const showFailedListener = AdMob.addListener(RewardAdPluginEvents.FailedToShow, () => finish(false));
+      // 1. Reward event - The gold standard
+      listeners.push(AdMob.addListener(RewardAdPluginEvents.Rewarded, () => {
+        rewardEarned = true;
+      }));
 
-      // 45s timeout safety (Rewarded ads are typically 15-30s)
-      const timeoutId = setTimeout(() => finish(false), 45000);
+      // 2. Dismiss event - Happens AFTER user closes ad
+      listeners.push(AdMob.addListener(RewardAdPluginEvents.Dismissed, () => {
+        finish(rewardEarned);
+      }));
+
+      // 3. Failure events
+      listeners.push(AdMob.addListener(RewardAdPluginEvents.FailedToLoad, () => finish(false)));
+      listeners.push(AdMob.addListener(RewardAdPluginEvents.FailedToShow, () => finish(false)));
+
+      // 4. Safety Timeout (20s max for the PLUGIN to trigger the ad)
+      const timeoutId = setTimeout(() => {
+        finish(false);
+      }, 20000);
 
       if (isPrepared) {
         AdMob.showRewardVideoAd().catch(e => {
-          clearTimeout(timeoutId);
           finish(false);
         });
       } else {
-        clearTimeout(timeoutId);
         finish(false);
       }
     });

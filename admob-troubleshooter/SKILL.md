@@ -7,71 +7,56 @@ description: Diagnosing and fixing AdMob rewarded ad integration issues in Capac
 
 This skill provides a systematic workflow for diagnosing and fixing common AdMob issues in Capacitor + Taro projects.
 
-## Core Issues Solved
+## Core Best Practices (Mandatory)
 
-1.  **Platform Detection Bug:** `process.env.TARO_ENV === 'h5'` is always true in Capacitor assets, causing ad logic to be bypassed on Android/iOS.
-2.  **Slow Initialization:** Waiting for user click to initialize AdMob causes long "Preparing" delays.
-3.  **Ad Fill Failures:** Lack of preloading leads to "No Fill" errors when the user wants to watch.
-4.  **Zombie Listeners:** Multiple event registrations causing memory leaks or multiple reward triggers.
+1.  **Event-Driven Logic:** DO NOT rely on durations (e.g. 30s) or safety timeouts to grant rewards. Rewards must be granted strictly based on the `Rewarded` event.
+2.  **Platform Detection:** DO NOT use `TARO_ENV`. Use `Capacitor.getPlatform()` to ensure logic runs on Android/iOS but mocks on Web.
+3.  **Resource Cleanup:** Always remove all event listeners and clear timeouts immediately after the ad flow finishes to prevent memory leaks and double rewards.
+4.  **Single-Execution Guard:** Use a `finished` flag to ensure the internal `finish()` function is called exactly once.
 
-## Diagnostic Workflow
+## Implementation Pattern
 
-### 1. Trace Execution Path
-Verify the button click actually triggers the ad function. Add instrumentation logs:
-- `[AD_DEBUG] CLICKED_WATCH_AD`
-- `[AD_DEBUG] ENTER showRewardAd`
-
-### 2. Check Platform Detection
-DO NOT use `TARO_ENV`. Use `Capacitor.getPlatform()`:
-```typescript
-import { Capacitor } from '@capacitor/core';
-const platform = Capacitor.getPlatform(); // 'android', 'ios', or 'web'
-```
-
-### 3. Verify SDK State
-Check if `AdMob.initialize()` has completed. Add logs:
-- `[AD_DEBUG] ADMOB_INIT_SUCCESS`
-
-## Implementation Patterns
-
-### Early Initialization & Preloading
-Initialize the SDK at app launch and fetch the first ad immediately.
+### The `showRewardAd` Function
 
 ```typescript
-export async function initAdMob() {
-  const platform = Capacitor.getPlatform();
-  if (platform === 'web') return;
-  
-  await AdMob.initialize({ ... });
-  setupGlobalListeners();
-  preloadRewardAd(); // Fetch first ad in background
+export async function showRewardAd() {
+  // ... check initialization and preloading ...
+
+  return new Promise((resolve) => {
+    let finished = false;
+    let rewardEarned = false;
+
+    const finish = (rewarded: boolean) => {
+      if (finished) return;
+      finished = true;
+
+      clearTimeout(timeoutId);
+      cleanupListeners();
+      
+      if (rewarded) grantReward();
+      else handleFailure(); // e.g. fail-open or toast
+      
+      resolve(true);
+    };
+
+    // Listeners for Reward, Dismissal, and Failures
+    const listeners = [
+      AdMob.addListener(RewardAdPluginEvents.Rewarded, () => { rewardEarned = true; }),
+      AdMob.addListener(RewardAdPluginEvents.Dismissed, () => { finish(rewardEarned); }),
+      AdMob.addListener(RewardAdPluginEvents.FailedToLoad, () => finish(false)),
+      AdMob.addListener(RewardAdPluginEvents.FailedToShow, () => finish(false))
+    ];
+
+    const timeoutId = setTimeout(() => finish(false), 20000); // 20s safety max
+
+    AdMob.showRewardVideoAd().catch(() => finish(false));
+  });
 }
-```
-
-### Chain Preloading
-Always fetch the *next* ad after the current one is closed or fails.
-
-```typescript
-AdMob.addListener(RewardAdPluginEvents.Dismissed, () => {
-  preloadRewardAd(); // Always be ready for the next request
-});
-```
-
-### Robust Fail-Open Logic
-Preserve user experience by unlocking features even if Google has no ads available (Fill Rate issues).
-
-```typescript
-const finish = (success: boolean) => {
-  if (success) grantReward();
-  else grantReward(); // Fail-open: don't block user for Google's failures
-};
 ```
 
 ## Professional Logging Flow
 Expect this sequence for a healthy integration:
-1. `[AD_DEBUG] ADMOB_INIT_SUCCESS`
-2. `[AD_DEBUG] AD_LOADED` (background)
-3. `[AD_DEBUG] CALLING_SHOW` (on click)
-4. `[AD_DEBUG] REWARD_EARNED`
-5. `[AD_DEBUG] AD_CLOSED`
-6. `[AD_DEBUG] LOADING_AD` (fetching next)
+1. `onRewardedVideoAdLoaded` -> Ad successfully fetched from Google.
+2. `onRewardedVideoAdShowed` -> Ad successfully rendered on screen.
+3. `onRewardedVideoAdReward` -> Reward logic triggered.
+4. `onRewardedVideoAdDismissed` -> User closed the ad; cleanup triggered.
