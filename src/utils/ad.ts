@@ -134,8 +134,8 @@ export async function showRewardAd(): Promise<boolean> {
       const failedListener = AdMob.addListener(RewardAdPluginEvents.FailedToLoad, () => finish(false));
       const showFailedListener = AdMob.addListener(RewardAdPluginEvents.FailedToShow, () => finish(false));
 
-      // 15s timeout safety
-      const timeoutId = setTimeout(() => finish(false), 15000);
+      // 45s timeout safety (Rewarded ads are typically 15-30s)
+      const timeoutId = setTimeout(() => finish(false), 45000);
 
       if (isPrepared) {
         AdMob.showRewardVideoAd().catch(e => {

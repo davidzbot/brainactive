@@ -164,7 +164,6 @@ export default function TrainingPage() {
       case 3: taskCity(); break
       case 4: taskSentence(); break
     }
-    if (!targetArray || targetArray.length === 0) taskNumber()
   }
 
   useEffect(() => {
