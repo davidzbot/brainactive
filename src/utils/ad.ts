@@ -166,10 +166,11 @@ export async function showRewardAd(): Promise<boolean> {
       listeners.push(AdMob.addListener(RewardAdPluginEvents.FailedToLoad, () => finish(false)));
       listeners.push(AdMob.addListener(RewardAdPluginEvents.FailedToShow, () => finish(false)));
 
-      // Safety Timeout (20s)
+      // Safety Timeout (8s) - Matches fast experience by unlocking early if ad is slow
       const timeoutId = setTimeout(() => {
+        console.log('[AD_DEBUG] Safety timeout triggered - unlocking early');
         finish(false);
-      }, 20000);
+      }, 8000);
 
       if (isPrepared) {
         AdMob.showRewardVideoAd().catch(e => {

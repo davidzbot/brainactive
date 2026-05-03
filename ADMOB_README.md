@@ -37,7 +37,7 @@ The App ID is also configured in the plugins section:
     1. SDK Initialization.
     2. Ad Preparation (Loading).
     3. Event Listeners for `Rewarded`, `Dismissed`, and `Errors`.
-    4. **Safety Fallback**: If the ad fails to load or is skipped, the app still triggers the 24h unlock to ensure user experience (UX) is not blocked.
+    4. **Safety Fallback (UX Optimized)**: If the ad fails to load, is skipped, or takes longer than **8 seconds** (safety timeout), the app automatically triggers the 24h unlock. This ensures users are never blocked by slow ad networks or long ad pods, matching a "fast" premium experience.
 
 ## 4. Testing & Debugging
 
