@@ -4,15 +4,15 @@
  */
 const zh: Record<string, string> = {
   'app.title': '大脑每日练 (BrainActive)',
-  'app.subtitle': '科学认知训练 · 有效预防认知衰退',
-  'app.description': '通过每日科学设计的脑力练习，激活大脑神经连接，帮助银发族有效预防老年痴呆，保持思维常青。',
+  'app.subtitle': '科学认知训练 · 拒绝老年痴呆',
+  'app.description': '通过每日科学设计的脑力练习，激活大脑神经连接，帮助银发族拒绝老年痴呆，保持思维常青。',
   'app.status.0': '今日尚未打卡，开始训练保持大脑活力',
   'app.status.low': '已连续打卡 {s} 天，大脑正在变得更健康',
   'app.status.mid': '已连续打卡 {s} 天，认知能力显著提升',
   'app.status.high': '已连续打卡 {s} 天，思维敏锐如初',
   
   'button.invite': '邀请好友共同进步',
-  'invite.text': '我正在使用【大脑每日练】进行每日认知训练，预防思维衰退。推荐你也来试试，保持大脑年轻！',
+  'invite.text': '我正在使用【大脑每日练】进行每日认知训练，拒绝思维衰退。推荐你也来试试，保持大脑年轻！',
   'app.unlimited': '全功能访问已开启',
   'app.unlock_desc': '观看一段短片即可开启 24 小时完整体验',
   'app.locked': '功能锁定中',
@@ -73,7 +73,7 @@ const zh: Record<string, string> = {
 
 const en: Record<string, string> = {
   'app.title': 'BrainActive',
-  'app.subtitle': 'Scientific Brain Training · Alzheimer\'s Prevention',
+  'app.subtitle': 'Scientific Brain Training · Defeat Dementia',
   'app.description': 'Daily cognitive exercises designed to activate neural connections, helping seniors maintain mental clarity and effectively prevent cognitive decline.',
   'app.status.0': 'Daily check-in pending. Keep your brain active!',
   'app.status.low': '{s} day streak. Your brain is getting stronger.',
