@@ -68,3 +68,60 @@ button {
     border: none;
   }
 }
+
+/* Onboarding Styles */
+.onboarding-container {
+  width: 100%; height: 100%;
+  background: #0f172a;
+  display: flex; flex-direction: column;
+  padding: 60px 32px 48px;
+  position: relative;
+}
+
+.onboarding-dots {
+  display: flex; justify-content: center; gap: 12px;
+  margin-top: 80px;
+}
+
+.onboarding-dot {
+  width: 12px; height: 12px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.2);
+  &.active {
+    width: 32px; background: #38bdf8;
+  }
+}
+
+.onboarding-skip {
+  position: absolute; top: 60px; right: 32px;
+  font-size: 28px; color: rgba(255,255,255,0.6);
+  background: transparent; border: none;
+}
+
+.onboarding-content {
+  flex: 1;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  text-align: center; padding: 0 16px;
+}
+
+.onboarding-title {
+  font-size: 56px; font-weight: 700;
+  color: #fff; margin-bottom: 32px;
+  text-align: center;
+}
+
+.onboarding-subtitle {
+  font-size: 30px; color: rgba(255,255,255,0.7);
+  text-align: center; line-height: 1.6;
+}
+
+.onboarding-footer { padding-top: 32px; }
+
+.onboarding-next-btn {
+  width: 100%; height: 100px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  border-radius: 60px;
+  font-size: 32px; font-weight: 700; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+}
