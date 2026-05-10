@@ -87,7 +87,6 @@ export async function showRewardAd(): Promise<boolean> {
   
   // 1. Check Global Lock
   if (isShowingAd) {
-    console.log('[AD_DEBUG] SHOW_SKIPPED_ALREADY_SHOWING');
     return false;
   }
   
@@ -98,7 +97,6 @@ export async function showRewardAd(): Promise<boolean> {
   }
 
   isShowingAd = true;
-  console.log('[AD_DEBUG] SHOW_CALLED');
   showLoading({ title: t('task.loading'), mask: true });
 
   try {
@@ -168,7 +166,6 @@ export async function showRewardAd(): Promise<boolean> {
 
       // Safety Timeout (8s) - Matches fast experience by unlocking early if ad is slow
       const timeoutId = setTimeout(() => {
-        console.log('[AD_DEBUG] Safety timeout triggered - unlocking early');
         finish(false);
       }, 8000);
 

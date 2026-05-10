@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { View, Text, Button } from '@tarojs/components'
 import Taro, { useLaunch } from '@tarojs/taro'
 import { getLang, setLang, getStorage, setStorage } from '@/utils/storage'
@@ -26,16 +26,21 @@ const ONBOARDING_PAGES = [
 const ONBOARDING_KEY = 'onboarding_done'
 
 function App({ children }: { children?: React.ReactNode }) {
-  const [showOnboarding, setShowOnboarding] = useState(false)
+  const [showOnboarding, setShowOnboarding] = useState(() => !getStorage(ONBOARDING_KEY))
   const [currentPage, setCurrentPage] = useState(0)
 
-  useLaunch(() => {
-    // Check if onboarding completed
-    const onboardingDone = getStorage(ONBOARDING_KEY)
-    if (!onboardingDone) {
-      setShowOnboarding(true)
+  useEffect(() => {
+    // Prevent background scrolling on H5/Web
+    if (typeof document !== 'undefined') {
+      if (showOnboarding) {
+        document.body.style.overflow = 'hidden'
+      } else {
+        document.body.style.overflow = ''
+      }
     }
+  }, [showOnboarding])
 
+  useLaunch(() => {
     // Detect system language on first launch
     const savedLang = getLang()
     if (!savedLang) {
@@ -69,33 +74,38 @@ function App({ children }: { children?: React.ReactNode }) {
     }
   }
 
-  if (showOnboarding) {
-    return (
-      <View className='onboarding-container'>
-        <View className='onboarding-dots'>
-          {ONBOARDING_PAGES.map((_, idx) => (
-            <View key={idx} className={`onboarding-dot ${idx === currentPage ? 'active' : ''}`} />
-          ))}
-        </View>
-        <Button className='onboarding-skip' onClick={handleSkip}>
-          {lang === 'zh' ? '跳过' : 'Skip'}
-        </Button>
-        <View className='onboarding-content'>
-          <Text className='onboarding-title'>{content.title}</Text>
-          <Text className='onboarding-subtitle'>{content.subtitle}</Text>
-        </View>
-        <View className='onboarding-footer'>
-          <Button className='onboarding-next-btn' onClick={handleNext}>
-            {currentPage < ONBOARDING_PAGES.length - 1
-              ? (lang === 'zh' ? '下一步' : 'Next')
-              : (lang === 'zh' ? '开始' : 'Get Started')}
+  return (
+    <>
+      {children}
+      {showOnboarding && (
+        <View 
+          className='onboarding-container' 
+          catchMove 
+          onTouchMove={(e) => e.stopPropagation()}
+        >
+          <View className='onboarding-dots'>
+            {ONBOARDING_PAGES.map((_, idx) => (
+              <View key={idx} className={`onboarding-dot ${idx === currentPage ? 'active' : ''}`} />
+            ))}
+          </View>
+          <Button className='onboarding-skip' onClick={handleSkip}>
+            {lang === 'zh' ? '跳过' : 'Skip'}
           </Button>
+          <View className='onboarding-content'>
+            <Text className='onboarding-title'>{content.title}</Text>
+            <Text className='onboarding-subtitle'>{content.subtitle}</Text>
+          </View>
+          <View className='onboarding-footer'>
+            <Button className='onboarding-next-btn' onClick={handleNext}>
+              {currentPage < ONBOARDING_PAGES.length - 1
+                ? (lang === 'zh' ? '下一步' : 'Next')
+                : (lang === 'zh' ? '开始' : 'Get Started')}
+            </Button>
+          </View>
         </View>
-      </View>
-    )
-  }
-
-  return children
+      )}
+    </>
+  )
 }
 
 export default App
