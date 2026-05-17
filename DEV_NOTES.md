@@ -76,4 +76,4 @@ npm run build:android  # (taro build --type h5 && npx cap sync android)
 
 ## Feedback & Support
 Email: pslehero@gmail.com
-Project Version: 1.0.0
+Project Version: 1.7.0

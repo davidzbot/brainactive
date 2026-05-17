@@ -1,6 +1,6 @@
 {
   "name": "brainactive-android",
-  "version": "1.0.0",
+  "version": "1.7.0",
   "description": "PSLE Hero - Android H5 + Capacitor version",
   "scripts": {
     "dev:h5": "npm run build:h5 -- --watch",
