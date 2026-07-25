@@ -42,9 +42,11 @@ Centralized in `src/config/share.ts` for zero-code message updates.
 - **Viewport**: `<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">`
 
 ## Key Logic Components
+- **Onboarding Flow**: 3-page bilingual introduction (Welcome, Train, Start) shown on first launch. State persisted in `onboarding_done` local storage.
 - **24-Hour Ad Unlock**: WATCH -> UNLOCK ALL (24h). 
   - Logic stored in `src/utils/common.ts` (`isAdUnlocked`, `unlockAllModes`).
-  - Native AdMob integration in `src/utils/ad.ts`.
+  - Native AdMob integration in `src/utils/ad.ts` using a global `isShowingAd` lock and background preloading.
+  - **Safety Fail-Open**: Includes an 8s timeout that unlocks features even if the ad fails to show, ensuring UX continuity.
 - **Daily Usage Guard**: `canPlayMode(level)` allows 1 free play per mode per day before requiring ad unlock.
 - **Bilingual Support**: `src/utils/i18n.ts` with auto-detection of system language on first launch.
 
@@ -74,4 +76,4 @@ npm run build:android  # (taro build --type h5 && npx cap sync android)
 
 ## Feedback & Support
 Email: pslehero@gmail.com
-Project Version: 1.0.0
+Project Version: 1.7.0

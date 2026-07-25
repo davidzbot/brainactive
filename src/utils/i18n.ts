@@ -44,7 +44,7 @@ const zh: Record<string, string> = {
   'task.pick_them': '请选出刚才出现的内容',
   'task.remember_names': '请专注并记住以下姓名',
   'task.remember_cities': '请专注并记住以下城市',
-  'task.remember_numbers': '请专注并记住这些数字',
+  'task.remember_numbers': '请记住这些数字',
   'task.remember_numbers_calc': '请记住这些数字，稍后需进行计算',
   'task.remember_colorshapes': '请记住这些颜色和形状',
   'task.remember_sentences': '请仔细阅读并记住以下句子',
