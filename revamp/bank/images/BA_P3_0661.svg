@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="24" font-size="14" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Shape transformation (add side + alternate colour)</text>
+<polygon points="89,120 38,149.445 38,90.5551" fill="#e4572e" stroke="#2b2d42" stroke-width="3"/>
+<text x="55" y="175" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">square red(3)</text>
+<text x="96.6667" y="120" font-size="18" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">-&gt;</text>
+<polygon points="138.333,86 172.333,120 138.333,154 104.333,120" fill="#4a90d9" stroke="#2b2d42" stroke-width="3"/>
+<text x="138.333" y="175" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">pentagon blue(4)</text>
+<text x="180" y="120" font-size="18" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">-&gt;</text>
+<polygon points="255.667,120 232.173,152.336 194.16,139.985 194.16,100.015 232.173,87.6641" fill="#e4572e" stroke="#2b2d42" stroke-width="3"/>
+<text x="221.667" y="175" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">hexagon red(5)</text>
+<text x="263.333" y="120" font-size="18" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">-&gt;</text>
+<polygon points="305,86 334.445,103 334.445,137 305,154 275.555,137 275.555,103" fill="#4a90d9" stroke="#2b2d42" stroke-width="3"/>
+<text x="305" y="175" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">triangle blue(6)</text>
+</svg>

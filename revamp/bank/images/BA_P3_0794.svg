@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="24" font-size="15" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Cube net (fold with D as front)</text>
+<rect x="150" y="40" width="46" height="46" rx="4" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<text x="173" y="63" font-size="20" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">W</text>
+<rect x="104" y="86" width="46" height="46" rx="4" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<text x="127" y="109" font-size="20" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">X</text>
+<rect x="150" y="86" width="46" height="46" rx="4" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<text x="173" y="109" font-size="20" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">D</text>
+<rect x="196" y="86" width="46" height="46" rx="4" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<text x="219" y="109" font-size="20" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Z</text>
+<rect x="150" y="132" width="46" height="46" rx="4" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<text x="173" y="155" font-size="20" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">V</text>
+<rect x="150" y="178" width="46" height="46" rx="4" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<text x="173" y="201" font-size="20" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">E</text>
+<text x="180" y="238" font-size="13" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">back face (opposite D) = E</text>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="24" font-size="16" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Odd one out</text>
+<polygon points="71,120 63,133.856 47,133.856 39,120 47,106.144 63,106.144" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<text x="55" y="185" font-size="14" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">A</text>
+<polygon points="154.333,120 146.333,133.856 130.333,133.856 122.333,120 130.333,106.144 146.333,106.144" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<text x="138.333" y="185" font-size="14" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">B</text>
+<polygon points="251.667,120 236.667,145.981 206.667,145.981 191.667,120 206.667,94.0192 236.667,94.0192" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<text x="221.667" y="185" font-size="14" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">C</text>
+<polygon points="321,120 313,133.856 297,133.856 289,120 297,106.144 313,106.144" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<text x="305" y="185" font-size="14" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">D</text>
+</svg>

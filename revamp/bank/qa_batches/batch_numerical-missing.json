@@ -1,0 +1,4158 @@
+[
+ {
+  "id": "BA_P3_0001",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "pattern_discovery",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 1, 2, 4, 7, 11, 16, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "20"
+   },
+   {
+    "id": "B",
+    "text": "21"
+   },
+   {
+    "id": "C",
+    "text": "22"
+   },
+   {
+    "id": "D",
+    "text": "23"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Gaps: +1, +2, +3, +4, +5. Each gap grows by 1, so the next gap is +6: 16 + 6 = 22.",
+  "reasoning": "Spotting a changing (second-order) difference.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "validated_baseline_v041",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "pattern_discovery",
+   "source_inspiration": "Carried from v0.3 (re-evaluated: retains as the Explore anchor of the 1.1 progression).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0002",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "pattern_discovery",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 3, 6, 5, 12, 7, 24, 9, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "36"
+   },
+   {
+    "id": "B",
+    "text": "48"
+   },
+   {
+    "id": "C",
+    "text": "40"
+   },
+   {
+    "id": "D",
+    "text": "52"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Two woven sequences. Odd positions: 3, 5, 7, 9 (+2). Even positions: 6, 12, 24 (x2). The missing 8th term is the next even-position term: 24 x 2 = 48.",
+  "reasoning": "Splitting two interleaved sequences.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "validated_baseline_v041",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "pattern_discovery",
+   "source_inspiration": "Carried from v0.3 (re-evaluated: retains as the Think step of 1.1).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0181",
+  "domain": "numerical_reasoning",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "2 is to 6 as 6 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "12"
+   },
+   {
+    "id": "B",
+    "text": "18"
+   },
+   {
+    "id": "C",
+    "text": "10"
+   },
+   {
+    "id": "D",
+    "text": "17"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Relation: x3. 2 -> 6, so 6 -> 18.",
+  "reasoning": "Inferring a numerical relation and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_analogy",
+   "source_inspiration": "Deterministic generator 1.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0182",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 4, 8, 13, 19, 26, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "35"
+   },
+   {
+    "id": "B",
+    "text": "26"
+   },
+   {
+    "id": "C",
+    "text": "34"
+   },
+   {
+    "id": "D",
+    "text": "33"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The rule is: the gap between terms grows by 1 each step. So the next number is 34.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (grow).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0183",
+  "domain": "numerical_reasoning",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "5 is to 7 as 7 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "9"
+   },
+   {
+    "id": "B",
+    "text": "11"
+   },
+   {
+    "id": "C",
+    "text": "14"
+   },
+   {
+    "id": "D",
+    "text": "8"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Relation: +2. 5 -> 7, so 7 -> 9.",
+  "reasoning": "Inferring a numerical relation and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_analogy",
+   "source_inspiration": "Deterministic generator 1.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0184",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 3, 6, 18, 21, 63, 66, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "198"
+   },
+   {
+    "id": "B",
+    "text": "201"
+   },
+   {
+    "id": "C",
+    "text": "197"
+   },
+   {
+    "id": "D",
+    "text": "66"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Rule: alternating rule: add 3, then multiply by 3, repeat. The 7th term = 198.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0185",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 5, 8, 12, 17, 23, 30, 38, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "46"
+   },
+   {
+    "id": "B",
+    "text": "47"
+   },
+   {
+    "id": "C",
+    "text": "38"
+   },
+   {
+    "id": "D",
+    "text": "48"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The rule is: the gap between terms grows by 1 each step. So the next number is 47.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (grow).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0186",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a square together weigh 8. A square and a circle together weigh 6. A triangle and a circle together weigh 8. Which shape is heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle1"
+   },
+   {
+    "id": "B",
+    "text": "square"
+   },
+   {
+    "id": "C",
+    "text": "triangle"
+   },
+   {
+    "id": "D",
+    "text": "circle"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add the three pair-weights: each shape counted twice = 22, so one of each = 11. The triangle is 5, the square is 3, the circle is 3; the heaviest is the triangle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0187",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A square and a circle together weigh 5. A triangle and a circle together weigh 5. A triangle and a square together weigh 6. Which shape is lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "square"
+   },
+   {
+    "id": "B",
+    "text": "circle"
+   },
+   {
+    "id": "C",
+    "text": "circle1"
+   },
+   {
+    "id": "D",
+    "text": "triangle"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add the three pair-weights: each shape counted twice = 16, so one of each = 8. The triangle is 3, the square is 3, the circle is 2; the lightest is the circle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0188",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 4, 6, 6, 9, 8, 12, 10, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "16"
+   },
+   {
+    "id": "B",
+    "text": "15"
+   },
+   {
+    "id": "C",
+    "text": "13"
+   },
+   {
+    "id": "D",
+    "text": "12"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The rule is: two woven sequences: odd positions +2, even positions +3. So the next number is 15.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (inter).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0189",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 3, 5, 10, 12, 24, 26, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "51"
+   },
+   {
+    "id": "B",
+    "text": "104"
+   },
+   {
+    "id": "C",
+    "text": "54"
+   },
+   {
+    "id": "D",
+    "text": "52"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Rule: alternating rule: add 2, then multiply by 2, repeat. The 7th term = 52.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0190",
+  "domain": "numerical_reasoning",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "6 is to 12 as 2 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "8"
+   },
+   {
+    "id": "B",
+    "text": "10"
+   },
+   {
+    "id": "C",
+    "text": "4"
+   },
+   {
+    "id": "D",
+    "text": "3"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Relation: x2. 6 -> 12, so 2 -> 4.",
+  "reasoning": "Inferring a numerical relation and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_analogy",
+   "source_inspiration": "Deterministic generator 1.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0191",
+  "domain": "numerical_reasoning",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "8 is to 22 as 5 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "13"
+   },
+   {
+    "id": "B",
+    "text": "27"
+   },
+   {
+    "id": "C",
+    "text": "19"
+   },
+   {
+    "id": "D",
+    "text": "10"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Relation: x3 then -2. 8 -> 22, so 5 -> 13.",
+  "reasoning": "Inferring a numerical relation and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_analogy",
+   "source_inspiration": "Deterministic generator 1.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0192",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 3, 7, 14, 18, 36, 40, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "160"
+   },
+   {
+    "id": "B",
+    "text": "80"
+   },
+   {
+    "id": "C",
+    "text": "40"
+   },
+   {
+    "id": "D",
+    "text": "84"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Rule: alternating rule: add 4, then multiply by 2, repeat. The 7th term = 80.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0193",
+  "domain": "numerical_reasoning",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "6 is to 36 as 7 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "37"
+   },
+   {
+    "id": "B",
+    "text": "14"
+   },
+   {
+    "id": "C",
+    "text": "49"
+   },
+   {
+    "id": "D",
+    "text": "79"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Relation: square the number. 6 -> 36, so 7 -> 49.",
+  "reasoning": "Inferring a numerical relation and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_analogy",
+   "source_inspiration": "Deterministic generator 1.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0194",
+  "domain": "numerical_reasoning",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "5 is to 20 as 3 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "11"
+   },
+   {
+    "id": "B",
+    "text": "6"
+   },
+   {
+    "id": "C",
+    "text": "18"
+   },
+   {
+    "id": "D",
+    "text": "12"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Relation: x4. 5 -> 20, so 3 -> 12.",
+  "reasoning": "Inferring a numerical relation and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_analogy",
+   "source_inspiration": "Deterministic generator 1.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0195",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 3, 6, 12, 24, 48, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "45"
+   },
+   {
+    "id": "B",
+    "text": "48"
+   },
+   {
+    "id": "C",
+    "text": "96"
+   },
+   {
+    "id": "D",
+    "text": "50"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The rule is: multiply by 2. So the next number is 96.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (geo).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0196",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 4, 6, 6, 10, 8, 14, 10, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "19"
+   },
+   {
+    "id": "B",
+    "text": "18"
+   },
+   {
+    "id": "C",
+    "text": "12"
+   },
+   {
+    "id": "D",
+    "text": "14"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The rule is: two woven sequences: odd positions +2, even positions +4. So the next number is 18.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (inter).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0198",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a square together weigh 7. A square and a circle together weigh 10. A triangle and a circle together weigh 9. Which shape is heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "square"
+   },
+   {
+    "id": "C",
+    "text": "circle"
+   },
+   {
+    "id": "D",
+    "text": "circle1"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add the three pair-weights: each shape counted twice = 26, so one of each = 13. The triangle is 3, the square is 4, the circle is 6; the heaviest is the circle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0200",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 1, 4, 8, 11, 22, 25, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "100"
+   },
+   {
+    "id": "B",
+    "text": "50"
+   },
+   {
+    "id": "C",
+    "text": "25"
+   },
+   {
+    "id": "D",
+    "text": "53"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Rule: alternating rule: add 3, then multiply by 2, repeat. The 7th term = 50.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0201",
+  "domain": "numerical_reasoning",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "2 is to 11 as 7 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "14"
+   },
+   {
+    "id": "B",
+    "text": "15"
+   },
+   {
+    "id": "C",
+    "text": "25"
+   },
+   {
+    "id": "D",
+    "text": "16"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Relation: +9. 2 -> 11, so 7 -> 16.",
+  "reasoning": "Inferring a numerical relation and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_analogy",
+   "source_inspiration": "Deterministic generator 1.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0202",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 3, 7, 14, 18, 36, 40, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "80"
+   },
+   {
+    "id": "B",
+    "text": "40"
+   },
+   {
+    "id": "C",
+    "text": "84"
+   },
+   {
+    "id": "D",
+    "text": "160"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Rule: alternating rule: add 4, then multiply by 2, repeat. The 7th term = 80.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0203",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a circle together weigh 8. A triangle and a square together weigh 10. A square and a circle together weigh 6. Which shape is lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "circle1"
+   },
+   {
+    "id": "B",
+    "text": "square"
+   },
+   {
+    "id": "C",
+    "text": "circle"
+   },
+   {
+    "id": "D",
+    "text": "triangle"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add the three pair-weights: each shape counted twice = 24, so one of each = 12. The triangle is 6, the square is 4, the circle is 2; the lightest is the circle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0204",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a square together weigh 5. A triangle and a circle together weigh 5. A square and a circle together weigh 4. Which shape is heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "circle"
+   },
+   {
+    "id": "C",
+    "text": "triangle1"
+   },
+   {
+    "id": "D",
+    "text": "square"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add the three pair-weights: each shape counted twice = 14, so one of each = 7. The triangle is 3, the square is 2, the circle is 2; the heaviest is the triangle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0206",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 4, 8, 16, 20, 40, 44, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "92"
+   },
+   {
+    "id": "B",
+    "text": "44"
+   },
+   {
+    "id": "C",
+    "text": "176"
+   },
+   {
+    "id": "D",
+    "text": "88"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Rule: alternating rule: add 4, then multiply by 2, repeat. The 7th term = 88.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0208",
+  "domain": "numerical_reasoning",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "5 is to 11 as 5 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "11"
+   },
+   {
+    "id": "B",
+    "text": "10"
+   },
+   {
+    "id": "C",
+    "text": "17"
+   },
+   {
+    "id": "D",
+    "text": "111"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Relation: x3 then -4. 5 -> 11, so 5 -> 11.",
+  "reasoning": "Inferring a numerical relation and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_analogy",
+   "source_inspiration": "Deterministic generator 1.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0210",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 1, 4, 9, 16, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "25"
+   },
+   {
+    "id": "B",
+    "text": "26"
+   },
+   {
+    "id": "C",
+    "text": "16"
+   },
+   {
+    "id": "D",
+    "text": "24"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The rule is: the squares of 1, 2, 3, .... So the next number is 25.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (square).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0211",
+  "domain": "numerical_reasoning",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "6 is to 36 as 3 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "8"
+   },
+   {
+    "id": "B",
+    "text": "9"
+   },
+   {
+    "id": "C",
+    "text": "6"
+   },
+   {
+    "id": "D",
+    "text": "39"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Relation: square the number. 6 -> 36, so 3 -> 9.",
+  "reasoning": "Inferring a numerical relation and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_analogy",
+   "source_inspiration": "Deterministic generator 1.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0212",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A square and a circle together weigh 4. A triangle and a circle together weigh 4. A triangle and a square together weigh 4. Which shape is heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "square"
+   },
+   {
+    "id": "B",
+    "text": "triangle"
+   },
+   {
+    "id": "C",
+    "text": "circle"
+   },
+   {
+    "id": "D",
+    "text": "triangle1"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add the three pair-weights: each shape counted twice = 12, so one of each = 6. The triangle is 2, the square is 2, the circle is 2; the heaviest is the triangle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0213",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 6, 15, 24, 33, 42, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "60"
+   },
+   {
+    "id": "B",
+    "text": "33"
+   },
+   {
+    "id": "C",
+    "text": "52"
+   },
+   {
+    "id": "D",
+    "text": "51"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The rule is: add 9 each step. So the next number is 51.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (arith).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0215",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A square and a circle together weigh 7. A triangle and a square together weigh 8. A triangle and a circle together weigh 9. Which shape is lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "square1"
+   },
+   {
+    "id": "B",
+    "text": "circle"
+   },
+   {
+    "id": "C",
+    "text": "triangle"
+   },
+   {
+    "id": "D",
+    "text": "square"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Add the three pair-weights: each shape counted twice = 24, so one of each = 12. The triangle is 5, the square is 3, the circle is 4; the lightest is the square.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0216",
+  "domain": "numerical_reasoning",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "3 is to 8 as 5 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "10"
+   },
+   {
+    "id": "B",
+    "text": "19"
+   },
+   {
+    "id": "C",
+    "text": "13"
+   },
+   {
+    "id": "D",
+    "text": "14"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Relation: x3 then -1. 3 -> 8, so 5 -> 14.",
+  "reasoning": "Inferring a numerical relation and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_analogy",
+   "source_inspiration": "Deterministic generator 1.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0217",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 3, 5, 15, 17, 51, 53, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "159"
+   },
+   {
+    "id": "B",
+    "text": "161"
+   },
+   {
+    "id": "C",
+    "text": "53"
+   },
+   {
+    "id": "D",
+    "text": "158"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Rule: alternating rule: add 2, then multiply by 3, repeat. The 7th term = 159.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0218",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 3, 9, 15, 21, 27, 33, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "40"
+   },
+   {
+    "id": "B",
+    "text": "39"
+   },
+   {
+    "id": "C",
+    "text": "45"
+   },
+   {
+    "id": "D",
+    "text": "27"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The rule is: add 6 each step. So the next number is 39.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (arith).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0219",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 2, 6, 18, 22, 66, 70, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "209"
+   },
+   {
+    "id": "B",
+    "text": "630"
+   },
+   {
+    "id": "C",
+    "text": "70"
+   },
+   {
+    "id": "D",
+    "text": "210"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Rule: alternating rule: add 4, then multiply by 3, repeat. The 7th term = 210.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0220",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 3, 6, 12, 15, 30, 33, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "33"
+   },
+   {
+    "id": "B",
+    "text": "132"
+   },
+   {
+    "id": "C",
+    "text": "69"
+   },
+   {
+    "id": "D",
+    "text": "66"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Rule: alternating rule: add 3, then multiply by 2, repeat. The 7th term = 66.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0221",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 1, 3, 6, 8, 16, 18, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "38"
+   },
+   {
+    "id": "B",
+    "text": "35"
+   },
+   {
+    "id": "C",
+    "text": "72"
+   },
+   {
+    "id": "D",
+    "text": "36"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Rule: alternating rule: add 2, then multiply by 2, repeat. The 7th term = 36.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0222",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a square together weigh 11. A square and a circle together weigh 11. A triangle and a circle together weigh 10. Which shape is lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "circle"
+   },
+   {
+    "id": "B",
+    "text": "triangle"
+   },
+   {
+    "id": "C",
+    "text": "square"
+   },
+   {
+    "id": "D",
+    "text": "triangle1"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add the three pair-weights: each shape counted twice = 32, so one of each = 16. The triangle is 5, the square is 6, the circle is 5; the lightest is the triangle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0223",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a circle together weigh 10. A square and a circle together weigh 10. A triangle and a square together weigh 12. Which shape is heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle1"
+   },
+   {
+    "id": "B",
+    "text": "circle"
+   },
+   {
+    "id": "C",
+    "text": "triangle"
+   },
+   {
+    "id": "D",
+    "text": "square"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add the three pair-weights: each shape counted twice = 32, so one of each = 16. The triangle is 6, the square is 6, the circle is 4; the heaviest is the triangle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0224",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 2, 5, 9, 14, 20, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "20"
+   },
+   {
+    "id": "B",
+    "text": "28"
+   },
+   {
+    "id": "C",
+    "text": "27"
+   },
+   {
+    "id": "D",
+    "text": "26"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The rule is: the gap between terms grows by 1 each step. So the next number is 27.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (grow).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0225",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 4, 6, 18, 20, 60, 62, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "185"
+   },
+   {
+    "id": "B",
+    "text": "558"
+   },
+   {
+    "id": "C",
+    "text": "186"
+   },
+   {
+    "id": "D",
+    "text": "62"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Rule: alternating rule: add 2, then multiply by 3, repeat. The 7th term = 186.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0226",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 2, 6, 12, 16, 32, 36, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "72"
+   },
+   {
+    "id": "B",
+    "text": "144"
+   },
+   {
+    "id": "C",
+    "text": "36"
+   },
+   {
+    "id": "D",
+    "text": "71"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Rule: alternating rule: add 4, then multiply by 2, repeat. The 7th term = 72.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0227",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 1, 3, 6, 10, 15, 21, 28, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "37"
+   },
+   {
+    "id": "B",
+    "text": "28"
+   },
+   {
+    "id": "C",
+    "text": "35"
+   },
+   {
+    "id": "D",
+    "text": "36"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The rule is: the gap between terms grows by 1 each step. So the next number is 36.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (grow).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0228",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 2, 4, 6, 10, 16, 26, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "16"
+   },
+   {
+    "id": "B",
+    "text": "44"
+   },
+   {
+    "id": "C",
+    "text": "42"
+   },
+   {
+    "id": "D",
+    "text": "26"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The rule is: each term is the sum of the two before it. So the next number is 42.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (fib).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0229",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 3, 7, 14, 18, 36, 40, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "79"
+   },
+   {
+    "id": "B",
+    "text": "84"
+   },
+   {
+    "id": "C",
+    "text": "160"
+   },
+   {
+    "id": "D",
+    "text": "80"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Rule: alternating rule: add 4, then multiply by 2, repeat. The 7th term = 80.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0230",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a square together weigh 10. A square and a circle together weigh 10. A triangle and a circle together weigh 8. Which shape is heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "circle"
+   },
+   {
+    "id": "C",
+    "text": "square1"
+   },
+   {
+    "id": "D",
+    "text": "square"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Add the three pair-weights: each shape counted twice = 28, so one of each = 14. The triangle is 4, the square is 6, the circle is 4; the heaviest is the square.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0231",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 3, 7, 21, 25, 75, 79, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "79"
+   },
+   {
+    "id": "B",
+    "text": "711"
+   },
+   {
+    "id": "C",
+    "text": "241"
+   },
+   {
+    "id": "D",
+    "text": "237"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Rule: alternating rule: add 4, then multiply by 3, repeat. The 7th term = 237.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0232",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a circle together weigh 7. A square and a circle together weigh 6. A triangle and a square together weigh 7. Which shape is lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "square"
+   },
+   {
+    "id": "B",
+    "text": "circle"
+   },
+   {
+    "id": "C",
+    "text": "square1"
+   },
+   {
+    "id": "D",
+    "text": "triangle"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add the three pair-weights: each shape counted twice = 20, so one of each = 10. The triangle is 4, the square is 3, the circle is 3; the lightest is the square.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0233",
+  "domain": "numerical_reasoning",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "4 is to 12 as 4 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "11"
+   },
+   {
+    "id": "B",
+    "text": "12"
+   },
+   {
+    "id": "C",
+    "text": "8"
+   },
+   {
+    "id": "D",
+    "text": "20"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Relation: x2 then +4. 4 -> 12, so 4 -> 12.",
+  "reasoning": "Inferring a numerical relation and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_analogy",
+   "source_inspiration": "Deterministic generator 1.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0234",
+  "domain": "numerical_reasoning",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "2 is to 4 as 7 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "18"
+   },
+   {
+    "id": "B",
+    "text": "19"
+   },
+   {
+    "id": "C",
+    "text": "14"
+   },
+   {
+    "id": "D",
+    "text": "21"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Relation: x3 then -2. 2 -> 4, so 7 -> 19.",
+  "reasoning": "Inferring a numerical relation and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_analogy",
+   "source_inspiration": "Deterministic generator 1.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0235",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a circle together weigh 9. A square and a circle together weigh 7. A triangle and a square together weigh 8. Which shape is lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "square1"
+   },
+   {
+    "id": "C",
+    "text": "square"
+   },
+   {
+    "id": "D",
+    "text": "circle"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add the three pair-weights: each shape counted twice = 24, so one of each = 12. The triangle is 5, the square is 3, the circle is 4; the lightest is the square.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0236",
+  "domain": "numerical_reasoning",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "4 is to 13 as 3 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "11"
+   },
+   {
+    "id": "B",
+    "text": "6"
+   },
+   {
+    "id": "C",
+    "text": "21"
+   },
+   {
+    "id": "D",
+    "text": "12"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Relation: +9. 4 -> 13, so 3 -> 12.",
+  "reasoning": "Inferring a numerical relation and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_analogy",
+   "source_inspiration": "Deterministic generator 1.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0237",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a square together weigh 11. A triangle and a circle together weigh 8. A square and a circle together weigh 9. Which shape is heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "square1"
+   },
+   {
+    "id": "B",
+    "text": "square"
+   },
+   {
+    "id": "C",
+    "text": "circle"
+   },
+   {
+    "id": "D",
+    "text": "triangle"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add the three pair-weights: each shape counted twice = 28, so one of each = 14. The triangle is 5, the square is 6, the circle is 3; the heaviest is the square.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0238",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a square together weigh 7. A square and a circle together weigh 5. A triangle and a circle together weigh 8. Which shape is lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "square1"
+   },
+   {
+    "id": "B",
+    "text": "circle"
+   },
+   {
+    "id": "C",
+    "text": "triangle"
+   },
+   {
+    "id": "D",
+    "text": "square"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Add the three pair-weights: each shape counted twice = 20, so one of each = 10. The triangle is 5, the square is 2, the circle is 3; the lightest is the square.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0239",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 3, 5, 4, 8, 5, 11, 6, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "9"
+   },
+   {
+    "id": "B",
+    "text": "7"
+   },
+   {
+    "id": "C",
+    "text": "14"
+   },
+   {
+    "id": "D",
+    "text": "15"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The rule is: two woven sequences: odd positions +1, even positions +3. So the next number is 14.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (inter).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0240",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A square and a circle together weigh 9. A triangle and a square together weigh 7. A triangle and a circle together weigh 8. Which shape is lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "circle"
+   },
+   {
+    "id": "B",
+    "text": "triangle"
+   },
+   {
+    "id": "C",
+    "text": "square"
+   },
+   {
+    "id": "D",
+    "text": "triangle1"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add the three pair-weights: each shape counted twice = 24, so one of each = 12. The triangle is 3, the square is 4, the circle is 5; the lightest is the triangle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0241",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 3, 5, 8, 13, 21, 34, 55, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "55"
+   },
+   {
+    "id": "B",
+    "text": "89"
+   },
+   {
+    "id": "C",
+    "text": "34"
+   },
+   {
+    "id": "D",
+    "text": "91"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The rule is: each term is the sum of the two before it. So the next number is 89.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (fib).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0242",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a circle together weigh 7. A square and a circle together weigh 9. A triangle and a square together weigh 6. Which shape is lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "square"
+   },
+   {
+    "id": "B",
+    "text": "triangle"
+   },
+   {
+    "id": "C",
+    "text": "circle"
+   },
+   {
+    "id": "D",
+    "text": "triangle1"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add the three pair-weights: each shape counted twice = 22, so one of each = 11. The triangle is 2, the square is 4, the circle is 5; the lightest is the triangle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0243",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 7, 11, 15, 19, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "15"
+   },
+   {
+    "id": "B",
+    "text": "27"
+   },
+   {
+    "id": "C",
+    "text": "24"
+   },
+   {
+    "id": "D",
+    "text": "23"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The rule is: add 4 each step. So the next number is 23.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (arith).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0244",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a square together weigh 7. A square and a circle together weigh 8. A triangle and a circle together weigh 7. Which shape is heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "square1"
+   },
+   {
+    "id": "C",
+    "text": "square"
+   },
+   {
+    "id": "D",
+    "text": "circle"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add the three pair-weights: each shape counted twice = 22, so one of each = 11. The triangle is 3, the square is 4, the circle is 4; the heaviest is the square.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0245",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a circle together weigh 9. A triangle and a square together weigh 5. A square and a circle together weigh 8. Which shape is heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "circle1"
+   },
+   {
+    "id": "C",
+    "text": "circle"
+   },
+   {
+    "id": "D",
+    "text": "square"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add the three pair-weights: each shape counted twice = 22, so one of each = 11. The triangle is 3, the square is 2, the circle is 6; the heaviest is the circle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0246",
+  "domain": "numerical_reasoning",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "7 is to 9 as 8 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "10"
+   },
+   {
+    "id": "B",
+    "text": "12"
+   },
+   {
+    "id": "C",
+    "text": "9"
+   },
+   {
+    "id": "D",
+    "text": "16"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Relation: +2. 7 -> 9, so 8 -> 10.",
+  "reasoning": "Inferring a numerical relation and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_analogy",
+   "source_inspiration": "Deterministic generator 1.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0247",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a square together weigh 11. A triangle and a circle together weigh 8. A square and a circle together weigh 7. Which shape is lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "square"
+   },
+   {
+    "id": "C",
+    "text": "circle"
+   },
+   {
+    "id": "D",
+    "text": "circle1"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add the three pair-weights: each shape counted twice = 26, so one of each = 13. The triangle is 6, the square is 5, the circle is 2; the lightest is the circle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0249",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a circle together weigh 7. A square and a circle together weigh 10. A triangle and a square together weigh 9. Which shape is lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "square"
+   },
+   {
+    "id": "C",
+    "text": "circle"
+   },
+   {
+    "id": "D",
+    "text": "triangle1"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add the three pair-weights: each shape counted twice = 26, so one of each = 13. The triangle is 3, the square is 6, the circle is 4; the lightest is the triangle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0250",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 4, 7, 14, 17, 34, 37, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "37"
+   },
+   {
+    "id": "B",
+    "text": "74"
+   },
+   {
+    "id": "C",
+    "text": "148"
+   },
+   {
+    "id": "D",
+    "text": "77"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Rule: alternating rule: add 3, then multiply by 2, repeat. The 7th term = 74.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0251",
+  "domain": "numerical_reasoning",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "3 is to 13 as 2 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "20"
+   },
+   {
+    "id": "B",
+    "text": "10"
+   },
+   {
+    "id": "C",
+    "text": "9"
+   },
+   {
+    "id": "D",
+    "text": "4"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Relation: x3 then +4. 3 -> 13, so 2 -> 10.",
+  "reasoning": "Inferring a numerical relation and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_analogy",
+   "source_inspiration": "Deterministic generator 1.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0252",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a circle together weigh 8. A triangle and a square together weigh 8. A square and a circle together weigh 10. Which shape is lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle1"
+   },
+   {
+    "id": "B",
+    "text": "square"
+   },
+   {
+    "id": "C",
+    "text": "triangle"
+   },
+   {
+    "id": "D",
+    "text": "circle"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add the three pair-weights: each shape counted twice = 26, so one of each = 13. The triangle is 3, the square is 5, the circle is 5; the lightest is the triangle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0253",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 1, 4, 12, 15, 45, 48, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "432"
+   },
+   {
+    "id": "B",
+    "text": "143"
+   },
+   {
+    "id": "C",
+    "text": "48"
+   },
+   {
+    "id": "D",
+    "text": "144"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Rule: alternating rule: add 3, then multiply by 3, repeat. The 7th term = 144.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0254",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 9, 16, 25, 36, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "51"
+   },
+   {
+    "id": "B",
+    "text": "48"
+   },
+   {
+    "id": "C",
+    "text": "49"
+   },
+   {
+    "id": "D",
+    "text": "50"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The rule is: the squares of 3, 4, 5, .... So the next number is 49.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (square).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0255",
+  "domain": "numerical_reasoning",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "2 is to 8 as 4 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "8"
+   },
+   {
+    "id": "B",
+    "text": "16"
+   },
+   {
+    "id": "C",
+    "text": "15"
+   },
+   {
+    "id": "D",
+    "text": "10"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Relation: x4. 2 -> 8, so 4 -> 16.",
+  "reasoning": "Inferring a numerical relation and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_analogy",
+   "source_inspiration": "Deterministic generator 1.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0256",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a circle together weigh 9. A square and a circle together weigh 11. A triangle and a square together weigh 10. Which shape is lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "circle"
+   },
+   {
+    "id": "B",
+    "text": "triangle1"
+   },
+   {
+    "id": "C",
+    "text": "triangle"
+   },
+   {
+    "id": "D",
+    "text": "square"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add the three pair-weights: each shape counted twice = 30, so one of each = 15. The triangle is 4, the square is 6, the circle is 5; the lightest is the triangle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0257",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 4, 6, 12, 14, 28, 30, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "60"
+   },
+   {
+    "id": "B",
+    "text": "59"
+   },
+   {
+    "id": "C",
+    "text": "30"
+   },
+   {
+    "id": "D",
+    "text": "62"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Rule: alternating rule: add 2, then multiply by 2, repeat. The 7th term = 60.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0258",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a square together weigh 12. A square and a circle together weigh 12. A triangle and a circle together weigh 12. Which shape is heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "circle"
+   },
+   {
+    "id": "B",
+    "text": "triangle"
+   },
+   {
+    "id": "C",
+    "text": "square"
+   },
+   {
+    "id": "D",
+    "text": "triangle1"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add the three pair-weights: each shape counted twice = 36, so one of each = 18. The triangle is 6, the square is 6, the circle is 6; the heaviest is the triangle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0260",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a circle together weigh 7. A triangle and a square together weigh 8. A square and a circle together weigh 5. Which shape is lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "circle1"
+   },
+   {
+    "id": "B",
+    "text": "triangle"
+   },
+   {
+    "id": "C",
+    "text": "square"
+   },
+   {
+    "id": "D",
+    "text": "circle"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Add the three pair-weights: each shape counted twice = 20, so one of each = 10. The triangle is 5, the square is 3, the circle is 2; the lightest is the circle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0262",
+  "domain": "numerical_reasoning",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "8 is to 21 as 2 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "15"
+   },
+   {
+    "id": "B",
+    "text": "4"
+   },
+   {
+    "id": "C",
+    "text": "9"
+   },
+   {
+    "id": "D",
+    "text": "8"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Relation: x2 then +5. 8 -> 21, so 2 -> 9.",
+  "reasoning": "Inferring a numerical relation and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_analogy",
+   "source_inspiration": "Deterministic generator 1.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0263",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 1, 3, 9, 11, 33, 35, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "35"
+   },
+   {
+    "id": "B",
+    "text": "315"
+   },
+   {
+    "id": "C",
+    "text": "104"
+   },
+   {
+    "id": "D",
+    "text": "105"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Rule: alternating rule: add 2, then multiply by 3, repeat. The 7th term = 105.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0264",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 2, 4, 12, 14, 42, 44, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "131"
+   },
+   {
+    "id": "B",
+    "text": "132"
+   },
+   {
+    "id": "C",
+    "text": "134"
+   },
+   {
+    "id": "D",
+    "text": "44"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Rule: alternating rule: add 2, then multiply by 3, repeat. The 7th term = 132.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0265",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a square together weigh 10. A square and a circle together weigh 10. A triangle and a circle together weigh 10. Which shape is lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "circle"
+   },
+   {
+    "id": "C",
+    "text": "square"
+   },
+   {
+    "id": "D",
+    "text": "triangle1"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add the three pair-weights: each shape counted twice = 30, so one of each = 15. The triangle is 5, the square is 5, the circle is 5; the lightest is the triangle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0266",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 1, 3, 6, 10, 15, 21, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "29"
+   },
+   {
+    "id": "B",
+    "text": "21"
+   },
+   {
+    "id": "C",
+    "text": "28"
+   },
+   {
+    "id": "D",
+    "text": "27"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The rule is: the gap between terms grows by 1 each step. So the next number is 28.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (grow).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0267",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 2, 5, 7, 12, 19, 31, 50, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "31"
+   },
+   {
+    "id": "B",
+    "text": "81"
+   },
+   {
+    "id": "C",
+    "text": "50"
+   },
+   {
+    "id": "D",
+    "text": "83"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The rule is: each term is the sum of the two before it. So the next number is 81.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (fib).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0268",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 4, 6, 18, 20, 60, 62, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "185"
+   },
+   {
+    "id": "B",
+    "text": "558"
+   },
+   {
+    "id": "C",
+    "text": "62"
+   },
+   {
+    "id": "D",
+    "text": "186"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Rule: alternating rule: add 2, then multiply by 3, repeat. The 7th term = 186.",
+  "reasoning": "Two-rule alternating number sequence (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Authored 1.1 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0269",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 5, 14, 23, 32, 41, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "59"
+   },
+   {
+    "id": "B",
+    "text": "32"
+   },
+   {
+    "id": "C",
+    "text": "51"
+   },
+   {
+    "id": "D",
+    "text": "50"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The rule is: add 9 each step. So the next number is 50.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (arith).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0270",
+  "domain": "numerical_reasoning",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 2, 5, 3, 7, 4, 9, 5, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "11"
+   },
+   {
+    "id": "B",
+    "text": "12"
+   },
+   {
+    "id": "C",
+    "text": "7"
+   },
+   {
+    "id": "D",
+    "text": "9"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The rule is: two woven sequences: odd positions +1, even positions +2. So the next number is 11.",
+  "reasoning": "Finding the pattern in a number sequence.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "number_sequence",
+   "source_inspiration": "Deterministic generator 1.1 (inter).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0271",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A square and a circle together weigh 11. A triangle and a square together weigh 8. A triangle and a circle together weigh 7. Which shape is lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "triangle1"
+   },
+   {
+    "id": "C",
+    "text": "square"
+   },
+   {
+    "id": "D",
+    "text": "circle"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add the three pair-weights: each shape counted twice = 26, so one of each = 13. The triangle is 2, the square is 6, the circle is 5; the lightest is the triangle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0272",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a square together weigh 8. A square and a circle together weigh 9. A triangle and a circle together weigh 11. Which shape is heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "square"
+   },
+   {
+    "id": "C",
+    "text": "circle"
+   },
+   {
+    "id": "D",
+    "text": "circle1"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add the three pair-weights: each shape counted twice = 28, so one of each = 14. The triangle is 5, the square is 3, the circle is 6; the heaviest is the circle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0274",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a square together weigh 7. A square and a circle together weigh 6. A triangle and a circle together weigh 7. Which shape is heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "square"
+   },
+   {
+    "id": "B",
+    "text": "circle"
+   },
+   {
+    "id": "C",
+    "text": "triangle"
+   },
+   {
+    "id": "D",
+    "text": "triangle1"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add the three pair-weights: each shape counted twice = 20, so one of each = 10. The triangle is 4, the square is 3, the circle is 3; the heaviest is the triangle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0275",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A square and a circle together weigh 9. A triangle and a circle together weigh 7. A triangle and a square together weigh 6. Which shape is lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "square"
+   },
+   {
+    "id": "B",
+    "text": "triangle1"
+   },
+   {
+    "id": "C",
+    "text": "triangle"
+   },
+   {
+    "id": "D",
+    "text": "circle"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add the three pair-weights: each shape counted twice = 22, so one of each = 11. The triangle is 2, the square is 4, the circle is 5; the lightest is the triangle.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0276",
+  "domain": "numerical_reasoning",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A square and a circle together weigh 10. A triangle and a square together weigh 11. A triangle and a circle together weigh 9. Which shape is heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "circle"
+   },
+   {
+    "id": "B",
+    "text": "triangle"
+   },
+   {
+    "id": "C",
+    "text": "square"
+   },
+   {
+    "id": "D",
+    "text": "square1"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add the three pair-weights: each shape counted twice = 30, so one of each = 15. The triangle is 5, the square is 6, the circle is 4; the heaviest is the square.",
+  "reasoning": "Solving a small weight system by combining equations.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "deduction"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "weight_system",
+   "source_inspiration": "Deterministic generator 1.3.",
+   "original": true
+  }
+ }
+]

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="24" font-size="16" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Rotation sequence (90 deg each step)</text>
+<polygon points="55,154 44.9457,116.541 65.0543,116.541" fill="#2b2d42" stroke="None" stroke-width="0"/>
+<text x="55" y="175" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">step 1</text>
+<polygon points="114.333,130 151.793,119.946 151.793,140.054" fill="#2b2d42" stroke="None" stroke-width="0"/>
+<text x="138.333" y="175" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">step 2</text>
+<polygon points="221.667,106 231.721,143.459 211.612,143.459" fill="#2b2d42" stroke="None" stroke-width="0"/>
+<text x="221.667" y="175" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">step 3</text>
+<polygon points="329,130 291.541,140.054 291.541,119.946" fill="#2b2d42" stroke="None" stroke-width="0"/>
+<text x="305" y="175" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">step 4</text>
+</svg>

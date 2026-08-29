@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="22" font-size="13" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Figure analogy: the shape changes to the next one in the cycle (triangle -&gt; square -&gt; circle -&gt; pentagon -&gt; hexagon -&gt; triangle)</text>
+<polygon points="70,104 85.2169,115.056 79.4046,132.944 60.5954,132.944 54.7831,115.056" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<text x="105" y="160" font-size="18" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">-&gt;</text>
+<polygon points="156,120 148,133.856 132,133.856 124,120 132,106.144 148,106.144" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="70" cy="190" r="16" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="70" cy="190" r="5" fill="#2b2d42" stroke="#2b2d42" stroke-width="3"/>
+<text x="105" y="230" font-size="18" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">-&gt;</text>
+<text x="140" y="190" font-size="34" fill="#e4572e" text-anchor="middle" font-family="sans-serif" font-weight="bold">?</text>
+</svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="22" font-size="13" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Figure analogy: the colour changes to the next one (red -&gt; blue -&gt; green -&gt; red)</text>
+<circle cx="70" cy="120" r="16" fill="#e4572e" stroke="#2b2d42" stroke-width="3"/>
+<text x="105" y="160" font-size="18" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">-&gt;</text>
+<circle cx="140" cy="120" r="16" fill="#4a90d9" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="86,190 78,203.856 62,203.856 54,190 62,176.144 78,176.144" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<text x="105" y="230" font-size="18" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">-&gt;</text>
+<text x="140" y="190" font-size="34" fill="#e4572e" text-anchor="middle" font-family="sans-serif" font-weight="bold">?</text>
+</svg>

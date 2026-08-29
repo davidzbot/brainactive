@@ -1,7 +1,7 @@
 {
   "name": "brainactive-android",
   "version": "1.7.0",
-  "description": "PSLE Hero - Android H5 + Capacitor version",
+  "description": "BrainActive - Singapore P3 Thinking Skills (Android H5 + Capacitor)",
   "scripts": {
     "dev:h5": "npm run build:h5 -- --watch",
     "build:h5": "taro build --type h5",

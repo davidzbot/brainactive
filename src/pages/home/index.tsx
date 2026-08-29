@@ -1,324 +1,193 @@
 import React, { useState, useEffect } from 'react'
 import { View, Text, Button } from '@tarojs/components'
-import Taro, { useLoad, useDidShow, navigateTo, showModal, showActionSheet, clearStorage, reLaunch } from '@tarojs/taro'
-import { getLang, setLang, getStorage, setStorage } from '@/utils/storage'
-import { isAdUnlocked, unlockAllModes, canPlayMode, formatDate, parseDateSafe, setSafeTitle } from '@/utils/common'
-import { showRewardAd } from '@/utils/ad'
-import { dataUtils } from '@/utils/data'
-import { t } from '@/utils/i18n'
-import { SHARE_CONFIG } from '@/config/share'
+import Taro, { useDidShow } from '@tarojs/taro'
+import {
+  getStreak,
+  getDailyUsage,
+  getRemainingFreeRounds,
+  canStartPractice,
+  isPro,
+  getProExpiry,
+  getLang,
+  getDeviceId
+} from '@/utils/storage'
+import { getBrainActiveProgress } from '@/utils/request'
+import ReferralModal from '@/components/ReferralModal'
+import QuotaOverlay from '@/components/QuotaOverlay'
+import SettingsModal from '@/components/SettingsModal'
 import './index.scss'
 
 export default function HomePage() {
   const [streak, setStreak] = useState(0)
-  const [difficulty, setDifficulty] = useState('easy')
-  const [currentTips, setCurrentTips] = useState<string[]>([])
-  const [todayStatus, setTodayStatus] = useState('')
-  const [isUnlocked, setIsUnlocked] = useState(false)
-  const [unlockExpiry, setUnlockExpiry] = useState<number | null>(null)
-  const [remainingTime, setRemainingTime] = useState('')
-  const [language, setLanguage] = useState(getLang())
-  const [tapCount, setTapCount] = useState(0)
-  const [loading, setLoading] = useState(true)
-  const [adLoading, setAdLoading] = useState(false)
+  const [dailyRounds, setDailyRounds] = useState(0)
+  const [remainingFree, setRemainingFree] = useState(2)
+  const [proActive, setProActive] = useState(false)
+  const [proExpiryText, setProExpiryText] = useState('')
+  const [lang, setLocalLang] = useState<'en' | 'zh'>('en')
 
-  const updateStatus = (s: number, unlocked: boolean) => {
-    if (unlocked) {
-      setTodayStatus(t('app.unlimited'))
-    } else if (s === 0) {
-      setTodayStatus(t('app.status.0'))
-    } else if (s < 3) {
-      setTodayStatus(t('app.status.low', { s }))
-    } else if (s < 7) {
-      setTodayStatus(t('app.status.mid', { s }))
-    } else {
-      setTodayStatus(t('app.status.high', { s }))
+  const [showReferral, setShowReferral] = useState(false)
+  const [showQuota, setShowQuota] = useState(false)
+  const [showSettings, setShowSettings] = useState(false)
+
+  const refreshState = () => {
+    const currentStreak = getStreak()
+    const usage = getDailyUsage()
+    const remaining = getRemainingFreeRounds()
+    const pro = isPro()
+    const currentLang = getLang()
+
+    setStreak(currentStreak)
+    setDailyRounds(usage.roundsCompleted)
+    setRemainingFree(remaining)
+    setProActive(pro)
+    setLocalLang(currentLang)
+
+    const exp = getProExpiry()
+    if (exp) {
+      const d = new Date(exp)
+      setProExpiryText(d.toLocaleDateString())
     }
   }
-
-  const checkUnlockStatus = () => {
-    const unlocked = isAdUnlocked()
-    const expiry = getStorage('ad_unlock_until')
-    setIsUnlocked(unlocked)
-    setUnlockExpiry(expiry)
-    if (unlocked && expiry) {
-      updateRemainingTime(expiry)
-    }
-    return { unlocked, expiry }
-  }
-
-  const updateRemainingTime = (expiry: number) => {
-    const now = Date.now()
-    const diff = expiry - now
-    if (diff <= 0) {
-      setRemainingTime('')
-      setIsUnlocked(false)
-      return
-    }
-    const h = Math.floor(diff / (1000 * 60 * 60))
-    const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
-    setRemainingTime(t('app.expires_in', { h, m }))
-  }
-
-  useEffect(() => {
-    let backListener: any = null
-    const setupBackBtn = async () => {
-      try {
-        const { App } = require('@capacitor/app')
-        backListener = await App.addListener('backButton', () => {
-          App.exitApp()
-        })
-      } catch { }
-    }
-    setupBackBtn()
-    return () => {
-      if (backListener) backListener.remove()
-    }
-  }, [])
-
-  useEffect(() => {
-    let timer: any = null
-    if (isUnlocked && unlockExpiry) {
-      timer = setInterval(() => {
-        updateRemainingTime(unlockExpiry)
-      }, 60000)
-    }
-    return () => {
-      if (timer) clearInterval(timer)
-    }
-  }, [isUnlocked, unlockExpiry])
-
-  useLoad(() => {
-    setLoading(true)
-    const currentLang = getLang() || 'en'
-    setLanguage(currentLang)
-    
-    const savedDiff = getStorage('lastDifficulty') || 'easy'
-    const savedStreak = getStorage('streak') || 0
-    const { unlocked } = checkUnlockStatus()
-
-    setStreak(savedStreak)
-    setDifficulty(savedDiff)
-    setCurrentTips(getRandomTips(dataUtils.tips))
-    updateStatus(savedStreak, unlocked)
-    setSafeTitle(t('app.title'))
-    
-    setTimeout(() => setLoading(false), 500)
-  })
 
   useDidShow(() => {
-    const { unlocked } = checkUnlockStatus()
-    checkStreakGuard()
-    updateStatus(streak, unlocked)
-    setSafeTitle(t('app.title'))
+    refreshState()
+    // Sync with remote progress if available
+    try {
+      getBrainActiveProgress(getDeviceId()).then((data) => {
+        if (data) {
+          if (data.is_pro) setProActive(true)
+          if (data.streak_count) setStreak(data.streak_count)
+        }
+      }).catch(() => {})
+    } catch {}
   })
 
-  const toggleLanguage = () => {
-    const newLang = language === 'en' ? 'zh' : 'en'
-    setLang(newLang)
-    setLanguage(newLang)
-    setSafeTitle(t('app.title'))
-    updateStatus(streak, isUnlocked)
-    setCurrentTips(getRandomTips(dataUtils.tips))
-  }
-
-  const checkStreakGuard = () => {
-    const last = getStorage('lastTrainingDate')
-    if (!last) return
-    const now = new Date()
-    const todayStr = formatDate(now)
-    const lastDate = parseDateSafe(last)
-    const todayDate = parseDateSafe(todayStr)
-
-    if (lastDate && todayDate) {
-      const diff = Math.floor((todayDate.getTime() - lastDate.getTime()) / (1000 * 60 * 60 * 24))
-      if (diff > 1) {
-        setStorage('streak', 0)
-        setStreak(0)
-        updateStatus(0, isUnlocked)
-      }
-    }
-  }
-
-  const getRandomTips = (arr: string[]) => {
-    const shuffled = [...arr].sort(() => 0.5 - Math.random())
-    return shuffled.slice(0, 1).map(ts => t('tip.prefix') + ts)
-  }
-
-  const handleWatchAd = async () => {
-    if (adLoading) return
-    setAdLoading(true)
-    const success = await showRewardAd()
-    setAdLoading(false)
-    if (success) {
-      const { unlocked } = checkUnlockStatus()
-      updateStatus(streak, unlocked)
-    }
-  }
-
-  const startTraining = async (level: string) => {
-    if (!canPlayMode(level)) {
-      const res = await showModal({
-        title: t('mode.limit'),
-        content: t('app.unlock_desc'),
-        confirmText: language === 'zh' ? '开启访问' : 'Unlock Now',
-      })
-      if (res.confirm) handleWatchAd()
+  const handleStartQuickTest = () => {
+    if (!canStartPractice()) {
+      setShowQuota(true)
       return
     }
-    setStorage('lastDifficulty', level)
-    setDifficulty(level)
-    navigateTo({ url: `/pages/task/index?difficulty=${level}` })
+    Taro.navigateTo({
+      url: '/pages/quiz/index?mode=quick_test'
+    })
   }
 
-  const handleInvite = async () => {
-    try {
-      const { Share } = require('@capacitor/share')
-      const cfg = language === 'zh' ? SHARE_CONFIG.zh : SHARE_CONFIG.en
-      await Share.share({
-        title: cfg.title,
-        text: cfg.text,
-        url: SHARE_CONFIG.url,
-        dialogTitle: t('button.invite'),
-      })
-    } catch (e) {
-      console.error('Invite failed', e)
+  const handleOpenPro = () => {
+    Taro.navigateTo({
+      url: '/pages/pro/index'
+    })
+  }
+
+  const getUsageText = () => {
+    if (proActive) return '👑 Unlimited Pro Access'
+    if (remainingFree > 0) {
+      return `🎯 ${remainingFree} free round${remainingFree !== 1 ? 's' : ''} left today`
     }
-  }
-
-  const handleShare = async () => {
-    try {
-      const { Share } = require('@capacitor/share')
-      const cfg = language === 'zh' ? SHARE_CONFIG.zh : SHARE_CONFIG.en
-      await Share.share({
-        title: cfg.title,
-        text: cfg.text,
-        url: SHARE_CONFIG.url,
-      })
-    } catch { }
-  }
-
-  const handleTitleTap = () => {
-    const nc = tapCount + 1
-    setTapCount(nc)
-    if (nc >= 10) {
-      showActionSheet({
-        itemList: ['Force Unlock', 'Reset Storage'],
-        success: (res) => {
-          if (res.tapIndex === 0) {
-            unlockAllModes()
-            checkUnlockStatus()
-            updateStatus(streak, true)
-          } else if (res.tapIndex === 1) {
-            clearStorage()
-            reLaunch({ url: '/pages/home/index' })
-          }
-        }
-      })
-      setTapCount(0)
+    const usage = getDailyUsage()
+    const adRoundsLeft = Math.max(0, 3 - usage.bonusRounds)
+    if (adRoundsLeft > 0) {
+      return `🎬 ${adRoundsLeft} ad unlock${adRoundsLeft !== 1 ? 's' : ''} available today`
     }
-  }
-
-  const renderModeCard = (level: string, labelKey: any, emoji: string) => {
-    const isModeUnlocked = canPlayMode(level)
-    return (
-      <View 
-        className={`mode-card mode-${level} ${!isModeUnlocked ? 'locked' : ''}`}
-        onClick={() => startTraining(level)}
-      >
-        <View className="mode-info">
-          <Text className="mode-label">{t(labelKey).replace(/\(.*\)/, '')}</Text>
-          <Text className="mode-sub-label">{t(labelKey).match(/\(.*\)/)?.[0] || ''}</Text>
-        </View>
-        <Text className="mode-status">{!isModeUnlocked ? '🔒' : emoji}</Text>
-      </View>
-    )
+    return '🏁 Daily free limit reached (5/5 rounds)'
   }
 
   return (
     <View className="home-container">
-      {loading && (
-        <View className="loading-screen">
-          <View className="spinner" />
+      {/* Top Bar: Settings & Streak */}
+      <View className="top-bar">
+        <View className="brand-badge">
+          <Text className="brand-name">BrainActive</Text>
+          <Text className="brand-tag">P3 High Ability</Text>
         </View>
-      )}
 
-      <View className="hero-section">
-        <View className="top-bar">
-          <View className="lang-toggle" onClick={toggleLanguage}>
-            <Text>{language === 'en' ? '中' : 'EN'}</Text>
+        <View className="top-right-actions">
+          <View className="streak-badge">
+            <Text className="streak-icon">🔥</Text>
+            <Text className="streak-count">
+              {streak === 0 ? 'Start streak' : `${streak}d`}
+            </Text>
           </View>
-        </View>
-        
-        <View className="hero-content">
-          <Text className="app-title" onClick={handleTitleTap}>{t('app.title')}</Text>
-          <Text className="app-subtitle">{t('app.subtitle')}</Text>
-          <View className="streak-card">
-            <Text className="streak-emoji">🔥</Text>
-            <View className="streak-info">
-              <Text className="streak-text">{streak}</Text>
-              <Text className="streak-unit">{t('common.days')}</Text>
-            </View>
+          <View className="settings-btn" onClick={() => setShowSettings(true)}>
+            <Text className="settings-icon">⚙️</Text>
           </View>
         </View>
       </View>
 
-      <View className="main-content">
-        <View className="description-box">
-           <Text className="app-description">{t('app.description')}</Text>
-        </View>
+      {/* Hero Banner / Header */}
+      <View className="hero-section">
+        <Text className="hero-subtitle">Singapore P3 Thinking Skills</Text>
+        <Text className="hero-title">Daily Thinking Quest 🧠</Text>
+        <Text className="hero-desc">
+          Build reasoning power through non-routine questions — logic, patterns, and problem solving.
+        </Text>
+      </View>
 
-        <View className="mode-grid-header">
-          <Text className="section-title">{t('panel.title')}</Text>
-        </View>
-
-        <View className="mode-grid">
-          {renderModeCard('easy', 'difficulty.easy', '🍵')}
-          {renderModeCard('normal', 'difficulty.normal', '⚡')}
-          {renderModeCard('pro', 'difficulty.pro', '🚀')}
-        </View>
-
-        <View className="status-card-section">
-          <View className={`status-card ${isUnlocked ? 'is-unlocked' : 'is-locked'}`}>
-            <View className="status-header">
-              <Text className="status-label">{isUnlocked ? '✅ ' + t('app.unlocked') : '🔒 ' + t('app.locked')}</Text>
-              {isUnlocked && <Text className="status-expiry">{remainingTime}</Text>}
-            </View>
-            <Text className="status-desc">
-              {isUnlocked ? t('app.unlimited') : t('app.unlock_desc')}
-            </Text>
-            
-            <Button 
-              className={`status-cta ${isUnlocked ? 'secondary' : 'primary'} ${adLoading ? 'loading' : ''}`}
-              onClick={handleWatchAd}
-              disabled={adLoading}
-            >
-              {adLoading ? (
-                <View className="btn-loading-content">
-                  <View className="btn-spinner" />
-                  <Text>{t('task.loading').replace('...', '')}</Text>
-                </View>
-              ) : (
-                isUnlocked ? t('button.watch_again') : t('button.watch_to_unlock')
-              )}
-            </Button>
+      {/* Main Quick Test Card */}
+      <View className="quick-test-card">
+        <View className="card-top">
+          <View className="card-badge">
+            <Text className="badge-text">DAILY PRACTICE</Text>
           </View>
+          <Text className="usage-info">{getUsageText()}</Text>
         </View>
 
-        <Button className="invite-btn" onClick={handleInvite}>
-          👥 {t('button.invite')}
+        <View className="card-body">
+          <Text className="quest-title">Daily Practice Round</Text>
+          <Text className="quest-specs">5 Questions · 5–8 min</Text>
+          <Text className="quest-tags">Logic · Pattern · Numerical · Verbal</Text>
+        </View>
+
+        <Button className="btn-start-quest" onClick={handleStartQuickTest}>
+          Begin Today's Practice →
         </Button>
       </View>
 
-      <View className="footer-section">
-        <View className="insight-box">
-          {currentTips.map((tip, i) => (
-            <Text key={i} className="insight-text">{tip}</Text>
-          ))}
+      {/* Pro Membership / Practice Zone Banner */}
+      <View className={`pro-banner ${proActive ? 'active' : ''}`} onClick={handleOpenPro}>
+        <View className="pro-left">
+          <Text className="pro-icon">👑</Text>
+          <View className="pro-text-box">
+            <Text className="pro-title">
+              {proActive ? 'BrainActive Pro ✓' : 'BrainActive Pro'}
+            </Text>
+            <Text className="pro-sub">
+              {proActive
+                ? `Valid until ${proExpiryText || 'Active'}`
+                : 'Unlimited practice · All 6 Topics · 4 Levels'}
+            </Text>
+          </View>
         </View>
-        <Text className="share-link" onClick={handleShare}>{t('button.share')}</Text>
-        <Text className="feedback-text">{t('footer.feedback')}</Text>
+        <Text className="pro-arrow">›</Text>
       </View>
+
+      {/* Referral Card */}
+      <View className="referral-banner" onClick={() => setShowReferral(true)}>
+        <View className="ref-content">
+          <Text className="ref-icon">🎁</Text>
+          <View className="ref-text">
+            <Text className="ref-title">Invite Friends, Get Pro Free</Text>
+            <Text className="ref-sub">Each friend you invite = 7 days free Pro for both of you</Text>
+          </View>
+        </View>
+        <Text className="ref-action">Invite</Text>
+      </View>
+
+      {/* Modals */}
+      <ReferralModal
+        isOpen={showReferral}
+        onClose={() => setShowReferral(false)}
+        onSuccess={refreshState}
+      />
+      <QuotaOverlay
+        isOpen={showQuota}
+        onClose={() => setShowQuota(false)}
+        onUnlocked={refreshState}
+      />
+      <SettingsModal
+        isOpen={showSettings}
+        onClose={() => setShowSettings(false)}
+        onLangChanged={refreshState}
+      />
     </View>
   )
 }

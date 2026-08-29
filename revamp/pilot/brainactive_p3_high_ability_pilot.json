@@ -1,0 +1,2518 @@
+{
+    "dataset":  {
+                    "name":  "BrainActive P3 High Ability Pilot",
+                    "version":  "0.4.1",
+                    "target":  "Singapore Primary 3 High Ability",
+                    "question_count":  50,
+                    "disclaimer":  "Original reasoning-practice items inspired by the BrainActive curriculum research (MOE 2026 HAL context, CogAT, UK 11+ NVR/VR, Singapore thinking-skills \u0026 heuristics). Not affiliated with or predictive of any MOE or GEP assessment. Not a mock exam.",
+                    "design":  "v0.4 is a RESEARCH-DERIVED LEARNING JOURNEY. Questions are grouped into Skill-Practice progressions where the same skill develops Explore (accessible) -\u003e Think (multi-step) -\u003e Challenge (complex) -\u003e Master (non-routine, integrates strategies). Difficulty rises via rule complexity, constraints and near-miss distractors, NOT bigger numbers or harder words. Each item carries thinking_skill + why_level so the learning intention is explicit. 8 v0.3 items were rewritten; Tier-1 gaps 6.6 (Pattern Application) and 3x3 matrices were added; a Master-tier integrate item was added. v0.4.1: defect-fix delta from the frozen content QA. 6 items corrected (0046, 0025, 0043, 0027, 0048, 0047); progression architecture and the other 44 questions unchanged.",
+                    "level_model":  "Explore / Think / Challenge / Master. \u0027difficulty\u0027 field uses the same level names.",
+                    "gates":  "No DB, no renderer, no production app code, no 100+ generation. Content review only."
+                },
+    "progressions":  [
+                         {
+                             "skill":  "Pattern Discovery",
+                             "skill_code":  "1.1",
+                             "domain":  "numerical_reasoning",
+                             "ids":  [
+                                         "BA_P3_0001",
+                                         "BA_P3_0002",
+                                         "BA_P3_0031"
+                                     ]
+                         },
+                         {
+                             "skill":  "Numerical Relationships",
+                             "skill_code":  "1.2",
+                             "domain":  "numerical_reasoning",
+                             "ids":  [
+                                         "BA_P3_0032",
+                                         "BA_P3_0003"
+                                     ]
+                         },
+                         {
+                             "skill":  "Number Puzzles \u0026 Systems",
+                             "skill_code":  "1.3",
+                             "domain":  "numerical_reasoning",
+                             "ids":  [
+                                         "BA_P3_0004",
+                                         "BA_P3_0006"
+                                     ]
+                         },
+                         {
+                             "skill":  "Quantitative Logic",
+                             "skill_code":  "1.4",
+                             "domain":  "numerical_reasoning",
+                             "ids":  [
+                                         "BA_P3_0033",
+                                         "BA_P3_0005"
+                                     ]
+                         },
+                         {
+                             "skill":  "Deductive Ordering",
+                             "skill_code":  "2.1",
+                             "domain":  "logical_reasoning",
+                             "ids":  [
+                                         "BA_P3_0034",
+                                         "BA_P3_0007"
+                                     ]
+                         },
+                         {
+                             "skill":  "Constraint \u0026 Matching",
+                             "skill_code":  "2.2",
+                             "domain":  "logical_reasoning",
+                             "ids":  [
+                                         "BA_P3_0008",
+                                         "BA_P3_0012"
+                                     ]
+                         },
+                         {
+                             "skill":  "Conditional Logic",
+                             "skill_code":  "2.3",
+                             "domain":  "logical_reasoning",
+                             "ids":  [
+                                         "BA_P3_0009",
+                                         "BA_P3_0035"
+                                     ]
+                         },
+                         {
+                             "skill":  "Classification \u0026 Sets",
+                             "skill_code":  "2.4",
+                             "domain":  "logical_reasoning",
+                             "ids":  [
+                                         "BA_P3_0036",
+                                         "BA_P3_0010"
+                                     ]
+                         },
+                         {
+                             "skill":  "Syllogisms \u0026 Inclusion",
+                             "skill_code":  "2.5",
+                             "domain":  "logical_reasoning",
+                             "ids":  [
+                                         "BA_P3_0011"
+                                     ]
+                         },
+                         {
+                             "skill":  "Word Analogies",
+                             "skill_code":  "3.1",
+                             "domain":  "verbal_reasoning",
+                             "ids":  [
+                                         "BA_P3_0037",
+                                         "BA_P3_0013"
+                                     ]
+                         },
+                         {
+                             "skill":  "Word Classification",
+                             "skill_code":  "3.2",
+                             "domain":  "verbal_reasoning",
+                             "ids":  [
+                                         "BA_P3_0014"
+                                     ]
+                         },
+                         {
+                             "skill":  "Codes \u0026 Ciphers",
+                             "skill_code":  "3.3",
+                             "domain":  "verbal_reasoning",
+                             "ids":  [
+                                         "BA_P3_0038",
+                                         "BA_P3_0015"
+                                     ]
+                         },
+                         {
+                             "skill":  "Sentence Logic",
+                             "skill_code":  "3.5",
+                             "domain":  "verbal_reasoning",
+                             "ids":  [
+                                         "BA_P3_0016"
+                                     ]
+                         },
+                         {
+                             "skill":  "2D Rotation",
+                             "skill_code":  "4.1",
+                             "domain":  "visual_spatial",
+                             "ids":  [
+                                         "BA_P3_0039",
+                                         "BA_P3_0017"
+                                     ]
+                         },
+                         {
+                             "skill":  "Reflection",
+                             "skill_code":  "4.2",
+                             "domain":  "visual_spatial",
+                             "ids":  [
+                                         "BA_P3_0018"
+                                     ]
+                         },
+                         {
+                             "skill":  "Nets \u0026 Cubes",
+                             "skill_code":  "4.3",
+                             "domain":  "visual_spatial",
+                             "ids":  [
+                                         "BA_P3_0040",
+                                         "BA_P3_0019"
+                                     ]
+                         },
+                         {
+                             "skill":  "3D Orientation",
+                             "skill_code":  "4.4",
+                             "domain":  "visual_spatial",
+                             "ids":  [
+                                         "BA_P3_0021"
+                                     ]
+                         },
+                         {
+                             "skill":  "Shape Transformation",
+                             "skill_code":  "4.6",
+                             "domain":  "visual_spatial",
+                             "ids":  [
+                                         "BA_P3_0020"
+                                     ]
+                         },
+                         {
+                             "skill":  "Combining / Hidden Shapes",
+                             "skill_code":  "4.7",
+                             "domain":  "visual_spatial",
+                             "ids":  [
+                                         "BA_P3_0027"
+                                     ]
+                         },
+                         {
+                             "skill":  "Figure Sequences",
+                             "skill_code":  "5.1",
+                             "domain":  "pattern_abstract",
+                             "ids":  [
+                                         "BA_P3_0041",
+                                         "BA_P3_0022"
+                                     ]
+                         },
+                         {
+                             "skill":  "Figure Matrices",
+                             "skill_code":  "5.2",
+                             "domain":  "pattern_abstract",
+                             "ids":  [
+                                         "BA_P3_0023",
+                                         "BA_P3_0043"
+                                     ]
+                         },
+                         {
+                             "skill":  "Figure Classification",
+                             "skill_code":  "5.3",
+                             "domain":  "pattern_abstract",
+                             "ids":  [
+                                         "BA_P3_0024"
+                                     ]
+                         },
+                         {
+                             "skill":  "Figure Analogies",
+                             "skill_code":  "5.4",
+                             "domain":  "pattern_abstract",
+                             "ids":  [
+                                         "BA_P3_0042",
+                                         "BA_P3_0025"
+                                     ]
+                         },
+                         {
+                             "skill":  "Count / Element Sequences",
+                             "skill_code":  "5.5",
+                             "domain":  "pattern_abstract",
+                             "ids":  [
+                                         "BA_P3_0026"
+                                     ]
+                         },
+                         {
+                             "skill":  "Working Backwards",
+                             "skill_code":  "6.1",
+                             "domain":  "problem_solving",
+                             "ids":  [
+                                         "BA_P3_0044",
+                                         "BA_P3_0028",
+                                         "BA_P3_0045",
+                                         "BA_P3_0046"
+                                     ]
+                         },
+                         {
+                             "skill":  "Guess \u0026 Check",
+                             "skill_code":  "6.2",
+                             "domain":  "problem_solving",
+                             "ids":  [
+                                         "BA_P3_0047",
+                                         "BA_P3_0029"
+                                     ]
+                         },
+                         {
+                             "skill":  "Before-After / Constant Difference",
+                             "skill_code":  "6.3",
+                             "domain":  "problem_solving",
+                             "ids":  [
+                                         "BA_P3_0030"
+                                     ]
+                         },
+                         {
+                             "skill":  "Pattern Application",
+                             "skill_code":  "6.6",
+                             "domain":  "problem_solving",
+                             "ids":  [
+                                         "BA_P3_0048",
+                                         "BA_P3_0049"
+                                     ]
+                         },
+                         {
+                             "skill":  "Integrated Master (rotation + shape change)",
+                             "skill_code":  "5.1+4.6",
+                             "domain":  "pattern_abstract",
+                             "ids":  [
+                                         "BA_P3_0050"
+                                     ]
+                         }
+                     ],
+    "questions":  [
+                      {
+                          "id":  "BA_P3_0001",
+                          "category":  "numerical_reasoning",
+                          "subcategory":  "pattern_discovery",
+                          "skill":  "number sequence (growing differences)",
+                          "skill_code":  "1.1",
+                          "difficulty":  "Explore",
+                          "level":  "Explore",
+                          "question":  "Find the next number: 1, 2, 4, 7, 11, 16, ___?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "20"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "21"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "22"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "23"
+                                          }
+                                      ],
+                          "answer":  "C",
+                          "explanation":  "Gaps: +1, +2, +3, +4, +5. Each gap grows by 1, so the next gap is +6: 16 + 6 = 22.",
+                          "thinking_skill":  "Spotting a changing (second-order) difference.",
+                          "why_level":  "Explore: a single clear rule; builds the habit of looking at differences between terms, not just the terms.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the Explore anchor of the 1.1 progression).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "numerical",
+                                       "pattern"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0002",
+                          "category":  "numerical_reasoning",
+                          "subcategory":  "pattern_discovery",
+                          "skill":  "interleaved sequences",
+                          "skill_code":  "1.1",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "Find the next number: 3, 6, 5, 12, 7, 24, 9, ___?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "36"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "48"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "40"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "52"
+                                          }
+                                      ],
+                          "answer":  "B",
+                          "explanation":  "Two woven sequences. Odd positions: 3, 5, 7, 9 (+2). Even positions: 6, 12, 24 (x2). The missing 8th term is the next even-position term: 24 x 2 = 48.",
+                          "thinking_skill":  "Splitting two interleaved sequences.",
+                          "why_level":  "Think: two rules must be held in mind at once; the first real multi-track reasoning in the 1.1 path.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the Think step of 1.1).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "numerical",
+                                       "pattern"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0031",
+                          "category":  "numerical_reasoning",
+                          "subcategory":  "pattern_discovery",
+                          "skill":  "scaling multiplier",
+                          "skill_code":  "1.1",
+                          "difficulty":  "Challenge",
+                          "level":  "Challenge",
+                          "question":  "Find the next number: 1, 2, 6, 24, 120, ___?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "240"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "600"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "720"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "144"
+                                          }
+                                      ],
+                          "answer":  "C",
+                          "explanation":  "Each term is the previous term multiplied by a growing integer: x2, x3, x4, x5. Next is x6: 120 x 6 = 720.",
+                          "thinking_skill":  "Detecting a scaling (non-additive) multiplier rule.",
+                          "why_level":  "Challenge: the rule is not additive and numbers grow fast; the child must test \u0027multiply by an increasing integer\u0027 rather than a fixed operation.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "New in v0.4 (extends 1.1 to its Challenge ceiling).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "numerical",
+                                       "pattern"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0032",
+                          "category":  "numerical_reasoning",
+                          "subcategory":  "numerical_relationships",
+                          "skill":  "single-operation analogy",
+                          "skill_code":  "1.2",
+                          "difficulty":  "Explore",
+                          "level":  "Explore",
+                          "question":  "4 is to 7 as 5 is to ___? (Find the relationship in the first pair, then use it.)",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "8"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "9"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "10"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "11"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "Relationship: +3. 4 + 3 = 7, so 5 + 3 = 8.",
+                          "thinking_skill":  "Inferring a single-operation relation and applying it.",
+                          "why_level":  "Explore scaffold: one obvious operation; teaches the analogy format before compound rules.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "New in v0.4 (Explore anchor for 1.2).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "numerical",
+                                       "analogy"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0003",
+                          "category":  "numerical_reasoning",
+                          "subcategory":  "numerical_relationships",
+                          "skill":  "two-part rule analogy",
+                          "skill_code":  "1.2",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "2 is to 5 as 4 is to ___? (The rule is not a simple round multiplier.)",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "8"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "9"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "10"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "11"
+                                          }
+                                      ],
+                          "answer":  "B",
+                          "explanation":  "Rule: x2 then +1. 2 -\u003e 5; so 4 -\u003e (4x2)+1 = 9. Distractors use x2 (8) and off-by-one (10, 11).",
+                          "thinking_skill":  "Inferring and testing a two-part rule (x2 then +1).",
+                          "why_level":  "Think (rewrite of v0.3 0003): the relation is not a round multiplier, so the child must hypothesise and test a compound rule - HA-appropriate, not a rote x4.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Rewrite of v0.3 0003 per audit (x4 was too transparent).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "numerical",
+                                       "analogy"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0004",
+                          "category":  "numerical_reasoning",
+                          "subcategory":  "number_puzzles_systems",
+                          "skill":  "weight/balance deduction",
+                          "skill_code":  "1.3",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "A triangle and a square together weigh 11. A square and a circle together weigh 13. A triangle and a circle together weigh 10. Which shape is heaviest?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Triangle"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Square"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Circle"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "All equal"
+                                          }
+                                      ],
+                          "answer":  "B",
+                          "explanation":  "Add the three: each shape counted twice = 34, so one of each = 17. Circle = 17-11 = 6, square = 17-10 = 7, triangle = 17-13 = 4. The square (7) is heaviest.",
+                          "thinking_skill":  "Solving a small system by combining equations.",
+                          "why_level":  "Think: must combine three pair-weights; multi-step but concrete.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the Think step of 1.3).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "numerical",
+                                       "deduction"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0006",
+                          "category":  "numerical_reasoning",
+                          "subcategory":  "number_puzzles_systems",
+                          "skill":  "small system",
+                          "skill_code":  "1.3",
+                          "difficulty":  "Challenge",
+                          "level":  "Challenge",
+                          "question":  "A, B and C are single digits. A + B = 10, B + C = 8, and A + C = 6. What is A?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "2"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "4"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "5"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "6"
+                                          }
+                                      ],
+                          "answer":  "B",
+                          "explanation":  "Try digits: if A = 4 then B = 6 (A+B=10) and C = 2 (B+C=8); check A+C = 4+2 = 6. Works, so A = 4.",
+                          "thinking_skill":  "Solving a 3-unknown system (guess \u0026 check / sum-and-subtract).",
+                          "why_level":  "Challenge: more unknowns; rewards systematic checking rather than a single insight.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the Challenge step of 1.3).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "numerical",
+                                       "challenge"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0033",
+                          "category":  "numerical_reasoning",
+                          "subcategory":  "quantitative_logic",
+                          "skill":  "single comparison",
+                          "skill_code":  "1.4",
+                          "difficulty":  "Explore",
+                          "level":  "Explore",
+                          "question":  "Ben has 2 more marbles than Ali. Ali has 5 marbles. Who has the most?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Ali"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Ben"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "They are equal"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Cannot tell"
+                                          }
+                                      ],
+                          "answer":  "B",
+                          "explanation":  "Ali = 5, so Ben = 5 + 2 = 7. Ben has the most.",
+                          "thinking_skill":  "Translating \u0027more than\u0027 into a comparison.",
+                          "why_level":  "Explore scaffold: one comparison step; introduces quantitative comparison before chained cases.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "New in v0.4 (Explore anchor for 1.4).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "numerical",
+                                       "logic"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0005",
+                          "category":  "numerical_reasoning",
+                          "subcategory":  "quantitative_logic",
+                          "skill":  "chained comparison",
+                          "skill_code":  "1.4",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "Ali has 3 more marbles than Bob. Bob has 2 fewer than Chen. Chen has 10. Who has the most?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Ali"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Bob"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Chen"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "All equal"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "Chen = 10. Bob = 10 - 2 = 8. Ali = 8 + 3 = 11. Ali (11) \u003e Chen (10) \u003e Bob (8).",
+                          "thinking_skill":  "Chaining several comparisons into a full order.",
+                          "why_level":  "Think: three linked comparisons; the child must build the whole order, not just one step.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the Think step of 1.4).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "numerical",
+                                       "logic"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0034",
+                          "category":  "logical_reasoning",
+                          "subcategory":  "deductive_ordering",
+                          "skill":  "linear order (two clues)",
+                          "skill_code":  "2.1",
+                          "difficulty":  "Explore",
+                          "level":  "Explore",
+                          "question":  "Tom is taller than Sam. Sam is taller than Lee. Who is the shortest?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Tom"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Sam"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Lee"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Cannot tell"
+                                          }
+                                      ],
+                          "answer":  "C",
+                          "explanation":  "Taller order: Tom \u003e Sam \u003e Lee, so Lee is shortest.",
+                          "thinking_skill":  "Building a linear order from two transitive clues.",
+                          "why_level":  "Explore scaffold: two clues read directly; introduces ordering before merged partial orders.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "New in v0.4 (Explore anchor for 2.1).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "logical",
+                                       "ordering"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0007",
+                          "category":  "logical_reasoning",
+                          "subcategory":  "deductive_ordering",
+                          "skill":  "merging partial orders",
+                          "skill_code":  "2.1",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "Four teams race. Red finishes before Blue. Green finishes after Yellow. Blue finishes before Green. Yellow finishes before Red. Order them from fastest to slowest.",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Yellow, Red, Blue, Green"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Red, Blue, Green, Yellow"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Yellow, Blue, Red, Green"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Green, Yellow, Red, Blue"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "From the clues: Yellow \u003c Red \u003c Blue (Yellow before Red, Red before Blue). Also Blue \u003c Green and Yellow \u003c Green. Together: Yellow \u003c Red \u003c Blue \u003c Green. Fastest to slowest: Yellow, Red, Blue, Green.",
+                          "thinking_skill":  "Merging two partial orderings into one total order.",
+                          "why_level":  "Think (rewrite of v0.3 0007): the clues do not form a single read-off chain; the child must merge separate partial orders - a real deduction, not a list to recite.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Rewrite of v0.3 0007 per audit (original was a read-off chain).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "logical",
+                                       "ordering"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0008",
+                          "category":  "logical_reasoning",
+                          "subcategory":  "constraint_matching",
+                          "skill":  "seating/assignment constraint",
+                          "skill_code":  "2.2",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "Anya, Ben and Cai sit in a row of three. Anya is in the middle. Ben is not at the left end. Who sits at the left end?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Anya"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Ben"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Cai"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Cannot tell"
+                                          }
+                                      ],
+                          "answer":  "C",
+                          "explanation":  "Anya is in the middle (seat 2). Left (1) and right (3) are Ben and Cai. Ben is not left, so Ben is right and Cai is left.",
+                          "thinking_skill":  "Placing a fixed person, then applying a negative constraint.",
+                          "why_level":  "Think: one fixed position plus one negative constraint; the core constraint-matching move.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the Think step of 2.2).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "logical",
+                                       "constraint"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0012",
+                          "category":  "logical_reasoning",
+                          "subcategory":  "constraint_matching",
+                          "skill":  "multi-clue deduction",
+                          "skill_code":  "2.2",
+                          "difficulty":  "Challenge",
+                          "level":  "Challenge",
+                          "question":  "Four friends each do a different activity: swimming, cycling, running, skating. (1) Ben cycles. (2) Cindy runs. (3) Amy does not swim. (4) Dan does not skate. Who swims?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Amy"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Ben"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Cindy"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Dan"
+                                          }
+                                      ],
+                          "answer":  "D",
+                          "explanation":  "Ben cycles and Cindy runs, leaving swimming and skating for Amy and Dan. Amy does not swim, so Amy skates and Dan swims. Check clue 4: Dan does not skate - true, he swims. Consistent.",
+                          "thinking_skill":  "Multi-clue assignment (constraint satisfaction).",
+                          "why_level":  "Challenge: four entities, four attributes, several clues; a table helps - the ceiling of 2.2.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the Challenge step of 2.2; the v0.3 logic bug was fixed before v0.4).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "logical",
+                                       "challenge"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0009",
+                          "category":  "logical_reasoning",
+                          "subcategory":  "conditional_logic",
+                          "skill":  "modus tollens",
+                          "skill_code":  "2.3",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "If it is sunny, the cat sits by the window. The cat is NOT by the window. What can we conclude?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "It is sunny"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "It is not sunny"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "The cat is outside"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "The cat is sleeping"
+                                          }
+                                      ],
+                          "answer":  "B",
+                          "explanation":  "Rule: sunny -\u003e cat by window. Cat NOT by window, so it cannot be sunny. You cannot tell where the cat is, only that it is not sunny.",
+                          "thinking_skill":  "Using the contrapositive (must-be-true from a negation).",
+                          "why_level":  "Think: requires reversing the implication; the classic HA logical move.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the Think step of 2.3).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "logical",
+                                       "deduction"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0035",
+                          "category":  "logical_reasoning",
+                          "subcategory":  "conditional_logic",
+                          "skill":  "chained conditionals",
+                          "skill_code":  "2.3",
+                          "difficulty":  "Challenge",
+                          "level":  "Challenge",
+                          "question":  "If it rains, the match is cancelled. If the match is cancelled, the picnic moves indoors. It is raining. What MUST be true?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "The picnic is indoors"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "It is not raining"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "The match is playing"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "The picnic is outside"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "It rains -\u003e match cancelled -\u003e picnic indoors. So the picnic must be indoors. The others contradict the chain.",
+                          "thinking_skill":  "Chaining two conditional rules (transitive if-then).",
+                          "why_level":  "Challenge: two linked rules; the conclusion must be carried through both steps, not just one.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "New in v0.4 (Challenge step for 2.3).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "logical",
+                                       "challenge"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0036",
+                          "category":  "logical_reasoning",
+                          "subcategory":  "classification_sets",
+                          "skill":  "majority-property odd-one-out",
+                          "skill_code":  "2.4",
+                          "difficulty":  "Explore",
+                          "level":  "Explore",
+                          "question":  "Which is the odd one out? A red square   B red triangle   C blue square   D red square",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "A"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "B"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "C"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "D"
+                                          }
+                                      ],
+                          "answer":  "C",
+                          "explanation":  "Three of the four are red (A, B, D). C is the only blue one, so by the majority property (colour) C is the odd one out. Shape alone is a trap (B is the only triangle).",
+                          "thinking_skill":  "Finding the property that three share (majority dimension).",
+                          "why_level":  "Explore scaffold: introduces odd-one-out by checking which attribute 3 share, not just any difference.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "New in v0.4 (Explore anchor for 2.4).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "logical",
+                                       "classification"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0010",
+                          "category":  "logical_reasoning",
+                          "subcategory":  "classification_sets",
+                          "skill":  "two-dimension classification",
+                          "skill_code":  "2.4",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "Four figures: A red square, B red square, C red square, D blue square. Which does not belong, and why?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "A (it is a square)"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "B (it is red)"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "D (it is the only blue one)"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "C (it is the only triangle)"
+                                          }
+                                      ],
+                          "answer":  "C",
+                          "explanation":  "Three figures share BOTH shape (square) and colour (red). D is also a square but is blue, so the distinguishing dimension is colour: D is the odd one. Option D is a trap (there is no triangle).",
+                          "thinking_skill":  "Attending to two dimensions to find the true odd-one-out.",
+                          "why_level":  "Think (rewrite of v0.3 0010): a single-dimension guess (shape) fails; the child must check both shape and colour - higher ceiling than \u0027curved vs straight\u0027.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Rewrite of v0.3 0010 per audit (curved-vs-straight was too low-ceiling).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "logical",
+                                       "classification"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0011",
+                          "category":  "logical_reasoning",
+                          "subcategory":  "syllogisms",
+                          "skill":  "transitive set inclusion",
+                          "skill_code":  "2.5",
+                          "difficulty":  "Challenge",
+                          "level":  "Challenge",
+                          "question":  "All squares are blue. All blue things are small. Which MUST be true?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "All squares are small"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "All small things are squares"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "All blue things are squares"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "All squares are heavy"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "Every square is blue, and everything blue is small, so every square is small. The others reverse the direction of the rules and need not be true.",
+                          "thinking_skill":  "Chaining set inclusions (transitive).",
+                          "why_level":  "Challenge: must chain inclusions without reversing them; a genuine deductive trap.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the single 2.5 item).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "logical",
+                                       "challenge"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0037",
+                          "category":  "verbal_reasoning",
+                          "subcategory":  "word_analogy",
+                          "skill":  "sound relation",
+                          "skill_code":  "3.1",
+                          "difficulty":  "Explore",
+                          "level":  "Explore",
+                          "question":  "Dog is to bark as cat is to ___?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "paw"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "meow"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "tail"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "milk"
+                                          }
+                                      ],
+                          "answer":  "B",
+                          "explanation":  "Relation: animal : the sound it makes. Dog barks, cat meows.",
+                          "thinking_skill":  "Identifying a familiar relation (sound).",
+                          "why_level":  "Explore scaffold: a clear relation; teaches the analogy format before less obvious pairings.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "New in v0.4 (Explore anchor for 3.1).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "verbal",
+                                       "analogy"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0013",
+                          "category":  "verbal_reasoning",
+                          "subcategory":  "word_analogy",
+                          "skill":  "tool-to-action relation",
+                          "skill_code":  "3.1",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "Pen is to write as knife is to ___?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "sharp"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "cut"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "food"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "peel"
+                                          }
+                                      ],
+                          "answer":  "B",
+                          "explanation":  "Relation: tool : the action it is used for. A pen is used to write; a knife is used to cut.",
+                          "thinking_skill":  "Mapping a tool-to-action relation (less cliche than body parts).",
+                          "why_level":  "Think (rewrite of v0.3 0013): replaces the over-used bird:wing example with a tool-action pair that still requires finding the relation, not recalling a stock phrase.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Rewrite of v0.3 0013 per audit (bird:wing was a cliche IQ item).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "verbal",
+                                       "analogy"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0014",
+                          "category":  "verbal_reasoning",
+                          "subcategory":  "word_classification",
+                          "skill":  "noun vs action",
+                          "skill_code":  "3.2",
+                          "difficulty":  "Explore",
+                          "level":  "Explore",
+                          "question":  "Which word is different? A dig   B shovel   C spoon   D rake",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "dig"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "shovel"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "spoon"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "rake"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "Shovel, spoon and rake are tools (things). Dig is the action of using a tool, so it is different.",
+                          "thinking_skill":  "Separating nouns (things) from actions.",
+                          "why_level":  "Explore scaffold: a simple semantic split; a gentle verbal warm-up.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the single 3.2 item).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "verbal",
+                                       "odd_one_out"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0038",
+                          "category":  "verbal_reasoning",
+                          "subcategory":  "codes_ciphers",
+                          "skill":  "letter shift (+1)",
+                          "skill_code":  "3.3",
+                          "difficulty":  "Explore",
+                          "level":  "Explore",
+                          "question":  "In a code, each letter becomes the next letter (A-\u003eB, B-\u003eC, ...). How is CAT written?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "DBU"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "CBT"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "DAV"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "CAU"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "Shift each letter forward one: C-\u003eD, A-\u003eB, T-\u003eU = DBU.",
+                          "thinking_skill":  "Applying a simple letter shift.",
+                          "why_level":  "Explore scaffold: a single +1 shift on a short word; introduces coding before decoding.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "New in v0.4 (Explore anchor for 3.3).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "verbal",
+                                       "cipher"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0015",
+                          "category":  "verbal_reasoning",
+                          "subcategory":  "codes_ciphers",
+                          "skill":  "letter shift (decode)",
+                          "skill_code":  "3.3",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "In a code, each letter means the next letter (A means B, ...). The code word is DPEF. What real word does it stand for?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "CODE"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "DOPE"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "BND"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "COPE"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "Each code letter is one step ahead, so decode by shifting back one: D-\u003eC, P-\u003eO, E-\u003eD, F-\u003eE = CODE.",
+                          "thinking_skill":  "Reversing a letter shift to decode.",
+                          "why_level":  "Think: decode (reverse the shift); deterministic and generatable.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the Think step of 3.3).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "verbal",
+                                       "cipher"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0016",
+                          "category":  "verbal_reasoning",
+                          "subcategory":  "sentence_logic",
+                          "skill":  "must-be-true (negated OR)",
+                          "skill_code":  "3.5",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "Mei reads every Saturday. She also reads whenever it rains. Today she is NOT reading. What MUST be true?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "It is not Saturday and not raining"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "It is Saturday"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "It is raining"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Mei is sleeping"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "She reads if Saturday OR raining. Today she does NOT read, so neither condition holds: it is not Saturday and it is not raining. B and C would make her read; D adds info we are not given.",
+                          "thinking_skill":  "Must-be-true from the negation of a combined condition (contrapositive of an OR).",
+                          "why_level":  "Think (rewrite of v0.3 0016, re-levelled from a mis-labelled Challenge): requires applying negation across two conditions - a real HA inference, not a trivial read.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Rewrite of v0.3 0016 per audit (was a trivial modus ponens mis-levelled as Challenge).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "verbal",
+                                       "logic"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0039",
+                          "category":  "visual_spatial",
+                          "subcategory":  "single_rotation",
+                          "skill":  "mental rotation (asymmetric)",
+                          "skill_code":  "4.1",
+                          "difficulty":  "Explore",
+                          "level":  "Explore",
+                          "question":  "An L-shape has its corner at the top-left. It is rotated 90 degrees clockwise. Where is the corner now?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "top-left"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "top-right"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "bottom-right"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "bottom-left"
+                                          }
+                                      ],
+                          "answer":  "B",
+                          "explanation":  "Rotating 90 degrees clockwise moves the top-left corner to the top-right corner. Because the shape is asymmetric (an L), the orientation actually matters.",
+                          "thinking_skill":  "Mentally rotating an asymmetric shape.",
+                          "why_level":  "Explore scaffold: one 90-degree turn of an L; orientation matters, unlike a symmetric dot.",
+                          "visual_required":  true,
+                          "visual_spec":  {
+                                              "type":  "single_rotation",
+                                              "shape":  "L",
+                                              "mark":  "corner_top_left",
+                                              "rotation":  "clockwise 90",
+                                              "result":  "corner_top_right"
+                                          },
+                          "source_inspiration":  "New in v0.4 (Explore anchor for 4.1).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "spatial",
+                                       "rotation"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0017",
+                          "category":  "visual_spatial",
+                          "subcategory":  "single_rotation",
+                          "skill":  "two-step rotation",
+                          "skill_code":  "4.1",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "An arrow points up. It is rotated 90 degrees clockwise, then another 90 degrees clockwise. Which way does it point now?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "up"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "right"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "down"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "left"
+                                          }
+                                      ],
+                          "answer":  "C",
+                          "explanation":  "Up -\u003e right (first turn) -\u003e down (second turn). Two 90-degree clockwise turns = 180 degrees, so the arrow points down.",
+                          "thinking_skill":  "Tracking rotation across two steps.",
+                          "why_level":  "Think (rewrite of v0.3 0017): must accumulate TWO turns, not read a single labelled corner; the orientation must be held in mind.",
+                          "visual_required":  true,
+                          "visual_spec":  {
+                                              "type":  "rotation_sequence",
+                                              "shape":  "arrow",
+                                              "start":  "up",
+                                              "rule":  "clockwise 90 per step",
+                                              "steps":  2,
+                                              "result":  "down"
+                                          },
+                          "source_inspiration":  "Rewrite of v0.3 0017 per audit (single corner-dot turn was minimal).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "spatial",
+                                       "rotation"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0018",
+                          "category":  "visual_spatial",
+                          "subcategory":  "reflection",
+                          "skill":  "mirror reflection",
+                          "skill_code":  "4.2",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "The letter \u0027b\u0027 is reflected in a vertical mirror (left-right flip). Which letter does the reflection look like?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "b"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "d"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "p"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "q"
+                                          }
+                                      ],
+                          "answer":  "B",
+                          "explanation":  "A vertical (left-right) mirror flips \u0027b\u0027 so its round part moves to the right, making it look like \u0027d\u0027.",
+                          "thinking_skill":  "Mirror reflection across a vertical axis.",
+                          "why_level":  "Think: a vertical mirror reverses left and right; Tier-1 spatial.",
+                          "visual_required":  true,
+                          "visual_spec":  {
+                                              "type":  "reflection",
+                                              "axis":  "vertical",
+                                              "source":  "b",
+                                              "result":  "d"
+                                          },
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the single 4.2 item).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "spatial",
+                                       "reflection"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0040",
+                          "category":  "visual_spatial",
+                          "subcategory":  "cube_faces",
+                          "skill":  "opposite faces",
+                          "skill_code":  "4.3",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "A cube has a star on the FRONT, a dot on the TOP, and a circle on the RIGHT. Which face is opposite the star?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "back"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "top"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "right"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "bottom"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "Front, top and right are three faces meeting at one corner. The face opposite the front is the back. (Top is opposite bottom; right is opposite left.)",
+                          "thinking_skill":  "Identifying the face opposite a given face on a cube.",
+                          "why_level":  "Think: must place three adjacent faces and infer the opposite; a step before full net-folding.",
+                          "visual_required":  true,
+                          "visual_spec":  {
+                                              "type":  "cube_faces",
+                                              "front":  "star",
+                                              "top":  "dot",
+                                              "right":  "circle",
+                                              "opposite_front":  "back"
+                                          },
+                          "source_inspiration":  "New in v0.4 (Think step for 4.3).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "spatial",
+                                       "cube"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0019",
+                          "category":  "visual_spatial",
+                          "subcategory":  "cube_net",
+                          "skill":  "3D net folding",
+                          "skill_code":  "4.3",
+                          "difficulty":  "Challenge",
+                          "level":  "Challenge",
+                          "question":  "A cube net: centre square Y, with W above Y, V below Y, X left of Y, Z right of Y, and U below V (V and U form a column under Y). Folded with Y as the front face, which square is the BACK face (opposite the front)?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "W (above Y)"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "V (below Y)"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "U (bottom of column)"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "Z (right of Y)"
+                                          }
+                                      ],
+                          "answer":  "C",
+                          "explanation":  "Fold Y as front: X=left, Z=right, W=top, V=bottom, and the remaining square U folds to the back. The face opposite front (Y) is the back = U.",
+                          "thinking_skill":  "Folding a net to find the opposite face.",
+                          "why_level":  "Challenge: unfold/refold mentally; the Tier-1 spatial ceiling.",
+                          "visual_required":  true,
+                          "visual_spec":  {
+                                              "type":  "cube_net",
+                                              "layout":  [
+                                                             [
+                                                                 "",
+                                                                 "W",
+                                                                 ""
+                                                             ],
+                                                             [
+                                                                 "X",
+                                                                 "Y",
+                                                                 "Z"
+                                                             ],
+                                                             [
+                                                                 "",
+                                                                 "V",
+                                                                 ""
+                                                             ],
+                                                             [
+                                                                 "",
+                                                                 "U",
+                                                                 ""
+                                                             ]
+                                                         ],
+                                              "front":  "Y",
+                                              "back":  "U"
+                                          },
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the Challenge step of 4.3).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "spatial",
+                                       "net",
+                                       "challenge"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0021",
+                          "category":  "visual_spatial",
+                          "subcategory":  "rotation_3d",
+                          "skill":  "3D orientation reasoning",
+                          "skill_code":  "4.4",
+                          "difficulty":  "Challenge",
+                          "level":  "Challenge",
+                          "question":  "A cube has a dot on its TOP face and a star on its FRONT face. You rotate it 90 degrees to the right around the vertical axis. Where is the star now?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "top"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "front"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "right"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "left"
+                                          }
+                                      ],
+                          "answer":  "C",
+                          "explanation":  "Rotating around the vertical axis to the right turns the front face to the right side. The top face (dot) stays on top. The star moves from front to right.",
+                          "thinking_skill":  "3D rotation around the vertical axis.",
+                          "why_level":  "Challenge: side faces move while top stays; hard spatial reasoning, a research-flagged area.",
+                          "visual_required":  true,
+                          "visual_spec":  {
+                                              "type":  "rotation_3d",
+                                              "axis":  "vertical",
+                                              "marks":  {
+                                                            "top":  "dot",
+                                                            "front":  "star"
+                                                        },
+                                              "rotation":  "right 90",
+                                              "star_after":  "right"
+                                          },
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the single 4.4 item).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "spatial",
+                                       "rotation",
+                                       "challenge"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0020",
+                          "category":  "visual_spatial",
+                          "subcategory":  "shape_transformation",
+                          "skill":  "dual-rule (side count + colour)",
+                          "skill_code":  "4.6",
+                          "difficulty":  "Explore",
+                          "level":  "Explore",
+                          "question":  "Each step the shape gains one side AND its colour alternates red, blue, red... A red triangle becomes a blue square, then a red pentagon. What comes next?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "hexagon, blue"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "hexagon, red"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "heptagon, blue"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "circle"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "Two rules: sides go 3,4,5 so next is 6 (hexagon); colour goes red, blue, red, so next is blue. The next shape is a blue hexagon.",
+                          "thinking_skill":  "Continuing a two-feature transformation.",
+                          "why_level":  "Explore scaffold: two clear rules running together; builds feature-tracking.",
+                          "visual_required":  true,
+                          "visual_spec":  {
+                                              "type":  "shape_transformation",
+                                              "rule":  "add one side AND alternate colour red/blue",
+                                              "sequence":  [
+                                                               "triangle red(3)",
+                                                               "square blue(4)",
+                                                               "pentagon red(5)",
+                                                               "hexagon blue(6)"
+                                                           ]
+                                          },
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the single 4.6 item).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "spatial",
+                                       "transformation"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0027",
+                          "category":  "visual_spatial",
+                          "subcategory":  "combining_shapes",
+                          "skill":  "combine / hidden shapes",
+                          "skill_code":  "4.7",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "A big square has a small triangle attached to its LEFT side and a small circle attached to its RIGHT side. Which option matches this combined figure?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "triangle on the left, circle on the right"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "circle on the left, triangle on the right"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "triangle on top, circle on bottom"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "two circles, one on each side"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "The figure joins a triangle on the left of the square and a circle on the right. Option A matches; B swaps the sides, C and D place the shapes wrongly.",
+                          "thinking_skill":  "Composing a figure from two placed parts (spatial assembly).",
+                          "why_level":  "Think (rewritten in v0.4.1 to be a genuine combining-shapes task: the child must attach two parts at the correct positions, not just recognise a described house).",
+                          "visual_required":  true,
+                          "visual_spec":  {
+                                              "parts":  [
+                                                            "square_base",
+                                                            "triangle_left",
+                                                            "circle_right"
+                                                        ],
+                                              "result":  "square with triangle left and circle right",
+                                              "type":  "combine_shapes"
+                                          },
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the single 4.7 item).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "spatial",
+                                       "combining"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0041",
+                          "category":  "pattern_abstract",
+                          "subcategory":  "figure_sequence",
+                          "skill":  "rotation sequence",
+                          "skill_code":  "5.1",
+                          "difficulty":  "Explore",
+                          "level":  "Explore",
+                          "question":  "An arrow points up, then right, then down (turning 90 degrees clockwise each step). What does it point to next?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "up"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "right"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "down"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "left"
+                                          }
+                                      ],
+                          "answer":  "D",
+                          "explanation":  "The arrow goes up -\u003e right -\u003e down. One more 90-degree clockwise turn points it left.",
+                          "thinking_skill":  "Continuing a single-rule rotation sequence.",
+                          "why_level":  "Explore scaffold: three steps shown, predict the fourth; one rule only.",
+                          "visual_required":  true,
+                          "visual_spec":  {
+                                              "type":  "rotation_sequence",
+                                              "shape":  "arrow",
+                                              "start":  "up",
+                                              "rule":  "clockwise 90 per step",
+                                              "steps_shown":  3,
+                                              "next":  "left"
+                                          },
+                          "source_inspiration":  "New in v0.4 (Explore anchor for 5.1).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "pattern",
+                                       "rotation"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0022",
+                          "category":  "pattern_abstract",
+                          "subcategory":  "figure_sequence",
+                          "skill":  "cycle + second attribute",
+                          "skill_code":  "5.1",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "An arrow rotates 90 degrees clockwise each step and its colour alternates red, blue, red... Step 1: up red. Step 2: right blue. Step 3: down red. Step 4: left blue. Step 5: up red. At Step 7, what are its direction and colour?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "down, red"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "up, blue"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "left, red"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "down, blue"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "Direction cycles every 4 steps: step 7 = step 3 = down. Colour alternates red(odd)/blue(even); step 7 is odd so red. At step 7: down, red.",
+                          "thinking_skill":  "Predicting a later term using a cycle plus a second alternating attribute.",
+                          "why_level":  "Think (rewrite of v0.3 0022): must use the cycle modulus AND track a second feature; not a recite-the-cycle.",
+                          "visual_required":  true,
+                          "visual_spec":  {
+                                              "type":  "rotation_sequence",
+                                              "shape":  "arrow",
+                                              "start":  "up",
+                                              "rule":  "clockwise 90 per step + colour alternate red/blue",
+                                              "step7":  {
+                                                            "direction":  "down",
+                                                            "colour":  "red"
+                                                        }
+                                          },
+                          "source_inspiration":  "Rewrite of v0.3 0022 per audit (4-step cycle returning to \u0027up\u0027 had no real prediction).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "pattern",
+                                       "sequence"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0023",
+                          "category":  "pattern_abstract",
+                          "subcategory":  "figure_matrices",
+                          "skill":  "2x2 analogy matrix",
+                          "skill_code":  "5.2",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "Top-left is a circle. Top-right is a circle with a dot. Bottom-left is a square. Following the same change (add a dot), what should the bottom-right be?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "square"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "square with a dot"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "circle with a dot"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "circle"
+                                          }
+                                      ],
+                          "answer":  "B",
+                          "explanation":  "Change from top-left to top-right is \u0027add a dot\u0027. Apply the same change to bottom-left (square): square -\u003e square with a dot.",
+                          "thinking_skill":  "Mapping a transformation across a 2x2 matrix.",
+                          "why_level":  "Think: find the rule in row 1, apply to row 2; Tier-1 figural reasoning.",
+                          "visual_required":  true,
+                          "visual_spec":  {
+                                              "type":  "analogy_matrix",
+                                              "rows":  2,
+                                              "cols":  2,
+                                              "rule":  "second = first + dot",
+                                              "cells":  [
+                                                            [
+                                                                "circle",
+                                                                "circle+dot"
+                                                            ],
+                                                            [
+                                                                "square",
+                                                                "?"
+                                                            ]
+                                                        ]
+                                          },
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the Think step of 5.2).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "pattern",
+                                       "matrix"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0043",
+                          "category":  "pattern_abstract",
+                          "subcategory":  "figure_matrices",
+                          "skill":  "3x3 matrix (row + column rules)",
+                          "skill_code":  "5.2",
+                          "difficulty":  "Challenge",
+                          "level":  "Challenge",
+                          "question":  "Complete the 3x3 matrix. Rule DOWN each COLUMN: add one dot (1 dot -\u003e 2 dots -\u003e 3 dots). Rule ACROSS each ROW: colour changes red -\u003e blue -\u003e green. Top-left is a red circle with 1 dot. The bottom-right cell is ___?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "green circle with 3 dots"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "red circle with 3 dots"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "green circle with 2 dots"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "blue circle with 3 dots"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "Down column 3 the dots go 1 -\u003e 2 -\u003e 3. Across row 3 the colour goes red -\u003e blue -\u003e green. So bottom-right = green circle with 3 dots.",
+                          "thinking_skill":  "Completing a 3x3 matrix with two simultaneous rules (row and column).",
+                          "why_level":  "Challenge (3x3 matrix; row/column rule directions corrected in v0.4.1): two rules apply at once - the \"wow\" visual item research flagged as important.",
+                          "visual_required":  true,
+                          "visual_spec":  {
+                                              "cells":  [
+                                                            [
+                                                                "red circle 1",
+                                                                "blue circle 1",
+                                                                "green circle 1"
+                                                            ],
+                                                            [
+                                                                "red circle 2",
+                                                                "blue circle 2",
+                                                                "green circle 2"
+                                                            ],
+                                                            [
+                                                                "red circle 3",
+                                                                "blue circle 3",
+                                                                "?"
+                                                            ]
+                                                        ],
+                                              "col_rule":  "add one dot down the column",
+                                              "answer":  "green circle 3",
+                                              "type":  "matrix_3x3",
+                                              "row_rule":  "colour changes red-\u003eblue-\u003egreen across the row"
+                                          },
+                          "source_inspiration":  "New in v0.4 (addresses audit MISSING: only a 2x2 matrix existed; research wants 3x3).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "pattern",
+                                       "matrix",
+                                       "challenge"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0024",
+                          "category":  "pattern_abstract",
+                          "subcategory":  "figure_classification",
+                          "skill":  "SPONCS (shape) odd-one-out",
+                          "skill_code":  "5.3",
+                          "difficulty":  "Explore",
+                          "level":  "Explore",
+                          "question":  "Four figures: A triangle with 1 dot, B triangle with 2 dots, C square with 3 dots, D triangle with 4 dots. Which does not belong?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "A"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "B"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "C"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "D"
+                                          }
+                                      ],
+                          "answer":  "C",
+                          "explanation":  "A, B and D are triangles (only dot count changes). C is the only square, so it does not belong by shape.",
+                          "thinking_skill":  "SPONCS odd-one-out by shape.",
+                          "why_level":  "Explore scaffold: one shape differs; introduces figural classification.",
+                          "visual_required":  true,
+                          "visual_spec":  {
+                                              "type":  "odd_one_out",
+                                              "dimension":  "shape",
+                                              "items":  [
+                                                            {
+                                                                "id":  "A",
+                                                                "shape":  "triangle",
+                                                                "dots":  1
+                                                            },
+                                                            {
+                                                                "id":  "B",
+                                                                "shape":  "triangle",
+                                                                "dots":  2
+                                                            },
+                                                            {
+                                                                "id":  "C",
+                                                                "shape":  "square",
+                                                                "dots":  3
+                                                            },
+                                                            {
+                                                                "id":  "D",
+                                                                "shape":  "triangle",
+                                                                "dots":  4
+                                                            }
+                                                        ]
+                                          },
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the single 5.3 item).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "pattern",
+                                       "odd_one_out"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0042",
+                          "category":  "pattern_abstract",
+                          "subcategory":  "figure_analogy",
+                          "skill":  "single-feature mapping",
+                          "skill_code":  "5.4",
+                          "difficulty":  "Explore",
+                          "level":  "Explore",
+                          "question":  "A small square changes into a large square (size only changes). Using the same change, a small circle changes into a ___?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "large circle"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "small circle"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "large square"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "medium circle"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "The change is \u0027increase size\u0027; the shape stays the same. Small square -\u003e large square, so small circle -\u003e large circle.",
+                          "thinking_skill":  "Mapping a single feature (size) in a figure analogy.",
+                          "why_level":  "Explore scaffold: one mapped feature; teaches figure-analogy format before dual features.",
+                          "visual_required":  true,
+                          "visual_spec":  {
+                                              "type":  "shape_analogy",
+                                              "rule":  "increase size",
+                                              "pair1":  {
+                                                            "small":  "square",
+                                                            "large":  "square"
+                                                        },
+                                              "pair2":  {
+                                                            "small":  "circle",
+                                                            "large":  "?"
+                                                        }
+                                          },
+                          "source_inspiration":  "New in v0.4 (Explore anchor for 5.4).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "pattern",
+                                       "analogy"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0025",
+                          "category":  "pattern_abstract",
+                          "subcategory":  "figure_analogy",
+                          "skill":  "dual-feature mapping",
+                          "skill_code":  "5.4",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "A small red square changes into a large blue square (size flips AND colour flips, shape stays). Using the same change, a small blue circle changes into a ___?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "large red circle"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "small red circle"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "large blue circle"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "large blue square"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "Two changes: size small-\u003elarge, and colour flips (red-\u003eblue, so blue-\u003ered). Shape stays the same. So small blue circle -\u003e large red circle.",
+                          "thinking_skill":  "Mapping two transformations at once (size + colour).",
+                          "why_level":  "Think (rewritten in v0.4.1): the colour flip is now a reversible red\u003c-\u003eblue rule shown by the example, so the child can legitimately infer blue-\u003ered; maps two features, shape constant.",
+                          "visual_required":  true,
+                          "visual_spec":  {
+                                              "pair1":  {
+                                                            "small_red_square":  "large_blue_square"
+                                                        },
+                                              "rule":  "flip size AND flip colour (red\u003c-\u003eblue), keep shape",
+                                              "pair2":  {
+                                                            "small_blue_circle":  "?"
+                                                        },
+                                              "type":  "shape_animation"
+                                          },
+                          "source_inspiration":  "Rewrite of v0.3 0025 per audit (single-feature mapping was too elementary).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "pattern",
+                                       "analogy"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0026",
+                          "category":  "pattern_abstract",
+                          "subcategory":  "count_sequence",
+                          "skill":  "sum-of-previous-two",
+                          "skill_code":  "5.5",
+                          "difficulty":  "Explore",
+                          "level":  "Explore",
+                          "question":  "Groups of dots: 2, then 3, then 5, then 8, then 13. How many dots come next?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "18"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "20"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "21"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "26"
+                                          }
+                                      ],
+                          "answer":  "C",
+                          "explanation":  "Each group has as many dots as the two previous groups combined: 2+3=5, 3+5=8, 5+8=13, so 8+13=21.",
+                          "thinking_skill":  "Continuing a sum-of-previous-two progression.",
+                          "why_level":  "Explore scaffold: an approachable, recognisable pattern.",
+                          "visual_required":  true,
+                          "visual_spec":  {
+                                              "type":  "count_sequence",
+                                              "counts":  [
+                                                             2,
+                                                             3,
+                                                             5,
+                                                             8,
+                                                             13
+                                                         ],
+                                              "next":  21
+                                          },
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the single 5.5 item).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "pattern",
+                                       "sequence"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0044",
+                          "category":  "problem_solving",
+                          "subcategory":  "working_backwards",
+                          "skill":  "reverse one operation",
+                          "skill_code":  "6.1",
+                          "difficulty":  "Explore",
+                          "level":  "Explore",
+                          "question":  "A number plus 5 equals 12. What is the number?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "7"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "17"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "8"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "6"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "Work backwards: the result was 12, so before adding 5 the number was 12 - 5 = 7.",
+                          "thinking_skill":  "Reversing a single operation.",
+                          "why_level":  "Explore scaffold for the Working-Backwards progression: one reverse step; introduces the heuristic.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "New in v0.4 (Explore step of 6.1).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "heuristics",
+                                       "working_backwards"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0028",
+                          "category":  "problem_solving",
+                          "subcategory":  "working_backwards",
+                          "skill":  "reverse two operations",
+                          "skill_code":  "6.1",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "A number is doubled, then 3 is added, and the result is 15. What was the starting number?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "5"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "6"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "7"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "9"
+                                          }
+                                      ],
+                          "answer":  "B",
+                          "explanation":  "Work backwards: the result was 15, so before adding 3 it was 12, and before doubling it was 12 / 2 = 6. Starting number = 6.",
+                          "thinking_skill":  "Reversing two operations in the correct order.",
+                          "why_level":  "Think: undo the steps backwards (the core WB move); the middle of the 6.1 progression.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the Think step of 6.1).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "heuristics",
+                                       "working_backwards"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0045",
+                          "category":  "problem_solving",
+                          "subcategory":  "working_backwards",
+                          "skill":  "reverse in context",
+                          "skill_code":  "6.1",
+                          "difficulty":  "Challenge",
+                          "level":  "Challenge",
+                          "question":  "A bus had some children. At a stop, 8 got off and 5 got on. Now there are 14 children on the bus. How many were on the bus at first?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "11"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "17"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "19"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "7"
+                                          }
+                                      ],
+                          "answer":  "B",
+                          "explanation":  "Work backwards from 14: before 5 got on there were 14 - 5 = 9; before 8 got off there were 9 + 8 = 17. So 17 at first.",
+                          "thinking_skill":  "Working backwards through a real-world context.",
+                          "why_level":  "Challenge: unfamiliar framing; must reverse two changes in a story, not just numbers.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "New in v0.4 (Challenge step of 6.1).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "heuristics",
+                                       "working_backwards"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0046",
+                          "category":  "problem_solving",
+                          "subcategory":  "working_backwards",
+                          "skill":  "working backwards + verify",
+                          "skill_code":  "6.1",
+                          "difficulty":  "Master",
+                          "level":  "Master",
+                          "question":  "A number is doubled, then 4 is added, then 5 is subtracted, and the result is 11. What was the starting number? Check your answer by going forward.",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "5"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "7"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "8"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "6"
+                                          }
+                                      ],
+                          "answer":  "D",
+                          "explanation":  "Work backwards: 11 + 5 = 16; 16 - 4 = 12; 12 / 2 = 6. Check forward: 6 x 2 = 12, +4 = 16, -5 = 11. Correct, so start = 6.",
+                          "thinking_skill":  "Working backwards through a 3-step process AND verifying with the forward check (combining two heuristics).",
+                          "why_level":  "Master: non-routine; the familiar single algorithm does not apply directly - the child must reverse a 3-step process and confirm via guess-\u0026-check/verification. (Corrected in v0.4.1: the middle \"=20\" step was inconsistent; the process is now double -\u003e +4 -\u003e -5 = 11.)",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "New in v0.4 (Master step of 6.1; combines working-backwards with verification).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "heuristics",
+                                       "working_backwards",
+                                       "master"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0047",
+                          "category":  "problem_solving",
+                          "subcategory":  "guess_check",
+                          "skill":  "systematic trial (few cases)",
+                          "skill_code":  "6.2",
+                          "difficulty":  "Explore",
+                          "level":  "Explore",
+                          "question":  "Some coins are 2-dollar and some are 5-dollar. There are 7 coins in total and they make 23 dollars. How many 5-dollar coins are there?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "2"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "3"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "4"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "5"
+                                          }
+                                      ],
+                          "answer":  "B",
+                          "explanation":  "Try 3 five-dollar coins (=15) and 4 two-dollar coins (=8). Total value 23 and total coins 7. That fits, so 3 five-dollar coins. (Systematic guess-\u0026-check across the few cases.)",
+                          "thinking_skill":  "Systematic trial across a few cases.",
+                          "why_level":  "Explore scaffold for Guess-\u0026-Check (adjusted in v0.4.1 to need a little more checking than the original 3-coin version, while staying P3-accessible).",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "New in v0.4 (Explore step of 6.2).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "heuristics",
+                                       "guess_check"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0029",
+                          "category":  "problem_solving",
+                          "subcategory":  "guess_check",
+                          "skill":  "systematic trial (more cases)",
+                          "skill_code":  "6.2",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "There are some 2-dollar and 5-dollar coins. There are 6 coins in total and they make 18 dollars. How many 5-dollar coins are there?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "1"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "2"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "3"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "4"
+                                          }
+                                      ],
+                          "answer":  "B",
+                          "explanation":  "Try 2 five-dollar coins (=10) and 4 two-dollar coins (=8). Total value 18 and total coins 6. That fits, so there are 2 five-dollar coins.",
+                          "thinking_skill":  "Guess-\u0026-check across more combinations, systematically.",
+                          "why_level":  "Think: more combinations to test in order; the main 6.2 step.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the Think step of 6.2).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "heuristics",
+                                       "guess_check"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0030",
+                          "category":  "problem_solving",
+                          "subcategory":  "before_after",
+                          "skill":  "constant-difference comparison",
+                          "skill_code":  "6.3",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "Amy has 5 more stickers than Ben. Amy gives Ben 2 stickers. Now who has more stickers, and by how many?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "Amy, by 1"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "Ben, by 1"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "Amy, by 3"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "They are equal"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "Originally Amy leads by 5. When Amy gives Ben 2, Amy loses 2 and Ben gains 2, so the gap shrinks by 4 (5 - 4 = 1). Amy still has 1 more.",
+                          "thinking_skill":  "Constant-difference under a transfer.",
+                          "why_level":  "Think: a transfer of 2 reduces the difference by 2+2 = 4; a distinct Singapore heuristic.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "Carried from v0.3 (re-evaluated: retains as the single 6.3 item).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "heuristics",
+                                       "before_after"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0048",
+                          "category":  "problem_solving",
+                          "subcategory":  "pattern_application",
+                          "skill":  "apply a discovered rule",
+                          "skill_code":  "6.6",
+                          "difficulty":  "Explore",
+                          "level":  "Explore",
+                          "question":  "A machine uses this rule: 1 -\u003e 4,  2 -\u003e 7,  3 -\u003e 10. What should 8 become?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "25"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "22"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "24"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "28"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "Each output is the input x 3 + 1: 1-\u003e4, 2-\u003e7, 3-\u003e10. So 8 -\u003e 8 x 3 + 1 = 25. Distractors: x3 only (24), x3-2 (22), x3+4 (28).",
+                          "thinking_skill":  "Discovering a rule, then applying it to a new (far) case.",
+                          "why_level":  "Explore (rewritten in v0.4.1 to add transfer: the child must find x3+1 and apply it to 8, not just count weekdays).",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "New in v0.4 (addresses audit MISSING: Tier-1 6.6 Pattern Application was absent).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "heuristics",
+                                       "pattern_application"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0049",
+                          "category":  "problem_solving",
+                          "subcategory":  "pattern_application",
+                          "skill":  "apply a repeating rule to a far term",
+                          "skill_code":  "6.6",
+                          "difficulty":  "Think",
+                          "level":  "Think",
+                          "question":  "A row of tiles repeats: red, blue, red, blue, red... (1st, 3rd, 5th are red). What colour is the 12th tile, and what colour is the 13th?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "12th blue, 13th red"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "both red"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "both blue"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "12th red, 13th blue"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "Odd positions are red, even positions are blue. 12 is even -\u003e blue; 13 is odd -\u003e red.",
+                          "thinking_skill":  "Using a discovered repeating rule to predict a far term (application, not just next-step).",
+                          "why_level":  "Think (fills MISSING 6.6): must apply the rule to a position far along, not merely continue - the real Pattern-Application skill.",
+                          "visual_required":  false,
+                          "visual_spec":  null,
+                          "source_inspiration":  "New in v0.4 (addresses audit MISSING: 6.6 Pattern Application).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "heuristics",
+                                       "pattern_application"
+                                   ]
+                      },
+                      {
+                          "id":  "BA_P3_0050",
+                          "category":  "pattern_abstract",
+                          "subcategory":  "integrated_master",
+                          "skill":  "rotation + shape change (integrated)",
+                          "skill_code":  "5.1+4.6",
+                          "difficulty":  "Master",
+                          "level":  "Master",
+                          "question":  "Each step the shape rotates 90 degrees clockwise AND gains one side. Step 1: triangle (3 sides) pointing up. Step 2: square (4) pointing right. Step 3: pentagon (5) pointing down. What is Step 4?",
+                          "options":  [
+                                          {
+                                              "id":  "A",
+                                              "text":  "hexagon (6 sides) pointing left"
+                                          },
+                                          {
+                                              "id":  "B",
+                                              "text":  "hexagon pointing up"
+                                          },
+                                          {
+                                              "id":  "C",
+                                              "text":  "pentagon pointing left"
+                                          },
+                                          {
+                                              "id":  "D",
+                                              "text":  "hexagon pointing down"
+                                          }
+                                      ],
+                          "answer":  "A",
+                          "explanation":  "Two rules combine: rotate 90 CW (up-\u003eright-\u003edown-\u003eleft) and add one side (3-\u003e4-\u003e5-\u003e6). Step 4 = hexagon (6 sides) pointing left.",
+                          "thinking_skill":  "Integrating two rules (rotation + shape change) to predict a non-routine step.",
+                          "why_level":  "Master (genuine non-routine item): the familiar single algorithm does not apply; the child must hold BOTH rules and combine them - the integration ceiling.",
+                          "visual_required":  true,
+                          "visual_spec":  {
+                                              "type":  "rotation_transform_sequence",
+                                              "rules":  [
+                                                            "rotate 90 CW",
+                                                            "add one side"
+                                                        ],
+                                              "step1":  "triangle up 3",
+                                              "step2":  "square right 4",
+                                              "step3":  "pentagon down 5",
+                                              "step4":  "hexagon left 6"
+                                          },
+                          "source_inspiration":  "New in v0.4 (Master-tier integrate item; shows the product ceiling beyond single-skill puzzles).",
+                          "tags":  [
+                                       "p3",
+                                       "high_ability",
+                                       "pattern",
+                                       "master",
+                                       "integrated"
+                                   ]
+                      }
+                  ]
+}

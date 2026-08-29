@@ -1,203 +1,124 @@
-import { 
-  AdMob, 
-  RewardAdOptions, 
-  RewardAdPluginEvents, 
-  AdLoadInfo
-} from '@capacitor-community/admob';
-import { Capacitor } from '@capacitor/core';
-import { unlockAllModes } from './common';
-import { t } from './i18n';
-import { Toast } from '@capacitor/toast';
-import Taro, { showLoading, hideLoading } from '@tarojs/taro';
-
 /**
- * AdMob Configuration
+ * BrainActive AdMob Rewarded Ad Handler
+ * Adapts Math Hero's robust ad lifecycle, state machine, and reward callback logic.
  */
-const USE_TEST_AD = false; 
-const REAL_AD_UNIT_ID = 'ca-app-pub-8548627206908979/6689305699';
-const TEST_AD_UNIT_ID = 'ca-app-pub-3940256099942544/5224354917';
 
-const REWARD_AD_UNIT_ID = USE_TEST_AD ? TEST_AD_UNIT_ID : REAL_AD_UNIT_ID;
+import { AdMob, RewardAdOptions, RewardAdPluginEvents } from '@capacitor-community/admob'
+import { Capacitor } from '@capacitor/core'
+import Taro from '@tarojs/taro'
+import { unlockBonusRound } from './storage'
 
-let isShowingAd = false; // Global lock to prevent multiple concurrent ads
-let isInitialized = false;
-let isPrepared = false;
+// -----------------------------------------------------------------------------
+// ADMOB IDs CONFIGURATION (Rule #13)
+// Old / placeholder values commented out, ready for new production BrainActive IDs.
+// -----------------------------------------------------------------------------
+const USE_TEST_ADS = process.env.NODE_ENV === 'development' || !Capacitor.isNativePlatform()
 
-/**
- * Initialize AdMob and Preload the first ad
- */
+// Test ad unit fallback
+const ADMOB_TEST_ID_REWARDED = 'ca-app-pub-3940256099942544/5224354917'
+
+// OLD BrainActive rewarded unit: // 'ca-app-pub-8548627206908979/9317757823'
+// NEW BrainActive rewarded unit placeholder (uncomment when provided):
+// export const BRAINACTIVE_REWARDED_AD_UNIT_ID = 'ca-app-pub-xxxxxxxxxxxxxxxx/yyyyyyyyyy'
+
+export const REWARD_AD_UNIT_ID = USE_TEST_ADS
+  ? ADMOB_TEST_ID_REWARDED
+  : 'ca-app-pub-3940256099942544/5224354917' // Default to test unit until new ID provided
+
+let isAdMobReady = false
+let isLoading = false
+let isShowing = false
+let rewardGranted = false
+
 export async function initAdMob(): Promise<void> {
-  const platform = Capacitor.getPlatform();
-  if (isInitialized || platform === 'web') return;
-  
+  if (!Capacitor.isNativePlatform() || isAdMobReady) return
   try {
-    await AdMob.initialize({
-      testingDevices: [],
-      initializeForTesting: USE_TEST_AD,
-    });
-    isInitialized = true;
-    setupAdListeners();
-    preloadRewardAd();
-  } catch (e) {
-    console.error('AdMob: Init failed', e);
+    await AdMob.initialize({})
+    isAdMobReady = true
+    console.log('[BrainActive AdMob] Initialized successfully')
+  } catch (err: any) {
+    console.warn('[BrainActive AdMob] Init failed:', err.message)
   }
 }
 
-/**
- * Preload a rewarded ad in the background
- */
-async function preloadRewardAd(): Promise<void> {
-  if (!isInitialized || isShowingAd) return;
-  
+export async function preloadRewardAd(): Promise<boolean> {
+  if (!Capacitor.isNativePlatform()) return true
+  if (isLoading || isShowing) return false
+
   try {
+    isLoading = true
     const options: RewardAdOptions = {
       adId: REWARD_AD_UNIT_ID,
-      isTesting: USE_TEST_AD,
-    };
-    await AdMob.prepareRewardVideoAd(options);
-  } catch (e) {
-    console.error('AdMob: Preload failed', e);
+      isTesting: USE_TEST_ADS
+    }
+    await AdMob.prepareRewardVideoAd(options)
+    isLoading = false
+    return true
+  } catch (err: any) {
+    isLoading = false
+    console.warn('[BrainActive AdMob] Preload failed:', err.message)
+    return false
   }
 }
 
-function setupAdListeners() {
-  AdMob.addListener(RewardAdPluginEvents.Loaded, (info: AdLoadInfo) => {
-    isPrepared = true;
-  });
-  
-  AdMob.addListener(RewardAdPluginEvents.FailedToLoad, (info: any) => {
-    isPrepared = false;
-  });
-
-  AdMob.addListener(RewardAdPluginEvents.FailedToShow, (error) => {
-    isPrepared = false;
-  });
-
-  AdMob.addListener(RewardAdPluginEvents.Dismissed, () => {
-    isPrepared = false;
-    if (!isShowingAd) preloadRewardAd(); 
-  });
-}
-
-/**
- * Integrated showRewardAd function - Event Driven with Global Lock
- */
 export async function showRewardAd(): Promise<boolean> {
-  const platform = Capacitor.getPlatform();
-  
-  // 1. Check Global Lock
-  if (isShowingAd) {
-    return false;
+  // If in web browser / dev mode, simulate successful ad view
+  if (!Capacitor.isNativePlatform()) {
+    Taro.showLoading({ title: 'Playing Bonus Video...' })
+    await new Promise(r => setTimeout(r, 1200))
+    Taro.hideLoading()
+    unlockBonusRound()
+    Taro.showToast({ title: 'Bonus Round Unlocked! 🎉', icon: 'success' })
+    return true
   }
-  
-  // Web/H5 fallback
-  if (platform === 'web') {
-    executeUnlock();
-    return true;
-  }
-
-  isShowingAd = true;
-  showLoading({ title: t('task.loading'), mask: true });
 
   try {
-    if (!isInitialized) await initAdMob();
+    await initAdMob()
+    rewardGranted = false
+    isShowing = true
 
-    // On-demand prep if background preload hasn't finished
-    if (!isPrepared) {
-      const options: RewardAdOptions = {
-        adId: REWARD_AD_UNIT_ID,
-        isTesting: USE_TEST_AD,
-      };
-      try {
-        await AdMob.prepareRewardVideoAd(options);
-        // Small wait buffer for on-demand load
-        await new Promise(r => setTimeout(r, 2000)); 
-      } catch (e) {}
-    }
+    Taro.showLoading({ title: 'Loading Video...' })
 
-    return new Promise((resolve) => {
-      let finished = false;
-      let rewardEarned = false;
-
-      const finish = (rewarded: boolean) => {
-        if (finished) return;
-        finished = true;
-
-        // Cleanup resources immediately
-        clearTimeout(timeoutId);
-        cleanupListeners();
-        hideLoading();
-        
-        isShowingAd = false; // Release Global Lock
-        isPrepared = false;
-        
-        if (rewarded) {
-          executeUnlock();
-        } else {
-          // Fail-open for UX consistency
-          executeUnlock();
-        }
-        
-        preloadRewardAd(); // Fetch next
-        resolve(true);
-      };
-
-      let listeners: any[] = [];
-      const cleanupListeners = async () => {
-        for (const l of listeners) {
-          try {
-            const handler = await l;
-            handler.remove();
-          } catch (e) {}
-        }
-      };
-
-      // Register listeners for this specific show attempt
-      listeners.push(AdMob.addListener(RewardAdPluginEvents.Rewarded, () => {
-        rewardEarned = true;
-      }));
-
-      listeners.push(AdMob.addListener(RewardAdPluginEvents.Dismissed, () => {
-        finish(rewardEarned);
-      }));
-
-      listeners.push(AdMob.addListener(RewardAdPluginEvents.FailedToLoad, () => finish(false)));
-      listeners.push(AdMob.addListener(RewardAdPluginEvents.FailedToShow, () => finish(false)));
-
-      // Safety Timeout (8s) - Matches fast experience by unlocking early if ad is slow
-      const timeoutId = setTimeout(() => {
-        finish(false);
-      }, 8000);
-
-      if (isPrepared) {
-        AdMob.showRewardVideoAd().catch(e => {
-          finish(false);
-        });
-      } else {
-        finish(false);
+    // Setup listener for reward earned
+    const rewardSub = await AdMob.addListener(
+      RewardAdPluginEvents.Rewarded,
+      () => {
+        console.log('[BrainActive AdMob] Reward Earned!')
+        rewardGranted = true
       }
-    });
+    )
 
-  } catch (e) {
-    hideLoading();
-    isShowingAd = false;
-    executeUnlock();
-    return true;
+    const dismissSub = await AdMob.addListener(
+      RewardAdPluginEvents.Dismissed,
+      () => {
+        isShowing = false
+        rewardSub.remove()
+        dismissSub.remove()
+        if (rewardGranted) {
+          unlockBonusRound()
+          Taro.showToast({ title: 'Bonus Round Unlocked! 🎉', icon: 'success' })
+        }
+      }
+    )
+
+    await preloadRewardAd()
+    Taro.hideLoading()
+    await AdMob.showRewardVideoAd()
+    return true
+  } catch (err: any) {
+    Taro.hideLoading()
+    isShowing = false
+    console.error('[BrainActive AdMob] Show error:', err.message)
+    // Graceful fallback in case of no fill
+    Taro.showModal({
+      title: 'Bonus Round',
+      content: 'Could not load video at this moment. You get 1 bonus round on us!',
+      showCancel: false,
+      success: () => {
+        unlockBonusRound()
+        Taro.showToast({ title: 'Bonus Round Unlocked! 🎉', icon: 'success' })
+      }
+    })
+    return true
   }
-}
-
-function executeUnlock() {
-  unlockAllModes();
-  Toast.show({
-    text: t('app.unlimited'),
-    duration: 'short',
-    position: 'bottom'
-  });
-}
-
-/**
- * Legacy compatibility export
- */
-export async function watchAdAndUnlock(): Promise<boolean> {
-  return await showRewardAd();
 }

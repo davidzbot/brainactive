@@ -1,0 +1,7550 @@
+[
+ {
+  "id": "BA_P3_0037",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "word_analogy",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Dog is to bark as cat is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "paw"
+   },
+   {
+    "id": "B",
+    "text": "meow"
+   },
+   {
+    "id": "C",
+    "text": "tail"
+   },
+   {
+    "id": "D",
+    "text": "milk"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Relation: animal : the sound it makes. Dog barks, cat meows.",
+  "reasoning": "Identifying a familiar relation (sound).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "validated_baseline_v041",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "word_analogy",
+   "source_inspiration": "New in v0.4 (Explore anchor for 3.1).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0013",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "word_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Pen is to write as knife is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "sharp"
+   },
+   {
+    "id": "B",
+    "text": "cut"
+   },
+   {
+    "id": "C",
+    "text": "food"
+   },
+   {
+    "id": "D",
+    "text": "peel"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Relation: tool : the action it is used for. A pen is used to write; a knife is used to cut.",
+  "reasoning": "Mapping a tool-to-action relation (less cliche than body parts).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "validated_baseline_v041",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "word_analogy",
+   "source_inspiration": "Rewrite of v0.3 0013 per audit (bird:wing was a cliche IQ item).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0014",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "word_classification",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Which word is different? A dig   B shovel   C spoon   D rake",
+  "options": [
+   {
+    "id": "A",
+    "text": "dig"
+   },
+   {
+    "id": "B",
+    "text": "shovel"
+   },
+   {
+    "id": "C",
+    "text": "spoon"
+   },
+   {
+    "id": "D",
+    "text": "rake"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Shovel, spoon and rake are tools (things). Dig is the action of using a tool, so it is different.",
+  "reasoning": "Separating nouns (things) from actions.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "validated_baseline_v041",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "word_classification",
+   "source_inspiration": "Carried from v0.3 (re-evaluated: retains as the single 3.2 item).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0038",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "In a code, each letter becomes the next letter (A->B, B->C, ...). How is CAT written?",
+  "options": [
+   {
+    "id": "A",
+    "text": "DBU"
+   },
+   {
+    "id": "B",
+    "text": "CBT"
+   },
+   {
+    "id": "C",
+    "text": "DAV"
+   },
+   {
+    "id": "D",
+    "text": "CAU"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Shift each letter forward one: C->D, A->B, T->U = DBU.",
+  "reasoning": "Applying a simple letter shift.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "validated_baseline_v041",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "New in v0.4 (Explore anchor for 3.3).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0015",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, each letter means the next letter (A means B, ...). The code word is DPEF. What real word does it stand for?",
+  "options": [
+   {
+    "id": "A",
+    "text": "CODE"
+   },
+   {
+    "id": "B",
+    "text": "DOPE"
+   },
+   {
+    "id": "C",
+    "text": "BND"
+   },
+   {
+    "id": "D",
+    "text": "COPE"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each code letter is one step ahead, so decode by shifting back one: D->C, P->O, E->D, F->E = CODE.",
+  "reasoning": "Reversing a letter shift to decode.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "validated_baseline_v041",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Carried from v0.3 (re-evaluated: retains as the Think step of 3.3).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0016",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Mei reads every Saturday. She also reads whenever it rains. Today she is NOT reading. What MUST be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "It is not Saturday and not raining"
+   },
+   {
+    "id": "B",
+    "text": "It is Saturday"
+   },
+   {
+    "id": "C",
+    "text": "It is raining"
+   },
+   {
+    "id": "D",
+    "text": "Mei is sleeping"
+   }
+  ],
+  "answer": "A",
+  "explanation": "She reads if Saturday OR raining. Today she does NOT read, so neither condition holds: it is not Saturday and it is not raining. B and C would make her read; D adds info we are not given.",
+  "reasoning": "Must-be-true from the negation of a combined condition (contrapositive of an OR).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "validated_baseline_v041",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Rewrite of v0.3 0016 per audit (was a trivial modus ponens mis-levelled as Challenge).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_V01",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "word_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Leaf is to tree as page is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "book"
+   },
+   {
+    "id": "B",
+    "text": "paper"
+   },
+   {
+    "id": "C",
+    "text": "word"
+   },
+   {
+    "id": "D",
+    "text": "cover"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Relation: a single part that, together with many others, makes up the whole. A leaf is one part of a tree; a page is one part of a book. (Paper is made from trees; word is what is printed on a page; cover is one part of a book but not the 'many parts make the whole' part.)",
+  "reasoning": "Finding a part-whole relation and applying it to a new pair.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "word_analogy",
+   "source_inspiration": "v0.5 verbal extension, pilot plan A1 (research-derived). Builds VR1 beyond 0037/0013.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_V02",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "word_analogy",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Cup, plate, bowl : rose, tulip, sunflower : apple, banana, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "orange"
+   },
+   {
+    "id": "B",
+    "text": "carrot"
+   },
+   {
+    "id": "C",
+    "text": "leaf"
+   },
+   {
+    "id": "D",
+    "text": "tree"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The relation is NOT a word pair. Each group is a set of three things in the same category: Group 1 = things you eat from (dishes); Group 2 = flowers; Group 3 = fruits. The missing member of the fruit set is orange. (Carrot is a vegetable, not a fruit; leaf and tree are not fruits.)",
+  "reasoning": "Discovering that the relation is category-to-category (set correspondence), then completing the last set.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy",
+   "set"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "word_analogy",
+   "source_inspiration": "v0.5 verbal extension, pilot plan A2 (research-derived). GEP GA set-analogy archetype (S3), P3-accessible.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_V03",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "word_classification",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out?  A red  B blue  C green  D circle",
+  "options": [
+   {
+    "id": "A",
+    "text": "red"
+   },
+   {
+    "id": "B",
+    "text": "blue"
+   },
+   {
+    "id": "C",
+    "text": "green"
+   },
+   {
+    "id": "D",
+    "text": "circle"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Red, blue and green are colours. Circle is a shape, so it does not belong to the colour group.",
+  "reasoning": "Grouping words by meaning (semantic category), not by sound or look.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "word_classification",
+   "source_inspiration": "v0.5 verbal extension, pilot plan B1 (research-derived).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_V04",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "word_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which does NOT belong?  A clock  B watch  C timer  D ruler",
+  "options": [
+   {
+    "id": "A",
+    "text": "clock"
+   },
+   {
+    "id": "B",
+    "text": "watch"
+   },
+   {
+    "id": "C",
+    "text": "timer"
+   },
+   {
+    "id": "D",
+    "text": "ruler"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Clock, watch and timer are all things that tell or measure TIME. A ruler measures LENGTH, not time, so it is the odd one out. The grouping is by function, not by how the objects look.",
+  "reasoning": "Finding a non-obvious shared property (function) and rejecting a surface-feature grouping.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "word_classification",
+   "source_inspiration": "v0.5 verbal extension, pilot plan B2 (research-derived).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_V05",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, a letter is worth the SQUARE of its place in the alphabet (A=1, B=4, C=9, D=16 ...). Which letter is worth 25?",
+  "options": [
+   {
+    "id": "A",
+    "text": "E"
+   },
+   {
+    "id": "B",
+    "text": "Y"
+   },
+   {
+    "id": "C",
+    "text": "F"
+   },
+   {
+    "id": "D",
+    "text": "S"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The values are squares: 1, 4, 9, 16 ... so 25 = 5 squared. E is the 5th letter of the alphabet, therefore E = 25. (Y is the 25th letter - a near-miss if you match the number to the letter directly; F would be 6; S would be 19.)",
+  "reasoning": "Discovering the square rule from the examples, then mapping a square root back to a letter position.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "v0.5 verbal extension, pilot plan C1 (research-derived). GEP letter-number code (S4).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_V06",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "In a code, DOG becomes GLJ and CAT becomes FDW. The rule is: move the 1st letter forward 3, the 2nd letter back 3, the 3rd letter forward 3, and keep alternating. What does PIG become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "SFJ"
+   },
+   {
+    "id": "B",
+    "text": "SLJ"
+   },
+   {
+    "id": "C",
+    "text": "SFD"
+   },
+   {
+    "id": "D",
+    "text": "MFJ"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Apply the alternating rule to PIG: P forward 3 = S; I back 3 = F; G forward 3 = J. So PIG becomes SFJ. (SLJ is if every letter moved forward 3; SFD is if the last letter also moved back; MFJ is if the first moved back.)",
+  "reasoning": "Inferring an alternating +/- shift rule from two examples, then applying it to a new word.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "v0.5 verbal extension, pilot plan C2 (research-derived).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_V07",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, TRAIN becomes RAINT and PLANT becomes LANTP. The rule moves the FIRST letter to the END. What does HOUSE become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "OUSEH"
+   },
+   {
+    "id": "B",
+    "text": "HOUSE"
+   },
+   {
+    "id": "C",
+    "text": "USEHO"
+   },
+   {
+    "id": "D",
+    "text": "EHOSU"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Move the first letter H to the end of HOUSE and you get OUSEH. (USEHO moves the LAST letter to the front; EHOSU reverses the word; HOUSE is unchanged.)",
+  "reasoning": "Discovering a transformation rule (first letter to end) from two examples, then applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "word_manipulation",
+   "source_inspiration": "v0.5 verbal extension, pilot plan D1 (research-derived). Fills VR4 gap noted in framework.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_V08",
+  "domain": "verbal_reasoning",
+  "skill": "3.6",
+  "archetype": "letter_patterns",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A letter pattern goes: B, D, G, K, ___. The gap grows by 1 each step (B to D is +2, D to G is +3, G to K is +4). What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "P"
+   },
+   {
+    "id": "B",
+    "text": "O"
+   },
+   {
+    "id": "C",
+    "text": "Q"
+   },
+   {
+    "id": "D",
+    "text": "N"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The next gap is +5. K is the 11th letter, so 11 + 5 = 16 = P. (O would be +4 again; Q would be +6; N would be +3.)",
+  "reasoning": "Finding a changing rule (gap increases by 1) and extending the pattern.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letter_pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "letter_patterns",
+   "source_inspiration": "v0.5 verbal extension, pilot plan E1 (research-derived). UK GL letter-series archetype (S11/S13).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_V09",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three boxes are red, blue and green. Each holds one thing: a book, a ball or a coin. (1) The blue box holds the book. (2) The red box does not hold the ball. (3) The green box does not hold the coin. What does the green box hold?",
+  "options": [
+   {
+    "id": "A",
+    "text": "ball"
+   },
+   {
+    "id": "B",
+    "text": "book"
+   },
+   {
+    "id": "C",
+    "text": "coin"
+   },
+   {
+    "id": "D",
+    "text": "cannot tell"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Blue = book, so red and green share ball and coin. Red does NOT hold the ball, so red = coin. That leaves green = ball. Clue (3) is the consistency check: green does not hold the coin - true, so the assignment holds.",
+  "reasoning": "Combining three constraints to fix a unique assignment (deduction, not guess).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "sentence_logic",
+   "source_inspiration": "v0.5 verbal extension, pilot plan F1 (research-derived).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_V10",
+  "domain": "verbal_reasoning",
+  "skill": "3.7",
+  "archetype": "sentence_completion",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "The ground was wet, so we took our ___.",
+  "options": [
+   {
+    "id": "A",
+    "text": "umbrella"
+   },
+   {
+    "id": "B",
+    "text": "shoe"
+   },
+   {
+    "id": "C",
+    "text": "book"
+   },
+   {
+    "id": "D",
+    "text": "apple"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Wet ground means rain, so an umbrella keeps you dry - it fits the cause (wet) and the effect (take ...). A shoe is worn anyway; a book and an apple do not fit the situation.",
+  "reasoning": "Using sentence context (cause and effect) to pick the fitting word.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "sentence_completion",
+   "vocab_dependent"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "sentence_completion",
+   "source_inspiration": "v0.5 verbal extension, pilot plan G1 (research-derived). Capped B-type (S6/S9).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0507",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "light is to dark as open is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "run"
+   },
+   {
+    "id": "B",
+    "text": "jump"
+   },
+   {
+    "id": "C",
+    "text": "shut"
+   },
+   {
+    "id": "D",
+    "text": "paint"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Relation: antonym. light : dark, so open : shut.",
+  "reasoning": "Finding a relation (type: antonym) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0508",
+  "domain": "verbal_reasoning",
+  "skill": "3.7",
+  "archetype": "sentence_completion",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "It was raining, so we used a ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "cup"
+   },
+   {
+    "id": "B",
+    "text": "bag"
+   },
+   {
+    "id": "C",
+    "text": "shoe"
+   },
+   {
+    "id": "D",
+    "text": "umbrella"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The cause (wet / dark / cold / ...) leads to the effect; the fitting word is 'umbrella'.",
+  "reasoning": "Using sentence context (cause and effect) to pick the fitting word.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "sentence_completion",
+   "vocab_dependent"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_completion",
+   "source_inspiration": "Capped B-type (vocabulary + reasoning).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0509",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, the letters are reversed (CAT -> TAC). What does TEAR become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "EART"
+   },
+   {
+    "id": "B",
+    "text": "RAET"
+   },
+   {
+    "id": "C",
+    "text": "TEARX"
+   },
+   {
+    "id": "D",
+    "text": "AETT"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Reverse the letters of TEAR: RAET.",
+  "reasoning": "Discovering a reversal rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0510",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, the letters are reversed (CAT -> TAC). What does LANE become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "ANEL"
+   },
+   {
+    "id": "B",
+    "text": "ENAL"
+   },
+   {
+    "id": "C",
+    "text": "LANEX"
+   },
+   {
+    "id": "D",
+    "text": "LAN"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Reverse the letters of LANE: ENAL.",
+  "reasoning": "Discovering a reversal rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0511",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "circle is to shape as red is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "run"
+   },
+   {
+    "id": "B",
+    "text": "meow"
+   },
+   {
+    "id": "C",
+    "text": "sing"
+   },
+   {
+    "id": "D",
+    "text": "colour"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Relation: category. circle : shape, so red : colour.",
+  "reasoning": "Finding a relation (type: category) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0512",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Secret code: move every letter forward 3 places (A->D), then reverse the whole word. What does BOX become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "XOB"
+   },
+   {
+    "id": "B",
+    "text": "ERA"
+   },
+   {
+    "id": "C",
+    "text": "ARE"
+   },
+   {
+    "id": "D",
+    "text": "BOX"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Shift: BOX -> ERA; reverse -> ARE.",
+  "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "code",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Authored 3.3 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0513",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, the letters are reversed (CAT -> TAC). What does STAR become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "STA"
+   },
+   {
+    "id": "B",
+    "text": "RATS"
+   },
+   {
+    "id": "C",
+    "text": "STARX"
+   },
+   {
+    "id": "D",
+    "text": "TARS"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Reverse the letters of STAR: RATS.",
+  "reasoning": "Discovering a reversal rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0514",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "knife is to cut as brush is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "paint"
+   },
+   {
+    "id": "B",
+    "text": "fruit"
+   },
+   {
+    "id": "C",
+    "text": "walk"
+   },
+   {
+    "id": "D",
+    "text": "sleep"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Relation: function. knife : cut, so brush : paint.",
+  "reasoning": "Finding a relation (type: function) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0515",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "wheel is to car as leaf is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "call"
+   },
+   {
+    "id": "B",
+    "text": "walk"
+   },
+   {
+    "id": "C",
+    "text": "tree"
+   },
+   {
+    "id": "D",
+    "text": "read"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Relation: part-whole. wheel : car, so leaf : tree.",
+  "reasoning": "Finding a relation (type: part-whole) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0516",
+  "domain": "verbal_reasoning",
+  "skill": "3.6",
+  "archetype": "letter_pattern",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A letter pattern goes: Q, S, V, Z, ___. The gap grows by 1 each step. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "V1"
+   },
+   {
+    "id": "B",
+    "text": "Z"
+   },
+   {
+    "id": "C",
+    "text": "V"
+   },
+   {
+    "id": "D",
+    "text": "_"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Positions: 17, 19, 22, 26. Next gap is +4 -> V.",
+  "reasoning": "Finding a changing rule in a letter series.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letter_pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "letter_pattern",
+   "source_inspiration": "Research-derived letter pattern (UK 11+ archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0517",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "key is to open as pen is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "sing"
+   },
+   {
+    "id": "B",
+    "text": "run"
+   },
+   {
+    "id": "C",
+    "text": "space"
+   },
+   {
+    "id": "D",
+    "text": "write"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Relation: function. key : open, so pen : write.",
+  "reasoning": "Finding a relation (type: function) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0518",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A lion  B bird  C fish  D key",
+  "options": [
+   {
+    "id": "A",
+    "text": "bird"
+   },
+   {
+    "id": "B",
+    "text": "fish"
+   },
+   {
+    "id": "C",
+    "text": "lion"
+   },
+   {
+    "id": "D",
+    "text": "key"
+   }
+  ],
+  "answer": "D",
+  "explanation": "fish, lion and bird are all animal. key does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0519",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "dog is to house as cow is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "sing"
+   },
+   {
+    "id": "B",
+    "text": "farm"
+   },
+   {
+    "id": "C",
+    "text": "sit"
+   },
+   {
+    "id": "D",
+    "text": "hit"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Relation: object-location. dog : house, so cow : farm.",
+  "reasoning": "Finding a relation (type: object-location) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0520",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A plane  B train  C car  D key",
+  "options": [
+   {
+    "id": "A",
+    "text": "plane"
+   },
+   {
+    "id": "B",
+    "text": "car"
+   },
+   {
+    "id": "C",
+    "text": "train"
+   },
+   {
+    "id": "D",
+    "text": "key"
+   }
+  ],
+  "answer": "D",
+  "explanation": "plane, car and train are all vehicle. key does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0521",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, the letters are reversed (CAT -> TAC). What does STAR become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "ATSS"
+   },
+   {
+    "id": "B",
+    "text": "STARX"
+   },
+   {
+    "id": "C",
+    "text": "RATS"
+   },
+   {
+    "id": "D",
+    "text": "TARS"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Reverse the letters of STAR: RATS.",
+  "reasoning": "Discovering a reversal rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0522",
+  "domain": "verbal_reasoning",
+  "skill": "3.6",
+  "archetype": "letter_pattern",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A letter pattern goes: Q, R, T, W, ___. The gap grows by 1 each step. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "["
+   },
+   {
+    "id": "B",
+    "text": "Z1"
+   },
+   {
+    "id": "C",
+    "text": "Z"
+   },
+   {
+    "id": "D",
+    "text": "T"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Positions: 17, 18, 20, 23. Next gap is +3 -> Z.",
+  "reasoning": "Finding a changing rule in a letter series.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letter_pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "letter_pattern",
+   "source_inspiration": "Research-derived letter pattern (UK 11+ archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0523",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "spoon is to eat as key is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "open"
+   },
+   {
+    "id": "B",
+    "text": "cold"
+   },
+   {
+    "id": "C",
+    "text": "sit"
+   },
+   {
+    "id": "D",
+    "text": "jump"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Relation: function. spoon : eat, so key : open.",
+  "reasoning": "Finding a relation (type: function) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0524",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Ali runs. Ben swims. Cai does not cycling. Who cycling?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ali"
+   },
+   {
+    "id": "B",
+    "text": "Ben"
+   },
+   {
+    "id": "C",
+    "text": "Cai"
+   },
+   {
+    "id": "D",
+    "text": "Cai1"
+   }
+  ],
+  "answer": "C",
+  "explanation": "From the clues, Ali=running and Ben=swimming, so Cai=cycling; therefore Cai cycling.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0525",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Ali cycles. Cai swims. Ben does not running. Who running?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben"
+   },
+   {
+    "id": "B",
+    "text": "Cai"
+   },
+   {
+    "id": "C",
+    "text": "Ali"
+   },
+   {
+    "id": "D",
+    "text": "Ben1"
+   }
+  ],
+  "answer": "A",
+  "explanation": "From the clues, Ali=cycling and Cai=swimming, so Ben=running; therefore Ben running.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0526",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, each letter means the letter 1 steps before it (so the code letter is ahead). The code word is NPPO. What real word does it stand for?",
+  "options": [
+   {
+    "id": "A",
+    "text": "MOON"
+   },
+   {
+    "id": "B",
+    "text": "MOOX"
+   },
+   {
+    "id": "C",
+    "text": "QOON"
+   },
+   {
+    "id": "D",
+    "text": "BOON"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each code letter is 1 ahead, so shift back 1: NPPO -> MOON.",
+  "reasoning": "Reversing a letter shift to decode.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP decoding archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0527",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, a letter is worth the SQUARE of its place (A=1, B=4, C=9...). Which letter is worth 64?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Y"
+   },
+   {
+    "id": "B",
+    "text": "S"
+   },
+   {
+    "id": "C",
+    "text": "J"
+   },
+   {
+    "id": "D",
+    "text": "H"
+   }
+  ],
+  "answer": "D",
+  "explanation": "64 = 8 squared, and H is the 8th letter.",
+  "reasoning": "Discovering a square rule then mapping to a letter position.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP letter-number archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0528",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A circle  B key  C square  D diamond",
+  "options": [
+   {
+    "id": "A",
+    "text": "diamond"
+   },
+   {
+    "id": "B",
+    "text": "key"
+   },
+   {
+    "id": "C",
+    "text": "circle"
+   },
+   {
+    "id": "D",
+    "text": "square"
+   }
+  ],
+  "answer": "B",
+  "explanation": "circle, square and diamond are all shape. key does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0529",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A chair  B diamond  C triangle  D rectangle",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "diamond"
+   },
+   {
+    "id": "C",
+    "text": "chair"
+   },
+   {
+    "id": "D",
+    "text": "rectangle"
+   }
+  ],
+  "answer": "C",
+  "explanation": "rectangle, triangle and diamond are all shape. chair does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0530",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, the letters are reversed (CAT -> TAC). What does STAR become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "RATS"
+   },
+   {
+    "id": "B",
+    "text": "STA"
+   },
+   {
+    "id": "C",
+    "text": "ATSS"
+   },
+   {
+    "id": "D",
+    "text": "STARX"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Reverse the letters of STAR: RATS.",
+  "reasoning": "Discovering a reversal rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0531",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, each letter means the letter 1 steps before it (so the code letter is ahead). The code word is DPEF. What real word does it stand for?",
+  "options": [
+   {
+    "id": "A",
+    "text": "CODX"
+   },
+   {
+    "id": "B",
+    "text": "CODE"
+   },
+   {
+    "id": "C",
+    "text": "BODE"
+   },
+   {
+    "id": "D",
+    "text": "CODES"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Each code letter is 1 ahead, so shift back 1: DPEF -> CODE.",
+  "reasoning": "Reversing a letter shift to decode.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP decoding archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0532",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Cai swims. Ali runs. Ben does not cycling. Who cycling?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben1"
+   },
+   {
+    "id": "B",
+    "text": "Ben"
+   },
+   {
+    "id": "C",
+    "text": "Ali"
+   },
+   {
+    "id": "D",
+    "text": "Cai"
+   }
+  ],
+  "answer": "B",
+  "explanation": "From the clues, Cai=swimming and Ali=running, so Ben=cycling; therefore Ben cycling.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0533",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Secret code: move every letter forward 2 places (A->C), then reverse the whole word. What does BOX become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "BOX"
+   },
+   {
+    "id": "B",
+    "text": "DQZ"
+   },
+   {
+    "id": "C",
+    "text": "XOB"
+   },
+   {
+    "id": "D",
+    "text": "ZQD"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Shift: BOX -> DQZ; reverse -> ZQD.",
+  "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "code",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Authored 3.3 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0534",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, the letters are reversed (CAT -> TAC). What does LANE become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "ENAL"
+   },
+   {
+    "id": "B",
+    "text": "ANEL"
+   },
+   {
+    "id": "C",
+    "text": "NALL"
+   },
+   {
+    "id": "D",
+    "text": "LAN"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Reverse the letters of LANE: ENAL.",
+  "reasoning": "Discovering a reversal rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0535",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "star is to space as bird is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "open"
+   },
+   {
+    "id": "B",
+    "text": "sky"
+   },
+   {
+    "id": "C",
+    "text": "walk"
+   },
+   {
+    "id": "D",
+    "text": "run"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Relation: object-location. star : space, so bird : sky.",
+  "reasoning": "Finding a relation (type: object-location) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0536",
+  "domain": "verbal_reasoning",
+  "skill": "3.6",
+  "archetype": "letter_pattern",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A letter pattern goes: C, E, H, L, ___. The gap grows by 1 each step. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "P"
+   },
+   {
+    "id": "B",
+    "text": "Q"
+   },
+   {
+    "id": "C",
+    "text": "H"
+   },
+   {
+    "id": "D",
+    "text": "R"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Positions: 3, 5, 8, 12. Next gap is +4 -> P.",
+  "reasoning": "Finding a changing rule in a letter series.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letter_pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "letter_pattern",
+   "source_inspiration": "Research-derived letter pattern (UK 11+ archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0537",
+  "domain": "verbal_reasoning",
+  "skill": "3.6",
+  "archetype": "letter_pattern",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A letter pattern goes: J, L, N, P, ___. The gap grows by 1 each step. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "T"
+   },
+   {
+    "id": "B",
+    "text": "S"
+   },
+   {
+    "id": "C",
+    "text": "Z"
+   },
+   {
+    "id": "D",
+    "text": "R"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Positions: 10, 12, 14, 16. Next gap is +2 -> R.",
+  "reasoning": "Finding a changing rule in a letter series.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letter_pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "letter_pattern",
+   "source_inspiration": "Research-derived letter pattern (UK 11+ archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0538",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Cai cycles. Ben swims. Ali does not running. Who running?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cai"
+   },
+   {
+    "id": "B",
+    "text": "Ali1"
+   },
+   {
+    "id": "C",
+    "text": "Ben"
+   },
+   {
+    "id": "D",
+    "text": "Ali"
+   }
+  ],
+  "answer": "D",
+  "explanation": "From the clues, Cai=cycling and Ben=swimming, so Ali=running; therefore Ali running.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0542",
+  "domain": "verbal_reasoning",
+  "skill": "3.7",
+  "archetype": "sentence_completion",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "It was raining, so we used a ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "bag"
+   },
+   {
+    "id": "B",
+    "text": "cup"
+   },
+   {
+    "id": "C",
+    "text": "umbrella"
+   },
+   {
+    "id": "D",
+    "text": "shoe"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The cause (wet / dark / cold / ...) leads to the effect; the fitting word is 'umbrella'.",
+  "reasoning": "Using sentence context (cause and effect) to pick the fitting word.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "sentence_completion",
+   "vocab_dependent"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_completion",
+   "source_inspiration": "Capped B-type (vocabulary + reasoning).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0543",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "wheel is to car as petal is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "cold"
+   },
+   {
+    "id": "B",
+    "text": "sleep"
+   },
+   {
+    "id": "C",
+    "text": "eat"
+   },
+   {
+    "id": "D",
+    "text": "flower"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Relation: part-whole. wheel : car, so petal : flower.",
+  "reasoning": "Finding a relation (type: part-whole) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0544",
+  "domain": "verbal_reasoning",
+  "skill": "3.7",
+  "archetype": "sentence_completion",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "The sun was bright, so she wore ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "shoe"
+   },
+   {
+    "id": "B",
+    "text": "hat"
+   },
+   {
+    "id": "C",
+    "text": "sunglasses"
+   },
+   {
+    "id": "D",
+    "text": "book"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The cause (wet / dark / cold / ...) leads to the effect; the fitting word is 'sunglasses'.",
+  "reasoning": "Using sentence context (cause and effect) to pick the fitting word.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "sentence_completion",
+   "vocab_dependent"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_completion",
+   "source_inspiration": "Capped B-type (vocabulary + reasoning).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0545",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "cow is to moo as duck is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "walk"
+   },
+   {
+    "id": "B",
+    "text": "quack"
+   },
+   {
+    "id": "C",
+    "text": "eat"
+   },
+   {
+    "id": "D",
+    "text": "read"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Relation: animal-sound. cow : moo, so duck : quack.",
+  "reasoning": "Finding a relation (type: animal-sound) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0546",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Cai cycles. Ben swims. Ali does not running. Who running?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben"
+   },
+   {
+    "id": "B",
+    "text": "Cai"
+   },
+   {
+    "id": "C",
+    "text": "Ali"
+   },
+   {
+    "id": "D",
+    "text": "Ali1"
+   }
+  ],
+  "answer": "C",
+  "explanation": "From the clues, Cai=cycling and Ben=swimming, so Ali=running; therefore Ali running.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0548",
+  "domain": "verbal_reasoning",
+  "skill": "3.7",
+  "archetype": "sentence_completion",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "It was dark, so we turned on the ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "cup"
+   },
+   {
+    "id": "B",
+    "text": "light"
+   },
+   {
+    "id": "C",
+    "text": "book"
+   },
+   {
+    "id": "D",
+    "text": "door"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The cause (wet / dark / cold / ...) leads to the effect; the fitting word is 'light'.",
+  "reasoning": "Using sentence context (cause and effect) to pick the fitting word.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "sentence_completion",
+   "vocab_dependent"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_completion",
+   "source_inspiration": "Capped B-type (vocabulary + reasoning).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0549",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Secret code: move every letter forward 1 places (A->B), then reverse the whole word. What does CAT become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "UBD"
+   },
+   {
+    "id": "B",
+    "text": "CAT"
+   },
+   {
+    "id": "C",
+    "text": "DBU"
+   },
+   {
+    "id": "D",
+    "text": "TAC"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Shift: CAT -> DBU; reverse -> UBD.",
+  "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "code",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Authored 3.3 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0551",
+  "domain": "verbal_reasoning",
+  "skill": "3.6",
+  "archetype": "letter_pattern",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A letter pattern goes: C, F, I, L, ___. The gap grows by 1 each step. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Q"
+   },
+   {
+    "id": "B",
+    "text": "Z"
+   },
+   {
+    "id": "C",
+    "text": "I"
+   },
+   {
+    "id": "D",
+    "text": "O"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Positions: 3, 6, 9, 12. Next gap is +3 -> O.",
+  "reasoning": "Finding a changing rule in a letter series.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letter_pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "letter_pattern",
+   "source_inspiration": "Research-derived letter pattern (UK 11+ archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0552",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Secret code: move every letter forward 2 places (A->C), then reverse the whole word. What does CAT become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "CAT"
+   },
+   {
+    "id": "B",
+    "text": "TAC"
+   },
+   {
+    "id": "C",
+    "text": "VCE"
+   },
+   {
+    "id": "D",
+    "text": "ECV"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Shift: CAT -> ECV; reverse -> VCE.",
+  "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "code",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Authored 3.3 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0553",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Secret code: move every letter forward 2 places (A->C), then reverse the whole word. What does MAP become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "OCR"
+   },
+   {
+    "id": "B",
+    "text": "MAP"
+   },
+   {
+    "id": "C",
+    "text": "RCO"
+   },
+   {
+    "id": "D",
+    "text": "PAM"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Shift: MAP -> OCR; reverse -> RCO.",
+  "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "code",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Authored 3.3 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0554",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, a letter is worth the SQUARE of its place (A=1, B=4, C=9...). Which letter is worth 25?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Y"
+   },
+   {
+    "id": "B",
+    "text": "E"
+   },
+   {
+    "id": "C",
+    "text": "S"
+   },
+   {
+    "id": "D",
+    "text": "H"
+   }
+  ],
+  "answer": "B",
+  "explanation": "25 = 5 squared, and E is the 5th letter.",
+  "reasoning": "Discovering a square rule then mapping to a letter position.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP letter-number archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0555",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, a letter is worth the SQUARE of its place (A=1, B=4, C=9...). Which letter is worth 49?",
+  "options": [
+   {
+    "id": "A",
+    "text": "S"
+   },
+   {
+    "id": "B",
+    "text": "I"
+   },
+   {
+    "id": "C",
+    "text": "G"
+   },
+   {
+    "id": "D",
+    "text": "Y"
+   }
+  ],
+  "answer": "C",
+  "explanation": "49 = 7 squared, and G is the 7th letter.",
+  "reasoning": "Discovering a square rule then mapping to a letter position.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP letter-number archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0556",
+  "domain": "verbal_reasoning",
+  "skill": "3.7",
+  "archetype": "sentence_completion",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "It was noisy, so she covered her ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "book"
+   },
+   {
+    "id": "B",
+    "text": "ears"
+   },
+   {
+    "id": "C",
+    "text": "hand"
+   },
+   {
+    "id": "D",
+    "text": "eyes"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The cause (wet / dark / cold / ...) leads to the effect; the fitting word is 'ears'.",
+  "reasoning": "Using sentence context (cause and effect) to pick the fitting word.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "sentence_completion",
+   "vocab_dependent"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_completion",
+   "source_inspiration": "Capped B-type (vocabulary + reasoning).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0557",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, STONE becomes TONES and PLANT becomes LANTP. The rule moves the FIRST letter to the END. What does STONE become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "TONES"
+   },
+   {
+    "id": "B",
+    "text": "ENOTS"
+   },
+   {
+    "id": "C",
+    "text": "ESTON"
+   },
+   {
+    "id": "D",
+    "text": "STONES"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Move the first letter of STONE to the end: TONES.",
+  "reasoning": "Discovering a word-transformation rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation (GEP anagram archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0558",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Ben cycles. Cai runs. Ali does not swimming. Who swimming?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben"
+   },
+   {
+    "id": "B",
+    "text": "Ali1"
+   },
+   {
+    "id": "C",
+    "text": "Cai"
+   },
+   {
+    "id": "D",
+    "text": "Ali"
+   }
+  ],
+  "answer": "D",
+  "explanation": "From the clues, Ben=cycling and Cai=running, so Ali=swimming; therefore Ali swimming.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0559",
+  "domain": "verbal_reasoning",
+  "skill": "3.7",
+  "archetype": "sentence_completion",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "We were lost, so we read a ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "book"
+   },
+   {
+    "id": "B",
+    "text": "cup"
+   },
+   {
+    "id": "C",
+    "text": "map"
+   },
+   {
+    "id": "D",
+    "text": "key"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The cause (wet / dark / cold / ...) leads to the effect; the fitting word is 'map'.",
+  "reasoning": "Using sentence context (cause and effect) to pick the fitting word.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "sentence_completion",
+   "vocab_dependent"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_completion",
+   "source_inspiration": "Capped B-type (vocabulary + reasoning).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0561",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "ruler is to measure as comb is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "small"
+   },
+   {
+    "id": "B",
+    "text": "walk"
+   },
+   {
+    "id": "C",
+    "text": "brush"
+   },
+   {
+    "id": "D",
+    "text": "sing"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Relation: tool-action. ruler : measure, so comb : brush.",
+  "reasoning": "Finding a relation (type: tool-action) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0562",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "knife is to cut as key is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "eat"
+   },
+   {
+    "id": "B",
+    "text": "sit"
+   },
+   {
+    "id": "C",
+    "text": "shut"
+   },
+   {
+    "id": "D",
+    "text": "open"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Relation: function. knife : cut, so key : open.",
+  "reasoning": "Finding a relation (type: function) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0563",
+  "domain": "verbal_reasoning",
+  "skill": "3.7",
+  "archetype": "sentence_completion",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "The plant was dry, so we gave it ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "book"
+   },
+   {
+    "id": "B",
+    "text": "stone"
+   },
+   {
+    "id": "C",
+    "text": "sun"
+   },
+   {
+    "id": "D",
+    "text": "water"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The cause (wet / dark / cold / ...) leads to the effect; the fitting word is 'water'.",
+  "reasoning": "Using sentence context (cause and effect) to pick the fitting word.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "sentence_completion",
+   "vocab_dependent"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_completion",
+   "source_inspiration": "Capped B-type (vocabulary + reasoning).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0564",
+  "domain": "verbal_reasoning",
+  "skill": "3.6",
+  "archetype": "letter_pattern",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A letter pattern goes: F, G, I, L, ___. The gap grows by 1 each step. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "I"
+   },
+   {
+    "id": "B",
+    "text": "P"
+   },
+   {
+    "id": "C",
+    "text": "O"
+   },
+   {
+    "id": "D",
+    "text": "Z"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Positions: 6, 7, 9, 12. Next gap is +3 -> O.",
+  "reasoning": "Finding a changing rule in a letter series.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letter_pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "letter_pattern",
+   "source_inspiration": "Research-derived letter pattern (UK 11+ archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0565",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "In a code, each letter moves forward 3 (A->D...). How is MAP written?",
+  "options": [
+   {
+    "id": "A",
+    "text": "PDSZ"
+   },
+   {
+    "id": "B",
+    "text": "PDM"
+   },
+   {
+    "id": "C",
+    "text": "XDS"
+   },
+   {
+    "id": "D",
+    "text": "PDS"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Shift each letter forward 3: MAP -> PDS.",
+  "reasoning": "Applying a simple letter shift.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP decoding archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0566",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Ali swims. Ben runs. Cai does not cycling. Who cycling?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cai"
+   },
+   {
+    "id": "B",
+    "text": "Cai1"
+   },
+   {
+    "id": "C",
+    "text": "Ali"
+   },
+   {
+    "id": "D",
+    "text": "Ben"
+   }
+  ],
+  "answer": "A",
+  "explanation": "From the clues, Ali=swimming and Ben=running, so Cai=cycling; therefore Cai cycling.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0567",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A table  B dog  C lion  D bird",
+  "options": [
+   {
+    "id": "A",
+    "text": "dog"
+   },
+   {
+    "id": "B",
+    "text": "lion"
+   },
+   {
+    "id": "C",
+    "text": "table"
+   },
+   {
+    "id": "D",
+    "text": "bird"
+   }
+  ],
+  "answer": "C",
+  "explanation": "lion, bird and dog are all animal. table does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0569",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, the letters are reversed (CAT -> TAC). What does RATE become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "ATER"
+   },
+   {
+    "id": "B",
+    "text": "RAT"
+   },
+   {
+    "id": "C",
+    "text": "RATEX"
+   },
+   {
+    "id": "D",
+    "text": "ETAR"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Reverse the letters of RATE: ETAR.",
+  "reasoning": "Discovering a reversal rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0571",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Secret code: move every letter forward 2 places (A->C), then reverse the whole word. What does RED become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "TGF"
+   },
+   {
+    "id": "B",
+    "text": "RED"
+   },
+   {
+    "id": "C",
+    "text": "DER"
+   },
+   {
+    "id": "D",
+    "text": "FGT"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Shift: RED -> TGF; reverse -> FGT.",
+  "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "code",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Authored 3.3 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0572",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, the letters are reversed (CAT -> TAC). What does TEAR become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "EART"
+   },
+   {
+    "id": "B",
+    "text": "AETT"
+   },
+   {
+    "id": "C",
+    "text": "TEA"
+   },
+   {
+    "id": "D",
+    "text": "RAET"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Reverse the letters of TEAR: RAET.",
+  "reasoning": "Discovering a reversal rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0573",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A fish  B dog  C lion  D book",
+  "options": [
+   {
+    "id": "A",
+    "text": "fish"
+   },
+   {
+    "id": "B",
+    "text": "book"
+   },
+   {
+    "id": "C",
+    "text": "lion"
+   },
+   {
+    "id": "D",
+    "text": "dog"
+   }
+  ],
+  "answer": "B",
+  "explanation": "lion, fish and dog are all animal. book does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0574",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "In a code, each letter moves forward 3 (A->D...). How is KEY written?",
+  "options": [
+   {
+    "id": "A",
+    "text": "OHB"
+   },
+   {
+    "id": "B",
+    "text": "NHB"
+   },
+   {
+    "id": "C",
+    "text": "XHB"
+   },
+   {
+    "id": "D",
+    "text": "NHV"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Shift each letter forward 3: KEY -> NHB.",
+  "reasoning": "Applying a simple letter shift.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP decoding archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0575",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "open is to shut as happy is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "sing"
+   },
+   {
+    "id": "B",
+    "text": "hit"
+   },
+   {
+    "id": "C",
+    "text": "walk"
+   },
+   {
+    "id": "D",
+    "text": "sad"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Relation: antonym. open : shut, so happy : sad.",
+  "reasoning": "Finding a relation (type: antonym) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0576",
+  "domain": "verbal_reasoning",
+  "skill": "3.6",
+  "archetype": "letter_pattern",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A letter pattern goes: O, Q, T, X, ___. The gap grows by 1 each step. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Z"
+   },
+   {
+    "id": "B",
+    "text": "]"
+   },
+   {
+    "id": "C",
+    "text": "T"
+   },
+   {
+    "id": "D",
+    "text": "T1"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Positions: 15, 17, 20, 24. Next gap is +4 -> T.",
+  "reasoning": "Finding a changing rule in a letter series.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letter_pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "letter_pattern",
+   "source_inspiration": "Research-derived letter pattern (UK 11+ archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0577",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, each letter means the letter 2 steps before it (so the code letter is ahead). The code word is DNWG. What real word does it stand for?",
+  "options": [
+   {
+    "id": "A",
+    "text": "BLUES"
+   },
+   {
+    "id": "B",
+    "text": "QLUE"
+   },
+   {
+    "id": "C",
+    "text": "BLUE"
+   },
+   {
+    "id": "D",
+    "text": "BLUX"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Each code letter is 2 ahead, so shift back 2: DNWG -> BLUE.",
+  "reasoning": "Reversing a letter shift to decode.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP decoding archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0578",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "scissors is to cut as fork is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "run"
+   },
+   {
+    "id": "B",
+    "text": "lift"
+   },
+   {
+    "id": "C",
+    "text": "animal"
+   },
+   {
+    "id": "D",
+    "text": "sit"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Relation: tool-action. scissors : cut, so fork : lift.",
+  "reasoning": "Finding a relation (type: tool-action) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0579",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Cai cycles. Ali runs. Ben does not swimming. Who swimming?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben1"
+   },
+   {
+    "id": "B",
+    "text": "Ben"
+   },
+   {
+    "id": "C",
+    "text": "Ali"
+   },
+   {
+    "id": "D",
+    "text": "Cai"
+   }
+  ],
+  "answer": "B",
+  "explanation": "From the clues, Cai=cycling and Ali=running, so Ben=swimming; therefore Ben swimming.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0580",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "ruler is to measure as fork is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "read"
+   },
+   {
+    "id": "B",
+    "text": "animal"
+   },
+   {
+    "id": "C",
+    "text": "sing"
+   },
+   {
+    "id": "D",
+    "text": "lift"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Relation: tool-action. ruler : measure, so fork : lift.",
+  "reasoning": "Finding a relation (type: tool-action) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0581",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Cai swims. Ali runs. Ben does not cycling. Who cycling?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben1"
+   },
+   {
+    "id": "B",
+    "text": "Cai"
+   },
+   {
+    "id": "C",
+    "text": "Ali"
+   },
+   {
+    "id": "D",
+    "text": "Ben"
+   }
+  ],
+  "answer": "D",
+  "explanation": "From the clues, Cai=swimming and Ali=running, so Ben=cycling; therefore Ben cycling.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0582",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Secret code: move every letter forward 3 places (A->D), then reverse the whole word. What does RED become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "RED"
+   },
+   {
+    "id": "B",
+    "text": "GHU"
+   },
+   {
+    "id": "C",
+    "text": "DER"
+   },
+   {
+    "id": "D",
+    "text": "UHG"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Shift: RED -> UHG; reverse -> GHU.",
+  "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "code",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Authored 3.3 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0583",
+  "domain": "verbal_reasoning",
+  "skill": "3.6",
+  "archetype": "letter_pattern",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A letter pattern goes: Q, T, W, Z, ___. The gap grows by 1 each step. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "W"
+   },
+   {
+    "id": "B",
+    "text": "^"
+   },
+   {
+    "id": "C",
+    "text": "Z"
+   },
+   {
+    "id": "D",
+    "text": "W1"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Positions: 17, 20, 23, 26. Next gap is +3 -> W.",
+  "reasoning": "Finding a changing rule in a letter series.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letter_pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "letter_pattern",
+   "source_inspiration": "Research-derived letter pattern (UK 11+ archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0584",
+  "domain": "verbal_reasoning",
+  "skill": "3.7",
+  "archetype": "sentence_completion",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "It was dark, so we turned on the ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "door"
+   },
+   {
+    "id": "B",
+    "text": "book"
+   },
+   {
+    "id": "C",
+    "text": "cup"
+   },
+   {
+    "id": "D",
+    "text": "light"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The cause (wet / dark / cold / ...) leads to the effect; the fitting word is 'light'.",
+  "reasoning": "Using sentence context (cause and effect) to pick the fitting word.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "sentence_completion",
+   "vocab_dependent"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_completion",
+   "source_inspiration": "Capped B-type (vocabulary + reasoning).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0585",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Secret code: move every letter forward 1 places (A->B), then reverse the whole word. What does TOP become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "QPU"
+   },
+   {
+    "id": "B",
+    "text": "TOP"
+   },
+   {
+    "id": "C",
+    "text": "POT"
+   },
+   {
+    "id": "D",
+    "text": "UPQ"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Shift: TOP -> UPQ; reverse -> QPU.",
+  "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "code",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Authored 3.3 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0586",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "key is to open as brush is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "jump"
+   },
+   {
+    "id": "B",
+    "text": "paint"
+   },
+   {
+    "id": "C",
+    "text": "walk"
+   },
+   {
+    "id": "D",
+    "text": "measure"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Relation: function. key : open, so brush : paint.",
+  "reasoning": "Finding a relation (type: function) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0588",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, a letter is worth the SQUARE of its place (A=1, B=4, C=9...). Which letter is worth 36?",
+  "options": [
+   {
+    "id": "A",
+    "text": "F"
+   },
+   {
+    "id": "B",
+    "text": "J"
+   },
+   {
+    "id": "C",
+    "text": "S"
+   },
+   {
+    "id": "D",
+    "text": "Y"
+   }
+  ],
+  "answer": "A",
+  "explanation": "36 = 6 squared, and F is the 6th letter.",
+  "reasoning": "Discovering a square rule then mapping to a letter position.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP letter-number archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0591",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, each letter means the letter 1 steps before it (so the code letter is ahead). The code word is TUBS. What real word does it stand for?",
+  "options": [
+   {
+    "id": "A",
+    "text": "STAX"
+   },
+   {
+    "id": "B",
+    "text": "QTAR"
+   },
+   {
+    "id": "C",
+    "text": "STAR"
+   },
+   {
+    "id": "D",
+    "text": "STARS"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Each code letter is 1 ahead, so shift back 1: TUBS -> STAR.",
+  "reasoning": "Reversing a letter shift to decode.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP decoding archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0592",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Secret code: move every letter forward 3 places (A->D), then reverse the whole word. What does RED become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "UHG"
+   },
+   {
+    "id": "B",
+    "text": "DER"
+   },
+   {
+    "id": "C",
+    "text": "RED"
+   },
+   {
+    "id": "D",
+    "text": "GHU"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Shift: RED -> UHG; reverse -> GHU.",
+  "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "code",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Authored 3.3 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0593",
+  "domain": "verbal_reasoning",
+  "skill": "3.7",
+  "archetype": "sentence_completion",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "He was tired, so he went to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "sleep"
+   },
+   {
+    "id": "B",
+    "text": "run"
+   },
+   {
+    "id": "C",
+    "text": "eat"
+   },
+   {
+    "id": "D",
+    "text": "read"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The cause (wet / dark / cold / ...) leads to the effect; the fitting word is 'sleep'.",
+  "reasoning": "Using sentence context (cause and effect) to pick the fitting word.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "sentence_completion",
+   "vocab_dependent"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_completion",
+   "source_inspiration": "Capped B-type (vocabulary + reasoning).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0594",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, each letter means the letter 2 steps before it (so the code letter is ahead). The code word is VKOG. What real word does it stand for?",
+  "options": [
+   {
+    "id": "A",
+    "text": "TIMES"
+   },
+   {
+    "id": "B",
+    "text": "TIME"
+   },
+   {
+    "id": "C",
+    "text": "QIME"
+   },
+   {
+    "id": "D",
+    "text": "TIMX"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Each code letter is 2 ahead, so shift back 2: VKOG -> TIME.",
+  "reasoning": "Reversing a letter shift to decode.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP decoding archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0595",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A train  B bike  C car  D chair",
+  "options": [
+   {
+    "id": "A",
+    "text": "train"
+   },
+   {
+    "id": "B",
+    "text": "car"
+   },
+   {
+    "id": "C",
+    "text": "bike"
+   },
+   {
+    "id": "D",
+    "text": "chair"
+   }
+  ],
+  "answer": "D",
+  "explanation": "bike, train and car are all vehicle. chair does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0596",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Ali swims. Ben cycles. Cai does not running. Who running?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cai1"
+   },
+   {
+    "id": "B",
+    "text": "Ali"
+   },
+   {
+    "id": "C",
+    "text": "Ben"
+   },
+   {
+    "id": "D",
+    "text": "Cai"
+   }
+  ],
+  "answer": "D",
+  "explanation": "From the clues, Ali=swimming and Ben=cycling, so Cai=running; therefore Cai running.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0598",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "dog is to house as bird is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "animal"
+   },
+   {
+    "id": "B",
+    "text": "sky"
+   },
+   {
+    "id": "C",
+    "text": "sit"
+   },
+   {
+    "id": "D",
+    "text": "walk"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Relation: object-location. dog : house, so bird : sky.",
+  "reasoning": "Finding a relation (type: object-location) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0599",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, each letter means the letter 3 steps before it (so the code letter is ahead). The code word is PRRQ. What real word does it stand for?",
+  "options": [
+   {
+    "id": "A",
+    "text": "MOON"
+   },
+   {
+    "id": "B",
+    "text": "MOOX"
+   },
+   {
+    "id": "C",
+    "text": "BOON"
+   },
+   {
+    "id": "D",
+    "text": "MOONS"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each code letter is 3 ahead, so shift back 3: PRRQ -> MOON.",
+  "reasoning": "Reversing a letter shift to decode.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP decoding archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0600",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A triangle  B oval  C clock  D square",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "oval"
+   },
+   {
+    "id": "C",
+    "text": "square"
+   },
+   {
+    "id": "D",
+    "text": "clock"
+   }
+  ],
+  "answer": "D",
+  "explanation": "oval, square and triangle are all shape. clock does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0601",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Cai swims. Ali cycles. Ben does not running. Who running?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ali"
+   },
+   {
+    "id": "B",
+    "text": "Ben1"
+   },
+   {
+    "id": "C",
+    "text": "Cai"
+   },
+   {
+    "id": "D",
+    "text": "Ben"
+   }
+  ],
+  "answer": "D",
+  "explanation": "From the clues, Cai=swimming and Ali=cycling, so Ben=running; therefore Ben running.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0603",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Secret code: move every letter forward 2 places (A->C), then reverse the whole word. What does PEN become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "PGR"
+   },
+   {
+    "id": "B",
+    "text": "NEP"
+   },
+   {
+    "id": "C",
+    "text": "RGP"
+   },
+   {
+    "id": "D",
+    "text": "PEN"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Shift: PEN -> RGP; reverse -> PGR.",
+  "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "code",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Authored 3.3 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0604",
+  "domain": "verbal_reasoning",
+  "skill": "3.7",
+  "archetype": "sentence_completion",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "The sun was bright, so she wore ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "sunglasses"
+   },
+   {
+    "id": "B",
+    "text": "hat"
+   },
+   {
+    "id": "C",
+    "text": "book"
+   },
+   {
+    "id": "D",
+    "text": "shoe"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The cause (wet / dark / cold / ...) leads to the effect; the fitting word is 'sunglasses'.",
+  "reasoning": "Using sentence context (cause and effect) to pick the fitting word.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "sentence_completion",
+   "vocab_dependent"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_completion",
+   "source_inspiration": "Capped B-type (vocabulary + reasoning).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0605",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, FLAME becomes LAMEF and PLANT becomes LANTP. The rule moves the FIRST letter to the END. What does FLAME become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "EFLAM"
+   },
+   {
+    "id": "B",
+    "text": "LAMEF"
+   },
+   {
+    "id": "C",
+    "text": "FLAMEF"
+   },
+   {
+    "id": "D",
+    "text": "EMALF"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Move the first letter of FLAME to the end: LAMEF.",
+  "reasoning": "Discovering a word-transformation rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation (GEP anagram archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0606",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Secret code: move every letter forward 3 places (A->D), then reverse the whole word. What does DOG become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "GOD"
+   },
+   {
+    "id": "B",
+    "text": "JRG"
+   },
+   {
+    "id": "C",
+    "text": "DOG"
+   },
+   {
+    "id": "D",
+    "text": "GRJ"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Shift: DOG -> GRJ; reverse -> JRG.",
+  "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "code",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Authored 3.3 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0607",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "circle is to shape as cat is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "animal"
+   },
+   {
+    "id": "B",
+    "text": "run"
+   },
+   {
+    "id": "C",
+    "text": "write"
+   },
+   {
+    "id": "D",
+    "text": "sleep"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Relation: category. circle : shape, so cat : animal.",
+  "reasoning": "Finding a relation (type: category) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0608",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "In a code, each letter moves forward 1 (A->B...). How is SUN written?",
+  "options": [
+   {
+    "id": "A",
+    "text": "TVO"
+   },
+   {
+    "id": "B",
+    "text": "TVM"
+   },
+   {
+    "id": "C",
+    "text": "XVO"
+   },
+   {
+    "id": "D",
+    "text": "TVOZ"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Shift each letter forward 1: SUN -> TVO.",
+  "reasoning": "Applying a simple letter shift.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP decoding archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0609",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Cai swims. Ben runs. Ali does not cycling. Who cycling?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben"
+   },
+   {
+    "id": "B",
+    "text": "Ali"
+   },
+   {
+    "id": "C",
+    "text": "Ali1"
+   },
+   {
+    "id": "D",
+    "text": "Cai"
+   }
+  ],
+  "answer": "B",
+  "explanation": "From the clues, Cai=swimming and Ben=running, so Ali=cycling; therefore Ali cycling.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0610",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "brush is to paint as knife is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "sleep"
+   },
+   {
+    "id": "B",
+    "text": "sing"
+   },
+   {
+    "id": "C",
+    "text": "car"
+   },
+   {
+    "id": "D",
+    "text": "cut"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Relation: function. brush : paint, so knife : cut.",
+  "reasoning": "Finding a relation (type: function) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0611",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "open is to shut as big is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "sit"
+   },
+   {
+    "id": "B",
+    "text": "house"
+   },
+   {
+    "id": "C",
+    "text": "small"
+   },
+   {
+    "id": "D",
+    "text": "sing"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Relation: antonym. open : shut, so big : small.",
+  "reasoning": "Finding a relation (type: antonym) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0612",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, STONE becomes TONES and PLANT becomes LANTP. The rule moves the FIRST letter to the END. What does STONE become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "ESTON"
+   },
+   {
+    "id": "B",
+    "text": "STONES"
+   },
+   {
+    "id": "C",
+    "text": "ENOTS"
+   },
+   {
+    "id": "D",
+    "text": "TONES"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Move the first letter of STONE to the end: TONES.",
+  "reasoning": "Discovering a word-transformation rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation (GEP anagram archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0613",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Cai cycles. Ben runs. Ali does not swimming. Who swimming?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ali1"
+   },
+   {
+    "id": "B",
+    "text": "Ali"
+   },
+   {
+    "id": "C",
+    "text": "Ben"
+   },
+   {
+    "id": "D",
+    "text": "Cai"
+   }
+  ],
+  "answer": "B",
+  "explanation": "From the clues, Cai=cycling and Ben=running, so Ali=swimming; therefore Ali swimming.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0614",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, TRAIN becomes RAINT and PLANT becomes LANTP. The rule moves the FIRST letter to the END. What does TRAIN become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "TRAINT"
+   },
+   {
+    "id": "B",
+    "text": "RAINT"
+   },
+   {
+    "id": "C",
+    "text": "NIART"
+   },
+   {
+    "id": "D",
+    "text": "RAINTT"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Move the first letter of TRAIN to the end: RAINT.",
+  "reasoning": "Discovering a word-transformation rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation (GEP anagram archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0615",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, the letters are reversed (CAT -> TAC). What does STAR become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "ATSS"
+   },
+   {
+    "id": "B",
+    "text": "STARX"
+   },
+   {
+    "id": "C",
+    "text": "STA"
+   },
+   {
+    "id": "D",
+    "text": "RATS"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Reverse the letters of STAR: RATS.",
+  "reasoning": "Discovering a reversal rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0616",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A table  B bus  C train  D bike",
+  "options": [
+   {
+    "id": "A",
+    "text": "bike"
+   },
+   {
+    "id": "B",
+    "text": "bus"
+   },
+   {
+    "id": "C",
+    "text": "train"
+   },
+   {
+    "id": "D",
+    "text": "table"
+   }
+  ],
+  "answer": "D",
+  "explanation": "train, bus and bike are all vehicle. table does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0617",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Ben runs. Cai swims. Ali does not cycling. Who cycling?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ali"
+   },
+   {
+    "id": "B",
+    "text": "Ben"
+   },
+   {
+    "id": "C",
+    "text": "Cai"
+   },
+   {
+    "id": "D",
+    "text": "Ali1"
+   }
+  ],
+  "answer": "A",
+  "explanation": "From the clues, Ben=running and Cai=swimming, so Ali=cycling; therefore Ali cycling.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0619",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, TRAIN becomes RAINT and PLANT becomes LANTP. The rule moves the FIRST letter to the END. What does TRAIN become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "NTRAI"
+   },
+   {
+    "id": "B",
+    "text": "NIART"
+   },
+   {
+    "id": "C",
+    "text": "RAINT"
+   },
+   {
+    "id": "D",
+    "text": "TRAINT"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Move the first letter of TRAIN to the end: RAINT.",
+  "reasoning": "Discovering a word-transformation rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation (GEP anagram archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0620",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "happy is to sad as big is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "write"
+   },
+   {
+    "id": "B",
+    "text": "small"
+   },
+   {
+    "id": "C",
+    "text": "eat"
+   },
+   {
+    "id": "D",
+    "text": "walk"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Relation: antonym. happy : sad, so big : small.",
+  "reasoning": "Finding a relation (type: antonym) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0621",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Ali swims. Ben cycles. Cai does not running. Who running?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cai"
+   },
+   {
+    "id": "B",
+    "text": "Ali"
+   },
+   {
+    "id": "C",
+    "text": "Ben"
+   },
+   {
+    "id": "D",
+    "text": "Cai1"
+   }
+  ],
+  "answer": "A",
+  "explanation": "From the clues, Ali=swimming and Ben=cycling, so Cai=running; therefore Cai running.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0622",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Secret code: move every letter forward 2 places (A->C), then reverse the whole word. What does PEN become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "NEP"
+   },
+   {
+    "id": "B",
+    "text": "PEN"
+   },
+   {
+    "id": "C",
+    "text": "PGR"
+   },
+   {
+    "id": "D",
+    "text": "RGP"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Shift: PEN -> RGP; reverse -> PGR.",
+  "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "code",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Authored 3.3 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0623",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, BREAD becomes READB and PLANT becomes LANTP. The rule moves the FIRST letter to the END. What does BREAD become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "READB"
+   },
+   {
+    "id": "B",
+    "text": "BREADB"
+   },
+   {
+    "id": "C",
+    "text": "DAERB"
+   },
+   {
+    "id": "D",
+    "text": "DBREA"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Move the first letter of BREAD to the end: READB.",
+  "reasoning": "Discovering a word-transformation rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation (GEP anagram archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0625",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, CHALK becomes HALKC and PLANT becomes LANTP. The rule moves the FIRST letter to the END. What does CHALK become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "KLAHC"
+   },
+   {
+    "id": "B",
+    "text": "CHALKC"
+   },
+   {
+    "id": "C",
+    "text": "KCHAL"
+   },
+   {
+    "id": "D",
+    "text": "HALKC"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Move the first letter of CHALK to the end: HALKC.",
+  "reasoning": "Discovering a word-transformation rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation (GEP anagram archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0626",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A bear  B bird  C lion  D shoe",
+  "options": [
+   {
+    "id": "A",
+    "text": "bird"
+   },
+   {
+    "id": "B",
+    "text": "lion"
+   },
+   {
+    "id": "C",
+    "text": "bear"
+   },
+   {
+    "id": "D",
+    "text": "shoe"
+   }
+  ],
+  "answer": "D",
+  "explanation": "bird, lion and bear are all animal. shoe does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0627",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "In a code, each letter moves forward 2 (A->C...). How is PAN written?",
+  "options": [
+   {
+    "id": "A",
+    "text": "RCPZ"
+   },
+   {
+    "id": "B",
+    "text": "RCL"
+   },
+   {
+    "id": "C",
+    "text": "RCP"
+   },
+   {
+    "id": "D",
+    "text": "XCP"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Shift each letter forward 2: PAN -> RCP.",
+  "reasoning": "Applying a simple letter shift.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP decoding archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0628",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A table  B bird  C dog  D cat",
+  "options": [
+   {
+    "id": "A",
+    "text": "cat"
+   },
+   {
+    "id": "B",
+    "text": "table"
+   },
+   {
+    "id": "C",
+    "text": "bird"
+   },
+   {
+    "id": "D",
+    "text": "dog"
+   }
+  ],
+  "answer": "B",
+  "explanation": "cat, bird and dog are all animal. table does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0629",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Ali runs. Ben cycles. Cai does not swimming. Who swimming?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cai"
+   },
+   {
+    "id": "B",
+    "text": "Cai1"
+   },
+   {
+    "id": "C",
+    "text": "Ali"
+   },
+   {
+    "id": "D",
+    "text": "Ben"
+   }
+  ],
+  "answer": "A",
+  "explanation": "From the clues, Ali=running and Ben=cycling, so Cai=swimming; therefore Cai swimming.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0630",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, each letter means the letter 2 steps before it (so the code letter is ahead). The code word is EQFG. What real word does it stand for?",
+  "options": [
+   {
+    "id": "A",
+    "text": "BODE"
+   },
+   {
+    "id": "B",
+    "text": "CODX"
+   },
+   {
+    "id": "C",
+    "text": "CODE"
+   },
+   {
+    "id": "D",
+    "text": "QODE"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Each code letter is 2 ahead, so shift back 2: EQFG -> CODE.",
+  "reasoning": "Reversing a letter shift to decode.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP decoding archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0631",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Ben runs. Ali cycles. Cai does not swimming. Who swimming?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben"
+   },
+   {
+    "id": "B",
+    "text": "Cai1"
+   },
+   {
+    "id": "C",
+    "text": "Cai"
+   },
+   {
+    "id": "D",
+    "text": "Ali"
+   }
+  ],
+  "answer": "C",
+  "explanation": "From the clues, Ben=running and Ali=cycling, so Cai=swimming; therefore Cai swimming.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0632",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, each letter means the letter 3 steps before it (so the code letter is ahead). The code word is PRRQ. What real word does it stand for?",
+  "options": [
+   {
+    "id": "A",
+    "text": "QOON"
+   },
+   {
+    "id": "B",
+    "text": "MOOX"
+   },
+   {
+    "id": "C",
+    "text": "MOONS"
+   },
+   {
+    "id": "D",
+    "text": "MOON"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Each code letter is 3 ahead, so shift back 3: PRRQ -> MOON.",
+  "reasoning": "Reversing a letter shift to decode.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP decoding archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0633",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "In a code, each letter moves forward 1 (A->B...). How is MAP written?",
+  "options": [
+   {
+    "id": "A",
+    "text": "NBO"
+   },
+   {
+    "id": "B",
+    "text": "NBQ"
+   },
+   {
+    "id": "C",
+    "text": "XBQ"
+   },
+   {
+    "id": "D",
+    "text": "NBQZ"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Shift each letter forward 1: MAP -> NBQ.",
+  "reasoning": "Applying a simple letter shift.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP decoding archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0634",
+  "domain": "verbal_reasoning",
+  "skill": "3.6",
+  "archetype": "letter_pattern",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A letter pattern goes: C, E, G, I, ___. The gap grows by 1 each step. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "L"
+   },
+   {
+    "id": "B",
+    "text": "Z"
+   },
+   {
+    "id": "C",
+    "text": "K"
+   },
+   {
+    "id": "D",
+    "text": "G"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Positions: 3, 5, 7, 9. Next gap is +2 -> K.",
+  "reasoning": "Finding a changing rule in a letter series.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letter_pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "letter_pattern",
+   "source_inspiration": "Research-derived letter pattern (UK 11+ archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0635",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "key is to open as knife is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "sit"
+   },
+   {
+    "id": "B",
+    "text": "farm"
+   },
+   {
+    "id": "C",
+    "text": "cut"
+   },
+   {
+    "id": "D",
+    "text": "run"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Relation: function. key : open, so knife : cut.",
+  "reasoning": "Finding a relation (type: function) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0636",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "happy is to sad as hot is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "sing"
+   },
+   {
+    "id": "B",
+    "text": "cold"
+   },
+   {
+    "id": "C",
+    "text": "baa"
+   },
+   {
+    "id": "D",
+    "text": "eat"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Relation: antonym. happy : sad, so hot : cold.",
+  "reasoning": "Finding a relation (type: antonym) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0637",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A yellow  B book  C pink  D green",
+  "options": [
+   {
+    "id": "A",
+    "text": "pink"
+   },
+   {
+    "id": "B",
+    "text": "yellow"
+   },
+   {
+    "id": "C",
+    "text": "green"
+   },
+   {
+    "id": "D",
+    "text": "book"
+   }
+  ],
+  "answer": "D",
+  "explanation": "green, yellow and pink are all colour. book does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0638",
+  "domain": "verbal_reasoning",
+  "skill": "3.6",
+  "archetype": "letter_pattern",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A letter pattern goes: I, L, O, R, ___. The gap grows by 1 each step. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "O"
+   },
+   {
+    "id": "B",
+    "text": "U"
+   },
+   {
+    "id": "C",
+    "text": "Z"
+   },
+   {
+    "id": "D",
+    "text": "V"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Positions: 9, 12, 15, 18. Next gap is +3 -> U.",
+  "reasoning": "Finding a changing rule in a letter series.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letter_pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "letter_pattern",
+   "source_inspiration": "Research-derived letter pattern (UK 11+ archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0639",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Ali runs. Cai cycles. Ben does not swimming. Who swimming?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben1"
+   },
+   {
+    "id": "B",
+    "text": "Ali"
+   },
+   {
+    "id": "C",
+    "text": "Ben"
+   },
+   {
+    "id": "D",
+    "text": "Cai"
+   }
+  ],
+  "answer": "C",
+  "explanation": "From the clues, Ali=running and Cai=cycling, so Ben=swimming; therefore Ben swimming.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0640",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, STONE becomes TONES and PLANT becomes LANTP. The rule moves the FIRST letter to the END. What does STONE become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "ESTON"
+   },
+   {
+    "id": "B",
+    "text": "TONES"
+   },
+   {
+    "id": "C",
+    "text": "ENOTS"
+   },
+   {
+    "id": "D",
+    "text": "STONES"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Move the first letter of STONE to the end: TONES.",
+  "reasoning": "Discovering a word-transformation rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation (GEP anagram archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0641",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A dog  B fish  C bird  D leaf",
+  "options": [
+   {
+    "id": "A",
+    "text": "dog"
+   },
+   {
+    "id": "B",
+    "text": "bird"
+   },
+   {
+    "id": "C",
+    "text": "leaf"
+   },
+   {
+    "id": "D",
+    "text": "fish"
+   }
+  ],
+  "answer": "C",
+  "explanation": "fish, bird and dog are all animal. leaf does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0642",
+  "domain": "verbal_reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three friends each do a different activity: swimming, cycling, running. Ben swims. Ali cycles. Cai does not running. Who running?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cai"
+   },
+   {
+    "id": "B",
+    "text": "Ben"
+   },
+   {
+    "id": "C",
+    "text": "Cai1"
+   },
+   {
+    "id": "D",
+    "text": "Ali"
+   }
+  ],
+  "answer": "A",
+  "explanation": "From the clues, Ben=swimming and Ali=cycling, so Cai=running; therefore Cai running.",
+  "reasoning": "Combining three clues into a unique assignment.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "sentence_logic",
+   "source_inspiration": "Research-derived verbal deduction (GEP logic archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0643",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "phone is to call as brush is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "sleep"
+   },
+   {
+    "id": "B",
+    "text": "paint"
+   },
+   {
+    "id": "C",
+    "text": "animal"
+   },
+   {
+    "id": "D",
+    "text": "walk"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Relation: function. phone : call, so brush : paint.",
+  "reasoning": "Finding a relation (type: function) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0644",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Secret code: move every letter forward 3 places (A->D), then reverse the whole word. What does DOG become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "JRG"
+   },
+   {
+    "id": "B",
+    "text": "GRJ"
+   },
+   {
+    "id": "C",
+    "text": "GOD"
+   },
+   {
+    "id": "D",
+    "text": "DOG"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Shift: DOG -> GRJ; reverse -> JRG.",
+  "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "code",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Authored 3.3 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0645",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A key  B rectangle  C circle  D square",
+  "options": [
+   {
+    "id": "A",
+    "text": "rectangle"
+   },
+   {
+    "id": "B",
+    "text": "square"
+   },
+   {
+    "id": "C",
+    "text": "key"
+   },
+   {
+    "id": "D",
+    "text": "circle"
+   }
+  ],
+  "answer": "C",
+  "explanation": "square, circle and rectangle are all shape. key does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0646",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, the letters are reversed (CAT -> TAC). What does PORT become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "ROPP"
+   },
+   {
+    "id": "B",
+    "text": "PORTX"
+   },
+   {
+    "id": "C",
+    "text": "TROP"
+   },
+   {
+    "id": "D",
+    "text": "ORTP"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Reverse the letters of PORT: TROP.",
+  "reasoning": "Discovering a reversal rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0647",
+  "domain": "verbal_reasoning",
+  "skill": "3.6",
+  "archetype": "letter_pattern",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A letter pattern goes: Q, T, W, Z, ___. The gap grows by 1 each step. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "W1"
+   },
+   {
+    "id": "B",
+    "text": "Z"
+   },
+   {
+    "id": "C",
+    "text": "^"
+   },
+   {
+    "id": "D",
+    "text": "W"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Positions: 17, 20, 23, 26. Next gap is +3 -> W.",
+  "reasoning": "Finding a changing rule in a letter series.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letter_pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "letter_pattern",
+   "source_inspiration": "Research-derived letter pattern (UK 11+ archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0648",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, a letter is worth the SQUARE of its place (A=1, B=4, C=9...). Which letter is worth 36?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Y"
+   },
+   {
+    "id": "B",
+    "text": "S"
+   },
+   {
+    "id": "C",
+    "text": "F"
+   },
+   {
+    "id": "D",
+    "text": "I"
+   }
+  ],
+  "answer": "C",
+  "explanation": "36 = 6 squared, and F is the 6th letter.",
+  "reasoning": "Discovering a square rule then mapping to a letter position.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP letter-number archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0649",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A cat  B fish  C bird  D spoon",
+  "options": [
+   {
+    "id": "A",
+    "text": "spoon"
+   },
+   {
+    "id": "B",
+    "text": "cat"
+   },
+   {
+    "id": "C",
+    "text": "bird"
+   },
+   {
+    "id": "D",
+    "text": "fish"
+   }
+  ],
+  "answer": "A",
+  "explanation": "fish, cat and bird are all animal. spoon does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0651",
+  "domain": "verbal_reasoning",
+  "skill": "3.6",
+  "archetype": "letter_pattern",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A letter pattern goes: A, D, G, J, ___. The gap grows by 1 each step. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "G"
+   },
+   {
+    "id": "B",
+    "text": "M"
+   },
+   {
+    "id": "C",
+    "text": "N"
+   },
+   {
+    "id": "D",
+    "text": "O"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Positions: 1, 4, 7, 10. Next gap is +3 -> M.",
+  "reasoning": "Finding a changing rule in a letter series.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letter_pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "letter_pattern",
+   "source_inspiration": "Research-derived letter pattern (UK 11+ archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0652",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Secret code: move every letter forward 1 places (A->B), then reverse the whole word. What does BOX become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "XOB"
+   },
+   {
+    "id": "B",
+    "text": "CPY"
+   },
+   {
+    "id": "C",
+    "text": "BOX"
+   },
+   {
+    "id": "D",
+    "text": "YPC"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Shift: BOX -> CPY; reverse -> YPC.",
+  "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "code",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Authored 3.3 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0653",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "dog is to bark as cow is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "moo"
+   },
+   {
+    "id": "B",
+    "text": "sad"
+   },
+   {
+    "id": "C",
+    "text": "jump"
+   },
+   {
+    "id": "D",
+    "text": "eat"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Relation: animal-sound. dog : bark, so cow : moo.",
+  "reasoning": "Finding a relation (type: animal-sound) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0654",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, a letter is worth the SQUARE of its place (A=1, B=4, C=9...). Which letter is worth 16?",
+  "options": [
+   {
+    "id": "A",
+    "text": "F"
+   },
+   {
+    "id": "B",
+    "text": "Y"
+   },
+   {
+    "id": "C",
+    "text": "S"
+   },
+   {
+    "id": "D",
+    "text": "D"
+   }
+  ],
+  "answer": "D",
+  "explanation": "16 = 4 squared, and D is the 4th letter.",
+  "reasoning": "Discovering a square rule then mapping to a letter position.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP letter-number archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0657",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A orange  B grape  C book  D mango",
+  "options": [
+   {
+    "id": "A",
+    "text": "grape"
+   },
+   {
+    "id": "B",
+    "text": "book"
+   },
+   {
+    "id": "C",
+    "text": "mango"
+   },
+   {
+    "id": "D",
+    "text": "orange"
+   }
+  ],
+  "answer": "B",
+  "explanation": "orange, grape and mango are all fruit. book does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0658",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "brick is to wall as leaf is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "tree"
+   },
+   {
+    "id": "B",
+    "text": "animal"
+   },
+   {
+    "id": "C",
+    "text": "jump"
+   },
+   {
+    "id": "D",
+    "text": "read"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Relation: part-whole. brick : wall, so leaf : tree.",
+  "reasoning": "Finding a relation (type: part-whole) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0659",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Secret code: move every letter forward 1 places (A->B), then reverse the whole word. What does MAP become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "MAP"
+   },
+   {
+    "id": "B",
+    "text": "PAM"
+   },
+   {
+    "id": "C",
+    "text": "NBQ"
+   },
+   {
+    "id": "D",
+    "text": "QBN"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Shift: MAP -> NBQ; reverse -> QBN.",
+  "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "code",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Authored 3.3 master.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0660",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "dog is to bark as duck is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "quack"
+   },
+   {
+    "id": "B",
+    "text": "run"
+   },
+   {
+    "id": "C",
+    "text": "eat"
+   },
+   {
+    "id": "D",
+    "text": "sad"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Relation: animal-sound. dog : bark, so duck : quack.",
+  "reasoning": "Finding a relation (type: animal-sound) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0661",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A banana  B mango  C key  D grape",
+  "options": [
+   {
+    "id": "A",
+    "text": "key"
+   },
+   {
+    "id": "B",
+    "text": "banana"
+   },
+   {
+    "id": "C",
+    "text": "mango"
+   },
+   {
+    "id": "D",
+    "text": "grape"
+   }
+  ],
+  "answer": "A",
+  "explanation": "grape, banana and mango are all fruit. key does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0663",
+  "domain": "verbal_reasoning",
+  "skill": "3.6",
+  "archetype": "letter_pattern",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A letter pattern goes: K, N, Q, T, ___. The gap grows by 1 each step. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Y"
+   },
+   {
+    "id": "B",
+    "text": "Z"
+   },
+   {
+    "id": "C",
+    "text": "W"
+   },
+   {
+    "id": "D",
+    "text": "Q"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Positions: 11, 14, 17, 20. Next gap is +3 -> W.",
+  "reasoning": "Finding a changing rule in a letter series.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letter_pattern"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "letter_pattern",
+   "source_inspiration": "Research-derived letter pattern (UK 11+ archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0664",
+  "domain": "verbal_reasoning",
+  "skill": "3.1",
+  "archetype": "verbal_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "spoon is to eat as pen is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "cut"
+   },
+   {
+    "id": "B",
+    "text": "read"
+   },
+   {
+    "id": "C",
+    "text": "write"
+   },
+   {
+    "id": "D",
+    "text": "jump"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Relation: function. spoon : eat, so pen : write.",
+  "reasoning": "Finding a relation (type: function) and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "analogy"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_analogy",
+   "source_inspiration": "Research-derived verbal analogy (GEP GA archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0665",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, each letter means the letter 3 steps before it (so the code letter is ahead). The code word is WLPH. What real word does it stand for?",
+  "options": [
+   {
+    "id": "A",
+    "text": "QIME"
+   },
+   {
+    "id": "B",
+    "text": "TIMX"
+   },
+   {
+    "id": "C",
+    "text": "TIME"
+   },
+   {
+    "id": "D",
+    "text": "BIME"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Each code letter is 3 ahead, so shift back 3: WLPH -> TIME.",
+  "reasoning": "Reversing a letter shift to decode.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "cipher"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Research-derived code (GEP decoding archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0666",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, TRAIN becomes RAINT and PLANT becomes LANTP. The rule moves the FIRST letter to the END. What does TRAIN become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "NTRAI"
+   },
+   {
+    "id": "B",
+    "text": "RAINTT"
+   },
+   {
+    "id": "C",
+    "text": "TRAINT"
+   },
+   {
+    "id": "D",
+    "text": "RAINT"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Move the first letter of TRAIN to the end: RAINT.",
+  "reasoning": "Discovering a word-transformation rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation (GEP anagram archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0667",
+  "domain": "verbal_reasoning",
+  "skill": "3.4",
+  "archetype": "word_manipulation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a code, the letters are reversed (CAT -> TAC). What does PORT become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "ORTP"
+   },
+   {
+    "id": "B",
+    "text": "TROP"
+   },
+   {
+    "id": "C",
+    "text": "PORTX"
+   },
+   {
+    "id": "D",
+    "text": "POR"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Reverse the letters of PORT: TROP.",
+  "reasoning": "Discovering a reversal rule and applying it.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "word_manipulation"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "word_manipulation",
+   "source_inspiration": "Research-derived word manipulation.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0670",
+  "domain": "verbal_reasoning",
+  "skill": "3.2",
+  "archetype": "verbal_classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which word is the odd one out? A rectangle  B oval  C circle  D book",
+  "options": [
+   {
+    "id": "A",
+    "text": "rectangle"
+   },
+   {
+    "id": "B",
+    "text": "oval"
+   },
+   {
+    "id": "C",
+    "text": "book"
+   },
+   {
+    "id": "D",
+    "text": "circle"
+   }
+  ],
+  "answer": "C",
+  "explanation": "oval, circle and rectangle are all shape. book does not belong.",
+  "reasoning": "Grouping words by meaning (semantic category).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "odd_one_out"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "verbal_classification",
+   "source_inspiration": "Research-derived verbal classification (CogAT archetype).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0671",
+  "domain": "verbal_reasoning",
+  "skill": "3.3",
+  "archetype": "codes_ciphers",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "Secret code: move every letter forward 1 places (A->B), then reverse the whole word. What does SUN become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "NUS"
+   },
+   {
+    "id": "B",
+    "text": "OVT"
+   },
+   {
+    "id": "C",
+    "text": "TVO"
+   },
+   {
+    "id": "D",
+    "text": "SUN"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Shift: SUN -> TVO; reverse -> OVT.",
+  "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "code",
+   "master"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "codes_ciphers",
+   "source_inspiration": "Authored 3.3 master.",
+   "original": true
+  }
+ }
+]

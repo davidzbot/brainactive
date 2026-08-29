@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="20" font-size="15" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">3x3 matrix</text>
+<rect x="75" y="45" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="105,45 133.532,65.7295 122.634,99.2705 87.3664,99.2705 76.4683,65.7295" fill="#e4572e" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="105" cy="75" r="5" fill="#2b2d42" stroke="#2b2d42" stroke-width="3"/>
+<rect x="145" y="45" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="175,45 203.532,65.7295 192.634,99.2705 157.366,99.2705 146.468,65.7295" fill="#4a90d9" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="175" cy="75" r="5" fill="#2b2d42" stroke="#2b2d42" stroke-width="3"/>
+<rect x="215" y="45" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="245,45 273.532,65.7295 262.634,99.2705 227.366,99.2705 216.468,65.7295" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="245" cy="75" r="5" fill="#2b2d42" stroke="#2b2d42" stroke-width="3"/>
+<rect x="75" y="115" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="135,145 120,170.981 90,170.981 75,145 90,119.019 120,119.019" fill="#e4572e" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="105" cy="145" r="5" fill="#2b2d42" stroke="#2b2d42" stroke-width="3"/>
+<rect x="145" y="115" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="205,145 190,170.981 160,170.981 145,145 160,119.019 190,119.019" fill="#4a90d9" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="175" cy="145" r="5" fill="#2b2d42" stroke="#2b2d42" stroke-width="3"/>
+<rect x="215" y="115" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="275,145 260,170.981 230,170.981 215,145 230,119.019 260,119.019" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="245" cy="145" r="5" fill="#2b2d42" stroke="#2b2d42" stroke-width="3"/>
+<rect x="75" y="185" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="105,185 130.981,230 79.0192,230" fill="#e4572e" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="105" cy="215" r="5" fill="#2b2d42" stroke="#2b2d42" stroke-width="3"/>
+<rect x="145" y="185" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="175,185 200.981,230 149.019,230" fill="#4a90d9" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="175" cy="215" r="5" fill="#2b2d42" stroke="#2b2d42" stroke-width="3"/>
+<rect x="215" y="185" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<text x="245" y="215" font-size="34" fill="#e4572e" text-anchor="middle" font-family="sans-serif" font-weight="bold">?</text>
+</svg>

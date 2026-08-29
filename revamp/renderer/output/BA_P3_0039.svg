@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<rect x="120" y="70" width="60" height="60" rx="4" fill="#9aa0a6" stroke="None" stroke-width="0"/>
+<rect x="180" y="70" width="60" height="60" rx="4" fill="#9aa0a6" stroke="None" stroke-width="0"/>
+<rect x="120" y="130" width="60" height="60" rx="4" fill="#9aa0a6" stroke="None" stroke-width="0"/>
+<polyline points="110.718,90 114.468,84.1139 118.716,78.577 123.431,73.4315 128.577,68.7164 134.114,64.4678 140,60.718 146.191,57.4954 152.638,54.8246 159.294,52.7259 166.108,51.2154 173.028,50.3044 180,50 186.972,50.3044 193.892,51.2154 200.706,52.7259 207.362,54.8246 213.809,57.4954 220,60.718 225.886,64.4678 231.423,68.7164 236.569,73.4315 241.284,78.577 245.532,84.1139 249.282,90" fill="none" stroke="#4a90d9" stroke-width="4"/>
+<polygon points="261.406,83 245.415,99.0049 239.55,88.8463" fill="#4a90d9" stroke="None" stroke-width="0"/>
+<rect x="120" y="70" width="60" height="60" rx="4" fill="#e4572e" stroke="#2b2d42" stroke-width="3"/>
+<rect x="180" y="70" width="60" height="60" rx="4" fill="#e4572e" stroke="#2b2d42" stroke-width="3"/>
+<rect x="180" y="130" width="60" height="60" rx="4" fill="#e4572e" stroke="#2b2d42" stroke-width="3"/>
+<text x="180" y="30" font-size="18" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">L-shape after 90 deg clockwise</text>
+</svg>

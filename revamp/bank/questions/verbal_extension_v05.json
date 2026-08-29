@@ -1,0 +1,487 @@
+{
+  "dataset": {
+    "name": "BrainActive P3 High Ability Verbal Extension",
+    "version": "0.5",
+    "target": "Singapore Primary 3 High Ability",
+    "question_count": 10,
+    "depends_on": "brainactive_p3_high_ability_pilot.json v0.4.1 (NOT modified)",
+    "disclaimer": "Original reasoning-practice items inspired by the BrainActive verbal-reasoning research (MOE 2026 HAL context, GEP General Ability verbal archetypes, CogAT, UK 11+ VR). Not affiliated with or predictive of any MOE or GEP assessment. Not a mock exam. Not English tuition.",
+    "design": "v0.5 is a RESEARCH-DERIVED VERBAL EXTENSION. 10 questions authored strictly from brainactive_verbal_pilot_plan.md (items A1-G1) to demonstrate the Verbal hierarchy (VR1-VR7). Difficulty rises via rule discovery, relation discovery and constraint count - NOT harder words. A2 (set/category analogy) and C1/C2/D1 (codes/word transformation) require discovering the operating rule, not mechanical application. v0.4.1 (50 Qs) is left untouched as the experimental baseline.",
+    "level_model": "Explore / Think / Challenge / Master.",
+    "gates": "No DB, no renderer, no production app code, no merge into v0.4.1. Extension file only."
+  },
+  "questions": [
+    {
+      "id": "BA_P3_V01",
+      "domain": "verbal_reasoning",
+      "skill": "3.1",
+      "archetype": "word_analogy",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Leaf is to tree as page is to ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "book"
+        },
+        {
+          "id": "B",
+          "text": "paper"
+        },
+        {
+          "id": "C",
+          "text": "word"
+        },
+        {
+          "id": "D",
+          "text": "cover"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Relation: a single part that, together with many others, makes up the whole. A leaf is one part of a tree; a page is one part of a book. (Paper is made from trees; word is what is printed on a page; cover is one part of a book but not the 'many parts make the whole' part.)",
+      "reasoning": "Finding a part-whole relation and applying it to a new pair.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "analogy"
+      ],
+      "qa_status": "ai_generated_not_approved",
+      "provenance": {
+        "basis": "BrainActive curriculum research",
+        "archetype": "word_analogy",
+        "source_inspiration": "v0.5 verbal extension, pilot plan A1 (research-derived). Builds VR1 beyond 0037/0013.",
+        "original": true
+      }
+    },
+    {
+      "id": "BA_P3_V02",
+      "domain": "verbal_reasoning",
+      "skill": "3.1",
+      "archetype": "word_analogy",
+      "level": "Challenge",
+      "difficulty": "hard",
+      "question_type": "multiple_choice",
+      "question": "Cup, plate, bowl : rose, tulip, sunflower : apple, banana, ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "orange"
+        },
+        {
+          "id": "B",
+          "text": "carrot"
+        },
+        {
+          "id": "C",
+          "text": "leaf"
+        },
+        {
+          "id": "D",
+          "text": "tree"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The relation is NOT a word pair. Each group is a set of three things in the same category: Group 1 = things you eat from (dishes); Group 2 = flowers; Group 3 = fruits. The missing member of the fruit set is orange. (Carrot is a vegetable, not a fruit; leaf and tree are not fruits.)",
+      "reasoning": "Discovering that the relation is category-to-category (set correspondence), then completing the last set.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "analogy",
+        "set"
+      ],
+      "qa_status": "ai_generated_not_approved",
+      "provenance": {
+        "basis": "BrainActive curriculum research",
+        "archetype": "word_analogy",
+        "source_inspiration": "v0.5 verbal extension, pilot plan A2 (research-derived). GEP GA set-analogy archetype (S3), P3-accessible.",
+        "original": true
+      }
+    },
+    {
+      "id": "BA_P3_V03",
+      "domain": "verbal_reasoning",
+      "skill": "3.2",
+      "archetype": "word_classification",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "Which word is the odd one out?  A red  B blue  C green  D circle",
+      "options": [
+        {
+          "id": "A",
+          "text": "red"
+        },
+        {
+          "id": "B",
+          "text": "blue"
+        },
+        {
+          "id": "C",
+          "text": "green"
+        },
+        {
+          "id": "D",
+          "text": "circle"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Red, blue and green are colours. Circle is a shape, so it does not belong to the colour group.",
+      "reasoning": "Grouping words by meaning (semantic category), not by sound or look.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "odd_one_out"
+      ],
+      "qa_status": "ai_generated_not_approved",
+      "provenance": {
+        "basis": "BrainActive curriculum research",
+        "archetype": "word_classification",
+        "source_inspiration": "v0.5 verbal extension, pilot plan B1 (research-derived).",
+        "original": true
+      }
+    },
+    {
+      "id": "BA_P3_V04",
+      "domain": "verbal_reasoning",
+      "skill": "3.2",
+      "archetype": "word_classification",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Which does NOT belong?  A clock  B watch  C timer  D ruler",
+      "options": [
+        {
+          "id": "A",
+          "text": "clock"
+        },
+        {
+          "id": "B",
+          "text": "watch"
+        },
+        {
+          "id": "C",
+          "text": "timer"
+        },
+        {
+          "id": "D",
+          "text": "ruler"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Clock, watch and timer are all things that tell or measure TIME. A ruler measures LENGTH, not time, so it is the odd one out. The grouping is by function, not by how the objects look.",
+      "reasoning": "Finding a non-obvious shared property (function) and rejecting a surface-feature grouping.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "odd_one_out"
+      ],
+      "qa_status": "ai_generated_not_approved",
+      "provenance": {
+        "basis": "BrainActive curriculum research",
+        "archetype": "word_classification",
+        "source_inspiration": "v0.5 verbal extension, pilot plan B2 (research-derived).",
+        "original": true
+      }
+    },
+    {
+      "id": "BA_P3_V05",
+      "domain": "verbal_reasoning",
+      "skill": "3.3",
+      "archetype": "codes_ciphers",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "In a code, a letter is worth the SQUARE of its place in the alphabet (A=1, B=4, C=9, D=16 ...). Which letter is worth 25?",
+      "options": [
+        {
+          "id": "A",
+          "text": "E"
+        },
+        {
+          "id": "B",
+          "text": "Y"
+        },
+        {
+          "id": "C",
+          "text": "F"
+        },
+        {
+          "id": "D",
+          "text": "S"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The values are squares: 1, 4, 9, 16 ... so 25 = 5 squared. E is the 5th letter of the alphabet, therefore E = 25. (Y is the 25th letter - a near-miss if you match the number to the letter directly; F would be 6; S would be 19.)",
+      "reasoning": "Discovering the square rule from the examples, then mapping a square root back to a letter position.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "cipher"
+      ],
+      "qa_status": "ai_generated_not_approved",
+      "provenance": {
+        "basis": "BrainActive curriculum research",
+        "archetype": "codes_ciphers",
+        "source_inspiration": "v0.5 verbal extension, pilot plan C1 (research-derived). GEP letter-number code (S4).",
+        "original": true
+      }
+    },
+    {
+      "id": "BA_P3_V06",
+      "domain": "verbal_reasoning",
+      "skill": "3.3",
+      "archetype": "codes_ciphers",
+      "level": "Challenge",
+      "difficulty": "hard",
+      "question_type": "multiple_choice",
+      "question": "In a code, DOG becomes GLJ and CAT becomes FDW. The rule is: move the 1st letter forward 3, the 2nd letter back 3, the 3rd letter forward 3, and keep alternating. What does PIG become?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SFJ"
+        },
+        {
+          "id": "B",
+          "text": "SLJ"
+        },
+        {
+          "id": "C",
+          "text": "SFD"
+        },
+        {
+          "id": "D",
+          "text": "MFJ"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Apply the alternating rule to PIG: P forward 3 = S; I back 3 = F; G forward 3 = J. So PIG becomes SFJ. (SLJ is if every letter moved forward 3; SFD is if the last letter also moved back; MFJ is if the first moved back.)",
+      "reasoning": "Inferring an alternating +/- shift rule from two examples, then applying it to a new word.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "cipher"
+      ],
+      "qa_status": "ai_generated_not_approved",
+      "provenance": {
+        "basis": "BrainActive curriculum research",
+        "archetype": "codes_ciphers",
+        "source_inspiration": "v0.5 verbal extension, pilot plan C2 (research-derived).",
+        "original": true
+      }
+    },
+    {
+      "id": "BA_P3_V07",
+      "domain": "verbal_reasoning",
+      "skill": "3.4",
+      "archetype": "word_manipulation",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "In a code, TRAIN becomes RAINT and PLANT becomes LANTP. The rule moves the FIRST letter to the END. What does HOUSE become?",
+      "options": [
+        {
+          "id": "A",
+          "text": "OUSEH"
+        },
+        {
+          "id": "B",
+          "text": "HOUSE"
+        },
+        {
+          "id": "C",
+          "text": "USEHO"
+        },
+        {
+          "id": "D",
+          "text": "EHOSU"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Move the first letter H to the end of HOUSE and you get OUSEH. (USEHO moves the LAST letter to the front; EHOSU reverses the word; HOUSE is unchanged.)",
+      "reasoning": "Discovering a transformation rule (first letter to end) from two examples, then applying it.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "word_manipulation"
+      ],
+      "qa_status": "ai_generated_not_approved",
+      "provenance": {
+        "basis": "BrainActive curriculum research",
+        "archetype": "word_manipulation",
+        "source_inspiration": "v0.5 verbal extension, pilot plan D1 (research-derived). Fills VR4 gap noted in framework.",
+        "original": true
+      }
+    },
+    {
+      "id": "BA_P3_V08",
+      "domain": "verbal_reasoning",
+      "skill": "3.6",
+      "archetype": "letter_patterns",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "A letter pattern goes: B, D, G, K, ___. The gap grows by 1 each step (B to D is +2, D to G is +3, G to K is +4). What comes next?",
+      "options": [
+        {
+          "id": "A",
+          "text": "P"
+        },
+        {
+          "id": "B",
+          "text": "O"
+        },
+        {
+          "id": "C",
+          "text": "Q"
+        },
+        {
+          "id": "D",
+          "text": "N"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The next gap is +5. K is the 11th letter, so 11 + 5 = 16 = P. (O would be +4 again; Q would be +6; N would be +3.)",
+      "reasoning": "Finding a changing rule (gap increases by 1) and extending the pattern.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "letter_pattern"
+      ],
+      "qa_status": "ai_generated_not_approved",
+      "provenance": {
+        "basis": "BrainActive curriculum research",
+        "archetype": "letter_patterns",
+        "source_inspiration": "v0.5 verbal extension, pilot plan E1 (research-derived). UK GL letter-series archetype (S11/S13).",
+        "original": true
+      }
+    },
+    {
+      "id": "BA_P3_V09",
+      "domain": "verbal_reasoning",
+      "skill": "3.5",
+      "archetype": "sentence_logic",
+      "level": "Challenge",
+      "difficulty": "hard",
+      "question_type": "multiple_choice",
+      "question": "Three boxes are red, blue and green. Each holds one thing: a book, a ball or a coin. (1) The blue box holds the book. (2) The red box does not hold the ball. (3) The green box does not hold the coin. What does the green box hold?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ball"
+        },
+        {
+          "id": "B",
+          "text": "book"
+        },
+        {
+          "id": "C",
+          "text": "coin"
+        },
+        {
+          "id": "D",
+          "text": "cannot tell"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Blue = book, so red and green share ball and coin. Red does NOT hold the ball, so red = coin. That leaves green = ball. Clue (3) is the consistency check: green does not hold the coin - true, so the assignment holds.",
+      "reasoning": "Combining three constraints to fix a unique assignment (deduction, not guess).",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "logic"
+      ],
+      "qa_status": "ai_generated_not_approved",
+      "provenance": {
+        "basis": "BrainActive curriculum research",
+        "archetype": "sentence_logic",
+        "source_inspiration": "v0.5 verbal extension, pilot plan F1 (research-derived).",
+        "original": true
+      }
+    },
+    {
+      "id": "BA_P3_V10",
+      "domain": "verbal_reasoning",
+      "skill": "3.7",
+      "archetype": "sentence_completion",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "The ground was wet, so we took our ___.",
+      "options": [
+        {
+          "id": "A",
+          "text": "umbrella"
+        },
+        {
+          "id": "B",
+          "text": "shoe"
+        },
+        {
+          "id": "C",
+          "text": "book"
+        },
+        {
+          "id": "D",
+          "text": "apple"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Wet ground means rain, so an umbrella keeps you dry - it fits the cause (wet) and the effect (take ...). A shoe is worn anyway; a book and an apple do not fit the situation.",
+      "reasoning": "Using sentence context (cause and effect) to pick the fitting word.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "sentence_completion",
+        "vocab_dependent"
+      ],
+      "qa_status": "ai_generated_not_approved",
+      "provenance": {
+        "basis": "BrainActive curriculum research",
+        "archetype": "sentence_completion",
+        "source_inspiration": "v0.5 verbal extension, pilot plan G1 (research-derived). Capped B-type (S6/S9).",
+        "original": true
+      }
+    }
+  ]
+}

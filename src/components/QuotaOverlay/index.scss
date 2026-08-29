@@ -1,0 +1,91 @@
+.quota-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 24px;
+}
+
+.quota-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px 24px;
+  width: 100%;
+  max-width: 320px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-badge {
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  background: #fef3c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.options-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.btn-watch-ad {
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 14px;
+  height: 48px;
+  line-height: 48px;
+  border: none;
+}
+
+.btn-go-pro {
+  background: #f8fafc;
+  color: #0f172a;
+  border: 1.5px solid #e2e8f0;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 14px;
+  height: 46px;
+  line-height: 46px;
+}
+
+.btn-close-link {
+  font-size: 13px;
+  color: #94a3b8;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px;
+}

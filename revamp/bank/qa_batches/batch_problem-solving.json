@@ -1,0 +1,5643 @@
+[
+ {
+  "id": "BA_P3_0044",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A number plus 5 equals 12. What is the number?",
+  "options": [
+   {
+    "id": "A",
+    "text": "7"
+   },
+   {
+    "id": "B",
+    "text": "17"
+   },
+   {
+    "id": "C",
+    "text": "8"
+   },
+   {
+    "id": "D",
+    "text": "6"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Work backwards: the result was 12, so before adding 5 the number was 12 - 5 = 7.",
+  "reasoning": "Reversing a single operation.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "validated_baseline_v041",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "working_backwards",
+   "source_inspiration": "New in v0.4 (Explore step of 6.1).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0028",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A number is doubled, then 3 is added, and the result is 15. What was the starting number?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5"
+   },
+   {
+    "id": "B",
+    "text": "6"
+   },
+   {
+    "id": "C",
+    "text": "7"
+   },
+   {
+    "id": "D",
+    "text": "9"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Work backwards: the result was 15, so before adding 3 it was 12, and before doubling it was 12 / 2 = 6. Starting number = 6.",
+  "reasoning": "Reversing two operations in the correct order.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "validated_baseline_v041",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "working_backwards",
+   "source_inspiration": "Carried from v0.3 (re-evaluated: retains as the Think step of 6.1).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0045",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A bus had some children. At a stop, 8 got off and 5 got on. Now there are 14 children on the bus. How many were on the bus at first?",
+  "options": [
+   {
+    "id": "A",
+    "text": "11"
+   },
+   {
+    "id": "B",
+    "text": "17"
+   },
+   {
+    "id": "C",
+    "text": "19"
+   },
+   {
+    "id": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Work backwards from 14: before 5 got on there were 14 - 5 = 9; before 8 got off there were 9 + 8 = 17. So 17 at first.",
+  "reasoning": "Working backwards through a real-world context.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "validated_baseline_v041",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "working_backwards",
+   "source_inspiration": "New in v0.4 (Challenge step of 6.1).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0046",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Master",
+  "difficulty": "expert",
+  "question_type": "multiple_choice",
+  "question": "A number is doubled, then 4 is added, then 5 is subtracted, and the result is 11. What was the starting number? Check your answer by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": "5"
+   },
+   {
+    "id": "B",
+    "text": "7"
+   },
+   {
+    "id": "C",
+    "text": "8"
+   },
+   {
+    "id": "D",
+    "text": "6"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Work backwards: 11 + 5 = 16; 16 - 4 = 12; 12 / 2 = 6. Check forward: 6 x 2 = 12, +4 = 16, -5 = 11. Correct, so start = 6.",
+  "reasoning": "Working backwards through a 3-step process AND verifying with the forward check (combining two heuristics).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards",
+   "master"
+  ],
+  "qa_status": "validated_baseline_v041",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "working_backwards",
+   "source_inspiration": "New in v0.4 (Master step of 6.1; combines working-backwards with verification).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0047",
+  "domain": "problem_solving",
+  "skill": "6.2",
+  "archetype": "guess_check",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Some coins are 2-dollar and some are 5-dollar. There are 7 coins in total and they make 23 dollars. How many 5-dollar coins are there?",
+  "options": [
+   {
+    "id": "A",
+    "text": "2"
+   },
+   {
+    "id": "B",
+    "text": "3"
+   },
+   {
+    "id": "C",
+    "text": "4"
+   },
+   {
+    "id": "D",
+    "text": "5"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Try 3 five-dollar coins (=15) and 4 two-dollar coins (=8). Total value 23 and total coins 7. That fits, so 3 five-dollar coins. (Systematic guess-&-check across the few cases.)",
+  "reasoning": "Systematic trial across a few cases.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "guess_check"
+  ],
+  "qa_status": "validated_baseline_v041",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "guess_check",
+   "source_inspiration": "New in v0.4 (Explore step of 6.2).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0029",
+  "domain": "problem_solving",
+  "skill": "6.2",
+  "archetype": "guess_check",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "There are some 2-dollar and 5-dollar coins. There are 6 coins in total and they make 18 dollars. How many 5-dollar coins are there?",
+  "options": [
+   {
+    "id": "A",
+    "text": "1"
+   },
+   {
+    "id": "B",
+    "text": "2"
+   },
+   {
+    "id": "C",
+    "text": "3"
+   },
+   {
+    "id": "D",
+    "text": "4"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Try 2 five-dollar coins (=10) and 4 two-dollar coins (=8). Total value 18 and total coins 6. That fits, so there are 2 five-dollar coins.",
+  "reasoning": "Guess-&-check across more combinations, systematically.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "guess_check"
+  ],
+  "qa_status": "validated_baseline_v041",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "guess_check",
+   "source_inspiration": "Carried from v0.3 (re-evaluated: retains as the Think step of 6.2).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0030",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 5 more stickers than Ben. Amy gives Ben 2 stickers. Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Amy, by 1"
+   },
+   {
+    "id": "B",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "C",
+    "text": "Amy, by 3"
+   },
+   {
+    "id": "D",
+    "text": "They are equal"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Originally Amy leads by 5. When Amy gives Ben 2, Amy loses 2 and Ben gains 2, so the gap shrinks by 4 (5 - 4 = 1). Amy still has 1 more.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "validated_baseline_v041",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "before_after",
+   "source_inspiration": "Carried from v0.3 (re-evaluated: retains as the single 6.3 item).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0048",
+  "domain": "problem_solving",
+  "skill": "6.6",
+  "archetype": "pattern_application",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A machine uses this rule: 1 -> 4,  2 -> 7,  3 -> 10. What should 8 become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "25"
+   },
+   {
+    "id": "B",
+    "text": "22"
+   },
+   {
+    "id": "C",
+    "text": "24"
+   },
+   {
+    "id": "D",
+    "text": "28"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each output is the input x 3 + 1: 1->4, 2->7, 3->10. So 8 -> 8 x 3 + 1 = 25. Distractors: x3 only (24), x3-2 (22), x3+4 (28).",
+  "reasoning": "Discovering a rule, then applying it to a new (far) case.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "pattern_application"
+  ],
+  "qa_status": "validated_baseline_v041",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "pattern_application",
+   "source_inspiration": "New in v0.4 (addresses audit MISSING: Tier-1 6.6 Pattern Application was absent).",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_0049",
+  "domain": "problem_solving",
+  "skill": "6.6",
+  "archetype": "pattern_application",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A row of tiles repeats: red, blue, red, blue, red... (1st, 3rd, 5th are red). What colour is the 12th tile, and what colour is the 13th?",
+  "options": [
+   {
+    "id": "A",
+    "text": "12th blue, 13th red"
+   },
+   {
+    "id": "B",
+    "text": "both red"
+   },
+   {
+    "id": "C",
+    "text": "both blue"
+   },
+   {
+    "id": "D",
+    "text": "12th red, 13th blue"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Odd positions are red, even positions are blue. 12 is even -> blue; 13 is odd -> red.",
+  "reasoning": "Using a discovered repeating rule to predict a far term (application, not just next-step).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "pattern_application"
+  ],
+  "qa_status": "validated_baseline_v041",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "pattern_application",
+   "source_inspiration": "New in v0.4 (addresses audit MISSING: 6.6 Pattern Application).",
+   "original": true
+  }
+ },
+ {
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Ben has 3 more marbles than Ali. Ben gives Ali 1 marble. Now who has more marbles, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "B",
+    "text": "Ali, by 1"
+   },
+   {
+    "id": "C",
+    "text": "They are equal"
+   },
+   {
+    "id": "D",
+    "text": "Ben, by 3"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Originally Ben leads by 3. When Ben gives Ali 1, Ben loses 1 and Ali gains 1, so the gap shrinks by 2 (3 - 2 = 1). Ben still has 1 more.",
+  "reasoning": "Constant-difference under a transfer (gap shrinks by twice the amount moved).",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  },
+  "id": "BA_P3_0088"
+ },
+ {
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Five trees are planted in a straight line, 2 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "8 m"
+   },
+   {
+    "id": "B",
+    "text": "10 m"
+   },
+   {
+    "id": "C",
+    "text": "5 m"
+   },
+   {
+    "id": "D",
+    "text": "6 m"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Draw a diagram: with 5 trees there are 4 gaps between them. Each gap is 2 m, so the row is 4 x 2 = 8 m. (Not 5 x 2.)",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  },
+  "id": "BA_P3_0089"
+ },
+ {
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many two-letter codes can you make using the letters A, B and C if you may repeat a letter (e.g. AA, AB)?",
+  "options": [
+   {
+    "id": "A",
+    "text": "9"
+   },
+   {
+    "id": "B",
+    "text": "6"
+   },
+   {
+    "id": "C",
+    "text": "8"
+   },
+   {
+    "id": "D",
+    "text": "12"
+   }
+  ],
+  "answer": "A",
+  "explanation": "List them systematically: AA, AB, AC, BA, BB, BC, CA, CB, CC = 9 codes. (3 choices for the first letter x 3 for the second = 9.)",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  },
+  "id": "BA_P3_0090"
+ },
+ {
+  "id": "BA_P3_1102",
+  "domain": "problem_solving",
+  "skill": "6.6",
+  "archetype": "pattern_application",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 12 become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "37"
+   },
+   {
+    "id": "B",
+    "text": "38"
+   },
+   {
+    "id": "C",
+    "text": "36"
+   },
+   {
+    "id": "D",
+    "text": "35"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each output is the input x 3 + 1. So 12 -> 12 x 3 + 1 = 37.",
+  "reasoning": "Discovering a rule, then applying it to a far case.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "pattern_application"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "pattern_application",
+   "source_inspiration": "Authored 6.6.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1103",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "7 trees are planted in a straight line, 3 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "21"
+   },
+   {
+    "id": "B",
+    "text": "18"
+   },
+   {
+    "id": "C",
+    "text": "17"
+   },
+   {
+    "id": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Draw a diagram: 7 trees have 6 gaps between them. 6 x 3 = 18 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1104",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 3-letter codes can you make using the letters A, B, C if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 6
+   },
+   {
+    "id": "B",
+    "text": "27"
+   },
+   {
+    "id": "C",
+    "text": 28
+   },
+   {
+    "id": "D",
+    "text": 3
+   }
+  ],
+  "answer": "B",
+  "explanation": "List them: AAA, AAB, AAC, ABA, ABB, ABC, ACA, ACB, ACC, BAA, BAB, BAC, BBA, BBB, BBC, BCA, BCB, BCC, CAA, CAB, CAC, CBA, CBB, CBC, CCA, CCB, CCC = 27 codes (3 choices for each of 3 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1105",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "5 trees are planted in a straight line, 3 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "11"
+   },
+   {
+    "id": "B",
+    "text": "15"
+   },
+   {
+    "id": "C",
+    "text": "5"
+   },
+   {
+    "id": "D",
+    "text": "12"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Draw a diagram: 5 trees have 4 gaps between them. 4 x 3 = 12 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1106",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 3-letter codes can you make using the letters C, A, B if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 28
+   },
+   {
+    "id": "B",
+    "text": "27"
+   },
+   {
+    "id": "C",
+    "text": 3
+   },
+   {
+    "id": "D",
+    "text": 26
+   }
+  ],
+  "answer": "B",
+  "explanation": "List them: CCC, CCA, CCB, CAC, CAA, CAB, CBC, CBA, CBB, ACC, ACA, ACB, AAC, AAA, AAB, ABC, ABA, ABB, BCC, BCA, BCB, BAC, BAA, BAB, BBC, BBA, BBB = 27 codes (3 choices for each of 3 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1108",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 3 more stickers than Ben. Amy gives Ben 2 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben, by 3"
+   },
+   {
+    "id": "B",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "C",
+    "text": "Amy, by 5"
+   },
+   {
+    "id": "D",
+    "text": "They are equal"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Originally Amy leads by 3. Giving 2 reduces the gap by 4 (2 x 2), so the gap is now -1.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1109",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 2 more stickers than Ben. Amy gives Ben 3 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben, by 4"
+   },
+   {
+    "id": "B",
+    "text": "They are equal"
+   },
+   {
+    "id": "C",
+    "text": "Ben, by 2"
+   },
+   {
+    "id": "D",
+    "text": "Amy, by 5"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Originally Amy leads by 2. Giving 3 reduces the gap by 6 (2 x 3), so the gap is now -4.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1110",
+  "domain": "problem_solving",
+  "skill": "6.6",
+  "archetype": "pattern_application",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 8 become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "23"
+   },
+   {
+    "id": "B",
+    "text": "30"
+   },
+   {
+    "id": "C",
+    "text": "25"
+   },
+   {
+    "id": "D",
+    "text": "24"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Each output is the input x 3 + 1. So 8 -> 8 x 3 + 1 = 25.",
+  "reasoning": "Discovering a rule, then applying it to a far case.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "pattern_application"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "pattern_application",
+   "source_inspiration": "Authored 6.6.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1111",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: + 3; + 4. The final result is 13. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": "6"
+   },
+   {
+    "id": "B",
+    "text": 5
+   },
+   {
+    "id": "C",
+    "text": 8
+   },
+   {
+    "id": "D",
+    "text": 7
+   }
+  ],
+  "answer": "A",
+  "explanation": "Work backwards: before adding 4 there were 9; before adding 3 there were 6. Starting number = 6.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1112",
+  "domain": "problem_solving",
+  "skill": "6.2",
+  "archetype": "guess_check",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Some coins are 2-dollar and some are 5-dollar. There are 9 coins in total and they make 30 dollars. How many 5-dollar coins are there?",
+  "options": [
+   {
+    "id": "A",
+    "text": 5
+   },
+   {
+    "id": "B",
+    "text": 0
+   },
+   {
+    "id": "C",
+    "text": "4"
+   },
+   {
+    "id": "D",
+    "text": 6
+   }
+  ],
+  "answer": "C",
+  "explanation": "Try 4 five-dollar coins (= 20) and 5 two-dollar coins (= 10). Total 9 coins, 30 dollars. Fits, so 4 five-dollar coins.",
+  "reasoning": "Systematic guess-and-check across a few cases.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "guess_check"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "guess_check",
+   "source_inspiration": "Authored 6.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1113",
+  "domain": "problem_solving",
+  "skill": "6.6",
+  "archetype": "pattern_application",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 7 become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "20"
+   },
+   {
+    "id": "B",
+    "text": "21"
+   },
+   {
+    "id": "C",
+    "text": "22"
+   },
+   {
+    "id": "D",
+    "text": "23"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Each output is the input x 3 + 1. So 7 -> 7 x 3 + 1 = 22.",
+  "reasoning": "Discovering a rule, then applying it to a far case.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "pattern_application"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "pattern_application",
+   "source_inspiration": "Authored 6.6.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1114",
+  "domain": "problem_solving",
+  "skill": "6.6",
+  "archetype": "pattern_application",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 8 become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "25"
+   },
+   {
+    "id": "B",
+    "text": "30"
+   },
+   {
+    "id": "C",
+    "text": "24"
+   },
+   {
+    "id": "D",
+    "text": "26"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each output is the input x 3 + 1. So 8 -> 8 x 3 + 1 = 25.",
+  "reasoning": "Discovering a rule, then applying it to a far case.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "pattern_application"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "pattern_application",
+   "source_inspiration": "Authored 6.6.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1115",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: + 3; x 3. The final result is 36. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 18
+   },
+   {
+    "id": "B",
+    "text": 8
+   },
+   {
+    "id": "C",
+    "text": "9"
+   },
+   {
+    "id": "D",
+    "text": 11
+   }
+  ],
+  "answer": "C",
+  "explanation": "Work backwards: before multiplying by 3 it was 12; before adding 3 there were 9. Starting number = 9.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1116",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: + 2; + 3; + 3. The final result is 13. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 7
+   },
+   {
+    "id": "B",
+    "text": "5"
+   },
+   {
+    "id": "C",
+    "text": 4
+   },
+   {
+    "id": "D",
+    "text": 10
+   }
+  ],
+  "answer": "B",
+  "explanation": "Work backwards: before adding 3 there were 10; before adding 3 there were 7; before adding 2 there were 5. Starting number = 5.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1117",
+  "domain": "problem_solving",
+  "skill": "6.6",
+  "archetype": "pattern_application",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 7 become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "22"
+   },
+   {
+    "id": "B",
+    "text": "23"
+   },
+   {
+    "id": "C",
+    "text": "21"
+   },
+   {
+    "id": "D",
+    "text": "20"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each output is the input x 3 + 1. So 7 -> 7 x 3 + 1 = 22.",
+  "reasoning": "Discovering a rule, then applying it to a far case.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "pattern_application"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "pattern_application",
+   "source_inspiration": "Authored 6.6.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1118",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "7 trees are planted in a straight line, 2 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "11"
+   },
+   {
+    "id": "B",
+    "text": "7"
+   },
+   {
+    "id": "C",
+    "text": "12"
+   },
+   {
+    "id": "D",
+    "text": "14"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Draw a diagram: 7 trees have 6 gaps between them. 6 x 2 = 12 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1119",
+  "domain": "problem_solving",
+  "skill": "6.2",
+  "archetype": "guess_check",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Some coins are 2-dollar and some are 5-dollar. There are 6 coins in total and they make 21 dollars. How many 5-dollar coins are there?",
+  "options": [
+   {
+    "id": "A",
+    "text": "3"
+   },
+   {
+    "id": "B",
+    "text": 0
+   },
+   {
+    "id": "C",
+    "text": 5
+   },
+   {
+    "id": "D",
+    "text": 4
+   }
+  ],
+  "answer": "A",
+  "explanation": "Try 3 five-dollar coins (= 15) and 3 two-dollar coins (= 6). Total 6 coins, 21 dollars. Fits, so 3 five-dollar coins.",
+  "reasoning": "Systematic guess-and-check across a few cases.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "guess_check"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "guess_check",
+   "source_inspiration": "Authored 6.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1120",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 3-letter codes can you make using the letters B, A, C if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 6
+   },
+   {
+    "id": "B",
+    "text": 26
+   },
+   {
+    "id": "C",
+    "text": 28
+   },
+   {
+    "id": "D",
+    "text": "27"
+   }
+  ],
+  "answer": "D",
+  "explanation": "List them: BBB, BBA, BBC, BAB, BAA, BAC, BCB, BCA, BCC, ABB, ABA, ABC, AAB, AAA, AAC, ACB, ACA, ACC, CBB, CBA, CBC, CAB, CAA, CAC, CCB, CCA, CCC = 27 codes (3 choices for each of 3 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1121",
+  "domain": "problem_solving",
+  "skill": "6.6",
+  "archetype": "pattern_application",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 12 become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "42"
+   },
+   {
+    "id": "B",
+    "text": "35"
+   },
+   {
+    "id": "C",
+    "text": "36"
+   },
+   {
+    "id": "D",
+    "text": "37"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Each output is the input x 3 + 1. So 12 -> 12 x 3 + 1 = 37.",
+  "reasoning": "Discovering a rule, then applying it to a far case.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "pattern_application"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "pattern_application",
+   "source_inspiration": "Authored 6.6.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1122",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 2 more stickers than Ben. Amy gives Ben 2 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Amy, by 4"
+   },
+   {
+    "id": "B",
+    "text": "They are equal"
+   },
+   {
+    "id": "C",
+    "text": "Ben, by 2"
+   },
+   {
+    "id": "D",
+    "text": "Ben, by 1"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Originally Amy leads by 2. Giving 2 reduces the gap by 4 (2 x 2), so the gap is now -2.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1123",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 3 more stickers than Ben. Amy gives Ben 2 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Amy, by 5"
+   },
+   {
+    "id": "B",
+    "text": "They are equal"
+   },
+   {
+    "id": "C",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "D",
+    "text": "Ben, by 3"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Originally Amy leads by 3. Giving 2 reduces the gap by 4 (2 x 2), so the gap is now -1.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1124",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 2-letter codes can you make using the letters A, B if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 3
+   },
+   {
+    "id": "B",
+    "text": "4"
+   },
+   {
+    "id": "C",
+    "text": 5
+   },
+   {
+    "id": "D",
+    "text": 2
+   }
+  ],
+  "answer": "B",
+  "explanation": "List them: AA, AB, BA, BB = 4 codes (2 choices for each of 2 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1125",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 2-letter codes can you make using the letters A, C if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 3
+   },
+   {
+    "id": "B",
+    "text": 5
+   },
+   {
+    "id": "C",
+    "text": "4"
+   },
+   {
+    "id": "D",
+    "text": 2
+   }
+  ],
+  "answer": "C",
+  "explanation": "List them: AA, AC, CA, CC = 4 codes (2 choices for each of 2 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1126",
+  "domain": "problem_solving",
+  "skill": "6.6",
+  "archetype": "pattern_application",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 7 become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "27"
+   },
+   {
+    "id": "B",
+    "text": "20"
+   },
+   {
+    "id": "C",
+    "text": "23"
+   },
+   {
+    "id": "D",
+    "text": "22"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Each output is the input x 3 + 1. So 7 -> 7 x 3 + 1 = 22.",
+  "reasoning": "Discovering a rule, then applying it to a far case.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "pattern_application"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "pattern_application",
+   "source_inspiration": "Authored 6.6.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1127",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 2 more stickers than Ben. Amy gives Ben 3 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "B",
+    "text": "Ben, by 2"
+   },
+   {
+    "id": "C",
+    "text": "They are equal"
+   },
+   {
+    "id": "D",
+    "text": "Ben, by 4"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Originally Amy leads by 2. Giving 3 reduces the gap by 6 (2 x 3), so the gap is now -4.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1128",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "4 trees are planted in a straight line, 2 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "4"
+   },
+   {
+    "id": "B",
+    "text": "5"
+   },
+   {
+    "id": "C",
+    "text": "6"
+   },
+   {
+    "id": "D",
+    "text": "8"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Draw a diagram: 4 trees have 3 gaps between them. 3 x 2 = 6 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1129",
+  "domain": "problem_solving",
+  "skill": "6.6",
+  "archetype": "pattern_application",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 9 become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "27"
+   },
+   {
+    "id": "B",
+    "text": "28"
+   },
+   {
+    "id": "C",
+    "text": "26"
+   },
+   {
+    "id": "D",
+    "text": "33"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Each output is the input x 3 + 1. So 9 -> 9 x 3 + 1 = 28.",
+  "reasoning": "Discovering a rule, then applying it to a far case.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "pattern_application"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "pattern_application",
+   "source_inspiration": "Authored 6.6.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1130",
+  "domain": "problem_solving",
+  "skill": "6.6",
+  "archetype": "pattern_application",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 7 become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "20"
+   },
+   {
+    "id": "B",
+    "text": "22"
+   },
+   {
+    "id": "C",
+    "text": "23"
+   },
+   {
+    "id": "D",
+    "text": "27"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Each output is the input x 3 + 1. So 7 -> 7 x 3 + 1 = 22.",
+  "reasoning": "Discovering a rule, then applying it to a far case.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "pattern_application"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "pattern_application",
+   "source_inspiration": "Authored 6.6.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1131",
+  "domain": "problem_solving",
+  "skill": "6.6",
+  "archetype": "pattern_application",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 11 become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "32"
+   },
+   {
+    "id": "B",
+    "text": "39"
+   },
+   {
+    "id": "C",
+    "text": "35"
+   },
+   {
+    "id": "D",
+    "text": "34"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Each output is the input x 3 + 1. So 11 -> 11 x 3 + 1 = 34.",
+  "reasoning": "Discovering a rule, then applying it to a far case.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "pattern_application"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "pattern_application",
+   "source_inspiration": "Authored 6.6.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1132",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 5 more stickers than Ben. Amy gives Ben 2 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "They are equal"
+   },
+   {
+    "id": "B",
+    "text": "Amy, by 7"
+   },
+   {
+    "id": "C",
+    "text": "Ben, by 5"
+   },
+   {
+    "id": "D",
+    "text": "Amy, by 1"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Originally Amy leads by 5. Giving 2 reduces the gap by 4 (2 x 2), so the gap is now 1.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1133",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 5 more stickers than Ben. Amy gives Ben 1 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Amy, by 3"
+   },
+   {
+    "id": "B",
+    "text": "Ben, by 5"
+   },
+   {
+    "id": "C",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "D",
+    "text": "Amy, by 6"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Originally Amy leads by 5. Giving 1 reduces the gap by 2 (2 x 1), so the gap is now 3.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1134",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 4 more stickers than Ben. Amy gives Ben 2 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "They are equal"
+   },
+   {
+    "id": "B",
+    "text": "Amy, by 6"
+   },
+   {
+    "id": "C",
+    "text": "Ben, by 4"
+   },
+   {
+    "id": "D",
+    "text": "Ben, by 1"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Originally Amy leads by 4. Giving 2 reduces the gap by 4 (2 x 2), so the gap is now 0.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1135",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 5 more stickers than Ben. Amy gives Ben 2 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Amy, by 1"
+   },
+   {
+    "id": "B",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "C",
+    "text": "Amy, by 7"
+   },
+   {
+    "id": "D",
+    "text": "They are equal"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Originally Amy leads by 5. Giving 2 reduces the gap by 4 (2 x 2), so the gap is now 1.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1136",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 2-letter codes can you make using the letters B, C if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": "4"
+   },
+   {
+    "id": "B",
+    "text": 2
+   },
+   {
+    "id": "C",
+    "text": 3
+   },
+   {
+    "id": "D",
+    "text": 5
+   }
+  ],
+  "answer": "A",
+  "explanation": "List them: BB, BC, CB, CC = 4 codes (2 choices for each of 2 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1139",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 3 more stickers than Ben. Amy gives Ben 3 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "B",
+    "text": "Ben, by 3"
+   },
+   {
+    "id": "C",
+    "text": "Amy, by 6"
+   },
+   {
+    "id": "D",
+    "text": "They are equal"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Originally Amy leads by 3. Giving 3 reduces the gap by 6 (2 x 3), so the gap is now -3.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1140",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "5 trees are planted in a straight line, 2 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5"
+   },
+   {
+    "id": "B",
+    "text": "7"
+   },
+   {
+    "id": "C",
+    "text": "8"
+   },
+   {
+    "id": "D",
+    "text": "10"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Draw a diagram: 5 trees have 4 gaps between them. 4 x 2 = 8 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1141",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "5 trees are planted in a straight line, 2 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "8"
+   },
+   {
+    "id": "B",
+    "text": "10"
+   },
+   {
+    "id": "C",
+    "text": "5"
+   },
+   {
+    "id": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Draw a diagram: 5 trees have 4 gaps between them. 4 x 2 = 8 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1142",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 3-letter codes can you make using the letters C, A, B if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": "27"
+   },
+   {
+    "id": "B",
+    "text": 6
+   },
+   {
+    "id": "C",
+    "text": 28
+   },
+   {
+    "id": "D",
+    "text": 26
+   }
+  ],
+  "answer": "A",
+  "explanation": "List them: CCC, CCA, CCB, CAC, CAA, CAB, CBC, CBA, CBB, ACC, ACA, ACB, AAC, AAA, AAB, ABC, ABA, ABB, BCC, BCA, BCB, BAC, BAA, BAB, BBC, BBA, BBB = 27 codes (3 choices for each of 3 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1143",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "4 trees are planted in a straight line, 3 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "12"
+   },
+   {
+    "id": "B",
+    "text": "4"
+   },
+   {
+    "id": "C",
+    "text": "9"
+   },
+   {
+    "id": "D",
+    "text": "8"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Draw a diagram: 4 trees have 3 gaps between them. 3 x 3 = 9 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1144",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 3-letter codes can you make using the letters C, B, A if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 3
+   },
+   {
+    "id": "B",
+    "text": 28
+   },
+   {
+    "id": "C",
+    "text": 6
+   },
+   {
+    "id": "D",
+    "text": "27"
+   }
+  ],
+  "answer": "D",
+  "explanation": "List them: CCC, CCB, CCA, CBC, CBB, CBA, CAC, CAB, CAA, BCC, BCB, BCA, BBC, BBB, BBA, BAC, BAB, BAA, ACC, ACB, ACA, ABC, ABB, ABA, AAC, AAB, AAA = 27 codes (3 choices for each of 3 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1145",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 4 more stickers than Ben. Amy gives Ben 3 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "They are equal"
+   },
+   {
+    "id": "B",
+    "text": "Ben, by 2"
+   },
+   {
+    "id": "C",
+    "text": "Ben, by 4"
+   },
+   {
+    "id": "D",
+    "text": "Amy, by 7"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Originally Amy leads by 4. Giving 3 reduces the gap by 6 (2 x 3), so the gap is now -2.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1146",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 2-letter codes can you make using the letters C, B if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 2
+   },
+   {
+    "id": "B",
+    "text": 5
+   },
+   {
+    "id": "C",
+    "text": 3
+   },
+   {
+    "id": "D",
+    "text": "4"
+   }
+  ],
+  "answer": "D",
+  "explanation": "List them: CC, CB, BC, BB = 4 codes (2 choices for each of 2 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1147",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "4 trees are planted in a straight line, 3 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "9"
+   },
+   {
+    "id": "B",
+    "text": "12"
+   },
+   {
+    "id": "C",
+    "text": "4"
+   },
+   {
+    "id": "D",
+    "text": "8"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Draw a diagram: 4 trees have 3 gaps between them. 3 x 3 = 9 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1148",
+  "domain": "problem_solving",
+  "skill": "6.6",
+  "archetype": "pattern_application",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 8 become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "24"
+   },
+   {
+    "id": "B",
+    "text": "23"
+   },
+   {
+    "id": "C",
+    "text": "30"
+   },
+   {
+    "id": "D",
+    "text": "25"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Each output is the input x 3 + 1. So 8 -> 8 x 3 + 1 = 25.",
+  "reasoning": "Discovering a rule, then applying it to a far case.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "pattern_application"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "pattern_application",
+   "source_inspiration": "Authored 6.6.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1149",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: + 2; + 4; x 2. The final result is 26. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 6
+   },
+   {
+    "id": "B",
+    "text": 14
+   },
+   {
+    "id": "C",
+    "text": 9
+   },
+   {
+    "id": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Work backwards: before multiplying by 2 it was 13; before adding 4 there were 9; before adding 2 there were 7. Starting number = 7.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1150",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "7 trees are planted in a straight line, 3 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "17"
+   },
+   {
+    "id": "B",
+    "text": "7"
+   },
+   {
+    "id": "C",
+    "text": "21"
+   },
+   {
+    "id": "D",
+    "text": "18"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Draw a diagram: 7 trees have 6 gaps between them. 6 x 3 = 18 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1151",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: x 2; + 5; x 3. The final result is 33. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 2
+   },
+   {
+    "id": "B",
+    "text": 5
+   },
+   {
+    "id": "C",
+    "text": 4
+   },
+   {
+    "id": "D",
+    "text": "3"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Work backwards: before multiplying by 3 it was 11; before adding 5 there were 6; before multiplying by 2 it was 3. Starting number = 3.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1152",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "7 trees are planted in a straight line, 2 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "11"
+   },
+   {
+    "id": "B",
+    "text": "12"
+   },
+   {
+    "id": "C",
+    "text": "14"
+   },
+   {
+    "id": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Draw a diagram: 7 trees have 6 gaps between them. 6 x 2 = 12 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1154",
+  "domain": "problem_solving",
+  "skill": "6.6",
+  "archetype": "pattern_application",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 10 become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "30"
+   },
+   {
+    "id": "B",
+    "text": "29"
+   },
+   {
+    "id": "C",
+    "text": "31"
+   },
+   {
+    "id": "D",
+    "text": "32"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Each output is the input x 3 + 1. So 10 -> 10 x 3 + 1 = 31.",
+  "reasoning": "Discovering a rule, then applying it to a far case.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "pattern_application"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "pattern_application",
+   "source_inspiration": "Authored 6.6.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1155",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "6 trees are planted in a straight line, 3 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "18"
+   },
+   {
+    "id": "B",
+    "text": "15"
+   },
+   {
+    "id": "C",
+    "text": "6"
+   },
+   {
+    "id": "D",
+    "text": "14"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Draw a diagram: 6 trees have 5 gaps between them. 5 x 3 = 15 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1156",
+  "domain": "problem_solving",
+  "skill": "6.6",
+  "archetype": "pattern_application",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 12 become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "42"
+   },
+   {
+    "id": "B",
+    "text": "36"
+   },
+   {
+    "id": "C",
+    "text": "37"
+   },
+   {
+    "id": "D",
+    "text": "35"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Each output is the input x 3 + 1. So 12 -> 12 x 3 + 1 = 37.",
+  "reasoning": "Discovering a rule, then applying it to a far case.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "pattern_application"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "pattern_application",
+   "source_inspiration": "Authored 6.6.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1158",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 3-letter codes can you make using the letters B, C, A if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 3
+   },
+   {
+    "id": "B",
+    "text": 28
+   },
+   {
+    "id": "C",
+    "text": "27"
+   },
+   {
+    "id": "D",
+    "text": 26
+   }
+  ],
+  "answer": "C",
+  "explanation": "List them: BBB, BBC, BBA, BCB, BCC, BCA, BAB, BAC, BAA, CBB, CBC, CBA, CCB, CCC, CCA, CAB, CAC, CAA, ABB, ABC, ABA, ACB, ACC, ACA, AAB, AAC, AAA = 27 codes (3 choices for each of 3 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1159",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: x 4; x 2. The final result is 56. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 9
+   },
+   {
+    "id": "B",
+    "text": 6
+   },
+   {
+    "id": "C",
+    "text": 14
+   },
+   {
+    "id": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Work backwards: before multiplying by 2 it was 28; before multiplying by 4 it was 7. Starting number = 7.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1160",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 2 more stickers than Ben. Amy gives Ben 2 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "B",
+    "text": "Amy, by 4"
+   },
+   {
+    "id": "C",
+    "text": "They are equal"
+   },
+   {
+    "id": "D",
+    "text": "Ben, by 2"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Originally Amy leads by 2. Giving 2 reduces the gap by 4 (2 x 2), so the gap is now -2.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1161",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 3-letter codes can you make using the letters C, B, A if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 3
+   },
+   {
+    "id": "B",
+    "text": 6
+   },
+   {
+    "id": "C",
+    "text": "27"
+   },
+   {
+    "id": "D",
+    "text": 28
+   }
+  ],
+  "answer": "C",
+  "explanation": "List them: CCC, CCB, CCA, CBC, CBB, CBA, CAC, CAB, CAA, BCC, BCB, BCA, BBC, BBB, BBA, BAC, BAB, BAA, ACC, ACB, ACA, ABC, ABB, ABA, AAC, AAB, AAA = 27 codes (3 choices for each of 3 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1162",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: + 5; + 4; + 5. The final result is 21. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 8
+   },
+   {
+    "id": "B",
+    "text": 6
+   },
+   {
+    "id": "C",
+    "text": "7"
+   },
+   {
+    "id": "D",
+    "text": 14
+   }
+  ],
+  "answer": "C",
+  "explanation": "Work backwards: before adding 5 there were 16; before adding 4 there were 12; before adding 5 there were 7. Starting number = 7.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1163",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "6 trees are planted in a straight line, 2 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "10"
+   },
+   {
+    "id": "B",
+    "text": "12"
+   },
+   {
+    "id": "C",
+    "text": "6"
+   },
+   {
+    "id": "D",
+    "text": "9"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Draw a diagram: 6 trees have 5 gaps between them. 5 x 2 = 10 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1165",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: x 3; x 2; + 5. The final result is 47. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 6
+   },
+   {
+    "id": "B",
+    "text": 9
+   },
+   {
+    "id": "C",
+    "text": 14
+   },
+   {
+    "id": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Work backwards: before adding 5 there were 42; before multiplying by 2 it was 21; before multiplying by 3 it was 7. Starting number = 7.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1166",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "7 trees are planted in a straight line, 3 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "18"
+   },
+   {
+    "id": "B",
+    "text": "7"
+   },
+   {
+    "id": "C",
+    "text": "17"
+   },
+   {
+    "id": "D",
+    "text": "21"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Draw a diagram: 7 trees have 6 gaps between them. 6 x 3 = 18 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1167",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "6 trees are planted in a straight line, 2 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "9"
+   },
+   {
+    "id": "B",
+    "text": "6"
+   },
+   {
+    "id": "C",
+    "text": "10"
+   },
+   {
+    "id": "D",
+    "text": "12"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Draw a diagram: 6 trees have 5 gaps between them. 5 x 2 = 10 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1168",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: + 2; + 4. The final result is 12. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 12
+   },
+   {
+    "id": "B",
+    "text": 5
+   },
+   {
+    "id": "C",
+    "text": "6"
+   },
+   {
+    "id": "D",
+    "text": 7
+   }
+  ],
+  "answer": "C",
+  "explanation": "Work backwards: before adding 4 there were 8; before adding 2 there were 6. Starting number = 6.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1169",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: x 2; x 4; x 4. The final result is 224. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 14
+   },
+   {
+    "id": "B",
+    "text": "7"
+   },
+   {
+    "id": "C",
+    "text": 6
+   },
+   {
+    "id": "D",
+    "text": 9
+   }
+  ],
+  "answer": "B",
+  "explanation": "Work backwards: before multiplying by 4 it was 56; before multiplying by 4 it was 14; before multiplying by 2 it was 7. Starting number = 7.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1171",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 3 more stickers than Ben. Amy gives Ben 1 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben, by 3"
+   },
+   {
+    "id": "B",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "C",
+    "text": "Amy, by 1"
+   },
+   {
+    "id": "D",
+    "text": "Amy, by 4"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Originally Amy leads by 3. Giving 1 reduces the gap by 2 (2 x 1), so the gap is now 1.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1173",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: x 2; + 4. The final result is 12. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": "4"
+   },
+   {
+    "id": "B",
+    "text": 8
+   },
+   {
+    "id": "C",
+    "text": 5
+   },
+   {
+    "id": "D",
+    "text": 6
+   }
+  ],
+  "answer": "A",
+  "explanation": "Work backwards: before adding 4 there were 8; before multiplying by 2 it was 4. Starting number = 4.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1174",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "4 trees are planted in a straight line, 3 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "12"
+   },
+   {
+    "id": "B",
+    "text": "8"
+   },
+   {
+    "id": "C",
+    "text": "4"
+   },
+   {
+    "id": "D",
+    "text": "9"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Draw a diagram: 4 trees have 3 gaps between them. 3 x 3 = 9 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1175",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 2-letter codes can you make using the letters C, A if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 5
+   },
+   {
+    "id": "B",
+    "text": "4"
+   },
+   {
+    "id": "C",
+    "text": 2
+   },
+   {
+    "id": "D",
+    "text": 3
+   }
+  ],
+  "answer": "B",
+  "explanation": "List them: CC, CA, AC, AA = 4 codes (2 choices for each of 2 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1176",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: x 3; x 4; x 2. The final result is 168. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 8
+   },
+   {
+    "id": "B",
+    "text": 9
+   },
+   {
+    "id": "C",
+    "text": "7"
+   },
+   {
+    "id": "D",
+    "text": 14
+   }
+  ],
+  "answer": "C",
+  "explanation": "Work backwards: before multiplying by 2 it was 84; before multiplying by 4 it was 21; before multiplying by 3 it was 7. Starting number = 7.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1177",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 2-letter codes can you make using the letters C, A if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 2
+   },
+   {
+    "id": "B",
+    "text": 3
+   },
+   {
+    "id": "C",
+    "text": 5
+   },
+   {
+    "id": "D",
+    "text": "4"
+   }
+  ],
+  "answer": "D",
+  "explanation": "List them: CC, CA, AC, AA = 4 codes (2 choices for each of 2 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1178",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 2 more stickers than Ben. Amy gives Ben 1 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "They are equal"
+   },
+   {
+    "id": "B",
+    "text": "Ben, by 2"
+   },
+   {
+    "id": "C",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "D",
+    "text": "Amy, by 3"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Originally Amy leads by 2. Giving 1 reduces the gap by 2 (2 x 1), so the gap is now 0.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1179",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 2-letter codes can you make using the letters B, A if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 2
+   },
+   {
+    "id": "B",
+    "text": 3
+   },
+   {
+    "id": "C",
+    "text": "4"
+   },
+   {
+    "id": "D",
+    "text": 5
+   }
+  ],
+  "answer": "C",
+  "explanation": "List them: BB, BA, AB, AA = 4 codes (2 choices for each of 2 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1182",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 2-letter codes can you make using the letters B, A if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 2
+   },
+   {
+    "id": "B",
+    "text": 3
+   },
+   {
+    "id": "C",
+    "text": 5
+   },
+   {
+    "id": "D",
+    "text": "4"
+   }
+  ],
+  "answer": "D",
+  "explanation": "List them: BB, BA, AB, AA = 4 codes (2 choices for each of 2 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1183",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 2 more stickers than Ben. Amy gives Ben 2 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Amy, by 4"
+   },
+   {
+    "id": "B",
+    "text": "Ben, by 2"
+   },
+   {
+    "id": "C",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "D",
+    "text": "They are equal"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Originally Amy leads by 2. Giving 2 reduces the gap by 4 (2 x 2), so the gap is now -2.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1184",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 4 more stickers than Ben. Amy gives Ben 1 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "B",
+    "text": "Ben, by 4"
+   },
+   {
+    "id": "C",
+    "text": "They are equal"
+   },
+   {
+    "id": "D",
+    "text": "Amy, by 2"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Originally Amy leads by 4. Giving 1 reduces the gap by 2 (2 x 1), so the gap is now 2.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1185",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 2-letter codes can you make using the letters A, B if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 2
+   },
+   {
+    "id": "B",
+    "text": 5
+   },
+   {
+    "id": "C",
+    "text": 3
+   },
+   {
+    "id": "D",
+    "text": "4"
+   }
+  ],
+  "answer": "D",
+  "explanation": "List them: AA, AB, BA, BB = 4 codes (2 choices for each of 2 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1186",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "4 trees are planted in a straight line, 2 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5"
+   },
+   {
+    "id": "B",
+    "text": "6"
+   },
+   {
+    "id": "C",
+    "text": "8"
+   },
+   {
+    "id": "D",
+    "text": "4"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Draw a diagram: 4 trees have 3 gaps between them. 3 x 2 = 6 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1187",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: x 3; + 2; + 5. The final result is 16. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 2
+   },
+   {
+    "id": "B",
+    "text": 6
+   },
+   {
+    "id": "C",
+    "text": 4
+   },
+   {
+    "id": "D",
+    "text": "3"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Work backwards: before adding 5 there were 11; before adding 2 there were 9; before multiplying by 3 it was 3. Starting number = 3.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1188",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "4 trees are planted in a straight line, 2 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "6"
+   },
+   {
+    "id": "B",
+    "text": "4"
+   },
+   {
+    "id": "C",
+    "text": "8"
+   },
+   {
+    "id": "D",
+    "text": "5"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Draw a diagram: 4 trees have 3 gaps between them. 3 x 2 = 6 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1189",
+  "domain": "problem_solving",
+  "skill": "6.6",
+  "archetype": "pattern_application",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 10 become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "29"
+   },
+   {
+    "id": "B",
+    "text": "31"
+   },
+   {
+    "id": "C",
+    "text": "30"
+   },
+   {
+    "id": "D",
+    "text": "32"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Each output is the input x 3 + 1. So 10 -> 10 x 3 + 1 = 31.",
+  "reasoning": "Discovering a rule, then applying it to a far case.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "pattern_application"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "pattern_application",
+   "source_inspiration": "Authored 6.6.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1190",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 5 more stickers than Ben. Amy gives Ben 3 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben, by 5"
+   },
+   {
+    "id": "B",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "C",
+    "text": "They are equal"
+   },
+   {
+    "id": "D",
+    "text": "Amy, by 8"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Originally Amy leads by 5. Giving 3 reduces the gap by 6 (2 x 3), so the gap is now -1.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1192",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: x 4; + 2; + 5. The final result is 19. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": "3"
+   },
+   {
+    "id": "B",
+    "text": 4
+   },
+   {
+    "id": "C",
+    "text": 5
+   },
+   {
+    "id": "D",
+    "text": 2
+   }
+  ],
+  "answer": "A",
+  "explanation": "Work backwards: before adding 5 there were 14; before adding 2 there were 12; before multiplying by 4 it was 3. Starting number = 3.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1193",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 3-letter codes can you make using the letters B, A, C if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": "27"
+   },
+   {
+    "id": "B",
+    "text": 3
+   },
+   {
+    "id": "C",
+    "text": 28
+   },
+   {
+    "id": "D",
+    "text": 6
+   }
+  ],
+  "answer": "A",
+  "explanation": "List them: BBB, BBA, BBC, BAB, BAA, BAC, BCB, BCA, BCC, ABB, ABA, ABC, AAB, AAA, AAC, ACB, ACA, ACC, CBB, CBA, CBC, CAB, CAA, CAC, CCB, CCA, CCC = 27 codes (3 choices for each of 3 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1194",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 3-letter codes can you make using the letters A, C, B if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 26
+   },
+   {
+    "id": "B",
+    "text": "27"
+   },
+   {
+    "id": "C",
+    "text": 28
+   },
+   {
+    "id": "D",
+    "text": 3
+   }
+  ],
+  "answer": "B",
+  "explanation": "List them: AAA, AAC, AAB, ACA, ACC, ACB, ABA, ABC, ABB, CAA, CAC, CAB, CCA, CCC, CCB, CBA, CBC, CBB, BAA, BAC, BAB, BCA, BCC, BCB, BBA, BBC, BBB = 27 codes (3 choices for each of 3 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1196",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 3 more stickers than Ben. Amy gives Ben 2 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "B",
+    "text": "Amy, by 5"
+   },
+   {
+    "id": "C",
+    "text": "They are equal"
+   },
+   {
+    "id": "D",
+    "text": "Ben, by 3"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Originally Amy leads by 3. Giving 2 reduces the gap by 4 (2 x 2), so the gap is now -1.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1198",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "6 trees are planted in a straight line, 3 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "14"
+   },
+   {
+    "id": "B",
+    "text": "6"
+   },
+   {
+    "id": "C",
+    "text": "15"
+   },
+   {
+    "id": "D",
+    "text": "18"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Draw a diagram: 6 trees have 5 gaps between them. 5 x 3 = 15 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1199",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: + 2; x 3. The final result is 21. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 7
+   },
+   {
+    "id": "B",
+    "text": "5"
+   },
+   {
+    "id": "C",
+    "text": 4
+   },
+   {
+    "id": "D",
+    "text": 6
+   }
+  ],
+  "answer": "B",
+  "explanation": "Work backwards: before multiplying by 3 it was 7; before adding 2 there were 5. Starting number = 5.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1200",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: x 3; x 3; x 3. The final result is 162. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": "6"
+   },
+   {
+    "id": "B",
+    "text": 12
+   },
+   {
+    "id": "C",
+    "text": 7
+   },
+   {
+    "id": "D",
+    "text": 5
+   }
+  ],
+  "answer": "A",
+  "explanation": "Work backwards: before multiplying by 3 it was 54; before multiplying by 3 it was 18; before multiplying by 3 it was 6. Starting number = 6.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1201",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 2-letter codes can you make using the letters A, B if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": "4"
+   },
+   {
+    "id": "B",
+    "text": 2
+   },
+   {
+    "id": "C",
+    "text": 3
+   },
+   {
+    "id": "D",
+    "text": 5
+   }
+  ],
+  "answer": "A",
+  "explanation": "List them: AA, AB, BA, BB = 4 codes (2 choices for each of 2 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1202",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 2-letter codes can you make using the letters A, C if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 3
+   },
+   {
+    "id": "B",
+    "text": "4"
+   },
+   {
+    "id": "C",
+    "text": 5
+   },
+   {
+    "id": "D",
+    "text": 2
+   }
+  ],
+  "answer": "B",
+  "explanation": "List them: AA, AC, CA, CC = 4 codes (2 choices for each of 2 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1203",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 3 more stickers than Ben. Amy gives Ben 3 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "B",
+    "text": "They are equal"
+   },
+   {
+    "id": "C",
+    "text": "Ben, by 3"
+   },
+   {
+    "id": "D",
+    "text": "Amy, by 6"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Originally Amy leads by 3. Giving 3 reduces the gap by 6 (2 x 3), so the gap is now -3.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1205",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 3 more stickers than Ben. Amy gives Ben 2 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben, by 3"
+   },
+   {
+    "id": "B",
+    "text": "Amy, by 5"
+   },
+   {
+    "id": "C",
+    "text": "They are equal"
+   },
+   {
+    "id": "D",
+    "text": "Ben, by 1"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Originally Amy leads by 3. Giving 2 reduces the gap by 4 (2 x 2), so the gap is now -1.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1207",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 5 more stickers than Ben. Amy gives Ben 2 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben, by 5"
+   },
+   {
+    "id": "B",
+    "text": "Amy, by 7"
+   },
+   {
+    "id": "C",
+    "text": "Amy, by 1"
+   },
+   {
+    "id": "D",
+    "text": "They are equal"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Originally Amy leads by 5. Giving 2 reduces the gap by 4 (2 x 2), so the gap is now 1.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1209",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: + 4; + 4. The final result is 15. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 6
+   },
+   {
+    "id": "B",
+    "text": 9
+   },
+   {
+    "id": "C",
+    "text": 8
+   },
+   {
+    "id": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Work backwards: before adding 4 there were 11; before adding 4 there were 7. Starting number = 7.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1210",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "7 trees are planted in a straight line, 3 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "21"
+   },
+   {
+    "id": "B",
+    "text": "17"
+   },
+   {
+    "id": "C",
+    "text": "18"
+   },
+   {
+    "id": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Draw a diagram: 7 trees have 6 gaps between them. 6 x 3 = 18 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1212",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 5 more stickers than Ben. Amy gives Ben 3 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "B",
+    "text": "Amy, by 8"
+   },
+   {
+    "id": "C",
+    "text": "Ben, by 5"
+   },
+   {
+    "id": "D",
+    "text": "They are equal"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Originally Amy leads by 5. Giving 3 reduces the gap by 6 (2 x 3), so the gap is now -1.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1213",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "5 trees are planted in a straight line, 3 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "12"
+   },
+   {
+    "id": "B",
+    "text": "15"
+   },
+   {
+    "id": "C",
+    "text": "5"
+   },
+   {
+    "id": "D",
+    "text": "11"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Draw a diagram: 5 trees have 4 gaps between them. 4 x 3 = 12 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1214",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 5 more stickers than Ben. Amy gives Ben 1 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Amy, by 6"
+   },
+   {
+    "id": "B",
+    "text": "They are equal"
+   },
+   {
+    "id": "C",
+    "text": "Amy, by 3"
+   },
+   {
+    "id": "D",
+    "text": "Ben, by 5"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Originally Amy leads by 5. Giving 1 reduces the gap by 2 (2 x 1), so the gap is now 3.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1215",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "5 trees are planted in a straight line, 3 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5"
+   },
+   {
+    "id": "B",
+    "text": "12"
+   },
+   {
+    "id": "C",
+    "text": "11"
+   },
+   {
+    "id": "D",
+    "text": "15"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Draw a diagram: 5 trees have 4 gaps between them. 4 x 3 = 12 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1217",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 3-letter codes can you make using the letters C, A, B if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 28
+   },
+   {
+    "id": "B",
+    "text": 26
+   },
+   {
+    "id": "C",
+    "text": "27"
+   },
+   {
+    "id": "D",
+    "text": 6
+   }
+  ],
+  "answer": "C",
+  "explanation": "List them: CCC, CCA, CCB, CAC, CAA, CAB, CBC, CBA, CBB, ACC, ACA, ACB, AAC, AAA, AAB, ABC, ABA, ABB, BCC, BCA, BCB, BAC, BAA, BAB, BBC, BBA, BBB = 27 codes (3 choices for each of 3 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1219",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: x 4; + 3. The final result is 15. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 6
+   },
+   {
+    "id": "B",
+    "text": 5
+   },
+   {
+    "id": "C",
+    "text": 4
+   },
+   {
+    "id": "D",
+    "text": "3"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Work backwards: before adding 3 there were 12; before multiplying by 4 it was 3. Starting number = 3.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1225",
+  "domain": "problem_solving",
+  "skill": "6.6",
+  "archetype": "pattern_application",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 9 become?",
+  "options": [
+   {
+    "id": "A",
+    "text": "29"
+   },
+   {
+    "id": "B",
+    "text": "27"
+   },
+   {
+    "id": "C",
+    "text": "28"
+   },
+   {
+    "id": "D",
+    "text": "33"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Each output is the input x 3 + 1. So 9 -> 9 x 3 + 1 = 28.",
+  "reasoning": "Discovering a rule, then applying it to a far case.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "pattern_application"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "pattern_application",
+   "source_inspiration": "Authored 6.6.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1226",
+  "domain": "problem_solving",
+  "skill": "6.2",
+  "archetype": "guess_check",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Some coins are 2-dollar and some are 5-dollar. There are 8 coins in total and they make 19 dollars. How many 5-dollar coins are there?",
+  "options": [
+   {
+    "id": "A",
+    "text": "1"
+   },
+   {
+    "id": "B",
+    "text": 3
+   },
+   {
+    "id": "C",
+    "text": 2
+   },
+   {
+    "id": "D",
+    "text": 0
+   }
+  ],
+  "answer": "A",
+  "explanation": "Try 1 five-dollar coins (= 5) and 7 two-dollar coins (= 14). Total 8 coins, 19 dollars. Fits, so 1 five-dollar coins.",
+  "reasoning": "Systematic guess-and-check across a few cases.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "guess_check"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "guess_check",
+   "source_inspiration": "Authored 6.2.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1228",
+  "domain": "problem_solving",
+  "skill": "6.4",
+  "archetype": "draw_diagram",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "6 trees are planted in a straight line, 2 metres apart. How long is the row from the first tree to the last tree?",
+  "options": [
+   {
+    "id": "A",
+    "text": "9"
+   },
+   {
+    "id": "B",
+    "text": "6"
+   },
+   {
+    "id": "C",
+    "text": "12"
+   },
+   {
+    "id": "D",
+    "text": "10"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Draw a diagram: 6 trees have 5 gaps between them. 5 x 2 = 10 m.",
+  "reasoning": "Drawing a diagram to count the gaps, not the objects.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "draw_diagram"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "draw_diagram",
+   "source_inspiration": "Authored 6.4.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1229",
+  "domain": "problem_solving",
+  "skill": "6.5",
+  "archetype": "make_list",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "How many 3-letter codes can you make using the letters B, C, A if you may repeat a letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": 26
+   },
+   {
+    "id": "B",
+    "text": 3
+   },
+   {
+    "id": "C",
+    "text": 6
+   },
+   {
+    "id": "D",
+    "text": "27"
+   }
+  ],
+  "answer": "D",
+  "explanation": "List them: BBB, BBC, BBA, BCB, BCC, BCA, BAB, BAC, BAA, CBB, CBC, CBA, CCB, CCC, CCA, CAB, CAC, CAA, ABB, ABC, ABA, ACB, ACC, ACA, AAB, AAC, AAA = 27 codes (3 choices for each of 3 positions).",
+  "reasoning": "Making an organised list of all possibilities.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "make_list"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "make_list",
+   "source_inspiration": "Authored 6.5.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1232",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: + 2; + 3; x 4. The final result is 56. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 18
+   },
+   {
+    "id": "B",
+    "text": 11
+   },
+   {
+    "id": "C",
+    "text": 8
+   },
+   {
+    "id": "D",
+    "text": "9"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Work backwards: before multiplying by 4 it was 14; before adding 3 there were 11; before adding 2 there were 9. Starting number = 9.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1234",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: x 2; + 3. The final result is 21. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 8
+   },
+   {
+    "id": "B",
+    "text": 11
+   },
+   {
+    "id": "C",
+    "text": "9"
+   },
+   {
+    "id": "D",
+    "text": 18
+   }
+  ],
+  "answer": "C",
+  "explanation": "Work backwards: before adding 3 there were 18; before multiplying by 2 it was 9. Starting number = 9.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1236",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: x 2; + 4. The final result is 22. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 18
+   },
+   {
+    "id": "B",
+    "text": "9"
+   },
+   {
+    "id": "C",
+    "text": 8
+   },
+   {
+    "id": "D",
+    "text": 10
+   }
+  ],
+  "answer": "B",
+  "explanation": "Work backwards: before adding 4 there were 18; before multiplying by 2 it was 9. Starting number = 9.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1238",
+  "domain": "problem_solving",
+  "skill": "6.3",
+  "archetype": "before_after",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Amy has 3 more stickers than Ben. Amy gives Ben 3 sticker(s). Now who has more stickers, and by how many?",
+  "options": [
+   {
+    "id": "A",
+    "text": "They are equal"
+   },
+   {
+    "id": "B",
+    "text": "Amy, by 6"
+   },
+   {
+    "id": "C",
+    "text": "Ben, by 1"
+   },
+   {
+    "id": "D",
+    "text": "Ben, by 3"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Originally Amy leads by 3. Giving 3 reduces the gap by 6 (2 x 3), so the gap is now -3.",
+  "reasoning": "Constant-difference under a transfer.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "before_after"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "before_after",
+   "source_inspiration": "Authored 6.3.",
+   "original": true
+  }
+ },
+ {
+  "id": "BA_P3_1239",
+  "domain": "problem_solving",
+  "skill": "6.1",
+  "archetype": "working_backwards",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A number is changed by: + 3; + 5; + 5. The final result is 17. What was the starting number? Check by going forward.",
+  "options": [
+   {
+    "id": "A",
+    "text": 8
+   },
+   {
+    "id": "B",
+    "text": 6
+   },
+   {
+    "id": "C",
+    "text": "4"
+   },
+   {
+    "id": "D",
+    "text": 5
+   }
+  ],
+  "answer": "C",
+  "explanation": "Work backwards: before adding 5 there were 12; before adding 5 there were 7; before adding 3 there were 4. Starting number = 4.",
+  "reasoning": "Working backwards through the steps and verifying.",
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "tags": [
+   "p3",
+   "high_ability",
+   "heuristics",
+   "working_backwards"
+  ],
+  "qa_status": "ai_generated_not_approved",
+  "provenance": {
+   "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+   "archetype": "working_backwards",
+   "source_inspiration": "Authored 6.1.",
+   "original": true
+  }
+ }
+]

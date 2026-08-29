@@ -1,47 +1,64 @@
 import React, { useState, useEffect } from 'react'
 import { View, Text, Button } from '@tarojs/components'
 import Taro, { useLaunch } from '@tarojs/taro'
+import { Capacitor } from '@capacitor/core'
+import { App as CapApp } from '@capacitor/app'
 import { getLang, setLang, getStorage, setStorage } from '@/utils/storage'
 import { initAdMob } from '@/utils/ad'
 import './styles/index.scss'
 
 /**
- * Simple 3-page onboarding for new users
+ * P3 Thinking Skills Onboarding
  */
 const ONBOARDING_PAGES = [
   {
-    en: { title: 'Welcome', subtitle: 'Daily brain training to keep your mind sharp.' },
-    zh: { title: '欢迎', subtitle: '每日健脑训练，保持思维清晰。' }
+    en: { title: 'Welcome to BrainActive', subtitle: 'Build Thinking Skills for Singapore Primary 3 High Ability.' },
+    zh: { title: '欢迎来到 BrainActive', subtitle: '专为新加坡小三高能力学生打造的思维与推理训练。' }
   },
   {
-    en: { title: 'Train Your Brain', subtitle: 'Memory, math, and language exercises combined for complete brain workout.' },
-    zh: { title: '健脑训练', subtitle: '记忆、数学、语言综合训练，全方位锻炼大脑。' }
+    en: { title: 'Sharp Thinking, Not Memorisation', subtitle: 'Practise logic, patterns, spatial and verbal reasoning — the thinking skills that truly matter.' },
+    zh: { title: '思维训练，而非死记硬背', subtitle: '逻辑、图形、空间与语言推理全面训练，培养真正重要的思维能力。' }
   },
   {
-    en: { title: 'Start Now', subtitle: 'Just 10 minutes a day. Begin your brain health journey today.' },
-    zh: { title: '开始训练', subtitle: '每天十分钟。现在开始您的健脑之旅。' }
+    en: { title: 'Daily Thinking Quest', subtitle: 'Just 5 curated questions a day. Train your reasoning power consistently.' },
+    zh: { title: '每日思维挑战', subtitle: '每天精选 5 道思维好题，循序渐进培养高阶解题能力。' }
   }
 ]
 
-const ONBOARDING_KEY = 'onboarding_done'
+const ONBOARDING_KEY = 'onboarding_done_v2'
+let lastBackPress = 0
 
 function App({ children }: { children?: React.ReactNode }) {
   const [showOnboarding, setShowOnboarding] = useState(() => !getStorage(ONBOARDING_KEY))
   const [currentPage, setCurrentPage] = useState(0)
 
   useEffect(() => {
-    // Prevent background scrolling on H5/Web
-    if (typeof document !== 'undefined') {
-      if (showOnboarding) {
-        document.body.style.overflow = 'hidden'
-      } else {
-        document.body.style.overflow = ''
+    // Android Back Button handler
+    if (Capacitor.isNativePlatform()) {
+      const backSub = CapApp.addListener('backButton', () => {
+        const now = Date.now()
+        const pages = Taro.getCurrentPages()
+        const currentRoute = pages[pages.length - 1]?.route
+
+        if (currentRoute === 'pages/home/index' || pages.length <= 1) {
+          if (now - lastBackPress < 2000) {
+            CapApp.exitApp()
+          } else {
+            lastBackPress = now
+            Taro.showToast({ title: 'Press Back again to close the app', icon: 'none', duration: 2000 })
+          }
+        } else {
+          Taro.navigateBack()
+        }
+      })
+
+      return () => {
+        backSub.then(sub => sub.remove())
       }
     }
-  }, [showOnboarding])
+  }, [])
 
   useLaunch(() => {
-    // Detect system language on first launch
     const savedLang = getLang()
     if (!savedLang) {
       try {
@@ -58,7 +75,7 @@ function App({ children }: { children?: React.ReactNode }) {
   })
 
   const lang = getLang() || 'en'
-  const t = ONBOARDING_PAGES[currentPage]
+  const t = ONBOARDING_PAGES[currentPage] || ONBOARDING_PAGES[0]
   const content = t[lang as 'en' | 'zh']
 
   const handleSkip = () => {
@@ -99,7 +116,7 @@ function App({ children }: { children?: React.ReactNode }) {
             <Button className='onboarding-next-btn' onClick={handleNext}>
               {currentPage < ONBOARDING_PAGES.length - 1
                 ? (lang === 'zh' ? '下一步' : 'Next')
-                : (lang === 'zh' ? '开始' : 'Get Started')}
+                : (lang === 'zh' ? '开始训练' : 'Get Started')}
             </Button>
           </View>
         </View>

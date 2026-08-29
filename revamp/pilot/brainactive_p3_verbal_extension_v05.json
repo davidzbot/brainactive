@@ -1,0 +1,488 @@
+{
+    "dataset":  {
+                    "name":  "BrainActive P3 High Ability Verbal Extension",
+                    "version":  "0.5",
+                    "target":  "Singapore Primary 3 High Ability",
+                    "question_count":  10,
+                    "depends_on":  "brainactive_p3_high_ability_pilot.json v0.4.1 (NOT modified)",
+                    "disclaimer":  "Original reasoning-practice items inspired by the BrainActive verbal-reasoning research (MOE 2026 HAL context, GEP General Ability verbal archetypes, CogAT, UK 11+ VR). Not affiliated with or predictive of any MOE or GEP assessment. Not a mock exam. Not English tuition.",
+                    "design":  "v0.5 is a RESEARCH-DERIVED VERBAL EXTENSION. 10 questions authored strictly from brainactive_verbal_pilot_plan.md (items A1-G1) to demonstrate the Verbal hierarchy (VR1-VR7). Difficulty rises via rule discovery, relation discovery and constraint count - NOT harder words. A2 (set/category analogy) and C1/C2/D1 (codes/word transformation) require discovering the operating rule, not mechanical application. v0.4.1 (50 Qs) is left untouched as the experimental baseline.",
+                    "level_model":  "Explore / Think / Challenge / Master.",
+                    "gates":  "No DB, no renderer, no production app code, no merge into v0.4.1. Extension file only."
+                },
+    "progressions":  [
+                         {
+                             "skill":  "Word Analogies",
+                             "skill_code":  "3.1",
+                             "domain":  "verbal_reasoning",
+                             "ids":  [
+                                         "BA_P3_V01",
+                                         "BA_P3_V02"
+                                     ]
+                         },
+                         {
+                             "skill":  "Word Classification",
+                             "skill_code":  "3.2",
+                             "domain":  "verbal_reasoning",
+                             "ids":  [
+                                         "BA_P3_V03",
+                                         "BA_P3_V04"
+                                     ]
+                         },
+                         {
+                             "skill":  "Codes & Ciphers",
+                             "skill_code":  "3.3",
+                             "domain":  "verbal_reasoning",
+                             "ids":  [
+                                         "BA_P3_V05",
+                                         "BA_P3_V06"
+                                     ]
+                         },
+                         {
+                             "skill":  "Word Manipulation",
+                             "skill_code":  "3.4",
+                             "domain":  "verbal_reasoning",
+                             "ids":  [
+                                         "BA_P3_V07"
+                                     ]
+                         },
+                         {
+                             "skill":  "Letter & Word Patterns",
+                             "skill_code":  "3.6",
+                             "domain":  "verbal_reasoning",
+                             "ids":  [
+                                         "BA_P3_V08"
+                                     ]
+                         },
+                         {
+                             "skill":  "Sentence Logic",
+                             "skill_code":  "3.5",
+                             "domain":  "verbal_reasoning",
+                             "ids":  [
+                                         "BA_P3_V09"
+                                     ]
+                         },
+                         {
+                             "skill":  "Sentence Completion (light, capped)",
+                             "skill_code":  "3.7",
+                             "domain":  "verbal_reasoning",
+                             "ids":  [
+                                         "BA_P3_V10"
+                                     ]
+                         }
+                     ],
+    "questions":  [
+                     {
+                         "id":  "BA_P3_V01",
+                         "category":  "verbal_reasoning",
+                         "subcategory":  "word_analogy",
+                         "skill":  "part-whole relation",
+                         "skill_code":  "3.1",
+                         "difficulty":  "Think",
+                         "level":  "Think",
+                         "question":  "Leaf is to tree as page is to ___?",
+                         "options":  [
+                                         {
+                                             "id":  "A",
+                                             "text":  "book"
+                                         },
+                                         {
+                                             "id":  "B",
+                                             "text":  "paper"
+                                         },
+                                         {
+                                             "id":  "C",
+                                             "text":  "word"
+                                         },
+                                         {
+                                             "id":  "D",
+                                             "text":  "cover"
+                                         }
+                                     ],
+                         "answer":  "A",
+                         "explanation":  "Relation: a single part that, together with many others, makes up the whole. A leaf is one part of a tree; a page is one part of a book. (Paper is made from trees; word is what is printed on a page; cover is one part of a book but not the 'many parts make the whole' part.)",
+                         "thinking_skill":  "Finding a part-whole relation and applying it to a new pair.",
+                         "why_level":  "Think: a less obvious relation than the Explore sound/tool pairs (0037, 0013); requires noticing 'many of these build the whole'.",
+                         "visual_required":  false,
+                         "visual_spec":  null,
+                         "source_inspiration":  "v0.5 verbal extension, pilot plan A1 (research-derived). Builds VR1 beyond 0037/0013.",
+                         "tags":  [
+                                     "p3",
+                                     "high_ability",
+                                     "verbal",
+                                     "analogy"
+                                 ]
+                     },
+                     {
+                         "id":  "BA_P3_V02",
+                         "category":  "verbal_reasoning",
+                         "subcategory":  "word_analogy",
+                         "skill":  "category-to-category (set) analogy",
+                         "skill_code":  "3.1",
+                         "difficulty":  "Challenge",
+                         "level":  "Challenge",
+                         "question":  "Cup, plate, bowl : rose, tulip, sunflower : apple, banana, ___?",
+                         "options":  [
+                                         {
+                                             "id":  "A",
+                                             "text":  "orange"
+                                         },
+                                         {
+                                             "id":  "B",
+                                             "text":  "carrot"
+                                         },
+                                         {
+                                             "id":  "C",
+                                             "text":  "leaf"
+                                         },
+                                         {
+                                             "id":  "D",
+                                             "text":  "tree"
+                                         }
+                                     ],
+                         "answer":  "A",
+                         "explanation":  "The relation is NOT a word pair. Each group is a set of three things in the same category: Group 1 = things you eat from (dishes); Group 2 = flowers; Group 3 = fruits. The missing member of the fruit set is orange. (Carrot is a vegetable, not a fruit; leaf and tree are not fruits.)",
+                         "thinking_skill":  "Discovering that the relation is category-to-category (set correspondence), then completing the last set.",
+                         "why_level":  "Challenge (flagship VR1 item): the child must discover the OPERATING relation (each side is a closed set of three) rather than match a single word - genuine relation discovery, not vocabulary recall. Mirrors the GEP set-analogy archetype without rare words.",
+                         "visual_required":  false,
+                         "visual_spec":  null,
+                         "source_inspiration":  "v0.5 verbal extension, pilot plan A2 (research-derived). GEP GA set-analogy archetype (S3), P3-accessible.",
+                         "tags":  [
+                                     "p3",
+                                     "high_ability",
+                                     "verbal",
+                                     "analogy",
+                                     "set"
+                                 ]
+                     },
+                     {
+                         "id":  "BA_P3_V03",
+                         "category":  "verbal_reasoning",
+                         "subcategory":  "word_classification",
+                         "skill":  "semantic category (colours vs shape)",
+                         "skill_code":  "3.2",
+                         "difficulty":  "Explore",
+                         "level":  "Explore",
+                         "question":  "Which word is the odd one out?  A red  B blue  C green  D circle",
+                         "options":  [
+                                         {
+                                             "id":  "A",
+                                             "text":  "red"
+                                         },
+                                         {
+                                             "id":  "B",
+                                             "text":  "blue"
+                                         },
+                                         {
+                                             "id":  "C",
+                                             "text":  "green"
+                                         },
+                                         {
+                                             "id":  "D",
+                                             "text":  "circle"
+                                         }
+                                     ],
+                         "answer":  "D",
+                         "explanation":  "Red, blue and green are colours. Circle is a shape, so it does not belong to the colour group.",
+                         "thinking_skill":  "Grouping words by meaning (semantic category), not by sound or look.",
+                         "why_level":  "Explore: a meaning-based split that goes beyond the surface noun/action split of 0014; gentle verbal warm-up for VR2.",
+                         "visual_required":  false,
+                         "visual_spec":  null,
+                         "source_inspiration":  "v0.5 verbal extension, pilot plan B1 (research-derived).",
+                         "tags":  [
+                                     "p3",
+                                     "high_ability",
+                                     "verbal",
+                                     "odd_one_out"
+                                 ]
+                     },
+                     {
+                         "id":  "BA_P3_V04",
+                         "category":  "verbal_reasoning",
+                         "subcategory":  "word_classification",
+                         "skill":  "functional category (tell time vs measure length)",
+                         "skill_code":  "3.2",
+                         "difficulty":  "Think",
+                         "level":  "Think",
+                         "question":  "Which does NOT belong?  A clock  B watch  C timer  D ruler",
+                         "options":  [
+                                         {
+                                             "id":  "A",
+                                             "text":  "clock"
+                                         },
+                                         {
+                                             "id":  "B",
+                                             "text":  "watch"
+                                         },
+                                         {
+                                             "id":  "C",
+                                             "text":  "timer"
+                                         },
+                                         {
+                                             "id":  "D",
+                                             "text":  "ruler"
+                                         }
+                                     ],
+                         "answer":  "D",
+                         "explanation":  "Clock, watch and timer are all things that tell or measure TIME. A ruler measures LENGTH, not time, so it is the odd one out. The grouping is by function, not by how the objects look.",
+                         "thinking_skill":  "Finding a non-obvious shared property (function) and rejecting a surface-feature grouping.",
+                         "why_level":  "Think: requires looking past appearance to what the object DOES - a step up from 0014/0303 surface splits; the odd one is found by a functional rule.",
+                         "visual_required":  false,
+                         "visual_spec":  null,
+                         "source_inspiration":  "v0.5 verbal extension, pilot plan B2 (research-derived).",
+                         "tags":  [
+                                     "p3",
+                                     "high_ability",
+                                     "verbal",
+                                     "odd_one_out"
+                                 ]
+                     },
+                     {
+                         "id":  "BA_P3_V05",
+                         "category":  "verbal_reasoning",
+                         "subcategory":  "codes_ciphers",
+                         "skill":  "letter-number code (square rule)",
+                         "skill_code":  "3.3",
+                         "difficulty":  "Think",
+                         "level":  "Think",
+                         "question":  "In a code, a letter is worth the SQUARE of its place in the alphabet (A=1, B=4, C=9, D=16 ...). Which letter is worth 25?",
+                         "options":  [
+                                         {
+                                             "id":  "A",
+                                             "text":  "E"
+                                         },
+                                         {
+                                             "id":  "B",
+                                             "text":  "Y"
+                                         },
+                                         {
+                                             "id":  "C",
+                                             "text":  "F"
+                                         },
+                                         {
+                                             "id":  "D",
+                                             "text":  "S"
+                                         }
+                                     ],
+                         "answer":  "A",
+                         "explanation":  "The values are squares: 1, 4, 9, 16 ... so 25 = 5 squared. E is the 5th letter of the alphabet, therefore E = 25. (Y is the 25th letter - a near-miss if you match the number to the letter directly; F would be 6; S would be 19.)",
+                         "thinking_skill":  "Discovering the square rule from the examples, then mapping a square root back to a letter position.",
+                         "why_level":  "Think: rule DISCOVERY (recognise squares), not a mechanical shift; mirrors the GEP letter-number code archetype (S4) with P3-accessible letters.",
+                         "visual_required":  false,
+                         "visual_spec":  null,
+                         "source_inspiration":  "v0.5 verbal extension, pilot plan C1 (research-derived). GEP letter-number code (S4).",
+                         "tags":  [
+                                     "p3",
+                                     "high_ability",
+                                     "verbal",
+                                     "cipher"
+                                 ]
+                     },
+                     {
+                         "id":  "BA_P3_V06",
+                         "category":  "verbal_reasoning",
+                         "subcategory":  "codes_ciphers",
+                         "skill":  "alternating letter shift (rule discovery)",
+                         "skill_code":  "3.3",
+                         "difficulty":  "Challenge",
+                         "level":  "Challenge",
+                         "question":  "In a code, DOG becomes GLJ and CAT becomes FDW. The rule is: move the 1st letter forward 3, the 2nd letter back 3, the 3rd letter forward 3, and keep alternating. What does PIG become?",
+                         "options":  [
+                                         {
+                                             "id":  "A",
+                                             "text":  "SFJ"
+                                         },
+                                         {
+                                             "id":  "B",
+                                             "text":  "SLJ"
+                                         },
+                                         {
+                                             "id":  "C",
+                                             "text":  "SFD"
+                                         },
+                                         {
+                                             "id":  "D",
+                                             "text":  "MFJ"
+                                         }
+                                     ],
+                         "answer":  "A",
+                         "explanation":  "Apply the alternating rule to PIG: P forward 3 = S; I back 3 = F; G forward 3 = J. So PIG becomes SFJ. (SLJ is if every letter moved forward 3; SFD is if the last letter also moved back; MFJ is if the first moved back.)",
+                         "thinking_skill":  "Inferring an alternating +/- shift rule from two examples, then applying it to a new word.",
+                         "why_level":  "Challenge: the rule is not stated as a simple shift and must be DISCOVERED from the two coded examples; deterministic and vocabulary-free.",
+                         "visual_required":  false,
+                         "visual_spec":  null,
+                         "source_inspiration":  "v0.5 verbal extension, pilot plan C2 (research-derived).",
+                         "tags":  [
+                                     "p3",
+                                     "high_ability",
+                                     "verbal",
+                                     "cipher"
+                                 ]
+                     },
+                     {
+                         "id":  "BA_P3_V07",
+                         "category":  "verbal_reasoning",
+                         "subcategory":  "word_manipulation",
+                         "skill":  "word transformation (move first letter to end)",
+                         "skill_code":  "3.4",
+                         "difficulty":  "Think",
+                         "level":  "Think",
+                         "question":  "In a code, TRAIN becomes RAINT and PLANT becomes LANTP. The rule moves the FIRST letter to the END. What does HOUSE become?",
+                         "options":  [
+                                         {
+                                             "id":  "A",
+                                             "text":  "OUSEH"
+                                         },
+                                         {
+                                             "id":  "B",
+                                             "text":  "HOUSE"
+                                         },
+                                         {
+                                             "id":  "C",
+                                             "text":  "USEHO"
+                                         },
+                                         {
+                                             "id":  "D",
+                                             "text":  "EHOSU"
+                                         }
+                                     ],
+                         "answer":  "A",
+                         "explanation":  "Move the first letter H to the end of HOUSE and you get OUSEH. (USEHO moves the LAST letter to the front; EHOSU reverses the word; HOUSE is unchanged.)",
+                         "thinking_skill":  "Discovering a transformation rule (first letter to end) from two examples, then applying it.",
+                         "why_level":  "Think: fills the missing VR4 (Word Manipulation) skill in v0.4.1; rule discovery, not mechanical anagram scrambling; vocabulary-free (uses given letters).",
+                         "visual_required":  false,
+                         "visual_spec":  null,
+                         "source_inspiration":  "v0.5 verbal extension, pilot plan D1 (research-derived). Fills VR4 gap noted in framework.",
+                         "tags":  [
+                                     "p3",
+                                     "high_ability",
+                                     "verbal",
+                                     "word_manipulation"
+                                 ]
+                     },
+                     {
+                         "id":  "BA_P3_V08",
+                         "category":  "verbal_reasoning",
+                         "subcategory":  "letter_patterns",
+                         "skill":  "growing-gap letter series",
+                         "skill_code":  "3.6",
+                         "difficulty":  "Think",
+                         "level":  "Think",
+                         "question":  "A letter pattern goes: B, D, G, K, ___. The gap grows by 1 each step (B to D is +2, D to G is +3, G to K is +4). What comes next?",
+                         "options":  [
+                                         {
+                                             "id":  "A",
+                                             "text":  "P"
+                                         },
+                                         {
+                                             "id":  "B",
+                                             "text":  "O"
+                                         },
+                                         {
+                                             "id":  "C",
+                                             "text":  "Q"
+                                         },
+                                         {
+                                             "id":  "D",
+                                             "text":  "N"
+                                         }
+                                     ],
+                         "answer":  "A",
+                         "explanation":  "The next gap is +5. K is the 11th letter, so 11 + 5 = 16 = P. (O would be +4 again; Q would be +6; N would be +3.)",
+                         "thinking_skill":  "Finding a changing rule (gap increases by 1) and extending the pattern.",
+                         "why_level":  "Think: pattern reasoning on letters (VR5); vocabulary-free and transfers to the non-verbal pattern domain.",
+                         "visual_required":  false,
+                         "visual_spec":  null,
+                         "source_inspiration":  "v0.5 verbal extension, pilot plan E1 (research-derived). UK GL letter-series archetype (S11/S13).",
+                         "tags":  [
+                                     "p3",
+                                     "high_ability",
+                                     "verbal",
+                                     "letter_pattern"
+                                 ]
+                     },
+                     {
+                         "id":  "BA_P3_V09",
+                         "category":  "verbal_reasoning",
+                         "subcategory":  "sentence_logic",
+                         "skill":  "3-clue deduction (matching)",
+                         "skill_code":  "3.5",
+                         "difficulty":  "Challenge",
+                         "level":  "Challenge",
+                         "question":  "Three boxes are red, blue and green. Each holds one thing: a book, a ball or a coin. (1) The blue box holds the book. (2) The red box does not hold the ball. (3) The green box does not hold the coin. What does the green box hold?",
+                         "options":  [
+                                         {
+                                             "id":  "A",
+                                             "text":  "ball"
+                                         },
+                                         {
+                                             "id":  "B",
+                                             "text":  "book"
+                                         },
+                                         {
+                                             "id":  "C",
+                                             "text":  "coin"
+                                         },
+                                         {
+                                             "id":  "D",
+                                             "text":  "cannot tell"
+                                         }
+                                     ],
+                         "answer":  "A",
+                         "explanation":  "Blue = book, so red and green share ball and coin. Red does NOT hold the ball, so red = coin. That leaves green = ball. Clue (3) is the consistency check: green does not hold the coin - true, so the assignment holds.",
+                         "thinking_skill":  "Combining three constraints to fix a unique assignment (deduction, not guess).",
+                         "why_level":  "Challenge: extends 0016 (Think, 2-clue) to a 3-clue constraint problem; pure inference with simple words.",
+                         "visual_required":  false,
+                         "visual_spec":  null,
+                         "source_inspiration":  "v0.5 verbal extension, pilot plan F1 (research-derived).",
+                         "tags":  [
+                                     "p3",
+                                     "high_ability",
+                                     "verbal",
+                                     "logic"
+                                 ]
+                     },
+                     {
+                         "id":  "BA_P3_V10",
+                         "category":  "verbal_reasoning",
+                         "subcategory":  "sentence_completion",
+                         "skill":  "context inference (cause-effect)",
+                         "skill_code":  "3.7",
+                         "difficulty":  "Explore",
+                         "level":  "Explore",
+                         "question":  "The ground was wet, so we took our ___.",
+                         "options":  [
+                                         {
+                                             "id":  "A",
+                                             "text":  "umbrella"
+                                         },
+                                         {
+                                             "id":  "B",
+                                             "text":  "shoe"
+                                         },
+                                         {
+                                             "id":  "C",
+                                             "text":  "book"
+                                         },
+                                         {
+                                             "id":  "D",
+                                             "text":  "apple"
+                                         }
+                                     ],
+                         "answer":  "A",
+                         "explanation":  "Wet ground means rain, so an umbrella keeps you dry - it fits the cause (wet) and the effect (take ...). A shoe is worn anyway; a book and an apple do not fit the situation.",
+                         "thinking_skill":  "Using sentence context (cause and effect) to pick the fitting word.",
+                         "why_level":  "Explore: the single B-type (vocabulary + reasoning) item, capped per the allocation plan. Shows VR7 exists but is bounded; do not expand without review.",
+                         "visual_required":  false,
+                         "visual_spec":  null,
+                         "source_inspiration":  "v0.5 verbal extension, pilot plan G1 (research-derived). Capped B-type (S6/S9).",
+                         "tags":  [
+                                     "p3",
+                                     "high_ability",
+                                     "verbal",
+                                     "sentence_completion",
+                                     "vocab_dependent"
+                                 ]
+                     }
+                 ]
+}

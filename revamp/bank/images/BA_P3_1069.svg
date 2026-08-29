@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="20" font-size="15" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">2x2 matrix</text>
+<rect x="110" y="45" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="140,45 168.532,65.7295 157.634,99.2705 122.366,99.2705 111.468,65.7295" fill="#e4572e" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="140" cy="75" r="5" fill="#2b2d42" stroke="#2b2d42" stroke-width="3"/>
+<rect x="180" y="45" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="210,45 238.532,65.7295 227.634,99.2705 192.366,99.2705 181.468,65.7295" fill="#4a90d9" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="210" cy="75" r="5" fill="#2b2d42" stroke="#2b2d42" stroke-width="3"/>
+<rect x="110" y="115" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="140,129 153.856,153 126.144,153" fill="#e4572e" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="140" cy="145" r="5" fill="#2b2d42" stroke="#2b2d42" stroke-width="3"/>
+<rect x="180" y="115" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<text x="210" y="145" font-size="34" fill="#e4572e" text-anchor="middle" font-family="sans-serif" font-weight="bold">?</text>
+</svg>

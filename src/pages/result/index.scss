@@ -1,128 +1,206 @@
-@import "../../styles/theme.scss";
-
 .result-container {
   min-height: 100vh;
-  background-color: $bg-light;
+  background: #f8fafc;
+  padding: 24px 20px 40px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+}
+
+.result-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  
-  padding-top: 80px;
-  padding-top: calc(env(safe-area-inset-top) + 80px);
-  padding-bottom: 60px;
+  margin-bottom: 24px;
 
-  .header-section {
-    background: $bg-white;
-    padding: 40px 16px 40px 16px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
-    box-shadow: $shadow-soft;
-    margin-bottom: 32px;
+  .trophy-badge {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    background: #fef08a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    box-shadow: 0 8px 16px -4px rgba(234, 179, 8, 0.3);
 
-    .result-title {
-      font-size: 72px;
-      font-weight: 900;
-      color: #ffffff;
-      display: block;
-      margin-bottom: 24px;
-    }
-    .streak-badge {
-      display: inline-flex;
-      align-items: center; gap: 12px;
-      background: rgba(255, 247, 237, 0.1); border: 2px solid #fdba74;
-      padding: 16px 40px;
-      border-radius: 50px;
-      .streak-text {
-        color: #fdba74;
-        font-size: 36px;
-        font-weight: 900;
-      }
+    .trophy-icon {
+      font-size: 32px;
     }
   }
 
-  .score-panel {
-    background: $bg-white;
-    border-radius: 40px;
-    padding: 48px 32px;
-    box-shadow: $shadow-soft;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin: 0 0 32px 0;
-    width: 100%;
-    border: 2px solid #334155;
+  .victory-title {
+    font-size: 22px;
+    font-weight: 900;
+    color: #0f172a;
+    margin-bottom: 4px;
+  }
 
-    .score-box, .time-box {
+  .victory-sub {
+    font-size: 13px;
+    color: #64748b;
+    font-weight: 600;
+  }
+}
+
+.score-summary-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .score-main {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 2px;
+
+    .score-number {
+      font-size: 48px;
+      font-weight: 900;
+      color: #2563eb;
+      line-height: 1;
+    }
+
+    .score-denom {
+      font-size: 24px;
+      font-weight: 700;
+      color: #94a3b8;
+    }
+  }
+
+  .score-pct {
+    font-size: 14px;
+    font-weight: 700;
+    color: #16a34a;
+    background: #f0fdf4;
+    padding: 3px 10px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+
+  .stats-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 16px;
+
+    .stat-item {
       display: flex;
       flex-direction: column;
-      gap: 16px;
-      .score-label, .time-label {
-        font-size: 32px;
-        color: $text-muted;
+      align-items: center;
+
+      .stat-label {
+        font-size: 11px;
+        font-weight: 700;
+        color: #94a3b8;
+        letter-spacing: 0.5px;
+        margin-bottom: 4px;
+      }
+
+      .stat-val {
+        font-size: 14px;
         font-weight: 800;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-      }
-      .score-value, .time-value {
-        font-size: 110px;
-        font-weight: 900;
-        color: $text-main;
-        line-height: 1;
+        color: #1e293b;
       }
     }
-    .score-value {
-      color: $primary-color;
-    }
-    .time-value {
-      color: $logic-color;
+
+    .stat-divider {
+      width: 1px;
+      height: 24px;
+      background: #e2e8f0;
     }
   }
+}
 
-  .eval-section {
-    padding: 0 40px;
-    margin-bottom: 48px;
-    .eval-text {
-      font-size: 48px;
-      color: $text-main;
-      line-height: 1.4;
-      font-weight: 800;
-    }
-  }
+.review-mistakes-card {
+  background: #fff7ed;
+  border: 1.5px solid #fed7aa;
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  cursor: pointer;
 
-  .action-section {
+  .review-left {
     display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 100%;
-    margin: 0;
-    padding: 0 20px;
+    align-items: center;
+    gap: 12px;
 
-    .primary-btn {
-      background: $primary-gradient;
-      color: #ffffff;
-      padding: 32px;
-      border-radius: $button-radius;
-      font-size: 48px;
-      font-weight: 900;
-      border: none;
-      height: 110px;
-      line-height: 1;
-      display: flex; align-items: center; justify-content: center;
-      box-shadow: $shadow-bold;
+    .review-icon {
+      font-size: 24px;
     }
 
-    .secondary-btn {
-      background: transparent;
-      color: $text-muted;
-      padding: 24px;
-      border-radius: $button-radius;
-      font-size: 32px;
-      font-weight: 800;
-      border: 2px solid #334155;
-      height: auto;
-      line-height: 1;
+    .review-text {
+      display: flex;
+      flex-direction: column;
+
+      .review-title {
+        font-size: 15px;
+        font-weight: 800;
+        color: #c2410c;
+      }
+
+      .review-sub {
+        font-size: 12px;
+        color: #9a3412;
+      }
     }
+  }
+
+  .review-arrow {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ea580c;
+  }
+}
+
+.actions-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+
+  .btn-next-round {
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 16px;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+  }
+
+  .btn-share {
+    background: #ffffff;
+    color: #334155;
+    border: 1.5px solid #cbd5e1;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 16px;
+    height: 48px;
+    line-height: 48px;
+  }
+
+  .btn-home {
+    background: transparent;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 16px;
+    height: 44px;
+    line-height: 44px;
+    border: none;
   }
 }

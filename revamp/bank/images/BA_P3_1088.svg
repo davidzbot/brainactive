@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="20" font-size="15" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">3x3 matrix</text>
+<rect x="75" y="45" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="135,75 120,100.981 90,100.981 75,75 90,49.0192 120,49.0192" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<rect x="145" y="45" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="191,75 183,88.8564 167,88.8564 159,75 167,61.1436 183,61.1436" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<rect x="215" y="45" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="275,75 260,100.981 230,100.981 215,75 230,49.0192 260,49.0192" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<rect x="75" y="115" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="135,145 120,170.981 90,170.981 75,145 90,119.019 120,119.019" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="105" cy="145" r="5" fill="#2b2d42" stroke="#2b2d42" stroke-width="3"/>
+<rect x="145" y="115" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="191,145 183,158.856 167,158.856 159,145 167,131.144 183,131.144" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="175" cy="145" r="5" fill="#2b2d42" stroke="#2b2d42" stroke-width="3"/>
+<rect x="215" y="115" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="275,145 260,170.981 230,170.981 215,145 230,119.019 260,119.019" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="245" cy="145" r="5" fill="#2b2d42" stroke="#2b2d42" stroke-width="3"/>
+<rect x="75" y="185" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="135,215 120,240.981 90,240.981 75,215 90,189.019 120,189.019" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<rect x="145" y="185" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="191,215 183,228.856 167,228.856 159,215 167,201.144 183,201.144" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<rect x="215" y="185" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<text x="245" y="215" font-size="34" fill="#e4572e" text-anchor="middle" font-family="sans-serif" font-weight="bold">?</text>
+</svg>

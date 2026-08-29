@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="24" font-size="16" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Vertical mirror (left-right flip)</text>
+<line x1="180" y1="50" x2="180" y2="210" stroke="#9aa0a6" stroke-width="2"/>
+<text x="110" y="130" font-size="70" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">q</text>
+<text x="250" y="130" font-size="70" fill="#4a90d9" text-anchor="middle" font-family="sans-serif" font-weight="bold">p</text>
+</svg>

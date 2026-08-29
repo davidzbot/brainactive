@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="24" font-size="15" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Cycle up-&gt;right-&gt;down-&gt;left. Step 7 = down, red</text>
+<polygon points="180,156 169.108,115.419 190.892,115.419" fill="#e4572e" stroke="None" stroke-width="0"/>
+</svg>

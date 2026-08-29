@@ -2,7 +2,7 @@ import Taro, { request } from '@tarojs/taro'
 import { getStorage, setStorage } from './storage'
 
 const SUPABASE_URL = 'https://mqpunjvdrkqvionsjosl.supabase.co'
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1xcHVuanZkcmtxdmlvbnNqb3NsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0NTk5MTYsImV4cCI6MjA5MjAzNTkxNn0.QLjWtVdGvFgTajL5Q51MoAbLyV46inSFsIGtAJBDXbE'
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1xcHVuanZkcmtxdmlvbnNqb3NsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0NTk5MTYsImV4cCI6MjA5MjAzNTkxNn0.65Yda6PICedefQLGex5OuS1IOFNeJaHgBuG3mGfoI3s'
 
 export async function fetchBrainActiveContent(type?: string, lang: string = 'en', limit: number = 20): Promise<any[]> {
   const url = `${SUPABASE_URL}/functions/v1/brainactive-get-content?lang=${lang}&limit=${limit}${type ? `&type=${type}` : ''}`

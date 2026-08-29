@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="20" font-size="15" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">2x2 matrix</text>
+<rect x="110" y="45" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="140,59 153.856,83 126.144,83" fill="#4a90d9" stroke="#2b2d42" stroke-width="3"/>
+<rect x="180" y="45" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="210,59 223.856,83 196.144,83" fill="#3bb273" stroke="#2b2d42" stroke-width="3"/>
+<rect x="110" y="115" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="140,129 155.217,140.056 149.405,157.944 130.595,157.944 124.783,140.056" fill="#e4572e" stroke="#2b2d42" stroke-width="3"/>
+<rect x="180" y="115" width="60" height="60" rx="6" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<text x="210" y="145" font-size="34" fill="#e4572e" text-anchor="middle" font-family="sans-serif" font-weight="bold">?</text>
+</svg>

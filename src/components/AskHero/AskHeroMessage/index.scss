@@ -1,0 +1,69 @@
+.ask-hero-msg {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 14px;
+
+  &--user {
+    justify-content: flex-end;
+  }
+}
+
+.ask-hero-msg-avatar {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #FDE68A 0%, #F59E0B 100%);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .avatar-letter {
+    color: #1E3A8A;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1;
+  }
+}
+
+.ask-hero-msg-bubble {
+  max-width: 80%;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border-top-left-radius: 4px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+
+  &.user {
+    border-radius: 16px;
+    border-top-right-radius: 4px;
+    background: #2563eb;
+    border-color: #2563eb;
+
+    .ask-hero-msg-content {
+      color: #ffffff;
+    }
+  }
+}
+
+.ask-hero-msg-name {
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  color: #2563eb;
+  margin-bottom: 4px;
+}
+
+.ask-hero-msg-content {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #1e293b;
+  word-break: break-word;
+  white-space: pre-wrap;
+}

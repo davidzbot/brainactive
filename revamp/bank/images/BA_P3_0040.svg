@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<rect x="110" y="120" width="90" height="90" rx="4" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="110,120 155,80 245,80 200,120" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<polygon points="200,120 245,80 245,170 200,210" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<text x="155" y="165" font-size="22" fill="#e4572e" text-anchor="middle" font-family="sans-serif" font-weight="bold">star</text>
+<text x="132" y="100" font-size="18" fill="#4a90d9" text-anchor="middle" font-family="sans-serif" font-weight="bold">dot</text>
+<text x="222" y="165" font-size="18" fill="#3bb273" text-anchor="middle" font-family="sans-serif" font-weight="bold">circle</text>
+<text x="180" y="235" font-size="13" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">front=star top=dot right=circle back=back</text>
+</svg>

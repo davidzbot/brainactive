@@ -66,7 +66,7 @@ const zh: Record<string, string> = {
   'button.home': '返回主页',
   
   'tip.prefix': '💡 健脑小贴士：',
-  'footer.feedback': '意见反馈: pslehero@gmail.com',
+  'footer.feedback': '意见反馈: support@brainactive.app',
   'common.days': '天',
   'common.streak': '连续打卡'
 };
@@ -135,7 +135,7 @@ const en: Record<string, string> = {
   'button.home': 'Return to Home',
   
   'tip.prefix': '💡 Brain Tip: ',
-  'footer.feedback': 'Feedback: pslehero@gmail.com',
+  'footer.feedback': 'Feedback: support@brainactive.app',
   'common.days': 'Days',
   'common.streak': 'Day Streak'
 };
