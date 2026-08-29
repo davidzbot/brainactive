@@ -1,0 +1,111 @@
+/* =========================================================
+   BrainActive — Calm Educational Design System
+   Singapore P3 Thinking Skills Theme
+   ========================================================= */
+
+:root {
+  /* ===== BRAINACTIVE BRAND THEME (Calm Sky & Indigo — Kid & Parent Approved) ===== */
+  --bg-color: #F8FAFC;
+  --surface-color: #FFFFFF;
+  --card-bg: #FFFFFF;
+  --text-primary: #0F172A;
+  --text-secondary: #334155;
+  --text-muted: #64748B;
+
+  --primary: #0284C7;
+  --primary-dark: #0369A1;
+  --primary-light: #E0F2FE;
+  --primary-trans: rgba(2, 132, 199, 0.12);
+
+  --accent-blue: #2563EB;
+  --accent-blue-dark: #1D4ED8;
+  --accent-teal: #0D9488;
+  --accent-pink: #EC4899;
+  --accent-purple: #7C3AED;
+  --success: #16A34A;
+  --success-light: #DCFCE7;
+  --success-glow: rgba(22, 163, 74, 0.3);
+  --warning: #D97706;
+  --warning-light: #FEF3C7;
+  --error: #DC2626;
+  --error-light: #FEE2E2;
+
+  --border-color: #E2E8F0;
+  --card-border: #E2E8F0;
+
+  /* ===== CALM GRADIENTS ===== */
+  --grad-surface: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+  --grad-bg: linear-gradient(180deg, #F8FAFC 0%, #F0F9FF 52%, #EFF6FF 100%);
+  --grad-primary: linear-gradient(135deg, #0284C7 0%, #2563EB 100%);
+  --grad-secondary: linear-gradient(180deg, #F0F9FF 0%, #DBEAFE 100%);
+
+  /* Hero Specific (Soothing & Playful) */
+  --grad-hero-blue: linear-gradient(135deg, #0284C7 0%, #2563EB 100%);
+  --grad-hero-sky: linear-gradient(135deg, #38BDF8 0%, #0284C7 100%);
+  --grad-hero-teal: linear-gradient(135deg, #14B8A6 0%, #0F766E 100%);
+  --grad-hero-amber: linear-gradient(135deg, #FDE68A 0%, #F59E0B 100%);
+  --grad-hero-purple: linear-gradient(135deg, #C084FC 0%, #7C3AED 100%);
+
+  /* ===== SOFT DEPTH SYSTEM ===== */
+  --shadow-soft: 0 4px 12px rgba(15, 23, 42, 0.04);
+  --shadow-card: 0 10px 24px rgba(15, 23, 42, 0.06);
+  --shadow-elevated: 0 18px 36px rgba(15, 23, 42, 0.08);
+
+  --shadow-3d-primary: 0 6px 0 #0369A1, 0 10px 20px rgba(2, 132, 199, 0.15);
+  --shadow-3d-gray: 0 6px 0 #CBD5E1, 0 8px 16px rgba(15, 23, 42, 0.04);
+
+  /* ===== TYPOGRAPHY ===== */
+  --font-h1: 64px;
+  --font-h2: 44px;
+  --font-body: 30px;
+  --font-label: 24px;
+
+  /* ===== BORDER RADIUS ===== */
+  --radius-sm: 14px;
+  --radius-md: 22px;
+  --radius-lg: 32px;
+  --radius-xl: 44px;
+  --radius-full: 999px;
+
+  /* ===== SPACING SYSTEM ===== */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 36px;
+  --spacing-xl: 56px;
+}
+
+/* ===== DARK THEME ===== */
+body.dark,
+page.dark {
+  --bg-color: #0B1329;
+  --surface-color: #131F3A;
+  --card-bg: #131F3A;
+
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+
+  --primary-light: rgba(2, 132, 199, 0.16);
+  --success-light: rgba(22, 163, 74, 0.16);
+  --error-light: rgba(220, 38, 38, 0.14);
+
+  --border-color: #1E293B;
+  --card-border: #1E293B;
+
+  --grad-surface: linear-gradient(180deg, #131F3A 0%, #0B1329 100%);
+  --grad-bg: linear-gradient(180deg, #0B1329 0%, #131F3A 52%, #1E293B 100%);
+  
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+.text-center { text-align: center; }
+
+.pressable {
+  transition: transform 0.2s ease, box-shadow 0.15s ease;
+  &:active {
+    transform: scale(0.96);
+    opacity: 0.92;
+  }
+}

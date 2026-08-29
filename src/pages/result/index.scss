@@ -1,206 +1,519 @@
+/* =========================================================
+   BrainActive — Result Page Styling
+   Calm Educational Sky & Indigo Theme
+   ========================================================= */
+
 .result-container {
   min-height: 100vh;
-  background: #f8fafc;
-  padding: 24px 20px 40px;
-  display: flex;
-  flex-direction: column;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(56, 189, 248, 0.15), transparent 28%),
+    radial-gradient(circle at 88% 14%, rgba(99, 102, 241, 0.12), transparent 24%),
+    radial-gradient(circle at 92% 72%, rgba(16, 185, 129, 0.10), transparent 28%),
+    linear-gradient(180deg, #F8FAFC 0%, #F0F9FF 48%, #EFF6FF 100%);
+  padding-top: calc(env(safe-area-inset-top, 40px) + 16px);
+  padding-bottom: calc(env(safe-area-inset-bottom, 16px) + 20px);
+  padding-left: 28px;
+  padding-right: 28px;
+  position: relative;
   box-sizing: border-box;
+
+  body.dark &,
+  page.dark & {
+    background:
+      radial-gradient(circle at 12% 8%, rgba(56, 189, 248, 0.12), transparent 25%),
+      radial-gradient(circle at 88% 14%, rgba(99, 102, 241, 0.10), transparent 20%),
+      radial-gradient(circle at 92% 72%, rgba(16, 185, 129, 0.08), transparent 25%),
+      linear-gradient(180deg, #081120 0%, #0F172A 52%, #1E293B 100%);
+  }
+
+  .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 40px;
+
+    .loading-spinner {
+      width: 56px;
+      height: 56px;
+      border: 5px solid rgba(2, 132, 199, 0.15);
+      border-top-color: #0284c7;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin-bottom: 24px;
+    }
+
+    .loading-text {
+      font-size: 26px;
+      font-weight: 700;
+      color: #475569;
+      text-align: center;
+
+      body.dark &,
+      page.dark & { color: #cbd5e1; }
+    }
+  }
 }
 
-.result-header {
+/* =========================================================
+   CONFETTI
+   ========================================================= */
+
+.confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.confetti-piece {
+  position: absolute;
+  top: -12px;
+  animation: confetti-fall linear forwards;
+  opacity: 0.92;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-10px) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.result-scroll {
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* =========================================================
+   VICTORY HEADER & RATING BANNER
+   ========================================================= */
+
+.victory-header {
+  margin-top: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
+}
 
-  .trophy-badge {
-    width: 64px;
-    height: 64px;
-    border-radius: 32px;
-    background: #fef08a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 12px;
-    box-shadow: 0 8px 16px -4px rgba(234, 179, 8, 0.3);
+.victory-title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #0369a1 0%, #0284c7 50%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+  filter: drop-shadow(0 4px 12px rgba(2, 132, 199, 0.2));
 
-    .trophy-icon {
-      font-size: 32px;
-    }
-  }
-
-  .victory-title {
-    font-size: 22px;
-    font-weight: 900;
-    color: #0f172a;
-    margin-bottom: 4px;
-  }
-
-  .victory-sub {
-    font-size: 13px;
-    color: #64748b;
-    font-weight: 600;
+  body.dark &,
+  page.dark & {
+    background: linear-gradient(135deg, #38bdf8 0%, #60a5fa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
-.score-summary-card {
+.rating-text-banner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  border-radius: 20px;
   background: #ffffff;
-  border-radius: 24px;
-  padding: 24px;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border: 2px solid #e2e8f0;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+
+  body.dark &,
+  page.dark & {
+    background: #1e293b;
+    border-color: #334155;
+  }
+
+  .rating-text {
+    font-size: 28px;
+    font-weight: 900;
+    color: #0284c7;
+
+    body.dark &,
+    page.dark & { color: #38bdf8; }
+  }
+}
+
+/* =========================================================
+   SCORE SECTION
+   ========================================================= */
+
+.score-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 28px;
+}
+
+.score-label {
+  font-size: 22px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+  margin-bottom: 14px;
+
+  body.dark &,
+  page.dark & { color: #94a3b8; }
+}
+
+.score-circle {
+  width: 260px;
+  height: 260px;
+  border-radius: 999px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffffff 0%, #e0f2fe 100%);
+  border: 4px solid #0284c7;
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.22);
+  overflow: hidden;
+
+  body.dark &,
+  page.dark & {
+    background: linear-gradient(135deg, #1e293b 0%, #0c2d48 100%);
+    border-color: #38bdf8;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .score-num {
+    font-size: 72px;
+    font-weight: 900;
+    color: #0284c7;
+    line-height: 1;
+
+    body.dark &,
+    page.dark & { color: #38bdf8; }
+  }
+
+  .score-divider {
+    width: 60px;
+    height: 3px;
+    background: #cbd5e1;
+    margin: 6px 0;
+  }
+
+  .score-total {
+    font-size: 26px;
+    font-weight: 800;
+    color: #64748b;
+
+    body.dark &,
+    page.dark & { color: #94a3b8; }
+  }
+}
+
+.time-display {
+  font-size: 22px;
+  font-weight: 700;
+  color: #64748b;
+  margin-top: 14px;
+
+  body.dark &,
+  page.dark & { color: #94a3b8; }
+}
+
+/* =========================================================
+   PERFECT SCORE & ENCOURAGEMENT
+   ========================================================= */
+
+.perfect-score-celebration {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border: 2px solid #f59e0b;
+  border-radius: 20px;
+  padding: 16px 24px;
+  text-align: center;
   margin-bottom: 20px;
 
-  .score-main {
-    display: flex;
-    align-items: baseline;
-    margin-bottom: 2px;
+  .perfect-score-text {
+    font-size: 24px;
+    font-weight: 900;
+    color: #b45309;
+  }
+}
 
-    .score-number {
-      font-size: 48px;
-      font-weight: 900;
-      color: #2563eb;
-      line-height: 1;
-    }
+.hero-encouragement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 16px 24px;
+  border: 1.5px solid #e2e8f0;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
 
-    .score-denom {
-      font-size: 24px;
-      font-weight: 700;
-      color: #94a3b8;
-    }
+  body.dark &,
+  page.dark & {
+    background: #1e293b;
+    border-color: #334155;
   }
 
-  .score-pct {
-    font-size: 14px;
+  .encouragement-emoji {
+    font-size: 36px;
+  }
+
+  .encouragement-text {
+    font-size: 24px;
     font-weight: 700;
-    color: #16a34a;
-    background: #f0fdf4;
-    padding: 3px 10px;
-    border-radius: 12px;
-    margin-bottom: 20px;
+    color: #334155;
+    flex: 1;
+
+    body.dark &,
+    page.dark & { color: #cbd5e1; }
   }
+}
 
-  .stats-row {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    border-top: 1px solid #f1f5f9;
-    padding-top: 16px;
+/* =========================================================
+   ACTIONS
+   ========================================================= */
 
-    .stat-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+.result-actions-block {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 28px;
+}
 
-      .stat-label {
-        font-size: 11px;
-        font-weight: 700;
-        color: #94a3b8;
-        letter-spacing: 0.5px;
-        margin-bottom: 4px;
-      }
+.primary-actions {
+  width: 100%;
 
-      .stat-val {
-        font-size: 14px;
-        font-weight: 800;
-        color: #1e293b;
-      }
+  .action-btn-large.retry {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    border-radius: 22px;
+    padding: 18px 24px;
+    box-shadow: 0 6px 18px rgba(217, 119, 6, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+    &:active {
+      transform: scale(0.98);
     }
 
-    .stat-divider {
-      width: 1px;
-      height: 24px;
-      background: #e2e8f0;
+    .btn-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .btn-text {
+      font-size: 28px;
+      font-weight: 900;
+      color: #ffffff;
+    }
+
+    .count-badge-inline {
+      background: rgba(255, 255, 255, 0.3);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 22px;
+      font-weight: 900;
+      color: #ffffff;
     }
   }
 }
 
-.review-mistakes-card {
-  background: #fff7ed;
-  border: 1.5px solid #fed7aa;
-  border-radius: 18px;
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.secondary-actions {
+  width: 100%;
+
+  .action-btn-medium.restart {
+    background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+    border-radius: 22px;
+    padding: 18px 24px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+    &:active {
+      transform: scale(0.98);
+    }
+
+    .btn-text {
+      font-size: 28px;
+      font-weight: 900;
+      color: #ffffff;
+    }
+  }
+}
+
+.result-share-container {
+  width: 100%;
+
+  .share-action-btn {
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 16px 24px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+
+    body.dark &,
+    page.dark & {
+      background: #1e293b;
+      border-color: #334155;
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+
+    .btn-text {
+      font-size: 24px;
+      font-weight: 800;
+      color: #0284c7;
+
+      body.dark &,
+      page.dark & { color: #38bdf8; }
+    }
+  }
+}
+
+/* =========================================================
+   PRO CTA & HOME BUTTON
+   ========================================================= */
+
+.pro-cta-bottom {
+  width: 100%;
   margin-bottom: 24px;
   cursor: pointer;
 
-  .review-left {
+  .pro-card {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    border-radius: 26px;
+    padding: 24px;
+    border: 2px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
     display: flex;
-    align-items: center;
-    gap: 12px;
+    flex-direction: column;
+    gap: 8px;
 
-    .review-icon {
+    &.active {
+      border-color: #10b981;
+    }
+
+    .pro-title {
+      font-size: 28px;
+      font-weight: 900;
+      color: #38bdf8;
+    }
+
+    .pro-desc {
+      font-size: 22px;
+      color: #cbd5e1;
+      line-height: 1.4;
+    }
+
+    .pro-btn {
+      background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+      color: #ffffff;
       font-size: 24px;
+      font-weight: 900;
+      border-radius: 16px;
+      height: 56px;
+      line-height: 56px;
+      margin-top: 10px;
+      border: none;
     }
-
-    .review-text {
-      display: flex;
-      flex-direction: column;
-
-      .review-title {
-        font-size: 15px;
-        font-weight: 800;
-        color: #c2410c;
-      }
-
-      .review-sub {
-        font-size: 12px;
-        color: #9a3412;
-      }
-    }
-  }
-
-  .review-arrow {
-    font-size: 18px;
-    font-weight: 700;
-    color: #ea580c;
   }
 }
 
-.actions-section {
+.global-home-bottom-link {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: auto;
+  align-items: center;
+  justify-content: center;
+  margin: 12px auto 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease;
 
-  .btn-next-round {
-    background: #2563eb;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 800;
-    border-radius: 16px;
-    height: 50px;
-    line-height: 50px;
-    border: none;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+  body.dark &,
+  page.dark & {
+    background: #1e293b;
+    border-color: #334155;
   }
 
-  .btn-share {
-    background: #ffffff;
-    color: #334155;
-    border: 1.5px solid #cbd5e1;
-    font-size: 15px;
-    font-weight: 700;
-    border-radius: 16px;
-    height: 48px;
-    line-height: 48px;
+  &:active {
+    transform: scale(0.92);
   }
 
-  .btn-home {
-    background: transparent;
-    color: #64748b;
-    font-size: 14px;
-    font-weight: 700;
-    border-radius: 16px;
-    height: 44px;
-    line-height: 44px;
-    border: none;
+  .bottom-home-icon {
+    font-size: 32px;
+    line-height: 1;
   }
+}
+
+.footer-spacer {
+  height: 40px;
+}
+
+/* =========================================================
+   HERO SPOTTED SOMETHING
+   ========================================================= */
+
+.hero-spotted-card {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border: 1.5px solid #bae6fd;
+  border-radius: 24px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.10);
+
+  body.dark &,
+  page.dark & {
+    background: linear-gradient(135deg, #0c2d48 0%, #082f49 100%);
+    border-color: #075985;
+  }
+}
+
+.hero-spotted-title {
+  display: block;
+  font-size: 24px;
+  font-weight: 900;
+  color: #0369a1;
+  margin-bottom: 10px;
+
+  body.dark &,
+  page.dark & { color: #38bdf8; }
+}
+
+.hero-spotted-body {
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+  color: #0c4a6e;
+  line-height: 1.5;
+
+  body.dark &,
+  page.dark & { color: #bae6fd; }
 }

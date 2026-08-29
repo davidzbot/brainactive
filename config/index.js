@@ -11,7 +11,7 @@ module.exports = {
     '828': 1 / 1,
   },
   sourceRoot: 'src',
-  outputRoot: 'dist/h5',
+  outputRoot: 'dist',
   plugins: [],
   define: {
     'process.env.TARO_ENV': JSON.stringify(process.env.TARO_ENV || 'h5'),

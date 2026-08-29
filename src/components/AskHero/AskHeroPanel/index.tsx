@@ -150,7 +150,7 @@ export default function AskHeroPanel({
   const showFollowupInput = chat.length > 0 && !loading
 
   return (
-    <View className='ask-hero-overlay'>
+    <View className='ask-hero-overlay' onClick={onClose}>
       <View className='ask-hero-content' onClick={(e) => e.stopPropagation()}>
         {/* Header */}
         <View className='ask-hero-header'>

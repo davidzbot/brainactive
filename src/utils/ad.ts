@@ -55,11 +55,11 @@ export async function preloadRewardAd(): Promise<boolean> {
     isLoading = false
     return true
   } catch (err: any) {
-    isLoading = false
-    console.warn('[BrainActive AdMob] Preload failed:', err.message)
     return false
   }
 }
+
+export const preloadAd = preloadRewardAd
 
 export async function showRewardAd(): Promise<boolean> {
   // If in web browser / dev mode, simulate successful ad view

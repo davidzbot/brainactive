@@ -230,13 +230,16 @@ Deno.serve(async (req) => {
     }
 
     // 1. Fetch Golden Question
-    const { data: q, error } = await supabase
+    let q: any = null
+    const { data: dbQ } = await supabase
       .from('brainactive_questions')
       .select('*')
       .eq('id', question_id)
       .maybeSingle()
 
-    if (error || !q) {
+    q = dbQ || body.question_data
+
+    if (!q) {
       return standardResponse(false, null, { code: 'QUESTION_NOT_FOUND', message: 'Question not found' })
     }
 

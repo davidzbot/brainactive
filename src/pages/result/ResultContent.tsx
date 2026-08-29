@@ -1,38 +1,144 @@
-import React, { useState } from 'react'
-import { View, Text, Button } from '@tarojs/components'
+import React, { useState, useEffect } from 'react'
+import { View, Text, Button, ScrollView } from '@tarojs/components'
 import Taro, { useRouter } from '@tarojs/taro'
 import {
   getStreak,
   getWrongQuestions,
   getRemainingFreeRounds,
   canStartPractice,
-  isPro
+  isPro,
+  getLang
 } from '@/utils/storage'
+import { Share } from '@capacitor/share'
 import QuotaOverlay from '@/components/QuotaOverlay'
 import './index.scss'
 
+const i18n = {
+  en: {
+    victory: 'Great Job, Hero!',
+    score_prefix: 'Session Score',
+    legend: 'Quest Legend 🏆',
+    avenger: 'Elite Thinker 🌟',
+    knight: 'Master Solver 🛡️',
+    trainee: 'Rising Mind 🌱',
+    restart: 'Start New Practice',
+    retry_wrong: 'Review Mistakes',
+    share_victory: 'Share Your Progress',
+    go_home: 'Back to Home',
+    keep_practicing: 'Every puzzle sharpens your thinking skills.',
+    perfect_score: '🎉 Perfect Score! Outstanding work!',
+    share_btn: 'Share Result',
+    time: 'Time',
+    pro_unlocked_msg: 'Pro Member Active',
+    pro_unlimited: 'You have unlimited thinking skills practice',
+    share_unlock: 'Unlock Unlimited Practice',
+    power_up_desc: 'Unlimited rounds, step-by-step AI coach, and analytics.',
+    pro_feature_cta: 'Unlock Pro Access',
+    copied: 'Result copied! Share with your friends!',
+    no_mistakes: 'No mistakes to review! Outstanding! 🎉',
+    hero_spotted_title: '🔍 Hero Spotted Something for You',
+    hero_spotted_perfect: 'You nailed every question! Keep this streak going. Try the Pro zone for harder challenges.',
+    hero_spotted_good: 'Strong performance! Review your 1–2 mistakes to reach perfection next time.',
+    hero_spotted_ok: 'You\'re making progress! Use "Review Mistakes" to practice your weak areas.',
+    hero_spotted_low: 'Don\'t give up! Every great thinker starts somewhere. Keep practising daily.'
+  },
+  zh: {
+    victory: '太棒了，思维小英雄！',
+    score_prefix: '本次成绩',
+    legend: '思维传奇 🏆',
+    avenger: '解题大师 🌟',
+    knight: '逻辑高手 🛡️',
+    trainee: '思维新星 🌱',
+    restart: '开始新挑战',
+    retry_wrong: '复习错题',
+    share_victory: '分享你的进步',
+    go_home: '返回首页',
+    keep_practicing: '每一次练习都会让你的思维更敏捷。',
+    perfect_score: '🎉 满分！表现非常出色！',
+    share_btn: '分享成绩',
+    time: '用时',
+    pro_unlocked_msg: 'Pro 会员特权已开启',
+    pro_unlimited: '您已拥有无限练习权限',
+    share_unlock: '开启无限思维训练',
+    power_up_desc: '无限挑战轮次，AI 导师专属解析与战力统计。',
+    pro_feature_cta: '开启 Pro 会员',
+    copied: '成绩已复制，快去分享吧！',
+    no_mistakes: '全部答对，没有错题！🎉',
+    hero_spotted_title: '🔍 英雄为你发现了一些东西',
+    hero_spotted_perfect: '太厉害了，每道题都答对了！坚持下去，去 Pro 区挑战更难的题目吧！',
+    hero_spotted_good: '表现优秀！复习 1–2 道错题，下次就能拿满分了！',
+    hero_spotted_ok: '你在进步！用「复习错题」功能重点练习薄弱环节。',
+    hero_spotted_low: '不要放弃！每位思维高手都从零开始。坚持每天练习！'
+  }
+}
+
 export default function ResultContent() {
   const router = useRouter()
+  const lang = (getLang() || 'en') as 'en' | 'zh'
+  const t = i18n[lang] || i18n.en
+
   const score = parseInt(router.params.score || '0', 10)
   const total = parseInt(router.params.total || '5', 10)
   const timeSec = parseInt(router.params.time || '0', 10)
 
+  const [isLoading, setIsLoading] = useState(true)
+  const [animatedScore, setAnimatedScore] = useState(0)
+  const [showConfetti, setShowConfetti] = useState(false)
   const [showQuota, setShowQuota] = useState(false)
+  const [proActive, setProActive] = useState(false)
+
   const streak = getStreak()
   const wrongList = getWrongQuestions()
-  const percentage = Math.round((score / (total || 1)) * 100)
+  const wrongCount = Math.max(0, total - score)
+  const percentage = total > 0 ? Math.round((score / total) * 100) : 0
+
+  useEffect(() => {
+    setProActive(isPro())
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 300)
+    return () => clearTimeout(timer)
+  }, [])
+
+  useEffect(() => {
+    if (isLoading) return
+    if (percentage >= 80) setShowConfetti(true)
+
+    const duration = 700
+    const steps = 25
+    const increment = score / steps
+    let current = 0
+    const interval = setInterval(() => {
+      current += increment
+      if (current >= score) {
+        setAnimatedScore(score)
+        clearInterval(interval)
+      } else {
+        setAnimatedScore(Math.round(current))
+      }
+    }, duration / steps)
+
+    return () => clearInterval(interval)
+  }, [isLoading, score, percentage])
+
+  const getRatingText = () => {
+    if (percentage >= 100) return t.legend
+    if (percentage >= 80) return t.avenger
+    if (percentage >= 50) return t.knight
+    return t.trainee
+  }
+
+  const getHeroSpottedText = () => {
+    if (percentage >= 100) return t.hero_spotted_perfect
+    if (percentage >= 80) return t.hero_spotted_good
+    if (percentage >= 50) return t.hero_spotted_ok
+    return t.hero_spotted_low
+  }
 
   const formatTime = (secs: number) => {
     const m = Math.floor(secs / 60)
     const s = secs % 60
     return `${m}m ${s}s`
-  }
-
-  const getVictoryTitle = () => {
-    if (percentage === 100) return 'Outstanding Mastery! 🏆'
-    if (percentage >= 80) return 'Great Thinking! 🌟'
-    if (percentage >= 60) return 'Good Effort! 💡'
-    return 'Keep Going — every attempt sharpens your reasoning! 🌱'
   }
 
   const handleRestart = () => {
@@ -47,23 +153,36 @@ export default function ResultContent() {
 
   const handleReviewMistakes = () => {
     if (wrongList.length === 0) {
-      Taro.showToast({ title: 'No mistakes to review! 🎉', icon: 'success' })
+      Taro.showToast({ title: t.no_mistakes, icon: 'none' })
       return
     }
-    const ids = wrongList.slice(0, 5).map(q => q.id)
     Taro.navigateTo({
-      url: `/pages/quiz/index?mode=retry&ids=${ids.join(',')}`
+      url: '/pages/quiz/index?mode=retry'
     })
   }
 
-  const handleShare = () => {
-    const msg = `I scored ${score}/${total} (${percentage}%) in BrainActive P3 Thinking Skills! 🧠 Practise reasoning with me.`
-    Taro.setClipboardData({
-      data: msg,
-      success: () => {
-        Taro.showToast({ title: 'Result copied! 📋', icon: 'success' })
-      }
-    })
+  const handleShare = async () => {
+    const text = `I scored ${score}/${total} (${percentage}%) in BrainActive Singapore P3 Thinking Skills! 🧠 Practise reasoning with me.`
+    try {
+      await Share.share({
+        title: 'My BrainActive Score',
+        text,
+        dialogTitle: t.share_victory
+      })
+    } catch {
+      Taro.setClipboardData({
+        data: text,
+        success: () => {
+          Taro.showToast({ title: t.copied, icon: 'success' })
+        }
+      })
+    }
+  }
+
+  const handleGoPro = () => {
+    Taro.navigateTo({
+      url: '/pages/pro/index'
+    }).catch(() => Taro.reLaunch({ url: '/pages/pro/index' }))
   }
 
   const handleHome = () => {
@@ -72,69 +191,135 @@ export default function ResultContent() {
     })
   }
 
+  if (isLoading) {
+    return (
+      <View className="result-container">
+        <View className="loading-container">
+          <View className="loading-spinner" />
+          <Text className="loading-text">{lang === 'en' ? 'Calculating your results...' : '正在计算成绩...'}</Text>
+        </View>
+      </View>
+    )
+  }
+
   return (
     <View className="result-container">
-      {/* Header Badge */}
-      <View className="result-header">
-        <View className="trophy-badge">
-          <Text className="trophy-icon">{percentage >= 80 ? '🏆' : '🎯'}</Text>
-        </View>
-        <Text className="victory-title">{getVictoryTitle()}</Text>
-        <Text className="victory-sub">Singapore P3 Thinking Skills</Text>
-      </View>
-
-      {/* Score Summary Card */}
-      <View className="score-summary-card">
-        <View className="score-main">
-          <Text className="score-number">{score}</Text>
-          <Text className="score-denom">/{total}</Text>
-        </View>
-        <Text className="score-pct">{percentage}% Correct</Text>
-
-        <View className="stats-row">
-          <View className="stat-item">
-            <Text className="stat-label">TIME</Text>
-            <Text className="stat-val">{formatTime(timeSec)}</Text>
-          </View>
-          <View className="stat-divider" />
-          <View className="stat-item">
-            <Text className="stat-label">STREAK</Text>
-            <Text className="stat-val">🔥 {streak} Days</Text>
-          </View>
-          <View className="stat-divider" />
-          <View className="stat-item">
-            <Text className="stat-label">TO REVIEW</Text>
-            <Text className="stat-val">{total - score}</Text>
-          </View>
-        </View>
-      </View>
-
-      {/* Review card (if applicable) */}
-      {wrongList.length > 0 && (
-        <View className="review-mistakes-card" onClick={handleReviewMistakes}>
-          <View className="review-left">
-            <Text className="review-icon">📝</Text>
-            <View className="review-text">
-              <Text className="review-title">Review & Learn</Text>
-              <Text className="review-sub">Revisit the questions you found tricky</Text>
-            </View>
-          </View>
-          <Text className="review-arrow">→</Text>
+      {/* Confetti celebration for score >= 80% */}
+      {showConfetti && (
+        <View className="confetti-container" aria-hidden="true">
+          {Array.from({ length: 28 }).map((_, i) => (
+            <View
+              key={i}
+              className="confetti-piece"
+              style={{
+                left: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 1.5}s`,
+                animationDuration: `${1.8 + Math.random() * 2}s`,
+                backgroundColor: ['#0284c7', '#38bdf8', '#2563eb', '#10b981', '#f59e0b', '#8b5cf6', '#ec4899'][i % 7],
+                width: `${7 + Math.random() * 8}px`,
+                height: `${7 + Math.random() * 8}px`,
+                borderRadius: Math.random() > 0.5 ? '50%' : '3px'
+              }}
+            />
+          ))}
         </View>
       )}
 
-      {/* Primary Actions */}
-      <View className="actions-section">
-        <Button className="btn-next-round" onClick={handleRestart}>
-          Practice Again
-        </Button>
-        <Button className="btn-share" onClick={handleShare}>
-          Copy Result to Share 📋
-        </Button>
-        <Button className="btn-home" onClick={handleHome}>
-          ← Home
-        </Button>
-      </View>
+      <ScrollView scrollY className="result-scroll">
+        {/* Victory Header */}
+        <View className="victory-header">
+          <Text className="victory-title">{t.victory}</Text>
+          <View className="rating-text-banner">
+            <Text className="rating-text">{getRatingText()}</Text>
+          </View>
+        </View>
+
+        {/* Score Circle & Section */}
+        <View className="score-section">
+          <Text className="score-label">{t.score_prefix}</Text>
+          <View className="score-circle">
+            <Text className="score-num">{animatedScore}</Text>
+            <View className="score-divider" />
+            <Text className="score-total">/ {total}</Text>
+          </View>
+
+          {timeSec > 0 && (
+            <Text className="time-display">
+              {t.time}: {formatTime(timeSec)}
+            </Text>
+          )}
+        </View>
+
+        {/* Perfect Score Celebration */}
+        {score === total && total > 0 && (
+          <View className="perfect-score-celebration">
+            <Text className="perfect-score-text">{t.perfect_score}</Text>
+          </View>
+        )}
+
+        {/* Hero Encouragement */}
+        <View className="hero-encouragement">
+          <Text className="encouragement-emoji">
+            {score === total ? '🏆' : score >= total * 0.8 ? '🌟' : score >= total * 0.5 ? '💪' : '🌱'}
+          </Text>
+          <Text className="encouragement-text">{t.keep_practicing}</Text>
+        </View>
+
+        {/* Hero Spotted Something For You */}
+        <View className="hero-spotted-card">
+          <Text className="hero-spotted-title">{t.hero_spotted_title}</Text>
+          <Text className="hero-spotted-body">{getHeroSpottedText()}</Text>
+        </View>
+
+        {/* Action Buttons */}
+        <View className="result-actions-block">
+          {wrongCount > 0 && (
+            <View className="primary-actions">
+              <View className="action-btn-large retry" onClick={handleReviewMistakes}>
+                <View className="btn-content">
+                  <Text className="btn-text">{t.retry_wrong}</Text>
+                  <View className="count-badge-inline">{wrongCount}</View>
+                </View>
+              </View>
+            </View>
+          )}
+
+          <View className="secondary-actions">
+            <View className="action-btn-medium restart" onClick={handleRestart}>
+              <Text className="btn-text">{t.restart}</Text>
+            </View>
+          </View>
+
+          {/* Share Action */}
+          <View className="result-share-container">
+            <View className="share-action-btn" onClick={handleShare}>
+              <Text className="btn-text">🎉 {t.share_btn}</Text>
+            </View>
+          </View>
+        </View>
+
+        {/* Pro CTA Card */}
+        <View className="pro-cta-bottom" onClick={handleGoPro}>
+          <View className={`pro-card ${proActive ? 'active' : ''}`}>
+            <Text className="pro-title">
+              🚀 {proActive ? t.pro_unlocked_msg : t.share_unlock}
+            </Text>
+            <Text className="pro-desc">
+              {proActive ? t.pro_unlimited : t.power_up_desc}
+            </Text>
+            {!proActive && (
+              <Button className="pro-btn">{t.pro_feature_cta}</Button>
+            )}
+          </View>
+        </View>
+
+        {/* Bottom Home Link */}
+        <View className="global-home-bottom-link" onClick={handleHome}>
+          <Text className="bottom-home-icon">🏠</Text>
+        </View>
+
+        <View className="footer-spacer" />
+      </ScrollView>
 
       <QuotaOverlay
         isOpen={showQuota}
