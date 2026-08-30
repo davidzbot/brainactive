@@ -7,6 +7,44 @@ const corsHeaders = {
   'Access-Control-Max-Age': '86400',
 }
 
+const QUESTION_PAGE_SIZE = 100
+
+function selectQuickQuizQuestions(pool: any[], limit: number) {
+  const selected: any[] = []
+  const selectedIds = new Set<string>()
+  const seenTopics = new Set<string>()
+  const seenSkills = new Set<string>()
+
+  for (const question of pool) {
+    if (selected.length >= limit) break
+    const topic = String(question.topic || question.domain || '').trim()
+    if (!topic || seenTopics.has(topic)) continue
+    selected.push(question)
+    selectedIds.add(question.id)
+    seenTopics.add(topic)
+    const skill = String(question.skill || '').trim()
+    if (skill) seenSkills.add(skill)
+  }
+
+  for (const question of pool) {
+    if (selected.length >= limit || selectedIds.has(question.id)) continue
+    const skill = String(question.skill || '').trim()
+    if (!skill || seenSkills.has(skill)) continue
+    selected.push(question)
+    selectedIds.add(question.id)
+    seenSkills.add(skill)
+  }
+
+  for (const question of pool) {
+    if (selected.length >= limit) break
+    if (selectedIds.has(question.id)) continue
+    selected.push(question)
+    selectedIds.add(question.id)
+  }
+
+  return selected
+}
+
 function standardResponse(success: boolean, data: any = null, error: any = null, status = 200) {
   const response: any = { success }
   if (success) {
@@ -53,30 +91,37 @@ Deno.serve(async (req) => {
       return standardResponse(true, data || [])
     }
 
-    let query = supabase
-      .from('brainactive_questions')
-      .select('*')
-      .eq('is_active', true)
+    // Fetch the complete filtered pool so rows beyond the first page can be served.
+    const pool: any[] = []
+    for (let offset = 0; ; offset += QUESTION_PAGE_SIZE) {
+      let pageQuery = supabase
+        .from('brainactive_questions')
+        .select('*')
+        .eq('is_active', true)
+        .order('id', { ascending: true })
 
-    if (topic && topic !== 'All') {
-      query = query.eq('topic', topic)
+      if (topic && topic !== 'All') {
+        pageQuery = pageQuery.eq('topic', topic)
+      }
+
+      if (level && level !== 'All') {
+        pageQuery = pageQuery.eq('level', level)
+      }
+
+      const { data: page, error } = await pageQuery.range(offset, offset + QUESTION_PAGE_SIZE - 1)
+      if (error) throw error
+      pool.push(...(page || []))
+      if (!page || page.length < QUESTION_PAGE_SIZE) break
     }
 
-    if (level && level !== 'All') {
-      query = query.eq('level', level)
-    }
-
-    // Fetch pool of candidates to sample from
-    const { data: pool, error } = await query.limit(100)
-    if (error) throw error
-
-    if (!pool || pool.length === 0) {
+    if (pool.length === 0) {
       return standardResponse(true, [])
     }
 
-    // Shuffle and pick requested limit
     const shuffled = [...pool].sort(() => 0.5 - Math.random())
-    const selected = shuffled.slice(0, Math.min(limit, shuffled.length))
+    const selected = mode === 'quick_test'
+      ? selectQuickQuizQuestions(shuffled, Math.min(limit, shuffled.length))
+      : shuffled.slice(0, Math.min(limit, shuffled.length))
 
     return standardResponse(true, selected)
   } catch (err: any) {

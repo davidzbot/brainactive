@@ -85,17 +85,33 @@ Deno.serve(async (req) => {
     const grantDaysMs = 7 * 24 * 3600 * 1000
     const now = Date.now()
 
-    // Extend Referee
     const refExpiry = new Date(now + grantDaysMs).toISOString()
-    await supabase
+    const { data: existingReferee } = await supabase
       .from('brainactive_profiles')
-      .upsert({
-        user_id,
-        referral_code: user_id.slice(0, 6).toUpperCase(), // fallback code if none
-        is_pro: true,
-        pro_expiry: refExpiry,
-        updated_at: new Date().toISOString()
-      }, { onConflict: 'user_id' })
+      .select('referral_code')
+      .eq('user_id', user_id)
+      .maybeSingle()
+
+    if (existingReferee) {
+      await supabase
+        .from('brainactive_profiles')
+        .update({
+          is_pro: true,
+          pro_expiry: refExpiry,
+          updated_at: new Date().toISOString()
+        })
+        .eq('user_id', user_id)
+    } else {
+      await supabase
+        .from('brainactive_profiles')
+        .insert({
+          user_id,
+          referral_code: generateReferralCode(),
+          is_pro: true,
+          pro_expiry: refExpiry,
+          updated_at: new Date().toISOString()
+        })
+    }
 
     // Extend Referrer
     const currReferrerExpiry = referrer.pro_expiry ? new Date(referrer.pro_expiry).getTime() : now

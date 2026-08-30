@@ -978,8 +978,66 @@
 
   .billing-note-text {
     font-size: 18px;
-    color: #94a3b8;
+    color: #64748b;
     line-height: 1.5;
     display: block;
   }
+}
+
+@media (max-width: 420px) {
+  .pro-container { overflow-x: hidden; }
+
+  .tab-header {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-left: 16px;
+    padding-right: 16px;
+    scrollbar-width: none;
+  }
+
+  .tab-header::-webkit-scrollbar { display: none; }
+
+  .tab-item {
+    flex: 0 0 auto;
+    min-width: 112px;
+    min-height: 56px;
+
+    .tab-text { font-size: 19px; white-space: nowrap; }
+  }
+
+  .tab-content { padding-left: 16px; padding-right: 16px; }
+  .card-section,
+  .paywall-plans-section { padding: 20px 18px; }
+  .content-title,
+  .paywall-section-title { font-size: 27px; line-height: 1.25; }
+  .content-desc,
+  .paywall-section-subtitle { font-size: 19px; line-height: 1.45; }
+  .picker-val { font-size: 21px; padding: 14px 16px; }
+  .start-btn,
+  .btn-submit-upgrade { font-size: 23px; }
+
+  .section-container .section-header-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .filter-pills {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+
+  .filter-pills::-webkit-scrollbar { display: none; }
+  .filter-pills .pill { white-space: nowrap; font-size: 16px; }
+
+  .referral-promo-header,
+  .plan-card-header { align-items: flex-start; gap: 10px; }
+  .referral-promo-title { font-size: 21px; line-height: 1.25; }
+  .referral-promo-subtitle { font-size: 17px; }
+  .referral-promo-btn-text { font-size: 18px; }
+  .plan-card-v2 { padding: 18px; }
+  .plan-card-v2 .plan-name { font-size: 22px; }
+  .plan-card-v2 .plan-price-tag { font-size: 27px; white-space: nowrap; }
 }

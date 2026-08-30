@@ -7,23 +7,21 @@ import { AdMob, RewardAdOptions, RewardAdPluginEvents } from '@capacitor-communi
 import { Capacitor } from '@capacitor/core'
 import Taro from '@tarojs/taro'
 import { unlockBonusRound } from './storage'
+import { ADMOB_REWARDED_AD_UNIT_ID } from '../config/monetization'
 
 // -----------------------------------------------------------------------------
-// ADMOB IDs CONFIGURATION (Rule #13)
-// Old / placeholder values commented out, ready for new production BrainActive IDs.
+// ADMOB IDS — production unit is centralized in src/config/monetization.ts.
+// While the production unit is empty we fall back to the Google test unit so
+// the reward flow still works in dev / before the real ID is provided.
 // -----------------------------------------------------------------------------
 const USE_TEST_ADS = process.env.NODE_ENV === 'development' || !Capacitor.isNativePlatform()
 
-// Test ad unit fallback
+// Google test rewarded unit (safe fallback, never a real ad).
 const ADMOB_TEST_ID_REWARDED = 'ca-app-pub-3940256099942544/5224354917'
-
-// OLD BrainActive rewarded unit: // 'ca-app-pub-8548627206908979/9317757823'
-// NEW BrainActive rewarded unit placeholder (uncomment when provided):
-// export const BRAINACTIVE_REWARDED_AD_UNIT_ID = 'ca-app-pub-xxxxxxxxxxxxxxxx/yyyyyyyyyy'
 
 export const REWARD_AD_UNIT_ID = USE_TEST_ADS
   ? ADMOB_TEST_ID_REWARDED
-  : 'ca-app-pub-3940256099942544/5224354917' // Default to test unit until new ID provided
+  : (ADMOB_REWARDED_AD_UNIT_ID || ADMOB_TEST_ID_REWARDED)
 
 let isAdMobReady = false
 let isLoading = false

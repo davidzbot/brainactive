@@ -20,7 +20,7 @@
   position: relative;
   background: #ffffff;
   border-radius: 36px 36px 0 0;
-  padding: 24px 24px calc(env(safe-area-inset-bottom, 24px) + 16px);
+  padding: 32px 28px calc(env(safe-area-inset-bottom, 28px) + 20px);
   border: 1.5px solid #e2e8f0;
   border-bottom: none;
   box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.25);
@@ -116,8 +116,8 @@
 }
 
 .ask-hero-close {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -167,8 +167,8 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 14px 18px;
-  margin-bottom: 10px;
+  padding: 18px 20px;
+  margin-bottom: 12px;
   border-radius: 18px;
   background: #f8fafc;
   border: 1.5px solid #e2e8f0;
@@ -194,7 +194,7 @@
 }
 
 .ask-hero-mode-text {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
   color: #1e293b;
 
@@ -311,8 +311,8 @@
 
 .ask-hero-send {
   width: 100%;
-  height: 56px;
-  line-height: 56px;
+  min-height: 64px;
+  line-height: 1.2;
   border-radius: 16px;
   background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
   color: #ffffff;
@@ -349,7 +349,8 @@
 
 .ask-hero-start-over,
 .ask-hero-close-footer {
-  padding: 6px 10px;
+  min-height: 44px;
+  padding: 8px 12px;
   cursor: pointer;
 
   Text {

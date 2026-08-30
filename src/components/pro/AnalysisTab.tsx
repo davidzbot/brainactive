@@ -40,6 +40,11 @@ export default function AnalysisTab({
   getMetricColor,
   setActiveTab
 }: AnalysisTabProps) {
+  const trendLabels = lang === 'zh'
+    ? { 'Last Runs': '最近几轮', '7D': '7天', '30D': '30天', 'All Time': '全部' }
+    : { 'Last Runs': 'Last Runs', '7D': '7D', '30D': '30D', 'All Time': 'All Time' }
+  const questionUnit = lang === 'zh' ? '道题' : 'questions'
+
   if (stats.totalQuests === 0) {
     return (
       <View className="empty-stats-hero">
@@ -77,13 +82,13 @@ export default function AnalysisTab({
 
         <View className="summary-card-v2">
           <Text className="card-label">{lang === 'zh' ? '最强领域' : 'Strongest Topic'}</Text>
-          <Text className="card-value-small">{stats.strongestSubject.name || 'Reasoning'}</Text>
+          <Text className="card-value-small">{stats.strongestSubject.name || (lang === 'zh' ? '思维推理' : 'Reasoning')}</Text>
           <Text className="card-sub-label">{stats.strongestSubject.avg}% {t.accuracy_label}</Text>
         </View>
 
         <View className="summary-card-v2">
           <Text className="card-label">{lang === 'zh' ? '有待加强' : 'Needs Practice'}</Text>
-          <Text className="card-value-small">{stats.weakestTopic.topic || stats.weakestTopic.name || 'General'}</Text>
+          <Text className="card-value-small">{stats.weakestTopic.topic || stats.weakestTopic.name || (lang === 'zh' ? '综合思维' : 'General')}</Text>
           <Text className="card-sub-label" style={{ color: '#ef4444' }}>
             {stats.weakestTopic.avg}% {t.accuracy_label}
           </Text>
@@ -95,13 +100,13 @@ export default function AnalysisTab({
         <View className="section-header-row">
           <Text className="section-title-v2">{lang === 'zh' ? '成长趋势' : 'Progress Trend'}</Text>
           <View className="filter-pills">
-            {['Last Runs', '7D', '30D', 'All Time'].map(f => (
+            {(['Last Runs', '7D', '30D', 'All Time'] as const).map(f => (
               <Text
                 key={f}
                 className={`pill ${trendFilter === f ? 'active' : ''}`}
                 onClick={() => setTrendFilter(f)}
               >
-                {f}
+                {trendLabels[f]}
               </Text>
             ))}
           </View>
@@ -142,7 +147,7 @@ export default function AnalysisTab({
             >
               <View className="subject-info-v2">
                 <Text className="subj-name">{s.name}</Text>
-                <Text className="subj-count">{s.count} Qs</Text>
+                <Text className="subj-count">{s.count} {questionUnit}</Text>
               </View>
               <View className="subj-acc-v2">
                 <Text className="acc-text" style={{ color: getMetricColor(s.avg) }}>

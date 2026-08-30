@@ -1,0 +1,4913 @@
+{
+  "dataset": {
+    "name": "BrainActive P3 high-ability gap-fill candidates",
+    "status": "pending_qa",
+    "original_only": true,
+    "generation_seed": 20260830,
+    "basis": "BrainActive curriculum research and MOE-described enriched reasoning goals"
+  },
+  "questions": [
+    {
+      "id": "BA_P3_ADD_0001",
+      "domain": "numerical_reasoning",
+      "skill": "1.1",
+      "archetype": "number_sequence",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Find the next number: 5, 14, 23, 32, ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "23"
+        },
+        {
+          "id": "B",
+          "text": "42"
+        },
+        {
+          "id": "C",
+          "text": "41"
+        },
+        {
+          "id": "D",
+          "text": "50"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The rule is: add 9 each step. So the next number is 41.",
+      "reasoning": "Finding the pattern in a number sequence.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "pattern"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "number_sequence",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0002",
+      "domain": "numerical_reasoning",
+      "skill": "1.1",
+      "archetype": "number_sequence",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "Find the next number: 4, 8, 16, 32, 64, ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "64"
+        },
+        {
+          "id": "B",
+          "text": "66"
+        },
+        {
+          "id": "C",
+          "text": "128"
+        },
+        {
+          "id": "D",
+          "text": "129"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The rule is: multiply by 2. So the next number is 128.",
+      "reasoning": "Finding the pattern in a number sequence.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "pattern"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "number_sequence",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0003",
+      "domain": "numerical_reasoning",
+      "skill": "1.1",
+      "archetype": "number_sequence",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Find the next number: 1, 2, 3, 6, 5, 10, 7, ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "9"
+        },
+        {
+          "id": "B",
+          "text": "10"
+        },
+        {
+          "id": "C",
+          "text": "14"
+        },
+        {
+          "id": "D",
+          "text": "11"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The rule is: two woven sequences: odd positions +2, even positions +4. So the next number is 14.",
+      "reasoning": "Finding the pattern in a number sequence.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "pattern"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "number_sequence",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0004",
+      "domain": "numerical_reasoning",
+      "skill": "1.1",
+      "archetype": "number_sequence",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "Find the next number: 3, 6, 9, 15, 24, ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "24"
+        },
+        {
+          "id": "B",
+          "text": "41"
+        },
+        {
+          "id": "C",
+          "text": "40"
+        },
+        {
+          "id": "D",
+          "text": "39"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The rule is: each term is the sum of the two before it. So the next number is 39.",
+      "reasoning": "Finding the pattern in a number sequence.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "pattern"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "number_sequence",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0005",
+      "domain": "numerical_reasoning",
+      "skill": "1.1",
+      "archetype": "number_sequence",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Find the next number: 2, 5, 9, 14, 20, ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "26"
+        },
+        {
+          "id": "B",
+          "text": "27"
+        },
+        {
+          "id": "C",
+          "text": "20"
+        },
+        {
+          "id": "D",
+          "text": "28"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The rule is: the gap between terms grows by 1 each step. So the next number is 27.",
+      "reasoning": "Finding the pattern in a number sequence.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "pattern"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "number_sequence",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0006",
+      "domain": "numerical_reasoning",
+      "skill": "1.2",
+      "archetype": "number_analogy",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "6 is to 19 as 7 is to ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "20"
+        },
+        {
+          "id": "B",
+          "text": "22"
+        },
+        {
+          "id": "C",
+          "text": "14"
+        },
+        {
+          "id": "D",
+          "text": "21"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Relation: x3 then +1. 6 -> 19, so 7 -> 22.",
+      "reasoning": "Inferring a numerical relation and applying it.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "analogy"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "number_analogy",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0007",
+      "domain": "numerical_reasoning",
+      "skill": "1.2",
+      "archetype": "number_analogy",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "6 is to 18 as 2 is to ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "18"
+        },
+        {
+          "id": "B",
+          "text": "14"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Relation: x3. 6 -> 18, so 2 -> 6.",
+      "reasoning": "Inferring a numerical relation and applying it.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "analogy"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "number_analogy",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0008",
+      "domain": "numerical_reasoning",
+      "skill": "1.2",
+      "archetype": "number_analogy",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "3 is to 10 as 2 is to ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "4"
+        },
+        {
+          "id": "B",
+          "text": "16"
+        },
+        {
+          "id": "C",
+          "text": "8"
+        },
+        {
+          "id": "D",
+          "text": "9"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Relation: +7. 3 -> 10, so 2 -> 9.",
+      "reasoning": "Inferring a numerical relation and applying it.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "analogy"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "number_analogy",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0009",
+      "domain": "numerical_reasoning",
+      "skill": "1.2",
+      "archetype": "number_analogy",
+      "level": "Challenge",
+      "difficulty": "hard",
+      "question_type": "multiple_choice",
+      "question": "3 is to 9 as 6 is to ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "35"
+        },
+        {
+          "id": "B",
+          "text": "42"
+        },
+        {
+          "id": "C",
+          "text": "12"
+        },
+        {
+          "id": "D",
+          "text": "36"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Relation: square the number. 3 -> 9, so 6 -> 36.",
+      "reasoning": "Inferring a numerical relation and applying it.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "analogy"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "number_analogy",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0010",
+      "domain": "numerical_reasoning",
+      "skill": "1.2",
+      "archetype": "number_analogy",
+      "level": "Challenge",
+      "difficulty": "hard",
+      "question_type": "multiple_choice",
+      "question": "4 is to 16 as 6 is to ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "18"
+        },
+        {
+          "id": "B",
+          "text": "36"
+        },
+        {
+          "id": "C",
+          "text": "48"
+        },
+        {
+          "id": "D",
+          "text": "35"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Relation: square the number. 4 -> 16, so 6 -> 36.",
+      "reasoning": "Inferring a numerical relation and applying it.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "analogy"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "number_analogy",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0011",
+      "domain": "numerical_reasoning",
+      "skill": "1.3",
+      "archetype": "weight_system",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "A triangle and a square together weigh 10. A square and a circle together weigh 9. A triangle and a circle together weigh 9. Which shape is heaviest?",
+      "options": [
+        {
+          "id": "A",
+          "text": "triangle"
+        },
+        {
+          "id": "B",
+          "text": "square"
+        },
+        {
+          "id": "C",
+          "text": "circle"
+        },
+        {
+          "id": "D",
+          "text": "triangle1"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Add the three pair-weights: each shape counted twice = 28, so one of each = 14. The triangle is 5, the square is 5, the circle is 4; the heaviest is the triangle.",
+      "reasoning": "Solving a small weight system by combining equations.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "deduction"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "weight_system",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0012",
+      "domain": "numerical_reasoning",
+      "skill": "1.3",
+      "archetype": "weight_system",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "A triangle and a square together weigh 8. A triangle and a circle together weigh 7. A square and a circle together weigh 11. Which shape is lightest?",
+      "options": [
+        {
+          "id": "A",
+          "text": "triangle"
+        },
+        {
+          "id": "B",
+          "text": "circle"
+        },
+        {
+          "id": "C",
+          "text": "triangle1"
+        },
+        {
+          "id": "D",
+          "text": "square"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Add the three pair-weights: each shape counted twice = 26, so one of each = 13. The triangle is 2, the square is 6, the circle is 5; the lightest is the triangle.",
+      "reasoning": "Solving a small weight system by combining equations.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "deduction"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "weight_system",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0013",
+      "domain": "numerical_reasoning",
+      "skill": "1.3",
+      "archetype": "weight_system",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "A triangle and a square together weigh 10. A square and a circle together weigh 7. A triangle and a circle together weigh 9. Which shape is lightest?",
+      "options": [
+        {
+          "id": "A",
+          "text": "square"
+        },
+        {
+          "id": "B",
+          "text": "circle1"
+        },
+        {
+          "id": "C",
+          "text": "triangle"
+        },
+        {
+          "id": "D",
+          "text": "circle"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Add the three pair-weights: each shape counted twice = 26, so one of each = 13. The triangle is 6, the square is 4, the circle is 3; the lightest is the circle.",
+      "reasoning": "Solving a small weight system by combining equations.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "deduction"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "weight_system",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0014",
+      "domain": "numerical_reasoning",
+      "skill": "1.3",
+      "archetype": "weight_system",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "A triangle and a square together weigh 7. A square and a circle together weigh 7. A triangle and a circle together weigh 6. Which shape is heaviest?",
+      "options": [
+        {
+          "id": "A",
+          "text": "square"
+        },
+        {
+          "id": "B",
+          "text": "circle"
+        },
+        {
+          "id": "C",
+          "text": "square1"
+        },
+        {
+          "id": "D",
+          "text": "triangle"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Add the three pair-weights: each shape counted twice = 20, so one of each = 10. The triangle is 3, the square is 4, the circle is 3; the heaviest is the square.",
+      "reasoning": "Solving a small weight system by combining equations.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "deduction"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "weight_system",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0015",
+      "domain": "numerical_reasoning",
+      "skill": "1.3",
+      "archetype": "weight_system",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "A square and a circle together weigh 7. A triangle and a square together weigh 11. A triangle and a circle together weigh 8. Which shape is heaviest?",
+      "options": [
+        {
+          "id": "A",
+          "text": "circle"
+        },
+        {
+          "id": "B",
+          "text": "triangle1"
+        },
+        {
+          "id": "C",
+          "text": "square"
+        },
+        {
+          "id": "D",
+          "text": "triangle"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Add the three pair-weights: each shape counted twice = 26, so one of each = 13. The triangle is 6, the square is 5, the circle is 2; the heaviest is the triangle.",
+      "reasoning": "Solving a small weight system by combining equations.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "deduction"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "weight_system",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0016",
+      "domain": "numerical_reasoning",
+      "skill": "1.4",
+      "archetype": "chained_comparison",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Ela has 3 more marbles than Dan. Dan has 4 fewer than Cai. Cai has 12. Who has the most?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ela"
+        },
+        {
+          "id": "B",
+          "text": "Cai1"
+        },
+        {
+          "id": "C",
+          "text": "Dan"
+        },
+        {
+          "id": "D",
+          "text": "Cai"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Cai has 12. Dan has 12 - 4 = 8. Ela has 8 + 3 = 11. Cai has the most.",
+      "reasoning": "Chaining several comparisons into a full order.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "logic"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "chained_comparison",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.4",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0017",
+      "domain": "numerical_reasoning",
+      "skill": "1.4",
+      "archetype": "chained_comparison",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Ali has 5 more marbles than Cai. Cai has 5 fewer than Ela. Ela has 9. Who has the most?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cai"
+        },
+        {
+          "id": "B",
+          "text": "Ela1"
+        },
+        {
+          "id": "C",
+          "text": "Ela"
+        },
+        {
+          "id": "D",
+          "text": "Ali"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Ela has 9. Cai has 9 - 5 = 4. Ali has 4 + 5 = 9. Ela has the most.",
+      "reasoning": "Chaining several comparisons into a full order.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "logic"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "chained_comparison",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.4",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0018",
+      "domain": "numerical_reasoning",
+      "skill": "1.4",
+      "archetype": "chained_comparison",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Dan has 3 more marbles than Fox. Fox has 4 fewer than Ali. Ali has 11. Who has the most?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ali1"
+        },
+        {
+          "id": "B",
+          "text": "Ali"
+        },
+        {
+          "id": "C",
+          "text": "Fox"
+        },
+        {
+          "id": "D",
+          "text": "Dan"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Ali has 11. Fox has 11 - 4 = 7. Dan has 7 + 3 = 10. Ali has the most.",
+      "reasoning": "Chaining several comparisons into a full order.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "logic"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "chained_comparison",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.4",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0019",
+      "domain": "numerical_reasoning",
+      "skill": "1.4",
+      "archetype": "chained_comparison",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Fox has 5 more marbles than Cai. Cai has 3 fewer than Ela. Ela has 9. Who has the most?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fox1"
+        },
+        {
+          "id": "B",
+          "text": "Ela"
+        },
+        {
+          "id": "C",
+          "text": "Fox"
+        },
+        {
+          "id": "D",
+          "text": "Cai"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Ela has 9. Cai has 9 - 3 = 6. Fox has 6 + 5 = 11. Fox has the most.",
+      "reasoning": "Chaining several comparisons into a full order.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "logic"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "chained_comparison",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.4",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0020",
+      "domain": "numerical_reasoning",
+      "skill": "1.4",
+      "archetype": "chained_comparison",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Ela has 4 more marbles than Cai. Cai has 5 fewer than Ben. Ben has 10. Who has the most?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cai"
+        },
+        {
+          "id": "B",
+          "text": "Ben1"
+        },
+        {
+          "id": "C",
+          "text": "Ben"
+        },
+        {
+          "id": "D",
+          "text": "Ela"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Ben has 10. Cai has 10 - 5 = 5. Ela has 5 + 4 = 9. Ben has the most.",
+      "reasoning": "Chaining several comparisons into a full order.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "logic"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "chained_comparison",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.4",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0021",
+      "domain": "verbal_reasoning",
+      "skill": "3.1",
+      "archetype": "verbal_analogy",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "hot is to cold as happy is to ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "cut"
+        },
+        {
+          "id": "B",
+          "text": "jump"
+        },
+        {
+          "id": "C",
+          "text": "read"
+        },
+        {
+          "id": "D",
+          "text": "sad"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Relation: antonym. hot : cold, so happy : sad.",
+      "reasoning": "Finding a relation (type: antonym) and applying it.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "analogy"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "verbal_analogy",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0022",
+      "domain": "verbal_reasoning",
+      "skill": "3.1",
+      "archetype": "verbal_analogy",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "hammer is to hit as ruler is to ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "eat"
+        },
+        {
+          "id": "B",
+          "text": "jump"
+        },
+        {
+          "id": "C",
+          "text": "measure"
+        },
+        {
+          "id": "D",
+          "text": "car"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Relation: tool-action. hammer : hit, so ruler : measure.",
+      "reasoning": "Finding a relation (type: tool-action) and applying it.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "analogy"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "verbal_analogy",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0023",
+      "domain": "verbal_reasoning",
+      "skill": "3.1",
+      "archetype": "verbal_analogy",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "cat is to meow as duck is to ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "lift"
+        },
+        {
+          "id": "B",
+          "text": "quack"
+        },
+        {
+          "id": "C",
+          "text": "eat"
+        },
+        {
+          "id": "D",
+          "text": "run"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Relation: animal-sound. cat : meow, so duck : quack.",
+      "reasoning": "Finding a relation (type: animal-sound) and applying it.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "analogy"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "verbal_analogy",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0024",
+      "domain": "verbal_reasoning",
+      "skill": "3.1",
+      "archetype": "verbal_analogy",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "phone is to call as pen is to ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "write"
+        },
+        {
+          "id": "B",
+          "text": "hit"
+        },
+        {
+          "id": "C",
+          "text": "sit"
+        },
+        {
+          "id": "D",
+          "text": "run"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Relation: function. phone : call, so pen : write.",
+      "reasoning": "Finding a relation (type: function) and applying it.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "analogy"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "verbal_analogy",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0025",
+      "domain": "verbal_reasoning",
+      "skill": "3.1",
+      "archetype": "verbal_analogy",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "sheep is to baa as duck is to ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "quack"
+        },
+        {
+          "id": "B",
+          "text": "colour"
+        },
+        {
+          "id": "C",
+          "text": "sit"
+        },
+        {
+          "id": "D",
+          "text": "jump"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Relation: animal-sound. sheep : baa, so duck : quack.",
+      "reasoning": "Finding a relation (type: animal-sound) and applying it.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "analogy"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "verbal_analogy",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0026",
+      "domain": "verbal_reasoning",
+      "skill": "3.2",
+      "archetype": "verbal_classification",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Which word is the odd one out? A apple  B chair  C banana  D pear",
+      "options": [
+        {
+          "id": "A",
+          "text": "apple"
+        },
+        {
+          "id": "B",
+          "text": "banana"
+        },
+        {
+          "id": "C",
+          "text": "pear"
+        },
+        {
+          "id": "D",
+          "text": "chair"
+        }
+      ],
+      "answer": "D",
+      "explanation": "banana, apple and pear are all fruit. chair does not belong.",
+      "reasoning": "Grouping words by meaning (semantic category).",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "odd_one_out"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "verbal_classification",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0027",
+      "domain": "verbal_reasoning",
+      "skill": "3.2",
+      "archetype": "verbal_classification",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Which word is the odd one out? A yellow  B blue  C table  D pink",
+      "options": [
+        {
+          "id": "A",
+          "text": "table"
+        },
+        {
+          "id": "B",
+          "text": "blue"
+        },
+        {
+          "id": "C",
+          "text": "pink"
+        },
+        {
+          "id": "D",
+          "text": "yellow"
+        }
+      ],
+      "answer": "A",
+      "explanation": "pink, blue and yellow are all colour. table does not belong.",
+      "reasoning": "Grouping words by meaning (semantic category).",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "odd_one_out"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "verbal_classification",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0028",
+      "domain": "verbal_reasoning",
+      "skill": "3.2",
+      "archetype": "verbal_classification",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Which word is the odd one out? A chair  B car  C boat  D plane",
+      "options": [
+        {
+          "id": "A",
+          "text": "chair"
+        },
+        {
+          "id": "B",
+          "text": "car"
+        },
+        {
+          "id": "C",
+          "text": "boat"
+        },
+        {
+          "id": "D",
+          "text": "plane"
+        }
+      ],
+      "answer": "A",
+      "explanation": "plane, car and boat are all vehicle. chair does not belong.",
+      "reasoning": "Grouping words by meaning (semantic category).",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "odd_one_out"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "verbal_classification",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0029",
+      "domain": "verbal_reasoning",
+      "skill": "3.2",
+      "archetype": "verbal_classification",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Which word is the odd one out? A banana  B apple  C cup  D pear",
+      "options": [
+        {
+          "id": "A",
+          "text": "cup"
+        },
+        {
+          "id": "B",
+          "text": "apple"
+        },
+        {
+          "id": "C",
+          "text": "banana"
+        },
+        {
+          "id": "D",
+          "text": "pear"
+        }
+      ],
+      "answer": "A",
+      "explanation": "pear, banana and apple are all fruit. cup does not belong.",
+      "reasoning": "Grouping words by meaning (semantic category).",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "odd_one_out"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "verbal_classification",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0030",
+      "domain": "verbal_reasoning",
+      "skill": "3.2",
+      "archetype": "verbal_classification",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Which word is the odd one out? A bird  B leaf  C lion  D fish",
+      "options": [
+        {
+          "id": "A",
+          "text": "lion"
+        },
+        {
+          "id": "B",
+          "text": "leaf"
+        },
+        {
+          "id": "C",
+          "text": "bird"
+        },
+        {
+          "id": "D",
+          "text": "fish"
+        }
+      ],
+      "answer": "B",
+      "explanation": "fish, lion and bird are all animal. leaf does not belong.",
+      "reasoning": "Grouping words by meaning (semantic category).",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "odd_one_out"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "verbal_classification",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0031",
+      "domain": "verbal_reasoning",
+      "skill": "3.4",
+      "archetype": "word_manipulation",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "In a code, the letters are reversed (CAT -> TAC). What does RATE become?",
+      "options": [
+        {
+          "id": "A",
+          "text": "TARR"
+        },
+        {
+          "id": "B",
+          "text": "ETAR"
+        },
+        {
+          "id": "C",
+          "text": "RATEX"
+        },
+        {
+          "id": "D",
+          "text": "ATER"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Reverse the letters of RATE: ETAR.",
+      "reasoning": "Discovering a reversal rule and applying it.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "word_manipulation"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "word_manipulation",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.4",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0032",
+      "domain": "verbal_reasoning",
+      "skill": "3.4",
+      "archetype": "word_manipulation",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "In a code, the letters are reversed (CAT -> TAC). What does TEAR become?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RAET"
+        },
+        {
+          "id": "B",
+          "text": "TEA"
+        },
+        {
+          "id": "C",
+          "text": "EART"
+        },
+        {
+          "id": "D",
+          "text": "TEARX"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reverse the letters of TEAR: RAET.",
+      "reasoning": "Discovering a reversal rule and applying it.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "word_manipulation"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "word_manipulation",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.4",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0033",
+      "domain": "verbal_reasoning",
+      "skill": "3.4",
+      "archetype": "word_manipulation",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "In a code, CAT becomes ATC. The rule moves the FIRST letter to the END. What does FLAME become?",
+      "options": [
+        {
+          "id": "A",
+          "text": "LAMEFF"
+        },
+        {
+          "id": "B",
+          "text": "LAMEF"
+        },
+        {
+          "id": "C",
+          "text": "EMALF"
+        },
+        {
+          "id": "D",
+          "text": "EFLAM"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Move the first letter of FLAME to the end: LAMEF.",
+      "reasoning": "Discovering a word-transformation rule and applying it.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "word_manipulation"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "word_manipulation",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.4",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0034",
+      "domain": "verbal_reasoning",
+      "skill": "3.4",
+      "archetype": "word_manipulation",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "In a code, CAT becomes ATC. The rule moves the FIRST letter to the END. What does PLANT become?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PLANTP"
+        },
+        {
+          "id": "B",
+          "text": "LANTP"
+        },
+        {
+          "id": "C",
+          "text": "TNALP"
+        },
+        {
+          "id": "D",
+          "text": "LANTPP"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Move the first letter of PLANT to the end: LANTP.",
+      "reasoning": "Discovering a word-transformation rule and applying it.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "word_manipulation"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "word_manipulation",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.4",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0035",
+      "domain": "verbal_reasoning",
+      "skill": "3.4",
+      "archetype": "word_manipulation",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "In a code, the letters are reversed (CAT -> TAC). What does LIST become?",
+      "options": [
+        {
+          "id": "A",
+          "text": "TSIL"
+        },
+        {
+          "id": "B",
+          "text": "SILL"
+        },
+        {
+          "id": "C",
+          "text": "LISTX"
+        },
+        {
+          "id": "D",
+          "text": "ISTL"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reverse the letters of LIST: TSIL.",
+      "reasoning": "Discovering a reversal rule and applying it.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "word_manipulation"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "word_manipulation",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.4",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0036",
+      "domain": "verbal_reasoning",
+      "skill": "3.5",
+      "archetype": "sentence_logic",
+      "level": "Challenge",
+      "difficulty": "hard",
+      "question_type": "multiple_choice",
+      "question": "Three friends each do a different activity: swimming, cycling, or running. Cai swims. Ali runs. Ben does not cycle. Who is cycling?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ali"
+        },
+        {
+          "id": "B",
+          "text": "Ben"
+        },
+        {
+          "id": "C",
+          "text": "Cai"
+        },
+        {
+          "id": "D",
+          "text": "Ben1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From the clues, Cai=swimming and Ali=running, so Ben=cycling; therefore Ben is cycling.",
+      "reasoning": "Combining three clues into a unique assignment.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "logic"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "sentence_logic",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.5",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0037",
+      "domain": "verbal_reasoning",
+      "skill": "3.5",
+      "archetype": "sentence_logic",
+      "level": "Challenge",
+      "difficulty": "hard",
+      "question_type": "multiple_choice",
+      "question": "Three friends each do a different activity: swimming, cycling, or running. Cai cycles. Ben swims. Ali does not run. Who is running?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ali1"
+        },
+        {
+          "id": "B",
+          "text": "Ben"
+        },
+        {
+          "id": "C",
+          "text": "Cai"
+        },
+        {
+          "id": "D",
+          "text": "Ali"
+        }
+      ],
+      "answer": "D",
+      "explanation": "From the clues, Cai=cycling and Ben=swimming, so Ali=running; therefore Ali is running.",
+      "reasoning": "Combining three clues into a unique assignment.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "logic"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "sentence_logic",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.5",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0038",
+      "domain": "verbal_reasoning",
+      "skill": "3.5",
+      "archetype": "sentence_logic",
+      "level": "Challenge",
+      "difficulty": "hard",
+      "question_type": "multiple_choice",
+      "question": "Three friends each do a different activity: swimming, cycling, or running. Cai swims. Ben runs. Ali does not cycle. Who is cycling?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cai"
+        },
+        {
+          "id": "B",
+          "text": "Ali"
+        },
+        {
+          "id": "C",
+          "text": "Ali1"
+        },
+        {
+          "id": "D",
+          "text": "Ben"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From the clues, Cai=swimming and Ben=running, so Ali=cycling; therefore Ali is cycling.",
+      "reasoning": "Combining three clues into a unique assignment.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "logic"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "sentence_logic",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.5",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0039",
+      "domain": "verbal_reasoning",
+      "skill": "3.5",
+      "archetype": "sentence_logic",
+      "level": "Challenge",
+      "difficulty": "hard",
+      "question_type": "multiple_choice",
+      "question": "Three friends each do a different activity: swimming, cycling, or running. Cai cycles. Ali swims. Ben does not run. Who is running?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ali"
+        },
+        {
+          "id": "B",
+          "text": "Ben"
+        },
+        {
+          "id": "C",
+          "text": "Ben1"
+        },
+        {
+          "id": "D",
+          "text": "Cai"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From the clues, Cai=cycling and Ali=swimming, so Ben=running; therefore Ben is running.",
+      "reasoning": "Combining three clues into a unique assignment.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "logic"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "sentence_logic",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.5",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0040",
+      "domain": "verbal_reasoning",
+      "skill": "3.5",
+      "archetype": "sentence_logic",
+      "level": "Challenge",
+      "difficulty": "hard",
+      "question_type": "multiple_choice",
+      "question": "Three friends each do a different activity: swimming, cycling, or running. Ali swims. Cai runs. Ben does not cycle. Who is cycling?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ben1"
+        },
+        {
+          "id": "B",
+          "text": "Cai"
+        },
+        {
+          "id": "C",
+          "text": "Ali"
+        },
+        {
+          "id": "D",
+          "text": "Ben"
+        }
+      ],
+      "answer": "D",
+      "explanation": "From the clues, Ali=swimming and Cai=running, so Ben=cycling; therefore Ben is cycling.",
+      "reasoning": "Combining three clues into a unique assignment.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "logic"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "sentence_logic",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.5",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0041",
+      "domain": "pattern_abstract",
+      "skill": "5.1",
+      "archetype": "figure_sequence",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "Groups of dots: 2, 4, 8, 16. How many dots come next?",
+      "options": [
+        {
+          "id": "A",
+          "text": "16"
+        },
+        {
+          "id": "B",
+          "text": "33"
+        },
+        {
+          "id": "C",
+          "text": "8"
+        },
+        {
+          "id": "D",
+          "text": "32"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Rule: double each group. Next group = 32.",
+      "reasoning": "Continuing a count sequence.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "count_sequence",
+        "counts": [
+          2,
+          4,
+          8,
+          16
+        ],
+        "next": 32
+      },
+      "image_path": "p3/BA_P3_ADD_0041.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "sequence"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "figure_sequence",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0042",
+      "domain": "pattern_abstract",
+      "skill": "5.1",
+      "archetype": "figure_sequence",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Groups of dots: 1, 2, 3, 4. How many dots come next?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3"
+        },
+        {
+          "id": "B",
+          "text": "4"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Rule: add 1 each group. Next group = 5.",
+      "reasoning": "Continuing a count sequence.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "count_sequence",
+        "counts": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "next": 5
+      },
+      "image_path": "p3/BA_P3_ADD_0042.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "sequence"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "figure_sequence",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0043",
+      "domain": "pattern_abstract",
+      "skill": "5.1",
+      "archetype": "figure_sequence",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "Groups of dots: 3, 6, 12, 24, 48. How many dots come next?",
+      "options": [
+        {
+          "id": "A",
+          "text": "96"
+        },
+        {
+          "id": "B",
+          "text": "48"
+        },
+        {
+          "id": "C",
+          "text": "97"
+        },
+        {
+          "id": "D",
+          "text": "24"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rule: double each group. Next group = 96.",
+      "reasoning": "Continuing a count sequence.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "count_sequence",
+        "counts": [
+          3,
+          6,
+          12,
+          24,
+          48
+        ],
+        "next": 96
+      },
+      "image_path": "p3/BA_P3_ADD_0043.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "sequence"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "figure_sequence",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0044",
+      "domain": "pattern_abstract",
+      "skill": "5.1",
+      "archetype": "figure_sequence",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Groups of dots: 4, 6, 8, 10. How many dots come next?",
+      "options": [
+        {
+          "id": "A",
+          "text": "12"
+        },
+        {
+          "id": "B",
+          "text": "10"
+        },
+        {
+          "id": "C",
+          "text": "8"
+        },
+        {
+          "id": "D",
+          "text": "13"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rule: add 2 each group. Next group = 12.",
+      "reasoning": "Continuing a count sequence.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "count_sequence",
+        "counts": [
+          4,
+          6,
+          8,
+          10
+        ],
+        "next": 12
+      },
+      "image_path": "p3/BA_P3_ADD_0044.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "sequence"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "figure_sequence",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0045",
+      "domain": "pattern_abstract",
+      "skill": "5.1",
+      "archetype": "figure_sequence",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Groups of dots: 1, 2, 3, 4. How many dots come next?",
+      "options": [
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "5"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Rule: add 1 each group. Next group = 5.",
+      "reasoning": "Continuing a count sequence.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "count_sequence",
+        "counts": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "next": 5
+      },
+      "image_path": "p3/BA_P3_ADD_0045.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "sequence"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "figure_sequence",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0046",
+      "domain": "pattern_abstract",
+      "skill": "5.2",
+      "archetype": "matrix",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Top-left is a small red circle. Top-right is the changed version. Bottom-left is a small blue circle. Following the same change, what should the bottom-right be?",
+      "options": [
+        {
+          "id": "A",
+          "text": "small green circle1"
+        },
+        {
+          "id": "B",
+          "text": "small green circle"
+        },
+        {
+          "id": "C",
+          "text": "small red circle"
+        },
+        {
+          "id": "D",
+          "text": "small blue circle"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rule across the row: the colour changes to the next one (red -> blue -> green -> red). Apply to bottom-left -> small green circle.",
+      "reasoning": "Mapping a transformation across a 2x2 matrix.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "analogy_matrix",
+        "rows": 2,
+        "cols": 2,
+        "rule": "the colour changes to the next one (red -> blue -> green -> red)",
+        "cells": [
+          [
+            "a small red circle",
+            "a small blue circle"
+          ],
+          [
+            "a small blue circle",
+            "?"
+          ]
+        ]
+      },
+      "image_path": "p3/BA_P3_ADD_0046.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "matrix"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "matrix",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0047",
+      "domain": "pattern_abstract",
+      "skill": "5.2",
+      "archetype": "matrix",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Top-left is a small green triangle. Top-right is the changed version. Bottom-left is a small blue hexagon. Following the same change, what should the bottom-right be?",
+      "options": [
+        {
+          "id": "A",
+          "text": "small blue triangle"
+        },
+        {
+          "id": "B",
+          "text": "small green triangle"
+        },
+        {
+          "id": "C",
+          "text": "small green square"
+        },
+        {
+          "id": "D",
+          "text": "small blue hexagon"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rule across the row: the shape changes to the next one in the cycle (triangle -> square -> circle -> pentagon -> hexagon -> triangle). Apply to bottom-left -> small blue triangle.",
+      "reasoning": "Mapping a transformation across a 2x2 matrix.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "analogy_matrix",
+        "rows": 2,
+        "cols": 2,
+        "rule": "the shape changes to the next one in the cycle (triangle -> square -> circle -> pentagon -> hexagon -> triangle)",
+        "cells": [
+          [
+            "a small green triangle",
+            "a small green square"
+          ],
+          [
+            "a small blue hexagon",
+            "?"
+          ]
+        ]
+      },
+      "image_path": "p3/BA_P3_ADD_0047.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "matrix"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "matrix",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0048",
+      "domain": "pattern_abstract",
+      "skill": "5.2",
+      "archetype": "matrix",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "Top-left is a large blue hexagon with a dot. Top-right is the changed version. Bottom-left is a small red triangle with a dot. Following the same change, what should the bottom-right be?",
+      "options": [
+        {
+          "id": "A",
+          "text": "large red triangle with a dot"
+        },
+        {
+          "id": "B",
+          "text": "small red triangle with a dot"
+        },
+        {
+          "id": "C",
+          "text": "small blue hexagon with a dot"
+        },
+        {
+          "id": "D",
+          "text": "large blue hexagon with a dot"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rule across the row: the size flips (small <-> large). Apply to bottom-left -> large red triangle with a dot.",
+      "reasoning": "Mapping a transformation across a 2x2 matrix.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "analogy_matrix",
+        "rows": 2,
+        "cols": 2,
+        "rule": "the size flips (small <-> large)",
+        "cells": [
+          [
+            "a large blue hexagon with a dot",
+            "a small blue hexagon with a dot"
+          ],
+          [
+            "a small red triangle with a dot",
+            "?"
+          ]
+        ]
+      },
+      "image_path": "p3/BA_P3_ADD_0048.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "matrix"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "matrix",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0049",
+      "domain": "pattern_abstract",
+      "skill": "5.2",
+      "archetype": "matrix",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "Top-left is a small green square. Top-right is the changed version. Bottom-left is a large blue circle with a dot. Following the same change, what should the bottom-right be?",
+      "options": [
+        {
+          "id": "A",
+          "text": "small green square"
+        },
+        {
+          "id": "B",
+          "text": "small green square with a dot"
+        },
+        {
+          "id": "C",
+          "text": "large blue circle"
+        },
+        {
+          "id": "D",
+          "text": "large blue circle with a dot"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Rule across the row: a dot is added if missing, removed if present. Apply to bottom-left -> large blue circle.",
+      "reasoning": "Mapping a transformation across a 2x2 matrix.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "analogy_matrix",
+        "rows": 2,
+        "cols": 2,
+        "rule": "a dot is added if missing, removed if present",
+        "cells": [
+          [
+            "a small green square",
+            "a small green square with a dot"
+          ],
+          [
+            "a large blue circle with a dot",
+            "?"
+          ]
+        ]
+      },
+      "image_path": "p3/BA_P3_ADD_0049.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "matrix"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "matrix",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0050",
+      "domain": "pattern_abstract",
+      "skill": "5.2",
+      "archetype": "matrix",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "Top-left is a large blue circle. Top-right is the changed version. Bottom-left is a large green circle. Following the same change, what should the bottom-right be?",
+      "options": [
+        {
+          "id": "A",
+          "text": "small blue circle"
+        },
+        {
+          "id": "B",
+          "text": "large green circle"
+        },
+        {
+          "id": "C",
+          "text": "large blue circle"
+        },
+        {
+          "id": "D",
+          "text": "small green circle"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Rule across the row: the size flips (small <-> large). Apply to bottom-left -> small green circle.",
+      "reasoning": "Mapping a transformation across a 2x2 matrix.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "analogy_matrix",
+        "rows": 2,
+        "cols": 2,
+        "rule": "the size flips (small <-> large)",
+        "cells": [
+          [
+            "a large blue circle",
+            "a small blue circle"
+          ],
+          [
+            "a large green circle",
+            "?"
+          ]
+        ]
+      },
+      "image_path": "p3/BA_P3_ADD_0050.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "matrix"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "matrix",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0051",
+      "domain": "pattern_abstract",
+      "skill": "5.3",
+      "archetype": "figure_odd_one_out",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "Four figures: A large red hexagon with a dot, B small red hexagon with a dot, C large red hexagon with a dot, D large red hexagon with a dot. Which does not belong?",
+      "options": [
+        {
+          "id": "A",
+          "text": "C"
+        },
+        {
+          "id": "B",
+          "text": "A"
+        },
+        {
+          "id": "C",
+          "text": "B"
+        },
+        {
+          "id": "D",
+          "text": "D"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Three of the four share the same size; the odd one is B.",
+      "reasoning": "Odd-one-out by size.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "odd_one_out",
+        "dimension": "size",
+        "items": [
+          {
+            "id": "A",
+            "desc": "large red hexagon with a dot"
+          },
+          {
+            "id": "B",
+            "desc": "small red hexagon with a dot"
+          },
+          {
+            "id": "C",
+            "desc": "large red hexagon with a dot"
+          },
+          {
+            "id": "D",
+            "desc": "large red hexagon with a dot"
+          }
+        ]
+      },
+      "image_path": "p3/BA_P3_ADD_0051.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "odd_one_out"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "figure_odd_one_out",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0052",
+      "domain": "pattern_abstract",
+      "skill": "5.3",
+      "archetype": "figure_odd_one_out",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "Four figures: A small red hexagon, B large red hexagon, C large red hexagon, D large red hexagon. Which does not belong?",
+      "options": [
+        {
+          "id": "A",
+          "text": "B"
+        },
+        {
+          "id": "B",
+          "text": "D"
+        },
+        {
+          "id": "C",
+          "text": "A"
+        },
+        {
+          "id": "D",
+          "text": "C"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Three of the four share the same size; the odd one is A.",
+      "reasoning": "Odd-one-out by size.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "odd_one_out",
+        "dimension": "size",
+        "items": [
+          {
+            "id": "A",
+            "desc": "small red hexagon"
+          },
+          {
+            "id": "B",
+            "desc": "large red hexagon"
+          },
+          {
+            "id": "C",
+            "desc": "large red hexagon"
+          },
+          {
+            "id": "D",
+            "desc": "large red hexagon"
+          }
+        ]
+      },
+      "image_path": "p3/BA_P3_ADD_0052.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "odd_one_out"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "figure_odd_one_out",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0053",
+      "domain": "pattern_abstract",
+      "skill": "5.3",
+      "archetype": "figure_odd_one_out",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Four figures: A small blue circle with a dot, B small blue square with a dot, C small blue square with a dot, D small blue square with a dot. Which does not belong?",
+      "options": [
+        {
+          "id": "A",
+          "text": "C"
+        },
+        {
+          "id": "B",
+          "text": "D"
+        },
+        {
+          "id": "C",
+          "text": "B"
+        },
+        {
+          "id": "D",
+          "text": "A"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Three of the four share the same shape; the odd one is A.",
+      "reasoning": "Odd-one-out by shape.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "odd_one_out",
+        "dimension": "shape",
+        "items": [
+          {
+            "id": "A",
+            "desc": "small blue circle with a dot"
+          },
+          {
+            "id": "B",
+            "desc": "small blue square with a dot"
+          },
+          {
+            "id": "C",
+            "desc": "small blue square with a dot"
+          },
+          {
+            "id": "D",
+            "desc": "small blue square with a dot"
+          }
+        ]
+      },
+      "image_path": "p3/BA_P3_ADD_0053.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "odd_one_out"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "figure_odd_one_out",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0054",
+      "domain": "pattern_abstract",
+      "skill": "5.3",
+      "archetype": "figure_odd_one_out",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "Four figures: A small red pentagon, B small red pentagon with a dot, C small red pentagon with a dot, D small red pentagon with a dot. Which does not belong?",
+      "options": [
+        {
+          "id": "A",
+          "text": "C"
+        },
+        {
+          "id": "B",
+          "text": "D"
+        },
+        {
+          "id": "C",
+          "text": "B"
+        },
+        {
+          "id": "D",
+          "text": "A"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Three of the four share the same dot; the odd one is A.",
+      "reasoning": "Odd-one-out by dot.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "odd_one_out",
+        "dimension": "dot",
+        "items": [
+          {
+            "id": "A",
+            "desc": "small red pentagon"
+          },
+          {
+            "id": "B",
+            "desc": "small red pentagon with a dot"
+          },
+          {
+            "id": "C",
+            "desc": "small red pentagon with a dot"
+          },
+          {
+            "id": "D",
+            "desc": "small red pentagon with a dot"
+          }
+        ]
+      },
+      "image_path": "p3/BA_P3_ADD_0054.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "odd_one_out"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "figure_odd_one_out",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0055",
+      "domain": "pattern_abstract",
+      "skill": "5.3",
+      "archetype": "figure_odd_one_out",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "Four figures: A small red pentagon, B small red pentagon with a dot, C small red pentagon, D small red pentagon. Which does not belong?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A"
+        },
+        {
+          "id": "B",
+          "text": "B"
+        },
+        {
+          "id": "C",
+          "text": "D"
+        },
+        {
+          "id": "D",
+          "text": "C"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Three of the four share the same dot; the odd one is B.",
+      "reasoning": "Odd-one-out by dot.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "odd_one_out",
+        "dimension": "dot",
+        "items": [
+          {
+            "id": "A",
+            "desc": "small red pentagon"
+          },
+          {
+            "id": "B",
+            "desc": "small red pentagon with a dot"
+          },
+          {
+            "id": "C",
+            "desc": "small red pentagon"
+          },
+          {
+            "id": "D",
+            "desc": "small red pentagon"
+          }
+        ]
+      },
+      "image_path": "p3/BA_P3_ADD_0055.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "odd_one_out"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "figure_odd_one_out",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0056",
+      "domain": "pattern_abstract",
+      "skill": "5.4",
+      "archetype": "figure_analogy",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "A small blue triangle with a dot changes into a small blue square with a dot (one attribute changes). Using the same change, a large blue circle with a dot changes into a ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "large blue pentagon with a dot"
+        },
+        {
+          "id": "B",
+          "text": "small blue triangle with a dot"
+        },
+        {
+          "id": "C",
+          "text": "small blue square with a dot"
+        },
+        {
+          "id": "D",
+          "text": "large blue circle with a dot"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rule: the shape changes to the next one in the cycle (triangle -> square -> circle -> pentagon -> hexagon -> triangle). Apply to the second pair -> large blue pentagon with a dot.",
+      "reasoning": "Mapping a transformation in a figure analogy.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "shape_analogy",
+        "rule": "the shape changes to the next one in the cycle (triangle -> square -> circle -> pentagon -> hexagon -> triangle)",
+        "pair1": {
+          "small blue triangle with a dot": "small blue square with a dot"
+        },
+        "pair2": {
+          "large blue circle with a dot": "?"
+        }
+      },
+      "image_path": "p3/BA_P3_ADD_0056.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "analogy"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "figure_analogy",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.4",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0057",
+      "domain": "pattern_abstract",
+      "skill": "5.4",
+      "archetype": "figure_analogy",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "A large green pentagon changes into a large green hexagon (one attribute changes). Using the same change, a large blue hexagon with a dot changes into a ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "large green hexagon"
+        },
+        {
+          "id": "B",
+          "text": "large blue hexagon with a dot"
+        },
+        {
+          "id": "C",
+          "text": "large blue triangle with a dot"
+        },
+        {
+          "id": "D",
+          "text": "large green pentagon"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Rule: the shape changes to the next one in the cycle (triangle -> square -> circle -> pentagon -> hexagon -> triangle). Apply to the second pair -> large blue triangle with a dot.",
+      "reasoning": "Mapping a transformation in a figure analogy.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "shape_analogy",
+        "rule": "the shape changes to the next one in the cycle (triangle -> square -> circle -> pentagon -> hexagon -> triangle)",
+        "pair1": {
+          "large green pentagon": "large green hexagon"
+        },
+        "pair2": {
+          "large blue hexagon with a dot": "?"
+        }
+      },
+      "image_path": "p3/BA_P3_ADD_0057.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "analogy"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "figure_analogy",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.4",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0058",
+      "domain": "pattern_abstract",
+      "skill": "5.4",
+      "archetype": "figure_analogy",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "A small blue triangle with a dot changes into a small blue triangle (one attribute changes). Using the same change, a large blue circle with a dot changes into a ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "small blue triangle with a dot"
+        },
+        {
+          "id": "B",
+          "text": "large blue circle with a dot"
+        },
+        {
+          "id": "C",
+          "text": "small blue triangle"
+        },
+        {
+          "id": "D",
+          "text": "large blue circle"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Rule: a dot is added if missing, removed if present. Apply to the second pair -> large blue circle.",
+      "reasoning": "Mapping a transformation in a figure analogy.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "shape_analogy",
+        "rule": "a dot is added if missing, removed if present",
+        "pair1": {
+          "small blue triangle with a dot": "small blue triangle"
+        },
+        "pair2": {
+          "large blue circle with a dot": "?"
+        }
+      },
+      "image_path": "p3/BA_P3_ADD_0058.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "analogy"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "figure_analogy",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.4",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0059",
+      "domain": "pattern_abstract",
+      "skill": "5.4",
+      "archetype": "figure_analogy",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "A small red triangle with a dot changes into a small blue triangle with a dot (one attribute changes). Using the same change, a large blue pentagon changes into a ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "small red triangle with a dot"
+        },
+        {
+          "id": "B",
+          "text": "large green pentagon"
+        },
+        {
+          "id": "C",
+          "text": "small blue triangle with a dot"
+        },
+        {
+          "id": "D",
+          "text": "large blue pentagon"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rule: the colour changes to the next one (red -> blue -> green -> red). Apply to the second pair -> large green pentagon.",
+      "reasoning": "Mapping a transformation in a figure analogy.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "shape_analogy",
+        "rule": "the colour changes to the next one (red -> blue -> green -> red)",
+        "pair1": {
+          "small red triangle with a dot": "small blue triangle with a dot"
+        },
+        "pair2": {
+          "large blue pentagon": "?"
+        }
+      },
+      "image_path": "p3/BA_P3_ADD_0059.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "analogy"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "figure_analogy",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.4",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0060",
+      "domain": "pattern_abstract",
+      "skill": "5.4",
+      "archetype": "figure_analogy",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "A small green square with a dot changes into a small red square with a dot (one attribute changes). Using the same change, a small red square changes into a ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "small red square"
+        },
+        {
+          "id": "B",
+          "text": "small red square with a dot"
+        },
+        {
+          "id": "C",
+          "text": "small blue square"
+        },
+        {
+          "id": "D",
+          "text": "small green square with a dot"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Rule: the colour changes to the next one (red -> blue -> green -> red). Apply to the second pair -> small blue square.",
+      "reasoning": "Mapping a transformation in a figure analogy.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "shape_analogy",
+        "rule": "the colour changes to the next one (red -> blue -> green -> red)",
+        "pair1": {
+          "small green square with a dot": "small red square with a dot"
+        },
+        "pair2": {
+          "small red square": "?"
+        }
+      },
+      "image_path": "p3/BA_P3_ADD_0060.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "analogy"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "figure_analogy",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.4",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0061",
+      "domain": "problem_solving",
+      "skill": "6.1",
+      "archetype": "working_backwards",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "A number is changed by: x 4; + 3. The final result is 15. What was the starting number? Check by going forward.",
+      "options": [
+        {
+          "id": "A",
+          "text": "4"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "2"
+        },
+        {
+          "id": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Work backwards: before adding 3 there were 12; before multiplying by 4 it was 3. Starting number = 3.",
+      "reasoning": "Working backwards through the steps and verifying.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "working_backwards"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "working_backwards",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0062",
+      "domain": "problem_solving",
+      "skill": "6.1",
+      "archetype": "working_backwards",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "A number is changed by: + 2; x 3. The final result is 21. What was the starting number? Check by going forward.",
+      "options": [
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "7"
+        },
+        {
+          "id": "C",
+          "text": "4"
+        },
+        {
+          "id": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Work backwards: before multiplying by 3 it was 7; before adding 2 there were 5. Starting number = 5.",
+      "reasoning": "Working backwards through the steps and verifying.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "working_backwards"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "working_backwards",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0063",
+      "domain": "problem_solving",
+      "skill": "6.1",
+      "archetype": "working_backwards",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "A number is changed by: + 5; + 4. The final result is 12. What was the starting number? Check by going forward.",
+      "options": [
+        {
+          "id": "A",
+          "text": "3"
+        },
+        {
+          "id": "B",
+          "text": "2"
+        },
+        {
+          "id": "C",
+          "text": "6"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Work backwards: before adding 4 there were 8; before adding 5 there were 3. Starting number = 3.",
+      "reasoning": "Working backwards through the steps and verifying.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "working_backwards"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "working_backwards",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0064",
+      "domain": "problem_solving",
+      "skill": "6.1",
+      "archetype": "working_backwards",
+      "level": "Challenge",
+      "difficulty": "hard",
+      "question_type": "multiple_choice",
+      "question": "A number is changed by: x 4; x 2; x 2. The final result is 112. What was the starting number? Check by going forward.",
+      "options": [
+        {
+          "id": "A",
+          "text": "14"
+        },
+        {
+          "id": "B",
+          "text": "7"
+        },
+        {
+          "id": "C",
+          "text": "9"
+        },
+        {
+          "id": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Work backwards: before multiplying by 2 it was 56; before multiplying by 2 it was 28; before multiplying by 4 it was 7. Starting number = 7.",
+      "reasoning": "Working backwards through the steps and verifying.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "working_backwards"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "working_backwards",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0065",
+      "domain": "problem_solving",
+      "skill": "6.1",
+      "archetype": "working_backwards",
+      "level": "Challenge",
+      "difficulty": "hard",
+      "question_type": "multiple_choice",
+      "question": "A number is changed by: + 2; x 4; x 2. The final result is 80. What was the starting number? Check by going forward.",
+      "options": [
+        {
+          "id": "A",
+          "text": "10"
+        },
+        {
+          "id": "B",
+          "text": "8"
+        },
+        {
+          "id": "C",
+          "text": "7"
+        },
+        {
+          "id": "D",
+          "text": "16"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Work backwards: before multiplying by 2 it was 40; before multiplying by 4 it was 10; before adding 2 there were 8. Starting number = 8.",
+      "reasoning": "Working backwards through the steps and verifying.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "working_backwards"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "working_backwards",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0066",
+      "domain": "problem_solving",
+      "skill": "6.2",
+      "archetype": "guess_check",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Some coins are 2-dollar and some are 5-dollar. There are 6 coins in total and they make 27 dollars. How many 5-dollar coins are there?",
+      "options": [
+        {
+          "id": "A",
+          "text": "5"
+        },
+        {
+          "id": "B",
+          "text": "4"
+        },
+        {
+          "id": "C",
+          "text": "0"
+        },
+        {
+          "id": "D",
+          "text": "7"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Try 5 five-dollar coins (= 25) and 1 two-dollar coins (= 2). Total 6 coins, 27 dollars. Fits, so 5 five-dollar coins.",
+      "reasoning": "Systematic guess-and-check across a few cases.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "guess_check"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "guess_check",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0067",
+      "domain": "problem_solving",
+      "skill": "6.2",
+      "archetype": "guess_check",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Some coins are 2-dollar and some are 5-dollar. There are 9 coins in total and they make 27 dollars. How many 5-dollar coins are there?",
+      "options": [
+        {
+          "id": "A",
+          "text": "5"
+        },
+        {
+          "id": "B",
+          "text": "0"
+        },
+        {
+          "id": "C",
+          "text": "2"
+        },
+        {
+          "id": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Try 3 five-dollar coins (= 15) and 6 two-dollar coins (= 12). Total 9 coins, 27 dollars. Fits, so 3 five-dollar coins.",
+      "reasoning": "Systematic guess-and-check across a few cases.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "guess_check"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "guess_check",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0068",
+      "domain": "problem_solving",
+      "skill": "6.2",
+      "archetype": "guess_check",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Some coins are 2-dollar and some are 5-dollar. There are 7 coins in total and they make 26 dollars. How many 5-dollar coins are there?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "5"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Try 4 five-dollar coins (= 20) and 3 two-dollar coins (= 6). Total 7 coins, 26 dollars. Fits, so 4 five-dollar coins.",
+      "reasoning": "Systematic guess-and-check across a few cases.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "guess_check"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "guess_check",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0070",
+      "domain": "problem_solving",
+      "skill": "6.2",
+      "archetype": "guess_check",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Some coins are 2-dollar and some are 5-dollar. There are 9 coins in total and they make 18 dollars. How many 5-dollar coins are there?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1"
+        },
+        {
+          "id": "B",
+          "text": "0"
+        },
+        {
+          "id": "C",
+          "text": "-1"
+        },
+        {
+          "id": "D",
+          "text": "2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Try 0 five-dollar coins (= 0) and 9 two-dollar coins (= 18). Total 9 coins, 18 dollars. Fits, so 0 five-dollar coins.",
+      "reasoning": "Systematic guess-and-check across a few cases.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "guess_check"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "guess_check",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0071",
+      "domain": "problem_solving",
+      "skill": "6.2",
+      "archetype": "guess_check",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Some coins are 2-dollar and some are 5-dollar. There are 7 coins in total and they make 29 dollars. How many 5-dollar coins are there?",
+      "options": [
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "5"
+        },
+        {
+          "id": "C",
+          "text": "0"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Try 5 five-dollar coins (= 25) and 2 two-dollar coins (= 4). Total 7 coins, 29 dollars. Fits, so 5 five-dollar coins.",
+      "reasoning": "Systematic guess-and-check across a few cases.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "guess_check"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "guess_check",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0072",
+      "domain": "problem_solving",
+      "skill": "6.3",
+      "archetype": "before_after",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Amy has 2 more stickers than Ben. Amy gives Ben 2 stickers. Now who has more stickers, and by how many?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Amy, by 4"
+        },
+        {
+          "id": "B",
+          "text": "They are equal"
+        },
+        {
+          "id": "C",
+          "text": "Ben, by 2"
+        },
+        {
+          "id": "D",
+          "text": "Ben, by 1"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Originally Amy leads by 2. Giving 2 reduces the gap by 4 (2 x 2), so the gap is now -2.",
+      "reasoning": "Constant-difference under a transfer.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "before_after"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "before_after",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0073",
+      "domain": "problem_solving",
+      "skill": "6.3",
+      "archetype": "before_after",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Amy has 2 more stickers than Ben. Amy gives Ben 3 stickers. Now who has more stickers, and by how many?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ben, by 2"
+        },
+        {
+          "id": "B",
+          "text": "They are equal"
+        },
+        {
+          "id": "C",
+          "text": "Ben, by 1"
+        },
+        {
+          "id": "D",
+          "text": "Ben, by 4"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Originally Amy leads by 2. Giving 3 reduces the gap by 6 (2 x 3), so the gap is now -4.",
+      "reasoning": "Constant-difference under a transfer.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "before_after"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "before_after",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0074",
+      "domain": "problem_solving",
+      "skill": "6.3",
+      "archetype": "before_after",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Amy has 4 more stickers than Ben. Amy gives Ben 1 sticker. Now who has more stickers, and by how many?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ben, by 4"
+        },
+        {
+          "id": "B",
+          "text": "Amy, by 5"
+        },
+        {
+          "id": "C",
+          "text": "They are equal"
+        },
+        {
+          "id": "D",
+          "text": "Amy, by 2"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Originally Amy leads by 4. Giving 1 reduces the gap by 2 (2 x 1), so the gap is now 2.",
+      "reasoning": "Constant-difference under a transfer.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "before_after"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "before_after",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0075",
+      "domain": "problem_solving",
+      "skill": "6.3",
+      "archetype": "before_after",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Amy has 3 more stickers than Ben. Amy gives Ben 3 stickers. Now who has more stickers, and by how many?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ben, by 3"
+        },
+        {
+          "id": "B",
+          "text": "They are equal"
+        },
+        {
+          "id": "C",
+          "text": "Amy, by 6"
+        },
+        {
+          "id": "D",
+          "text": "Ben, by 1"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Originally Amy leads by 3. Giving 3 reduces the gap by 6 (2 x 3), so the gap is now -3.",
+      "reasoning": "Constant-difference under a transfer.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "before_after"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "before_after",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0076",
+      "domain": "problem_solving",
+      "skill": "6.3",
+      "archetype": "before_after",
+      "level": "Think",
+      "difficulty": "medium",
+      "question_type": "multiple_choice",
+      "question": "Amy has 2 more stickers than Ben. Amy gives Ben 3 stickers. Now who has more stickers, and by how many?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They are equal"
+        },
+        {
+          "id": "B",
+          "text": "Ben, by 1"
+        },
+        {
+          "id": "C",
+          "text": "Ben, by 4"
+        },
+        {
+          "id": "D",
+          "text": "Ben, by 2"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Originally Amy leads by 2. Giving 3 reduces the gap by 6 (2 x 3), so the gap is now -4.",
+      "reasoning": "Constant-difference under a transfer.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "before_after"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "before_after",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0077",
+      "domain": "problem_solving",
+      "skill": "6.6",
+      "archetype": "pattern_application",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 10 become?",
+      "options": [
+        {
+          "id": "A",
+          "text": "30"
+        },
+        {
+          "id": "B",
+          "text": "32"
+        },
+        {
+          "id": "C",
+          "text": "36"
+        },
+        {
+          "id": "D",
+          "text": "31"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Each output is the input x 3 + 1. So 10 -> 10 x 3 + 1 = 31.",
+      "reasoning": "Discovering a rule, then applying it to a far case.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "pattern_application"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "pattern_application",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.6",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0078",
+      "domain": "problem_solving",
+      "skill": "6.6",
+      "archetype": "pattern_application",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 11 become?",
+      "options": [
+        {
+          "id": "A",
+          "text": "39"
+        },
+        {
+          "id": "B",
+          "text": "34"
+        },
+        {
+          "id": "C",
+          "text": "33"
+        },
+        {
+          "id": "D",
+          "text": "32"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each output is the input x 3 + 1. So 11 -> 11 x 3 + 1 = 34.",
+      "reasoning": "Discovering a rule, then applying it to a far case.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "pattern_application"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "pattern_application",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.6",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0079",
+      "domain": "problem_solving",
+      "skill": "6.6",
+      "archetype": "pattern_application",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 11 become?",
+      "options": [
+        {
+          "id": "A",
+          "text": "35"
+        },
+        {
+          "id": "B",
+          "text": "33"
+        },
+        {
+          "id": "C",
+          "text": "34"
+        },
+        {
+          "id": "D",
+          "text": "39"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Each output is the input x 3 + 1. So 11 -> 11 x 3 + 1 = 34.",
+      "reasoning": "Discovering a rule, then applying it to a far case.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "pattern_application"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "pattern_application",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.6",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0080",
+      "domain": "problem_solving",
+      "skill": "6.6",
+      "archetype": "pattern_application",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 12 become?",
+      "options": [
+        {
+          "id": "A",
+          "text": "35"
+        },
+        {
+          "id": "B",
+          "text": "37"
+        },
+        {
+          "id": "C",
+          "text": "36"
+        },
+        {
+          "id": "D",
+          "text": "38"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each output is the input x 3 + 1. So 12 -> 12 x 3 + 1 = 37.",
+      "reasoning": "Discovering a rule, then applying it to a far case.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "pattern_application"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "pattern_application",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.6",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0081",
+      "domain": "problem_solving",
+      "skill": "6.6",
+      "archetype": "pattern_application",
+      "level": "Explore",
+      "difficulty": "easy",
+      "question_type": "multiple_choice",
+      "question": "A machine uses this rule: 1 -> 4, 2 -> 7, 3 -> 10. What should 8 become?",
+      "options": [
+        {
+          "id": "A",
+          "text": "23"
+        },
+        {
+          "id": "B",
+          "text": "25"
+        },
+        {
+          "id": "C",
+          "text": "24"
+        },
+        {
+          "id": "D",
+          "text": "30"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each output is the input x 3 + 1. So 8 -> 8 x 3 + 1 = 25.",
+      "reasoning": "Discovering a rule, then applying it to a far case.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "pattern_application"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "pattern_application",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.6",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0082",
+      "domain": "numerical_reasoning",
+      "skill": "1.1",
+      "archetype": "number_sequence",
+      "level": "Master",
+      "difficulty": "expert",
+      "question_type": "multiple_choice",
+      "question": "Find the next number: 2, 6, 18, 22, 66, 70, ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "209"
+        },
+        {
+          "id": "B",
+          "text": "210"
+        },
+        {
+          "id": "C",
+          "text": "630"
+        },
+        {
+          "id": "D",
+          "text": "214"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rule: alternating rule: add 4, then multiply by 3, repeat. The 7th term = 210.",
+      "reasoning": "Two-rule alternating number sequence (expert).",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "pattern",
+        "master"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "number_sequence",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0083",
+      "domain": "numerical_reasoning",
+      "skill": "1.1",
+      "archetype": "number_sequence",
+      "level": "Master",
+      "difficulty": "expert",
+      "question_type": "multiple_choice",
+      "question": "Find the next number: 2, 4, 12, 14, 42, 44, ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "396"
+        },
+        {
+          "id": "B",
+          "text": "134"
+        },
+        {
+          "id": "C",
+          "text": "132"
+        },
+        {
+          "id": "D",
+          "text": "131"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Rule: alternating rule: add 2, then multiply by 3, repeat. The 7th term = 132.",
+      "reasoning": "Two-rule alternating number sequence (expert).",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "pattern",
+        "master"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "number_sequence",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0084",
+      "domain": "numerical_reasoning",
+      "skill": "1.1",
+      "archetype": "number_sequence",
+      "level": "Master",
+      "difficulty": "expert",
+      "question_type": "multiple_choice",
+      "question": "Find the next number: 3, 5, 10, 12, 24, 26, ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "54"
+        },
+        {
+          "id": "B",
+          "text": "51"
+        },
+        {
+          "id": "C",
+          "text": "52"
+        },
+        {
+          "id": "D",
+          "text": "26"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Rule: alternating rule: add 2, then multiply by 2, repeat. The 7th term = 52.",
+      "reasoning": "Two-rule alternating number sequence (expert).",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "numerical",
+        "pattern",
+        "master"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "number_sequence",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "1.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0085",
+      "domain": "verbal_reasoning",
+      "skill": "3.3",
+      "archetype": "codes_ciphers",
+      "level": "Master",
+      "difficulty": "expert",
+      "question_type": "multiple_choice",
+      "question": "Secret code: move every letter forward 3 places (A->D), then reverse the whole word. What does TOP become?",
+      "options": [
+        {
+          "id": "A",
+          "text": "WRS"
+        },
+        {
+          "id": "B",
+          "text": "TOP"
+        },
+        {
+          "id": "C",
+          "text": "POT"
+        },
+        {
+          "id": "D",
+          "text": "SRW"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Shift: TOP -> WRS; reverse -> SRW.",
+      "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "code",
+        "master"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "codes_ciphers",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0086",
+      "domain": "verbal_reasoning",
+      "skill": "3.3",
+      "archetype": "codes_ciphers",
+      "level": "Master",
+      "difficulty": "expert",
+      "question_type": "multiple_choice",
+      "question": "Secret code: move every letter forward 3 places (A->D), then reverse the whole word. What does PEN become?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SHQ"
+        },
+        {
+          "id": "B",
+          "text": "NEP"
+        },
+        {
+          "id": "C",
+          "text": "PEN"
+        },
+        {
+          "id": "D",
+          "text": "QHS"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Shift: PEN -> SHQ; reverse -> QHS.",
+      "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "code",
+        "master"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "codes_ciphers",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0087",
+      "domain": "verbal_reasoning",
+      "skill": "3.3",
+      "archetype": "codes_ciphers",
+      "level": "Master",
+      "difficulty": "expert",
+      "question_type": "multiple_choice",
+      "question": "Secret code: move every letter forward 1 places (A->B), then reverse the whole word. What does MAP become?",
+      "options": [
+        {
+          "id": "A",
+          "text": "MAP"
+        },
+        {
+          "id": "B",
+          "text": "NBQ"
+        },
+        {
+          "id": "C",
+          "text": "QBN"
+        },
+        {
+          "id": "D",
+          "text": "PAM"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Shift: MAP -> NBQ; reverse -> QBN.",
+      "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "verbal",
+        "code",
+        "master"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "codes_ciphers",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "3.3",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0088",
+      "domain": "problem_solving",
+      "skill": "6.1",
+      "archetype": "working_backwards",
+      "level": "Master",
+      "difficulty": "expert",
+      "question_type": "multiple_choice",
+      "question": "A number is changed by: + 4; x 2. The final result is 18. What was the starting number?",
+      "options": [
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "5"
+        },
+        {
+          "id": "C",
+          "text": "7"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Work backwards: before multiplying by 2 it was 9; before adding 4 there were 5. Starting number = 5.",
+      "reasoning": "Working backwards through several steps (expert).",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "working_backwards",
+        "master"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "working_backwards",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0089",
+      "domain": "problem_solving",
+      "skill": "6.1",
+      "archetype": "working_backwards",
+      "level": "Master",
+      "difficulty": "expert",
+      "question_type": "multiple_choice",
+      "question": "A number is changed by: + 4; + 5; x 3. The final result is 39. What was the starting number?",
+      "options": [
+        {
+          "id": "A",
+          "text": "8"
+        },
+        {
+          "id": "B",
+          "text": "6"
+        },
+        {
+          "id": "C",
+          "text": "4"
+        },
+        {
+          "id": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Work backwards: before multiplying by 3 it was 13; before adding 5 there were 8; before adding 4 there were 4. Starting number = 4.",
+      "reasoning": "Working backwards through several steps (expert).",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "working_backwards",
+        "master"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "working_backwards",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0090",
+      "domain": "pattern_abstract",
+      "skill": "5.2",
+      "archetype": "matrix",
+      "level": "Challenge",
+      "difficulty": "hard",
+      "question_type": "multiple_choice",
+      "question": "Complete the 3x3 matrix. DOWN each column: the shape changes to the next one in the cycle (triangle -> square -> circle -> pentagon -> hexagon -> triangle). ACROSS each row: a dot is added if missing, removed if present. The bottom-right cell is ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "large blue circle with a dot"
+        },
+        {
+          "id": "B",
+          "text": "large blue pentagon"
+        },
+        {
+          "id": "C",
+          "text": "large blue pentagon with a dot"
+        },
+        {
+          "id": "D",
+          "text": "large blue pentagon with a dot1"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Down the column the shape changes to the next one in the cycle (triangle -> square -> circle -> pentagon -> hexagon -> triangle); across the row a dot is added if missing, removed if present. Bottom-right = large blue pentagon with a dot.",
+      "reasoning": "Completing a 3x3 matrix with row and column rules.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "matrix_3x3",
+        "cells": [
+          [
+            "large blue square with a dot",
+            "large blue circle with a dot",
+            "large blue pentagon with a dot"
+          ],
+          [
+            "large blue square",
+            "large blue circle",
+            "large blue pentagon"
+          ],
+          [
+            "large blue square with a dot",
+            "large blue circle with a dot",
+            "?"
+          ]
+        ],
+        "col_rule": "the shape changes to the next one in the cycle (triangle -> square -> circle -> pentagon -> hexagon -> triangle)",
+        "row_rule": "a dot is added if missing, removed if present",
+        "answer": "large blue pentagon with a dot"
+      },
+      "image_path": "p3/BA_P3_ADD_0090.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "matrix"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "matrix",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0091",
+      "domain": "pattern_abstract",
+      "skill": "5.2",
+      "archetype": "matrix",
+      "level": "Challenge",
+      "difficulty": "hard",
+      "question_type": "multiple_choice",
+      "question": "Complete the 3x3 matrix. DOWN each column: the size flips (small <-> large). ACROSS each row: the shape changes to the next one in the cycle (triangle -> square -> circle -> pentagon -> hexagon -> triangle). The bottom-right cell is ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "small red pentagon with a dot"
+        },
+        {
+          "id": "B",
+          "text": "small red hexagon with a dot"
+        },
+        {
+          "id": "C",
+          "text": "large red hexagon with a dot"
+        },
+        {
+          "id": "D",
+          "text": "small red circle with a dot"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Down the column the size flips (small <-> large); across the row the shape changes to the next one in the cycle (triangle -> square -> circle -> pentagon -> hexagon -> triangle). Bottom-right = small red hexagon with a dot.",
+      "reasoning": "Completing a 3x3 matrix with row and column rules.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "matrix_3x3",
+        "cells": [
+          [
+            "small red circle with a dot",
+            "large red circle with a dot",
+            "small red circle with a dot"
+          ],
+          [
+            "small red pentagon with a dot",
+            "large red pentagon with a dot",
+            "small red pentagon with a dot"
+          ],
+          [
+            "small red hexagon with a dot",
+            "large red hexagon with a dot",
+            "?"
+          ]
+        ],
+        "col_rule": "the size flips (small <-> large)",
+        "row_rule": "the shape changes to the next one in the cycle (triangle -> square -> circle -> pentagon -> hexagon -> triangle)",
+        "answer": "small red hexagon with a dot"
+      },
+      "image_path": "p3/BA_P3_ADD_0091.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "matrix"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "matrix",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0092",
+      "domain": "pattern_abstract",
+      "skill": "5.2",
+      "archetype": "matrix",
+      "level": "Challenge",
+      "difficulty": "hard",
+      "question_type": "multiple_choice",
+      "question": "Complete the 3x3 matrix. DOWN each column: a dot is added if missing, removed if present. ACROSS each row: the colour changes to the next one (red -> blue -> green -> red). The bottom-right cell is ___?",
+      "options": [
+        {
+          "id": "A",
+          "text": "small green triangle"
+        },
+        {
+          "id": "B",
+          "text": "small blue triangle with a dot"
+        },
+        {
+          "id": "C",
+          "text": "small blue triangle"
+        },
+        {
+          "id": "D",
+          "text": "small red triangle"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Down the column a dot is added if missing, removed if present; across the row the colour changes to the next one (red -> blue -> green -> red). Bottom-right = small blue triangle.",
+      "reasoning": "Completing a 3x3 matrix with row and column rules.",
+      "visual_required": true,
+      "visual_spec": {
+        "type": "matrix_3x3",
+        "cells": [
+          [
+            "small green triangle",
+            "small green triangle with a dot",
+            "small green triangle"
+          ],
+          [
+            "small red triangle",
+            "small red triangle with a dot",
+            "small red triangle"
+          ],
+          [
+            "small blue triangle",
+            "small blue triangle with a dot",
+            "?"
+          ]
+        ],
+        "col_rule": "a dot is added if missing, removed if present",
+        "row_rule": "the colour changes to the next one (red -> blue -> green -> red)",
+        "answer": "small blue triangle"
+      },
+      "image_path": "p3/BA_P3_ADD_0092.svg",
+      "tags": [
+        "p3",
+        "high_ability",
+        "pattern",
+        "matrix"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "matrix",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "5.2",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0093",
+      "domain": "problem_solving",
+      "skill": "6.1",
+      "archetype": "working_backwards",
+      "level": "Challenge",
+      "difficulty": "hard",
+      "question_type": "multiple_choice",
+      "question": "A number is changed by: + 3; + 5; + 2. The final result is 13. What was the starting number? Check by going forward.",
+      "options": [
+        {
+          "id": "A",
+          "text": "3"
+        },
+        {
+          "id": "B",
+          "text": "6"
+        },
+        {
+          "id": "C",
+          "text": "5"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Work backwards: before adding 2 there were 11; before adding 5 there were 6; before adding 3 there were 3. Starting number = 3.",
+      "reasoning": "Working backwards through the steps and verifying.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "working_backwards"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "working_backwards",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.1",
+        "generation_seed": 20260830
+      }
+    },
+    {
+      "id": "BA_P3_ADD_0094",
+      "domain": "problem_solving",
+      "skill": "6.1",
+      "archetype": "working_backwards",
+      "level": "Challenge",
+      "difficulty": "hard",
+      "question_type": "multiple_choice",
+      "question": "A number is changed by: x 2; x 2; + 5. The final result is 41. What was the starting number? Check by going forward.",
+      "options": [
+        {
+          "id": "A",
+          "text": "10"
+        },
+        {
+          "id": "B",
+          "text": "8"
+        },
+        {
+          "id": "C",
+          "text": "18"
+        },
+        {
+          "id": "D",
+          "text": "9"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Work backwards: before adding 5 there were 36; before multiplying by 2 it was 18; before multiplying by 2 it was 9. Starting number = 9.",
+      "reasoning": "Working backwards through the steps and verifying.",
+      "visual_required": false,
+      "visual_spec": null,
+      "image_path": null,
+      "tags": [
+        "p3",
+        "high_ability",
+        "heuristics",
+        "working_backwards"
+      ],
+      "qa_status": "gapfill_pending_qa",
+      "provenance": {
+        "basis": "BrainActive curriculum research (GEP GA / CogAT / UK 11+ VR-NVR archetypes)",
+        "archetype": "working_backwards",
+        "source_inspiration": "Original item based on BrainActive GEP/HAL skill framework",
+        "original": true,
+        "gapfill_skill": "6.1",
+        "generation_seed": 20260830
+      }
+    }
+  ]
+}

@@ -121,6 +121,7 @@ export async function applyBrainActiveReferral(userId: string, referralCode: str
 // 5. Ask Hero AI Tutor
 export interface AskHeroPayload {
   question_id: string
+  question_data?: any
   mode: 'why_wrong' | 'hint' | 'explain' | 'ask'
   student_answer?: string
   student_question?: string

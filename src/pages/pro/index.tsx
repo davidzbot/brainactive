@@ -13,6 +13,7 @@ import {
   getDeviceId
 } from '@/utils/storage'
 import { getBrainActiveProgress } from '@/utils/request'
+import { SUBSCRIPTION_PRODUCT_ID, SUBSCRIPTION_OFFERS, PLAN_PRICES } from '@/config/monetization'
 import ReferralModal from '@/components/ReferralModal'
 import ConfirmModal from '@/components/ConfirmModal'
 import AnalysisTab from '@/components/pro/AnalysisTab'
@@ -31,6 +32,14 @@ const TOPICS = [
 
 const LEVELS = ['Explore', 'Think', 'Challenge', 'Master']
 const QUESTION_COUNTS = [5, 10, 15, 20]
+const TOPIC_LABELS = {
+  en: TOPICS,
+  zh: ['全部思维领域', '数理思维', '逻辑思维', '图形与抽象', '视觉与空间', '语言推理', '问题解决']
+}
+const LEVEL_LABELS = {
+  en: LEVELS,
+  zh: ['探索', '思考', '挑战', '大师']
+}
 
 const i18n = {
   en: {
@@ -46,7 +55,7 @@ const i18n = {
     q_count: 'Quest Length',
     start_quest: 'Start Practice Quest',
     stats_overall: 'Overall Accuracy',
-    stats_practiced: 'Quests Completed',
+    stats_practiced: 'Questions Solved',
     subject_stats: 'Topic Mastery',
     weak_topics: 'Areas to Strengthen',
     redo_wrong: 'Review Mistakes ({{count}})',
@@ -57,25 +66,34 @@ const i18n = {
     pro_inactive: 'Standard Rank',
     valid_until: 'Access Valid Until: {{date}}',
     days_remaining: '{{count}} days left',
-    referral_promo_title: 'Invite Friends & Get Pro Free',
-    referral_promo_subtitle: 'Share BrainActive with friends and you both get 7 days of Pro free.',
-    go_referral: 'Invite Friends',
+    referral_promo_title: 'Share with Friends — Pro Free!',
+    referral_promo_subtitle: 'Send BrainActive to a friend — you can both unlock 7 days of Pro free.',
+    go_referral: 'Share Now',
     locked_instantly: 'Unlock Unlimited Practice & Insights',
     unlock_pro_overlay: 'Unlock Pro Access',
     paywall_title: 'Unlock Singapore P3 Thinking Skills Pro 🚀',
     paywall_subtitle: 'Unlimited reasoning practice and step-by-step AI coaching',
     annual_plan: 'Annual Pro Pass',
-    annual_price: 'S$29.98',
+    annual_price: PLAN_PRICES.yearly,
     annual_desc: 'Best Value · S$2.50/mo · Unlimited Practice',
     monthly_plan: 'Monthly Pro Pass',
-    monthly_price: 'S$4.98',
+    monthly_price: PLAN_PRICES.monthly,
     monthly_desc: 'Flexible monthly access · Cancel anytime',
     best_value: 'BEST VALUE',
     btn_get_pro: 'Unlock Pro Access',
     reset: 'Reset Filters',
     restore_purchase: 'Restore Purchases',
     restore_desc: 'Switching phones or reinstalled? Restore your active subscription here.',
-    billing_note: 'Billing and renewals are managed securely by Google Play. You can manage or cancel your subscription anytime in the Play Store.'
+    billing_note: 'Billing and renewals are managed securely by Google Play. You can manage or cancel your subscription anytime in the Play Store.',
+    period_year: '/yr',
+    period_month: '/mo',
+    practice_lock: 'Target specific reasoning domains and challenge levels with full access.',
+    stats_lock: 'Unlock topic mastery insights and progress tracking.',
+    processing: 'Processing...',
+    activated: 'Pro Activated! 👑',
+    checking: 'Checking Google Play...',
+    checked: 'Subscriptions checked!'
+
   },
   zh: {
     title: '🚀 释放全部思维潜能',
@@ -101,33 +119,45 @@ const i18n = {
     pro_inactive: '普通学员',
     valid_until: '有效期至: {{date}}',
     days_remaining: '剩余 {{count}} 天',
-    referral_promo_title: '邀请好友免费获取 Pro',
-    referral_promo_subtitle: '分享 BrainActive，你和好友都能免费获得 7 天 Pro。',
-    go_referral: '邀请好友',
+    referral_promo_title: '分享给好友，免费赢 Pro！',
+    referral_promo_subtitle: '把 BrainActive 分享给好友，你们都能免费获得 7 天 Pro。',
+    go_referral: '立即分享',
     locked_instantly: '立即解锁无限思维训练与战力分析',
     unlock_pro_overlay: '开启 Pro 会员',
     paywall_title: '开启新加坡小三思维进阶 Pro 🚀',
     paywall_subtitle: '无限挑战名校思维题与 AI 导师专属辅导',
     annual_plan: 'Pro 年度会员',
-    annual_price: 'S$29.98',
+    annual_price: PLAN_PRICES.yearly,
     annual_desc: '超值特惠 · 仅合 S$2.50/月 · 无限练习',
     monthly_plan: 'Pro 月度会员',
-    monthly_price: 'S$4.98',
+    monthly_price: PLAN_PRICES.monthly,
     monthly_desc: '灵活按月订阅 · 可随时取消',
     best_value: '超值推荐',
     btn_get_pro: '开启 Pro 特权',
     reset: '重置选项',
     restore_purchase: '恢复购买',
     restore_desc: '更换手机或重新安装？点击此处快速恢复您的 Pro 权益。',
-    billing_note: '订阅由 Google Play 安全管理，可随时在 Play 商店取消或调整订阅。'
+    billing_note: '订阅由 Google Play 安全管理，可随时在 Play 商店取消或调整订阅。',
+    period_year: '/年',
+    period_month: '/月',
+    practice_lock: '解锁全部思维领域和挑战难度，进行针对性训练。',
+    stats_lock: '解锁领域掌握度分析与学习进度追踪。',
+    processing: '正在处理…',
+    activated: 'Pro 已激活！👑',
+    checking: '正在检查 Google Play…',
+    checked: '订阅状态已检查！'
   }
 }
 
 export default function ProPage() {
-  const lang = (getLang() || 'en') as 'en' | 'zh'
+  const [lang, setLang] = useState<'en' | 'zh'>(() => (getLang() || 'en') as 'en' | 'zh')
   const t = i18n[lang] || i18n.en
+  const topicLabels = TOPIC_LABELS[lang]
+  const levelLabels = LEVEL_LABELS[lang]
 
-  const [activeTab, setActiveTab] = useState(0)
+  const [activeTab, setActiveTab] = useState(
+    Taro.getCurrentInstance().router?.params?.tab === 'analysis' ? 1 : 0
+  )
   const [proActive, setProActive] = useState(false)
   const [daysLeft, setDaysLeft] = useState(0)
   const [expiryText, setExpiryText] = useState('')
@@ -154,6 +184,7 @@ export default function ProPage() {
   }
 
   useDidShow(() => {
+    setLang((getLang() || 'en') as 'en' | 'zh')
     refreshState()
     getBrainActiveProgress(getDeviceId())
       .then(data => {
@@ -281,9 +312,14 @@ export default function ProPage() {
     }
   }
 
-  // Membership activation simulation (ready for Google Play billing)
+  // Membership activation — currently simulated; swap for CdvPurchase using
+  // PRODUCT_ID + SUBSCRIPTION_OFFERS once the IAP plugin is installed.
+  const PRODUCT_ID = SUBSCRIPTION_PRODUCT_ID
   const handleUpgradePlan = (plan: 'yearly' | 'monthly') => {
-    Taro.showLoading({ title: 'Processing...' })
+    const offerId = SUBSCRIPTION_OFFERS[plan]
+    void PRODUCT_ID
+    void offerId
+    Taro.showLoading({ title: t.processing })
     setTimeout(() => {
       Taro.hideLoading()
       const days = plan === 'yearly' ? 365 : 30
@@ -291,17 +327,17 @@ export default function ProPage() {
       setProExpiry(expiry)
       setSubscriptionExpiry(expiry)
       refreshState()
-      Taro.showToast({ title: 'Pro Activated! 👑', icon: 'success' })
+      Taro.showToast({ title: t.activated, icon: 'success' })
       setActiveTab(0)
     }, 800)
   }
 
   const handleRestore = () => {
-    Taro.showLoading({ title: 'Checking Google Play...' })
+    Taro.showLoading({ title: t.checking })
     setTimeout(() => {
       Taro.hideLoading()
       refreshState()
-      Taro.showToast({ title: 'Subscriptions checked!', icon: 'none' })
+      Taro.showToast({ title: t.checked, icon: 'none' })
     }, 1000)
   }
 
@@ -311,9 +347,7 @@ export default function ProPage() {
         <Text className="lock-emoji">👑</Text>
         <Text className="lock-title">{t.locked_instantly}</Text>
         <Text className="lock-desc">
-          {feature === 'practice'
-            ? 'Target specific reasoning domains & challenge levels with full access.'
-            : 'Unlock in-depth topic mastery analytics & progress tracking.'}
+          {feature === 'practice' ? t.practice_lock : t.stats_lock}
         </Text>
         <Button className="btn-unlock-preview">{t.unlock_pro_overlay}</Button>
       </View>
@@ -349,11 +383,11 @@ export default function ProPage() {
                   <Text className="filter-label">{t.topic}</Text>
                   <Picker
                     mode="selector"
-                    range={TOPICS}
+                    range={topicLabels}
                     value={TOPICS.indexOf(selectedTopic)}
                     onChange={e => setSelectedTopic(TOPICS[Number(e.detail.value)])}
                   >
-                    <View className="picker-val">{selectedTopic}</View>
+                    <View className="picker-val">{topicLabels[TOPICS.indexOf(selectedTopic)]}</View>
                   </Picker>
                 </View>
 
@@ -361,11 +395,11 @@ export default function ProPage() {
                   <Text className="filter-label">{t.grade}</Text>
                   <Picker
                     mode="selector"
-                    range={LEVELS}
+                    range={levelLabels}
                     value={LEVELS.indexOf(selectedLevel)}
                     onChange={e => setSelectedLevel(LEVELS[Number(e.detail.value)])}
                   >
-                    <View className="picker-val">{selectedLevel}</View>
+                    <View className="picker-val">{levelLabels[LEVELS.indexOf(selectedLevel)]}</View>
                   </Picker>
                 </View>
 
@@ -373,11 +407,11 @@ export default function ProPage() {
                   <Text className="filter-label">{t.q_count}</Text>
                   <Picker
                     mode="selector"
-                    range={QUESTION_COUNTS.map(c => `${c} Questions`)}
+                    range={QUESTION_COUNTS.map(c => lang === 'zh' ? `${c} 道题` : `${c} Questions`)}
                     value={QUESTION_COUNTS.indexOf(selectedCount)}
                     onChange={e => setSelectedCount(QUESTION_COUNTS[Number(e.detail.value)])}
                   >
-                    <View className="picker-val">{selectedCount} Questions</View>
+                    <View className="picker-val">{lang === 'zh' ? `${selectedCount} 道题` : `${selectedCount} Questions`}</View>
                   </Picker>
                 </View>
               </View>
@@ -484,7 +518,7 @@ export default function ProPage() {
                   <View className="plan-badge-top">{t.best_value}</View>
                   <View className="plan-card-header">
                     <Text className="plan-name">{t.annual_plan}</Text>
-                    <Text className="plan-price-tag">{t.annual_price}<Text className="period">/yr</Text></Text>
+                    <Text className="plan-price-tag">{t.annual_price}<Text className="period">{t.period_year}</Text></Text>
                   </View>
                   <Text className="plan-desc">{t.annual_desc}</Text>
                 </View>
@@ -496,7 +530,7 @@ export default function ProPage() {
                 >
                   <View className="plan-card-header">
                     <Text className="plan-name">{t.monthly_plan}</Text>
-                    <Text className="plan-price-tag">{t.monthly_price}<Text className="period">/mo</Text></Text>
+                    <Text className="plan-price-tag">{t.monthly_price}<Text className="period">{t.period_month}</Text></Text>
                   </View>
                   <Text className="plan-desc">{t.monthly_desc}</Text>
                 </View>

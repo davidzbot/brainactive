@@ -172,12 +172,13 @@ page.dark .home-viewport {
   border: 2px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 20px rgba(37, 99, 235, 0.22), inset 0 2px 0 rgba(255, 255, 255, 0.25);
   z-index: 10;
-  white-space: nowrap;
+  max-width: 100%;
+  box-sizing: border-box;
   margin-bottom: 4px;
 }
 
 .badge-text {
-  font-size: 22px;
+  font-size: 27px;
   font-weight: 900;
   color: #ffffff;
   letter-spacing: 0.03em;
@@ -227,12 +228,12 @@ page.dark .home-viewport {
    ========================================================= */
 
 .usage-summary-box {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(240, 249, 255, 0.92) 52%, rgba(238, 242, 255, 0.94) 100%);
+  background: linear-gradient(135deg, #ecfeff 0%, #e0f2fe 52%, #eef2ff 100%);
   border-radius: 28px;
   padding: 18px 28px;
   margin-bottom: 20px;
-  border: 1.5px solid #e2e8f0;
-  box-shadow: 0 18px 32px rgba(31, 41, 55, 0.08);
+  border: 2.5px solid #38bdf8;
+  box-shadow: 0 8px 0 #0369A1, 0 16px 30px rgba(2, 132, 199, 0.18);
   position: relative;
   overflow: hidden;
 
@@ -249,9 +250,9 @@ page.dark .home-viewport {
 
   body.dark &,
   page.dark & {
-    background: linear-gradient(135deg, rgba(17, 27, 46, 0.95) 0%, rgba(2, 132, 199, 0.3) 48%, rgba(37, 99, 235, 0.22) 100%);
-    border-color: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.34);
+    background: linear-gradient(135deg, #0c2d48 0%, #0b3a5e 48%, #102a4c 100%);
+    border-color: #155e75;
+    box-shadow: 0 8px 0 #082f49, 0 18px 34px rgba(0, 0, 0, 0.34);
   }
 }
 
@@ -260,7 +261,7 @@ page.dark .home-viewport {
 }
 
 .usage-text {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 800;
   color: #0369a1;
 
@@ -290,17 +291,17 @@ page.dark .home-viewport {
 }
 
 .streak-card {
-  background: #ffffff;
+  background: linear-gradient(135deg, #fffbeb 0%, #fff7ed 100%);
   border-radius: 32px;
   padding: 28px 24px;
-  border: 1.5px solid #e2e8f0;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+  border: 2.5px solid #fbbf24;
+  box-shadow: 0 8px 0 #B45309, 0 16px 30px rgba(245, 158, 11, 0.18);
 
   body.dark &,
   page.dark & {
-    background: #1e293b;
-    border-color: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+    background: #2a200b;
+    border-color: #92710d;
+    box-shadow: 0 8px 0 #5c3d05, 0 14px 30px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -312,21 +313,21 @@ page.dark .home-viewport {
 }
 
 .streak-fire-wrap {
-  width: 88px;
-  height: 88px;
-  border-radius: 28px;
+  width: 104px;
+  height: 104px;
+  border-radius: 32px;
   background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  box-shadow: 0 6px 16px rgba(245, 158, 11, 0.25);
-  padding: 4px;
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3);
+  padding: 6px;
   box-sizing: border-box;
   flex-shrink: 0;
 
   .streak-fire-emoji {
-    font-size: 54px;
+    font-size: 66px;
     line-height: 1;
   }
 }
@@ -337,7 +338,7 @@ page.dark .home-viewport {
   flex-direction: column;
 
   .streak-title {
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 900;
     color: #0f172a;
     line-height: 1.2;
@@ -462,7 +463,7 @@ page.dark .home-viewport {
   padding: 36px 28px 32px;
   border-radius: 32px;
   background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
-  box-shadow: 0 12px 36px rgba(37, 99, 235, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  box-shadow: 0 12px 0 #1E40AF, 0 24px 44px rgba(37, 99, 235, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.25);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -472,7 +473,7 @@ page.dark .home-viewport {
   body.dark &,
   page.dark & {
     background: linear-gradient(135deg, #0369a1 0%, #1e40af 100%);
-    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 12px 0 #0b1f4d, 0 24px 44px rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -576,7 +577,7 @@ page.dark .home-viewport {
 }
 
 .daily5-cta-text {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 900;
   color: #0284c7;
   display: block;
@@ -619,10 +620,10 @@ page.dark .home-viewport {
 
 .pro-cta-card {
   background: linear-gradient(135deg, #ffffff 0%, #fefce8 100%);
-  border: 2px solid #fde047;
+  border: 2.5px solid #fde047;
   border-radius: 28px;
   padding: 24px;
-  box-shadow: 0 10px 24px rgba(234, 179, 8, 0.15);
+  box-shadow: 0 12px 0 #CA8A04, 0 24px 44px rgba(202, 138, 4, 0.2);
   cursor: pointer;
 
   &.active {
@@ -642,7 +643,7 @@ page.dark .home-viewport {
 }
 
 .pro-cta-title {
-  font-size: 30px;
+  font-size: 44px;
   font-weight: 900;
   color: #854d0e;
   display: block;
@@ -653,7 +654,7 @@ page.dark .home-viewport {
 }
 
 .pro-cta-subtitle {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 600;
   color: #a16207;
   display: block;
@@ -671,7 +672,7 @@ page.dark .home-viewport {
 }
 
 .pro-cta-btn-text {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 900;
   color: #ffffff;
 }
@@ -681,22 +682,22 @@ page.dark .home-viewport {
    ========================================================= */
 
 .progress-section {
-  background: #ffffff;
+  background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
   border-radius: 28px;
   padding: 24px;
-  border: 1.5px solid #e2e8f0;
+  border: 2.5px solid #818cf8;
   margin-bottom: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 0 #4338CA, 0 16px 30px rgba(79, 70, 229, 0.16);
 
   body.dark &,
   page.dark & {
-    background: #1e293b;
-    border-color: rgba(255, 255, 255, 0.08);
+    background: #1b1b3a;
+    border-color: #4338ca;
   }
 }
 
 .progress-title {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 900;
   color: #0f172a;
   margin-bottom: 18px;
@@ -815,19 +816,19 @@ page.dark .home-viewport {
 }
 
 .retry-mistakes-card {
-  background: #ffffff;
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
   border-radius: 24px;
   padding: 20px 24px;
-  border: 1.5px solid #fed7aa;
+  border: 2.5px solid #fb923c;
   display: flex;
   align-items: center;
   gap: 16px;
-  box-shadow: 0 6px 18px rgba(249, 115, 22, 0.08);
+  box-shadow: 0 8px 0 #C2410C, 0 14px 28px rgba(249, 115, 22, 0.16);
 
   body.dark &,
   page.dark & {
-    background: #1e293b;
-    border-color: #7c2d12;
+    background: #2a1606;
+    border-color: #c2410c;
   }
 }
 
@@ -868,19 +869,19 @@ page.dark .home-viewport {
 }
 
 .extra-practice-card {
-  background: #ffffff;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
   border-radius: 24px;
   padding: 20px 24px;
-  border: 1.5px solid #bae6fd;
+  border: 2.5px solid #38bdf8;
   display: flex;
   align-items: center;
   gap: 16px;
-  box-shadow: 0 6px 18px rgba(2, 132, 199, 0.08);
+  box-shadow: 0 8px 0 #0369A1, 0 14px 28px rgba(2, 132, 199, 0.16);
 
   body.dark &,
   page.dark & {
-    background: #1e293b;
-    border-color: #075985;
+    background: #0c2d48;
+    border-color: #0e7490;
   }
 }
 
@@ -925,19 +926,19 @@ page.dark .home-viewport {
 }
 
 .invite-friends-card {
-  background: #ffffff;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
   border-radius: 24px;
   padding: 20px 24px;
-  border: 1.5px solid #bbf7d0;
+  border: 2.5px solid #4ade80;
   display: flex;
   align-items: center;
   gap: 16px;
-  box-shadow: 0 6px 18px rgba(22, 163, 74, 0.08);
+  box-shadow: 0 8px 0 #15803D, 0 14px 28px rgba(22, 163, 74, 0.16);
 
   body.dark &,
   page.dark & {
-    background: #1e293b;
-    border-color: #14532d;
+    background: #0c2a16;
+    border-color: #15803d;
   }
 }
 
@@ -947,6 +948,7 @@ page.dark .home-viewport {
 
 .invite-friends-text-stack {
   flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
 }
@@ -968,16 +970,17 @@ page.dark .home-viewport {
 
 /* Tips Section */
 .tips-section {
-  background: #ffffff;
+  background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
   border-radius: 28px;
   padding: 24px;
-  border: 1.5px solid #e2e8f0;
+  border: 2.5px solid #c4b5fd;
   margin-bottom: 20px;
+  box-shadow: 0 8px 0 #6D28D9, 0 14px 28px rgba(124, 58, 237, 0.16);
 
   body.dark &,
   page.dark & {
-    background: #1e293b;
-    border-color: rgba(255, 255, 255, 0.08);
+    background: #1e1b33;
+    border-color: #6d28d9;
   }
 }
 
@@ -986,7 +989,7 @@ page.dark .home-viewport {
 }
 
 .tips-title {
-  font-size: 28px;
+  font-size: 34px;
   font-weight: 900;
   color: #0f172a;
 
@@ -1007,10 +1010,12 @@ page.dark .home-viewport {
   background: #f8fafc;
   border-radius: 18px;
   padding: 16px;
+  border-left: 6px solid #38bdf8;
 
   body.dark &,
   page.dark & {
     background: #0f172a;
+    border-left-color: #38bdf8;
   }
 }
 
@@ -1028,7 +1033,7 @@ page.dark .home-viewport {
 }
 
 .tip-link-title {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 800;
   color: #0f172a;
   margin-bottom: 4px;
@@ -1038,13 +1043,15 @@ page.dark .home-viewport {
 }
 
 .tip-text {
-  font-size: 18px;
+  font-size: 26px;
   color: #64748b;
   line-height: 1.4;
 
   body.dark &,
   page.dark & { color: #94a3b8; }
 }
+
+/* Hero Tip moved to "More from Hero" section */
 
 /* Footer */
 .footer {
@@ -1072,8 +1079,11 @@ page.dark .home-viewport {
 }
 
 .support-text {
-  font-size: 18px;
-  color: #94a3b8;
+  font-size: 20px;
+  line-height: 1.35;
+  color: #64748b;
+  text-align: center;
+  overflow-wrap: anywhere;
 }
 
 .website-link {
@@ -1081,87 +1091,110 @@ page.dark .home-viewport {
 }
 
 .website-text {
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 1.35;
   color: #0284c7;
   text-decoration: underline;
+  overflow-wrap: anywhere;
 }
 
 .footer-spacer {
   height: 120px;
 }
 
+@media (max-width: 420px) {
+  .hero-header-fixed,
+  .home-page-scroll { padding-left: 20px; padding-right: 20px; }
+
+  .badge-text { font-size: 22px; line-height: 1.2; text-align: center; }
+  .top-school-badge { padding: 8px 16px; }
+  .invite-friends-card { padding: 18px; gap: 12px; }
+  .invite-friends-title { font-size: 21px; line-height: 1.2; }
+  .invite-friends-sub { font-size: 16px; line-height: 1.35; }
+  .feedback-link { min-height: 44px; display: flex; align-items: center; font-size: 18px; }
+  .support-text,
+  .website-text { font-size: 17px; }
+}
+
 /* =========================================================
-   CROSS-APP LINKS (Page 2)
+   MORE FROM HERO (3-card section: guide + apps)
    ========================================================= */
 
-.cross-app-section {
-  margin: 16px 0;
+.more-from-hero-section {
+  margin: 4px 0 20px;
   padding: 0;
 }
 
-.cross-app-title {
+.more-hero-title {
   display: block;
-  font-size: 22px;
+  font-size: 36px;
   font-weight: 900;
-  color: #64748b;
-  margin-bottom: 10px;
+  color: #0f172a;
+  margin-bottom: 14px;
 
   body.dark &,
-  page.dark & { color: #94a3b8; }
+  page.dark & { color: #f8fafc; }
 }
 
-.cross-app-link {
+.more-hero-card {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 14px 16px;
-  margin-bottom: 8px;
-  border-radius: 20px;
-  background: #f8fafc;
-  border: 1.5px solid #e2e8f0;
+  gap: 16px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+  border: 2.5px solid #e2e8f0;
+  box-shadow: 0 8px 0 #cbd5e1, 0 12px 24px rgba(15, 23, 42, 0.1);
   cursor: pointer;
   transition: transform 0.15s ease;
-
-  body.dark &,
-  page.dark & {
-    background: #0f172a;
-    border-color: #334155;
-  }
 
   &:active {
     transform: scale(0.98);
   }
+
+  body.dark &,
+  page.dark & {
+    background: linear-gradient(135deg, #131f3a 0%, #0f172a 100%);
+    border-color: #334155;
+    box-shadow: 0 8px 0 #0b1329, 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
 }
 
-.cross-app-emoji {
-  font-size: 28px;
+.more-hero-emoji {
+  font-size: 34px;
   flex-shrink: 0;
 }
 
-.cross-app-text {
+.more-hero-text {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.cross-app-name {
+.more-hero-name {
   display: block;
-  font-size: 22px;
-  font-weight: 700;
-  color: #1e293b;
+  font-size: 30px;
+  font-weight: 800;
+  color: #0f172a;
 
   body.dark &,
-  page.dark & { color: #f1f5f9; }
+  page.dark & { color: #f8fafc; }
 }
 
-.cross-app-sub {
+.more-hero-sub {
   display: block;
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 600;
   color: #0284c7;
   margin-top: 2px;
+
+  body.dark &,
+  page.dark & { color: #7dd3fc; }
 }
 
-.cross-app-arrow {
-  font-size: 28px;
+.more-hero-arrow {
+  font-size: 30px;
   color: #94a3b8;
   font-weight: 300;
 }

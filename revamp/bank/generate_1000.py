@@ -17,7 +17,7 @@ import random
 
 ROOT = r"C:\Projects\brainactive-android\revamp"
 BANK = os.path.join(ROOT, "bank", "brainactive_p3_question_bank.json")
-SEED = json.load(open(BANK))
+SEED = json.load(open(BANK, encoding="cp1252"))
 QUESTIONS_DIR = os.path.join(ROOT, "bank", "questions")
 
 DOMAIN_TARGET = {
@@ -293,11 +293,11 @@ def g_num_chain(rng):
     vals = {c: cv, b: bv, a: av}
     top = max(vals, key=vals.get)
     q = "%s has %d more marbles than %s. %s has %d fewer than %s. %s has %d. Who has the most?" % (
-        a, off1, b, b, off2, c, cv)
+        a, off1, b, b, off2, c, c, cv)
     dec = decoys([n for n in names if n != top], top, 3, rng)
     return mk("numerical_reasoning", "1.4", "Think", q, top, dec,
               "%s = %d. %s = %d - %d = %d. %s = %d + %d = %d. %s (%d) is the most." % (
-                  c, cv, b, cv, off2, bv, a, bv, off1, av, top, av, top),
+                  c, cv, b, cv, off2, bv, a, bv, off1, av, top, av),
               "Chaining several comparisons into a full order.",
               ["p3", "high_ability", "numerical", "logic"], "Deterministic generator 1.4.", rng)
 
@@ -514,7 +514,7 @@ def g_ver_wordmanip(rng):
     if fam == "move_first":
         word = rng.choice(["TRAIN", "PLANT", "BREAD", "STONE", "CHALK", "FLAME"])
         ans = word[1:] + word[0]
-        q = "In a code, %s becomes %s and PLANT becomes LANTP. The rule moves the FIRST letter to the END. What does %s become?" % (word, word[1:] + word[0], word)
+        q = "In a code, CAT becomes ATC. The rule moves the FIRST letter to the END. What does %s become?" % word
         dec = decoys([word[-1] + word[:-1], word[1:] + word[0][0] + word[0], word[::-1], word + word[0]], ans, 3, rng)
         return mk("verbal_reasoning", "3.4", "Think", q, ans, dec,
                   "Move the first letter of %s to the end: %s." % (word, ans),
@@ -538,16 +538,16 @@ def g_ver_sentlogic(rng):
     acts = ["swimming", "cycling", "running"]
     rng.shuffle(acts)
     assign = {a: acts[0], b: acts[1], c: acts[2]}
-    clues = ["%s %s." % (a, "cycles" if assign[a] == "cycling" else ("runs" if assign[a] == "running" else "swims")),
-             "%s %s." % (b, "cycles" if assign[b] == "cycling" else ("runs" if assign[b] == "running" else "swims")),
-             "%s does not %s." % (c, assign[c])]
+    verb = {"swimming": "swims", "cycling": "cycles", "running": "runs"}
+    base_verb = {"swimming": "swim", "cycling": "cycle", "running": "run"}
+    clues = [f"{a} {verb[assign[a]]}.", f"{b} {verb[assign[b]]}.", f"{c} does not {base_verb[assign[c]]}."]
     # ask who does the remaining activity
     remaining = [x for x in acts if x not in [assign[a], assign[b]]][0]
     ans = c if assign[c] == remaining else [n for n in names if assign[n] == remaining][0]
-    q = "Three friends each do a different activity: swimming, cycling, running. " + " ".join(clues) + " Who " + remaining + "?"
+    q = "Three friends each do a different activity: swimming, cycling, or running. " + " ".join(clues) + " Who is " + remaining + "?"
     dec = decoys([n for n in names if n != ans], ans, 3, rng)
     return mk("verbal_reasoning", "3.5", "Challenge", q, ans, dec,
-              "From the clues, %s=%s and %s=%s, so %s=%s; therefore %s %s." % (a, assign[a], b, assign[b], c, assign[c], ans, remaining),
+              "From the clues, %s=%s and %s=%s, so %s=%s; therefore %s is %s." % (a, assign[a], b, assign[b], c, assign[c], ans, remaining),
               "Combining three clues into a unique assignment.",
               ["p3", "high_ability", "verbal", "logic"], "Research-derived verbal deduction (GEP logic archetype).", rng)
 
@@ -868,8 +868,9 @@ def g_ps_gc(rng):
 def g_ps_ba(rng):
     lead = rng.randint(2, 5); move = rng.randint(1, 3)
     a = rng.randint(5, 12)
-    q = "%s has %d more stickers than %s. %s gives %s %d sticker(s). Now who has more stickers, and by how many?" % (
-        "Amy", lead, "Ben", "Amy", "Ben", move)
+    unit = "sticker" if move == 1 else "stickers"
+    q = "%s has %d more stickers than %s. %s gives %s %d %s. Now who has more stickers, and by how many?" % (
+        "Amy", lead, "Ben", "Amy", "Ben", move, unit)
     gap = lead - 2 * move
     if gap > 0:
         ans = "Amy, by %d" % gap

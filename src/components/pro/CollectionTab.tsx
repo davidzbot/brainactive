@@ -23,15 +23,15 @@ export default function CollectionTab({ lang }: CollectionTabProps) {
 
   const translations = {
     en: {
-      title: 'Saved Reasoning Puzzles',
-      empty: 'Your collection is empty.\nQuestions you want to review will appear here!',
+      title: 'Questions to Review',
+      empty: 'No tricky questions yet.\nQuestions you need to revisit will appear here!',
       start: 'Start Practice',
       count: 'Tricky Questions',
       retry: 'Review All'
     },
     zh: {
-      title: '思维收藏夹',
-      empty: '您的收藏夹是空的。\n练习中需要复习的难题会显示在这里！',
+      title: '待复习题库',
+      empty: '暂时还没有错题。\n需要再次思考的题目会显示在这里！',
       start: '去探索题目',
       count: '个待复习题目',
       retry: '复习全部'
@@ -46,6 +46,12 @@ export default function CollectionTab({ lang }: CollectionTabProps) {
         <Text className="empty-emoji">📑</Text>
         <Text className="empty-title">{t.title}</Text>
         <Text className="empty-desc">{t.empty}</Text>
+        <Button
+          className="start-btn empty-start-btn"
+          onClick={() => Taro.navigateTo({ url: '/pages/quiz/index?mode=quick_test' })}
+        >
+          {t.start}
+        </Button>
       </View>
     )
   }
@@ -61,12 +67,12 @@ export default function CollectionTab({ lang }: CollectionTabProps) {
         {items.map((item, idx) => (
           <View key={item.id || idx} className="collection-card" onClick={() => openQuestion(item)}>
             <View className="card-top">
-              <Text className="card-topic">{item.topic || 'Reasoning'}</Text>
-              <Text className="card-level">{item.level || 'Think'}</Text>
+              <Text className="card-topic">{item.topic || (lang === 'zh' ? '思维推理' : 'Reasoning')}</Text>
+              <Text className="card-level">{item.level || (lang === 'zh' ? '思考' : 'Think')}</Text>
             </View>
             <Text className="card-question-preview">{item.question}</Text>
             <View className="card-bottom">
-              <Text className="card-cta">Practice Again →</Text>
+              <Text className="card-cta">{lang === 'zh' ? '再练一次 →' : 'Practice Again →'}</Text>
             </View>
           </View>
         ))}

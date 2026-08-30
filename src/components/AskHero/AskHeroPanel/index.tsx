@@ -6,6 +6,7 @@ import './index.scss'
 
 interface Props {
   questionId: string
+  questionData?: any
   studentAnswer: string
   lang?: 'en' | 'zh'
   hasVisualQuestion?: boolean
@@ -29,6 +30,7 @@ const MODE_OPTIONS: { key: Mode; icon: string; labelEn: string; labelZh: string 
 
 export default function AskHeroPanel({
   questionId,
+  questionData,
   studentAnswer,
   lang = 'en',
   hasVisualQuestion = false,
@@ -107,6 +109,7 @@ export default function AskHeroPanel({
     setChat(prev => [...prev, userBubble])
     const payload = {
       question_id: questionId,
+      question_data: questionData,
       mode: m,
       student_answer: studentAnswer,
       history: [...chat, userBubble].map(({ role, content }) => ({ role, content })),
@@ -123,6 +126,7 @@ export default function AskHeroPanel({
     setChat(prev => [...prev, userBubble])
     const payload = {
       question_id: questionId,
+      question_data: questionData,
       mode: 'ask' as Mode,
       student_answer: studentAnswer,
       student_question: text,

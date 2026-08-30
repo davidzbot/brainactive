@@ -21,6 +21,45 @@ import AskHeroPanel from '@/components/AskHero/AskHeroPanel'
 import './index.scss'
 
 // Curated 5-Question Fallback Round for Singapore Primary 3 Thinking Skills
+const QUIZ_COPY = {
+  en: {
+    loading: 'Preparing your thinking quest',
+    empty: 'No questions available right now. Try again shortly.',
+    backHome: 'Back to Home',
+    reasoning: 'Reasoning',
+    level: 'Think',
+    imageUnavailable: 'Image unavailable',
+    skip: 'Skip ›',
+    correct: '✅ Well done! Here\'s the reasoning:',
+    incorrect: 'Not this time — here\'s how to think it through:',
+    strategy: '💡 Thinking Strategy:',
+    continue: 'Continue →',
+    results: 'See My Results →',
+    leaveTitle: 'Leave this practice round?',
+    leaveContent: 'Your round score will not be saved. Questions you skip may still appear in Review Mistakes.',
+    leave: 'Leave to Home',
+    stay: 'Stay'
+  },
+  zh: {
+    loading: '正在准备你的思维挑战',
+    empty: '暂时没有可用题目，请稍后再试。',
+    backHome: '返回首页',
+    reasoning: '思维推理',
+    level: '思考',
+    imageUnavailable: '图片暂时无法加载',
+    skip: '跳过 ›',
+    correct: '✅ 做得好！一起来看看解题思路：',
+    incorrect: '这次还差一点——看看怎样一步步思考：',
+    strategy: '💡 思维方法：',
+    continue: '继续 →',
+    results: '查看我的结果 →',
+    leaveTitle: '要离开本轮练习吗？',
+    leaveContent: '本轮成绩不会保存。你跳过的题目仍可能出现在错题复习中。',
+    leave: '离开并返回首页',
+    stay: '留下练习'
+  }
+}
+
 const CURATED_FALLBACK_QUESTIONS = [
   {
     id: 'BA_P3_0001',
@@ -119,7 +158,8 @@ export default function QuizContent() {
   const mode = (router.params.mode as any) || 'quick_test'
   const topicFilter = router.params.topic || ''
   const levelFilter = router.params.level || ''
-  const lang = getLang() || 'en'
+  const [lang, setLang] = useState<'en' | 'zh'>(() => (getLang() || 'en') as 'en' | 'zh')
+  const copy = QUIZ_COPY[lang]
 
   const [loading, setLoading] = useState(true)
   const [questions, setQuestions] = useState<any[]>([])
@@ -136,11 +176,21 @@ export default function QuizContent() {
   const [swipeTranslateX, setSwipeTranslateX] = useState(0)
   const [swipeOpacity, setSwipeOpacity] = useState(1)
   const [isTransitioning, setIsTransitioning] = useState(false)
+  const [imgError, setImgError] = useState(false)
   const touchStartX = useRef(0)
   const touchStartY = useRef(0)
 
   const timerRef = useRef<any>(null)
   const questionStartTime = useRef(Date.now())
+
+  useEffect(() => {
+    setLang((getLang() || 'en') as 'en' | 'zh')
+  }, [])
+
+  // Reset the image error state whenever the question changes
+  useEffect(() => {
+    setImgError(false)
+  }, [currentIndex])
 
   // Android hardware back button handler
   useEffect(() => {
@@ -282,6 +332,9 @@ export default function QuizContent() {
     if (isAnswerSubmitted || isTransitioning) return
     const timeSpentMs = Date.now() - questionStartTime.current
 
+    // Skipped questions are tracked as mistakes so they surface in Review Mistakes
+    saveWrongQuestion(currentQ)
+
     // Record skip as an incorrect attempt so it doesn't count toward the score
     const skipAttempt = {
       question_id: currentQ.id,
@@ -335,7 +388,7 @@ export default function QuizContent() {
           mode
         }).catch(e => console.warn('Attempt submit notice:', e))
         Taro.redirectTo({
-          url: `/pages/result/index?score=${correctCount}&total=${questions.length}&time=${secondsSpent}`
+          url: `/pages/result/index?score=${correctCount}&total=${questions.length}&time=${secondsSpent}&flawless=0`
         })
         return
       }
@@ -458,6 +511,7 @@ export default function QuizContent() {
             first_try_correct: selectedOptionId === currentQ.answer
           }]
       const correctCount = finalAttempts.filter(a => a.is_correct).length
+      const flawless = finalAttempts.every(a => a.first_try_correct && !a.skipped)
 
       // Save local streak and round
       if (mode === 'quick_test') {
@@ -486,7 +540,7 @@ export default function QuizContent() {
       }
 
       Taro.redirectTo({
-        url: `/pages/result/index?score=${correctCount}&total=${questions.length}&time=${secondsSpent}`
+        url: `/pages/result/index?score=${correctCount}&total=${questions.length}&time=${secondsSpent}&flawless=${flawless ? 1 : 0}`
       })
     }
   }
@@ -505,7 +559,7 @@ export default function QuizContent() {
   if (loading) {
     return (
       <View className="quiz-container loading-state">
-        <Text className="loading-text">Preparing your thinking quest<Text className="loading-dots">...</Text></Text>
+        <Text className="loading-text">{copy.loading}<Text className="loading-dots">...</Text></Text>
       </View>
     )
   }
@@ -513,8 +567,8 @@ export default function QuizContent() {
   if (!currentQ) {
     return (
       <View className="quiz-container empty-state">
-        <Text className="empty-text">No questions available right now. Try again shortly.</Text>
-        <Button className="btn-back" onClick={handleConfirmExit}>Back to Home</Button>
+        <Text className="empty-text">{copy.empty}</Text>
+        <Button className="btn-back" onClick={handleConfirmExit}>{copy.backHome}</Button>
       </View>
     )
   }
@@ -540,9 +594,9 @@ export default function QuizContent() {
 
         {/* Topic, Level and Q number */}
         <View className="meta-badges">
-          <Text className="topic-badge">{currentQ.topic || 'Reasoning'}</Text>
+          <Text className="topic-badge">{currentQ.topic || copy.reasoning}</Text>
           <Text className="dot-sep">•</Text>
-          <Text className="level-badge">{currentQ.level || 'Think'}</Text>
+          <Text className="level-badge">{currentQ.level || copy.level}</Text>
           <Text className="dot-sep">•</Text>
           <Text className="q-num-badge">{currentIndex + 1} / {questions.length}</Text>
         </View>
@@ -577,12 +631,18 @@ export default function QuizContent() {
           <Text className="question-text">{currentQ.question}</Text>
 
           {/* Visual Asset if required */}
-          {currentQ.visual_required && currentQ.image_path && (
+          {currentQ.visual_required && currentQ.image_path && !imgError && (
             <Image
               className="question-image"
               src={getBrainActiveAssetUrl(currentQ.image_path) || ''}
               mode="aspectFit"
+              onError={() => setImgError(true)}
             />
+          )}
+          {imgError && (
+            <Text style={{ fontSize: '24px', color: '#94a3b8', padding: '16px 0', textAlign: 'center' }}>
+              🖼️ {copy.imageUnavailable}
+            </Text>
           )}
         </View>
 
@@ -626,7 +686,7 @@ export default function QuizContent() {
           />
           {!isAnswerSubmitted && (
             <View className="skip-btn" onClick={handleSkipQuestion}>
-              <Text className="skip-btn-text">{lang === 'zh' ? '跳过 ›' : 'Skip ›'}</Text>
+              <Text className="skip-btn-text">{copy.skip}</Text>
             </View>
           )}
           <View className="global-home-bottom-link" onClick={handleExit}>
@@ -639,15 +699,13 @@ export default function QuizContent() {
           <View className="explanation-card">
             <View className="exp-header">
               <Text className="exp-badge">
-                {selectedOptionId === currentQ.answer
-                  ? '✅ Well done! Here\'s the reasoning:'
-                  : 'Not this time — here\'s how to think it through:'}
+                {selectedOptionId === currentQ.answer ? copy.correct : copy.incorrect}
               </Text>
             </View>
             <Text className="exp-body">{currentQ.explanation}</Text>
             {currentQ.reasoning && (
               <View className="reasoning-box">
-                <Text className="reasoning-label">💡 Thinking Strategy:</Text>
+                <Text className="reasoning-label">{copy.strategy}</Text>
                 <Text className="reasoning-text">{currentQ.reasoning}</Text>
               </View>
             )}
@@ -656,20 +714,21 @@ export default function QuizContent() {
       </ScrollView>
 
       {/* Ask Hero AI Interactive Panel */}
-      <AskHeroPanel
-        questionId={currentQ.id}
-        studentAnswer={selectedOptionId || ''}
-        lang={lang}
-        hasVisualQuestion={Boolean(currentQ.visual_required || currentQ.image_path)}
-        visible={showAskHero}
-        onClose={() => setShowAskHero(false)}
-      />
+        <AskHeroPanel
+          questionId={currentQ.id}
+          questionData={currentQ}
+          studentAnswer={selectedOptionId || ''}
+          lang={lang}
+          hasVisualQuestion={Boolean(currentQ.visual_required || currentQ.image_path)}
+          visible={showAskHero}
+          onClose={() => setShowAskHero(false)}
+        />
 
       {/* Bottom Action Footer */}
       {isAnswerSubmitted && (
         <View className="bottom-action-bar">
           <Button className="btn-next-action" onClick={handleNext}>
-            {currentIndex < questions.length - 1 ? 'Continue →' : 'See My Results →'}
+            {currentIndex < questions.length - 1 ? copy.continue : copy.results}
           </Button>
         </View>
       )}
@@ -677,10 +736,10 @@ export default function QuizContent() {
       {/* Exit Confirmation Modal */}
       <ConfirmModal
         isOpen={showExitConfirm}
-        title="Leave this practice round?"
-        content="Your progress in this 5-question round will not be saved."
-        confirmText="Leave to Home"
-        cancelText="Stay"
+        title={copy.leaveTitle}
+        content={copy.leaveContent}
+        confirmText={copy.leave}
+        cancelText={copy.stay}
         onConfirm={handleConfirmExit}
         onCancel={() => setShowExitConfirm(false)}
       />

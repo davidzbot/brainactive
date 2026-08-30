@@ -10,7 +10,7 @@ export default defineAppConfig({
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#0f172a',
     backgroundColor: '#0f172a',
-    navigationBarTitleText: 'BrainActive P3 Thinking Skills',
+    navigationBarTitleText: 'Singapore P3 High Ability Thinking Skills',
     navigationBarTextStyle: 'white',
   },
 })

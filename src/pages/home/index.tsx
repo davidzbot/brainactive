@@ -35,7 +35,7 @@ import './index.scss'
 const i18n = {
   en: {
     title: 'BrainActive',
-    curriculum_badge: 'Singapore P3 Thinking Skills',
+    curriculum_badge: 'Singapore P3 High Ability Thinking Skills',
     daily_title: 'Daily Practice Round',
     daily_specs: '5 Questions · 5–8 Mins · Non-Routine Reasoning',
     daily_cta: 'Begin Today\'s Practice →',
@@ -78,8 +78,8 @@ const i18n = {
     ad_confirm_content: 'Watch a short video to unlock 1 additional practice round. This helps support our development!',
     ad_confirm_ok: 'Watch Video',
     ad_confirm_cancel: 'Cancel',
-    referral_title: 'Invite Friends, Get Pro Free',
-    referral_sub: 'Share BrainActive with friends & get 7 days free Pro for both.',
+    referral_title: 'Share with Friends — Pro Free!',
+    referral_sub: 'Send BrainActive to a friend. You can both unlock 7 days of Pro free!',
     referral_btn: 'Invite',
     tips_title: 'Thinking Skills Heuristics',
     tips: [
@@ -90,12 +90,18 @@ const i18n = {
       { title: '🔎 Systematic Listing & Tree Logic', desc: 'List cases in orderly alphabetical or numerical sequence to avoid double-counting or missing options.' }
     ],
     feedback: 'Feedback',
-    support_email: 'Support: support@brainactive.app',
-    website: 'Website: https://brainactive.app/'
+    support_email: 'Support: pslehero@gmail.com',
+    website: 'Website: https://pslehero.org/',
+    more_hero_title: 'More from Hero',
+    more_hero: [
+      { emoji: '🧠', name: 'High-Ability P3 Guide', sub: 'See how Math Hero spots giftedness — free' },
+      { emoji: '🏆', name: 'PSLE Hero', sub: 'Top PSLE exam practice app' },
+      { emoji: '➗', name: 'Singapore Primary Math', sub: 'Master Primary Math concepts' }
+    ]
   },
   zh: {
     title: 'BrainActive',
-    curriculum_badge: '新加坡 P3 思维特训',
+    curriculum_badge: '新加坡 P3 高能力思维特训',
     daily_title: '今日思维特训',
     daily_specs: '5 道题 · 5–8 分钟 · 高难度思维拓展',
     daily_cta: '开始今日特训 →',
@@ -138,8 +144,8 @@ const i18n = {
     ad_confirm_content: '观看一段简短视频即可解锁 1 次额外练习机会。您的支持是我们持续精进的动力！',
     ad_confirm_ok: '立即观看',
     ad_confirm_cancel: '取消',
-    referral_title: '邀请好友，免费获赠 Pro',
-    referral_sub: '每邀请 1 位好友，双方均可免费获赠 7 天 Pro 会员。',
+    referral_title: '分享给好友，免费赢 Pro！',
+    referral_sub: '把 BrainActive 分享给好友，双方都可免费获得 7 天 Pro！',
     referral_btn: '去邀请',
     tips_title: '核心思维方法精讲',
     tips: [
@@ -150,8 +156,14 @@ const i18n = {
       { title: '🔎 有序列举与树状排查', desc: '按固定字母或大小顺序逐一列举，做到不重复、不遗漏。' }
     ],
     feedback: '意见反馈',
-    support_email: '支持: support@brainactive.app',
-    website: '官网: https://brainactive.app/'
+    support_email: '支持: pslehero@gmail.com',
+    website: '官网: https://pslehero.org/',
+    more_hero_title: '来自 Hero 的更多内容',
+    more_hero: [
+      { emoji: '🧠', name: '高能力 P3 识别指南', sub: '了解 Math Hero 如何识别天赋 · 免费' },
+      { emoji: '🏆', name: 'PSLE Hero', sub: '小六会考备考首选应用' },
+      { emoji: '➗', name: '新加坡小学数学', sub: '系统掌握小学数学' }
+    ]
   }
 }
 
@@ -420,15 +432,21 @@ export default function HomePage() {
     showModal({
       title: lang === 'en' ? 'BrainActive Feedback' : '意见反馈',
       content: lang === 'en'
-        ? 'Have suggestions or found a question issue? Email us at support@brainactive.app'
-        : '有任何建议或发现题目问题？欢迎发送邮件至 support@brainactive.app',
+        ? 'Have suggestions or found a question issue? Email us at pslehero@gmail.com'
+        : '有任何建议或发现题目问题？欢迎发送邮件至 pslehero@gmail.com',
       showCancel: false
     })
   }
 
   const handleOpenWebsite = () => {
     if (typeof window !== 'undefined') {
-      window.open('https://brainactive.app/', '_blank')
+      window.open('https://pslehero.org/', '_blank')
+    }
+  }
+
+  const handleOpenGuide = () => {
+    if (typeof window !== 'undefined') {
+      window.open('https://pslehero.org/p3-high-ability-identification-guide.html', '_blank')
     }
   }
 
@@ -723,43 +741,40 @@ export default function HomePage() {
                   </View>
                 ))}
               </View>
+
+              {/* Hero Tip moved to "More from Hero" section below */}
             </View>
 
-            {/* Cross-App Links: PSLE Hero & Singapore Primary Math */}
-            <View className='cross-app-section'>
-              <Text className='cross-app-title'>
-                {lang === 'en' ? '🔗 Related Apps' : '🔗 相关应用'}
-              </Text>
-              <View
-                className='cross-app-link'
-                onClick={() => {
-                  if (typeof window !== 'undefined') {
-                    window.open('https://play.google.com/store/apps/details?id=com.pslehero.app', '_blank')
-                  }
-                }}
-              >
-                <Text className='cross-app-emoji'>🏆</Text>
-                <View className='cross-app-text'>
-                  <Text className='cross-app-name'>{lang === 'en' ? 'Need PSLE exam prep?' : '需要小六会考备考？'}</Text>
-                  <Text className='cross-app-sub'>{lang === 'en' ? 'Try PSLE Hero 🏅' : '试试 PSLE Hero 🏅'}</Text>
+            {/* More from Hero: guide + related apps */}
+            <View className='more-from-hero-section'>
+              <Text className='more-hero-title'>{t.more_hero_title}</Text>
+              {t.more_hero.map((item, idx) => (
+                <View
+                  key={idx}
+                  className='more-hero-card'
+                  onClick={() => {
+                    const urls = [
+                      'https://pslehero.org/p3-high-ability-identification-guide.html',
+                      'https://play.google.com/store/apps/details?id=com.pslehero.app',
+                      'https://play.google.com/store/apps/details?id=com.singaporeprimarymath.app'
+                    ]
+                    if (idx === 0) {
+                      handleOpenGuide()
+                      return
+                    }
+                    if (typeof window !== 'undefined') {
+                      window.open(urls[idx], '_blank')
+                    }
+                  }}
+                >
+                  <Text className='more-hero-emoji'>{item.emoji}</Text>
+                  <View className='more-hero-text'>
+                    <Text className='more-hero-name'>{item.name}</Text>
+                    <Text className='more-hero-sub'>{item.sub}</Text>
+                  </View>
+                  <Text className='more-hero-arrow'>›</Text>
                 </View>
-                <Text className='cross-app-arrow'>›</Text>
-              </View>
-              <View
-                className='cross-app-link'
-                onClick={() => {
-                  if (typeof window !== 'undefined') {
-                    window.open('https://play.google.com/store/apps/details?id=com.singaporeprimarymath.app', '_blank')
-                  }
-                }}
-              >
-                <Text className='cross-app-emoji'>🔢</Text>
-                <View className='cross-app-text'>
-                  <Text className='cross-app-name'>{lang === 'en' ? 'Need Primary Math practice?' : '需要小学数学练习？'}</Text>
-                  <Text className='cross-app-sub'>{lang === 'en' ? 'Try Singapore Primary Math 🏅' : '试试新加坡小学数学 🏅'}</Text>
-                </View>
-                <Text className='cross-app-arrow'>›</Text>
-              </View>
+              ))}
             </View>
 
             {/* Footer */}

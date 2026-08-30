@@ -80,6 +80,7 @@ export default function ResultContent() {
   const score = parseInt(router.params.score || '0', 10)
   const total = parseInt(router.params.total || '5', 10)
   const timeSec = parseInt(router.params.time || '0', 10)
+  const flawless = router.params.flawless === '1'
 
   const [isLoading, setIsLoading] = useState(true)
   const [animatedScore, setAnimatedScore] = useState(0)
@@ -179,10 +180,11 @@ export default function ResultContent() {
     }
   }
 
-  const handleGoPro = () => {
+  const handleGoPro = (focus = false) => {
+    const url = focus ? '/pages/pro/index?tab=analysis' : '/pages/pro/index'
     Taro.navigateTo({
-      url: '/pages/pro/index'
-    }).catch(() => Taro.reLaunch({ url: '/pages/pro/index' }))
+      url
+    }).catch(() => Taro.reLaunch({ url }))
   }
 
   const handleHome = () => {
@@ -250,8 +252,8 @@ export default function ResultContent() {
           )}
         </View>
 
-        {/* Perfect Score Celebration */}
-        {score === total && total > 0 && (
+        {/* Perfect Score Celebration (only when truly flawless: no skips & all first-try correct) */}
+        {score === total && total > 0 && flawless && (
           <View className="perfect-score-celebration">
             <Text className="perfect-score-text">{t.perfect_score}</Text>
           </View>
@@ -269,6 +271,11 @@ export default function ResultContent() {
         <View className="hero-spotted-card">
           <Text className="hero-spotted-title">{t.hero_spotted_title}</Text>
           <Text className="hero-spotted-body">{getHeroSpottedText()}</Text>
+          <View className="hero-spotted-cta" onClick={() => handleGoPro(true)}>
+            <Text className="hero-spotted-cta-text">
+              🔍 {lang === 'en' ? 'Try a Focus Test in Pro' : '在 Pro 中试试专注力测试'} →
+            </Text>
+          </View>
         </View>
 
         {/* Action Buttons */}
@@ -299,7 +306,7 @@ export default function ResultContent() {
         </View>
 
         {/* Pro CTA Card */}
-        <View className="pro-cta-bottom" onClick={handleGoPro}>
+        <View className="pro-cta-bottom" onClick={() => handleGoPro()}>
           <View className={`pro-card ${proActive ? 'active' : ''}`}>
             <Text className="pro-title">
               🚀 {proActive ? t.pro_unlocked_msg : t.share_unlock}

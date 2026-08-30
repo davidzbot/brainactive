@@ -1,0 +1,492 @@
+{
+  "status": "PASS",
+  "candidate_count": 93,
+  "passed": 93,
+  "failed": 0,
+  "skill_counts": {
+    "1.1": 8,
+    "1.2": 5,
+    "1.3": 5,
+    "1.4": 5,
+    "3.1": 5,
+    "3.2": 5,
+    "3.4": 5,
+    "3.5": 5,
+    "5.1": 5,
+    "5.2": 8,
+    "5.3": 5,
+    "5.4": 5,
+    "6.1": 9,
+    "6.2": 5,
+    "6.3": 5,
+    "6.6": 5,
+    "3.3": 3
+  },
+  "results": [
+    {
+      "id": "BA_P3_ADD_0001",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0002",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0003",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0004",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0005",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0006",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0007",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0008",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0009",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0010",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0011",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0012",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0013",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0014",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0015",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0016",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0017",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0018",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0019",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0020",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0021",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0022",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0023",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0024",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0025",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0026",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0027",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0028",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0029",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0030",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0031",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0032",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0033",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0034",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0035",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0036",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0037",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0038",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0039",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0040",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0041",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0042",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0043",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0044",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0045",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0046",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0047",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0048",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0049",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0050",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0051",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0052",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0053",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0054",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0055",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0056",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0057",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0058",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0059",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0060",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0061",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0062",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0063",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0064",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0065",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0066",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0067",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0068",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0070",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0071",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0072",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0073",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0074",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0075",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0076",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0077",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0078",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0079",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0080",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0081",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0082",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0083",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0084",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0085",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0086",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0087",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0088",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0089",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0090",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0091",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0092",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0093",
+      "verdict": "PASS",
+      "checks": []
+    },
+    {
+      "id": "BA_P3_ADD_0094",
+      "verdict": "PASS",
+      "checks": []
+    }
+  ]
+}
