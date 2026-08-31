@@ -221,6 +221,10 @@ export function isPro(): boolean {
     if (expTime > Date.now()) return true
   }
   
+  // Check the locally observed Google Play subscription state first. The native
+  // purchase bridge may omit expiryTimeMillis for an otherwise valid purchase.
+  if (getSubscriptionActive()) return true
+
   // Check subscription expiry
   const subExp = getStorage('subscription_expiry')
   if (subExp) {
@@ -245,6 +249,14 @@ export function setSubscriptionExpiry(dateStr: string | null): void {
 
 export function getSubscriptionExpiry(): string | null {
   return getStorage('subscription_expiry')
+}
+
+export function setSubscriptionActive(active: boolean): void {
+  setStorage('subscription_active', active ? 'true' : 'false')
+}
+
+export function getSubscriptionActive(): boolean {
+  return getStorage('subscription_active') === 'true'
 }
 
 // -------------------------------------------------------------

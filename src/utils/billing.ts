@@ -9,7 +9,12 @@ import {
   SUBSCRIPTION_OFFERS,
   SUBSCRIPTION_PRODUCT_ID
 } from '@/config/monetization'
-import { getSubscriptionExpiry, setSubscriptionExpiry } from './storage'
+import {
+  getSubscriptionActive,
+  getSubscriptionExpiry,
+  setSubscriptionActive,
+  setSubscriptionExpiry,
+} from './storage'
 
 let billingInitPromise: Promise<boolean> | null = null
 let billingListenersRegistered = false
@@ -18,24 +23,29 @@ function notifyEntitlementChanged() {
   Taro.eventCenter.trigger('brainactive_billing_entitlement_changed')
 }
 
-function isActiveTransaction(transaction: CdvPurchase.Transaction) {
+function isSubscriptionTransaction(transaction: CdvPurchase.Transaction) {
   return (
     transaction.products.some(product => product.id === SUBSCRIPTION_PRODUCT_ID) &&
     !transaction.isPending &&
-    (transaction.state === 'approved' || transaction.state === 'finished') &&
-    Boolean(transaction.expirationDate && transaction.expirationDate.getTime() > Date.now())
+    (transaction.state === 'approved' || transaction.state === 'finished')
   )
 }
 
 function latestSubscriptionTransaction() {
   return CdvPurchase.store.localTransactions
     .filter(transaction => transaction.products.some(product => product.id === SUBSCRIPTION_PRODUCT_ID))
-    .sort((a, b) => (b.expirationDate?.getTime() || 0) - (a.expirationDate?.getTime() || 0))[0]
+    .sort((a, b) => (
+      (b.expirationDate?.getTime() || b.lastRenewalDate?.getTime() || b.purchaseDate?.getTime() || 0) -
+      (a.expirationDate?.getTime() || a.lastRenewalDate?.getTime() || a.purchaseDate?.getTime() || 0)
+    ))[0]
 }
 
 async function applyApprovedTransaction(transaction: CdvPurchase.Transaction) {
-  if (!isActiveTransaction(transaction) || !transaction.expirationDate) return
-  setSubscriptionExpiry(transaction.expirationDate.toISOString())
+  if (!isSubscriptionTransaction(transaction)) return
+  setSubscriptionActive(true)
+  if (transaction.expirationDate && transaction.expirationDate.getTime() > Date.now()) {
+    setSubscriptionExpiry(transaction.expirationDate.toISOString())
+  }
   notifyEntitlementChanged()
   try {
     await transaction.finish()
@@ -45,16 +55,30 @@ async function applyApprovedTransaction(transaction: CdvPurchase.Transaction) {
 }
 
 export async function syncBillingEntitlement(): Promise<boolean> {
-  if (!Capacitor.isNativePlatform()) return Boolean(getSubscriptionExpiry())
+  if (!Capacitor.isNativePlatform()) return getSubscriptionActive() || Boolean(getSubscriptionExpiry())
   const transaction = latestSubscriptionTransaction()
-  if (transaction && isActiveTransaction(transaction) && transaction.expirationDate) {
-    setSubscriptionExpiry(transaction.expirationDate.toISOString())
+  if (transaction && isSubscriptionTransaction(transaction)) {
+    if (transaction.expirationDate && transaction.expirationDate.getTime() <= Date.now()) {
+      setSubscriptionActive(false)
+      setSubscriptionExpiry(null)
+      notifyEntitlementChanged()
+      return false
+    }
+    setSubscriptionActive(true)
+    if (transaction.expirationDate) {
+      setSubscriptionExpiry(transaction.expirationDate.toISOString())
+    }
     notifyEntitlementChanged()
     return true
   }
-  setSubscriptionExpiry(null)
-  notifyEntitlementChanged()
-  return false
+  const state = String(transaction?.state || '')
+  if (state === 'cancelled' || state === 'failed') {
+    setSubscriptionActive(false)
+    setSubscriptionExpiry(null)
+    notifyEntitlementChanged()
+    return false
+  }
+  return getSubscriptionActive() || Boolean(getSubscriptionExpiry())
 }
 
 export async function initializeBilling(): Promise<boolean> {
@@ -71,6 +95,9 @@ export async function initializeBilling(): Promise<boolean> {
           platform: Platform.GOOGLE_PLAY
         })
         store.when().approved(applyApprovedTransaction)
+        store.when().receiptUpdated(() => {
+          void syncBillingEntitlement()
+        })
         store.when().pending(() => {
           console.info('[BrainActive Billing] Subscription purchase pending')
         })
