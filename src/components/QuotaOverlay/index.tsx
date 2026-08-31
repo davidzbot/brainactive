@@ -32,7 +32,7 @@ export default function QuotaOverlay({ isOpen, onClose, onUnlocked }: QuotaOverl
         includedTitle: '今日免费练习已完成',
         limitTitle: '今日练习次数已用完',
         includedDesc: `你已完成今天的 ${FREE_ROUNDS_PER_DAY} 轮免费练习。观看短视频即可解锁第 ${nextAdRoundNum}/${MAX_AD_ROUNDS_PER_DAY} 轮！`,
-        limitDesc: `你已完成今天全部 ${MAX_TOTAL_DAILY_ROUNDS} 轮练习（25 道题）。升级 Pro，畅享无限练习！`,
+        limitDesc: `你已完成今天全部 ${MAX_TOTAL_DAILY_ROUNDS} 轮练习（${MAX_TOTAL_DAILY_ROUNDS * 5} 道题）。升级 Pro，畅享无限练习！`,
         watch: `🎬 看视频解锁第 ${nextAdRoundNum}/${MAX_AD_ROUNDS_PER_DAY} 轮`,
         pro: '升级 Pro — 无限练习 👑',
         later: '稍后再说'
@@ -41,7 +41,7 @@ export default function QuotaOverlay({ isOpen, onClose, onUnlocked }: QuotaOverl
         includedTitle: 'Today\'s Free Practice Is Complete',
         limitTitle: 'Today\'s Practice Limit Is Reached',
         includedDesc: `You completed your ${FREE_ROUNDS_PER_DAY} free rounds today. Watch a short video to unlock round ${nextAdRoundNum}/${MAX_AD_ROUNDS_PER_DAY}!`,
-        limitDesc: `You completed all ${MAX_TOTAL_DAILY_ROUNDS} practice rounds today (25 questions). Upgrade to Pro for unlimited practice!`,
+        limitDesc: `You completed all ${MAX_TOTAL_DAILY_ROUNDS} practice rounds today (${MAX_TOTAL_DAILY_ROUNDS * 5} questions). Upgrade to Pro for unlimited practice!`,
         watch: `🎬 Watch Video for Round ${nextAdRoundNum}/${MAX_AD_ROUNDS_PER_DAY}`,
         pro: 'Go Pro — Unlimited Practice 👑',
         later: 'Maybe Later'

@@ -88,12 +88,12 @@ export function getLogicalSgtDay(): string {
 
 // -------------------------------------------------------------
 // Daily Usage & Free Rounds Limit
-// Model: 2 free rounds + up to 3 rewarded-ad rounds (max 5 rounds / 25 questions per day)
-// Sequence: 1 free -> 2 free -> 3 ad -> 4 ad -> 5 ad -> stop (Pro = unlimited)
+// Model: 1 free round + up to 3 rewarded-ad rounds (max 4 rounds / 20 questions per day)
+// Sequence: 1 free -> 2 ad -> 3 ad -> 4 ad -> stop (Pro = unlimited)
 // -------------------------------------------------------------
-export const FREE_ROUNDS_PER_DAY = 2
+export const FREE_ROUNDS_PER_DAY = 1
 export const MAX_AD_ROUNDS_PER_DAY = 3
-export const MAX_TOTAL_DAILY_ROUNDS = 5
+export const MAX_TOTAL_DAILY_ROUNDS = FREE_ROUNDS_PER_DAY + MAX_AD_ROUNDS_PER_DAY
 
 export interface DailyUsage {
   date: string
