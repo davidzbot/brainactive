@@ -5,25 +5,28 @@
  * Everything else in the app reads from here so there is one source of truth.
  *
  * AdMob App ID must ALSO be set in `capacitor.config.json` → AdMob.appId.
- * The subscription product / offers are used once a real IAP plugin
- * (e.g. capacitor-plugin-cdv-purchase) is wired into `pages/pro/index.tsx`.
+ * Google Play Billing is wired through capacitor-plugin-cdv-purchase and the
+ * purchase lifecycle is coordinated by `src/utils/billing.ts`.
  */
 
-// AdMob App ID (Android). Replace with the real BrainActive app id.
-export const ADMOB_APP_ID = 'ca-app-pub-xxxxxxxxxxxxxxxx~xxxxxxxxxxxx'
+// Google's official test App ID is used for the closed-test build.
+export const ADMOB_APP_ID = 'ca-app-pub-3940256099942544~3347511713'
+export const ADMOB_REWARDED_AD_UNIT_ID = 'ca-app-pub-8548627206908979/6689305699'
+export const ADMOB_USE_PRODUCTION_ADS = false
 
-// Production rewarded ad unit. Leave as '' to safely fall back to the Google
-// test unit until the real BrainActive rewarded unit is pasted in.
-export const ADMOB_REWARDED_AD_UNIT_ID = ''
-
-// Google Play subscription product id (matches Play Console → In-app products).
+// Google Play subscription identifiers. Product/base-plan IDs are separate from
+// localized display names and must match the Play Console configuration.
 export const SUBSCRIPTION_PRODUCT_ID = 'brainactive_pro'
+export const SUBSCRIPTION_BASE_PLANS = {
+  yearly: 'yearly',
+  monthly: 'monthly'
+} as const
 export const SUBSCRIPTION_OFFERS = {
-  yearly: 'brainactive_pro@yearly',
-  monthly: 'brainactive_pro@monthly'
+  yearly: `${SUBSCRIPTION_PRODUCT_ID}@${SUBSCRIPTION_BASE_PLANS.yearly}`,
+  monthly: `${SUBSCRIPTION_PRODUCT_ID}@${SUBSCRIPTION_BASE_PLANS.monthly}`
 } as const
 
-// Display prices (overridden at runtime by store pricing once IAP is wired).
+// Display prices used as fallback when Play ProductDetails are unavailable.
 export const PLAN_PRICES = {
   yearly: 'S$29.98',
   monthly: 'S$4.98'

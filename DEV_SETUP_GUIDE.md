@@ -34,27 +34,37 @@ The project uses Taro for the frontend and Capacitor to bridge to native Android
 Used for Rewarded Ads to unlock features for 24 hours.
 
 ### Configuration
-1. **AndroidManifest.xml**: Must include the App ID in the `<application>` tag.
-   ```xml
-   <meta-data
-       android:name="com.google.android.gms.ads.APPLICATION_ID"
-       android:value="ca-app-pub-8548627206908979~9870002801"/>
-   ```
+1. **AndroidManifest.xml**: The `<application>` tag references `@string/admob_application_id`. Main/release and debug resources use Google's official test App ID for the closed-test build.
 2. **capacitor.config.json**: Register the plugin.
    ```json
    "plugins": {
-     "AdMob": { "appId": "ca-app-pub-8548627206908979~9870002801" }
+     "AdMob": { "appId": "ca-app-pub-3940256099942544~3347511713" }
    }
    ```
 
 ### Code Implementation (`src/utils/ad.ts`)
+The current closed-test configuration uses Google's official test App ID `ca-app-pub-3940256099942544~3347511713` and rewarded unit `ca-app-pub-3940256099942544/5224354917`. `ADMOB_USE_PRODUCTION_ADS` remains false.
+
 Call `showRewardAd()` to trigger the flow. It is Promise-based:
 - **Success**: Resolves when ad is watched OR if the safety fallback triggers (ensures UX).
 - **Events**: Listens for `Rewarded` (reward flag) and `Dismissed` (cleanup/unlock).
 
 ---
 
-## 3. Supabase Integration
+## 3. Google Play subscriptions
+
+BrainActive uses `capacitor-plugin-cdv-purchase` with Google Play Billing Library 9.1.0. Configure these in the Play Console for internal testing:
+
+- Product ID: `brainactive_pro`
+- Monthly base plan ID: `monthly`
+- Yearly base plan ID: `yearly`
+- Offer lookup IDs: `brainactive_pro@monthly` and `brainactive_pro@yearly`
+
+The app queries Play `ProductDetails`, launches the selected base-plan offer, acknowledges approved purchases, and restores/re-queries purchases on startup, resume, and the Pro page. Paid subscription expiry remains separate from referral `pro_expiry`.
+
+---
+
+## 4. Supabase Integration
 
 Used for fetching dynamic training content (names, cities, sentences).
 

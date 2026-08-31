@@ -7,21 +7,23 @@ import { AdMob, RewardAdOptions, RewardAdPluginEvents } from '@capacitor-communi
 import { Capacitor } from '@capacitor/core'
 import Taro from '@tarojs/taro'
 import { unlockBonusRound } from './storage'
-import { ADMOB_REWARDED_AD_UNIT_ID } from '../config/monetization'
+import {
+  ADMOB_REWARDED_AD_UNIT_ID,
+  ADMOB_USE_PRODUCTION_ADS
+} from '../config/monetization'
 
 // -----------------------------------------------------------------------------
-// ADMOB IDS — production unit is centralized in src/config/monetization.ts.
-// While the production unit is empty we fall back to the Google test unit so
-// the reward flow still works in dev / before the real ID is provided.
+// ADMOB IDS — production identifiers are centralized in src/config/monetization.ts.
+// Test mode is the safe default for every current development/internal build.
 // -----------------------------------------------------------------------------
-const USE_TEST_ADS = process.env.NODE_ENV === 'development' || !Capacitor.isNativePlatform()
+const USE_TEST_ADS = !ADMOB_USE_PRODUCTION_ADS || !Capacitor.isNativePlatform()
 
-// Google test rewarded unit (safe fallback, never a real ad).
+// Google's official test rewarded unit (safe for development and internal testing).
 const ADMOB_TEST_ID_REWARDED = 'ca-app-pub-3940256099942544/5224354917'
 
 export const REWARD_AD_UNIT_ID = USE_TEST_ADS
   ? ADMOB_TEST_ID_REWARDED
-  : (ADMOB_REWARDED_AD_UNIT_ID || ADMOB_TEST_ID_REWARDED)
+  : ADMOB_REWARDED_AD_UNIT_ID
 
 let isAdMobReady = false
 let isLoading = false
@@ -50,16 +52,19 @@ export async function preloadRewardAd(): Promise<boolean> {
       isTesting: USE_TEST_ADS
     }
     await AdMob.prepareRewardVideoAd(options)
-    isLoading = false
     return true
   } catch (err: any) {
     return false
+  } finally {
+    isLoading = false
   }
 }
 
 export const preloadAd = preloadRewardAd
 
-export async function showRewardAd(): Promise<boolean> {
+let activeRewardAdPromise: Promise<boolean> | null = null
+
+async function runRewardAd(): Promise<boolean> {
   // If in web browser / dev mode, simulate successful ad view
   if (!Capacitor.isNativePlatform()) {
     Taro.showLoading({ title: 'Playing Bonus Video...' })
@@ -70,53 +75,77 @@ export async function showRewardAd(): Promise<boolean> {
     return true
   }
 
+  let rewardSub: { remove: () => void | Promise<void> } | null = null
+  let dismissSub: { remove: () => void | Promise<void> } | null = null
+  const removeListeners = () => {
+    rewardSub?.remove()
+    dismissSub?.remove()
+    rewardSub = null
+    dismissSub = null
+  }
+
   try {
-    await initAdMob()
     rewardGranted = false
-    isShowing = true
+    await initAdMob()
+    let bonusRoundGranted = false
+    let resolveAdResult: ((success: boolean) => void) | null = null
+
+    const grantBonusRound = () => {
+      if (!rewardGranted || bonusRoundGranted) return
+      bonusRoundGranted = true
+      unlockBonusRound()
+      Taro.showToast({ title: 'Bonus Round Unlocked! 🎉', icon: 'success' })
+    }
+
+    const adResult = new Promise<boolean>(resolve => {
+      resolveAdResult = resolve
+    })
 
     Taro.showLoading({ title: 'Loading Video...' })
 
-    // Setup listener for reward earned
-    const rewardSub = await AdMob.addListener(
+    rewardSub = await AdMob.addListener(
       RewardAdPluginEvents.Rewarded,
       () => {
         console.log('[BrainActive AdMob] Reward Earned!')
         rewardGranted = true
+        grantBonusRound()
       }
     )
 
-    const dismissSub = await AdMob.addListener(
+    dismissSub = await AdMob.addListener(
       RewardAdPluginEvents.Dismissed,
       () => {
         isShowing = false
-        rewardSub.remove()
-        dismissSub.remove()
-        if (rewardGranted) {
-          unlockBonusRound()
-          Taro.showToast({ title: 'Bonus Round Unlocked! 🎉', icon: 'success' })
-        }
+        removeListeners()
+        resolveAdResult?.(rewardGranted)
       }
     )
 
-    await preloadRewardAd()
+    const prepared = await preloadRewardAd()
+    if (!prepared) throw new Error('Rewarded ad could not be prepared')
+    isShowing = true
     Taro.hideLoading()
     await AdMob.showRewardVideoAd()
-    return true
+    return await adResult
   } catch (err: any) {
     Taro.hideLoading()
     isShowing = false
+    removeListeners()
     console.error('[BrainActive AdMob] Show error:', err.message)
-    // Graceful fallback in case of no fill
+    if (rewardGranted) return true
     Taro.showModal({
       title: 'Bonus Round',
-      content: 'Could not load video at this moment. You get 1 bonus round on us!',
-      showCancel: false,
-      success: () => {
-        unlockBonusRound()
-        Taro.showToast({ title: 'Bonus Round Unlocked! 🎉', icon: 'success' })
-      }
+      content: 'Could not load video at this moment. Please try again later.',
+      showCancel: false
     })
-    return true
+    return false
   }
+}
+
+export function showRewardAd(): Promise<boolean> {
+  if (activeRewardAdPromise) return activeRewardAdPromise
+  activeRewardAdPromise = runRewardAd()
+  return activeRewardAdPromise.finally(() => {
+    activeRewardAdPromise = null
+  })
 }

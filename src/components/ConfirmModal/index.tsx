@@ -26,16 +26,16 @@ export default function ConfirmModal({
   return (
     <View className="modal-overlay">
       <View className="modal-card">
-        <Text className="modal-title">{title}</Text>
-        <Text className="modal-content">{content}</Text>
-        <View className="modal-actions">
-          <Button className="btn-cancel" onClick={onCancel}>
-            {cancelText}
-          </Button>
-          <Button className="btn-confirm" onClick={onConfirm}>
-            {confirmText}
-          </Button>
+        <View className="modal-header">
+          <Text className="modal-title">{title}</Text>
+          <Text className="modal-content">{content}</Text>
         </View>
+        <Button className="btn-confirm" onClick={onConfirm}>
+          {confirmText}
+        </Button>
+        <Button className="btn-cancel" onClick={onCancel}>
+          {cancelText}
+        </Button>
       </View>
     </View>
   )

@@ -25,6 +25,7 @@ CANONICAL = os.path.join(BANKDIR, "brainactive_p3_question_bank_production.json"
 RESDIR = os.path.join(BANKDIR, "qa_batches")
 IMGDIR = os.path.join(BANKDIR, "images")
 PAGE_SIZE = 100
+APPROVED_QA_STATUSES = {"validated_baseline_v041"}
 
 DOMAIN_TOPIC = {
     "numerical_reasoning": "Numerical Thinking",
@@ -90,7 +91,7 @@ def load_canonical_questions():
         by_id[qid.lower()] = question
         options = question.get("options")
         option_ids = [option.get("id") for option in options] if isinstance(options, list) else []
-        required = ("domain", "skill", "level", "question", "explanation", "answer")
+        required = ("domain", "skill", "level", "question", "explanation", "answer", "qa_status")
         if any(not question.get(field) for field in required):
             errors.append(f"missing required field: {qid}")
         if len(options or []) != 4 or len(option_ids) != len(set(option_ids)) or question["answer"] not in option_ids:
@@ -155,24 +156,33 @@ def public_asset_ok(storage_path):
 
 def classify(canonical, pass_ids, fail_ids):
     candidate_ids = set(canonical)
-    approved = candidate_ids & pass_ids - fail_ids
+    status_approved = {
+        qid for qid, question in canonical.items()
+        if question.get("qa_status") in APPROVED_QA_STATUSES
+    }
+    pass_only = candidate_ids & pass_ids - fail_ids
+    approved = pass_only & status_approved
+    status_blocked = pass_only - status_approved
     rejected = candidate_ids & fail_ids - pass_ids
     conflicts = candidate_ids & pass_ids & fail_ids
     unassessed = candidate_ids - pass_ids - fail_ids
     outside = (pass_ids | fail_ids) - candidate_ids
-    return approved, rejected, conflicts, unassessed, outside
+    return approved, rejected, conflicts, unassessed, outside, status_blocked
 
 
 print("=== BrainActive QA preflight ===")
 canonical = load_canonical_questions()
 pass_ids, fail_ids = load_qa_verdicts()
-approved, rejected, conflicts, unassessed, outside = classify(canonical, pass_ids, fail_ids)
+approved, rejected, conflicts, unassessed, outside, status_blocked = classify(canonical, pass_ids, fail_ids)
 print(f"Candidates: {len(canonical)}")
-print(f"Pass-only approved: {len(approved)}")
+print(f"Pass-only approved with allowed status: {len(approved)}")
+print(f"Pass-only blocked by qa_status: {len(status_blocked)}")
 print(f"Fail-only rejected: {len(rejected)}")
 print(f"Conflicts held inactive: {len(conflicts)}")
 print(f"Unassessed held inactive: {len(unassessed)}")
 print(f"Verdicts outside canonical bank (ignored): {len(outside)}")
+if status_blocked:
+    print("Status-blocked pass IDs:", ", ".join(sorted(status_blocked)))
 if conflicts:
     print("Conflict IDs:", ", ".join(sorted(conflicts)))
 
@@ -213,7 +223,7 @@ for qid, question in sorted(missing.items()):
         "image_path": None,
         "tags": question.get("tags") or [],
         "is_active": False,
-        "qa_status": question.get("qa_status") or "qa_passed_pending_activation",
+        "qa_status": question["qa_status"],
     }
     status, response = req("POST", BASE, body=[row], headers={**HEAD, "Prefer": "return=minimal"})
     if status == 409:
@@ -265,24 +275,25 @@ expected_paths = {
 }
 wrong_images = sorted(qid for qid, path in expected_paths.items() if final.get(qid, {}).get("image_path") != path)
 public_asset_failures = sorted(path for path in expected_paths.values() if not public_asset_ok(path))
-managed_active = {qid for qid in approved if final.get(qid, {}).get("is_active") is True}
+approved_present = {qid for qid in approved if qid in final}
 managed_rejected = {qid for qid in rejected if final.get(qid, {}).get("qa_status") == "rejected"}
 managed_holds_active = sorted(
-    qid for qid in conflicts | unassessed if final.get(qid, {}).get("is_active") is True
+    qid for qid in conflicts | unassessed | status_blocked
+    if final.get(qid, {}).get("is_active") is True
 )
-if missing_approved or wrong_images or public_asset_failures or managed_active != approved or managed_holds_active:
+if missing_approved or wrong_images or public_asset_failures or approved_present != approved or managed_holds_active:
     raise RuntimeError(
         "Verification failed: "
-        f"missing approved={missing_approved}, wrong image paths={wrong_images}, "
-        f"public asset failures={public_asset_failures}, "
-        f"missing active={sorted(approved - managed_active)}, active holds={managed_holds_active}"
+        f"missing approved={sorted(approved - approved_present)}, wrong image paths={wrong_images}, "
+        f"public asset failures={public_asset_failures}, active holds={managed_holds_active}"
     )
 active_total = sum(1 for row in final_rows if row.get("is_active") is True)
 rejected_total = sum(1 for row in final_rows if row.get("qa_status") == "rejected")
+approved_active = sum(1 for qid in approved if final.get(qid, {}).get("is_active") is True)
 print(f"Verified total DB rows: {len(final_rows)}")
-print(f"Verified approved rows present/active: {len(approved)}")
+print(f"Verified approved rows present: {len(approved)}; already active: {approved_active}")
 print(f"Verified fail-only rejected: {len(managed_rejected)}")
-print(f"Verified conflict+unassessed inactive: {len(conflicts | unassessed)}")
+print(f"Verified conflict+unassessed+status-blocked inactive: {len(conflicts | unassessed | status_blocked)}")
 print(f"Verified active total: {active_total}; rejected total: {rejected_total}")
 print(f"Verified question/image matches and public assets: {len(expected_paths)}")
 print("Upload preflight and writes complete.")

@@ -6,14 +6,20 @@ import {
   getProExpiry,
   setProExpiry,
   getSubscriptionExpiry,
-  setSubscriptionExpiry,
   getQuizHistory,
   getWrongQuestions,
   getLang,
   getDeviceId
 } from '@/utils/storage'
 import { getBrainActiveProgress } from '@/utils/request'
-import { SUBSCRIPTION_PRODUCT_ID, SUBSCRIPTION_OFFERS, PLAN_PRICES } from '@/config/monetization'
+import { PLAN_PRICES } from '@/config/monetization'
+import {
+  getSubscriptionPrices,
+  initializeBilling,
+  purchaseSubscription,
+  refreshBillingEntitlement,
+  restoreBillingPurchases
+} from '@/utils/billing'
 import ReferralModal from '@/components/ReferralModal'
 import ConfirmModal from '@/components/ConfirmModal'
 import AnalysisTab from '@/components/pro/AnalysisTab'
@@ -170,6 +176,7 @@ export default function ProPage() {
   const [trendFilter, setTrendFilter] = useState('Last Runs')
   const [showReferral, setShowReferral] = useState(false)
   const [selectedPlan, setSelectedPlan] = useState<'yearly' | 'monthly'>('yearly')
+  const [playPrices, setPlayPrices] = useState<{ yearly: string | null; monthly: string | null } | null>(null)
 
   const refreshState = () => {
     const active = isPro()
@@ -186,6 +193,11 @@ export default function ProPage() {
   useDidShow(() => {
     setLang((getLang() || 'en') as 'en' | 'zh')
     refreshState()
+    initializeBilling()
+      .then(() => getSubscriptionPrices())
+      .then(prices => { if (prices) setPlayPrices(prices) })
+      .catch(() => {})
+    refreshBillingEntitlement().then(refreshState).catch(() => {})
     getBrainActiveProgress(getDeviceId())
       .then(data => {
         if (data) {
@@ -193,7 +205,6 @@ export default function ProPage() {
             setProActive(true)
             if (data.pro_expiry) {
               setProExpiry(data.pro_expiry)
-              setSubscriptionExpiry(data.pro_expiry)
               const expDate = new Date(data.pro_expiry)
               setExpiryText(expDate.toLocaleDateString())
               const diff = Math.max(0, Math.ceil((expDate.getTime() - Date.now()) / (1000 * 3600 * 24)))
@@ -204,6 +215,14 @@ export default function ProPage() {
       })
       .catch(() => {})
   })
+
+  useEffect(() => {
+    const handleBillingEntitlement = () => refreshState()
+    Taro.eventCenter.on('brainactive_billing_entitlement_changed', handleBillingEntitlement)
+    return () => {
+      Taro.eventCenter.off('brainactive_billing_entitlement_changed', handleBillingEntitlement)
+    }
+  }, [])
 
   // Compute stats from local quiz history
   const history = getQuizHistory() || []
@@ -312,33 +331,36 @@ export default function ProPage() {
     }
   }
 
-  // Membership activation — currently simulated; swap for CdvPurchase using
-  // PRODUCT_ID + SUBSCRIPTION_OFFERS once the IAP plugin is installed.
-  const PRODUCT_ID = SUBSCRIPTION_PRODUCT_ID
-  const handleUpgradePlan = (plan: 'yearly' | 'monthly') => {
-    const offerId = SUBSCRIPTION_OFFERS[plan]
-    void PRODUCT_ID
-    void offerId
+  const handleUpgradePlan = async (plan: 'yearly' | 'monthly') => {
     Taro.showLoading({ title: t.processing })
-    setTimeout(() => {
+    try {
+      const result = await purchaseSubscription(plan)
+      if (result?.isError) {
+        Taro.showToast({ title: result.message || t.checked, icon: 'none' })
+        return
+      }
+      Taro.showToast({ title: lang === 'zh' ? '正在打开 Google Play…' : 'Opening Google Play…', icon: 'none' })
+    } catch {
+      Taro.showToast({ title: t.checked, icon: 'none' })
+    } finally {
       Taro.hideLoading()
-      const days = plan === 'yearly' ? 365 : 30
-      const expiry = new Date(Date.now() + days * 24 * 3600 * 1000).toISOString()
-      setProExpiry(expiry)
-      setSubscriptionExpiry(expiry)
-      refreshState()
-      Taro.showToast({ title: t.activated, icon: 'success' })
-      setActiveTab(0)
-    }, 800)
+    }
   }
 
-  const handleRestore = () => {
+  const handleRestore = async () => {
     Taro.showLoading({ title: t.checking })
-    setTimeout(() => {
-      Taro.hideLoading()
+    try {
+      const restored = await restoreBillingPurchases()
       refreshState()
+      Taro.showToast({
+        title: restored ? (lang === 'zh' ? 'Pro 已恢复！' : 'Pro restored!') : t.checked,
+        icon: 'none'
+      })
+    } catch {
       Taro.showToast({ title: t.checked, icon: 'none' })
-    }, 1000)
+    } finally {
+      Taro.hideLoading()
+    }
   }
 
   const ProLockOverlay = ({ feature }: { feature: string }) => (
@@ -518,7 +540,7 @@ export default function ProPage() {
                   <View className="plan-badge-top">{t.best_value}</View>
                   <View className="plan-card-header">
                     <Text className="plan-name">{t.annual_plan}</Text>
-                    <Text className="plan-price-tag">{t.annual_price}<Text className="period">{t.period_year}</Text></Text>
+                    <Text className="plan-price-tag">{playPrices?.yearly || t.annual_price}<Text className="period">{t.period_year}</Text></Text>
                   </View>
                   <Text className="plan-desc">{t.annual_desc}</Text>
                 </View>
@@ -530,7 +552,7 @@ export default function ProPage() {
                 >
                   <View className="plan-card-header">
                     <Text className="plan-name">{t.monthly_plan}</Text>
-                    <Text className="plan-price-tag">{t.monthly_price}<Text className="period">{t.period_month}</Text></Text>
+                    <Text className="plan-price-tag">{playPrices?.monthly || t.monthly_price}<Text className="period">{t.period_month}</Text></Text>
                   </View>
                   <Text className="plan-desc">{t.monthly_desc}</Text>
                 </View>

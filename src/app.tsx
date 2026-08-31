@@ -5,6 +5,7 @@ import { Capacitor } from '@capacitor/core'
 import { App as CapApp } from '@capacitor/app'
 import { getLang, setLang, getStorage, setStorage } from '@/utils/storage'
 import { initAdMob } from '@/utils/ad'
+import { initializeBilling, refreshBillingEntitlement } from '@/utils/billing'
 import './styles/index.scss'
 
 /**
@@ -51,9 +52,13 @@ function App({ children }: { children?: React.ReactNode }) {
           Taro.navigateBack()
         }
       })
+      const appStateSub = CapApp.addListener('appStateChange', ({ isActive }) => {
+        if (isActive) refreshBillingEntitlement()
+      })
 
       return () => {
         backSub.then(sub => sub.remove())
+        appStateSub.then(sub => sub.remove())
       }
     }
   }, [])
@@ -70,8 +75,9 @@ function App({ children }: { children?: React.ReactNode }) {
       }
     }
 
-    // Initialize AdMob
+    // Initialize test-safe AdMob and native Play Billing.
     initAdMob()
+    initializeBilling()
   })
 
   const lang = getLang() || 'en'
