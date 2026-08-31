@@ -94,9 +94,9 @@ const i18n = {
     website: 'Website: https://pslehero.org/',
     more_hero_title: 'More from Hero',
     more_hero: [
-      { emoji: '🧠', name: 'High-Ability P3 Guide', sub: 'See how Math Hero spots giftedness — free' },
+      { emoji: '🧠', name: 'P3 High-Ability Study Guide', sub: 'Read practical study tips for high-ability learners — free' },
       { emoji: '🏆', name: 'PSLE Hero', sub: 'Top PSLE exam practice app' },
-      { emoji: '➗', name: 'Singapore Primary Math', sub: 'Master Primary Math concepts' }
+      { emoji: '➗', name: 'Singapore Primary Math App', sub: 'Master Primary Math concepts with the app' }
     ]
   },
   zh: {
@@ -160,9 +160,9 @@ const i18n = {
     website: '官网: https://pslehero.org/',
     more_hero_title: '来自 Hero 的更多内容',
     more_hero: [
-      { emoji: '🧠', name: '高能力 P3 识别指南', sub: '了解 Math Hero 如何识别天赋 · 免费' },
+      { emoji: '🧠', name: 'P3 高能力学习指南', sub: '阅读高能力学习者的实用学习建议 · 免费' },
       { emoji: '🏆', name: 'PSLE Hero', sub: '小六会考备考首选应用' },
-      { emoji: '➗', name: '新加坡小学数学', sub: '系统掌握小学数学' }
+      { emoji: '➗', name: '新加坡小学数学 App', sub: '使用 App 掌握小学数学内容' }
     ]
   }
 }
@@ -723,26 +723,6 @@ export default function HomePage() {
                   <Text className='invite-friends-sub'>{t.referral_sub}</Text>
                 </View>
               </View>
-            </View>
-
-            {/* BrainActive Thinking Heuristics */}
-            <View className='tips-section'>
-              <View className='tips-header'>
-                <Text className='tips-title'>{t.tips_title}</Text>
-              </View>
-              <View className='tips-list'>
-                {t.tips.map((tip, index) => (
-                  <View className='tip-item' key={index}>
-                    <Text className='tip-number'>0{index + 1}</Text>
-                    <View className='tip-text-wrapper'>
-                      <Text className='tip-link-title'>{tip.title}</Text>
-                      <Text className='tip-text'>{tip.desc}</Text>
-                    </View>
-                  </View>
-                ))}
-              </View>
-
-              {/* Hero Tip moved to "More from Hero" section below */}
             </View>
 
             {/* More from Hero: guide + related apps */}

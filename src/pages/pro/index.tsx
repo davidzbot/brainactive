@@ -331,6 +331,12 @@ export default function ProPage() {
     }
   }
 
+  const handleGoHome = () => {
+    Taro.reLaunch({ url: '/pages/home/index' }).catch(() => {
+      Taro.navigateBack().catch(() => {})
+    })
+  }
+
   const handleUpgradePlan = async (plan: 'yearly' | 'monthly') => {
     Taro.showLoading({ title: t.processing })
     try {
@@ -378,8 +384,12 @@ export default function ProPage() {
 
   return (
     <View className="pro-container">
-      {/* Top 4-Tab Navigation Bar */}
+      {/* Top Navigation Bar */}
       <View className="tab-header">
+        <View className="pro-home-btn" onClick={handleGoHome}>
+          <Text className="pro-home-icon">⌂</Text>
+        </View>
+        <View className="pro-tabs">
         {(['tab_practice', 'tab_analysis', 'tab_collection', 'tab_sub'] as const).map((label, idx) => (
           <View
             key={idx}
@@ -390,6 +400,7 @@ export default function ProPage() {
             {idx < 3 && !proActive && <Text className="lock-icon">💎</Text>}
           </View>
         ))}
+        </View>
       </View>
 
       <ScrollView scrollY className="tab-content">

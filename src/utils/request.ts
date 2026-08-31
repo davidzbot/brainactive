@@ -128,6 +128,19 @@ export interface AskHeroPayload {
   history?: Array<{ role: 'user' | 'assistant'; content: string }>
 }
 
+export async function syncBrainActivePurchaseEntitlement(payload: {
+  product_id: string
+  expiry_date: string
+  transaction_id?: string
+}): Promise<any> {
+  const res = await request({
+    url: '/functions/v1/brainactive-sync-purchase-entitlement',
+    method: 'POST',
+    data: payload,
+  })
+  return res?.data || res || null
+}
+
 export type BrainActiveQuestionIssueType = 'question' | 'answer' | 'explanation' | 'image' | 'other'
 
 export async function reportBrainActiveQuestionIssue(payload: {
