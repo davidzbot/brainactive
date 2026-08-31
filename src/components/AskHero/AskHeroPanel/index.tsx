@@ -12,6 +12,7 @@ interface Props {
   hasVisualQuestion?: boolean
   visible?: boolean
   onClose: () => void
+  onReportQuestion?: () => void
 }
 
 type Mode = 'why_wrong' | 'hint' | 'explain' | 'ask'
@@ -36,6 +37,7 @@ export default function AskHeroPanel({
   hasVisualQuestion = false,
   visible = true,
   onClose,
+  onReportQuestion,
 }: Props) {
   const isZh = lang === 'zh'
   const hasAnswer = Boolean(studentAnswer.trim())
@@ -55,6 +57,7 @@ export default function AskHeroPanel({
     close: isZh ? '关闭' : 'Close',
     failed: isZh ? '😴 Hero AI 正在休息，请稍后再试。' : '😴 Hero AI is taking a quick rest. Please try again shortly.',
     startOver: isZh ? '重新开始' : 'Start over',
+    report: isZh ? '反馈题目问题' : 'Report question issue',
   }
 
   const [chat, setChat] = useState<ChatItem[]>([])
@@ -154,8 +157,8 @@ export default function AskHeroPanel({
   const showFollowupInput = chat.length > 0 && !loading
 
   return (
-    <View className='ask-hero-overlay' onClick={onClose}>
-      <View className='ask-hero-content' onClick={(e) => e.stopPropagation()}>
+    <View className='ask-hero-overlay' onClick={onClose} onTouchStart={(e) => e.stopPropagation()} onTouchMove={(e) => e.stopPropagation()} onTouchEnd={(e) => e.stopPropagation()}>
+      <View className='ask-hero-content' onClick={(e) => e.stopPropagation()} onTouchStart={(e) => e.stopPropagation()} onTouchMove={(e) => e.stopPropagation()} onTouchEnd={(e) => e.stopPropagation()}>
         {/* Header */}
         <View className='ask-hero-header'>
           <View className='ask-hero-title-wrap'>
@@ -250,11 +253,18 @@ export default function AskHeroPanel({
 
         {/* Footer */}
         <View className='ask-hero-footer'>
-          {chat.length > 0 && (
-            <View className='ask-hero-start-over' onClick={handleStartOver}>
-              <Text className='ask-hero-start-over-text'>{strings.startOver}</Text>
-            </View>
-          )}
+          <View className='ask-hero-footer-left'>
+            {chat.length > 0 && (
+              <View className='ask-hero-start-over' onClick={handleStartOver}>
+                <Text className='ask-hero-start-over-text'>{strings.startOver}</Text>
+              </View>
+            )}
+            {onReportQuestion && (
+              <View className='ask-hero-report' onClick={onReportQuestion}>
+                <Text>{strings.report}</Text>
+              </View>
+            )}
+          </View>
           <View className='ask-hero-close-footer' onClick={onClose}>
             <Text>{strings.close}</Text>
           </View>

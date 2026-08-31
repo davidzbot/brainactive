@@ -227,6 +227,13 @@
   padding: 0 24px 140px;
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+}
+
+.quiz-swipe-layer {
+  min-width: 0;
+  width: 100%;
+  will-change: transform, opacity;
 }
 
 .question-card {
@@ -246,11 +253,12 @@
   }
 
   .question-text {
-    font-size: 32px;
+    font-size: clamp(32px, 5vw, 36px);
     font-weight: 800;
     color: #0f172a;
     line-height: 1.45;
     display: block;
+    overflow-wrap: anywhere;
 
     body.dark &,
     page.dark & { color: #f8fafc; }
@@ -336,11 +344,12 @@
 
   .opt-text {
     min-width: 0;
-    font-size: 28px;
+    font-size: clamp(28px, 4.5vw, 32px);
     font-weight: 700;
     color: #1e293b;
     line-height: 1.4;
     flex: 1;
+    overflow-wrap: anywhere;
 
     body.dark &,
     page.dark & { color: #f1f5f9; }
@@ -447,7 +456,7 @@
   justify-content: center;
   gap: 12px;
   width: 100%;
-  margin: 16px 0 24px;
+  margin: 16px 0 8px;
 
   .ask-hero-button {
     flex: 1;
@@ -486,6 +495,24 @@
     font-weight: 900;
     color: #0284c7;
     line-height: 1;
+  }
+}
+
+.report-question-row {
+  display: flex;
+  justify-content: center;
+  padding: 4px 12px 18px;
+  cursor: pointer;
+
+  .report-question-link-text {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #0369a1;
+    text-decoration: underline;
+
+    body.dark &,
+    page.dark & { color: #7dd3fc; }
   }
 }
 
@@ -555,12 +582,13 @@
   }
 
   .exp-body {
-    font-size: 26px;
+    font-size: clamp(26px, 4vw, 30px);
     color: #334155;
     line-height: 1.55;
     margin-bottom: 18px;
     display: block;
     white-space: pre-wrap;
+    overflow-wrap: anywhere;
 
     body.dark &,
     page.dark & { color: #e2e8f0; }
@@ -590,10 +618,11 @@
     }
 
     .reasoning-text {
-      font-size: 24px;
+      font-size: clamp(24px, 3.8vw, 28px);
       color: #0c4a6e;
       line-height: 1.5;
       display: block;
+      overflow-wrap: anywhere;
 
       body.dark &,
       page.dark & { color: #e0f2fe; }
@@ -679,11 +708,13 @@
   .progress-bar-container { margin-left: 16px; margin-right: 16px; }
   .question-scroll-body { padding-left: 16px; padding-right: 16px; }
   .question-card { padding: 24px 20px; }
-  .question-card .question-text { font-size: 26px; line-height: 1.4; }
-  .option-card { padding: 14px 16px; min-height: 60px; gap: 12px; }
-  .option-card .opt-id-circle { width: 42px; height: 42px; border-radius: 14px; }
-  .option-card .opt-id-circle .opt-id-text { font-size: 21px; }
-  .option-card .opt-text { font-size: 23px; }
+  .question-card .question-text { font-size: 30px; line-height: 1.42; }
+  .option-card { padding: 16px 16px; min-height: 64px; gap: 12px; }
+  .option-card .opt-id-circle { width: 44px; height: 44px; border-radius: 14px; }
+  .option-card .opt-id-circle .opt-id-text { font-size: 22px; }
+  .option-card .opt-text { font-size: 26px; line-height: 1.4; }
+  .explanation-card .exp-body { font-size: 24px; }
+  .explanation-card .reasoning-box .reasoning-text { font-size: 24px; }
 
   .quiz-action-row {
     flex-wrap: wrap;

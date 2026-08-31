@@ -44,7 +44,7 @@
 }
 
 .ask-hero-button-text {
-  font-size: 27px;
+  font-size: clamp(28px, 4.5vw, 32px);
   font-weight: 900;
   color: #ffffff;
   letter-spacing: 0;

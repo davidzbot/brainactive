@@ -128,6 +128,20 @@ export interface AskHeroPayload {
   history?: Array<{ role: 'user' | 'assistant'; content: string }>
 }
 
+export type BrainActiveQuestionIssueType = 'question' | 'answer' | 'explanation' | 'image' | 'other'
+
+export async function reportBrainActiveQuestionIssue(payload: {
+  question_id: string
+  issue_type: BrainActiveQuestionIssueType
+  detail?: string
+}): Promise<any> {
+  return request({
+    url: '/functions/v1/brainactive-report-question',
+    method: 'POST',
+    data: payload,
+  })
+}
+
 export interface AskHeroResult {
   ok: boolean
   message?: string

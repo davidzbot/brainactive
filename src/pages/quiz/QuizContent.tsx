@@ -18,6 +18,7 @@ import {
 import ConfirmModal from '@/components/ConfirmModal'
 import AskHeroButton from '@/components/AskHero/AskHeroButton'
 import AskHeroPanel from '@/components/AskHero/AskHeroPanel'
+import ReportQuestionModal from '@/components/ReportQuestionModal'
 import './index.scss'
 
 // Curated 5-Question Fallback Round for Singapore Primary 3 Thinking Skills
@@ -170,6 +171,7 @@ export default function QuizContent() {
   const [secondsSpent, setSecondsSpent] = useState(0)
   const [showExitConfirm, setShowExitConfirm] = useState(false)
   const [showAskHero, setShowAskHero] = useState(false)
+  const [showReportModal, setShowReportModal] = useState(false)
 
   const [firstWrongSelections, setFirstWrongSelections] = useState<Record<string, string>>({})
   const [skippedQuestions, setSkippedQuestions] = useState<Set<string>>(new Set())
@@ -190,6 +192,8 @@ export default function QuizContent() {
   // Reset the image error state whenever the question changes
   useEffect(() => {
     setImgError(false)
+    setShowAskHero(false)
+    setShowReportModal(false)
   }, [currentIndex])
 
   // Android hardware back button handler
@@ -197,6 +201,10 @@ export default function QuizContent() {
     const handleHardwareBack = () => {
       if (showAskHero) {
         setShowAskHero(false)
+        return true
+      }
+      if (showReportModal) {
+        setShowReportModal(false)
         return true
       }
       if (showExitConfirm) {
@@ -213,7 +221,7 @@ export default function QuizContent() {
         (globalThis as any)._hardwareBackHandler = null
       }
     }
-  }, [showAskHero, showExitConfirm])
+  }, [showAskHero, showReportModal, showExitConfirm])
 
   // Load questions
   useEffect(() => {
@@ -278,6 +286,17 @@ export default function QuizContent() {
   }, [mode, topicFilter, levelFilter, router.params.limit])
 
   const currentQ = questions[currentIndex]
+
+  const getSavedAttempt = (questionId: string) => {
+    return [...attempts].reverse().find(attempt => attempt.question_id === questionId)
+  }
+
+  const restoreQuestionState = (question: any) => {
+    const savedAttempt = getSavedAttempt(question.id)
+    setSelectedOptionId(savedAttempt?.selected_answer || null)
+    setIsAnswerSubmitted(Boolean(savedAttempt && !savedAttempt.skipped && savedAttempt.selected_answer))
+    questionStartTime.current = Date.now()
+  }
 
   // Touch handlers for swipe left (next) and swipe right (prev)
   const handleTouchStart = (e: any) => {
@@ -347,7 +366,7 @@ export default function QuizContent() {
       retry_count: 0,
       first_try_correct: false
     }
-    setAttempts(prev => [...prev, skipAttempt])
+    setAttempts(prev => [...prev.filter(attempt => attempt.question_id !== currentQ.id), skipAttempt])
     setSkippedQuestions(prev => new Set([...prev, currentQ.id]))
 
     Taro.showToast({
@@ -362,9 +381,7 @@ export default function QuizContent() {
     setTimeout(() => {
       if (currentIndex < questions.length - 1) {
         setCurrentIndex(i => i + 1)
-        setSelectedOptionId(null)
-        setIsAnswerSubmitted(false)
-        questionStartTime.current = Date.now()
+        restoreQuestionState(questions[currentIndex + 1])
       } else {
         // Last question skipped — finish the quiz
         if (timerRef.current) clearInterval(timerRef.current)
@@ -420,10 +437,25 @@ export default function QuizContent() {
         setIsTransitioning(false)
       }, 180)
     } else {
-      // Swipe RIGHT → skip current question (don't go back, don't corrupt score)
-      setSwipeTranslateX(0)
-      setSwipeOpacity(1)
-      handleSkipQuestion()
+      if (currentIndex === 0) {
+        setSwipeTranslateX(0)
+        setSwipeOpacity(1)
+        Taro.showToast({
+          title: lang === 'zh' ? '已经是第一题' : 'This is the first question',
+          icon: 'none'
+        })
+        return
+      }
+      setIsTransitioning(true)
+      setSwipeTranslateX(120)
+      setSwipeOpacity(0)
+      setTimeout(() => {
+        setCurrentIndex(i => i - 1)
+        restoreQuestionState(questions[currentIndex - 1])
+        setSwipeTranslateX(0)
+        setSwipeOpacity(1)
+        setIsTransitioning(false)
+      }, 180)
     }
   }
 
@@ -466,6 +498,11 @@ export default function QuizContent() {
     // Otherwise: Correct on 1st try, Correct on 2nd try, or Wrong on 2nd try
     setSelectedOptionId(optId)
     setIsAnswerSubmitted(true)
+    setSkippedQuestions(prev => {
+      const next = new Set(prev)
+      next.delete(currentQ.id)
+      return next
+    })
 
     const attempt = {
       question_id: currentQ.id,
@@ -478,7 +515,7 @@ export default function QuizContent() {
       first_try_correct: isCorrect && !hasFailedBefore
     }
 
-    setAttempts(prev => [...prev, attempt])
+    setAttempts(prev => [...prev.filter(existing => existing.question_id !== currentQ.id), attempt])
 
     if (!isCorrect) {
       saveWrongQuestion(currentQ)
@@ -488,9 +525,7 @@ export default function QuizContent() {
   const handleNext = async () => {
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(i => i + 1)
-      setSelectedOptionId(null)
-      setIsAnswerSubmitted(false)
-      questionStartTime.current = Date.now()
+      restoreQuestionState(questions[currentIndex + 1])
     } else {
       // Finished Quiz
       if (timerRef.current) clearInterval(timerRef.current)
@@ -621,12 +656,15 @@ export default function QuizContent() {
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
-        style={{
-          transform: `translateX(${swipeTranslateX}px)`,
-          opacity: swipeOpacity,
-          transition: isTransitioning ? 'all 0.18s ease-out' : 'none'
-        }}
       >
+        <View
+          className="quiz-swipe-layer"
+          style={{
+            transform: `translate3d(${swipeTranslateX}px, 0, 0)`,
+            opacity: swipeOpacity,
+            transition: isTransitioning ? 'all 0.18s ease-out' : 'none'
+          }}
+        >
         <View className="question-card">
           <Text className="question-text">{currentQ.question}</Text>
 
@@ -693,6 +731,11 @@ export default function QuizContent() {
             <Text className="bottom-home-icon">⌂</Text>
           </View>
         </View>
+        <View className="report-question-row" onClick={() => setShowReportModal(true)}>
+          <Text className="report-question-link-text">
+            {lang === 'zh' ? '反馈题目问题' : 'Report question issue'}
+          </Text>
+        </View>
 
         {/* Explanation and Reasoning Reveal */}
         {isAnswerSubmitted && (
@@ -711,10 +754,12 @@ export default function QuizContent() {
             )}
           </View>
         )}
+        </View>
       </ScrollView>
 
       {/* Ask Hero AI Interactive Panel */}
         <AskHeroPanel
+          key={currentQ.id}
           questionId={currentQ.id}
           questionData={currentQ}
           studentAnswer={selectedOptionId || ''}
@@ -722,7 +767,19 @@ export default function QuizContent() {
           hasVisualQuestion={Boolean(currentQ.visual_required || currentQ.image_path)}
           visible={showAskHero}
           onClose={() => setShowAskHero(false)}
+          onReportQuestion={() => {
+            setShowAskHero(false)
+            setShowReportModal(true)
+          }}
         />
+
+      {showReportModal && (
+        <ReportQuestionModal
+          questionId={currentQ.id}
+          lang={lang}
+          onClose={() => setShowReportModal(false)}
+        />
+      )}
 
       {/* Bottom Action Footer */}
       {isAnswerSubmitted && (

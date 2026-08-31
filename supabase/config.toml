@@ -24,3 +24,8 @@ entrypoint = "./functions/brainactive-get-progress/index.ts"
 enabled = true
 verify_jwt = false
 entrypoint = "./functions/brainactive-apply-referral/index.ts"
+
+[functions.brainactive-report-question]
+enabled = true
+verify_jwt = false
+entrypoint = "./functions/brainactive-report-question/index.ts"
