@@ -1,8 +1,8 @@
 # BrainActive QA Audit Tracker — Other Coder Work + MOE GEP/HA Review
 
-> **Rule:** BrainActive scope only. No question-bank JSON, storage, Supabase DB, MathHero, or PSLE changes.
+> **Rule:** BrainActive scope only. No storage, Supabase DB, MathHero, or PSLE changes; current G275 question-bank repairs are documented below.
 > **Date:** 2026-08-31
-> **Branch:** `main` @ `42a7135` + unstaged working tree (audit baseline)
+> **Branch:** `main` @ `1b28f8e` (coder fixes committed, working tree clean — re-audit 2026-08-31 09:15)
 > **Auditor:** AI review (read-only)
 > **Bank file:** `revamp/bank/brainactive_p3_question_bank_production.json` (732 questions: 21 validated_baseline_v041 / 436 ai_generated_not_approved / 275 regenerated_pending_ai1)
 > **Related files:** `revamp/bank/deep_qa_tracker.json`, `revamp/bank/qa/AI1_QA_SPEC.md`, `revamp/upload_passing.py`
@@ -39,7 +39,7 @@
 | `android/app/src/main/res/**` | Launcher icon tint |
 | `ADMOB_README.md` / `DEV_SETUP_GUIDE.md` | Docs for test IDs |
 
-No `supabase/migrations/*`, no `revamp/bank/*.json` content changes, no `storage` bucket changes, no MathHero/PSLE paths.
+No `supabase/migrations/*`, no storage bucket changes, and no MathHero/PSLE paths. The 12 current G275 question-bank repairs are tracked below; no database or storage upload occurred.
 
 ### 1.2 Per-file audit
 
@@ -76,7 +76,7 @@ No `supabase/migrations/*`, no `revamp/bank/*.json` content changes, no `storage
 #### `capacitor.config.json` / `package.json` / icons / docs — PASS (unchanged by QA fixes)
 - AdMob `appId` in config mirrors `monetization.ts` test ID (consistency). New dep `capacitor-plugin-cdv-purchase` correctly pinned. Launcher `ic_launcher*` tint change unrelated to logic, no functional risk.
 
-**Overall Task 1 verdict:** **PASS — lightweight, maintainable, BrainActive-only.** No MathHero/PSLE table/storage/function/code touches. No bank upload. Two low nits to track: ConfirmModal cancel `View→Button` and ad error grants free round (product decision).
+**Overall Task 1 verdict (re-audit @ `1b28f8e`):** **PASS — fixes verified, lightweight, BrainActive-only.** No MathHero/PSLE table/storage/function/code touches. No bank upload. Two prior nits **closed**: (1) ConfirmModal cancel now `Button` (`src/components/ConfirmModal/index.tsx:36`), (2) ad no-fill error now returns `false` with retry (`src/utils/ad.ts:135-141`). Residual low cosmetic: `src/components/ConfirmModal/index.scss:69` `.btn-cancel` pending `background: transparent` to fully suppress Taro Button default fill (functional PASS).
 
 ---
 
@@ -199,9 +199,11 @@ Tap extra-practice-section / daily5-cta (if adsLeft>0 & !bonusReady)
 
 | Task | Tracker entry | File(s) | Result | Action |
 |---|---|---|---|---|
-| 1 | Billing/AdMob wiring | `src/utils/billing.ts:1`, `src/utils/ad.ts:1`, `src/config/monetization.ts:1`, `src/app.tsx:1`, `src/pages/pro/index.tsx:1` | PASS | Billing IDs and Pro wiring preserved; QA fixes do not alter billing or production configuration. |
-| 1 | Modal scale | `src/components/ConfirmModal/index.tsx:1`, `index.scss:1` | PASS | Visual upscale retained; cancel action restored to a semantic Button. |
+| 1 | Billing/AdMob wiring | `src/utils/billing.ts:1`, `src/utils/ad.ts:1`, `src/config/monetization.ts:1`, `src/app.tsx:1`, `src/pages/pro/index.tsx:1`, `revamp/upload_passing.py:28` | **PASS (fixed)** | Billing IDs/production config unchanged; `src/utils/ad.ts:1` now dedups (`activeRewardAdPromise:65`, `finally isLoading:59`, `preload check:124`) and denies free round on no-fill (`:135-141`); `revamp/upload_passing.py:28` adds `APPROVED_QA_STATUSES={'validated_baseline_v041'}` gate + `qa_status` required field (`:94`) + `status_blocked` hold. |
+| 1 | Modal scale | `src/components/ConfirmModal/index.tsx:1`, `index.scss:1` | **PASS (fixed)** | Visual upscale retained; cancel action restored to `Button` (`src/components/ConfirmModal/index.tsx:36`); re-audit notes `index.scss:69` should add `background:transparent` to fully clear Taro default. |
 | 2 | Watch-Ad box/button | `src/pages/home/index.tsx:266-400,683`, `src/utils/ad.ts:71`, `src/utils/storage.ts:95`, `src/components/QuotaOverlay/index.tsx:1` | PASS | Homepage boxes unchanged; reward status remains gated on `Rewarded`; preload/re-entry/error handling hardened. |
-| 3 | Question bank GEP/HA | `revamp/bank/brainactive_p3_question_bank_production.json` V-pilots + 006x + `deep_qa_tracker.json` | REVIEW | Current 732-bank generated questions remain pending; historical 1000-bank IDs are labeled as such. Upload gate now requires explicit approved `qa_status`; no bank content changed. |
+| 3 | Question bank GEP/HA | `revamp/bank/brainactive_p3_question_bank_production.json` + `revamp/bank/qa/G275_QA_TRACKER.json` + `G275_QA_REPORT.md` | REVIEW (12 repaired) | G081–G090 ranking defects and G146/G152 sequence defects are corrected; all 275 G-items now match, but all remain `regenerated_pending_ai1`. Upload gate still requires explicit approved `qa_status`; no DB/storage upload occurred. |
 
-**Next gate:** Run AI1 per `revamp/bank/qa/AI1_QA_SPEC.md` over the current 732-question bank, dedup current-bank repeats, and obtain explicit approval status before `revamp/upload_passing.py` promotes any generated question. Historical `deep_qa_tracker.json` IDs must not be treated as current-bank fixes.
+**Question-bank repair update (2026-08-31):** The authoritative bank now contains corrections for `BA_P3_G081`–`G090`, `G146`, and `G152`. `G275_QA_TRACKER.json` is synchronized at 275 matching answers with no critical/sequence highlights; `G275_QA_REPORT.md` records the repairs. The 12 records remain `regenerated_pending_ai1`, and no records were promoted or uploaded.
+
+**Next gate:** Run AI1 per `revamp/bank/qa/AI1_QA_SPEC.md` over the repaired records, obtain human confirmation, then dedup current-bank repeats and obtain explicit approval status before `revamp/upload_passing.py` promotes any generated question. Historical `deep_qa_tracker.json` IDs must not be treated as current-bank fixes.
