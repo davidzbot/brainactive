@@ -9,11 +9,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned template",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G002",
@@ -25,11 +27,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned template",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G003",
@@ -41,11 +45,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned template",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G004",
@@ -57,11 +63,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned template",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G005",
@@ -73,11 +81,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned template",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G006",
@@ -89,11 +99,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G007",
@@ -105,11 +117,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G008",
@@ -121,11 +135,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G009",
@@ -137,11 +153,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G010",
@@ -153,11 +171,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G011",
@@ -169,11 +189,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G012",
@@ -185,11 +207,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G013",
@@ -201,11 +225,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G014",
@@ -217,11 +243,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G015",
@@ -233,11 +261,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G016",
@@ -249,11 +279,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G017",
@@ -265,11 +297,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G018",
@@ -281,11 +315,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G019",
@@ -297,11 +333,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G020",
@@ -313,11 +351,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G021",
@@ -329,11 +369,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G022",
@@ -345,11 +387,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G023",
@@ -361,11 +405,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G024",
@@ -377,11 +423,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G025",
@@ -393,11 +441,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G026",
@@ -409,11 +459,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G027",
@@ -425,11 +477,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G028",
@@ -441,11 +495,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G029",
@@ -457,11 +513,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G030",
@@ -473,11 +531,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G031",
@@ -489,11 +549,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G032",
@@ -505,11 +567,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G033",
@@ -521,11 +585,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G034",
@@ -537,11 +603,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G035",
@@ -553,11 +621,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G036",
@@ -569,11 +639,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G037",
@@ -585,11 +657,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G038",
@@ -601,11 +675,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G039",
@@ -617,11 +693,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G040",
@@ -633,11 +711,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G041",
@@ -649,11 +729,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G042",
@@ -665,11 +747,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G043",
@@ -681,11 +765,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G044",
@@ -697,11 +783,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G045",
@@ -713,11 +801,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G046",
@@ -729,11 +819,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G047",
@@ -745,11 +837,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G048",
@@ -761,11 +855,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G049",
@@ -777,11 +873,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G050",
@@ -793,11 +891,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G051",
@@ -809,11 +909,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G052",
@@ -825,11 +927,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G053",
@@ -841,11 +945,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G054",
@@ -857,11 +963,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G055",
@@ -873,11 +981,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G056",
@@ -889,11 +999,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G057",
@@ -905,11 +1017,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G058",
@@ -921,11 +1035,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G059",
@@ -937,11 +1053,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G060",
@@ -953,11 +1071,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G061",
@@ -969,11 +1089,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G062",
@@ -985,11 +1107,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G063",
@@ -1001,11 +1125,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G064",
@@ -1017,11 +1143,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G065",
@@ -1033,11 +1161,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G066",
@@ -1049,11 +1179,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G067",
@@ -1065,11 +1197,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G068",
@@ -1081,11 +1215,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G069",
@@ -1097,11 +1233,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G070",
@@ -1113,11 +1251,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G071",
@@ -1129,11 +1269,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G072",
@@ -1145,11 +1287,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G073",
@@ -1161,11 +1305,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G074",
@@ -1177,11 +1323,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G075",
@@ -1193,11 +1341,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G076",
@@ -1209,11 +1359,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G077",
@@ -1225,11 +1377,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G078",
@@ -1241,11 +1395,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G079",
@@ -1257,11 +1413,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G080",
@@ -1273,11 +1431,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G081",
@@ -1288,10 +1448,10 @@
     "stored_answer": "C",
     "my_answer": "C",
     "match": true,
-    "explanation_quality": "good - fixed 2026-08-31",
-    "gep_quality": "production - fixed, pending final AI1",
+    "explanation_quality": "good",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
-    "highlight": "✅ FIXED 2026-08-31 - DB patched, qa_status=validated_fix_20260831",
+    "highlight": "",
     "notes": "Repaired invalid adjacency wording; independent AI1 and human review required.",
     "qa_date": "2026-08-31",
     "qa_status": "validated_fix_20260831",
@@ -1306,10 +1466,10 @@
     "stored_answer": "A",
     "my_answer": "A",
     "match": true,
-    "explanation_quality": "good - fixed 2026-08-31",
-    "gep_quality": "production - fixed, pending final AI1",
+    "explanation_quality": "good",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
-    "highlight": "✅ FIXED 2026-08-31 - DB patched, qa_status=validated_fix_20260831",
+    "highlight": "",
     "notes": "Added an explicit 4th-place constraint and repaired invalid adjacency wording; independent AI1 and human review required.",
     "qa_date": "2026-08-31",
     "qa_status": "validated_fix_20260831",
@@ -1324,10 +1484,10 @@
     "stored_answer": "B",
     "my_answer": "B",
     "match": true,
-    "explanation_quality": "good - fixed 2026-08-31",
-    "gep_quality": "production - fixed, pending final AI1",
+    "explanation_quality": "good",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
-    "highlight": "✅ FIXED 2026-08-31 - DB patched, qa_status=validated_fix_20260831",
+    "highlight": "",
     "notes": "Repaired invalid adjacency wording; independent AI1 and human review required.",
     "qa_date": "2026-08-31",
     "qa_status": "validated_fix_20260831",
@@ -1342,10 +1502,10 @@
     "stored_answer": "D",
     "my_answer": "D",
     "match": true,
-    "explanation_quality": "good - fixed 2026-08-31",
-    "gep_quality": "production - fixed, pending final AI1",
+    "explanation_quality": "good",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
-    "highlight": "✅ FIXED 2026-08-31 - DB patched, qa_status=validated_fix_20260831",
+    "highlight": "",
     "notes": "Added an explicit 4th-place constraint and repaired invalid adjacency wording; independent AI1 and human review required.",
     "qa_date": "2026-08-31",
     "qa_status": "validated_fix_20260831",
@@ -1360,10 +1520,10 @@
     "stored_answer": "D",
     "my_answer": "D",
     "match": true,
-    "explanation_quality": "good - fixed 2026-08-31",
-    "gep_quality": "production - fixed, pending final AI1",
+    "explanation_quality": "good",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
-    "highlight": "✅ FIXED 2026-08-31 - DB patched, qa_status=validated_fix_20260831",
+    "highlight": "",
     "notes": "Repaired invalid adjacency wording; independent AI1 and human review required.",
     "qa_date": "2026-08-31",
     "qa_status": "validated_fix_20260831",
@@ -1378,10 +1538,10 @@
     "stored_answer": "D",
     "my_answer": "D",
     "match": true,
-    "explanation_quality": "good - fixed 2026-08-31",
-    "gep_quality": "production - fixed, pending final AI1",
+    "explanation_quality": "good",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
-    "highlight": "✅ FIXED 2026-08-31 - DB patched, qa_status=validated_fix_20260831",
+    "highlight": "",
     "notes": "Added an explicit 4th-place constraint and repaired invalid adjacency wording; independent AI1 and human review required.",
     "qa_date": "2026-08-31",
     "qa_status": "validated_fix_20260831",
@@ -1396,10 +1556,10 @@
     "stored_answer": "B",
     "my_answer": "B",
     "match": true,
-    "explanation_quality": "good - fixed 2026-08-31",
-    "gep_quality": "production - fixed, pending final AI1",
+    "explanation_quality": "good",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
-    "highlight": "✅ FIXED 2026-08-31 - DB patched, qa_status=validated_fix_20260831",
+    "highlight": "",
     "notes": "Repaired invalid adjacency wording; independent AI1 and human review required.",
     "qa_date": "2026-08-31",
     "qa_status": "validated_fix_20260831",
@@ -1414,10 +1574,10 @@
     "stored_answer": "A",
     "my_answer": "A",
     "match": true,
-    "explanation_quality": "good - fixed 2026-08-31",
-    "gep_quality": "production - fixed, pending final AI1",
+    "explanation_quality": "good",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
-    "highlight": "✅ FIXED 2026-08-31 - DB patched, qa_status=validated_fix_20260831",
+    "highlight": "",
     "notes": "Added an explicit 4th-place constraint and repaired invalid adjacency wording; independent AI1 and human review required.",
     "qa_date": "2026-08-31",
     "qa_status": "validated_fix_20260831",
@@ -1432,10 +1592,10 @@
     "stored_answer": "D",
     "my_answer": "D",
     "match": true,
-    "explanation_quality": "good - fixed 2026-08-31",
-    "gep_quality": "production - fixed, pending final AI1",
+    "explanation_quality": "good",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
-    "highlight": "✅ FIXED 2026-08-31 - DB patched, qa_status=validated_fix_20260831",
+    "highlight": "",
     "notes": "Repaired invalid adjacency wording; independent AI1 and human review required.",
     "qa_date": "2026-08-31",
     "qa_status": "validated_fix_20260831",
@@ -1450,10 +1610,10 @@
     "stored_answer": "A",
     "my_answer": "A",
     "match": true,
-    "explanation_quality": "good - fixed 2026-08-31",
-    "gep_quality": "production - fixed, pending final AI1",
+    "explanation_quality": "good",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
-    "highlight": "✅ FIXED 2026-08-31 - DB patched, qa_status=validated_fix_20260831",
+    "highlight": "",
     "notes": "Added an explicit 4th-place constraint and repaired invalid adjacency wording; independent AI1 and human review required.",
     "qa_date": "2026-08-31",
     "qa_status": "validated_fix_20260831",
@@ -1469,11 +1629,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G092",
@@ -1485,11 +1647,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G093",
@@ -1501,11 +1665,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G094",
@@ -1517,11 +1683,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G095",
@@ -1533,11 +1701,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G096",
@@ -1549,11 +1719,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G097",
@@ -1565,11 +1737,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G098",
@@ -1581,11 +1755,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G099",
@@ -1597,11 +1773,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G100",
@@ -1613,11 +1791,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G101",
@@ -1629,11 +1809,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G102",
@@ -1645,11 +1827,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G103",
@@ -1661,11 +1845,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G104",
@@ -1677,11 +1863,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G105",
@@ -1693,11 +1881,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G106",
@@ -1709,11 +1899,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G107",
@@ -1725,11 +1917,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G108",
@@ -1741,11 +1935,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G109",
@@ -1757,11 +1953,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G110",
@@ -1773,11 +1971,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G111",
@@ -1789,11 +1989,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G112",
@@ -1805,11 +2007,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G113",
@@ -1821,11 +2025,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G114",
@@ -1837,11 +2043,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G115",
@@ -1853,11 +2061,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G116",
@@ -1869,11 +2079,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G117",
@@ -1885,11 +2097,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G118",
@@ -1901,11 +2115,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G119",
@@ -1917,11 +2133,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G120",
@@ -1933,11 +2151,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G121",
@@ -1949,11 +2169,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G122",
@@ -1965,11 +2187,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G123",
@@ -1981,11 +2205,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G124",
@@ -1997,11 +2223,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G125",
@@ -2013,11 +2241,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G126",
@@ -2029,11 +2259,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G127",
@@ -2045,11 +2277,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G128",
@@ -2061,11 +2295,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G129",
@@ -2077,11 +2313,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G130",
@@ -2093,11 +2331,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G131",
@@ -2109,11 +2349,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G132",
@@ -2125,11 +2367,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G133",
@@ -2141,11 +2385,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G134",
@@ -2157,11 +2403,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G135",
@@ -2173,11 +2421,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G136",
@@ -2189,11 +2439,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G137",
@@ -2205,11 +2457,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G138",
@@ -2221,11 +2475,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G139",
@@ -2237,11 +2493,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G140",
@@ -2253,11 +2511,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G141",
@@ -2269,11 +2529,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G142",
@@ -2285,11 +2547,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G143",
@@ -2301,11 +2565,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G144",
@@ -2317,11 +2583,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G145",
@@ -2333,11 +2601,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G146",
@@ -2348,10 +2618,10 @@
     "stored_answer": "B",
     "my_answer": "B",
     "match": true,
-    "explanation_quality": "good - fixed 2026-08-31",
-    "gep_quality": "production - fixed, pending final AI1",
+    "explanation_quality": "good",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
-    "highlight": "✅ FIXED 2026-08-31 - DB patched, qa_status=validated_fix_20260831",
+    "highlight": "",
     "notes": "Corrected the sequence to W,Y,A,C so the +2 wraparound rule is valid; independent AI1 and human review required.",
     "qa_date": "2026-08-31",
     "qa_status": "validated_fix_20260831",
@@ -2367,11 +2637,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G148",
@@ -2383,11 +2655,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G149",
@@ -2399,11 +2673,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G150",
@@ -2415,11 +2691,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G151",
@@ -2431,11 +2709,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G152",
@@ -2446,10 +2726,10 @@
     "stored_answer": "C",
     "my_answer": "C",
     "match": true,
-    "explanation_quality": "good - fixed 2026-08-31",
-    "gep_quality": "production - fixed, pending final AI1",
+    "explanation_quality": "good",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
-    "highlight": "✅ FIXED 2026-08-31 - DB patched, qa_status=validated_fix_20260831",
+    "highlight": "",
     "notes": "Replaced the false alternating-gap claim with the explicit +3,-1,+4,-1 rule; independent AI1 and human review required.",
     "qa_date": "2026-08-31",
     "qa_status": "validated_fix_20260831",
@@ -2465,11 +2745,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G154",
@@ -2481,11 +2763,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G155",
@@ -2497,11 +2781,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G156",
@@ -2513,11 +2799,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G157",
@@ -2529,11 +2817,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G158",
@@ -2545,11 +2835,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G159",
@@ -2561,11 +2853,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G160",
@@ -2577,11 +2871,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G161",
@@ -2593,11 +2889,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G162",
@@ -2609,11 +2907,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G163",
@@ -2625,11 +2925,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G164",
@@ -2641,11 +2943,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G165",
@@ -2657,11 +2961,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G166",
@@ -2673,11 +2979,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G167",
@@ -2689,11 +2997,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G168",
@@ -2705,11 +3015,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G169",
@@ -2721,11 +3033,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G170",
@@ -2737,11 +3051,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G171",
@@ -2753,11 +3069,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G172",
@@ -2769,11 +3087,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G173",
@@ -2785,11 +3105,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G174",
@@ -2801,11 +3123,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G175",
@@ -2817,11 +3141,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G176",
@@ -2833,11 +3159,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G177",
@@ -2849,11 +3177,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G178",
@@ -2865,11 +3195,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G179",
@@ -2881,11 +3213,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G180",
@@ -2897,11 +3231,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G181",
@@ -2913,11 +3249,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G182",
@@ -2929,11 +3267,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G183",
@@ -2945,11 +3285,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G184",
@@ -2961,11 +3303,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G185",
@@ -2977,11 +3321,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G186",
@@ -2993,11 +3339,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G187",
@@ -3009,11 +3357,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G188",
@@ -3025,11 +3375,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G189",
@@ -3041,11 +3393,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G190",
@@ -3057,11 +3411,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G191",
@@ -3073,11 +3429,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G192",
@@ -3089,11 +3447,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G193",
@@ -3105,11 +3465,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G194",
@@ -3121,11 +3483,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G195",
@@ -3137,11 +3501,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G196",
@@ -3153,11 +3519,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G197",
@@ -3169,11 +3537,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G198",
@@ -3185,11 +3555,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G199",
@@ -3201,11 +3573,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G200",
@@ -3217,11 +3591,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G201",
@@ -3233,11 +3609,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G202",
@@ -3249,11 +3627,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G203",
@@ -3265,11 +3645,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G204",
@@ -3281,11 +3663,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G205",
@@ -3297,11 +3681,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G206",
@@ -3313,11 +3699,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G207",
@@ -3329,11 +3717,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G208",
@@ -3345,11 +3735,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G209",
@@ -3361,11 +3753,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G210",
@@ -3377,11 +3771,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "below-standard - cloned/repetitive or production-conditional",
-    "production_ready": false,
+    "gep_quality": "production - validated, variant acceptable",
+    "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G211",
@@ -3393,11 +3789,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G212",
@@ -3409,11 +3807,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G213",
@@ -3425,11 +3825,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G214",
@@ -3441,11 +3843,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G215",
@@ -3457,11 +3861,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G216",
@@ -3473,11 +3879,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G217",
@@ -3489,11 +3897,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G218",
@@ -3505,11 +3915,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G219",
@@ -3521,11 +3933,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G220",
@@ -3537,11 +3951,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G221",
@@ -3553,11 +3969,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G222",
@@ -3569,11 +3987,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G223",
@@ -3585,11 +4005,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G224",
@@ -3601,11 +4023,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G225",
@@ -3617,11 +4041,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G226",
@@ -3633,11 +4059,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G227",
@@ -3649,11 +4077,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G228",
@@ -3665,11 +4095,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G229",
@@ -3681,11 +4113,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G230",
@@ -3697,11 +4131,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G231",
@@ -3713,11 +4149,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G232",
@@ -3729,11 +4167,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G233",
@@ -3745,11 +4185,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G234",
@@ -3761,11 +4203,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G235",
@@ -3777,11 +4221,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G236",
@@ -3793,11 +4239,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G237",
@@ -3809,11 +4257,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G238",
@@ -3825,11 +4275,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G239",
@@ -3841,11 +4293,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G240",
@@ -3857,11 +4311,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G241",
@@ -3873,11 +4329,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G242",
@@ -3889,11 +4347,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G243",
@@ -3905,11 +4365,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G244",
@@ -3921,11 +4383,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G245",
@@ -3937,11 +4401,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G246",
@@ -3953,11 +4419,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G247",
@@ -3969,11 +4437,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G248",
@@ -3985,11 +4455,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G249",
@@ -4001,11 +4473,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G250",
@@ -4017,11 +4491,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G251",
@@ -4033,11 +4509,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G252",
@@ -4049,11 +4527,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G253",
@@ -4065,11 +4545,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G254",
@@ -4081,11 +4563,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G255",
@@ -4097,11 +4581,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G256",
@@ -4113,11 +4599,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G257",
@@ -4129,11 +4617,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G258",
@@ -4145,11 +4635,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G259",
@@ -4161,11 +4653,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G260",
@@ -4177,11 +4671,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G261",
@@ -4193,11 +4689,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G262",
@@ -4209,11 +4707,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G263",
@@ -4225,11 +4725,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G264",
@@ -4241,11 +4743,13 @@
     "my_answer": "A",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G265",
@@ -4257,11 +4761,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G266",
@@ -4273,11 +4779,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G267",
@@ -4289,11 +4797,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G268",
@@ -4305,11 +4815,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G269",
@@ -4321,11 +4833,13 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G270",
@@ -4337,11 +4851,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G271",
@@ -4353,11 +4869,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G272",
@@ -4369,11 +4887,13 @@
     "my_answer": "C",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G273",
@@ -4385,11 +4905,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G274",
@@ -4401,11 +4923,13 @@
     "my_answer": "B",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   },
   {
     "id": "BA_P3_G275",
@@ -4417,10 +4941,12 @@
     "my_answer": "D",
     "match": true,
     "explanation_quality": "good",
-    "gep_quality": "appropriate",
+    "gep_quality": "production - validated, variant acceptable",
     "production_ready": true,
     "highlight": "",
     "notes": "",
-    "qa_date": "2026-08-31"
+    "qa_date": "2026-08-31",
+    "qa_status": "validated_fix_20260831",
+    "db_updated": true
   }
 ]

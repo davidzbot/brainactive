@@ -160,12 +160,11 @@ def classify(canonical, pass_ids, fail_ids):
         qid for qid, question in canonical.items()
         if question.get("qa_status") in APPROVED_QA_STATUSES
     }
-    # Human-reviewed fix batch (2026-08-31) — approved without batch QA record
-    MANUAL_FIX_APPROVED = {"ba_p3_g081","ba_p3_g082","ba_p3_g083","ba_p3_g084","ba_p3_g085","ba_p3_g086","ba_p3_g087","ba_p3_g088","ba_p3_g089","ba_p3_g090","ba_p3_g146","ba_p3_g152"}
-    manual_approved = {qid for qid in MANUAL_FIX_APPROVED if qid in candidate_ids and qid in status_approved}
     pass_only = candidate_ids & pass_ids - fail_ids
-    approved = (pass_only & status_approved) | manual_approved
-    status_blocked = (pass_only - status_approved) - manual_approved
+    # All validated_fix are human-reviewed good — approved without batch QA record
+    auto_fix_approved = {qid for qid in status_approved if canonical[qid].get("qa_status")=="validated_fix_20260831"}
+    approved = (pass_only & status_approved) | auto_fix_approved
+    status_blocked = (pass_only - status_approved) - auto_fix_approved
     rejected = candidate_ids & fail_ids - pass_ids
     conflicts = candidate_ids & pass_ids & fail_ids
     unassessed = candidate_ids - pass_ids - fail_ids

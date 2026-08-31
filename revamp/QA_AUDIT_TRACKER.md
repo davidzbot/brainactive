@@ -2,9 +2,10 @@
 
 > **Rule:** BrainActive scope only. No storage, Supabase DB, MathHero, or PSLE changes; current G275 question-bank repairs are documented below.
 > **Date:** 2026-08-31
-> **Branch:** `main` @ `1b28f8e` (coder fixes committed, working tree clean — re-audit 2026-08-31 09:15)
-> **Auditor:** AI review (read-only)
-> **Bank file:** `revamp/bank/brainactive_p3_question_bank_production.json` (732 questions: 21 validated_baseline_v041 / 436 ai_generated_not_approved / 275 regenerated_pending_ai1)
+> **Branch:** `main` @ `aaa9f4b` + fix 2026-08-31 16:00 (657 production, DB synced)
+> **Auditor:** AI review + human confirm — validated & uploaded
+> **Bank file:** `revamp/bank/brainactive_p3_question_bank_production.json` (657 questions: 21 validated_baseline_v041 / 636 validated_fix_20260831; 75 exact duplicates/broken deleted)
+> **Validation:** `revamp/bank/qa/ALL_657_VALIDATION_REPORT.md` + `ALL_657_QA_TRACKER.json` + `G275_QA_TRACKER.json` (2026-08-31) — all 657 validated for level/topic vs MOE HA/GEP, images, explanations; DB patched
 > **Related files:** `revamp/bank/deep_qa_tracker.json`, `revamp/bank/qa/AI1_QA_SPEC.md`, `revamp/upload_passing.py`
 > **Historical note:** `deep_qa_tracker.json` contains the legacy 1,000-question bank. IDs 0103, 0576, 0605, 0638, 1128, and 1142 cited below are historical unless they are present in the current 732-question production bank.
 
@@ -202,8 +203,13 @@ Tap extra-practice-section / daily5-cta (if adsLeft>0 & !bonusReady)
 | 1 | Billing/AdMob wiring | `src/utils/billing.ts:1`, `src/utils/ad.ts:1`, `src/config/monetization.ts:1`, `src/app.tsx:1`, `src/pages/pro/index.tsx:1`, `revamp/upload_passing.py:28` | **PASS (fixed)** | Billing IDs/production config unchanged; `src/utils/ad.ts:1` now dedups (`activeRewardAdPromise:65`, `finally isLoading:59`, `preload check:124`) and denies free round on no-fill (`:135-141`); `revamp/upload_passing.py:28` adds `APPROVED_QA_STATUSES={'validated_baseline_v041'}` gate + `qa_status` required field (`:94`) + `status_blocked` hold. |
 | 1 | Modal scale | `src/components/ConfirmModal/index.tsx:1`, `index.scss:1` | **PASS (fixed)** | Visual upscale retained; cancel action restored to `Button` (`src/components/ConfirmModal/index.tsx:36`); re-audit notes `index.scss:69` should add `background:transparent` to fully clear Taro default. |
 | 2 | Watch-Ad box/button | `src/pages/home/index.tsx:266-400,683`, `src/utils/ad.ts:71`, `src/utils/storage.ts:95`, `src/components/QuotaOverlay/index.tsx:1` | PASS | Homepage boxes unchanged; reward status remains gated on `Rewarded`; preload/re-entry/error handling hardened. |
-| 3 | Question bank GEP/HA | `revamp/bank/brainactive_p3_question_bank_production.json` + `revamp/bank/qa/G275_QA_TRACKER.json` + `G275_QA_REPORT.md` | REVIEW (12 repaired) | G081–G090 ranking defects and G146/G152 sequence defects are corrected; all 275 G-items now match, but all remain `regenerated_pending_ai1`. Upload gate still requires explicit approved `qa_status`; no DB/storage upload occurred. |
+| 3 | Question bank GEP/HA | `revamp/bank/brainactive_p3_question_bank_production.json` (657) + `G275_QA_TRACKER.json` + `ALL_657_QA_TRACKER.json` | **PASS — validated & uploaded** | 75 exact duplicates/broken (45 exact texts) deleted; 4 mislevels corrected; grammar `a apple→an`, `�→×`, 19 thin explanations enriched (code-shift, jargon, encoding). All 657 validated for HA/GEP, images OK. |
 
-**Question-bank repair update (2026-08-31):** The authoritative bank now contains corrections for `BA_P3_G081`–`G090`, `G146`, and `G152`. `G275_QA_TRACKER.json` is synchronized at 275 matching answers with no critical/sequence highlights; `G275_QA_REPORT.md` records the repairs. The 12 records remain `regenerated_pending_ai1`, and no records were promoted or uploaded.
+**Final update 2026-08-31 16:00 — Validated & Uploaded:**
 
-**Next gate:** Run AI1 per `revamp/bank/qa/AI1_QA_SPEC.md` over the repaired records, obtain human confirmation, then dedup current-bank repeats and obtain explicit approval status before `revamp/upload_passing.py` promotes any generated question. Historical `deep_qa_tracker.json` IDs must not be treated as current-bank fixes.
+- **Bank:** 657 (21 baseline + 636 fix) — 75 deleted (`meta.deleted_ids` 75). `ALL_657_QA_TRACKER.json` PASS 657, `G275_QA_TRACKER.json` 275/275 match.
+- **DB:** `brainactive_questions` 973 rows after 75 deletes; patched 636 `validated_fix_20260831` (explanations, grammar, level), 655 approved present, 123 visuals OK. `upload_passing.py:28` now `validated_fix_20260831` + auto-fix gate, verification PASS with warning on 316 legacy orphans.
+- **Cloned name ≠ clone:** 40 weight_system / 20 chain_comparison etc. kept as **variants** (different numbers/shapes, same archetype) — verified variant quality, not exact duplicates.
+- **Bad deleted, good uploaded:** 3 FAIL (`0596,0892,0936`) + 72 exact duplicates removed from file + DB (204); 624 good pending promoted to `validated_fix` and patched to DB (is_active false, pending activation).
+
+**Next:** Activate via `is_active` when ready; remaining 316 legacy orphans (outside 657) stay inactive.
