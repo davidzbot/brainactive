@@ -30,7 +30,7 @@ const ONBOARDING_KEY = 'onboarding_done_v2'
 let lastBackPress = 0
 
 function App({ children }: { children?: React.ReactNode }) {
-  const [showOnboarding, setShowOnboarding] = useState(() => !getStorage(ONBOARDING_KEY))
+  const [showOnboarding, setShowOnboarding] = useState(false)
   const [currentPage, setCurrentPage] = useState(0)
 
   useEffect(() => {
