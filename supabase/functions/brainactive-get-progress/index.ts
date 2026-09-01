@@ -94,10 +94,10 @@ Deno.serve(async (req) => {
     const dailyRounds = (progress?.last_daily_round_date === todaySgt) ? (progress?.daily_rounds_completed || 0) : 0
     const bonusRounds = progress?.bonus_rounds_unlocked || 0
 
-    // Check Pro validity
+    // Check Pro validity — is_pro must be accompanied by a future expiry
     const now = new Date()
     const proExpiry = profile?.pro_expiry ? new Date(profile.pro_expiry) : null
-    const isPro = !!(profile?.is_pro || (proExpiry && proExpiry > now))
+    const isPro = !!(profile?.is_pro && proExpiry && proExpiry > now)
 
     return standardResponse(true, {
       user_id: userId,
@@ -105,7 +105,7 @@ Deno.serve(async (req) => {
       total_questions: progress?.total_questions_answered || 0,
       total_correct: progress?.total_correct || 0,
       daily_rounds_completed: dailyRounds,
-      free_rounds_limit: 2,
+      free_rounds_limit: 1,
       bonus_rounds_unlocked: bonusRounds,
       referral_code: profile?.referral_code || '',
       is_pro: isPro,

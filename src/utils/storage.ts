@@ -256,7 +256,8 @@ export function setSubscriptionActive(active: boolean): void {
 }
 
 export function getSubscriptionActive(): boolean {
-  return getStorage('subscription_active') === 'true'
+  const v = getStorage('subscription_active')
+  return v === true || v === 'true'
 }
 
 // -------------------------------------------------------------

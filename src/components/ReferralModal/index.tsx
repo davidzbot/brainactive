@@ -100,12 +100,11 @@ export default function ReferralModal({ isOpen, onClose, onSuccess }: ReferralMo
         onSuccess()
         onClose()
       } else {
-        // Keep the existing local demo fallback for the current referral flow.
-        const nextWeek = new Date(Date.now() + 7 * 24 * 3600 * 1000).toISOString()
-        setProExpiry(nextWeek)
-        Taro.showToast({ title: t.activated, icon: 'success' })
-        onSuccess()
-        onClose()
+        Taro.showModal({
+          title: t.notice,
+          content: t.invalid,
+          showCancel: false
+        })
       }
     } catch (err: any) {
       setSubmitting(false)

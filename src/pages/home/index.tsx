@@ -94,8 +94,8 @@ const i18n = {
     website: 'Website: https://pslehero.org/',
     more_hero_title: 'More from Hero',
     more_hero: [
-      { emoji: '🧠', name: 'P3 High-Ability Study Guide', sub: 'Read practical study tips for high-ability learners — free' },
-      { emoji: '🏆', name: 'PSLE Hero', sub: 'Top PSLE exam practice app' },
+      { emoji: '🧠', name: 'P3 High-Ability Study Guide', sub: 'Read free High Ability study guides online!' },
+      { emoji: '🏆', name: 'PSLE Hero App', sub: 'Top PSLE exam practice app' },
       { emoji: '➗', name: 'Singapore Primary Math App', sub: 'Master Primary Math concepts with the app' }
     ]
   },
@@ -161,7 +161,7 @@ const i18n = {
     more_hero_title: '来自 Hero 的更多内容',
     more_hero: [
       { emoji: '🧠', name: 'P3 高能力学习指南', sub: '阅读高能力学习者的实用学习建议 · 免费' },
-      { emoji: '🏆', name: 'PSLE Hero', sub: '小六会考备考首选应用' },
+      { emoji: '🏆', name: 'PSLE Hero App', sub: '小六会考备考首选应用' },
       { emoji: '➗', name: '新加坡小学数学 App', sub: '使用 App 掌握小学数学内容' }
     ]
   }

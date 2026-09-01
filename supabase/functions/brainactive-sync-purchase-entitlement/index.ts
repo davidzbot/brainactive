@@ -61,15 +61,17 @@ Deno.serve(async req => {
     const now = new Date().toISOString()
     const { data: profile, error: profileError } = await supabase
       .from('brainactive_profiles')
-      .select('user_id')
+      .select('user_id, pro_expiry')
       .eq('user_id', userId)
       .maybeSingle()
 
     if (profileError) throw profileError
 
+    const existingExpiry = profile?.pro_expiry ? new Date(profile.pro_expiry).getTime() : 0
+    const nextExpiry = Math.max(existingExpiry, expiry.getTime())
     const values = {
       is_pro: true,
-      pro_expiry: expiry.toISOString(),
+      pro_expiry: new Date(nextExpiry).toISOString(),
       updated_at: now,
     }
     const write = profile

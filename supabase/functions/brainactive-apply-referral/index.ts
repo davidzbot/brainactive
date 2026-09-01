@@ -7,6 +7,15 @@ const corsHeaders = {
   'Access-Control-Max-Age': '86400',
 }
 
+function generateReferralCode(): string {
+  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'
+  let code = ''
+  for (let i = 0; i < 6; i++) {
+    code += chars.charAt(Math.floor(Math.random() * chars.length))
+  }
+  return code
+}
+
 function standardResponse(success: boolean, data: any = null, error: any = null, status = 200) {
   const response: any = { success }
   if (success) {
@@ -88,16 +97,19 @@ Deno.serve(async (req) => {
     const refExpiry = new Date(now + grantDaysMs).toISOString()
     const { data: existingReferee } = await supabase
       .from('brainactive_profiles')
-      .select('referral_code')
+      .select('referral_code, pro_expiry')
       .eq('user_id', user_id)
       .maybeSingle()
 
     if (existingReferee) {
+      const currExpiry = (existingReferee as any).pro_expiry ? new Date((existingReferee as any).pro_expiry).getTime() : 0
+      const refTime = new Date(refExpiry).getTime()
+      const nextExpiry = new Date(Math.max(currExpiry, refTime)).toISOString()
       await supabase
         .from('brainactive_profiles')
         .update({
           is_pro: true,
-          pro_expiry: refExpiry,
+          pro_expiry: nextExpiry,
           updated_at: new Date().toISOString()
         })
         .eq('user_id', user_id)
