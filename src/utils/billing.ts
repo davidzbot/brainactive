@@ -33,6 +33,46 @@ function notifyEntitlementChanged() {
   Taro.eventCenter.trigger('brainactive_billing_entitlement_changed')
 }
 
+function normalizeExpiry(value: any): string | null {
+  if (!value) return null
+  if (value instanceof Date) return Number.isNaN(value.getTime()) ? null : value.toISOString()
+  if (typeof value === 'number') {
+    const d = new Date(value)
+    return Number.isNaN(d.getTime()) ? null : d.toISOString()
+  }
+  if (typeof value === 'string') {
+    const t = value.trim()
+    if (!t) return null
+    const asNum = Number(t)
+    if (!Number.isNaN(asNum) && t === String(asNum)) {
+      const d = new Date(asNum)
+      return Number.isNaN(d.getTime()) ? null : d.toISOString()
+    }
+    const d = new Date(t)
+    return Number.isNaN(d.getTime()) ? null : d.toISOString()
+  }
+  return null
+}
+
+function getFallbackSubscriptionExpiry(): string {
+  return new Date(Date.now() + 31 * 24 * 60 * 60 * 1000).toISOString()
+}
+
+function extractTransactionExpiry(transaction: any): string | null {
+  return normalizeExpiry(
+    transaction?.expiryTimeMillis ||
+    transaction?.expiryDate ||
+    transaction?.expirationDate ||
+    transaction?.transaction?.expirationDate ||
+    transaction?.nativePurchase?.expiryTimeMillis ||
+    transaction?.receipt?.expiryTimeMillis
+  )
+}
+
+function isAutoRenewingTransaction(transaction: any): boolean {
+  return Boolean(transaction?.nativePurchase?.autoRenewing || transaction?.autoRenewing)
+}
+
 function logNativePurchaseEvent(eventName: string, data: any) {
   const purchases = Array.isArray(data?.purchases) ? data.purchases : []
   const productIds = [...new Set(purchases.flatMap((purchase: any) => {
@@ -122,20 +162,30 @@ function waitForNativePurchaseUpdate(afterVersion: number, timeoutMs = 8000) {
 }
 
 function isSubscriptionTransaction(transaction: CdvPurchase.Transaction) {
-  return (
-    transaction.products.some(product => product.id === SUBSCRIPTION_PRODUCT_ID) &&
-    !transaction.isPending &&
-    (transaction.state === 'approved' || transaction.state === 'finished')
-  )
+  const t: any = transaction
+  const hasProduct = transaction.products.some(product => product.id === SUBSCRIPTION_PRODUCT_ID)
+  const pending = (transaction as any).isPending
+  const state = String((transaction as any).state || '')
+  const approved = state === 'approved' || state === 'finished' || state === 'owned' || t.owned === true
+  return hasProduct && !pending && approved
 }
 
 async function syncBackendEntitlement(transaction: CdvPurchase.Transaction): Promise<boolean> {
-  const expirationDate = transaction.expirationDate
-  if (!expirationDate || expirationDate.getTime() <= Date.now()) {
+  const rawExpiry = extractTransactionExpiry(transaction) || (transaction as any).expirationDate?.toISOString?.() || null
+  let expiryIso = rawExpiry
+  let usedFallback = false
+  if (!expiryIso && isAutoRenewingTransaction(transaction)) {
+    expiryIso = getFallbackSubscriptionExpiry()
+    usedFallback = true
+  }
+  const expiryDate = expiryIso ? new Date(expiryIso) : null
+  if (!expiryDate || Number.isNaN(expiryDate.getTime()) || expiryDate.getTime() <= Date.now()) {
     console.warn('[BrainActive Billing] Backend entitlement sync skipped: no future expiry', {
       productId: SUBSCRIPTION_PRODUCT_ID,
-      transactionId: transaction.transactionId,
-      expirationDate: expirationDate?.toISOString() || null,
+      transactionId: (transaction as any).transactionId,
+      rawExpiry,
+      usedFallback,
+      expiry: expiryIso,
     })
     return false
   }
@@ -143,14 +193,15 @@ async function syncBackendEntitlement(transaction: CdvPurchase.Transaction): Pro
   try {
     const result = await syncBrainActivePurchaseEntitlement({
       product_id: SUBSCRIPTION_PRODUCT_ID,
-      expiry_date: expirationDate.toISOString(),
-      transaction_id: transaction.transactionId,
+      expiry_date: expiryDate.toISOString(),
+      transaction_id: (transaction as any).transactionId,
     })
     const synced = result?.is_pro === true
     console.info('[BrainActive Billing] Backend entitlement sync completed', {
       productId: SUBSCRIPTION_PRODUCT_ID,
-      transactionId: transaction.transactionId,
-      expiry: expirationDate.toISOString(),
+      transactionId: (transaction as any).transactionId,
+      expiry: expiryDate.toISOString(),
+      usedFallback,
       synced,
     })
     return synced
@@ -161,39 +212,65 @@ async function syncBackendEntitlement(transaction: CdvPurchase.Transaction): Pro
 }
 
 function latestSubscriptionTransaction() {
-  return CdvPurchase.store.localTransactions
-    .filter(transaction => transaction.products.some(product => product.id === SUBSCRIPTION_PRODUCT_ID))
-    .sort((a, b) => (
-      (b.expirationDate?.getTime() || b.lastRenewalDate?.getTime() || b.purchaseDate?.getTime() || 0) -
-      (a.expirationDate?.getTime() || a.lastRenewalDate?.getTime() || a.purchaseDate?.getTime() || 0)
-    ))[0]
+  const all = CdvPurchase.store.localTransactions.filter(transaction =>
+    transaction.products.some(product => product.id === SUBSCRIPTION_PRODUCT_ID)
+  )
+  const valid = all.filter(t => {
+    const state = String((t as any).state || '')
+    return state !== 'cancelled' && state !== 'failed' && state !== 'expired'
+  })
+  const pool = valid.length > 0 ? valid : all
+  return pool.sort((a, b) => {
+    const aExp = extractTransactionExpiry(a) ? new Date(extractTransactionExpiry(a)!).getTime() : 0
+    const bExp = extractTransactionExpiry(b) ? new Date(extractTransactionExpiry(b)!).getTime() : 0
+    const aTime = aExp || (a as any).lastRenewalDate?.getTime?.() || (a as any).purchaseDate?.getTime?.() || 0
+    const bTime = bExp || (b as any).lastRenewalDate?.getTime?.() || (b as any).purchaseDate?.getTime?.() || 0
+    return bTime - aTime
+  })[0]
 }
 
 async function applyApprovedTransaction(transaction: CdvPurchase.Transaction) {
+  const t: any = transaction
   const productIds = transaction.products.map(product => product.id)
+  const rawExpiry = extractTransactionExpiry(transaction) || t.expirationDate?.toISOString?.() || null
+  let expiryIso = rawExpiry
+  let usedFallback = false
+  if (!expiryIso && isAutoRenewingTransaction(transaction)) {
+    expiryIso = getFallbackSubscriptionExpiry()
+    usedFallback = true
+  }
+  const expiryDate = expiryIso ? new Date(expiryIso) : null
   console.info('[BrainActive Billing] Approved transaction', {
     productIds,
     offerIds: transaction.products.map(product => product.offerId || null),
-    state: transaction.state,
-    transactionId: transaction.transactionId,
-    expirationDate: transaction.expirationDate?.toISOString() || null,
+    state: t.state,
+    transactionId: t.transactionId,
+    rawExpiry,
+    expiry: expiryIso,
+    usedFallback,
+    autoRenewing: isAutoRenewingTransaction(transaction),
   })
   if (!isSubscriptionTransaction(transaction)) return
 
-  const expirationDate = transaction.expirationDate
-  if (expirationDate && expirationDate.getTime() <= Date.now()) {
-    console.warn('[BrainActive Billing] Approved transaction is already expired')
+  if (expiryDate && expiryDate.getTime() <= Date.now()) {
+    console.warn('[BrainActive Billing] Approved transaction is already expired', { expiry: expiryIso })
     setSubscriptionActive(false)
     setSubscriptionExpiry(null)
     notifyEntitlementChanged()
   } else {
     setSubscriptionActive(true)
-    if (expirationDate) {
-      setSubscriptionExpiry(expirationDate.toISOString())
+    if (expiryIso && expiryDate) {
+      setSubscriptionExpiry(expiryDate.toISOString())
       console.info('[BrainActive Billing] subscription_expiry written', {
-        expirationDate: expirationDate.toISOString(),
+        expiry: expiryDate.toISOString(),
+        usedFallback,
       })
       await syncBackendEntitlement(transaction)
+    } else {
+      console.warn('[BrainActive Billing] Approved without expiry and not autoRenewing — local active without backend sync', { productIds })
+      notifyEntitlementChanged()
+      // still notify but no backend sync possible
+      return
     }
     notifyEntitlementChanged()
   }
@@ -209,43 +286,63 @@ async function applyApprovedTransaction(transaction: CdvPurchase.Transaction) {
 
 export async function syncBillingEntitlement(): Promise<boolean> {
   if (!Capacitor.isNativePlatform()) return getSubscriptionActive() || Boolean(getSubscriptionExpiry())
-  const transaction = latestSubscriptionTransaction()
+  const transaction: any = latestSubscriptionTransaction()
   if (transaction && isSubscriptionTransaction(transaction)) {
+    const rawExpiry = extractTransactionExpiry(transaction) || transaction.expirationDate?.toISOString?.() || null
+    let expiryIso = rawExpiry
+    let usedFallback = false
+    if (!expiryIso && isAutoRenewingTransaction(transaction)) {
+      expiryIso = getFallbackSubscriptionExpiry()
+      usedFallback = true
+    }
+    const expiryDate = expiryIso ? new Date(expiryIso) : null
     console.info('[BrainActive Billing] Sync transaction', {
-      productIds: transaction.products.map(product => product.id),
-      offerIds: transaction.products.map(product => product.offerId || null),
+      productIds: transaction.products.map((p: any) => p.id),
+      offerIds: transaction.products.map((p: any) => p.offerId || null),
       state: transaction.state,
       transactionId: transaction.transactionId,
-      expirationDate: transaction.expirationDate?.toISOString() || null,
-      recognizedProduct: transaction.products.some(product => product.id === SUBSCRIPTION_PRODUCT_ID),
+      rawExpiry,
+      expiry: expiryIso,
+      usedFallback,
+      autoRenewing: isAutoRenewingTransaction(transaction),
+      recognizedProduct: true,
     })
-    if (transaction.expirationDate && transaction.expirationDate.getTime() <= Date.now()) {
+    if (expiryDate && expiryDate.getTime() <= Date.now()) {
       setSubscriptionActive(false)
       setSubscriptionExpiry(null)
-      console.info('[BrainActive Billing] Cleared expired subscription_expiry')
+      console.info('[BrainActive Billing] Cleared expired subscription_expiry', { expiry: expiryIso })
       notifyEntitlementChanged()
       return false
     }
     setSubscriptionActive(true)
-    if (transaction.expirationDate) {
-      setSubscriptionExpiry(transaction.expirationDate.toISOString())
+    if (expiryIso && expiryDate) {
+      setSubscriptionExpiry(expiryDate.toISOString())
       console.info('[BrainActive Billing] subscription_expiry written', {
-        expirationDate: transaction.expirationDate.toISOString(),
+        expiry: expiryDate.toISOString(),
+        usedFallback,
       })
       await syncBackendEntitlement(transaction)
+    } else {
+      console.warn('[BrainActive Billing] No expiry and not autoRenewing — local active without backend sync', { expiry: expiryIso })
     }
     notifyEntitlementChanged()
     return true
   }
   const state = String(transaction?.state || '')
-  if (state === 'cancelled' || state === 'failed') {
-    setSubscriptionActive(false)
-    setSubscriptionExpiry(null)
-    console.info('[BrainActive Billing] Cleared terminal subscription state', JSON.stringify({ state, transactionId: transaction?.transactionId || null }))
-    notifyEntitlementChanged()
-    return false
+  if (state === 'cancelled' || state === 'failed' || state === 'expired') {
+    // Only clear if we actually have a terminal transaction, not empty
+    if (transaction) {
+      setSubscriptionActive(false)
+      setSubscriptionExpiry(null)
+      console.info('[BrainActive Billing] Cleared terminal subscription state', JSON.stringify({ state, transactionId: transaction?.transactionId || null }))
+      notifyEntitlementChanged()
+      return false
+    }
   }
-  console.info('[BrainActive Billing] No transaction available; preserving cached entitlement')
+  console.info('[BrainActive Billing] No transaction available; preserving cached entitlement', {
+    hasCachedActive: getSubscriptionActive(),
+    hasCachedExpiry: Boolean(getSubscriptionExpiry()),
+  })
   return getSubscriptionActive() || Boolean(getSubscriptionExpiry())
 }
 
