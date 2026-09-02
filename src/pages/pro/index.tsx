@@ -322,9 +322,9 @@ export default function ProPage() {
       filteredForTrend = history
     } else {
       // Last Runs — last 6 attempts
-      filteredForTrend = history.slice(-6)
+      filteredForTrend = history.slice(0, 6)
     }
-    const trendData = filteredForTrend.slice(-6).map((h, idx) => ({
+    const trendData = filteredForTrend.slice(0, 6).reverse().map((h, idx) => ({
       label: `R${idx + 1}`,
       value: h.total > 0 ? Math.round((h.score / h.total) * 100) : 0
     }))
@@ -357,7 +357,9 @@ export default function ProPage() {
     }
     const params = new URLSearchParams()
     params.set('mode', 'pro_practice')
-    if (filters.topic) params.set('topic', filters.topic)
+    if (filters.topic && filters.topic !== 'Mixed' && filters.topic !== 'General Thinking') {
+      params.set('topic', filters.topic)
+    }
     if (filters.level) params.set('level', filters.level)
     params.set('limit', String(filters.limit || 5))
     Taro.navigateTo({ url: `/pages/quiz/index?${params.toString()}` })
@@ -438,9 +440,6 @@ export default function ProPage() {
     <View className="pro-container">
       {/* Top Navigation Bar */}
       <View className="tab-header">
-        <View className="pro-home-btn" onClick={handleGoHome}>
-          <Text className="pro-home-icon">⌂</Text>
-        </View>
         <View className="pro-tabs">
         {(['tab_practice', 'tab_analysis', 'tab_collection', 'tab_sub'] as const).map((label, idx) => (
           <View
