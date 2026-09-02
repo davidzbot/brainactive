@@ -230,6 +230,30 @@ export default function QuizContent() {
         setLoading(true)
 
         if (mode === 'retry') {
+          const idsParam = (router.params.ids as string) || ''
+          if (idsParam) {
+            const ids = idsParam.split(',').map(s => s.trim()).filter(Boolean)
+            if (ids.length > 0) {
+              try {
+                const fetchedByIds = await getBrainActiveQuestions({ ids, limit: ids.length })
+                if (fetchedByIds && fetchedByIds.length > 0) {
+                  setQuestions(fetchedByIds)
+                  setLoading(false)
+                  questionStartTime.current = Date.now()
+                  return
+                }
+              } catch {}
+              const wrongList = getWrongQuestions()
+              const byId = new Map((wrongList || []).map((q: any) => [q.id, q]))
+              const matched = ids.map(id => byId.get(id)).filter(Boolean)
+              if (matched.length > 0) {
+                setQuestions(matched.slice(0, 5))
+                setLoading(false)
+                questionStartTime.current = Date.now()
+                return
+              }
+            }
+          }
           const wrongList = getWrongQuestions()
           if (wrongList && wrongList.length > 0) {
             setQuestions(wrongList.slice(0, 5))

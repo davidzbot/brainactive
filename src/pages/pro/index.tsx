@@ -72,8 +72,8 @@ const i18n = {
     pro_inactive: 'Standard Rank',
     valid_until: 'Access Valid Until: {{date}}',
     days_remaining: '{{count}} days left',
-    referral_promo_title: 'Share with Friends — Pro Free!',
-    referral_promo_subtitle: 'Send BrainActive to a friend — you can both unlock 7 days of Pro free.',
+    referral_promo_title: 'Share with Friends & Family',
+    referral_promo_subtitle: 'Love BrainActive? Share it with friends and family who enjoy thinking challenges.',
     go_referral: 'Share Now',
     locked_instantly: 'Unlock Unlimited Practice & Insights',
     unlock_pro_overlay: 'Unlock Pro Access',
@@ -125,8 +125,8 @@ const i18n = {
     pro_inactive: '普通学员',
     valid_until: '有效期至: {{date}}',
     days_remaining: '剩余 {{count}} 天',
-    referral_promo_title: '分享给好友，免费赢 Pro！',
-    referral_promo_subtitle: '把 BrainActive 分享给好友，你们都能免费获得 7 天 Pro。',
+    referral_promo_title: '分享给亲友',
+    referral_promo_subtitle: '喜欢 BrainActive？分享给喜欢思维挑战的亲友们吧。',
     go_referral: '立即分享',
     locked_instantly: '立即解锁无限思维训练与战力分析',
     unlock_pro_overlay: '开启 Pro 会员',
@@ -275,8 +275,22 @@ export default function ProPage() {
     const strongest = subjectBreakdown[0] || { name: 'Reasoning', avg: historyAvg }
     const weakest = subjectBreakdown[subjectBreakdown.length - 1] || { name: 'General', avg: historyAvg }
 
-    // Trend data
-    const trendData = history.slice(-6).map((h, idx) => ({
+    // Trend data — respects selected filter (Last Runs / 7D / 30D / All Time)
+    let filteredForTrend = history
+    if (trendFilter === '7D' || trendFilter === '30D') {
+      const days = trendFilter === '7D' ? 7 : 30
+      const cutoff = Date.now() - days * 24 * 60 * 60 * 1000
+      filteredForTrend = history.filter(h => {
+        const t = h.date ? new Date(h.date).getTime() : 0
+        return t >= cutoff
+      })
+    } else if (trendFilter === 'All Time') {
+      filteredForTrend = history
+    } else {
+      // Last Runs — last 6 attempts
+      filteredForTrend = history.slice(-6)
+    }
+    const trendData = filteredForTrend.slice(-6).map((h, idx) => ({
       label: `R${idx + 1}`,
       value: h.total > 0 ? Math.round((h.score / h.total) * 100) : 0
     }))
@@ -291,7 +305,7 @@ export default function ProPage() {
       weakestTopic: weakest,
       trendData
     }
-  }, [history])
+  }, [history, trendFilter])
 
   const getMetricColor = (val: number) => {
     if (val < 60) return '#ef4444'

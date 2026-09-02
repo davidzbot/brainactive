@@ -15,8 +15,8 @@ interface ReferralModalProps {
 
 const i18n = {
   en: {
-    title: '🎁 Share with Friends',
-    desc: 'Send BrainActive to a friend — you can both unlock 7 days of Pro free!',
+    title: '🎁 Share with Friends & Family',
+    desc: 'Share BrainActive with friends and family who love thinking challenges.',
     codeLabel: 'Your Referral Code',
     copyCode: 'Copy Code',
     copyInvite: '📤 Share Invite',
@@ -24,15 +24,15 @@ const i18n = {
     codeCopied: 'Code copied!',
     divider: 'OR ENTER A FRIEND CODE',
     placeholder: "Enter your friend's code",
-    redeem: 'Redeem',
+    redeem: 'Submit',
     enterCode: 'Please enter a code',
-    activated: '7 Days Pro Activated! 👑',
+    activated: 'Thanks for sharing!',
     notice: 'Referral Notice',
     invalid: 'Invalid code or already redeemed.'
   },
   zh: {
-    title: '🎁 分享给好友',
-    desc: '把 BrainActive 分享给好友——你们都可以免费获得 7 天 Pro！',
+    title: '🎁 分享给亲友',
+    desc: '分享 BrainActive 给喜欢思维挑战的亲友们。',
     codeLabel: '你的推荐码',
     copyCode: '复制推荐码',
     copyInvite: '📤 分享邀请',
@@ -40,9 +40,9 @@ const i18n = {
     codeCopied: '推荐码已复制！',
     divider: '或输入好友推荐码',
     placeholder: '输入好友的推荐码',
-    redeem: '兑换',
+    redeem: '提交',
     enterCode: '请输入推荐码',
-    activated: '7 天 Pro 已激活！👑',
+    activated: '感谢分享！',
     notice: '推荐提示',
     invalid: '推荐码无效或已经兑换过。'
   }
@@ -94,10 +94,8 @@ export default function ReferralModal({ isOpen, onClose, onSuccess }: ReferralMo
       const res = await applyBrainActiveReferral(getUserId(), inputCode.trim())
       setSubmitting(false)
 
-      if (res && res.pro_expiry) {
-        setProExpiry(res.pro_expiry)
-        Taro.showToast({ title: t.activated, icon: 'success' })
-        onSuccess()
+      if (res && res.success !== false) {
+        Taro.showToast({ title: lang === 'zh' ? '感谢分享！' : 'Thanks for sharing!', icon: 'success' })
         onClose()
       } else {
         Taro.showModal({

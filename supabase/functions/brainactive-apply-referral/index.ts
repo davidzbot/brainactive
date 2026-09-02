@@ -90,59 +90,9 @@ Deno.serve(async (req) => {
 
     if (refInsertErr) throw refInsertErr
 
-    // 4. Grant Pro extension (7 days)
-    const grantDaysMs = 7 * 24 * 3600 * 1000
-    const now = Date.now()
-
-    const refExpiry = new Date(now + grantDaysMs).toISOString()
-    const { data: existingReferee } = await supabase
-      .from('brainactive_profiles')
-      .select('referral_code, pro_expiry')
-      .eq('user_id', user_id)
-      .maybeSingle()
-
-    if (existingReferee) {
-      const currExpiry = (existingReferee as any).pro_expiry ? new Date((existingReferee as any).pro_expiry).getTime() : 0
-      const refTime = new Date(refExpiry).getTime()
-      const nextExpiry = new Date(Math.max(currExpiry, refTime)).toISOString()
-      await supabase
-        .from('brainactive_profiles')
-        .update({
-          is_pro: true,
-          pro_expiry: nextExpiry,
-          updated_at: new Date().toISOString()
-        })
-        .eq('user_id', user_id)
-    } else {
-      await supabase
-        .from('brainactive_profiles')
-        .insert({
-          user_id,
-          referral_code: generateReferralCode(),
-          is_pro: true,
-          pro_expiry: refExpiry,
-          updated_at: new Date().toISOString()
-        })
-    }
-
-    // Extend Referrer
-    const currReferrerExpiry = referrer.pro_expiry ? new Date(referrer.pro_expiry).getTime() : now
-    const baseTime = Math.max(now, currReferrerExpiry)
-    const newReferrerExpiry = new Date(baseTime + grantDaysMs).toISOString()
-
-    await supabase
-      .from('brainactive_profiles')
-      .update({
-        is_pro: true,
-        pro_expiry: newReferrerExpiry,
-        updated_at: new Date().toISOString()
-      })
-      .eq('user_id', referrer.user_id)
-
     return standardResponse(true, {
-      message: 'Referral applied successfully! 7 days of Pro granted.',
-      reward_days: 7,
-      pro_expiry: refExpiry
+      message: 'Referral recorded — thanks for sharing BrainActive!',
+      reward_days: 0
     })
   } catch (err: any) {
     return standardResponse(false, null, { code: 'REFERRAL_FAILED', message: err.message }, 500)
