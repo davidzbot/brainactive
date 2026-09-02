@@ -58,8 +58,8 @@ export default function ReferralModal({ isOpen, onClose, onSuccess }: ReferralMo
   if (!isOpen) return null
 
   const inviteMessage = lang === 'zh'
-    ? `🎁 分享 BrainActive，和好友一起练习新加坡 P3 高能力思维题！\n\n使用我的推荐码即可免费获得 7 天 Pro：\n${myCode}\n\n下载 BrainActive：\n${SHARE_CONFIG.url}`
-    : `🎁 Share BrainActive with me and practise Singapore P3 thinking skills!\n\nUse my referral code to get 7 days of Pro free:\n${myCode}\n\nDownload BrainActive:\n${SHARE_CONFIG.url}`
+    ? `🎁 分享 BrainActive，和好友一起练习新加坡 P3 高能力思维题！\n\n使用我的推荐码来连接：\n${myCode}\n\n下载 BrainActive：\n${SHARE_CONFIG.url}`
+    : `🎁 Share BrainActive with me and practise Singapore P3 thinking skills!\n\nUse my referral code to connect:\n${myCode}\n\nDownload BrainActive:\n${SHARE_CONFIG.url}`
 
   const handleCopy = () => {
     Taro.setClipboardData({

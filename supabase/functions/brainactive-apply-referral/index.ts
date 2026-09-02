@@ -84,7 +84,7 @@ Deno.serve(async (req) => {
       .insert({
         referrer_user_id: referrer.user_id,
         referred_user_id: user_id,
-        reward_days: 7,
+        reward_days: 0,
         created_at: new Date().toISOString()
       })
 
