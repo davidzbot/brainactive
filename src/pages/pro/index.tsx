@@ -359,6 +359,7 @@ export default function ProPage() {
       setActiveTab(3)
       return
     }
+    if (availableForCurrent === 0) return
     const params = new URLSearchParams()
     params.set('mode', 'pro_practice')
     if (selectedTopic !== 'All Thinking Topics') params.set('topic', selectedTopic)
