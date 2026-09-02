@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { View, Text, Button } from '@tarojs/components'
 import Taro from '@tarojs/taro'
-import { getCollectedQuestions } from '@/utils/storage'
+import { getCollectedQuestions, removeCollectedQuestion } from '@/utils/storage'
 
 interface CollectionTabProps {
   lang: 'en' | 'zh'
@@ -19,6 +19,13 @@ export default function CollectionTab({ lang }: CollectionTabProps) {
     Taro.navigateTo({
       url: `/pages/quiz/index?mode=retry&ids=${q.id}`
     })
+  }
+
+  const handleRemove = (q: any, e: any) => {
+    e.stopPropagation()
+    removeCollectedQuestion(q.id)
+    setItems(getCollectedQuestions())
+    Taro.showToast({ title: lang === 'zh' ? '已移除收藏' : 'Removed', icon: 'none' })
   }
 
   const translations = {
@@ -69,6 +76,9 @@ export default function CollectionTab({ lang }: CollectionTabProps) {
             <View className="card-top">
               <Text className="card-topic">{item.topic || (lang === 'zh' ? '思维推理' : 'Reasoning')}</Text>
               <Text className="card-level">{item.level || (lang === 'zh' ? '思考' : 'Think')}</Text>
+              <View className="card-remove" onClick={(e) => handleRemove(item, e)}>
+                <Text className="card-remove-icon">✕</Text>
+              </View>
             </View>
             <Text className="card-question-preview">{item.question}</Text>
             <View className="card-bottom">

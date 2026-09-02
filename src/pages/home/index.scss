@@ -619,56 +619,59 @@ page.dark .home-viewport {
 }
 
 .pro-cta-card {
-  background: linear-gradient(135deg, #ffffff 0%, #fefce8 100%);
-  border: 2.5px solid #fde047;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 2.5px solid #4ade80;
   border-radius: 28px;
   padding: 24px;
-  box-shadow: 0 12px 0 #CA8A04, 0 24px 44px rgba(202, 138, 4, 0.2);
+  box-shadow: 0 12px 0 #15803d, 0 24px 44px rgba(22, 163, 74, 0.18);
   cursor: pointer;
 
   &.active {
-    background: linear-gradient(135deg, #fefce8 0%, #fef08a 100%);
-    border-color: #eab308;
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    border-color: #22c55e;
   }
 
   body.dark &,
   page.dark & {
-    background: linear-gradient(135deg, #1e293b 0%, #422006 100%);
-    border-color: #854d0e;
+    background: linear-gradient(135deg, #0f2e1f 0%, #14532d 100%);
+    border-color: #15803d;
   }
 }
 
 .pro-cta-content {
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .pro-cta-title {
   font-size: 44px;
   font-weight: 900;
-  color: #854d0e;
+  color: #15803d;
   display: block;
   margin-bottom: 6px;
+  text-align: center;
 
   body.dark &,
-  page.dark & { color: #fef08a; }
+  page.dark & { color: #86efac; }
 }
 
 .pro-cta-subtitle {
   font-size: 26px;
   font-weight: 600;
-  color: #a16207;
+  color: #16a34a;
   display: block;
+  text-align: center;
 
   body.dark &,
-  page.dark & { color: #fde047; }
+  page.dark & { color: #4ade80; }
 }
 
 .pro-cta-action-btn {
-  background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%);
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
   border-radius: 18px;
   padding: 16px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(202, 138, 4, 0.3);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
 }
 
 .pro-cta-btn-text {

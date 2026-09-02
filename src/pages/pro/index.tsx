@@ -38,6 +38,16 @@ const TOPICS = [
 
 const LEVELS = ['Explore', 'Think', 'Challenge', 'Master']
 const QUESTION_COUNTS = [5, 10, 15, 20]
+// Available question counts per Topic×Level (from production DB, 973 questions)
+const AVAILABLE_MAP: Record<string, Record<string, number>> = {
+  'All Thinking Topics': { Explore: 221, Think: 552, Challenge: 145, Master: 55 },
+  'Numerical Thinking': { Explore: 45, Think: 127, Challenge: 28, Master: 36 },
+  'Logical Thinking': { Explore: 40, Think: 128, Challenge: 28, Master: 0 },
+  'Pattern & Abstract': { Explore: 74, Think: 74, Challenge: 3, Master: 0 },
+  'Visual & Spatial': { Explore: 18, Think: 64, Challenge: 13, Master: 0 },
+  'Verbal Reasoning': { Explore: 5, Think: 64, Challenge: 28, Master: 16 },
+  'Problem Solving': { Explore: 39, Think: 95, Challenge: 45, Master: 3 },
+}
 const TOPIC_LABELS = {
   en: TOPICS,
   zh: ['全部思维领域', '数理思维', '逻辑思维', '图形与抽象', '视觉与空间', '语言推理', '问题解决']
@@ -179,6 +189,20 @@ export default function ProPage() {
   const [playPrices, setPlayPrices] = useState<{ yearly: string | null; monthly: string | null } | null>(null)
   const [pickerOpen, setPickerOpen] = useState<null | 'topic' | 'level' | 'count'>(null)
 
+  // Dynamic available levels based on topic (follow MathHero)
+  const availableLevels = useMemo(() => {
+    const map = AVAILABLE_MAP[selectedTopic] || AVAILABLE_MAP['All Thinking Topics']
+    return LEVELS.filter(lv => (map[lv] || 0) > 0)
+  }, [selectedTopic])
+
+  useEffect(() => {
+    if (!availableLevels.includes(selectedLevel)) {
+      setSelectedLevel(availableLevels[0] || 'Think')
+    }
+  }, [availableLevels, selectedLevel])
+
+  const availableForCurrent = (AVAILABLE_MAP[selectedTopic]?.[selectedLevel] ?? 0)
+
   const refreshState = () => {
     const active = isPro()
     setProActive(active)
@@ -306,7 +330,8 @@ export default function ProPage() {
       focusAreas,
       strongestSubject: strongest,
       weakestTopic: weakest,
-      trendData
+      trendData,
+      recentSessions: history.slice(0, 5)
     }
   }, [history, trendFilter])
 
@@ -448,10 +473,16 @@ export default function ProPage() {
                   <View className="picker-val" onClick={() => setPickerOpen('count')}>
                     {lang === 'zh' ? `${selectedCount} 道题` : `${selectedCount} Questions`}
                   </View>
+                  {availableForCurrent > 0 && availableForCurrent < selectedCount && (
+                    <Text className="filter-hint">{lang === 'zh' ? `仅 ${availableForCurrent} 题可用，将显示全部` : `Only ${availableForCurrent} available`}</Text>
+                  )}
                 </View>
               </View>
 
-              <Button className="start-btn active" onClick={handleStartQuest}>
+              {availableForCurrent === 0 && (
+                <Text className="filter-hint" style={{ color: '#ef4444' }}>{lang === 'zh' ? '该组合暂无题目，请选择其他' : 'No questions for this combination'}</Text>
+              )}
+              <Button className={`start-btn ${availableForCurrent === 0 ? '' : 'active'}`} onClick={handleStartQuest} disabled={availableForCurrent === 0}>
                 {t.start_quest}
               </Button>
               <Button
@@ -590,6 +621,13 @@ export default function ProPage() {
         )}
       </ScrollView>
 
+      {/* Central bottom Home button — consistent with quiz/result */}
+      <View className="pro-bottom-home">
+        <View className="global-home-bottom-link" onClick={handleGoHome}>
+          <Text className="bottom-home-icon">⌂</Text>
+        </View>
+      </View>
+
       {/* Custom Picker Overlay — i18n aware, replaces native Picker */}
       {pickerOpen && (
         <View className="picker-overlay" onClick={() => setPickerOpen(null)}>
@@ -606,8 +644,8 @@ export default function ProPage() {
               </Text>
             </View>
             <ScrollView scrollY className="picker-options">
-              {(pickerOpen === 'topic' ? TOPICS : pickerOpen === 'level' ? LEVELS : QUESTION_COUNTS).map((opt: any, idx: number) => {
-                const label = pickerOpen === 'topic' ? (TOPIC_LABELS as any)[lang][idx] : pickerOpen === 'level' ? (LEVEL_LABELS as any)[lang][idx] : lang === 'zh' ? `${opt} 道题` : `${opt} Questions`
+              {(pickerOpen === 'topic' ? TOPICS : pickerOpen === 'level' ? availableLevels : QUESTION_COUNTS).map((opt: any, idx: number) => {
+                const label = pickerOpen === 'topic' ? (TOPIC_LABELS as any)[lang][idx] : pickerOpen === 'level' ? (LEVEL_LABELS as any)[lang][LEVELS.indexOf(opt)] ?? opt : lang === 'zh' ? `${opt} 道题` : `${opt} Questions`
                 const isSelected = pickerOpen === 'topic' ? opt === selectedTopic : pickerOpen === 'level' ? opt === selectedLevel : opt === selectedCount
                 return (
                   <View

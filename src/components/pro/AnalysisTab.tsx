@@ -16,6 +16,7 @@ interface AnalysisTabProps {
     strongestSubject: { name: string; avg: number };
     weakestTopic: { name: string; avg: number; topic?: string };
     trendData: { label: string; value: number }[];
+    recentSessions?: any[];
   };
   lang: string;
   t: any;
@@ -194,6 +195,26 @@ export default function AnalysisTab({
           <Text className="no-data-text">{lang === 'zh' ? '暂无薄弱领域——继续保持！' : 'No weak areas yet — keep it up!'}</Text>
         )}
       </View>
+
+      {/* SECTION 5: RECENT ACTIVITY — as MathHero */}
+      {stats.recentSessions && stats.recentSessions.length > 0 && (
+        <View className="section-container">
+          <Text className="section-title-v2">{lang === 'zh' ? '最近练习' : 'Recent Activity'}</Text>
+          <View className="recent-list">
+            {stats.recentSessions.map((h: any, i: number) => (
+              <View key={i} className="recent-row">
+                <View className="recent-info">
+                  <Text className="recent-topic">{h.topic || (lang === 'zh' ? '综合' : 'General')}</Text>
+                  <Text className="recent-date">{h.date ? new Date(h.date).toLocaleDateString() : ''}</Text>
+                </View>
+                <View className="recent-score" style={{ backgroundColor: getMetricColor(h.total ? Math.round((h.score / h.total) * 100) : 0) + '18', borderColor: getMetricColor(h.total ? Math.round((h.score / h.total) * 100) : 0) }}>
+                  <Text className="recent-score-text" style={{ color: getMetricColor(h.total ? Math.round((h.score / h.total) * 100) : 0) }}>{h.score}/{h.total}</Text>
+                </View>
+              </View>
+            ))}
+          </View>
+        </View>
+      )}
     </View>
   )
 }

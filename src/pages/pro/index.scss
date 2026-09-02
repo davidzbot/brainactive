@@ -1214,3 +1214,98 @@
   flex-shrink: 0;
   text-align: center;
 }
+
+.filter-hint {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f59e0b;
+  margin-top: 4px;
+  padding-left: 4px;
+  body.dark &, page.dark & { color: #fbbf24; }
+}
+
+.pro-bottom-home {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0 12px;
+  .global-home-bottom-link {
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    background: #ffffff;
+    border: 3px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #cbd5e1;
+    transition: all 0.2s ease;
+    body.dark &, page.dark & { background: #1e293b; border-color: #334155; }
+    &:active { transform: scale(0.92); }
+    .bottom-home-icon { font-size: 42px; font-weight: 900; color: #059669; line-height: 1; }
+  }
+}
+
+.recent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+.recent-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 14px 18px;
+  body.dark &, page.dark & { background: #1e293b; border-color: #334155; }
+}
+.recent-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.recent-topic {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0f172a;
+  body.dark &, page.dark & { color: #f1f5f9; }
+}
+.recent-date {
+  font-size: 18px;
+  color: #94a3b8;
+}
+.recent-score {
+  min-width: 72px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: 1.5px solid;
+  text-align: center;
+}
+.recent-score-text {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.card-remove {
+  margin-left: auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #fee2e2;
+  border: 1.5px solid #fecaca;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  body.dark &, page.dark & { background: #2a0f0f; border-color: #7f1d1d; }
+  &:active { transform: scale(0.9); }
+}
+.card-remove-icon {
+  font-size: 18px;
+  font-weight: 900;
+  color: #ef4444;
+  line-height: 1;
+}
