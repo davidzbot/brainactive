@@ -15,6 +15,7 @@ import {
   getDeviceId,
   getSubscriptionActive,
   getSubscriptionExpiry,
+  getProExpiry,
   setSubscriptionActive,
   setSubscriptionExpiry,
 } from './storage'
@@ -54,8 +55,37 @@ function normalizeExpiry(value: any): string | null {
   return null
 }
 
-function getFallbackSubscriptionExpiry(): string {
-  return new Date(Date.now() + 31 * 24 * 60 * 60 * 1000).toISOString()
+function getFallbackSubscriptionExpiry(transaction?: any): string {
+  // Closed-test fallback: Play test transactions omit expiryTimeMillis. Derive period from
+  // the purchased offer so annual does not become 31 days.
+  const offerIds: string[] = []
+  try {
+    const products = transaction?.products || []
+    for (const p of products) { if (p?.offerId) offerIds.push(String(p.offerId)) }
+    if (transaction?.offerId) offerIds.push(String(transaction.offerId))
+    if (transaction?.basePlanId) offerIds.push(String(transaction.basePlanId))
+    if (transaction?.nativePurchase?.offerId) offerIds.push(String(transaction.nativePurchase.offerId))
+    if (transaction?.nativePurchase?.basePlanId) offerIds.push(String(transaction.nativePurchase.basePlanId))
+    if (Array.isArray(transaction?.productIds)) { for (const id of transaction.productIds) offerIds.push(String(id)) }
+  } catch {}
+  const joined = offerIds.join(' ').toLowerCase()
+  const isYearly = joined.includes('yearly') || offerIds.includes(SUBSCRIPTION_OFFERS.yearly)
+  const days = isYearly ? 365 : 31
+  return new Date(Date.now() + days * 24 * 60 * 60 * 1000).toISOString()
+}
+
+function setSubscriptionExpiryIfLater(expiryIso: string): boolean {
+  const existing = getSubscriptionExpiry() || getProExpiry()
+  if (existing) {
+    const existingTime = new Date(existing).getTime()
+    const nextTime = new Date(expiryIso).getTime()
+    if (Number.isFinite(existingTime) && Number.isFinite(nextTime) && nextTime <= existingTime) {
+      console.info('[BrainActive Billing] Skip expiry write — existing is later', { existing, next: expiryIso })
+      return false
+    }
+  }
+  setSubscriptionExpiry(expiryIso)
+  return true
 }
 
 function extractTransactionExpiry(transaction: any): string | null {
@@ -175,7 +205,7 @@ async function syncBackendEntitlement(transaction: CdvPurchase.Transaction): Pro
   let expiryIso = rawExpiry
   let usedFallback = false
   if (!expiryIso && isAutoRenewingTransaction(transaction)) {
-    expiryIso = getFallbackSubscriptionExpiry()
+    expiryIso = getFallbackSubscriptionExpiry(transaction)
     usedFallback = true
   }
   const expiryDate = expiryIso ? new Date(expiryIso) : null
@@ -236,7 +266,7 @@ async function applyApprovedTransaction(transaction: CdvPurchase.Transaction) {
   let expiryIso = rawExpiry
   let usedFallback = false
   if (!expiryIso && isAutoRenewingTransaction(transaction)) {
-    expiryIso = getFallbackSubscriptionExpiry()
+    expiryIso = getFallbackSubscriptionExpiry(transaction)
     usedFallback = true
   }
   const expiryDate = expiryIso ? new Date(expiryIso) : null
@@ -260,10 +290,11 @@ async function applyApprovedTransaction(transaction: CdvPurchase.Transaction) {
   } else {
     setSubscriptionActive(true)
     if (expiryIso && expiryDate) {
-      setSubscriptionExpiry(expiryDate.toISOString())
+      const wrote = setSubscriptionExpiryIfLater(expiryDate.toISOString())
       console.info('[BrainActive Billing] subscription_expiry written', {
         expiry: expiryDate.toISOString(),
         usedFallback,
+        wrote,
       })
       await syncBackendEntitlement(transaction)
     } else {
@@ -292,7 +323,7 @@ export async function syncBillingEntitlement(): Promise<boolean> {
     let expiryIso = rawExpiry
     let usedFallback = false
     if (!expiryIso && isAutoRenewingTransaction(transaction)) {
-      expiryIso = getFallbackSubscriptionExpiry()
+      expiryIso = getFallbackSubscriptionExpiry(transaction)
       usedFallback = true
     }
     const expiryDate = expiryIso ? new Date(expiryIso) : null
@@ -316,10 +347,11 @@ export async function syncBillingEntitlement(): Promise<boolean> {
     }
     setSubscriptionActive(true)
     if (expiryIso && expiryDate) {
-      setSubscriptionExpiry(expiryDate.toISOString())
+      const wrote = setSubscriptionExpiryIfLater(expiryDate.toISOString())
       console.info('[BrainActive Billing] subscription_expiry written', {
         expiry: expiryDate.toISOString(),
         usedFallback,
+        wrote,
       })
       await syncBackendEntitlement(transaction)
     } else {

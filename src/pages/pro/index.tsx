@@ -38,15 +38,15 @@ const TOPICS = [
 
 const LEVELS = ['Explore', 'Think', 'Challenge', 'Master']
 const QUESTION_COUNTS = [5, 10, 15, 20]
-// Available question counts per Topic×Level (from production DB, 973 questions)
+// Available question counts per Topic×Level (from production DB, 933 active)
 const AVAILABLE_MAP: Record<string, Record<string, number>> = {
-  'All Thinking Topics': { Explore: 221, Think: 552, Challenge: 145, Master: 55 },
-  'Numerical Thinking': { Explore: 45, Think: 127, Challenge: 28, Master: 36 },
-  'Logical Thinking': { Explore: 40, Think: 128, Challenge: 28, Master: 0 },
-  'Pattern & Abstract': { Explore: 74, Think: 74, Challenge: 3, Master: 0 },
+  'All Thinking Topics': { Explore: 213, Think: 538, Challenge: 142, Master: 40 },
+  'Numerical Thinking': { Explore: 45, Think: 124, Challenge: 28, Master: 22 },
+  'Logical Thinking': { Explore: 40, Think: 125, Challenge: 25, Master: 0 },
+  'Pattern & Abstract': { Explore: 67, Think: 69, Challenge: 3, Master: 0 },
   'Visual & Spatial': { Explore: 18, Think: 64, Challenge: 13, Master: 0 },
-  'Verbal Reasoning': { Explore: 5, Think: 64, Challenge: 28, Master: 16 },
-  'Problem Solving': { Explore: 39, Think: 95, Challenge: 45, Master: 3 },
+  'Verbal Reasoning': { Explore: 5, Think: 64, Challenge: 28, Master: 15 },
+  'Problem Solving': { Explore: 38, Think: 92, Challenge: 45, Master: 3 },
 }
 const TOPIC_LABELS = {
   en: TOPICS,
@@ -277,13 +277,22 @@ export default function ProPage() {
     const recentTotal = recent.reduce((acc, h) => acc + (h.total || 5), 0)
     const recentScore = recentTotal > 0 ? Math.round((recentCorrect / recentTotal) * 100) : historyAvg
 
-    // Breakdown by topic
+    // Breakdown by topic — respect Mixed with topicBreakdown, never invent topic for mixed quiz
     const topicMap: Record<string, { correct: number; total: number }> = {}
     history.forEach(h => {
-      const topic = h.topic || 'General Thinking'
-      if (!topicMap[topic]) topicMap[topic] = { correct: 0, total: 0 }
-      topicMap[topic].correct += h.score || 0
-      topicMap[topic].total += h.total || 5
+      if (Array.isArray(h.topicBreakdown) && h.topicBreakdown.length > 0) {
+        for (const b of h.topicBreakdown) {
+          const t = (b.topic || '').trim() || 'Mixed'
+          if (!topicMap[t]) topicMap[t] = { correct: 0, total: 0 }
+          topicMap[t].correct += Number(b.correct) || 0
+          topicMap[t].total += Number(b.total) || 0
+        }
+      } else {
+        const topic = (h.topic || 'General Thinking').trim() || 'General Thinking'
+        if (!topicMap[topic]) topicMap[topic] = { correct: 0, total: 0 }
+        topicMap[topic].correct += h.score || 0
+        topicMap[topic].total += h.total || 5
+      }
     })
 
     const subjectBreakdown = Object.keys(topicMap).map(topic => {

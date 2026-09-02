@@ -314,6 +314,7 @@ export function saveQuizAttempt(attempt: {
   topic?: string
   level?: string
   timeSpentSec: number
+  topicBreakdown?: Array<{ topic: string; correct: number; total: number }>
 }): void {
   const history: any[] = getStorage('quiz_history') || []
   history.unshift(attempt)

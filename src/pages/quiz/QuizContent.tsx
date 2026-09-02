@@ -431,14 +431,36 @@ export default function QuizContent() {
           incrementDailyRounds(questions.length)
           markStreakActive()
         }
-        saveQuizAttempt({
-          date: new Date().toISOString(),
-          score: correctCount,
-          total: questions.length,
-          topic: topicFilter || 'General Thinking',
-          level: levelFilter || 'Mixed',
-          timeSpentSec: secondsSpent
-        })
+        // Derive correct topic: single-topic Pro quest → that topic, mixed quick_test → Mixed + breakdown
+        const isSingleTopicSkip = topicFilter && topicFilter !== 'All Thinking Topics' && topicFilter !== 'All' && topicFilter !== 'Mixed'
+        if (isSingleTopicSkip) {
+          saveQuizAttempt({
+            date: new Date().toISOString(),
+            score: correctCount,
+            total: questions.length,
+            topic: topicFilter,
+            level: levelFilter || 'Mixed',
+            timeSpentSec: secondsSpent
+          })
+        } else {
+          const topicStats: Record<string, { correct: number; total: number }> = {}
+          for (const a of allAttempts) {
+            const t = (a.topic || questions.find((q: any) => q.id === a.question_id)?.topic || 'Mixed').trim() || 'Mixed'
+            if (!topicStats[t]) topicStats[t] = { correct: 0, total: 0 }
+            topicStats[t].total += 1
+            if (a.is_correct) topicStats[t].correct += 1
+          }
+          const topicBreakdown = Object.entries(topicStats).map(([topic, v]) => ({ topic, correct: v.correct, total: v.total }))
+          saveQuizAttempt({
+            date: new Date().toISOString(),
+            score: correctCount,
+            total: questions.length,
+            topic: 'Mixed',
+            level: levelFilter || 'Mixed',
+            timeSpentSec: secondsSpent,
+            topicBreakdown
+          })
+        }
         submitBrainActiveAttempt({
           user_id: getDeviceId(),
           attempts: allAttempts,
@@ -594,14 +616,35 @@ export default function QuizContent() {
         markStreakActive()
       }
 
-      saveQuizAttempt({
-        date: new Date().toISOString(),
-        score: correctCount,
-        total: questions.length,
-        topic: topicFilter || 'General Thinking',
-        level: levelFilter || 'Mixed',
-        timeSpentSec: secondsSpent
-      })
+      const isSingleTopic = topicFilter && topicFilter !== 'All Thinking Topics' && topicFilter !== 'All' && topicFilter !== 'Mixed'
+      if (isSingleTopic) {
+        saveQuizAttempt({
+          date: new Date().toISOString(),
+          score: correctCount,
+          total: questions.length,
+          topic: topicFilter,
+          level: levelFilter || 'Mixed',
+          timeSpentSec: secondsSpent
+        })
+      } else {
+        const topicStats2: Record<string, { correct: number; total: number }> = {}
+        for (const a of finalAttempts) {
+          const t = (a.topic || questions.find((q: any) => q.id === a.question_id)?.topic || 'Mixed').trim() || 'Mixed'
+          if (!topicStats2[t]) topicStats2[t] = { correct: 0, total: 0 }
+          topicStats2[t].total += 1
+          if (a.is_correct) topicStats2[t].correct += 1
+        }
+        const topicBreakdown2 = Object.entries(topicStats2).map(([topic, v]) => ({ topic, correct: v.correct, total: v.total }))
+        saveQuizAttempt({
+          date: new Date().toISOString(),
+          score: correctCount,
+          total: questions.length,
+          topic: 'Mixed',
+          level: levelFilter || 'Mixed',
+          timeSpentSec: secondsSpent,
+          topicBreakdown: topicBreakdown2
+        })
+      }
 
       // Submit to backend
       try {

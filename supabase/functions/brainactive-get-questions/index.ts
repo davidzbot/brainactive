@@ -100,7 +100,7 @@ Deno.serve(async (req) => {
         .eq('is_active', true)
         .order('id', { ascending: true })
 
-      if (topic && topic !== 'All') {
+      if (topic && topic !== 'All' && topic !== 'All Thinking Topics') {
         pageQuery = pageQuery.eq('topic', topic)
       }
 
