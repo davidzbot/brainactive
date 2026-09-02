@@ -8,7 +8,12 @@ import {
   incrementDailyRounds,
   markStreakActive,
   getLang,
-  getWrongQuestions
+  getWrongQuestions,
+  isPro,
+  getCollectedQuestions,
+  saveCollectedQuestion,
+  removeCollectedQuestion,
+  isCollected
 } from '@/utils/storage'
 import {
   getBrainActiveQuestions,
@@ -182,6 +187,7 @@ export default function QuizContent() {
   const touchStartX = useRef(0)
   const touchStartY = useRef(0)
 
+  const [collected, setCollected] = useState(false)
   const timerRef = useRef<any>(null)
   const questionStartTime = useRef(Date.now())
 
@@ -195,6 +201,13 @@ export default function QuizContent() {
     setShowAskHero(false)
     setShowReportModal(false)
   }, [currentIndex])
+
+  // Sync collected state when question changes
+  useEffect(() => {
+    if (questions[currentIndex]) {
+      setCollected(isCollected(questions[currentIndex].id))
+    }
+  }, [currentIndex, questions])
 
   // Android hardware back button handler
   useEffect(() => {
@@ -273,6 +286,9 @@ export default function QuizContent() {
 
         if (fetched && fetched.length > 0) {
           setQuestions(fetched)
+        } else if (mode === 'pro_practice' && (topicFilter || levelFilter)) {
+          // Pro filtered quest: don't show unrelated random questions
+          setQuestions([])
         } else {
           // Filter fallback questions by topic/level if specified
           let pool = [...CURATED_FALLBACK_QUESTIONS]
@@ -362,8 +378,8 @@ export default function QuizContent() {
         // Swipe Left -> Next question
         triggerNavigation('next')
       } else {
-        // Swipe Right -> Prev question / exit prompt
-        triggerNavigation('prev')
+        // Swipe Right -> Skip (same as Skip button)
+        handleSkipQuestion()
       }
     } else {
       setSwipeTranslateX(0)
@@ -604,6 +620,28 @@ export default function QuizContent() {
     }
   }
 
+  const handleToggleSave = () => {
+    if (!currentQ) return
+    if (!isPro()) {
+      Taro.showModal({
+        title: lang === 'zh' ? '🔒 收藏已锁定' : '🔒 Collection Locked',
+        content: lang === 'zh' ? '升级为 Pro 即可收藏题目到收藏夹！' : 'Upgrade to Pro to save questions to your collection!',
+        showCancel: false,
+        confirmText: lang === 'zh' ? '知道了' : 'Got it'
+      })
+      return
+    }
+    if (collected) {
+      removeCollectedQuestion(currentQ.id)
+      setCollected(false)
+      Taro.showToast({ title: lang === 'zh' ? '已取消收藏' : 'Removed from collection', icon: 'none' })
+    } else {
+      saveCollectedQuestion(currentQ)
+      setCollected(true)
+      Taro.showToast({ title: lang === 'zh' ? '已收藏 ☆' : 'Saved to collection ★', icon: 'none' })
+    }
+  }
+
   const handleExit = () => {
     setShowExitConfirm(true)
   }
@@ -640,17 +678,8 @@ export default function QuizContent() {
 
   return (
     <View className="quiz-container">
-      {/* Top Header with Exit, Home, Meta Badges & Timer */}
+      {/* Top Header — Meta Badges, Timer & Save */}
       <View className="quiz-header">
-        <View className="nav-actions-left">
-          <View className="exit-btn" onClick={handleExit}>
-            <Text className="exit-icon">✕</Text>
-          </View>
-          <View className="home-top-btn" onClick={handleExit}>
-            <Text className="home-top-icon">⌂</Text>
-          </View>
-        </View>
-
         {/* Topic, Level and Q number */}
         <View className="meta-badges">
           <Text className="topic-badge">{currentQ.topic || copy.reasoning}</Text>
@@ -662,6 +691,9 @@ export default function QuizContent() {
 
         <View className="timer-badge">
           <Text className="timer-text">⏱ {formatTime(secondsSpent)}</Text>
+        </View>
+        <View className={`save-star-wrap ${collected ? 'saved' : ''}`} onClick={handleToggleSave}>
+          <Text className="save-star-icon">{collected ? '★' : '☆'}</Text>
         </View>
       </View>
 

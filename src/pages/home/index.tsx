@@ -385,7 +385,7 @@ export default function HomePage() {
   const handleWatchAdClick = () => {
     if (isLoadingAd) return
     if (proStatus) {
-      navigateTo({ url: '/pages/quiz/index?mode=quick_test&origin=home' })
+      setShowAdConfirm(true)
       return
     }
     if (isBonusReady) {
@@ -406,6 +406,14 @@ export default function HomePage() {
       const success = await showRewardAd()
       setIsLoadingAd(false)
       if (success) {
+        if (proStatus) {
+          Taro.showToast({
+            title: lang === 'en' ? 'Thanks for supporting BrainActive ❤️' : '感谢支持 BrainActive ❤️',
+            icon: 'none',
+            duration: 3000
+          })
+          return
+        }
         refreshState()
         Taro.showToast({
           title: lang === 'en' ? 'Bonus Round Unlocked! ⚡' : '额外挑战已解锁！⚡',
@@ -689,7 +697,7 @@ export default function HomePage() {
                 <View className='extra-practice-text-stack'>
                   <Text className='extra-practice-title'>
                     {proStatus
-                      ? (lang === 'en' ? 'Unlimited Practice Active' : '无限特训已激活')
+                      ? (lang === 'en' ? 'Support BrainActive' : '支持 BrainActive')
                       : isBonusReady
                         ? t.extra_practice_ready
                         : remainingAds <= 0
@@ -698,7 +706,7 @@ export default function HomePage() {
                   </Text>
                   <Text className='extra-practice-sub'>
                     {proStatus
-                      ? (lang === 'en' ? 'Practice as many rounds as you want!' : '随时畅享无限思维特训！')
+                      ? (lang === 'en' ? 'Watch a short video to support us ❤️' : '观看视频支持我们 ❤️')
                       : isBonusReady
                         ? t.extra_practice_ready_sub
                         : remainingAds <= 0
@@ -809,8 +817,8 @@ export default function HomePage() {
       {showAdConfirm && (
         <ConfirmModal
           isOpen={showAdConfirm}
-          title={t.ad_confirm_title}
-          content={t.ad_confirm_content}
+          title={proStatus ? (lang === 'en' ? 'Support BrainActive?' : '支持 BrainActive？') : t.ad_confirm_title}
+          content={proStatus ? (lang === 'en' ? 'You already have unlimited Pro access. Watching a short video helps keep BrainActive running for everyone. Thank you for your support!' : '您已拥有 Pro 无限权限。观看广告能帮助我们持续运营，非常感谢您的支持！') : t.ad_confirm_content}
           confirmText={t.ad_confirm_ok}
           cancelText={t.ad_confirm_cancel}
           onConfirm={handleConfirmAd}

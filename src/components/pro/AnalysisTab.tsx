@@ -166,16 +166,34 @@ export default function AnalysisTab({
       </View>
 
       {/* SECTION 4: WEAK TOPICS & REDO */}
-      {wrongCount > 0 && (
-        <View className="section-container">
-          <View className="section-header-row">
-            <Text className="section-title-v2">{t.weak_topics}</Text>
+      <View className="section-container">
+        <View className="section-header-row">
+          <Text className="section-title-v2">{t.weak_topics}</Text>
+          {wrongCount > 0 && (
             <View className="redo-btn-inline" onClick={handleRedoWrong}>
               <Text className="redo-text">📝 {t.redo_wrong.replace('{{count}}', String(wrongCount))}</Text>
             </View>
-          </View>
+          )}
         </View>
-      )}
+        {stats.focusAreas && stats.focusAreas.length > 0 ? (
+          <View className="weak-list-v2">
+            {stats.focusAreas.map((a, i) => (
+              <View key={i} className="weak-row-v2" onClick={() => startPracticeWithFilters(a.filters)}>
+                <View className="weak-info-v2">
+                  <Text className="weak-name">{a.name}</Text>
+                  <Text className="weak-acc">{a.avg}% {t.accuracy_label}</Text>
+                </View>
+                <View className="weak-bar-mini">
+                  <View className="fill" style={{ width: `${a.avg}%`, backgroundColor: getMetricColor(a.avg) }} />
+                </View>
+                <Text className="btn-train-v2">{lang === 'zh' ? '针对训练' : 'Train'}</Text>
+              </View>
+            ))}
+          </View>
+        ) : (
+          <Text className="no-data-text">{lang === 'zh' ? '暂无薄弱领域——继续保持！' : 'No weak areas yet — keep it up!'}</Text>
+        )}
+      </View>
     </View>
   )
 }

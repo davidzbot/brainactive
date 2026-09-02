@@ -280,6 +280,31 @@ export function clearWrongQuestions(): void {
 }
 
 // -------------------------------------------------------------
+// Collected Questions (Pro Save)
+// -------------------------------------------------------------
+export function saveCollectedQuestion(q: any): void {
+  const list: any[] = getStorage('collected_questions') || []
+  if (!list.some(item => item.id === q.id)) {
+    list.unshift(q)
+    setStorage('collected_questions', list.slice(0, 100))
+  }
+}
+
+export function removeCollectedQuestion(questionId: string): void {
+  const list: any[] = getStorage('collected_questions') || []
+  setStorage('collected_questions', list.filter(item => item.id !== questionId))
+}
+
+export function getCollectedQuestions(): any[] {
+  return getStorage('collected_questions') || []
+}
+
+export function isCollected(questionId: string): boolean {
+  const list: any[] = getStorage('collected_questions') || []
+  return list.some(item => item.id === questionId)
+}
+
+// -------------------------------------------------------------
 // Quiz History
 // -------------------------------------------------------------
 export function saveQuizAttempt(attempt: {

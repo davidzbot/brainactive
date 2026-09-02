@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react'
-import { View, Text, Button, ScrollView, Picker } from '@tarojs/components'
+import { View, Text, Button, ScrollView } from '@tarojs/components'
 import Taro, { useDidShow } from '@tarojs/taro'
 import {
   isPro,
@@ -177,6 +177,7 @@ export default function ProPage() {
   const [showReferral, setShowReferral] = useState(false)
   const [selectedPlan, setSelectedPlan] = useState<'yearly' | 'monthly'>('yearly')
   const [playPrices, setPlayPrices] = useState<{ yearly: string | null; monthly: string | null } | null>(null)
+  const [pickerOpen, setPickerOpen] = useState<null | 'topic' | 'level' | 'count'>(null)
 
   const refreshState = () => {
     const active = isPro()
@@ -295,12 +296,14 @@ export default function ProPage() {
       value: h.total > 0 ? Math.round((h.score / h.total) * 100) : 0
     }))
 
+    const focusAreas = [...subjectBreakdown].sort((a, b) => a.avg - b.avg).slice(0, 3)
+
     return {
       recentScore,
       historyAvg,
       totalQuests: totalQuestions,
       subjectBreakdown,
-      focusAreas: [],
+      focusAreas,
       strongestSubject: strongest,
       weakestTopic: weakest,
       trendData
@@ -428,38 +431,23 @@ export default function ProPage() {
               <View className="filter-group">
                 <View className="filter-item">
                   <Text className="filter-label">{t.topic}</Text>
-                  <Picker
-                    mode="selector"
-                    range={topicLabels}
-                    value={TOPICS.indexOf(selectedTopic)}
-                    onChange={e => setSelectedTopic(TOPICS[Number(e.detail.value)])}
-                  >
-                    <View className="picker-val">{topicLabels[TOPICS.indexOf(selectedTopic)]}</View>
-                  </Picker>
+                  <View className="picker-val" onClick={() => setPickerOpen('topic')}>
+                    {topicLabels[TOPICS.indexOf(selectedTopic)]}
+                  </View>
                 </View>
 
                 <View className="filter-item">
                   <Text className="filter-label">{t.grade}</Text>
-                  <Picker
-                    mode="selector"
-                    range={levelLabels}
-                    value={LEVELS.indexOf(selectedLevel)}
-                    onChange={e => setSelectedLevel(LEVELS[Number(e.detail.value)])}
-                  >
-                    <View className="picker-val">{levelLabels[LEVELS.indexOf(selectedLevel)]}</View>
-                  </Picker>
+                  <View className="picker-val" onClick={() => setPickerOpen('level')}>
+                    {levelLabels[LEVELS.indexOf(selectedLevel)]}
+                  </View>
                 </View>
 
                 <View className="filter-item">
                   <Text className="filter-label">{t.q_count}</Text>
-                  <Picker
-                    mode="selector"
-                    range={QUESTION_COUNTS.map(c => lang === 'zh' ? `${c} 道题` : `${c} Questions`)}
-                    value={QUESTION_COUNTS.indexOf(selectedCount)}
-                    onChange={e => setSelectedCount(QUESTION_COUNTS[Number(e.detail.value)])}
-                  >
-                    <View className="picker-val">{lang === 'zh' ? `${selectedCount} 道题` : `${selectedCount} Questions`}</View>
-                  </Picker>
+                  <View className="picker-val" onClick={() => setPickerOpen('count')}>
+                    {lang === 'zh' ? `${selectedCount} 道题` : `${selectedCount} Questions`}
+                  </View>
                 </View>
               </View>
 
@@ -601,6 +589,46 @@ export default function ProPage() {
           </View>
         )}
       </ScrollView>
+
+      {/* Custom Picker Overlay — i18n aware, replaces native Picker */}
+      {pickerOpen && (
+        <View className="picker-overlay" onClick={() => setPickerOpen(null)}>
+          <View className="picker-sheet" onClick={(e: any) => e.stopPropagation()}>
+            <View className="picker-sheet-header">
+              <Text className="picker-cancel" onClick={() => setPickerOpen(null)}>
+                {lang === 'zh' ? '取消' : 'Cancel'}
+              </Text>
+              <Text className="picker-title">
+                {pickerOpen === 'topic' ? t.topic : pickerOpen === 'level' ? t.grade : t.q_count}
+              </Text>
+              <Text className="picker-confirm" onClick={() => setPickerOpen(null)}>
+                {lang === 'zh' ? '确定' : 'Confirm'}
+              </Text>
+            </View>
+            <ScrollView scrollY className="picker-options">
+              {(pickerOpen === 'topic' ? TOPICS : pickerOpen === 'level' ? LEVELS : QUESTION_COUNTS).map((opt: any, idx: number) => {
+                const label = pickerOpen === 'topic' ? (TOPIC_LABELS as any)[lang][idx] : pickerOpen === 'level' ? (LEVEL_LABELS as any)[lang][idx] : lang === 'zh' ? `${opt} 道题` : `${opt} Questions`
+                const isSelected = pickerOpen === 'topic' ? opt === selectedTopic : pickerOpen === 'level' ? opt === selectedLevel : opt === selectedCount
+                return (
+                  <View
+                    key={idx}
+                    className={`picker-option ${isSelected ? 'selected' : ''}`}
+                    onClick={() => {
+                      if (pickerOpen === 'topic') setSelectedTopic(opt)
+                      else if (pickerOpen === 'level') setSelectedLevel(opt)
+                      else setSelectedCount(opt)
+                      setPickerOpen(null)
+                    }}
+                  >
+                    <Text className="picker-option-text">{label}</Text>
+                    {isSelected && <Text className="picker-check">✓</Text>}
+                  </View>
+                )
+              })}
+            </ScrollView>
+          </View>
+        </View>
+      )}
 
       <ReferralModal
         isOpen={showReferral}

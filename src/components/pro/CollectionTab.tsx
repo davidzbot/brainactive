@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { View, Text, Button } from '@tarojs/components'
 import Taro from '@tarojs/taro'
-import { getWrongQuestions } from '@/utils/storage'
+import { getCollectedQuestions } from '@/utils/storage'
 
 interface CollectionTabProps {
   lang: 'en' | 'zh'
@@ -11,7 +11,7 @@ export default function CollectionTab({ lang }: CollectionTabProps) {
   const [items, setItems] = useState<any[]>([])
 
   useEffect(() => {
-    const list = getWrongQuestions()
+    const list = getCollectedQuestions()
     setItems(list || [])
   }, [])
 
@@ -23,17 +23,17 @@ export default function CollectionTab({ lang }: CollectionTabProps) {
 
   const translations = {
     en: {
-      title: 'Questions to Review',
-      empty: 'No tricky questions yet.\nQuestions you need to revisit will appear here!',
+      title: 'Saved Questions',
+      empty: 'No saved questions yet.\nTap ☆ on any question to save it to your collection!',
       start: 'Start Practice',
-      count: 'Tricky Questions',
+      count: 'Saved',
       retry: 'Review All'
     },
     zh: {
-      title: '待复习题库',
-      empty: '暂时还没有错题。\n需要再次思考的题目会显示在这里！',
+      title: '收藏的题目',
+      empty: '还没有收藏的题目。\n在练习时点击 ☆ 即可收藏！',
       start: '去探索题目',
-      count: '个待复习题目',
+      count: '题已收藏',
       retry: '复习全部'
     }
   }
