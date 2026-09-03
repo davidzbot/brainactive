@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useRef } from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import { View, Text, ScrollView, Button, Swiper, SwiperItem } from '@tarojs/components'
 import Taro, { useLoad, useDidShow, navigateTo, setNavigationBarTitle, showModal } from '@tarojs/taro'
 import {
@@ -208,37 +208,6 @@ export default function HomePage() {
   const [showSettings, setShowSettings] = useState(false)
   const [showAdConfirm, setShowAdConfirm] = useState(false)
   const [isLoadingAd, setIsLoadingAd] = useState(false)
-
-  const logoTapCountRef = useRef(0)
-  const logoTapTimeoutRef = useRef<any>(null)
-
-  // Developer Pro toggle on 3 taps of brand title
-  const handleLogoTap = () => {
-    logoTapCountRef.current += 1
-    if (logoTapTimeoutRef.current) clearTimeout(logoTapTimeoutRef.current)
-
-    if (logoTapCountRef.current >= 3) {
-      logoTapCountRef.current = 0
-      const currentDev = getStorage('dev_pro_unlocked') === 'true' || getStorage('dev_pro_unlocked') === true
-      const nextDev = !currentDev
-      setStorage('dev_pro_unlocked', nextDev ? 'true' : 'false')
-      if (nextDev) {
-        setStorage('pro_expiry', new Date(Date.now() + 30 * 24 * 3600 * 1000).toISOString())
-      } else {
-        setStorage('pro_expiry', null)
-      }
-      refreshState()
-      Taro.showToast({
-        title: nextDev ? 'Developer Pro Unlocked 👑' : 'Developer Pro Reset',
-        icon: 'none',
-        duration: 2000
-      })
-    } else {
-      logoTapTimeoutRef.current = setTimeout(() => {
-        logoTapCountRef.current = 0
-      }, 1000)
-    }
-  }
 
   const refreshState = () => {
     const currentLang = getLang() || 'en'
@@ -470,7 +439,7 @@ export default function HomePage() {
             <Text className='settings-icon'>⚙️</Text>
           </View>
           <View className='title-section'>
-            <View className='hero-brand-mark' onClick={handleLogoTap}>
+            <View className='hero-brand-mark'>
               <Text className='hero-brand-title'>{t.title}</Text>
             </View>
           </View>

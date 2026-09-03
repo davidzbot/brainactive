@@ -4,13 +4,15 @@ import Taro, { useRouter } from '@tarojs/taro'
 import {
   getStreak,
   getWrongQuestions,
-  getRemainingFreeRounds,
   canStartPractice,
   isPro,
-  getLang
+  getLang,
+  getQuizHistory
 } from '@/utils/storage'
 import { Share } from '@capacitor/share'
 import QuotaOverlay from '@/components/QuotaOverlay'
+import WeakAreaInsightModal from '@/components/WeakAreaInsightModal'
+import { findMeaningfulWeakArea, TopicPerformance } from '@/utils/quizInsights'
 import './index.scss'
 
 const i18n = {
@@ -35,12 +37,7 @@ const i18n = {
     power_up_desc: 'Unlimited rounds, step-by-step AI coach, and analytics.',
     pro_feature_cta: 'Unlock Pro Access',
     copied: 'Result copied! Share with your friends!',
-    no_mistakes: 'No mistakes to review! Outstanding! 🎉',
-    hero_spotted_title: '🔍 Hero Spotted Something for You',
-    hero_spotted_perfect: 'You nailed every question! Keep this streak going. Try the Pro zone for harder challenges.',
-    hero_spotted_good: 'Strong performance! Review your 1–2 mistakes to reach perfection next time.',
-    hero_spotted_ok: 'You\'re making progress! Use "Review Mistakes" to practice your weak areas.',
-    hero_spotted_low: 'Don\'t give up! Every great thinker starts somewhere. Keep practising daily.'
+    no_mistakes: 'No mistakes to review! Outstanding! 🎉'
   },
   zh: {
     victory: '太棒了，思维小英雄！',
@@ -63,12 +60,7 @@ const i18n = {
     power_up_desc: '无限挑战轮次，AI 导师专属解析与战力统计。',
     pro_feature_cta: '开启 Pro 会员',
     copied: '成绩已复制，快去分享吧！',
-    no_mistakes: '全部答对，没有错题！🎉',
-    hero_spotted_title: '🔍 英雄为你发现了一些东西',
-    hero_spotted_perfect: '太厉害了，每道题都答对了！坚持下去，去 Pro 区挑战更难的题目吧！',
-    hero_spotted_good: '表现优秀！复习 1–2 道错题，下次就能拿满分了！',
-    hero_spotted_ok: '你在进步！用「复习错题」功能重点练习薄弱环节。',
-    hero_spotted_low: '不要放弃！每位思维高手都从零开始。坚持每天练习！'
+    no_mistakes: '全部答对，没有错题！🎉'
   }
 }
 
@@ -87,6 +79,8 @@ export default function ResultContent() {
   const [showConfetti, setShowConfetti] = useState(false)
   const [showQuota, setShowQuota] = useState(false)
   const [proActive, setProActive] = useState(false)
+  const [weakAreaInsight, setWeakAreaInsight] = useState<TopicPerformance | null>(null)
+  const [showWeakAreaInsight, setShowWeakAreaInsight] = useState(false)
 
   const streak = getStreak()
   const wrongList = getWrongQuestions()
@@ -104,6 +98,14 @@ export default function ResultContent() {
   useEffect(() => {
     if (isLoading) return
     if (percentage >= 80) setShowConfetti(true)
+
+    try {
+      const insight = findMeaningfulWeakArea(getQuizHistory())
+      setWeakAreaInsight(insight)
+      setShowWeakAreaInsight(Boolean(insight))
+    } catch (error) {
+      console.warn('[BrainActive Result] Weak-area insight unavailable', error)
+    }
 
     const duration = 700
     const steps = 25
@@ -127,13 +129,6 @@ export default function ResultContent() {
     if (percentage >= 80) return t.avenger
     if (percentage >= 50) return t.knight
     return t.trainee
-  }
-
-  const getHeroSpottedText = () => {
-    if (percentage >= 100) return t.hero_spotted_perfect
-    if (percentage >= 80) return t.hero_spotted_good
-    if (percentage >= 50) return t.hero_spotted_ok
-    return t.hero_spotted_low
   }
 
   const formatTime = (secs: number) => {
@@ -180,8 +175,8 @@ export default function ResultContent() {
     }
   }
 
-  const handleGoPro = (focus = false) => {
-    const url = focus ? '/pages/pro/index?tab=analysis' : '/pages/pro/index'
+  const handleGoPro = () => {
+    const url = '/pages/pro/index'
     Taro.navigateTo({
       url
     }).catch(() => Taro.reLaunch({ url }))
@@ -267,17 +262,6 @@ export default function ResultContent() {
           <Text className="encouragement-text">{t.keep_practicing}</Text>
         </View>
 
-        {/* Hero Spotted Something For You */}
-        <View className="hero-spotted-card">
-          <Text className="hero-spotted-title">{t.hero_spotted_title}</Text>
-          <Text className="hero-spotted-body">{getHeroSpottedText()}</Text>
-          <View className="hero-spotted-cta" onClick={() => handleGoPro(true)}>
-            <Text className="hero-spotted-cta-text">
-              🔍 {lang === 'en' ? 'Try a Focus Test in Pro' : '在 Pro 中试试专注力测试'} →
-            </Text>
-          </View>
-        </View>
-
         {/* Action Buttons */}
         <View className="result-actions-block">
           {wrongCount > 0 && (
@@ -335,6 +319,15 @@ export default function ResultContent() {
           Taro.redirectTo({ url: '/pages/quiz/index?mode=quick_test' })
         }}
       />
+
+      {weakAreaInsight && (
+        <WeakAreaInsightModal
+          isOpen={showWeakAreaInsight}
+          insight={weakAreaInsight}
+          lang={lang}
+          onClose={() => setShowWeakAreaInsight(false)}
+        />
+      )}
     </View>
   )
 }

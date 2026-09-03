@@ -34,3 +34,8 @@ entrypoint = "./functions/brainactive-report-question/index.ts"
 enabled = true
 verify_jwt = false
 entrypoint = "./functions/brainactive-sync-purchase-entitlement/index.ts"
+
+[functions.brainactive-ask-hero]
+enabled = true
+verify_jwt = false
+entrypoint = "./functions/brainactive-ask-hero/index.ts"

@@ -13,12 +13,12 @@ import {
 } from '../config/monetization'
 
 // -----------------------------------------------------------------------------
-// ADMOB IDS — production identifiers are centralized in src/config/monetization.ts.
-// Test mode is the safe default for every current development/internal build.
+// Production identifiers are centralized in src/config/monetization.ts.
+// H5 keeps its simulated reward flow; native production uses the configured unit.
 // -----------------------------------------------------------------------------
 const USE_TEST_ADS = !ADMOB_USE_PRODUCTION_ADS || !Capacitor.isNativePlatform()
 
-// Google's official test rewarded unit (safe for development and internal testing).
+// Retained for non-production native builds only.
 const ADMOB_TEST_ID_REWARDED = 'ca-app-pub-3940256099942544/5224354917'
 
 export const REWARD_AD_UNIT_ID = USE_TEST_ADS

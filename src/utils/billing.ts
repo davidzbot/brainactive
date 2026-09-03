@@ -12,7 +12,6 @@ import {
 } from '@/config/monetization'
 import { syncBrainActivePurchaseEntitlement } from './request'
 import {
-  getDeviceId,
   getStorage,
   getSubscriptionActive,
   getSubscriptionExpiry,
@@ -91,17 +90,8 @@ function getFallbackSubscriptionExpiry(transaction?: any): string {
     if (lastPlan === 'yearly' || lastPlan === 'monthly') plan = lastPlan
   }
 
-  // This is an effective client entitlement date, not a Google Play expiry.
   const days = plan === 'monthly' ? 31 : 365
-  const effectiveExpiry = new Date(Date.now() + days * 24 * 60 * 60 * 1000).toISOString()
-  console.info('[BrainActive Billing] Effective fallback entitlement date', JSON.stringify({
-    source: 'client_fallback',
-    plan: plan || 'unknown-default-yearly',
-    days,
-    effectiveExpiry,
-    transactionId: transaction?.transactionId || null,
-  }))
-  return effectiveExpiry
+  return new Date(Date.now() + days * 24 * 60 * 60 * 1000).toISOString()
 }
 
 function setSubscriptionExpiryIfLater(expiryIso: string): boolean {
@@ -112,37 +102,14 @@ function setSubscriptionExpiryIfLater(expiryIso: string): boolean {
   const nextTime = new Date(expiryIso).getTime()
   const latestExisting = Math.max(...existingExpiries, 0)
   if (Number.isFinite(nextTime) && nextTime <= latestExisting) {
-    console.info('[BrainActive Billing] Skip expiry write — existing is later', {
-      existing: new Date(latestExisting).toISOString(),
-      next: expiryIso,
-    })
     return false
   }
   setSubscriptionExpiry(expiryIso)
   return true
 }
 
-function logNativePurchaseEvent(eventName: string, data: any) {
-  const purchases = Array.isArray(data?.purchases) ? data.purchases : []
-  const productIds = [...new Set(purchases.flatMap((purchase: any) => {
-    const ids = Array.isArray(purchase?.productIds) ? purchase.productIds : []
-    return ids.length > 0 ? ids : [purchase?.productId]
-  }).filter(Boolean))]
-  console.info('[BrainActive Billing] Native purchase detected', JSON.stringify({
-    eventName,
-    count: purchases.length,
-    productIds,
-    basePlanIds: purchases.map((purchase: any) => purchase?.basePlanId || null),
-    offerIds: purchases.map((purchase: any) => purchase?.offerId || null),
-    states: purchases.map((purchase: any) => String(purchase?.getPurchaseState ?? purchase?.state ?? 'unknown')),
-    transactionIds: purchases.map((purchase: any) => purchase?.orderId || null),
-    expiryTimestamps: purchases.map((purchase: any) => purchase?.expiryTimeMillis || null),
-  }))
-}
-
-function handleNativePurchaseEvent(eventName: string, data: any) {
+function handleNativePurchaseEvent() {
   nativePurchaseEventVersion += 1
-  logNativePurchaseEvent(eventName, data)
   const version = nativePurchaseEventVersion
   setTimeout(() => {
     const ready = nativePurchaseWaiters.filter(waiter => waiter.afterVersion < version)
@@ -158,11 +125,9 @@ async function ensureNativePurchaseListeners() {
   if (!Capacitor.isNativePlatform()) return
   if (!nativePurchaseListenersPromise) {
     nativePurchaseListenersPromise = Promise.all([
-      PurchasePlugin.addListener('setPurchases', data => handleNativePurchaseEvent('setPurchases', data)),
-      PurchasePlugin.addListener('purchasesUpdated', data => handleNativePurchaseEvent('purchasesUpdated', data)),
-    ]).then(() => {
-      console.info('[BrainActive Billing] Native purchase listeners registered')
-    })
+      PurchasePlugin.addListener('setPurchases', () => handleNativePurchaseEvent()),
+      PurchasePlugin.addListener('purchasesUpdated', () => handleNativePurchaseEvent()),
+    ]).then(() => undefined)
   }
   await nativePurchaseListenersPromise
 }
@@ -203,22 +168,9 @@ function isSubscriptionTransaction(transaction: CdvPurchase.Transaction) {
 async function syncBackendEntitlement(transaction: CdvPurchase.Transaction, effectiveExpiry?: string): Promise<boolean> {
   const rawExpiry = extractTransactionExpiry(transaction)
   const expiryIso = effectiveExpiry || rawExpiry
-  if (!expiryIso) {
-    console.info('[BrainActive Billing] Backend sync blocked: no real or effective expiry', JSON.stringify({
-      productId: SUBSCRIPTION_PRODUCT_ID,
-      transactionId: transaction.transactionId,
-      realExpiryFound: false,
-    }))
-    return false
-  }
+  if (!expiryIso) return false
   const expiryDate = new Date(expiryIso)
   if (Number.isNaN(expiryDate.getTime()) || expiryDate.getTime() <= Date.now()) return false
-  console.info('[BrainActive Billing] Backend sync attempted', JSON.stringify({
-    productId: SUBSCRIPTION_PRODUCT_ID,
-    transactionId: transaction.transactionId,
-    realExpiryFound: Boolean(rawExpiry),
-    expiry: expiryDate.toISOString(),
-  }))
   try {
     const result = await syncBrainActivePurchaseEntitlement({
       product_id: SUBSCRIPTION_PRODUCT_ID,
@@ -226,11 +178,6 @@ async function syncBackendEntitlement(transaction: CdvPurchase.Transaction, effe
       transaction_id: transaction.transactionId,
     })
     const synced = result?.is_pro === true
-    console.info('[BrainActive Billing] Backend sync completed', JSON.stringify({
-      success: synced,
-      finalIsPro: result?.is_pro ?? false,
-      expiry: result?.pro_expiry || expiryDate.toISOString(),
-    }))
     return synced
   } catch (error) {
     console.warn('[BrainActive Billing] Backend sync failed:', error)
@@ -255,23 +202,14 @@ function latestSubscriptionTransaction() {
 
 async function applyApprovedTransaction(transaction: CdvPurchase.Transaction) {
   const rawExpiry = extractTransactionExpiry(transaction)
-  const effectiveExpiry = rawExpiry || getFallbackSubscriptionExpiry(transaction)
-  const realExpiryFound = Boolean(rawExpiry)
-  console.info('[BrainActive Billing] Purchase detected', JSON.stringify({
-    productId: transaction.products.map(product => product.id),
-    state: transaction.state,
-    transactionId: transaction.transactionId,
-    realExpiryFound,
-    expiry: effectiveExpiry,
-  }))
   if (!isSubscriptionTransaction(transaction)) return
+  const effectiveExpiry = rawExpiry || getFallbackSubscriptionExpiry(transaction)
   setSubscriptionActive(true)
   setSubscriptionExpiryIfLater(effectiveExpiry)
   await syncBackendEntitlement(transaction, effectiveExpiry)
   notifyEntitlementChanged()
   try {
     await transaction.finish()
-    console.info('[BrainActive Billing] finish completed', { transactionId: transaction.transactionId })
   } catch (error) {
     console.warn('[BrainActive Billing] finish failed:', error)
   }
@@ -281,18 +219,10 @@ export async function syncBillingEntitlement(): Promise<boolean> {
   if (!Capacitor.isNativePlatform()) return getSubscriptionActive() || Boolean(getSubscriptionExpiry())
   const transaction = latestSubscriptionTransaction()
   if (!transaction || !isSubscriptionTransaction(transaction)) {
-    console.info('[BrainActive Billing] No valid subscription transaction; preserving entitlement cache')
     return getSubscriptionActive() || Boolean(getSubscriptionExpiry())
   }
   const rawExpiry = extractTransactionExpiry(transaction)
   const effectiveExpiry = rawExpiry || getFallbackSubscriptionExpiry(transaction)
-  console.info('[BrainActive Billing] Entitlement sync', JSON.stringify({
-    productId: transaction.products.map(product => product.id),
-    state: transaction.state,
-    transactionId: transaction.transactionId,
-    realExpiryFound: Boolean(rawExpiry),
-    expiry: effectiveExpiry,
-  }))
   setSubscriptionActive(true)
   setSubscriptionExpiryIfLater(effectiveExpiry)
   await syncBackendEntitlement(transaction, effectiveExpiry)
@@ -305,21 +235,15 @@ export async function initializeBilling(): Promise<boolean> {
   if (billingInitPromise) return billingInitPromise
   billingInitPromise = (async () => {
     try {
-      console.info('[BrainActive Billing] Billing initialization started', {
-        productId: SUBSCRIPTION_PRODUCT_ID,
-        monthlyOffer: SUBSCRIPTION_OFFERS.monthly,
-        yearlyOffer: SUBSCRIPTION_OFFERS.yearly,
-      })
       await ensureNativePurchaseListeners()
       const { store } = CdvPurchase
       if (!billingListenersRegistered) {
         store.register({ id: SUBSCRIPTION_PRODUCT_ID, type: ProductType.PAID_SUBSCRIPTION, platform: Platform.GOOGLE_PLAY })
         store.when().approved(applyApprovedTransaction)
         store.when().receiptUpdated((receipt: CdvPurchase.Receipt) => {
-          console.info('[BrainActive Billing] Receipt updated', { transactionCount: receipt.transactions.length })
           void syncBillingEntitlement()
         })
-        store.when().pending(() => console.info('[BrainActive Billing] Subscription purchase pending'))
+        store.when().pending(() => {})
         billingListenersRegistered = true
       }
       const wait = waitForNativePurchaseUpdate(nativePurchaseEventVersion)
@@ -330,7 +254,6 @@ export async function initializeBilling(): Promise<boolean> {
         return false
       }
       await syncBillingEntitlement()
-      console.info('[BrainActive Billing] Billing initialization completed')
       return true
     } catch (error) {
       billingInitPromise = null
@@ -353,14 +276,12 @@ export async function refreshBillingEntitlement(): Promise<boolean> {
 export async function restoreBillingPurchases(): Promise<boolean> {
   if (!Capacitor.isNativePlatform()) return false
   if (!await initializeBilling()) return false
-  console.info('[BrainActive Billing] Restore started')
   const wait = waitForNativePurchaseUpdate(nativePurchaseEventVersion)
   try {
     const restoreError = await CdvPurchase.store.restorePurchases()
     if (restoreError?.isError) { wait.cancel(); return false }
     const received = await wait.promise
     const active = await syncBillingEntitlement()
-    console.info('[BrainActive Billing] Restore completed', { receivedPurchaseUpdate: received, active })
     return active
   } catch (error) {
     wait.cancel()
@@ -375,7 +296,6 @@ export async function purchaseSubscription(plan: 'yearly' | 'monthly') {
   setStorage('last_purchase_plan', plan)
   const product = CdvPurchase.store.get(SUBSCRIPTION_PRODUCT_ID, Platform.GOOGLE_PLAY)
   const offerId = SUBSCRIPTION_OFFERS[plan]
-  console.info('[BrainActive Billing] Offer selected', { productId: SUBSCRIPTION_PRODUCT_ID, plan, offerId })
   const offer = product?.getOffer(offerId)
   if (!offer) return { isError: true, message: 'This subscription plan is not available yet.' }
   const wait = waitForNativePurchaseUpdate(nativePurchaseEventVersion)

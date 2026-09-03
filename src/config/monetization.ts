@@ -9,10 +9,9 @@
  * purchase lifecycle is coordinated by `src/utils/billing.ts`.
  */
 
-// Google's official test App ID is used for the closed-test build.
-export const ADMOB_APP_ID = 'ca-app-pub-3940256099942544~3347511713'
+export const ADMOB_APP_ID = 'ca-app-pub-8548627206908979~9870002801'
 export const ADMOB_REWARDED_AD_UNIT_ID = 'ca-app-pub-8548627206908979/6689305699'
-export const ADMOB_USE_PRODUCTION_ADS = false
+export const ADMOB_USE_PRODUCTION_ADS = true
 
 // Google Play subscription identifiers. Product/base-plan IDs are separate from
 // localized display names and must match the Play Console configuration.

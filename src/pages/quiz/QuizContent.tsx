@@ -159,11 +159,14 @@ const CURATED_FALLBACK_QUESTIONS = [
   }
 ]
 
+const decodeRouteParam = (value: string | undefined) =>
+  value ? decodeURIComponent(value.replace(/\+/g, ' ')) : ''
+
 export default function QuizContent() {
   const router = useRouter()
   const mode = (router.params.mode as any) || 'quick_test'
-  const topicFilter = router.params.topic || ''
-  const levelFilter = router.params.level || ''
+  const topicFilter = decodeRouteParam(router.params.topic)
+  const levelFilter = decodeRouteParam(router.params.level)
   const [lang, setLang] = useState<'en' | 'zh'>(() => (getLang() || 'en') as 'en' | 'zh')
   const copy = QUIZ_COPY[lang]
 
@@ -248,7 +251,7 @@ export default function QuizContent() {
             const ids = idsParam.split(',').map(s => s.trim()).filter(Boolean)
             if (ids.length > 0) {
               try {
-                const fetchedByIds = await getBrainActiveQuestions({ ids, limit: ids.length })
+                const fetchedByIds = await getBrainActiveQuestions({ mode: 'retry', ids, limit: ids.length })
                 if (fetchedByIds && fetchedByIds.length > 0) {
                   setQuestions(fetchedByIds)
                   setLoading(false)

@@ -77,15 +77,6 @@ export function canPlayMode(mode: string): boolean {
   return getDailyUsage(mode) < 1
 }
 
-// Deprecated: isProUnlocked, unlockPro
-export function isProUnlocked(): boolean {
-  return isAdUnlocked()
-}
-
-export function unlockPro(): void {
-  unlockAllModes()
-}
-
 export function parseDateSafe(dateStr: string | null): Date | null {
   if (!dateStr) return null
   const parts = dateStr.split('-')

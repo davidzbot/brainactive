@@ -30,7 +30,10 @@ const HARD_TIMEOUT_MS = 60_000
 
 function buildImageUrl(supabaseUrl: string, imagePath?: string | null): string | null {
   if (!imagePath || !imagePath.trim()) return null
-  let cleanPath = imagePath.trim().replace(/^\/+/, '')
+  const trimmedPath = imagePath.trim()
+  const publicPrefix = `${supabaseUrl}/storage/v1/object/public/${ASSETS_BUCKET}/`
+  if (trimmedPath.startsWith(publicPrefix)) return trimmedPath
+  let cleanPath = trimmedPath.replace(/^\/+/, '')
   const bucketPrefix = `${ASSETS_BUCKET}/`
   if (cleanPath.startsWith(bucketPrefix)) {
     cleanPath = cleanPath.slice(bucketPrefix.length)

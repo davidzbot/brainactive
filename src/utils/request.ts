@@ -13,7 +13,10 @@ const BRAINACTIVE_ASSETS_BUCKET = 'brainactive-assets'
 
 export function getBrainActiveAssetUrl(imagePath?: string | null): string | null {
   if (!imagePath || !imagePath.trim()) return null
-  let cleanPath = imagePath.trim().replace(/^\/+/, '')
+  const trimmedPath = imagePath.trim()
+  const publicPrefix = `${SUPABASE_URL}/storage/v1/object/public/${BRAINACTIVE_ASSETS_BUCKET}/`
+  if (trimmedPath.startsWith(publicPrefix)) return trimmedPath
+  let cleanPath = trimmedPath.replace(/^\/+/, '')
   const bucketPrefix = `${BRAINACTIVE_ASSETS_BUCKET}/`
   if (cleanPath.startsWith(bucketPrefix)) {
     cleanPath = cleanPath.slice(bucketPrefix.length)
@@ -78,7 +81,7 @@ export async function getBrainActiveQuestions(params: {
 
   const url = `/functions/v1/brainactive-get-questions?${query.toString()}`
   const res = await request({ url, method: 'GET' })
-  return res?.data || []
+  return Array.isArray(res?.data) ? res.data : []
 }
 
 // 2. Submit BrainActive Attempt
@@ -167,7 +170,7 @@ export async function askBrainActiveHero(payload: AskHeroPayload): Promise<AskHe
       url: '/functions/v1/brainactive-ask-hero',
       method: 'POST',
       data: payload,
-      timeout: 30000
+      timeout: 65000
     })
     return res?.data || res || { ok: false, reason: 'NO_DATA' }
   } catch (err: any) {

@@ -12,6 +12,7 @@ import {
   getDeviceId
 } from '@/utils/storage'
 import { getBrainActiveProgress } from '@/utils/request'
+import { aggregateQuizTopicPerformance } from '@/utils/quizInsights'
 import { PLAN_PRICES } from '@/config/monetization'
 import {
   getSubscriptionPrices,
@@ -277,34 +278,12 @@ export default function ProPage() {
     const recentTotal = recent.reduce((acc, h) => acc + (h.total || 5), 0)
     const recentScore = recentTotal > 0 ? Math.round((recentCorrect / recentTotal) * 100) : historyAvg
 
-    // Breakdown by topic — respect Mixed with topicBreakdown, never invent topic for mixed quiz
-    const topicMap: Record<string, { correct: number; total: number }> = {}
-    history.forEach(h => {
-      if (Array.isArray(h.topicBreakdown) && h.topicBreakdown.length > 0) {
-        for (const b of h.topicBreakdown) {
-          const t = (b.topic || '').trim() || 'Mixed'
-          if (!topicMap[t]) topicMap[t] = { correct: 0, total: 0 }
-          topicMap[t].correct += Number(b.correct) || 0
-          topicMap[t].total += Number(b.total) || 0
-        }
-      } else {
-        const topic = (h.topic || 'General Thinking').trim() || 'General Thinking'
-        if (!topicMap[topic]) topicMap[topic] = { correct: 0, total: 0 }
-        topicMap[topic].correct += h.score || 0
-        topicMap[topic].total += h.total || 5
-      }
-    })
-
-    const subjectBreakdown = Object.keys(topicMap).map(topic => {
-      const { correct, total } = topicMap[topic]
-      const avg = total > 0 ? Math.round((correct / total) * 100) : 0
-      return {
-        name: topic,
-        count: total,
-        avg,
-        filters: { topic }
-      }
-    }).sort((a, b) => b.avg - a.avg)
+    const subjectBreakdown = aggregateQuizTopicPerformance(history).map(performance => ({
+      name: performance.topic,
+      count: performance.total,
+      avg: performance.accuracy,
+      filters: { topic: performance.topic }
+    }))
 
     const strongest = subjectBreakdown[0] || { name: 'Reasoning', avg: historyAvg }
     const weakest = subjectBreakdown[subjectBreakdown.length - 1] || { name: 'General', avg: historyAvg }
