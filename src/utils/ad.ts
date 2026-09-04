@@ -3,7 +3,7 @@
  * Adapts Math Hero's robust ad lifecycle, state machine, and reward callback logic.
  */
 
-import { AdMob, RewardAdOptions, RewardAdPluginEvents } from '@capacitor-community/admob'
+import { AdMob, RewardAdOptions, RewardAdPluginEvents, MaxAdContentRating } from '@capacitor-community/admob'
 import { Capacitor } from '@capacitor/core'
 import Taro from '@tarojs/taro'
 import { unlockBonusRound } from './storage'
@@ -33,7 +33,12 @@ let rewardGranted = false
 export async function initAdMob(): Promise<void> {
   if (!Capacitor.isNativePlatform() || isAdMobReady) return
   try {
-    await AdMob.initialize({})
+    await AdMob.initialize({
+      // Families Policy (9–12 sole-children audience): COPPA child-directed
+      // treatment + General-audience creative cap on every ad request.
+      tagForChildDirectedTreatment: true,
+      maxAdContentRating: MaxAdContentRating.General,
+    })
     isAdMobReady = true
     console.log('[BrainActive AdMob] Initialized successfully')
   } catch (err: any) {
@@ -49,7 +54,10 @@ export async function preloadRewardAd(): Promise<boolean> {
     isLoading = true
     const options: RewardAdOptions = {
       adId: REWARD_AD_UNIT_ID,
-      isTesting: USE_TEST_ADS
+      isTesting: USE_TEST_ADS,
+      // Families Policy (9–12 sole-children audience): always serve
+      // non-personalized ads — no IBA/remarketing to children.
+      npa: true
     }
     await AdMob.prepareRewardVideoAd(options)
     return true
