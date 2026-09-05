@@ -24419,9 +24419,12 @@
         "spatial",
         "cube"
       ],
-      "visual_required": false,
-      "visual_spec": null,
-      "image_path": null,
+      "visual_required": true,
+      "visual_spec": {
+        "type": "diagram",
+        "note": "see image"
+      },
+      "image_path": "p3/BA_P3_2381.svg",
       "is_active": true,
       "created_at": "2026-09-05T00:00:00+00:00",
       "updated_at": "2026-09-05T00:00:00+00:00",
@@ -25054,9 +25057,12 @@
         "spatial",
         "cube"
       ],
-      "visual_required": false,
-      "visual_spec": null,
-      "image_path": null,
+      "visual_required": true,
+      "visual_spec": {
+        "type": "diagram",
+        "note": "see image"
+      },
+      "image_path": "p3/BA_P3_2395.svg",
       "is_active": true,
       "created_at": "2026-09-05T00:00:00+00:00",
       "updated_at": "2026-09-05T00:00:00+00:00",
@@ -25099,9 +25105,12 @@
         "spatial",
         "cube"
       ],
-      "visual_required": false,
-      "visual_spec": null,
-      "image_path": null,
+      "visual_required": true,
+      "visual_spec": {
+        "type": "diagram",
+        "note": "see image"
+      },
+      "image_path": "p3/BA_P3_2395.svg",
       "is_active": true,
       "created_at": "2026-09-05T00:00:00+00:00",
       "updated_at": "2026-09-05T00:00:00+00:00",
@@ -25144,9 +25153,12 @@
         "spatial",
         "cube"
       ],
-      "visual_required": false,
-      "visual_spec": null,
-      "image_path": null,
+      "visual_required": true,
+      "visual_spec": {
+        "type": "diagram",
+        "note": "see image"
+      },
+      "image_path": "p3/BA_P3_2395.svg",
       "is_active": true,
       "created_at": "2026-09-05T00:00:00+00:00",
       "updated_at": "2026-09-05T00:00:00+00:00",
@@ -25189,9 +25201,12 @@
         "spatial",
         "cube"
       ],
-      "visual_required": false,
-      "visual_spec": null,
-      "image_path": null,
+      "visual_required": true,
+      "visual_spec": {
+        "type": "diagram",
+        "note": "see image"
+      },
+      "image_path": "p3/BA_P3_2395.svg",
       "is_active": true,
       "created_at": "2026-09-05T00:00:00+00:00",
       "updated_at": "2026-09-05T00:00:00+00:00",
@@ -25279,9 +25294,12 @@
         "spatial",
         "cube"
       ],
-      "visual_required": false,
-      "visual_spec": null,
-      "image_path": null,
+      "visual_required": true,
+      "visual_spec": {
+        "type": "diagram",
+        "note": "see image"
+      },
+      "image_path": "p3/BA_P3_2400.svg",
       "is_active": true,
       "created_at": "2026-09-05T00:00:00+00:00",
       "updated_at": "2026-09-05T00:00:00+00:00",
@@ -26545,9 +26563,12 @@
         "spatial",
         "paper_folding"
       ],
-      "visual_required": false,
-      "visual_spec": null,
-      "image_path": null,
+      "visual_required": true,
+      "visual_spec": {
+        "type": "diagram",
+        "note": "see image"
+      },
+      "image_path": "p3/BA_P3_2428.svg",
       "is_active": true,
       "created_at": "2026-09-05T00:00:00+00:00",
       "updated_at": "2026-09-05T00:00:00+00:00",
@@ -26590,9 +26611,12 @@
         "spatial",
         "paper_folding"
       ],
-      "visual_required": false,
-      "visual_spec": null,
-      "image_path": null,
+      "visual_required": true,
+      "visual_spec": {
+        "type": "diagram",
+        "note": "see image"
+      },
+      "image_path": "p3/BA_P3_2429.svg",
       "is_active": true,
       "created_at": "2026-09-05T00:00:00+00:00",
       "updated_at": "2026-09-05T00:00:00+00:00",
@@ -26635,9 +26659,12 @@
         "spatial",
         "paper_folding"
       ],
-      "visual_required": false,
-      "visual_spec": null,
-      "image_path": null,
+      "visual_required": true,
+      "visual_spec": {
+        "type": "diagram",
+        "note": "see image"
+      },
+      "image_path": "p3/BA_P3_2430.svg",
       "is_active": true,
       "created_at": "2026-09-05T00:00:00+00:00",
       "updated_at": "2026-09-05T00:00:00+00:00",
@@ -26860,9 +26887,12 @@
         "spatial",
         "paper_folding"
       ],
-      "visual_required": false,
-      "visual_spec": null,
-      "image_path": null,
+      "visual_required": true,
+      "visual_spec": {
+        "type": "diagram",
+        "note": "see image"
+      },
+      "image_path": "p3/BA_P3_2435.svg",
       "is_active": true,
       "created_at": "2026-09-05T00:00:00+00:00",
       "updated_at": "2026-09-05T00:00:00+00:00",
@@ -26905,9 +26935,12 @@
         "spatial",
         "paper_folding"
       ],
-      "visual_required": false,
-      "visual_spec": null,
-      "image_path": null,
+      "visual_required": true,
+      "visual_spec": {
+        "type": "diagram",
+        "note": "see image"
+      },
+      "image_path": "p3/BA_P3_2429.svg",
       "is_active": true,
       "created_at": "2026-09-05T00:00:00+00:00",
       "updated_at": "2026-09-05T00:00:00+00:00",
@@ -26995,9 +27028,12 @@
         "spatial",
         "paper_folding"
       ],
-      "visual_required": false,
-      "visual_spec": null,
-      "image_path": null,
+      "visual_required": true,
+      "visual_spec": {
+        "type": "diagram",
+        "note": "see image"
+      },
+      "image_path": "p3/BA_P3_2438.svg",
       "is_active": true,
       "created_at": "2026-09-05T00:00:00+00:00",
       "updated_at": "2026-09-05T00:00:00+00:00",
@@ -27040,9 +27076,12 @@
         "spatial",
         "paper_folding"
       ],
-      "visual_required": false,
-      "visual_spec": null,
-      "image_path": null,
+      "visual_required": true,
+      "visual_spec": {
+        "type": "diagram",
+        "note": "see image"
+      },
+      "image_path": "p3/BA_P3_2439.svg",
       "is_active": true,
       "created_at": "2026-09-05T00:00:00+00:00",
       "updated_at": "2026-09-05T00:00:00+00:00",

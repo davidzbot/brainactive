@@ -14435,7 +14435,7 @@
     }
    ],
    "answer": "B",
-   "explanation": "Ali started with 10 marbles and gave away 3. To find how many Ali has now, subtract: 10 - 3 = 7. Ali has 7 marbles left.",
+   "explanation": "10 − 3 = 7.",
    "reasoning": "Subtracting a gift.",
    "tags": [
     "p3",
@@ -14480,7 +14480,7 @@
     }
    ],
    "answer": "C",
-   "explanation": "Mei started with 15 stickers and received 5 more from her brother. To find the new total, add: 15 + 5 = 20. Mei now has 20 stickers.",
+   "explanation": "15 + 5 = 20.",
    "reasoning": "Adding a gift.",
    "tags": [
     "p3",
@@ -14525,7 +14525,7 @@
     }
    ],
    "answer": "B",
-   "explanation": "The box started with 20 apples and 8 were sold (taken away). To find how many remain, subtract: 20 - 8 = 12. There are 12 apples left.",
+   "explanation": "20 − 8 = 12.",
    "reasoning": "Subtracting a sale.",
    "tags": [
     "p3",
@@ -14615,7 +14615,7 @@
     }
    ],
    "answer": "D",
-   "explanation": "Sara ran in two parts: first 60 metres, then 25 more metres. To find the total distance, add both parts: 60 + 25 = 85 m. Sara ran 85 metres in total.",
+   "explanation": "60 + 25 = 85 m.",
    "reasoning": "Adding two distances.",
    "tags": [
     "p3",
@@ -15560,7 +15560,7 @@
     }
    ],
    "answer": "C",
-   "explanation": "The pins form rows of 1, 2, 3 and 4. To find the total, add all rows: 1 + 2 + 3 + 4 = 10. There are 10 pins in total.",
+   "explanation": "1 + 2 + 3 + 4 = 10.",
    "reasoning": "Summing a triangular arrangement.",
    "tags": [
     "p3",
@@ -18350,7 +18350,7 @@
     }
    ],
    "answer": "C",
-   "explanation": "Each letter is converted to its position in the alphabet (P=16, I=9, G=7), then added together: 16 + 9 + 7 = 32. PIG is coded as 32.",
+   "explanation": "16 + 9 + 7 = 32.",
    "reasoning": "Adding letter values.",
    "tags": [
     "p3",
@@ -22642,7 +22642,7 @@
     "result": "left",
     "rule": "clockwise 90 per step"
    },
-   "image_path": "images/NEW_VIS_003.svg",
+   "image_path": "p3/NEW_VIS_003.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -22739,7 +22739,7 @@
     "result": "bottom-left",
     "rule": "clockwise 90 per step"
    },
-   "image_path": "images/NEW_VIS_005.svg",
+   "image_path": "p3/NEW_VIS_005.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -23374,7 +23374,7 @@
     "grid": "3x3",
     "turn": "90 clockwise about centre"
    },
-   "image_path": "images/NEW_VIS_019.svg",
+   "image_path": "p3/NEW_VIS_019.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -23695,7 +23695,7 @@
     "facing": "left",
     "result": "right"
    },
-   "image_path": "images/NEW_VIS_026.svg",
+   "image_path": "p3/NEW_VIS_026.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -23926,7 +23926,7 @@
     "facing": "up",
     "result": "down"
    },
-   "image_path": "images/NEW_VIS_031.svg",
+   "image_path": "p3/NEW_VIS_031.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -24419,9 +24419,12 @@
     "spatial",
     "cube"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2381.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -24516,7 +24519,7 @@
     "centre": "star",
     "extra": "cloud"
    },
-   "image_path": "images/NEW_VIS_044.svg",
+   "image_path": "p3/NEW_VIS_044.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -25054,9 +25057,12 @@
     "spatial",
     "cube"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2395.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -25099,9 +25105,12 @@
     "spatial",
     "cube"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2395.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -25144,9 +25153,12 @@
     "spatial",
     "cube"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2395.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -25189,9 +25201,12 @@
     "spatial",
     "cube"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2395.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -25279,9 +25294,12 @@
     "spatial",
     "cube"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2400.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -25512,7 +25530,7 @@
     "row": 2,
     "col": 3
    },
-   "image_path": "images/NEW_VIS_066.svg",
+   "image_path": "p3/NEW_VIS_066.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -26545,9 +26563,12 @@
     "spatial",
     "paper_folding"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2428.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -26590,9 +26611,12 @@
     "spatial",
     "paper_folding"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2429.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -26635,9 +26659,12 @@
     "spatial",
     "paper_folding"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2430.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -26860,9 +26887,12 @@
     "spatial",
     "paper_folding"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2435.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -26905,9 +26935,12 @@
     "spatial",
     "paper_folding"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2429.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -26995,9 +27028,12 @@
     "spatial",
     "paper_folding"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2438.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -27040,9 +27076,12 @@
     "spatial",
     "paper_folding"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2439.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",

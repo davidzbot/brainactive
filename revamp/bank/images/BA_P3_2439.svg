@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="24" font-size="16" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Fold 3 times, punch outer corner</text>
+<rect x="20" y="60" width="120" height="120" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<line x1="20" y1="120" x2="140" y2="120" stroke="#e63946" stroke-width="2" stroke-dasharray="7,5"/>
+<line x1="80" y1="60" x2="80" y2="180" stroke="#e63946" stroke-width="2" stroke-dasharray="7,5"/>
+<line x1="20" y1="150" x2="140" y2="150" stroke="#457b9d" stroke-width="2" stroke-dasharray="4,4"/>
+<text x="80" y="205" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">3 folds → one-eighth (8 layers)</text>
+<rect x="230" y="130" width="70" height="50" fill="#e8f4fd" stroke="#2b2d42" stroke-width="3"/>
+<text x="292" y="146" font-size="20" fill="#e63946" text-anchor="middle" font-family="sans-serif" font-weight="bold">×</text>
+<text x="265" y="205" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">punch × = outer corner</text>
+</svg>

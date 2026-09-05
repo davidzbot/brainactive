@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="300" viewBox="0 0 360 300">
+<rect width="360" height="300" fill="#fbfcfe"/>
+<text x="180" y="24" font-size="16" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Cube net: which is opposite the star?</text>
+<g font-family="sans-serif" text-anchor="middle">
+<rect x="155" y="35" width="50" height="50" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<text x="180" y="68" font-size="24" fill="#2b2d42">☁</text>
+<rect x="155" y="85" width="50" height="50" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<text x="180" y="118" font-size="24" fill="#2b2d42">♥</text>
+<rect x="105" y="135" width="50" height="50" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<text x="130" y="168" font-size="24" fill="#2b2d42">☾</text>
+<rect x="155" y="135" width="50" height="50" fill="#fff3b0" stroke="#2b2d42" stroke-width="3"/>
+<text x="180" y="168" font-size="24" fill="#2b2d42">★</text>
+<rect x="205" y="135" width="50" height="50" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<text x="230" y="168" font-size="24" fill="#2b2d42">☀</text>
+<rect x="155" y="185" width="50" height="50" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<text x="180" y="218" font-size="24" fill="#2b2d42">●</text>
+</g>
+<text x="180" y="262" font-size="13" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif">centre = star (highlighted)</text>
+</svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="24" font-size="16" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Left-right mirror</text>
+<polygon points="60,120 120,130 120,110" fill="#2b2d42"/>
+<text x="90" y="170" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">points left</text>
+<line x1="180" y1="50" x2="180" y2="180" stroke="#e63946" stroke-width="3" stroke-dasharray="8,6"/>
+<text x="180" y="200" font-size="12" fill="#e63946" text-anchor="middle" font-family="sans-serif" font-weight="bold">mirror</text>
+<polygon points="300,120 240,130 240,110" fill="#2b2d42"/>
+<text x="270" y="170" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">mirror image?</text>
+</svg>

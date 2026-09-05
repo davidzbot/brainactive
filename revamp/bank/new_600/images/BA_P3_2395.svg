@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="24" font-size="16" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Net: row P Q R S, T above Q, U below R</text>
+<g font-family="sans-serif" text-anchor="middle">
+<rect x="112" y="52" width="34" height="34" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<text x="129" y="76" font-size="18" fill="#2b2d42">T</text>
+<rect x="78" y="86" width="34" height="34" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<text x="95" y="110" font-size="18" fill="#2b2d42">P</text>
+<rect x="112" y="86" width="34" height="34" fill="#e8f4fd" stroke="#2b2d42" stroke-width="2"/>
+<text x="129" y="110" font-size="18" fill="#2b2d42">Q</text>
+<rect x="146" y="86" width="34" height="34" fill="#e8f4fd" stroke="#2b2d42" stroke-width="2"/>
+<text x="163" y="110" font-size="18" fill="#2b2d42">R</text>
+<rect x="180" y="86" width="34" height="34" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<text x="197" y="110" font-size="18" fill="#2b2d42">S</text>
+<rect x="146" y="120" width="34" height="34" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<text x="163" y="144" font-size="18" fill="#2b2d42">U</text>
+</g>
+<text x="180" y="190" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">6 squares: fold and find opposites</text>
+</svg>
