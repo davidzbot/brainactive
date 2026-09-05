@@ -1,0 +1,1127 @@
+[
+ {
+  "id": "NEW_LOG_051",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "If it rains, the football match is cancelled. It is raining now. What happens to the match?",
+  "options": [
+   {
+    "id": "A",
+    "text": "It is cancelled"
+   },
+   {
+    "id": "B",
+    "text": "It goes on"
+   },
+   {
+    "id": "C",
+    "text": "It is delayed"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The rule says rain means cancellation, and it is raining, so the match is cancelled.",
+  "reasoning": "Applying a simple if-then rule.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_052",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "All cats have tails. Mimi is a cat. What must be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Mimi has a tail"
+   },
+   {
+    "id": "B",
+    "text": "Mimi has no tail"
+   },
+   {
+    "id": "C",
+    "text": "Mimi is a dog"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Every cat has a tail, and Mimi is a cat, so Mimi has a tail.",
+  "reasoning": "Applying an 'all' statement.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_053",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "If the traffic light is green, cars may go. The light is green now. What may the cars do?",
+  "options": [
+   {
+    "id": "A",
+    "text": "They may go"
+   },
+   {
+    "id": "B",
+    "text": "They must turn"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "They must stop"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Green light means cars may go, and the light is green, so the cars may go.",
+  "reasoning": "Applying a simple if-then rule.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_054",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "All squares have 4 sides. This shape is a square. How many sides does it have?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "3"
+   },
+   {
+    "id": "C",
+    "text": "5"
+   },
+   {
+    "id": "D",
+    "text": "4"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Every square has 4 sides, and this shape is a square, so it has 4 sides.",
+  "reasoning": "Applying an 'all' statement.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_055",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "If Ben is late, the bus leaves without him. The bus did not leave without Ben. What do we know?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben was not late"
+   },
+   {
+    "id": "B",
+    "text": "The bus broke down"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Ben was late"
+   }
+  ],
+  "answer": "A",
+  "explanation": "If Ben were late, the bus would have left without him. It did not, so Ben was not late.",
+  "reasoning": "Using the contrapositive: result absent means cause absent.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_056",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "If it is Monday, Kim has swimming. Kim does not have swimming today. What can we say about today?",
+  "options": [
+   {
+    "id": "A",
+    "text": "It is not Monday"
+   },
+   {
+    "id": "B",
+    "text": "It is Wednesday"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "It is Monday"
+   }
+  ],
+  "answer": "A",
+  "explanation": "If it were Monday, Kim would have swimming. She does not, so today is not Monday. (We cannot say exactly which day it is.)",
+  "reasoning": "Using the contrapositive carefully without over-claiming.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_057",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "All pupils in Class 3A can swim. Raj cannot swim. Is Raj in Class 3A?",
+  "options": [
+   {
+    "id": "A",
+    "text": "No"
+   },
+   {
+    "id": "B",
+    "text": "Maybe"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Yes"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Everyone in Class 3A can swim. Raj cannot swim, so Raj cannot be in Class 3A.",
+  "reasoning": "Using the contrapositive with an 'all' statement.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_058",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "If a number is even, it can be divided by 2 with nothing left over. 15 cannot be divided by 2 exactly. Is 15 even?",
+  "options": [
+   {
+    "id": "A",
+    "text": "No"
+   },
+   {
+    "id": "B",
+    "text": "Sometimes"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Yes"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Every even number divides by 2 exactly. 15 does not, so 15 is not even (it is odd).",
+  "reasoning": "Using the contrapositive with numbers.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_059",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "If Devi studied, she passed the test. Devi passed the test. Did Devi study?",
+  "options": [
+   {
+    "id": "A",
+    "text": "She failed"
+   },
+   {
+    "id": "B",
+    "text": "Yes, surely"
+   },
+   {
+    "id": "C",
+    "text": "No"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Studying leads to passing, but passing can happen another way (an easy test, good guessing). Devi passed, but we cannot be sure she studied. This is a trap: a true result does not prove the cause.",
+  "reasoning": "Resisting affirming the consequent.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_060",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "If it rains, the ground gets wet. This morning the ground is wet. Did it rain last night?",
+  "options": [
+   {
+    "id": "A",
+    "text": "It snowed"
+   },
+   {
+    "id": "B",
+    "text": "Yes, surely"
+   },
+   {
+    "id": "C",
+    "text": "No"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Rain makes the ground wet, but so do sprinklers, washing, or spilt water. The wet ground alone cannot prove it rained.",
+  "reasoning": "Resisting affirming the consequent.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_061",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "If Figure Y is a triangle, then Figure Y has 3 sides. Figure Z does not have 3 sides. Is Figure Z a triangle?",
+  "options": [
+   {
+    "id": "A",
+    "text": "No"
+   },
+   {
+    "id": "B",
+    "text": "Maybe"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Yes"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Every triangle has 3 sides. Figure Z does not have 3 sides, so it cannot be a triangle.",
+  "reasoning": "Using the contrapositive with shapes.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_062",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "All heroes in the story are brave. Kiko is not brave. Is Kiko a hero in the story?",
+  "options": [
+   {
+    "id": "A",
+    "text": "No"
+   },
+   {
+    "id": "B",
+    "text": "Maybe"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Yes"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Every hero in the story is brave. Kiko is not brave, so Kiko is not one of the heroes.",
+  "reasoning": "Using the contrapositive with an 'all' statement.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_063",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "If Maya eats breakfast, she is not hungry at 10am. Maya is hungry at 10am. Did she eat breakfast?",
+  "options": [
+   {
+    "id": "A",
+    "text": "No"
+   },
+   {
+    "id": "B",
+    "text": "Maybe"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Yes"
+   }
+  ],
+  "answer": "A",
+  "explanation": "If Maya had eaten breakfast, she would not be hungry at 10am. She is hungry, so she did not eat breakfast.",
+  "reasoning": "Using the contrapositive.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_064",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "If the key fits, the box opens. The box did not open. Did the key fit?",
+  "options": [
+   {
+    "id": "A",
+    "text": "No"
+   },
+   {
+    "id": "B",
+    "text": "Maybe"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Yes"
+   }
+  ],
+  "answer": "A",
+  "explanation": "If the key fitted, the box would have opened. It did not open, so the key did not fit.",
+  "reasoning": "Using the contrapositive.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_065",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Rule: If A is true, then B is true. We discover that B is true. Must A be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Only on Mondays"
+   },
+   {
+    "id": "B",
+    "text": "Yes, always"
+   },
+   {
+    "id": "C",
+    "text": "No, never"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The rule only tells us what follows when A is true. B being true could come from A, or from something else entirely. So we cannot tell whether A is true.",
+  "reasoning": "Understanding that rules do not reverse automatically.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_066",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "All multiples of 10 end with the digit 0. The number 347 does not end with 0. Is 347 a multiple of 10?",
+  "options": [
+   {
+    "id": "A",
+    "text": "No"
+   },
+   {
+    "id": "B",
+    "text": "Sometimes"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Yes"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Every multiple of 10 ends with 0. 347 does not end with 0, so 347 is not a multiple of 10.",
+  "reasoning": "Using the contrapositive with numbers.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_067",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "chained_conditionals",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "If it rains, Ali carries an umbrella. If Ali carries an umbrella, he walks to school. It is raining. How does Ali go to school?",
+  "options": [
+   {
+    "id": "A",
+    "text": "He walks"
+   },
+   {
+    "id": "B",
+    "text": "He takes the bus"
+   },
+   {
+    "id": "C",
+    "text": "He stays home"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "A",
+  "explanation": "It rains, so Ali carries an umbrella. Carrying an umbrella means he walks. So Ali walks to school.",
+  "reasoning": "Chaining two if-then rules.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_068",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "chained_conditionals",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "If Ben finishes his work, he may play outside. If he may play outside, he chooses soccer. Ben chose soccer. Did Ben finish his work?",
+  "options": [
+   {
+    "id": "A",
+    "text": "He played basketball"
+   },
+   {
+    "id": "B",
+    "text": "Yes, surely"
+   },
+   {
+    "id": "C",
+    "text": "No"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Choosing soccer suggests he may play, and playing suggests he finished — but each step could have another explanation (he might have chosen without permission). Working backwards through 'if' rules never gives certainty. Cannot tell.",
+  "reasoning": "Resisting chained affirming of the consequent.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_069",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "chained_conditionals",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "If the tank is full, the light is green. If the light is green, the pump stops. The pump did not stop. Is the tank full?",
+  "options": [
+   {
+    "id": "A",
+    "text": "No"
+   },
+   {
+    "id": "B",
+    "text": "Maybe"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Yes"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The pump runs, so the light is not green (otherwise it would have stopped). The light is not green, so the tank is not full (otherwise the light would be green).",
+  "reasoning": "Chaining two contrapositives.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_070",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "chained_conditionals",
+  "level": "Master",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "If A comes to the party, B comes. If B comes, C comes. C did not come. Who can we be sure stayed away?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "A only"
+   },
+   {
+    "id": "C",
+    "text": "B and C only"
+   },
+   {
+    "id": "D",
+    "text": "A, B and C"
+   }
+  ],
+  "answer": "D",
+  "explanation": "C stayed away (given). If B had come, C would have come — C did not, so B stayed away. If A had come, B would have come — B did not, so A stayed away. All three stayed away.",
+  "reasoning": "Propagating absence backwards through a chain.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "conditional"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_071",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Which one is different: apple, banana, orange, car?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Apple"
+   },
+   {
+    "id": "B",
+    "text": "Banana"
+   },
+   {
+    "id": "C",
+    "text": "Orange"
+   },
+   {
+    "id": "D",
+    "text": "Car"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Apple, banana and orange are fruits. A car is not a fruit.",
+  "reasoning": "Grouping by category.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_072",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Which number is different: 2, 4, 6, 7?",
+  "options": [
+   {
+    "id": "A",
+    "text": "2"
+   },
+   {
+    "id": "B",
+    "text": "4"
+   },
+   {
+    "id": "C",
+    "text": "6"
+   },
+   {
+    "id": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "D",
+  "explanation": "2, 4 and 6 are even numbers. 7 is odd.",
+  "reasoning": "Grouping by even vs odd.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_073",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Which one is different: circle, square, triangle, ball?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Circle"
+   },
+   {
+    "id": "B",
+    "text": "Square"
+   },
+   {
+    "id": "C",
+    "text": "Triangle"
+   },
+   {
+    "id": "D",
+    "text": "Ball"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Circle, square and triangle are flat shapes. A ball is solid (3D), not flat.",
+  "reasoning": "Grouping flat vs solid shapes.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_074",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Which one is different: dog, cat, fish, cow?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cow"
+   },
+   {
+    "id": "B",
+    "text": "Dog"
+   },
+   {
+    "id": "C",
+    "text": "Cat"
+   },
+   {
+    "id": "D",
+    "text": "Fish"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Dog, cat and cow are mammals that live on land. A fish lives in water (and is not a mammal).",
+  "reasoning": "Grouping by habitat and animal family.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_075",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Which one is different: Monday, Tuesday, Wednesday, January?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Monday"
+   },
+   {
+    "id": "B",
+    "text": "Tuesday"
+   },
+   {
+    "id": "C",
+    "text": "Wednesday"
+   },
+   {
+    "id": "D",
+    "text": "January"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Monday, Tuesday and Wednesday are days of the week. January is a month.",
+  "reasoning": "Grouping days vs months.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ }
+]

@@ -1,0 +1,49 @@
+{
+  "upload_date": "2026-09-05",
+  "total_questions": 600,
+  "id_range": "BA_P3_1840 to BA_P3_2439",
+  "qa_status": "validated_new600_20260905",
+  "domains": {
+    "logical_reasoning": 100,
+    "numerical_reasoning": 100,
+    "pattern_abstract": 100,
+    "problem_solving": 100,
+    "verbal_reasoning": 100,
+    "visual_spatial": 100
+  },
+  "levels": {
+    "Explore": 138,
+    "Think": 313,
+    "Challenge": 112,
+    "Master": 37
+  },
+  "answer_dist": {
+    "D": 148,
+    "A": 150,
+    "C": 151,
+    "B": 151
+  },
+  "images_copied": 7,
+  "id_map_sample": {
+    "NEW_LOG_001": "BA_P3_1840",
+    "NEW_LOG_002": "BA_P3_1841",
+    "NEW_LOG_003": "BA_P3_1842",
+    "NEW_LOG_004": "BA_P3_1843",
+    "NEW_LOG_005": "BA_P3_1844",
+    "NEW_LOG_006": "BA_P3_1845",
+    "NEW_LOG_007": "BA_P3_1846",
+    "NEW_LOG_008": "BA_P3_1847",
+    "NEW_LOG_009": "BA_P3_1848",
+    "NEW_LOG_010": "BA_P3_1849"
+  },
+  "upload_file": "C:\\Projects\\brainactive-android\\revamp\\bank\\new_600\\brainactive_new_600_upload.json",
+  "notes": [
+    "All 600 questions PASS structural QA (qa_upload.py, 0 errors)",
+    "Explanations restored to pristine UTF-8 authoring (reviewer's ASCII-folding reverted: arrows, x/-//, degree, check marks intact)",
+    "6 short Explore explanations expanded (SOL_021/022/023/025/046, VER_008) - kept",
+    "image_path uses p3/ prefix per live DB convention (p3/BA_P3_*.svg verified in production rows)",
+    "37/37 Master items independently re-verified by author; answers confirmed",
+    "Per-domain answer distribution is skewed (rebalance consumed in logical/numerical/pattern files) - cosmetic only; global A150/B151/C150/D149",
+    "SVGs in bank/images/BA_P3_*.svg (7 files) map to upload image_paths"
+  ]
+}

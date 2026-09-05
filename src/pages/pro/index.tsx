@@ -39,15 +39,15 @@ const TOPICS = [
 
 const LEVELS = ['Explore', 'Think', 'Challenge', 'Master']
 const QUESTION_COUNTS = [5, 10, 15, 20]
-// Available question counts per Topic×Level (from production DB, 933 active)
+// Available question counts per Topic×Level (live DB, 1533 active incl. new-600)
 const AVAILABLE_MAP: Record<string, Record<string, number>> = {
-  'All Thinking Topics': { Explore: 213, Think: 538, Challenge: 142, Master: 40 },
-  'Numerical Thinking': { Explore: 45, Think: 124, Challenge: 28, Master: 22 },
-  'Logical Thinking': { Explore: 40, Think: 125, Challenge: 25, Master: 0 },
-  'Pattern & Abstract': { Explore: 67, Think: 69, Challenge: 3, Master: 0 },
-  'Visual & Spatial': { Explore: 18, Think: 64, Challenge: 13, Master: 0 },
-  'Verbal Reasoning': { Explore: 5, Think: 64, Challenge: 28, Master: 15 },
-  'Problem Solving': { Explore: 38, Think: 92, Challenge: 45, Master: 3 },
+  'All Thinking Topics': { Explore: 353, Think: 751, Challenge: 258, Master: 71 },
+  'Numerical Thinking': { Explore: 68, Think: 179, Challenge: 45, Master: 27 },
+  'Logical Thinking': { Explore: 65, Think: 178, Challenge: 41, Master: 6 },
+  'Pattern & Abstract': { Explore: 95, Think: 121, Challenge: 19, Master: 4 },
+  'Visual & Spatial': { Explore: 48, Think: 111, Challenge: 30, Master: 6 },
+  'Verbal Reasoning': { Explore: 22, Think: 117, Challenge: 51, Master: 22 },
+  'Problem Solving': { Explore: 53, Think: 145, Challenge: 68, Master: 12 },
 }
 const TOPIC_LABELS = {
   en: TOPICS,

@@ -1,0 +1,1352 @@
+[
+ {
+  "id": "NEW_PAT_001",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A row of boxes shows circles: 1 circle, then 2 circles, then 3 circles, then 4 circles. How many circles are in the next box?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5 circles"
+   },
+   {
+    "id": "B",
+    "text": "6 circles"
+   },
+   {
+    "id": "C",
+    "text": "3 circles"
+   },
+   {
+    "id": "D",
+    "text": "4 circles"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each box adds one more circle: 1, 2, 3, 4, so the next box has 5 circles.",
+  "reasoning": "Spotting a growing count.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_002",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Squares change colour in order: red, blue, red, blue. What colour is the next square?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Red"
+   },
+   {
+    "id": "B",
+    "text": "Blue"
+   },
+   {
+    "id": "C",
+    "text": "Green"
+   },
+   {
+    "id": "D",
+    "text": "Yellow"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The colours alternate red, blue, red, blue, so the next square is red.",
+  "reasoning": "Spotting colour alternation.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_003",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "An arrow turns step by step: up, right, down, left. Which way does it point next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Right"
+   },
+   {
+    "id": "B",
+    "text": "Down"
+   },
+   {
+    "id": "C",
+    "text": "Left"
+   },
+   {
+    "id": "D",
+    "text": "Up"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The arrow turns 90 degrees clockwise each step: up → right → down → left → up.",
+  "reasoning": "Tracking clockwise rotation.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_004",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Dots are grouped: 2 dots, 4 dots, 6 dots, 8 dots. How many dots are in the next group?",
+  "options": [
+   {
+    "id": "A",
+    "text": "10 dots"
+   },
+   {
+    "id": "B",
+    "text": "12 dots"
+   },
+   {
+    "id": "C",
+    "text": "16 dots"
+   },
+   {
+    "id": "D",
+    "text": "9 dots"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each group adds 2 more dots: 2, 4, 6, 8, so the next group has 10 dots.",
+  "reasoning": "Spotting a growing count.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_005",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Triangles appear in groups: 5, 4, 3, 2. How many triangles are in the next group?",
+  "options": [
+   {
+    "id": "A",
+    "text": "3"
+   },
+   {
+    "id": "B",
+    "text": "2"
+   },
+   {
+    "id": "C",
+    "text": "1"
+   },
+   {
+    "id": "D",
+    "text": "0"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Each group has one fewer triangle: 5, 4, 3, 2, so the next group has 1 triangle.",
+  "reasoning": "Spotting a shrinking count.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_006",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Stars change size in order: big, small, big, small. What size is the next star?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Big"
+   },
+   {
+    "id": "B",
+    "text": "Small"
+   },
+   {
+    "id": "C",
+    "text": "Medium"
+   },
+   {
+    "id": "D",
+    "text": "Tiny"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The sizes alternate big, small, big, small, so the next star is big.",
+  "reasoning": "Spotting size alternation.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_007",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Hearts appear in groups: 1, 3, 5, 7. How many hearts are in the next group?",
+  "options": [
+   {
+    "id": "A",
+    "text": "9"
+   },
+   {
+    "id": "B",
+    "text": "10"
+   },
+   {
+    "id": "C",
+    "text": "11"
+   },
+   {
+    "id": "D",
+    "text": "8"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each group adds 2 more hearts: 1, 3, 5, 7, so the next group has 9 hearts.",
+  "reasoning": "Spotting a growing count.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_008",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Flags change colour in a cycle: red, yellow, blue, red, yellow. What colour is the next flag?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Red"
+   },
+   {
+    "id": "B",
+    "text": "Yellow"
+   },
+   {
+    "id": "C",
+    "text": "Blue"
+   },
+   {
+    "id": "D",
+    "text": "Green"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The cycle red → yellow → blue repeats. After red, yellow comes blue.",
+  "reasoning": "Spotting a three-step colour cycle.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_009",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Dots are grouped: 1, 3, 6, 10. How many dots are in the next group?",
+  "options": [
+   {
+    "id": "A",
+    "text": "13"
+   },
+   {
+    "id": "B",
+    "text": "14"
+   },
+   {
+    "id": "C",
+    "text": "15"
+   },
+   {
+    "id": "D",
+    "text": "16"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The added dots grow: +2, +3, +4. The next addition is +5: 10 + 5 = 15.",
+  "reasoning": "Spotting growing additions (triangle numbers).",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_010",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "An arrow points north-east, then east, then south-east, then south. It keeps turning the same way. Which way does it point next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "South-west"
+   },
+   {
+    "id": "B",
+    "text": "West"
+   },
+   {
+    "id": "C",
+    "text": "South-east"
+   },
+   {
+    "id": "D",
+    "text": "North"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The arrow turns 45 degrees clockwise each step: NE → E → SE → S → SW.",
+  "reasoning": "Tracking 45-degree clockwise rotation.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_011",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Boxes show: 1 circle, 2 squares, 3 circles, 4 squares. What is in the next box?",
+  "options": [
+   {
+    "id": "A",
+    "text": "4 circles"
+   },
+   {
+    "id": "B",
+    "text": "5 squares"
+   },
+   {
+    "id": "C",
+    "text": "5 circles"
+   },
+   {
+    "id": "D",
+    "text": "6 squares"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The count grows 1, 2, 3, 4 while the shape alternates circle, square. Next is count 5 with circle.",
+  "reasoning": "Tracking count growth plus shape alternation.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_012",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Shapes appear in order: triangle, square, pentagon, hexagon. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Heptagon (7 sides)"
+   },
+   {
+    "id": "B",
+    "text": "Octagon (8 sides)"
+   },
+   {
+    "id": "C",
+    "text": "Pentagon"
+   },
+   {
+    "id": "D",
+    "text": "Hexagon"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each shape gains one side: 3, 4, 5, 6. Next has 7 sides — a heptagon.",
+  "reasoning": "Spotting growing side counts.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_013",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Dots are grouped: 1, 2, 4, 8. How many dots are in the next group?",
+  "options": [
+   {
+    "id": "A",
+    "text": "12"
+   },
+   {
+    "id": "B",
+    "text": "14"
+   },
+   {
+    "id": "C",
+    "text": "16"
+   },
+   {
+    "id": "D",
+    "text": "10"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Each group doubles: 1 × 2 = 2, 2 × 2 = 4, 4 × 2 = 8, so 8 × 2 = 16.",
+  "reasoning": "Spotting doubling in dot counts.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_014",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Stars are grouped: 2, 5, 8, 11. How many stars are in the next group?",
+  "options": [
+   {
+    "id": "A",
+    "text": "14"
+   },
+   {
+    "id": "B",
+    "text": "15"
+   },
+   {
+    "id": "C",
+    "text": "16"
+   },
+   {
+    "id": "D",
+    "text": "13"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each group adds 3 more stars: 2, 5, 8, 11, so the next group has 14 stars.",
+  "reasoning": "Spotting a constant addition in counts.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_015",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Beads follow a colour-count pattern: 1 red, 2 blue, 3 red, 4 blue. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "4 red beads"
+   },
+   {
+    "id": "B",
+    "text": "5 blue beads"
+   },
+   {
+    "id": "C",
+    "text": "5 red beads"
+   },
+   {
+    "id": "D",
+    "text": "6 blue beads"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The count grows 1, 2, 3, 4 while colours alternate red, blue. Next is count 5 in red.",
+  "reasoning": "Tracking count growth plus colour alternation.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_016",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "An arrow turns anticlockwise: up, left, down, right. Which way does it point next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Up"
+   },
+   {
+    "id": "B",
+    "text": "Left"
+   },
+   {
+    "id": "C",
+    "text": "Down"
+   },
+   {
+    "id": "D",
+    "text": "Right"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The arrow turns 90 degrees anticlockwise each step: up → left → down → right → up.",
+  "reasoning": "Tracking anticlockwise rotation.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_017",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A big square contains small squares: 1, then 2, then 3. How many small squares are in the next big square?",
+  "options": [
+   {
+    "id": "A",
+    "text": "4"
+   },
+   {
+    "id": "B",
+    "text": "5"
+   },
+   {
+    "id": "C",
+    "text": "6"
+   },
+   {
+    "id": "D",
+    "text": "3"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The number of small squares grows 1, 2, 3, so the next big square holds 4 small squares.",
+  "reasoning": "Spotting a growing inside count.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_018",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A shape is drawn with straight lines: first 3 lines, then 5 lines, then 7 lines, then 9 lines. How many lines does the next shape use?",
+  "options": [
+   {
+    "id": "A",
+    "text": "11"
+   },
+   {
+    "id": "B",
+    "text": "12"
+   },
+   {
+    "id": "C",
+    "text": "13"
+   },
+   {
+    "id": "D",
+    "text": "10"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each shape uses 2 more lines: 3, 5, 7, 9, so the next uses 11 lines.",
+  "reasoning": "Spotting growth in line counts.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_019",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A circle has a dot that moves clockwise: top, right, bottom. Where is the dot next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Top"
+   },
+   {
+    "id": "B",
+    "text": "Right"
+   },
+   {
+    "id": "C",
+    "text": "Left"
+   },
+   {
+    "id": "D",
+    "text": "Bottom"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The dot moves 90 degrees clockwise each step: top → right → bottom → left.",
+  "reasoning": "Tracking a moving mark.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_020",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Moon shapes grow: new moon (dark), crescent, half moon, gibbous (almost full). What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "New moon"
+   },
+   {
+    "id": "B",
+    "text": "Crescent"
+   },
+   {
+    "id": "C",
+    "text": "Full moon"
+   },
+   {
+    "id": "D",
+    "text": "Half moon"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The lit part grows each step: dark → crescent → half → almost full → full moon.",
+  "reasoning": "Spotting steady growth in a cycle.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_021",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Dots are grouped: 2, 3, 5, 9. How many dots are in the next group? (Hint: look at how much is added each time.)",
+  "options": [
+   {
+    "id": "A",
+    "text": "15"
+   },
+   {
+    "id": "B",
+    "text": "16"
+   },
+   {
+    "id": "C",
+    "text": "17"
+   },
+   {
+    "id": "D",
+    "text": "18"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The additions double: +1, +2, +4. The next addition is +8: 9 + 8 = 17.",
+  "reasoning": "Spotting doubling additions.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_022",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Pictures build up: a circle, then circle + square, then circle + square + triangle. What is added next if the pattern adds one new shape family each time?",
+  "options": [
+   {
+    "id": "A",
+    "text": "A diamond"
+   },
+   {
+    "id": "B",
+    "text": "Another triangle"
+   },
+   {
+    "id": "C",
+    "text": "Nothing"
+   },
+   {
+    "id": "D",
+    "text": "Another circle"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each step introduces one brand-new shape family: circle, then square, then triangle. The next new family is the diamond.",
+  "reasoning": "Spotting introduction of new elements.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_023",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A 2-by-2 grid of small squares fills up: 1 filled, 2 filled, 3 filled. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "All 4 filled"
+   },
+   {
+    "id": "B",
+    "text": "3 filled again"
+   },
+   {
+    "id": "C",
+    "text": "2 filled"
+   },
+   {
+    "id": "D",
+    "text": "Empty grid"
+   }
+  ],
+  "answer": "A",
+  "explanation": "One more square fills each step: 1, 2, 3, so the next grid is completely filled with 4.",
+  "reasoning": "Spotting steady filling.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_024",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "An arrow flips end to end each step: up, down, up, down. Which way does it point next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Up"
+   },
+   {
+    "id": "B",
+    "text": "Down"
+   },
+   {
+    "id": "C",
+    "text": "Left"
+   },
+   {
+    "id": "D",
+    "text": "Right"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The arrow alternates up, down, up, down (a half-turn each step), so next is up.",
+  "reasoning": "Spotting flip alternation.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_025",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Boxes show: 1 circle, 2 squares, 3 triangles, 4 circles. What is in the next box?",
+  "options": [
+   {
+    "id": "A",
+    "text": "4 squares"
+   },
+   {
+    "id": "B",
+    "text": "5 squares"
+   },
+   {
+    "id": "C",
+    "text": "5 triangles"
+   },
+   {
+    "id": "D",
+    "text": "5 circles"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The count grows 1, 2, 3, 4 while shapes cycle circle → square → triangle → circle. Next is count 5 with square.",
+  "reasoning": "Tracking count growth plus a three-shape cycle.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_026",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Dot arrays form squares: 4 dots (2 by 2), 9 dots (3 by 3), 16 dots (4 by 4). How many dots are in the next array?",
+  "options": [
+   {
+    "id": "A",
+    "text": "20"
+   },
+   {
+    "id": "B",
+    "text": "24"
+   },
+   {
+    "id": "C",
+    "text": "25"
+   },
+   {
+    "id": "D",
+    "text": "32"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The arrays are 2×2 = 4, 3×3 = 9, 4×4 = 16. Next is 5×5 = 25.",
+  "reasoning": "Recognising square arrays.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_027",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "An arrow rotates 90 degrees clockwise each step and gains one dot each step: up with 0 dots, right with 1 dot, down with 2 dots, left with 3 dots. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Up with 3 dots"
+   },
+   {
+    "id": "B",
+    "text": "Up with 4 dots"
+   },
+   {
+    "id": "C",
+    "text": "Right with 4 dots"
+   },
+   {
+    "id": "D",
+    "text": "Down with 4 dots"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Rotation cycles up → right → down → left → up, while dots grow 0, 1, 2, 3. Next is up with 4 dots.",
+  "reasoning": "Tracking rotation plus a growing mark.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_028",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Beads follow a colour cycle (red, yellow, blue) with growing counts: 1 red, 2 yellow, 3 blue, 4 red. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "4 yellow"
+   },
+   {
+    "id": "B",
+    "text": "5 yellow"
+   },
+   {
+    "id": "C",
+    "text": "5 red"
+   },
+   {
+    "id": "D",
+    "text": "5 blue"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Counts grow 1, 2, 3, 4 while colours cycle red → yellow → blue → red. Next is count 5 in yellow.",
+  "reasoning": "Tracking count growth plus a three-colour cycle.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_029",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Shapes gain sides and dots: triangle with 1 dot, square with 2 dots, pentagon with 3 dots, hexagon with 4 dots. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Heptagon with 4 dots"
+   },
+   {
+    "id": "B",
+    "text": "Heptagon with 5 dots"
+   },
+   {
+    "id": "C",
+    "text": "Octagon with 5 dots"
+   },
+   {
+    "id": "D",
+    "text": "Hexagon with 5 dots"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Sides grow 3, 4, 5, 6 while dots grow 1, 2, 3, 4 (always sides minus 2). Next is 7 sides with 5 dots — a heptagon with 5 dots.",
+  "reasoning": "Tracking two linked growths.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_PAT_030",
+  "domain": "pattern_abstract",
+  "topic": "Pattern & Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Master",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Figures change in a cycle of two rules: add one side, then add one dot. Start: triangle with 0 dots. After 4 steps we see: square 1 dot, pentagon 1 dot, hexagon 2 dots, heptagon 2 dots. What comes next?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Heptagon with 3 dots"
+   },
+   {
+    "id": "B",
+    "text": "Octagon with 2 dots"
+   },
+   {
+    "id": "C",
+    "text": "Octagon with 3 dots"
+   },
+   {
+    "id": "D",
+    "text": "Nonagon with 3 dots"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Sides grow by 1 each figure: 4, 5, 6, 7, so next is 8 (octagon). Dots grow every two figures: 1, 1, 2, 2, so next is 3. Answer: octagon with 3 dots.",
+  "reasoning": "Tracking two growths at different speeds.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "pattern",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ }
+]

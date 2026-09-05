@@ -1,0 +1,1127 @@
+[
+ {
+  "id": "NEW_NUM_011",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 2, 6, 12, 20, 30, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "42"
+   },
+   {
+    "id": "B",
+    "text": "44"
+   },
+   {
+    "id": "C",
+    "text": "36"
+   },
+   {
+    "id": "D",
+    "text": "40"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Gaps: +4, +6, +8, +10. Each gap grows by 2, so the next gap is +12: 30 + 12 = 42.",
+  "reasoning": "Spotting growing differences.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_012",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 5, 7, 12, 19, 31, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "50"
+   },
+   {
+    "id": "B",
+    "text": "52"
+   },
+   {
+    "id": "C",
+    "text": "48"
+   },
+   {
+    "id": "D",
+    "text": "49"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each number is the sum of the two before it: 5 + 7 = 12, 7 + 12 = 19, 12 + 19 = 31, so 19 + 31 = 50.",
+  "reasoning": "Spotting an additive (Fibonacci-like) rule.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_013",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 3, 4, 7, 11, 18, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "30"
+   },
+   {
+    "id": "B",
+    "text": "27"
+   },
+   {
+    "id": "C",
+    "text": "28"
+   },
+   {
+    "id": "D",
+    "text": "29"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Each number is the sum of the two before it: 3 + 4 = 7, 4 + 7 = 11, 7 + 11 = 18, so 11 + 18 = 29.",
+  "reasoning": "Spotting an additive rule.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_014",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 1, 3, 7, 15, 31, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "64"
+   },
+   {
+    "id": "B",
+    "text": "60"
+   },
+   {
+    "id": "C",
+    "text": "62"
+   },
+   {
+    "id": "D",
+    "text": "63"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Each number is doubled, then 1 is added: 1 × 2 + 1 = 3, 3 × 2 + 1 = 7, 7 × 2 + 1 = 15, 15 × 2 + 1 = 31, so 31 × 2 + 1 = 63.",
+  "reasoning": "Spotting a multiply-then-add rule.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_015",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 4, 7, 13, 25, 49, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "98"
+   },
+   {
+    "id": "B",
+    "text": "95"
+   },
+   {
+    "id": "C",
+    "text": "96"
+   },
+   {
+    "id": "D",
+    "text": "97"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Each number is doubled, then 1 is subtracted: 4 × 2 − 1 = 7, 7 × 2 − 1 = 13, 13 × 2 − 1 = 25, 25 × 2 − 1 = 49, so 49 × 2 − 1 = 97.",
+  "reasoning": "Spotting a multiply-then-subtract rule.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_016",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 100, 92, 83, 73, 62, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "50"
+   },
+   {
+    "id": "B",
+    "text": "52"
+   },
+   {
+    "id": "C",
+    "text": "49"
+   },
+   {
+    "id": "D",
+    "text": "48"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The drops grow: −8, −9, −10, −11. The next drop is −12: 62 − 12 = 50.",
+  "reasoning": "Spotting growing differences in a decreasing sequence.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "question_type": "multiple_choice",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905",
+  "id": "NEW_NUM_017",
+  "level": "Think",
+  "difficulty": "medium",
+  "question": "Find the next number: 1, 3, 9, 27, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "81"
+   },
+   {
+    "id": "B",
+    "text": "90"
+   },
+   {
+    "id": "C",
+    "text": "108"
+   },
+   {
+    "id": "D",
+    "text": "72"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each number triples: 1 × 3 = 3, 3 × 3 = 9, 9 × 3 = 27, so 27 × 3 = 81.",
+  "reasoning": "Spotting tripling."
+ },
+ {
+  "id": "NEW_NUM_018",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 10, 17, 14, 21, 18, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "26"
+   },
+   {
+    "id": "B",
+    "text": "23"
+   },
+   {
+    "id": "C",
+    "text": "24"
+   },
+   {
+    "id": "D",
+    "text": "25"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The rule alternates: +7, −3, +7, −3. So 18 + 7 = 25.",
+  "reasoning": "Spotting an alternating two-step rule.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_019",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 2, 4, 7, 14, 17, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "35"
+   },
+   {
+    "id": "B",
+    "text": "31"
+   },
+   {
+    "id": "C",
+    "text": "32"
+   },
+   {
+    "id": "D",
+    "text": "34"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The rule alternates: ×2, +3, ×2, +3. So 17 × 2 = 34.",
+  "reasoning": "Spotting an alternating multiply-add rule.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_020",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 3, 8, 15, 24, 35, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "50"
+   },
+   {
+    "id": "B",
+    "text": "46"
+   },
+   {
+    "id": "C",
+    "text": "47"
+   },
+   {
+    "id": "D",
+    "text": "48"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Each number is 1 less than a square: 2×2−1=3, 3×3−1=8, 4×4−1=15, 5×5−1=24, 6×6−1=35, so 7×7−1=48.",
+  "reasoning": "Recognising squares with an offset.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_021",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 50, 55, 53, 58, 56, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "62"
+   },
+   {
+    "id": "B",
+    "text": "59"
+   },
+   {
+    "id": "C",
+    "text": "60"
+   },
+   {
+    "id": "D",
+    "text": "61"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The rule alternates: +5, −2, +5, −2. So 56 + 5 = 61.",
+  "reasoning": "Spotting an alternating two-step rule.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_022",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 1, 10, 2, 20, 3, 30, 4, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "40"
+   },
+   {
+    "id": "B",
+    "text": "35"
+   },
+   {
+    "id": "C",
+    "text": "50"
+   },
+   {
+    "id": "D",
+    "text": "5"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Two sequences take turns. Odd positions: 1, 2, 3, 4 (+1 each). Even positions: 10, 20, 30 (+10 each). The 8th term is even-positioned, so 30 + 10 = 40.",
+  "reasoning": "Separating interleaved sequences.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "question_type": "multiple_choice",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905",
+  "id": "NEW_NUM_023",
+  "level": "Think",
+  "difficulty": "medium",
+  "question": "Find the next number: 4, 7, 12, 19, 28, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "37"
+   },
+   {
+    "id": "B",
+    "text": "38"
+   },
+   {
+    "id": "C",
+    "text": "39"
+   },
+   {
+    "id": "D",
+    "text": "40"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Gaps: +3, +5, +7, +9. The gaps grow by 2 each time, so the next gap is +11: 28 + 11 = 39.",
+  "reasoning": "Spotting growing differences."
+ },
+ {
+  "id": "NEW_NUM_024",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 2, 4, 10, 28, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "82"
+   },
+   {
+    "id": "B",
+    "text": "84"
+   },
+   {
+    "id": "C",
+    "text": "86"
+   },
+   {
+    "id": "D",
+    "text": "80"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Each number is tripled, then 2 is subtracted: 2 × 3 − 2 = 4, 4 × 3 − 2 = 10, 10 × 3 − 2 = 28, so 28 × 3 − 2 = 82.",
+  "reasoning": "Spotting a multiply-then-subtract rule.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_025",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 7, 8, 12, 21, 37, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "64"
+   },
+   {
+    "id": "B",
+    "text": "60"
+   },
+   {
+    "id": "C",
+    "text": "61"
+   },
+   {
+    "id": "D",
+    "text": "62"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The gaps are squares: +1, +4, +9, +16 (1×1, 2×2, 3×3, 4×4). The next gap is 5×5 = 25: 37 + 25 = 62.",
+  "reasoning": "Spotting square-number differences.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_026",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 3, 9, 6, 18, 15, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "48"
+   },
+   {
+    "id": "B",
+    "text": "42"
+   },
+   {
+    "id": "C",
+    "text": "44"
+   },
+   {
+    "id": "D",
+    "text": "45"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The rule alternates: ×3, −3, ×3, −3. So 15 × 3 = 45.",
+  "reasoning": "Spotting an alternating multiply-subtract rule.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_027",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 2, 3, 5, 9, 17, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "35"
+   },
+   {
+    "id": "B",
+    "text": "31"
+   },
+   {
+    "id": "C",
+    "text": "32"
+   },
+   {
+    "id": "D",
+    "text": "33"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Each number is doubled, then 1 is subtracted: 2 × 2 − 1 = 3, 3 × 2 − 1 = 5, 5 × 2 − 1 = 9, 9 × 2 − 1 = 17, so 17 × 2 − 1 = 33.",
+  "reasoning": "Spotting a multiply-then-subtract rule.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_028",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 1, 5, 4, 8, 7, 11, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "10"
+   },
+   {
+    "id": "B",
+    "text": "12"
+   },
+   {
+    "id": "C",
+    "text": "14"
+   },
+   {
+    "id": "D",
+    "text": "9"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The rule alternates: +4, −1, +4, −1, +4. So 11 − 1 = 10.",
+  "reasoning": "Spotting an alternating two-step rule.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_029",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 200, 180, 162, 146, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "132"
+   },
+   {
+    "id": "B",
+    "text": "134"
+   },
+   {
+    "id": "C",
+    "text": "136"
+   },
+   {
+    "id": "D",
+    "text": "130"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The drops shrink: −20, −18, −16. The next drop is −14: 146 − 14 = 132.",
+  "reasoning": "Spotting shrinking differences.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_030",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 6, 12, 20, 30, 42, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "58"
+   },
+   {
+    "id": "B",
+    "text": "54"
+   },
+   {
+    "id": "C",
+    "text": "55"
+   },
+   {
+    "id": "D",
+    "text": "56"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Gaps: +6, +8, +10, +12. Each gap grows by 2, so the next gap is +14: 42 + 14 = 56. (These are 2×3, 3×4, 4×5, 5×6, 6×7, 7×8.)",
+  "reasoning": "Spotting growing differences.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_031",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 1, 4, 11, 34, 101, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "310"
+   },
+   {
+    "id": "B",
+    "text": "300"
+   },
+   {
+    "id": "C",
+    "text": "303"
+   },
+   {
+    "id": "D",
+    "text": "304"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Multiply by 3, alternating +1 and −1: 1 × 3 + 1 = 4, 4 × 3 − 1 = 11, 11 × 3 + 1 = 34, 34 × 3 − 1 = 101, so 101 × 3 + 1 = 304.",
+  "reasoning": "Spotting a multiply rule with alternating adjustment.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_032",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 2, 5, 11, 23, 47, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "97"
+   },
+   {
+    "id": "B",
+    "text": "93"
+   },
+   {
+    "id": "C",
+    "text": "94"
+   },
+   {
+    "id": "D",
+    "text": "95"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Each number is doubled, then 1 is added: 2 × 2 + 1 = 5, 5 × 2 + 1 = 11, 11 × 2 + 1 = 23, 23 × 2 + 1 = 47, so 47 × 2 + 1 = 95.",
+  "reasoning": "Spotting a multiply-then-add rule.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_033",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 1, 2, 5, 14, 41, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "124"
+   },
+   {
+    "id": "B",
+    "text": "120"
+   },
+   {
+    "id": "C",
+    "text": "121"
+   },
+   {
+    "id": "D",
+    "text": "122"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Each number is tripled, then 1 is subtracted: 1 × 3 − 1 = 2, 2 × 3 − 1 = 5, 5 × 3 − 1 = 14, 14 × 3 − 1 = 41, so 41 × 3 − 1 = 122.",
+  "reasoning": "Spotting a multiply-then-subtract rule.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_034",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 10, 11, 14, 23, 50, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "132"
+   },
+   {
+    "id": "B",
+    "text": "128"
+   },
+   {
+    "id": "C",
+    "text": "129"
+   },
+   {
+    "id": "D",
+    "text": "131"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The gaps triple each time: +1, +3, +9, +27. The next gap is 27 × 3 = 81: 50 + 81 = 131.",
+  "reasoning": "Spotting geometric growth in differences.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_035",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.1",
+  "archetype": "number_sequence",
+  "level": "Master",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 10, 12, 15, 20, 27, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "40"
+   },
+   {
+    "id": "B",
+    "text": "36"
+   },
+   {
+    "id": "C",
+    "text": "37"
+   },
+   {
+    "id": "D",
+    "text": "38"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The gaps are 2, 3, 5, 7 — each gap is a number that can only be divided by 1 and itself. The next such number is 11: 27 + 11 = 38.",
+  "reasoning": "Spotting prime-number differences.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "sequence"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ }
+]

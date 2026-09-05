@@ -1,0 +1,1127 @@
+[
+ {
+  "id": "NEW_LOG_026",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Ali, Bala and Devi wear red, blue and green shirts. Ali wears red. Bala does not wear blue. Who wears blue?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "Ali"
+   },
+   {
+    "id": "C",
+    "text": "Bala"
+   },
+   {
+    "id": "D",
+    "text": "Devi"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Ali wears red. Bala does not wear blue, so Bala wears green. Devi wears the remaining colour, blue.",
+  "reasoning": "Eliminating options one by one.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_027",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Kim, Lee and Raj own a cat, a dog and a rabbit. Lee owns the cat. Kim does not own the rabbit. Who owns the rabbit?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "Kim"
+   },
+   {
+    "id": "C",
+    "text": "Lee"
+   },
+   {
+    "id": "D",
+    "text": "Raj"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Lee owns the cat. Kim does not own the rabbit, so Kim owns the dog. Raj owns the remaining pet, the rabbit.",
+  "reasoning": "Eliminating options one by one.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_028",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Three lockers 1, 2 and 3 hold a ball, a doll and a toy car. The ball is in locker 1. The doll is not in locker 2. Which locker holds the doll?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "Locker 1"
+   },
+   {
+    "id": "C",
+    "text": "Locker 2"
+   },
+   {
+    "id": "D",
+    "text": "Locker 3"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Locker 1 holds the ball. The doll is not in locker 2, so it is in locker 3.",
+  "reasoning": "Eliminating options one by one.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_029",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Swimming is on Monday. Art and dancing are on Tuesday and Wednesday. Dancing is not on Tuesday. Which day is dancing?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "Monday"
+   },
+   {
+    "id": "C",
+    "text": "Tuesday"
+   },
+   {
+    "id": "D",
+    "text": "Wednesday"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Monday is taken by swimming. Dancing is not on Tuesday, so dancing is on Wednesday (and art is on Tuesday).",
+  "reasoning": "Eliminating options one by one.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_030",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Raj's favourite colour is red, blue or green. It is not red. It is not blue. What is Raj's favourite colour?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "Red"
+   },
+   {
+    "id": "C",
+    "text": "Blue"
+   },
+   {
+    "id": "D",
+    "text": "Green"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The colour is not red and not blue, so it must be green.",
+  "reasoning": "Eliminating options one by one.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_031",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Ann, Ben and Cara like apples, bananas and cherries. Ann likes apples. Ben does not like bananas. Who likes bananas?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "Ann"
+   },
+   {
+    "id": "C",
+    "text": "Ben"
+   },
+   {
+    "id": "D",
+    "text": "Cara"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Ann likes apples. Ben does not like bananas, so Ben likes cherries. Cara likes the remaining fruit, bananas.",
+  "reasoning": "Eliminating options one by one.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_032",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Dan, Eve and Finn play soccer, swimming and badminton. Eve plays badminton. Dan does not play soccer. Who plays soccer?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "Dan"
+   },
+   {
+    "id": "C",
+    "text": "Eve"
+   },
+   {
+    "id": "D",
+    "text": "Finn"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Eve plays badminton. Dan does not play soccer, so Dan swims. Finn plays the remaining sport, soccer.",
+  "reasoning": "Eliminating options one by one.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_033",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A, B and C drink tea, coffee and milo. A drinks tea. B does not drink coffee. Who drinks coffee?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "A"
+   },
+   {
+    "id": "C",
+    "text": "B"
+   },
+   {
+    "id": "D",
+    "text": "C"
+   }
+  ],
+  "answer": "D",
+  "explanation": "A drinks tea. B does not drink coffee, so B drinks milo. C drinks the remaining drink, coffee.",
+  "reasoning": "Eliminating options one by one.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_034",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A, B and C sit in chairs 1, 2 and 3. B sits in chair 2. A does not sit in chair 1. Which chair does C sit in?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Chair 1"
+   },
+   {
+    "id": "B",
+    "text": "Chair 2"
+   },
+   {
+    "id": "C",
+    "text": "Chair 3"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "A",
+  "explanation": "B sits in chair 2. A does not sit in chair 1, so A sits in chair 3. C sits in the remaining chair, chair 1.",
+  "reasoning": "Eliminating seats one by one.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_035",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Umar, Sara and Vikram own a parrot, a hamster and a turtle. Umar's pet can fly. Sara does not own the turtle. Who owns the turtle?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "Umar"
+   },
+   {
+    "id": "C",
+    "text": "Sara"
+   },
+   {
+    "id": "D",
+    "text": "Vikram"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The pet that can fly is the parrot, so Umar owns the parrot. Sara does not own the turtle, so Sara owns the hamster. Vikram owns the remaining pet, the turtle.",
+  "reasoning": "Using an attribute clue plus elimination.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_036",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Priya, Kumar and Liang each love a different subject: English, Maths and Science. Priya loves Maths. Kumar does not love English. Who loves English?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "Priya"
+   },
+   {
+    "id": "C",
+    "text": "Kumar"
+   },
+   {
+    "id": "D",
+    "text": "Liang"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Priya loves Maths. Kumar does not love English, so Kumar loves Science. Liang loves the remaining subject, English.",
+  "reasoning": "Eliminating options one by one.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_037",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A, B, C and D wear red, blue, green and yellow caps. A wears red. B does not wear blue or green. C wears blue. What colour cap does B wear?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Green"
+   },
+   {
+    "id": "B",
+    "text": "Red"
+   },
+   {
+    "id": "C",
+    "text": "Blue"
+   },
+   {
+    "id": "D",
+    "text": "Yellow"
+   }
+  ],
+  "answer": "D",
+  "explanation": "A wears red and C wears blue. B wears neither blue nor green, so B must wear yellow (and D wears green).",
+  "reasoning": "Eliminating colours with two anchors.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_038",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Mei, Raj, Siti and Devi play piano, violin, guitar and drums. Mei plays the piano. Raj does not play the violin or the guitar. Siti plays the violin. What does Raj play?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Piano"
+   },
+   {
+    "id": "B",
+    "text": "Violin"
+   },
+   {
+    "id": "C",
+    "text": "Guitar"
+   },
+   {
+    "id": "D",
+    "text": "Drums"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Mei plays piano and Siti plays violin. Raj plays neither violin nor guitar, and piano is taken, so Raj plays the drums (and Devi plays guitar).",
+  "reasoning": "Eliminating instruments with two anchors.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_039",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Art, Music and PE lessons are on Monday, Tuesday and Wednesday. Art is on Monday. Music is not on Tuesday. Which day is PE?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Tuesday"
+   },
+   {
+    "id": "B",
+    "text": "Wednesday"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Monday"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Art is Monday. Music is not Tuesday, so Music is Wednesday. PE takes the remaining day, Tuesday.",
+  "reasoning": "Eliminating days one by one.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_040",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Three boxes — red, blue and green — hold stickers, marbles and cards. The red box holds stickers. The blue box does not hold marbles. Which box holds the cards?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Blue box"
+   },
+   {
+    "id": "B",
+    "text": "Green box"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Red box"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Red holds stickers. Blue does not hold marbles, so blue holds cards (and green holds marbles).",
+  "reasoning": "Eliminating contents one by one.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_041",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Four pupils sit in chairs 1, 2, 3 and 4. A sits in chair 1. D is not in chair 2 or chair 3. B sits just to the left of C. Which chair does C sit in?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Chair 4"
+   },
+   {
+    "id": "B",
+    "text": "Chair 1"
+   },
+   {
+    "id": "C",
+    "text": "Chair 2"
+   },
+   {
+    "id": "D",
+    "text": "Chair 3"
+   }
+  ],
+  "answer": "D",
+  "explanation": "A is in chair 1. D avoids chairs 2 and 3, so D is in chair 4. B sits just left of C in the remaining chairs 2 and 3, so B = 2 and C = 3.",
+  "reasoning": "Combining seat elimination with adjacency.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_042",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "W, X, Y and Z were born in January, February, March and April. W was born in January. Z was not born in February or March. X was born in February. In which month was Y born?",
+  "options": [
+   {
+    "id": "A",
+    "text": "April"
+   },
+   {
+    "id": "B",
+    "text": "January"
+   },
+   {
+    "id": "C",
+    "text": "February"
+   },
+   {
+    "id": "D",
+    "text": "March"
+   }
+  ],
+  "answer": "D",
+  "explanation": "W = January, X = February. Z avoids February and March, and January is taken, so Z = April. Y takes the remaining month, March.",
+  "reasoning": "Eliminating months with two anchors.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_043",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "E, F, G and H love durian, mango, papaya and rambutan. E loves durian. F does not love mango or papaya. G loves mango. What does F love?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Durian"
+   },
+   {
+    "id": "B",
+    "text": "Mango"
+   },
+   {
+    "id": "C",
+    "text": "Papaya"
+   },
+   {
+    "id": "D",
+    "text": "Rambutan"
+   }
+  ],
+  "answer": "D",
+  "explanation": "E loves durian and G loves mango. F loves neither mango nor papaya, and durian is taken, so F loves rambutan (and H loves papaya).",
+  "reasoning": "Eliminating favourites with two anchors.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_044",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Ann, Ben, Cara and Devi own a cat, a dog, a rabbit and a fish. Ann owns the fish. Ben does not own the cat or the dog. Cara owns the cat. What does Ben own?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Fish"
+   },
+   {
+    "id": "B",
+    "text": "Cat"
+   },
+   {
+    "id": "C",
+    "text": "Dog"
+   },
+   {
+    "id": "D",
+    "text": "Rabbit"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Ann owns the fish and Cara owns the cat. Ben owns neither cat nor dog, and fish is taken, so Ben owns the rabbit (and Devi owns the dog).",
+  "reasoning": "Eliminating pets with two anchors.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_045",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Four teams — Lions, Tigers, Bears and Wolves — finished 1st to 4th. Lions did not finish 1st or 2nd. Tigers finished 1st. Bears did not finish 2nd or 4th. Which position did the Wolves finish?",
+  "options": [
+   {
+    "id": "A",
+    "text": "2nd"
+   },
+   {
+    "id": "B",
+    "text": "3rd"
+   },
+   {
+    "id": "C",
+    "text": "4th"
+   },
+   {
+    "id": "D",
+    "text": "1st"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Tigers = 1st. Bears avoids 2nd and 4th, and 1st is taken, so Bears = 3rd. Lions avoids 1st and 2nd, and 1st and 3rd are taken, so Lions = 4th. Wolves takes the remaining spot, 2nd.",
+  "reasoning": "Eliminating positions with two anchors.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_046",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "P, Q, R and S like red, blue, green and yellow. P does not like red or blue. Q likes green. R does not like yellow. S likes blue. Who likes red?",
+  "options": [
+   {
+    "id": "A",
+    "text": "S"
+   },
+   {
+    "id": "B",
+    "text": "P"
+   },
+   {
+    "id": "C",
+    "text": "Q"
+   },
+   {
+    "id": "D",
+    "text": "R"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Q likes green and S likes blue. P likes neither red nor blue, and green is taken, so P likes yellow. R takes the remaining colour, red.",
+  "reasoning": "Chaining eliminations across four items.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_047",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A, B, C and D sit in a row of four chairs. B sits between A and C. D sits at an end. A is not next to D. Other than D's end, who sits at the other end?",
+  "options": [
+   {
+    "id": "A",
+    "text": "A"
+   },
+   {
+    "id": "B",
+    "text": "B"
+   },
+   {
+    "id": "C",
+    "text": "C"
+   },
+   {
+    "id": "D",
+    "text": "D"
+   }
+  ],
+  "answer": "A",
+  "explanation": "B is between A and C, so they form a block A-B-C or C-B-A. If D is at position 1, the block is 2-3-4 and A cannot be 2 (next to D), so it is C-B-A: D, C, B, A. If D is at position 4, the block is 1-2-3 and A cannot be 3 (next to D), so it is A-B-C: A, B, C, D. In both cases A sits at the end opposite D.",
+  "reasoning": "Testing both end cases for an invariant answer.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_048",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Four pupils queue for lunch: E, F, G and H. F stands just behind E. G stands ahead of E. H is last. Who is first in the queue?",
+  "options": [
+   {
+    "id": "A",
+    "text": "H"
+   },
+   {
+    "id": "B",
+    "text": "E"
+   },
+   {
+    "id": "C",
+    "text": "F"
+   },
+   {
+    "id": "D",
+    "text": "G"
+   }
+  ],
+  "answer": "D",
+  "explanation": "E and F are consecutive (E, F). G is ahead of E and H is 4th. The only order fitting all clues is G, E, F, H. First is G.",
+  "reasoning": "Combining adjacency with end anchors.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_049",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A, B, C and D play guitar, piano, violin and drums. A plays the guitar. B does not play the drums. C does not play the piano or the violin. D does not play the guitar. Who plays the drums?",
+  "options": [
+   {
+    "id": "A",
+    "text": "D"
+   },
+   {
+    "id": "B",
+    "text": "A"
+   },
+   {
+    "id": "C",
+    "text": "B"
+   },
+   {
+    "id": "D",
+    "text": "C"
+   }
+  ],
+  "answer": "D",
+  "explanation": "A plays guitar. C avoids piano and violin, and guitar is taken, so C must play the drums. (B and D share piano and violin between them.)",
+  "reasoning": "Forcing one answer from overlapping constraints.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_050",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.2",
+  "archetype": "constraint_placement",
+  "level": "Master",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Five pupils A, B, C, D and E each bring one fruit: apple, banana, cherry, date and grape. B brings cherry. A does not bring apple or banana. C does not bring apple, date or grape. D does not bring banana, cherry or date. E does not bring apple, banana, cherry or date. Who brings the grape?",
+  "options": [
+   {
+    "id": "A",
+    "text": "A"
+   },
+   {
+    "id": "B",
+    "text": "B"
+   },
+   {
+    "id": "C",
+    "text": "C"
+   },
+   {
+    "id": "D",
+    "text": "E"
+   }
+  ],
+  "answer": "D",
+  "explanation": "B = cherry. C avoids apple, date, grape (and cherry is taken), so C = banana. E avoids everything except grape, so E = grape. A avoids apple and banana (cherry, grape taken), so A = date. D takes the last fruit, apple. The grape belongs to E.",
+  "reasoning": "Solving a full logic grid by forced moves.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "constraints"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ }
+]

@@ -1,0 +1,466 @@
+[
+ {
+  "id": "NEW_VIS_001",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.1",
+  "archetype": "rotation",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A weather-vane arrow points north. A gust of wind turns it 90 degrees clockwise. Which compass direction does it point now?",
+  "options": [
+   {
+    "id": "A",
+    "text": "North"
+   },
+   {
+    "id": "B",
+    "text": "East"
+   },
+   {
+    "id": "C",
+    "text": "South"
+   },
+   {
+    "id": "D",
+    "text": "West"
+   }
+  ],
+  "answer": "B",
+  "explanation": "A quarter-turn clockwise moves north → east. The vane points east.",
+  "reasoning": "Tracking a single quarter-turn.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "rotation"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_002",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.1",
+  "archetype": "rotation",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A signpost arrow points east. It is spun 90 degrees clockwise once. Which compass direction does it point now?",
+  "options": [
+   {
+    "id": "A",
+    "text": "North"
+   },
+   {
+    "id": "B",
+    "text": "East"
+   },
+   {
+    "id": "C",
+    "text": "South"
+   },
+   {
+    "id": "D",
+    "text": "West"
+   }
+  ],
+  "answer": "C",
+  "explanation": "A quarter-turn clockwise moves east → south.",
+  "reasoning": "Tracking a single quarter-turn.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "rotation"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_003",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.1",
+  "archetype": "rotation",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "An arrow turns 90 degrees clockwise at each step: up, right, down. Which way does it point at the next step?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Up"
+   },
+   {
+    "id": "B",
+    "text": "Right"
+   },
+   {
+    "id": "C",
+    "text": "Down"
+   },
+   {
+    "id": "D",
+    "text": "Left"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Continuing the clockwise turn: up → right → down → left.",
+  "reasoning": "Continuing a rotation sequence.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "rotation"
+  ],
+  "visual_required": true,
+  "visual_spec": {
+   "type": "rotation_sequence",
+   "shape": "arrow",
+   "start": "up",
+   "steps": 3,
+   "result": "left",
+   "rule": "clockwise 90 per step"
+  },
+  "image_path": "p3/NEW_VIS_003.svg",
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_004",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.1",
+  "archetype": "rotation",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A triangle points up. It is spun halfway around (180 degrees). Which way does it point now?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Up"
+   },
+   {
+    "id": "B",
+    "text": "Right"
+   },
+   {
+    "id": "C",
+    "text": "Down"
+   },
+   {
+    "id": "D",
+    "text": "Left"
+   }
+  ],
+  "answer": "C",
+  "explanation": "A half-turn flips up to down. The triangle points down.",
+  "reasoning": "Tracking a half-turn.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "rotation"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_005",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.1",
+  "archetype": "rotation",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A square has a dot at its top-right corner. The square is turned 90 degrees clockwise twice. Where is the dot now?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Top-right corner"
+   },
+   {
+    "id": "B",
+    "text": "Bottom-right corner"
+   },
+   {
+    "id": "C",
+    "text": "Bottom-left corner"
+   },
+   {
+    "id": "D",
+    "text": "Top-left corner"
+   }
+  ],
+  "answer": "C",
+  "explanation": "First turn: top-right → bottom-right. Second turn: bottom-right → bottom-left. The dot ends at the bottom-left corner.",
+  "reasoning": "Tracking a marked corner through two turns.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "rotation"
+  ],
+  "visual_required": true,
+  "visual_spec": {
+   "type": "corner_dot_rotation",
+   "shape": "square",
+   "start": "top-right",
+   "steps": 2,
+   "result": "bottom-left",
+   "rule": "clockwise 90 per step"
+  },
+  "image_path": "p3/NEW_VIS_005.svg",
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_006",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.1",
+  "archetype": "rotation",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A clock's minute hand points to 12. It moves a quarter-turn clockwise. Which number does it point to now?",
+  "options": [
+   {
+    "id": "A",
+    "text": "3"
+   },
+   {
+    "id": "B",
+    "text": "6"
+   },
+   {
+    "id": "C",
+    "text": "9"
+   },
+   {
+    "id": "D",
+    "text": "12"
+   }
+  ],
+  "answer": "A",
+  "explanation": "A quarter-turn clockwise from 12 lands on 3.",
+  "reasoning": "Reading rotation on a clock face.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "rotation"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_007",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.1",
+  "archetype": "rotation",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "An arrow points down. It is turned 90 degrees anticlockwise once. Which way does it point now?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Up"
+   },
+   {
+    "id": "B",
+    "text": "Right"
+   },
+   {
+    "id": "C",
+    "text": "Down"
+   },
+   {
+    "id": "D",
+    "text": "Left"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Anticlockwise order is up → left → down → right. One anticlockwise step from down gives right.",
+  "reasoning": "Tracking a single anticlockwise turn.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "rotation"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_008",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.1",
+  "archetype": "rotation",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "The letter F is spun halfway around (180 degrees). What does it look like now?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Normal F"
+   },
+   {
+    "id": "B",
+    "text": "Upside-down F"
+   },
+   {
+    "id": "C",
+    "text": "Mirror-image F"
+   },
+   {
+    "id": "D",
+    "text": "Letter E"
+   }
+  ],
+  "answer": "B",
+  "explanation": "A half-turn flips the F upside down. It is not mirrored, just rotated.",
+  "reasoning": "Distinguishing rotation from mirroring.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "rotation"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_009",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.4",
+  "archetype": "rotation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A compass needle points north. It swings 90 degrees clockwise, then 90 degrees more, then 90 degrees more. Which compass direction is it pointing at the end?",
+  "options": [
+   {
+    "id": "A",
+    "text": "North"
+   },
+   {
+    "id": "B",
+    "text": "East"
+   },
+   {
+    "id": "C",
+    "text": "South"
+   },
+   {
+    "id": "D",
+    "text": "West"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Three quarter-turns clockwise: north → east → south → west.",
+  "reasoning": "Tracking three quarter-turns.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "rotation"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_010",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.4",
+  "archetype": "rotation",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A square has a dot at its top-left corner. It is turned 90 degrees clockwise three times. Where is the dot now?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Top-left corner"
+   },
+   {
+    "id": "B",
+    "text": "Top-right corner"
+   },
+   {
+    "id": "C",
+    "text": "Bottom-right corner"
+   },
+   {
+    "id": "D",
+    "text": "Bottom-left corner"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Clockwise moves a corner top-left → top-right → bottom-right → bottom-left. After three turns the dot is at the bottom-left corner.",
+  "reasoning": "Tracking a marked corner through three turns.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "rotation"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ }
+]

@@ -1,0 +1,1127 @@
+[
+ {
+  "id": "NEW_VER_051",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "What comes next: A, B, C, D, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "D"
+   },
+   {
+    "id": "B",
+    "text": "E"
+   },
+   {
+    "id": "C",
+    "text": "F"
+   },
+   {
+    "id": "D",
+    "text": "G"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The alphabet in order: A, B, C, D, then E.",
+  "reasoning": "Continuing the alphabet.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_052",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "What comes next: A, C, E, G, ___? (Skip one letter each time.)",
+  "options": [
+   {
+    "id": "A",
+    "text": "H"
+   },
+   {
+    "id": "B",
+    "text": "I"
+   },
+   {
+    "id": "C",
+    "text": "J"
+   },
+   {
+    "id": "D",
+    "text": "K"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Skip one letter each time: A (skip B), C (skip D), E (skip F), G (skip H), then I.",
+  "reasoning": "Stepping through the alphabet skipping one.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_053",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "What comes next: Z, Y, X, W, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "U"
+   },
+   {
+    "id": "B",
+    "text": "V"
+   },
+   {
+    "id": "C",
+    "text": "T"
+   },
+   {
+    "id": "D",
+    "text": "S"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The alphabet backwards: Z, Y, X, W, then V.",
+  "reasoning": "Continuing the reversed alphabet.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_054",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "What comes next: A, B, D, G, K, ___? (The jumps grow: +1, +2, +3, +4.)",
+  "options": [
+   {
+    "id": "A",
+    "text": "M"
+   },
+   {
+    "id": "B",
+    "text": "N"
+   },
+   {
+    "id": "C",
+    "text": "O"
+   },
+   {
+    "id": "D",
+    "text": "P"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Jumps: A→B (+1), B→D (+2), D→G (+3), G→K (+4). Next jump is +5: K + 5 = P.",
+  "reasoning": "Spotting growing alphabet jumps.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_055",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "What comes next: A, E, I, M, ___? (Jump 4 each time.)",
+  "options": [
+   {
+    "id": "A",
+    "text": "O"
+   },
+   {
+    "id": "B",
+    "text": "P"
+   },
+   {
+    "id": "C",
+    "text": "Q"
+   },
+   {
+    "id": "D",
+    "text": "R"
+   }
+  ],
+  "answer": "C",
+  "explanation": "A(1) → E(5) → I(9) → M(13), adding 4 each time. 13 + 4 = 17 = Q.",
+  "reasoning": "Stepping +4 through the alphabet.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_056",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "What comes next: B, D, H, N, ___? (The jumps grow: +2, +4, +6.)",
+  "options": [
+   {
+    "id": "A",
+    "text": "T"
+   },
+   {
+    "id": "B",
+    "text": "U"
+   },
+   {
+    "id": "C",
+    "text": "V"
+   },
+   {
+    "id": "D",
+    "text": "W"
+   }
+  ],
+  "answer": "C",
+  "explanation": "B(2) +2 = D(4), +4 = H(8), +6 = N(14). Next jump is +8: 14 + 8 = 22 = V.",
+  "reasoning": "Spotting growing alphabet jumps.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_057",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "What comes next: A, Z, B, Y, C, ___? (Take from the front, then the back, alternating.)",
+  "options": [
+   {
+    "id": "A",
+    "text": "W"
+   },
+   {
+    "id": "B",
+    "text": "X"
+   },
+   {
+    "id": "C",
+    "text": "Y"
+   },
+   {
+    "id": "D",
+    "text": "Z"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Front: A, B, C... Back: Z, Y... Alternating front/back: A, Z, B, Y, C, then back side X.",
+  "reasoning": "Alternating alphabet ends.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_058",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "What comes next: E, G, J, L, O, ___? (Jumps alternate +2, +3.)",
+  "options": [
+   {
+    "id": "A",
+    "text": "P"
+   },
+   {
+    "id": "B",
+    "text": "Q"
+   },
+   {
+    "id": "C",
+    "text": "R"
+   },
+   {
+    "id": "D",
+    "text": "S"
+   }
+  ],
+  "answer": "B",
+  "explanation": "E→G (+2), G→J (+3), J→L (+2), L→O (+3). Next is +2: O + 2 = Q.",
+  "reasoning": "Spotting alternating jumps.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_059",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "What comes next: Q, P, O, N, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "L"
+   },
+   {
+    "id": "B",
+    "text": "M"
+   },
+   {
+    "id": "C",
+    "text": "K"
+   },
+   {
+    "id": "D",
+    "text": "J"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Stepping backwards one at a time: Q, P, O, N, then M.",
+  "reasoning": "Stepping backwards through the alphabet.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_060",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "What comes next: D, H, L, P, ___? (Jump 4 each time.)",
+  "options": [
+   {
+    "id": "A",
+    "text": "R"
+   },
+   {
+    "id": "B",
+    "text": "S"
+   },
+   {
+    "id": "C",
+    "text": "T"
+   },
+   {
+    "id": "D",
+    "text": "U"
+   }
+  ],
+  "answer": "C",
+  "explanation": "D(4) → H(8) → L(12) → P(16), adding 4 each time. 16 + 4 = 20 = T.",
+  "reasoning": "Stepping +4 through the alphabet.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_061",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "What comes next: A, D, G, J, ___? (Jump 3 each time.)",
+  "options": [
+   {
+    "id": "A",
+    "text": "K"
+   },
+   {
+    "id": "B",
+    "text": "L"
+   },
+   {
+    "id": "C",
+    "text": "M"
+   },
+   {
+    "id": "D",
+    "text": "N"
+   }
+  ],
+  "answer": "C",
+  "explanation": "A(1) → D(4) → G(7) → J(10), adding 3 each time. 10 + 3 = 13 = M.",
+  "reasoning": "Stepping +3 through the alphabet.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_062",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "What comes next: Z, X, V, T, ___? (Step back 2 each time.)",
+  "options": [
+   {
+    "id": "A",
+    "text": "P"
+   },
+   {
+    "id": "B",
+    "text": "Q"
+   },
+   {
+    "id": "C",
+    "text": "R"
+   },
+   {
+    "id": "D",
+    "text": "S"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Z(26) → X(24) → V(22) → T(20), subtracting 2 each time. 20 − 2 = 18 = R.",
+  "reasoning": "Stepping −2 backwards through the alphabet.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_063",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "What comes next: A, C, F, J, O, ___? (The jumps grow: +2, +3, +4, +5.)",
+  "options": [
+   {
+    "id": "A",
+    "text": "T"
+   },
+   {
+    "id": "B",
+    "text": "U"
+   },
+   {
+    "id": "C",
+    "text": "V"
+   },
+   {
+    "id": "D",
+    "text": "W"
+   }
+  ],
+  "answer": "B",
+  "explanation": "A→C (+2), C→F (+3), F→J (+4), J→O (+5). Next jump is +6: O(15) + 6 = 21 = U.",
+  "reasoning": "Spotting growing alphabet jumps.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_064",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "What comes next: A, F, K, P, U, ___? (Jump 5 each time.)",
+  "options": [
+   {
+    "id": "A",
+    "text": "W"
+   },
+   {
+    "id": "B",
+    "text": "X"
+   },
+   {
+    "id": "C",
+    "text": "Y"
+   },
+   {
+    "id": "D",
+    "text": "Z"
+   }
+  ],
+  "answer": "D",
+  "explanation": "A(1) → F(6) → K(11) → P(16) → U(21), adding 5 each time. 21 + 5 = 26 = Z.",
+  "reasoning": "Stepping +5 through the alphabet.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_065",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Two series take turns: A, B, Z, Y, C, D, X, ___? (Odd positions: A, Z, C, X... even positions: B, Y, D...?)",
+  "options": [
+   {
+    "id": "A",
+    "text": "V"
+   },
+   {
+    "id": "B",
+    "text": "W"
+   },
+   {
+    "id": "C",
+    "text": "X"
+   },
+   {
+    "id": "D",
+    "text": "Y"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Read odd and even positions separately. Odd positions (1st, 3rd, 5th, 7th): A, Z, C, X — front letters step A→C while back letters step Z→X. Even positions (2nd, 4th, 6th, 8th): B, Y, D, then the back letter steps Y→W. So the 8th letter is W.",
+  "reasoning": "Separating interleaved front/back series.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_066",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Master",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "What comes next: A, B, D, G, K, P, ___? (The jumps grow: +1, +2, +3, +4, +5.)",
+  "options": [
+   {
+    "id": "A",
+    "text": "T"
+   },
+   {
+    "id": "B",
+    "text": "U"
+   },
+   {
+    "id": "C",
+    "text": "V"
+   },
+   {
+    "id": "D",
+    "text": "W"
+   }
+  ],
+  "answer": "C",
+  "explanation": "A→B (+1), B→D (+2), D→G (+3), G→K (+4), K→P (+5). Next jump is +6: P(16) + 6 = 22 = V.",
+  "reasoning": "Spotting growing alphabet jumps.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_067",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Master",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "What comes next: Z, A, Y, B, X, ___? (Take from the back, then the front, alternating.)",
+  "options": [
+   {
+    "id": "A",
+    "text": "B"
+   },
+   {
+    "id": "B",
+    "text": "C"
+   },
+   {
+    "id": "C",
+    "text": "D"
+   },
+   {
+    "id": "D",
+    "text": "E"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Back: Z, Y, X... Front: A, B... Alternating back/front: Z, A, Y, B, X, then front side C.",
+  "reasoning": "Alternating alphabet ends.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_068",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "What comes next: E, F, H, K, N, ___? (The jumps grow: +1, +2, +3, +4.)",
+  "options": [
+   {
+    "id": "A",
+    "text": "Q"
+   },
+   {
+    "id": "B",
+    "text": "R"
+   },
+   {
+    "id": "C",
+    "text": "S"
+   },
+   {
+    "id": "D",
+    "text": "T"
+   }
+  ],
+  "answer": "C",
+  "explanation": "E→F (+1), F→H (+2), H→K (+3), K→N (+4). Next jump is +5: N(14) + 5 = 19 = S.",
+  "reasoning": "Spotting growing alphabet jumps.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_069",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "What comes next: J, L, N, P, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Q"
+   },
+   {
+    "id": "B",
+    "text": "R"
+   },
+   {
+    "id": "C",
+    "text": "S"
+   },
+   {
+    "id": "D",
+    "text": "T"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Skip one letter each time: J (skip K), L (skip M), N (skip O), P (skip Q), then R.",
+  "reasoning": "Stepping through the alphabet skipping one.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_070",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.6",
+  "archetype": "letter_series",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "What comes next: C, F, I, L, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "M"
+   },
+   {
+    "id": "B",
+    "text": "N"
+   },
+   {
+    "id": "C",
+    "text": "O"
+   },
+   {
+    "id": "D",
+    "text": "P"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Jump 3 each time: C(3) → F(6) → I(9) → L(12). 12 + 3 = 15 = O.",
+  "reasoning": "Stepping +3 through the alphabet.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "letters"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_071",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "All apples in the basket are red. This fruit is an apple from the basket. What colour is it?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Red"
+   },
+   {
+    "id": "B",
+    "text": "Green"
+   },
+   {
+    "id": "C",
+    "text": "Yellow"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Every apple in the basket is red, so this apple is red.",
+  "reasoning": "Applying an 'all' statement.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_072",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Ben is taller than Sam. Who is shorter?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben"
+   },
+   {
+    "id": "B",
+    "text": "Sam"
+   },
+   {
+    "id": "C",
+    "text": "Both"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Ben is the taller one, so Sam is shorter.",
+  "reasoning": "Reading a comparison.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_073",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A always tells the truth. A says: 'B is lying.' Is B lying?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Yes"
+   },
+   {
+    "id": "B",
+    "text": "No"
+   },
+   {
+    "id": "C",
+    "text": "Sometimes"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "A",
+  "explanation": "A always tells the truth, so A's statement is true: B is lying.",
+  "reasoning": "Trusting a truth-teller.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_074",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "If all Bloops are Razzies, and some Razzies are green, must some Bloops be green?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Yes"
+   },
+   {
+    "id": "B",
+    "text": "No"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Only big Bloops"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The green Razzies might be non-Bloop Razzies. Nothing forces any Bloop to be green. Cannot tell.",
+  "reasoning": "Seeing that 'some' does not transfer.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VER_075",
+  "domain": "verbal_reasoning",
+  "topic": "Verbal Reasoning",
+  "skill": "3.5",
+  "archetype": "sentence_logic",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "No fish can fly. A trout is a fish. Can a trout fly?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Yes"
+   },
+   {
+    "id": "B",
+    "text": "No"
+   },
+   {
+    "id": "C",
+    "text": "Sometimes"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "B",
+  "explanation": "No fish can fly, and a trout is a fish, so a trout cannot fly.",
+  "reasoning": "Applying a 'no' statement.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "verbal",
+   "logic"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ }
+]

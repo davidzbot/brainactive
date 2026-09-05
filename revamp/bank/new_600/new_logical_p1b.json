@@ -1,0 +1,722 @@
+[
+ {
+  "id": "NEW_LOG_010",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a bus queue, Chen is just behind Bala. Bala is just behind Devi. Devi is first. Who is third in the queue?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "Bala"
+   },
+   {
+    "id": "C",
+    "text": "Devi"
+   },
+   {
+    "id": "D",
+    "text": "Chen"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Order: 1st Devi, 2nd Bala, 3rd Chen. Third is Chen.",
+  "reasoning": "Building an order from 'just behind' clues.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_011",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Five runners race. Devi beats Ming. Raj beats Devi. Siti beats Raj. Kumar beats Siti. Who wins the race?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Devi"
+   },
+   {
+    "id": "B",
+    "text": "Raj"
+   },
+   {
+    "id": "C",
+    "text": "Siti"
+   },
+   {
+    "id": "D",
+    "text": "Kumar"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Fastest to slowest: Kumar > Siti > Raj > Devi > Ming. Kumar wins.",
+  "reasoning": "Chaining 'beats' clues into a full ranking.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_012",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a 4-storey flat, Goh lives above Tan. Tan lives above Lim. Koh lives below Lim. Who lives on the ground floor?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Goh"
+   },
+   {
+    "id": "B",
+    "text": "Tan"
+   },
+   {
+    "id": "C",
+    "text": "Lim"
+   },
+   {
+    "id": "D",
+    "text": "Koh"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Top to bottom: Goh, Tan, Lim, Koh. Koh is on the ground floor.",
+  "reasoning": "Building a vertical order.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_013",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Priya is 4th from the front of a queue and 3rd from the back. How many people are in the queue?",
+  "options": [
+   {
+    "id": "A",
+    "text": "6"
+   },
+   {
+    "id": "B",
+    "text": "7"
+   },
+   {
+    "id": "C",
+    "text": "8"
+   },
+   {
+    "id": "D",
+    "text": "5"
+   }
+  ],
+  "answer": "A",
+  "explanation": "3 people are in front of Priya, Priya herself, and 2 behind: 3 + 1 + 2 = 6. (Or 4 + 3 − 1 = 6, since Priya is counted twice.)",
+  "reasoning": "Counting from both ends without double-counting.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_014",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Four chairs in a row: A sits left of B. B sits left of C. D sits right of C. Who sits at the far right?",
+  "options": [
+   {
+    "id": "A",
+    "text": "A"
+   },
+   {
+    "id": "B",
+    "text": "B"
+   },
+   {
+    "id": "C",
+    "text": "C"
+   },
+   {
+    "id": "D",
+    "text": "D"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Left to right: A, B, C, D. D is at the far right.",
+  "reasoning": "Building a left-right order.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_015",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Rina runs faster than Siti but slower than Mei. Who is the slowest runner?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Siti"
+   },
+   {
+    "id": "B",
+    "text": "Mei"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Rina"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Fastest to slowest: Mei > Rina > Siti. Siti is the slowest.",
+  "reasoning": "Ordering from a middle comparison.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_016",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A tower of blocks: the red block is above the blue block. The blue block is above the yellow block. The green block is below the yellow block. Which block is at the bottom?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Red"
+   },
+   {
+    "id": "B",
+    "text": "Blue"
+   },
+   {
+    "id": "C",
+    "text": "Yellow"
+   },
+   {
+    "id": "D",
+    "text": "Green"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Top to bottom: red, blue, yellow, green. Green is at the bottom.",
+  "reasoning": "Building a vertical order.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_017",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Three lockers in a row belong to Asha, Bala and Devi. Asha's locker is between the other two. Bala's locker is the leftmost of the three. Whose locker is rightmost?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "Asha"
+   },
+   {
+    "id": "C",
+    "text": "Bala"
+   },
+   {
+    "id": "D",
+    "text": "Devi"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Left to right: Bala, Asha, Devi. Devi's locker is rightmost.",
+  "reasoning": "Placing a middle item with an end anchor.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_018",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Three swimmers race. X touches the wall before Y. Y touches before Z. If gold goes to 1st, silver to 2nd and bronze to 3rd, who wins silver?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Y"
+   },
+   {
+    "id": "B",
+    "text": "Z"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "X"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Order: X (gold), Y (silver), Z (bronze). Y wins silver.",
+  "reasoning": "Mapping an order to medals.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_019",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "L is older than M. N is younger than M. O is older than L. Who is the youngest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "O"
+   },
+   {
+    "id": "B",
+    "text": "L"
+   },
+   {
+    "id": "C",
+    "text": "M"
+   },
+   {
+    "id": "D",
+    "text": "N"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Oldest to youngest: O > L > M > N. N is the youngest.",
+  "reasoning": "Merging two comparison chains.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_020",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Ravi is 5th from the front of a queue and 3rd from the back. How many people are in the queue?",
+  "options": [
+   {
+    "id": "A",
+    "text": "7"
+   },
+   {
+    "id": "B",
+    "text": "8"
+   },
+   {
+    "id": "C",
+    "text": "9"
+   },
+   {
+    "id": "D",
+    "text": "6"
+   }
+  ],
+  "answer": "A",
+  "explanation": "4 people are in front of Ravi, Ravi himself, and 2 behind: 4 + 1 + 2 = 7. (Or 5 + 3 − 1 = 7, since Ravi is counted twice.)",
+  "reasoning": "Counting from both ends without double-counting.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_021",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Four runners finish a race. A finished 2nd. B finished just behind A. C finished just ahead of A. D finished last of the four. Who finished first?",
+  "options": [
+   {
+    "id": "A",
+    "text": "D"
+   },
+   {
+    "id": "B",
+    "text": "A"
+   },
+   {
+    "id": "C",
+    "text": "B"
+   },
+   {
+    "id": "D",
+    "text": "C"
+   }
+  ],
+  "answer": "D",
+  "explanation": "A is 2nd, so just ahead of A is 1st (C) and just behind is 3rd (B). D is 4th. First is C.",
+  "reasoning": "Pinning positions around a fixed rank.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_022",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A 5-storey block has one family per floor: Mei, Raj, Siti, Kumar and Devi. Mei lives on floor 5. Raj lives just below Mei. Siti lives two floors below Raj. Kumar lives just below Siti. Which floor does Devi live on?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Floor 4"
+   },
+   {
+    "id": "B",
+    "text": "Floor 1"
+   },
+   {
+    "id": "C",
+    "text": "Floor 2"
+   },
+   {
+    "id": "D",
+    "text": "Floor 3"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Mei = 5, Raj = 4, Siti = 2 (two below Raj), Kumar = 1 (just below Siti). The remaining floor 3 belongs to Devi.",
+  "reasoning": "Placing floors step by step, last one by elimination.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_023",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Five children Ann, Ben, Cara, Devi and Eve queue up. Ann is 2nd. Ben is two places behind Ann. Cara is just ahead of Ben. Devi is last. Who is first in the queue?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ann"
+   },
+   {
+    "id": "B",
+    "text": "Ben"
+   },
+   {
+    "id": "C",
+    "text": "Cara"
+   },
+   {
+    "id": "D",
+    "text": "Eve"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Ann = 2, Ben = 4 (two places behind), Cara = 3 (just ahead of Ben), Devi = 5. The remaining spot, 1st, belongs to Eve.",
+  "reasoning": "Placing positions step by step, last one by elimination.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_024",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Five friends compare heights. A is taller than B and C. B is taller than D. C is taller than D and E. D is taller than E. Who is the tallest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "A"
+   },
+   {
+    "id": "B",
+    "text": "B"
+   },
+   {
+    "id": "C",
+    "text": "C"
+   },
+   {
+    "id": "D",
+    "text": "E"
+   }
+  ],
+  "answer": "A",
+  "explanation": "A is taller than B and C, and everyone else (D, E) is shorter than B or C. Nothing is taller than A, so A is the tallest. (B vs C order is unknown, but it does not matter.)",
+  "reasoning": "Finding the top of a partial order.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_025",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Master",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Six seats 1–6 in a row. A sits just left of B. C sits just right of B. D sits at an end. E sits next to D but not next to A. B sits in an even-numbered seat. F takes the remaining seat. Who sits in seat 4?",
+  "options": [
+   {
+    "id": "A",
+    "text": "A"
+   },
+   {
+    "id": "B",
+    "text": "B"
+   },
+   {
+    "id": "C",
+    "text": "C"
+   },
+   {
+    "id": "D",
+    "text": "F"
+   }
+  ],
+  "answer": "D",
+  "explanation": "A, B, C are consecutive in that order. Try D at seat 6: E = 5. A cannot be 4 or 6 (next to E=5 would be 4 or 6). Blocks avoiding E=5: 1-2-3 works (A=1, B=2 even ✓, C=3). Then F = 4. Check D at seat 1 instead: E = 2, A cannot be 1 or 3; blocks 3-4-5 give B=4 even but A=3 is next to E=2 ✗; blocks 4-5-6 give B=5 odd ✗. So the only solution is A1, B2, C3, F4, E5, D6. Seat 4 is F.",
+  "reasoning": "Testing cases to find the unique seating.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ }
+]

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="24" font-size="16" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Square turns 90 deg clockwise</text>
+<rect x="30" y="80" width="60" height="60" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="84" cy="86" r="7" fill="#e63946"/>
+<text x="60" y="170" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">start</text>
+<rect x="150" y="80" width="60" height="60" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="204" cy="134" r="7" fill="#e63946"/>
+<text x="180" y="170" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">1 turn</text>
+<rect x="270" y="80" width="60" height="60" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<circle cx="276" cy="134" r="7" fill="#e63946"/>
+<text x="300" y="170" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">2 turns</text>
+</svg>

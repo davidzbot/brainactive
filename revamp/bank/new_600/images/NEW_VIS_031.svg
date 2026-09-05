@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="24" font-size="16" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Top-bottom mirror (like water)</text>
+<polygon points="180,60 190,100 170,100" fill="#2b2d42"/>
+<text x="180" y="125" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">points up</text>
+<line x1="80" y1="145" x2="280" y2="145" stroke="#457b9d" stroke-width="3" stroke-dasharray="8,6"/>
+<text x="180" y="165" font-size="12" fill="#457b9d" text-anchor="middle" font-family="sans-serif" font-weight="bold">mirror</text>
+<polygon points="180,225 190,185 170,185" fill="#d3d3d3"/>
+<text x="180" y="250" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">reflection?</text>
+</svg>

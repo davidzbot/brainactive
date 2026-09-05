@@ -1,0 +1,1127 @@
+[
+ {
+  "id": "NEW_NUM_036",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "3 is to 12 as 5 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "25"
+   },
+   {
+    "id": "B",
+    "text": "15"
+   },
+   {
+    "id": "C",
+    "text": "18"
+   },
+   {
+    "id": "D",
+    "text": "20"
+   }
+  ],
+  "answer": "D",
+  "explanation": "3 × 4 = 12, so 5 × 4 = 20.",
+  "reasoning": "Applying a multiplication rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_037",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "4 is to 11 as 7 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "20"
+   },
+   {
+    "id": "B",
+    "text": "19"
+   },
+   {
+    "id": "C",
+    "text": "18"
+   },
+   {
+    "id": "D",
+    "text": "21"
+   }
+  ],
+  "answer": "A",
+  "explanation": "4 × 3 − 1 = 11, so 7 × 3 − 1 = 20.",
+  "reasoning": "Applying a multiply-then-subtract rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_038",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "5 is to 28 as 6 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "39"
+   },
+   {
+    "id": "B",
+    "text": "36"
+   },
+   {
+    "id": "C",
+    "text": "38"
+   },
+   {
+    "id": "D",
+    "text": "40"
+   }
+  ],
+  "answer": "A",
+  "explanation": "5 × 5 + 3 = 28, so 6 × 6 + 3 = 39. (Square, then add 3.)",
+  "reasoning": "Applying a square-plus-constant rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_039",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "2 is to 9 as 4 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "15"
+   },
+   {
+    "id": "B",
+    "text": "16"
+   },
+   {
+    "id": "C",
+    "text": "18"
+   },
+   {
+    "id": "D",
+    "text": "17"
+   }
+  ],
+  "answer": "D",
+  "explanation": "2 × 4 + 1 = 9, so 4 × 4 + 1 = 17.",
+  "reasoning": "Applying a multiply-then-add rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_040",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "6 is to 15 as 8 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "19"
+   },
+   {
+    "id": "B",
+    "text": "18"
+   },
+   {
+    "id": "C",
+    "text": "20"
+   },
+   {
+    "id": "D",
+    "text": "17"
+   }
+  ],
+  "answer": "A",
+  "explanation": "6 × 2 + 3 = 15, so 8 × 2 + 3 = 19.",
+  "reasoning": "Applying a multiply-then-add rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_041",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "9 is to 27 as 12 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "30"
+   },
+   {
+    "id": "B",
+    "text": "33"
+   },
+   {
+    "id": "C",
+    "text": "39"
+   },
+   {
+    "id": "D",
+    "text": "36"
+   }
+  ],
+  "answer": "D",
+  "explanation": "9 × 3 = 27, so 12 × 3 = 36.",
+  "reasoning": "Applying a multiplication rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_042",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "10 is to 29 as 7 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "20"
+   },
+   {
+    "id": "B",
+    "text": "19"
+   },
+   {
+    "id": "C",
+    "text": "22"
+   },
+   {
+    "id": "D",
+    "text": "18"
+   }
+  ],
+  "answer": "A",
+  "explanation": "10 × 3 − 1 = 29, so 7 × 3 − 1 = 20.",
+  "reasoning": "Applying a multiply-then-subtract rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_043",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "3 is to 11 as 5 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "17"
+   },
+   {
+    "id": "B",
+    "text": "18"
+   },
+   {
+    "id": "C",
+    "text": "20"
+   },
+   {
+    "id": "D",
+    "text": "19"
+   }
+  ],
+  "answer": "D",
+  "explanation": "3 × 4 − 1 = 11, so 5 × 4 − 1 = 19.",
+  "reasoning": "Applying a multiply-then-subtract rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_044",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "8 is to 20 as 11 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "26"
+   },
+   {
+    "id": "B",
+    "text": "25"
+   },
+   {
+    "id": "C",
+    "text": "28"
+   },
+   {
+    "id": "D",
+    "text": "24"
+   }
+  ],
+  "answer": "A",
+  "explanation": "8 × 2 + 4 = 20, so 11 × 2 + 4 = 26.",
+  "reasoning": "Applying a multiply-then-add rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_045",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "1 is to 6 as 3 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "16"
+   },
+   {
+    "id": "B",
+    "text": "14"
+   },
+   {
+    "id": "C",
+    "text": "15"
+   },
+   {
+    "id": "D",
+    "text": "18"
+   }
+  ],
+  "answer": "A",
+  "explanation": "1 × 5 + 1 = 6, so 3 × 5 + 1 = 16.",
+  "reasoning": "Applying a multiply-then-add rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_046",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "12 is to 4 as 21 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5"
+   },
+   {
+    "id": "B",
+    "text": "6"
+   },
+   {
+    "id": "C",
+    "text": "8"
+   },
+   {
+    "id": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "D",
+  "explanation": "12 ÷ 3 = 4, so 21 ÷ 3 = 7.",
+  "reasoning": "Applying a division rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_047",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "7 is to 52 as 5 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "25"
+   },
+   {
+    "id": "B",
+    "text": "26"
+   },
+   {
+    "id": "C",
+    "text": "30"
+   },
+   {
+    "id": "D",
+    "text": "28"
+   }
+  ],
+  "answer": "D",
+  "explanation": "7 × 7 + 3 = 52, so 5 × 5 + 3 = 28. (Square, then add 3.)",
+  "reasoning": "Applying a square-plus-constant rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_048",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "4 is to 20 as 9 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "40"
+   },
+   {
+    "id": "B",
+    "text": "36"
+   },
+   {
+    "id": "C",
+    "text": "38"
+   },
+   {
+    "id": "D",
+    "text": "45"
+   }
+  ],
+  "answer": "A",
+  "explanation": "4 × 4 + 4 = 20, so 9 × 4 + 4 = 40.",
+  "reasoning": "Applying a multiply-then-add rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_049",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "15 is to 12 as 20 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "17"
+   },
+   {
+    "id": "B",
+    "text": "16"
+   },
+   {
+    "id": "C",
+    "text": "18"
+   },
+   {
+    "id": "D",
+    "text": "15"
+   }
+  ],
+  "answer": "A",
+  "explanation": "15 − 3 = 12, so 20 − 3 = 17.",
+  "reasoning": "Applying a subtraction rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_050",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "2 is to 7 as 6 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "20"
+   },
+   {
+    "id": "B",
+    "text": "17"
+   },
+   {
+    "id": "C",
+    "text": "18"
+   },
+   {
+    "id": "D",
+    "text": "19"
+   }
+  ],
+  "answer": "D",
+  "explanation": "2 × 3 + 1 = 7, so 6 × 3 + 1 = 19.",
+  "reasoning": "Applying a multiply-then-add rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_051",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "9 is to 82 as 4 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "18"
+   },
+   {
+    "id": "B",
+    "text": "15"
+   },
+   {
+    "id": "C",
+    "text": "16"
+   },
+   {
+    "id": "D",
+    "text": "17"
+   }
+  ],
+  "answer": "D",
+  "explanation": "9 × 9 + 1 = 82, so 4 × 4 + 1 = 17. (Square, then add 1.)",
+  "reasoning": "Applying a square-plus-constant rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_052",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "6 is to 37 as 8 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "66"
+   },
+   {
+    "id": "B",
+    "text": "63"
+   },
+   {
+    "id": "C",
+    "text": "64"
+   },
+   {
+    "id": "D",
+    "text": "65"
+   }
+  ],
+  "answer": "D",
+  "explanation": "6 × 6 + 1 = 37, so 8 × 8 + 1 = 65. (Square, then add 1.)",
+  "reasoning": "Applying a square-plus-constant rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_053",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "2 is to 9 as 3 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "30"
+   },
+   {
+    "id": "B",
+    "text": "26"
+   },
+   {
+    "id": "C",
+    "text": "27"
+   },
+   {
+    "id": "D",
+    "text": "28"
+   }
+  ],
+  "answer": "D",
+  "explanation": "2 × 2 × 2 + 1 = 9, so 3 × 3 × 3 + 1 = 28. (Cube, then add 1.)",
+  "reasoning": "Applying a cube-plus-constant rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_054",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "5 is to 17 as 8 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "24"
+   },
+   {
+    "id": "B",
+    "text": "25"
+   },
+   {
+    "id": "C",
+    "text": "26"
+   },
+   {
+    "id": "D",
+    "text": "27"
+   }
+  ],
+  "answer": "C",
+  "explanation": "5 × 3 + 2 = 17, so 8 × 3 + 2 = 26.",
+  "reasoning": "Applying a multiply-then-add rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_055",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "11 is to 32 as 9 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "24"
+   },
+   {
+    "id": "B",
+    "text": "25"
+   },
+   {
+    "id": "C",
+    "text": "26"
+   },
+   {
+    "id": "D",
+    "text": "28"
+   }
+  ],
+  "answer": "C",
+  "explanation": "11 × 3 − 1 = 32, so 9 × 3 − 1 = 26.",
+  "reasoning": "Applying a multiply-then-subtract rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_056",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "4 is to 14 as 10 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "30"
+   },
+   {
+    "id": "B",
+    "text": "31"
+   },
+   {
+    "id": "C",
+    "text": "32"
+   },
+   {
+    "id": "D",
+    "text": "34"
+   }
+  ],
+  "answer": "C",
+  "explanation": "4 × 3 + 2 = 14, so 10 × 3 + 2 = 32.",
+  "reasoning": "Applying a multiply-then-add rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_057",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "7 is to 16 as 12 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "24"
+   },
+   {
+    "id": "B",
+    "text": "25"
+   },
+   {
+    "id": "C",
+    "text": "26"
+   },
+   {
+    "id": "D",
+    "text": "28"
+   }
+  ],
+  "answer": "C",
+  "explanation": "7 × 2 + 2 = 16, so 12 × 2 + 2 = 26.",
+  "reasoning": "Applying a multiply-then-add rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_058",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "20 is to 41 as 15 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "29"
+   },
+   {
+    "id": "B",
+    "text": "30"
+   },
+   {
+    "id": "C",
+    "text": "31"
+   },
+   {
+    "id": "D",
+    "text": "33"
+   }
+  ],
+  "answer": "C",
+  "explanation": "20 × 2 + 1 = 41, so 15 × 2 + 1 = 31.",
+  "reasoning": "Applying a multiply-then-add rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_059",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "8 is to 65 as 5 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "24"
+   },
+   {
+    "id": "B",
+    "text": "25"
+   },
+   {
+    "id": "C",
+    "text": "26"
+   },
+   {
+    "id": "D",
+    "text": "28"
+   }
+  ],
+  "answer": "C",
+  "explanation": "8 × 8 + 1 = 65, so 5 × 5 + 1 = 26. (Square, then add 1.)",
+  "reasoning": "Applying a square-plus-constant rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_060",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.2",
+  "archetype": "number_analogy",
+  "level": "Master",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "6 is to 217 as 4 is to ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "63"
+   },
+   {
+    "id": "B",
+    "text": "64"
+   },
+   {
+    "id": "C",
+    "text": "65"
+   },
+   {
+    "id": "D",
+    "text": "66"
+   }
+  ],
+  "answer": "C",
+  "explanation": "6 × 6 × 6 + 1 = 217, so 4 × 4 × 4 + 1 = 65. (Cube, then add 1.)",
+  "reasoning": "Applying a cube-plus-constant rule across an analogy.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "analogy"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ }
+]

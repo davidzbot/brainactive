@@ -1,0 +1,1802 @@
+[
+ {
+  "id": "NEW_NUM_061",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A melon and another identical melon weigh 12 kg altogether. How heavy is 1 melon?",
+  "options": [
+   {
+    "id": "A",
+    "text": "6 kg"
+   },
+   {
+    "id": "B",
+    "text": "7 kg"
+   },
+   {
+    "id": "C",
+    "text": "4 kg"
+   },
+   {
+    "id": "D",
+    "text": "5 kg"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Two identical melons weigh 12 kg, so 1 melon weighs 12 ÷ 2 = 6 kg.",
+  "reasoning": "Sharing a total equally.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_062",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "An apple and a pear weigh 9 kg altogether. The apple weighs 4 kg. How heavy is the pear?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5 kg"
+   },
+   {
+    "id": "B",
+    "text": "6 kg"
+   },
+   {
+    "id": "C",
+    "text": "3 kg"
+   },
+   {
+    "id": "D",
+    "text": "4 kg"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Apple + pear = 9 kg and apple = 4 kg, so pear = 9 − 4 = 5 kg.",
+  "reasoning": "Finding one unknown from a pair total.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_063",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "2 identical oranges and 1 apple weigh 11 kg altogether. The apple weighs 3 kg. How heavy is 1 orange?",
+  "options": [
+   {
+    "id": "A",
+    "text": "4 kg"
+   },
+   {
+    "id": "B",
+    "text": "5 kg"
+   },
+   {
+    "id": "C",
+    "text": "6 kg"
+   },
+   {
+    "id": "D",
+    "text": "3 kg"
+   }
+  ],
+  "answer": "A",
+  "explanation": "2 oranges + 3 kg = 11 kg, so 2 oranges = 8 kg and 1 orange = 4 kg.",
+  "reasoning": "Removing a known part, then sharing equally.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_064",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A cat and a dog weigh 14 kg altogether. The cat weighs 6 kg. How heavy is the dog?",
+  "options": [
+   {
+    "id": "A",
+    "text": "6 kg"
+   },
+   {
+    "id": "B",
+    "text": "7 kg"
+   },
+   {
+    "id": "C",
+    "text": "8 kg"
+   },
+   {
+    "id": "D",
+    "text": "9 kg"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Cat + dog = 14 kg and cat = 6 kg, so dog = 14 − 6 = 8 kg.",
+  "reasoning": "Finding one unknown from a pair total.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_065",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "3 identical books weigh 15 kg altogether. How heavy is 1 book?",
+  "options": [
+   {
+    "id": "A",
+    "text": "3 kg"
+   },
+   {
+    "id": "B",
+    "text": "4 kg"
+   },
+   {
+    "id": "C",
+    "text": "5 kg"
+   },
+   {
+    "id": "D",
+    "text": "6 kg"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Three identical books weigh 15 kg, so 1 book weighs 15 ÷ 3 = 5 kg.",
+  "reasoning": "Sharing a total equally.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_066",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a square weigh 11 units. Two triangles and a square weigh 16 units. How heavy is the triangle?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5 units"
+   },
+   {
+    "id": "B",
+    "text": "6 units"
+   },
+   {
+    "id": "C",
+    "text": "7 units"
+   },
+   {
+    "id": "D",
+    "text": "4 units"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The second weighing has one extra triangle and is 5 units heavier (16 − 11 = 5), so the triangle weighs 5 units.",
+  "reasoning": "Isolating one unknown by comparing two weighings.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_067",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a star weigh 13 units. Two triangles and a star weigh 19 units. How heavy is the star?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5 units"
+   },
+   {
+    "id": "B",
+    "text": "6 units"
+   },
+   {
+    "id": "C",
+    "text": "7 units"
+   },
+   {
+    "id": "D",
+    "text": "8 units"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The extra triangle adds 19 − 13 = 6 units, so triangle = 6. Then star = 13 − 6 = 7 units.",
+  "reasoning": "Isolating one unknown, then working backwards.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_068",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Three parcels: A + B = 12 kg, A + C = 15 kg, B + C = 13 kg. How heavy is the heaviest parcel?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5 kg"
+   },
+   {
+    "id": "B",
+    "text": "6 kg"
+   },
+   {
+    "id": "C",
+    "text": "7 kg"
+   },
+   {
+    "id": "D",
+    "text": "8 kg"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Add all three: 2 × (A + B + C) = 12 + 15 + 13 = 40, so A + B + C = 20. Then C = 20 − 12 = 8, A = 20 − 13 = 7, B = 20 − 15 = 5. Heaviest is C at 8 kg.",
+  "reasoning": "Combining all pair totals, then subtracting.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_069",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A box with 2 balls weighs 17 units. The same box with 5 balls weighs 26 units. All balls are identical. How heavy is 1 ball?",
+  "options": [
+   {
+    "id": "A",
+    "text": "3 units"
+   },
+   {
+    "id": "B",
+    "text": "4 units"
+   },
+   {
+    "id": "C",
+    "text": "5 units"
+   },
+   {
+    "id": "D",
+    "text": "2 units"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The 3 extra balls add 26 − 17 = 9 units, so 1 ball weighs 9 ÷ 3 = 3 units.",
+  "reasoning": "Isolating one unknown by comparing two weighings.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_070",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "2 pens and 1 ruler weigh 13 units. 1 pen and 2 rulers weigh 14 units. How heavy is 1 pen?",
+  "options": [
+   {
+    "id": "A",
+    "text": "4 units"
+   },
+   {
+    "id": "B",
+    "text": "5 units"
+   },
+   {
+    "id": "C",
+    "text": "6 units"
+   },
+   {
+    "id": "D",
+    "text": "3 units"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add both: 3 pens + 3 rulers = 27, so 1 pen + 1 ruler = 9. Then pen = 13 − 9 = 4 units. (Check: 4 + 2 × 5 = 14. ✓)",
+  "reasoning": "Combining equations, then subtracting.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_071",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "2 fish and 1 crab weigh 20 units. 1 fish and 2 crabs weigh 22 units. All fish are identical and all crabs are identical. How heavy is 1 crab?",
+  "options": [
+   {
+    "id": "A",
+    "text": "6 units"
+   },
+   {
+    "id": "B",
+    "text": "7 units"
+   },
+   {
+    "id": "C",
+    "text": "8 units"
+   },
+   {
+    "id": "D",
+    "text": "9 units"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add both: 3 fish + 3 crabs = 42, so 1 fish + 1 crab = 14. Then crab = 22 − 14 = 8 units. (Check: 2 × 6 + 8 = 20. ✓)",
+  "reasoning": "Combining equations, then subtracting.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_072",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A box weighs 2 kg. The box with a toy inside weighs 9 kg. How heavy is the toy?",
+  "options": [
+   {
+    "id": "A",
+    "text": "7 kg"
+   },
+   {
+    "id": "B",
+    "text": "8 kg"
+   },
+   {
+    "id": "C",
+    "text": "11 kg"
+   },
+   {
+    "id": "D",
+    "text": "6 kg"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Box + toy = 9 kg and box = 2 kg, so toy = 9 − 2 = 7 kg.",
+  "reasoning": "Finding one unknown from a pair total.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_073",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "2 red cubes and 1 blue cube weigh 15 units. 1 red cube and 2 blue cubes weigh 18 units. All red cubes are identical and all blue cubes are identical. How heavy is 1 blue cube?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5 units"
+   },
+   {
+    "id": "B",
+    "text": "6 units"
+   },
+   {
+    "id": "C",
+    "text": "7 units"
+   },
+   {
+    "id": "D",
+    "text": "8 units"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add both: 3 red + 3 blue = 33, so 1 red + 1 blue = 11. Then blue = 18 − 11 = 7 units. (Check: 2 × 4 + 7 = 15. ✓)",
+  "reasoning": "Combining equations, then subtracting.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_074",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "2 red marbles and 1 blue marble weigh 21 units. 1 red marble and 2 blue marbles weigh 24 units. How heavy is 1 blue marble?",
+  "options": [
+   {
+    "id": "A",
+    "text": "7 units"
+   },
+   {
+    "id": "B",
+    "text": "8 units"
+   },
+   {
+    "id": "C",
+    "text": "9 units"
+   },
+   {
+    "id": "D",
+    "text": "10 units"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add both: 3 red + 3 blue = 45, so 1 red + 1 blue = 15. Then blue = 24 − 15 = 9 units. (Check: 2 × 6 + 9 = 21. ✓)",
+  "reasoning": "Combining equations, then subtracting.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_075",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "P + Q = 18, Q + R = 24, P + R = 20. What is the value of the lightest letter?",
+  "options": [
+   {
+    "id": "A",
+    "text": "7"
+   },
+   {
+    "id": "B",
+    "text": "9"
+   },
+   {
+    "id": "C",
+    "text": "11"
+   },
+   {
+    "id": "D",
+    "text": "13"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add all three: 2 × (P + Q + R) = 18 + 24 + 20 = 62, so P + Q + R = 31. Then P = 31 − 24 = 7, Q = 31 − 20 = 11, R = 31 − 18 = 13. Lightest is P = 7.",
+  "reasoning": "Combining all pair totals, then subtracting.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_076",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "3 cats and 2 dogs weigh 31 kg. 2 cats and 3 dogs weigh 29 kg. All cats are identical and all dogs are identical. How heavy is 1 dog?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5 kg"
+   },
+   {
+    "id": "B",
+    "text": "6 kg"
+   },
+   {
+    "id": "C",
+    "text": "7 kg"
+   },
+   {
+    "id": "D",
+    "text": "4 kg"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add both: 5 cats + 5 dogs = 60, so 1 cat + 1 dog = 12. Then cat = 31 − 2 × 12 = 7, and dog = 12 − 7 = 5 kg. (Check: 2 × 7 + 3 × 5 = 29. ✓)",
+  "reasoning": "Combining equations, then subtracting.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_077",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "2 bags and 1 toy weigh 22 units. 1 bag and 2 toys weigh 20 units. How heavy is 1 bag?",
+  "options": [
+   {
+    "id": "A",
+    "text": "6 units"
+   },
+   {
+    "id": "B",
+    "text": "7 units"
+   },
+   {
+    "id": "C",
+    "text": "8 units"
+   },
+   {
+    "id": "D",
+    "text": "9 units"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add both: 3 bags + 3 toys = 42, so 1 bag + 1 toy = 14. Then bag = 22 − 14 = 8 units. (Check: 8 + 2 × 6 = 20. ✓)",
+  "reasoning": "Combining equations, then subtracting.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_078",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Master",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A + B + C = 24. A + A + B = 30. B + C + C = 26. What is the value of B?",
+  "options": [
+   {
+    "id": "A",
+    "text": "8"
+   },
+   {
+    "id": "B",
+    "text": "9"
+   },
+   {
+    "id": "C",
+    "text": "10"
+   },
+   {
+    "id": "D",
+    "text": "11"
+   }
+  ],
+  "answer": "C",
+  "explanation": "From the first two: the second has one extra A, worth 30 − 24 = 6, so A = 6. Then B + C = 24 − 6 = 18. From the third: B + 2C = 26, so C = 26 − 18 = 8 and B = 18 − 8 = 10.",
+  "reasoning": "Chaining two elimination steps.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_079",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "2 boxes and 1 teddy weigh 23 units. 1 box and 2 teddies weigh 22 units. How heavy is 1 teddy?",
+  "options": [
+   {
+    "id": "A",
+    "text": "7 units"
+   },
+   {
+    "id": "B",
+    "text": "8 units"
+   },
+   {
+    "id": "C",
+    "text": "9 units"
+   },
+   {
+    "id": "D",
+    "text": "6 units"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add both: 3 boxes + 3 teddies = 45, so 1 box + 1 teddy = 15. Then teddy = 22 − 15 = 7 units. (Check: 2 × 8 + 7 = 23. ✓)",
+  "reasoning": "Combining equations, then subtracting.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_080",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A duck and a chicken weigh 10 kg altogether. The duck weighs 6 kg. How heavy is the chicken?",
+  "options": [
+   {
+    "id": "A",
+    "text": "4 kg"
+   },
+   {
+    "id": "B",
+    "text": "5 kg"
+   },
+   {
+    "id": "C",
+    "text": "6 kg"
+   },
+   {
+    "id": "D",
+    "text": "3 kg"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Duck + chicken = 10 kg and duck = 6 kg, so chicken = 10 − 6 = 4 kg.",
+  "reasoning": "Finding one unknown from a pair total.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_081",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "3 pencils and 1 eraser weigh 14 units. 1 pencil and 3 erasers weigh 18 units. How heavy is 1 eraser?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5 units"
+   },
+   {
+    "id": "B",
+    "text": "6 units"
+   },
+   {
+    "id": "C",
+    "text": "7 units"
+   },
+   {
+    "id": "D",
+    "text": "4 units"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add both: 4 pencils + 4 erasers = 32, so 1 pencil + 1 eraser = 8. Then pencil = 14 − 8 = 6? No: 3 pencils + 1 eraser = 14, and pencil + eraser = 8, so 2 pencils = 6, pencil = 3, eraser = 8 − 3 = 5 units. (Check: 3 + 3 × 5 = 18. ✓)",
+  "reasoning": "Combining equations, then subtracting.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_082",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "A + B = 25, B + C = 30, A + C = 27. What is the value of C?",
+  "options": [
+   {
+    "id": "A",
+    "text": "14"
+   },
+   {
+    "id": "B",
+    "text": "15"
+   },
+   {
+    "id": "C",
+    "text": "16"
+   },
+   {
+    "id": "D",
+    "text": "17"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add all three: 2 × (A + B + C) = 25 + 30 + 27 = 82, so A + B + C = 41. Then C = 41 − 25 = 16.",
+  "reasoning": "Combining all pair totals, then subtracting.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_083",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A watermelon and a pineapple weigh 17 kg. Two watermelons and a pineapple weigh 26 kg. How heavy is 1 watermelon?",
+  "options": [
+   {
+    "id": "A",
+    "text": "9 kg"
+   },
+   {
+    "id": "B",
+    "text": "10 kg"
+   },
+   {
+    "id": "C",
+    "text": "11 kg"
+   },
+   {
+    "id": "D",
+    "text": "8 kg"
+   }
+  ],
+  "answer": "A",
+  "explanation": "The extra watermelon adds 26 − 17 = 9 kg, so 1 watermelon weighs 9 kg.",
+  "reasoning": "Isolating one unknown by comparing two weighings.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_084",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "5 identical stickers weigh 35 g altogether. How heavy is 1 sticker?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5 g"
+   },
+   {
+    "id": "B",
+    "text": "6 g"
+   },
+   {
+    "id": "C",
+    "text": "7 g"
+   },
+   {
+    "id": "D",
+    "text": "8 g"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Five identical stickers weigh 35 g, so 1 sticker weighs 35 ÷ 5 = 7 g.",
+  "reasoning": "Sharing a total equally.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_085",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "4 stars and 1 moon weigh 29 units. 1 star and 4 moons weigh 26 units. All stars are identical and all moons are identical. How heavy is 1 star?",
+  "options": [
+   {
+    "id": "A",
+    "text": "4 units"
+   },
+   {
+    "id": "B",
+    "text": "5 units"
+   },
+   {
+    "id": "C",
+    "text": "6 units"
+   },
+   {
+    "id": "D",
+    "text": "7 units"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add both: 5 stars + 5 moons = 55, so 1 star + 1 moon = 11. Then 3 stars = 29 − 11 = 18, so 1 star = 6 units. (Check: 6 + 4 × 5 = 26. ✓)",
+  "reasoning": "Combining equations, then subtracting.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_086",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.4",
+  "archetype": "chain_comparison",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Ali is taller than Bala. Bala is taller than Chen. Who is the shortest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ali"
+   },
+   {
+    "id": "B",
+    "text": "Bala"
+   },
+   {
+    "id": "C",
+    "text": "Chen"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Ali > Bala > Chen in height, so Chen is the shortest.",
+  "reasoning": "Chaining two comparisons.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "comparison"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_087",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.4",
+  "archetype": "chain_comparison",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Box A is heavier than Box B. Box B is heavier than Box C. Which box is the lightest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Box A"
+   },
+   {
+    "id": "B",
+    "text": "Box B"
+   },
+   {
+    "id": "C",
+    "text": "Box C"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "C",
+  "explanation": "A > B > C in weight, so Box C is the lightest.",
+  "reasoning": "Chaining two comparisons.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "comparison"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_088",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.4",
+  "archetype": "chain_comparison",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Dan is older than Ann. Ann is older than Ben. Ben is older than Cara. Who is the oldest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ann"
+   },
+   {
+    "id": "B",
+    "text": "Ben"
+   },
+   {
+    "id": "C",
+    "text": "Cara"
+   },
+   {
+    "id": "D",
+    "text": "Dan"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Dan > Ann > Ben > Cara in age, so Dan is the oldest.",
+  "reasoning": "Chaining three comparisons.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "comparison"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_089",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.4",
+  "archetype": "chain_comparison",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Raju scored more than Meera. Meera scored more than Siti. Who scored the least?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Raju"
+   },
+   {
+    "id": "B",
+    "text": "Meera"
+   },
+   {
+    "id": "C",
+    "text": "Siti"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Raju > Meera > Siti in score, so Siti scored the least.",
+  "reasoning": "Chaining two comparisons.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "comparison"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_090",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.4",
+  "archetype": "chain_comparison",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "In a race, Amy finished ahead of Beth. Beth finished ahead of Cleo. Cleo finished ahead of Dana. Who came third?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Amy"
+   },
+   {
+    "id": "B",
+    "text": "Beth"
+   },
+   {
+    "id": "C",
+    "text": "Cleo"
+   },
+   {
+    "id": "D",
+    "text": "Dana"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Order: 1st Amy, 2nd Beth, 3rd Cleo, 4th Dana. So Cleo came third.",
+  "reasoning": "Building a full order from chained clues.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "comparison"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_091",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.4",
+  "archetype": "chain_comparison",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Ella is 2 years older than Farah. Farah is 3 years older than Gina. Holly is 1 year younger than Ella. Who is the second oldest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ella"
+   },
+   {
+    "id": "B",
+    "text": "Farah"
+   },
+   {
+    "id": "C",
+    "text": "Gina"
+   },
+   {
+    "id": "D",
+    "text": "Holly"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Set Gina = G. Then Farah = G + 3, Ella = G + 5, Holly = G + 4. Order: Ella (G+5) > Holly (G+4) > Farah (G+3) > Gina. Second oldest is Holly.",
+  "reasoning": "Combining age differences into one order.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "comparison"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_092",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.4",
+  "archetype": "chain_comparison",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "X is greater than Y. Y is greater than Z. W is greater than X. Which is the smallest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "W"
+   },
+   {
+    "id": "B",
+    "text": "X"
+   },
+   {
+    "id": "C",
+    "text": "Y"
+   },
+   {
+    "id": "D",
+    "text": "Z"
+   }
+  ],
+  "answer": "D",
+  "explanation": "W > X > Y > Z, so Z is the smallest.",
+  "reasoning": "Chaining three comparisons.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "comparison"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_093",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.4",
+  "archetype": "chain_comparison",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Five houses stand in a row. The red house is just to the left of the blue house. The blue house is just to the left of the green house. The yellow house is at one end. The green house is next to the yellow house. Which house is in the middle?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Blue"
+   },
+   {
+    "id": "B",
+    "text": "Green"
+   },
+   {
+    "id": "C",
+    "text": "Yellow"
+   },
+   {
+    "id": "D",
+    "text": "Red"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Red, blue, green sit consecutively in that order, and green touches yellow at an end. The only fitting row is [5th house]-Red-Blue-Green-Yellow. The middle (3rd) house is Blue.",
+  "reasoning": "Placing a consecutive block with end constraints.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "comparison"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_094",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.4",
+  "archetype": "chain_comparison",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "J is faster than F. F is faster than G. G is faster than H. H is faster than I. Who is the third fastest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "J"
+   },
+   {
+    "id": "B",
+    "text": "F"
+   },
+   {
+    "id": "C",
+    "text": "G"
+   },
+   {
+    "id": "D",
+    "text": "H"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Order fastest to slowest: J, F, G, H, I. Third fastest is G.",
+  "reasoning": "Building a full order from chained clues.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "comparison"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_095",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.4",
+  "archetype": "chain_comparison",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Book P is thicker than Book Q. Book Q is thicker than Book R. Book R is thicker than Book S. Which book is the thinnest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Book P"
+   },
+   {
+    "id": "B",
+    "text": "Book Q"
+   },
+   {
+    "id": "C",
+    "text": "Book R"
+   },
+   {
+    "id": "D",
+    "text": "Book S"
+   }
+  ],
+  "answer": "D",
+  "explanation": "P > Q > R > S in thickness, so Book S is the thinnest.",
+  "reasoning": "Chaining three comparisons.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "comparison"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_096",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.4",
+  "archetype": "chain_comparison",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Kate has more stickers than Jill. Jill has more than Priya. Priya has more than Siti. Who has the fewest stickers?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Kate"
+   },
+   {
+    "id": "B",
+    "text": "Jill"
+   },
+   {
+    "id": "C",
+    "text": "Priya"
+   },
+   {
+    "id": "D",
+    "text": "Siti"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Kate > Jill > Priya > Siti, so Siti has the fewest stickers.",
+  "reasoning": "Chaining three comparisons.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "comparison"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_097",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.4",
+  "archetype": "chain_comparison",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Tree A is taller than Tree B. Tree C is shorter than Tree B but taller than Tree D. Tree E is taller than Tree A. Which tree is the second tallest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Tree A"
+   },
+   {
+    "id": "B",
+    "text": "Tree B"
+   },
+   {
+    "id": "C",
+    "text": "Tree C"
+   },
+   {
+    "id": "D",
+    "text": "Tree E"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Order tallest to shortest: E > A > B > C > D. Second tallest is Tree A.",
+  "reasoning": "Merging two comparison chains.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "comparison"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_098",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.4",
+  "archetype": "chain_comparison",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "M is heavier than N. N is heavier than O. P is lighter than O. Q is heavier than M. Who is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "M"
+   },
+   {
+    "id": "B",
+    "text": "N"
+   },
+   {
+    "id": "C",
+    "text": "O"
+   },
+   {
+    "id": "D",
+    "text": "Q"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Order heaviest to lightest: Q > M > N > O > P. So Q is the heaviest.",
+  "reasoning": "Merging two comparison chains.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "comparison"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_099",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.4",
+  "archetype": "chain_comparison",
+  "level": "Master",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Five pupils A, B, C, D, E stand in a line. E is first. A is in front of B. B is just in front of C. D is behind C. Who is third in line?",
+  "options": [
+   {
+    "id": "A",
+    "text": "B"
+   },
+   {
+    "id": "B",
+    "text": "C"
+   },
+   {
+    "id": "C",
+    "text": "D"
+   },
+   {
+    "id": "D",
+    "text": "A"
+   }
+  ],
+  "answer": "A",
+  "explanation": "E is 1st. A, B, C must be consecutive with D after C, filling positions 2–5 uniquely: E, A, B, C, D. Third is B.",
+  "reasoning": "Placing a consecutive block with end constraints.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "comparison"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_NUM_100",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.4",
+  "archetype": "chain_comparison",
+  "level": "Master",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Five boxes P, Q, R, S, T are stacked. P is above Q. T is between P and Q. R is just below Q. S is below R. Which box is in the middle of the stack?",
+  "options": [
+   {
+    "id": "A",
+    "text": "P"
+   },
+   {
+    "id": "B",
+    "text": "T"
+   },
+   {
+    "id": "C",
+    "text": "Q"
+   },
+   {
+    "id": "D",
+    "text": "R"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Top to bottom: P, T, Q, R, S — a single fixed order. The middle (3rd) box is Q.",
+  "reasoning": "Building a total order from stacked constraints.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "numerical",
+   "comparison"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ }
+]

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="24" font-size="16" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">L-tile rotated 90 deg clockwise</text>
+<g>
+<rect x="30" y="60" width="36" height="36" fill="#2b2d42" stroke="#ffffff" stroke-width="2"/>
+<rect x="66" y="60" width="36" height="36" fill="#2b2d42" stroke="#ffffff" stroke-width="2"/>
+<rect x="102" y="60" width="36" height="36" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<rect x="30" y="96" width="36" height="36" fill="#2b2d42" stroke="#ffffff" stroke-width="2"/>
+<rect x="66" y="96" width="36" height="36" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<rect x="102" y="96" width="36" height="36" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<rect x="30" y="132" width="36" height="36" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<rect x="66" y="132" width="36" height="36" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<rect x="102" y="132" width="36" height="36" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<text x="84" y="195" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">before</text>
+</g>
+<text x="180" y="130" font-size="28" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">→</text>
+<g>
+<rect x="222" y="60" width="36" height="36" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<rect x="258" y="60" width="36" height="36" fill="#2b2d42" stroke="#ffffff" stroke-width="2"/>
+<rect x="294" y="60" width="36" height="36" fill="#2b2d42" stroke="#ffffff" stroke-width="2"/>
+<rect x="222" y="96" width="36" height="36" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<rect x="258" y="96" width="36" height="36" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<rect x="294" y="96" width="36" height="36" fill="#2b2d42" stroke="#ffffff" stroke-width="2"/>
+<rect x="222" y="132" width="36" height="36" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<rect x="258" y="132" width="36" height="36" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<rect x="294" y="132" width="36" height="36" fill="#ffffff" stroke="#2b2d42" stroke-width="2"/>
+<text x="276" y="195" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">after?</text>
+</g>
+</svg>

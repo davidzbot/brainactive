@@ -1,0 +1,601 @@
+id,domain,skill,archetype,level,difficulty,answer_coder,answer_independent,answer_match,solve_note,status,struct_issues,quality_issues,guideline_issues,question_preview
+NEW_LOG_001,logical_reasoning,2.1,linear_order,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Four children queue for ice cream: Ali, Mei, Raj, Siti in that order. Who is jus"
+NEW_LOG_002,logical_reasoning,2.1,linear_order,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Tom finished 1st in a race, Aisha finished 2nd, and Ben finished 3rd. Who finish"
+NEW_LOG_003,logical_reasoning,2.1,linear_order,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,Kim lives above Lee. Lee lives above Tan. Who lives in the middle floor?
+NEW_LOG_004,logical_reasoning,2.1,linear_order,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,Book A sits on top of Book B. Book B sits on top of Book C. Which book is at the
+NEW_LOG_005,logical_reasoning,2.1,linear_order,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Sara, Devi, Ming and Raj stand in a queue in that order. Who is third in the que"
+NEW_LOG_006,logical_reasoning,2.1,linear_order,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,The red car is ahead of the blue car. The blue car is ahead of the green car. Wh
+NEW_LOG_007,logical_reasoning,2.1,linear_order,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,Grandpa is the oldest in the family. Father is younger than Grandpa but older th
+NEW_LOG_008,logical_reasoning,2.1,linear_order,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,A is taller than B. B is taller than C. C is taller than D. Who is the second ta
+NEW_LOG_009,logical_reasoning,2.1,linear_order,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"Five children queue up. Lin is 4th. Two children stand between Lin and Kumar, an"
+NEW_LOG_010,logical_reasoning,2.1,linear_order,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"In a bus queue, Chen is just behind Bala. Bala is just behind Devi. Devi is firs"
+NEW_LOG_011,logical_reasoning,2.1,linear_order,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,Five runners race. Devi beats Ming. Raj beats Devi. Siti beats Raj. Kumar beats 
+NEW_LOG_012,logical_reasoning,2.1,linear_order,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"In a 4-storey flat, Goh lives above Tan. Tan lives above Lim. Koh lives below Li"
+NEW_LOG_013,logical_reasoning,2.1,linear_order,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,Priya is 4th from the front of a queue and 3rd from the back. How many people ar
+NEW_LOG_014,logical_reasoning,2.1,linear_order,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,Four chairs in a row: A sits left of B. B sits left of C. D sits right of C. Who
+NEW_LOG_015,logical_reasoning,2.1,linear_order,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,Rina runs faster than Siti but slower than Mei. Who is the slowest runner?
+NEW_LOG_016,logical_reasoning,2.1,linear_order,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,A tower of blocks: the red block is above the blue block. The blue block is abov
+NEW_LOG_017,logical_reasoning,2.1,linear_order,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Three lockers in a row belong to Asha, Bala and Devi. Asha's locker is between t"
+NEW_LOG_018,logical_reasoning,2.1,linear_order,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,Three swimmers race. X touches the wall before Y. Y touches before Z. If gold go
+NEW_LOG_019,logical_reasoning,2.1,linear_order,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,L is older than M. N is younger than M. O is older than L. Who is the youngest?
+NEW_LOG_020,logical_reasoning,2.1,linear_order,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,Ravi is 5th from the front of a queue and 3rd from the back. How many people are
+NEW_LOG_021,logical_reasoning,2.1,linear_order,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,Four runners finish a race. A finished 2nd. B finished just behind A. C finished
+NEW_LOG_022,logical_reasoning,2.1,linear_order,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,"A 5-storey block has one family per floor: Mei, Raj, Siti, Kumar and Devi. Mei l"
+NEW_LOG_023,logical_reasoning,2.1,linear_order,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,"Five children Ann, Ben, Cara, Devi and Eve queue up. Ann is 2nd. Ben is two plac"
+NEW_LOG_024,logical_reasoning,2.1,linear_order,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,Five friends compare heights. A is taller than B and C. B is taller than D. C is
+NEW_LOG_025,logical_reasoning,2.1,linear_order,Master,hard,D,N/A,N/A,Checked structurally,PASS,,,,Six seats 1–6 in a row. A sits just left of B. C sits just right of B. D sits at
+NEW_LOG_026,logical_reasoning,2.2,constraint_placement,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Ali, Bala and Devi wear red, blue and green shirts. Ali wears red. Bala does not"
+NEW_LOG_027,logical_reasoning,2.2,constraint_placement,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Kim, Lee and Raj own a cat, a dog and a rabbit. Lee owns the cat. Kim does not o"
+NEW_LOG_028,logical_reasoning,2.2,constraint_placement,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Three lockers 1, 2 and 3 hold a ball, a doll and a toy car. The ball is in locke"
+NEW_LOG_029,logical_reasoning,2.2,constraint_placement,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,Swimming is on Monday. Art and dancing are on Tuesday and Wednesday. Dancing is 
+NEW_LOG_030,logical_reasoning,2.2,constraint_placement,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Raj's favourite colour is red, blue or green. It is not red. It is not blue. Wha"
+NEW_LOG_031,logical_reasoning,2.2,constraint_placement,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Ann, Ben and Cara like apples, bananas and cherries. Ann likes apples. Ben does "
+NEW_LOG_032,logical_reasoning,2.2,constraint_placement,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Dan, Eve and Finn play soccer, swimming and badminton. Eve plays badminton. Dan "
+NEW_LOG_033,logical_reasoning,2.2,constraint_placement,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"A, B and C drink tea, coffee and milo. A drinks tea. B does not drink coffee. Wh"
+NEW_LOG_034,logical_reasoning,2.2,constraint_placement,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"A, B and C sit in chairs 1, 2 and 3. B sits in chair 2. A does not sit in chair "
+NEW_LOG_035,logical_reasoning,2.2,constraint_placement,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Umar, Sara and Vikram own a parrot, a hamster and a turtle. Umar's pet can fly. "
+NEW_LOG_036,logical_reasoning,2.2,constraint_placement,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Priya, Kumar and Liang each love a different subject: English, Maths and Science"
+NEW_LOG_037,logical_reasoning,2.2,constraint_placement,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"A, B, C and D wear red, blue, green and yellow caps. A wears red. B does not wea"
+NEW_LOG_038,logical_reasoning,2.2,constraint_placement,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Mei, Raj, Siti and Devi play piano, violin, guitar and drums. Mei plays the pian"
+NEW_LOG_039,logical_reasoning,2.2,constraint_placement,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"Art, Music and PE lessons are on Monday, Tuesday and Wednesday. Art is on Monday"
+NEW_LOG_040,logical_reasoning,2.2,constraint_placement,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"Three boxes — red, blue and green — hold stickers, marbles and cards. The red bo"
+NEW_LOG_041,logical_reasoning,2.2,constraint_placement,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Four pupils sit in chairs 1, 2, 3 and 4. A sits in chair 1. D is not in chair 2 "
+NEW_LOG_042,logical_reasoning,2.2,constraint_placement,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"W, X, Y and Z were born in January, February, March and April. W was born in Jan"
+NEW_LOG_043,logical_reasoning,2.2,constraint_placement,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"E, F, G and H love durian, mango, papaya and rambutan. E loves durian. F does no"
+NEW_LOG_044,logical_reasoning,2.2,constraint_placement,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Ann, Ben, Cara and Devi own a cat, a dog, a rabbit and a fish. Ann owns the fish"
+NEW_LOG_045,logical_reasoning,2.2,constraint_placement,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"Four teams — Lions, Tigers, Bears and Wolves — finished 1st to 4th. Lions did no"
+NEW_LOG_046,logical_reasoning,2.2,constraint_placement,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,"P, Q, R and S like red, blue, green and yellow. P does not like red or blue. Q l"
+NEW_LOG_047,logical_reasoning,2.2,constraint_placement,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,"A, B, C and D sit in a row of four chairs. B sits between A and C. D sits at an "
+NEW_LOG_048,logical_reasoning,2.2,constraint_placement,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,"Four pupils queue for lunch: E, F, G and H. F stands just behind E. G stands ahe"
+NEW_LOG_049,logical_reasoning,2.2,constraint_placement,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,"A, B, C and D play guitar, piano, violin and drums. A plays the guitar. B does n"
+NEW_LOG_050,logical_reasoning,2.2,constraint_placement,Master,hard,D,N/A,N/A,Checked structurally,PASS,,,,"Five pupils A, B, C, D and E each bring one fruit: apple, banana, cherry, date a"
+NEW_LOG_051,logical_reasoning,2.3,conditional,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,"If it rains, the football match is cancelled. It is raining now. What happens to"
+NEW_LOG_052,logical_reasoning,2.3,conditional,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,All cats have tails. Mimi is a cat. What must be true?
+NEW_LOG_053,logical_reasoning,2.3,conditional,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,"If the traffic light is green, cars may go. The light is green now. What may the"
+NEW_LOG_054,logical_reasoning,2.3,conditional,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,All squares have 4 sides. This shape is a square. How many sides does it have?
+NEW_LOG_055,logical_reasoning,2.3,conditional_contrapositive,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"If Ben is late, the bus leaves without him. The bus did not leave without Ben. W"
+NEW_LOG_056,logical_reasoning,2.3,conditional_contrapositive,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"If it is Monday, Kim has swimming. Kim does not have swimming today. What can we"
+NEW_LOG_057,logical_reasoning,2.3,conditional_contrapositive,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,All pupils in Class 3A can swim. Raj cannot swim. Is Raj in Class 3A?
+NEW_LOG_058,logical_reasoning,2.3,conditional_contrapositive,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"If a number is even, it can be divided by 2 with nothing left over. 15 cannot be"
+NEW_LOG_059,logical_reasoning,2.3,conditional,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"If Devi studied, she passed the test. Devi passed the test. Did Devi study?"
+NEW_LOG_060,logical_reasoning,2.3,conditional,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"If it rains, the ground gets wet. This morning the ground is wet. Did it rain la"
+NEW_LOG_061,logical_reasoning,2.3,conditional_contrapositive,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"If Figure Y is a triangle, then Figure Y has 3 sides. Figure Z does not have 3 s"
+NEW_LOG_062,logical_reasoning,2.3,conditional_contrapositive,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,All heroes in the story are brave. Kiko is not brave. Is Kiko a hero in the stor
+NEW_LOG_063,logical_reasoning,2.3,conditional_contrapositive,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"If Maya eats breakfast, she is not hungry at 10am. Maya is hungry at 10am. Did s"
+NEW_LOG_064,logical_reasoning,2.3,conditional_contrapositive,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"If the key fits, the box opens. The box did not open. Did the key fit?"
+NEW_LOG_065,logical_reasoning,2.3,conditional,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Rule: If A is true, then B is true. We discover that B is true. Must A be true?"
+NEW_LOG_066,logical_reasoning,2.3,conditional_contrapositive,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,All multiples of 10 end with the digit 0. The number 347 does not end with 0. Is
+NEW_LOG_067,logical_reasoning,2.3,chained_conditionals,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,"If it rains, Ali carries an umbrella. If Ali carries an umbrella, he walks to sc"
+NEW_LOG_068,logical_reasoning,2.3,chained_conditionals,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,"If Ben finishes his work, he may play outside. If he may play outside, he choose"
+NEW_LOG_069,logical_reasoning,2.3,chained_conditionals,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,"If the tank is full, the light is green. If the light is green, the pump stops. "
+NEW_LOG_070,logical_reasoning,2.3,chained_conditionals,Master,hard,D,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,"If A comes to the party, B comes. If B comes, C comes. C did not come. Who can w"
+NEW_LOG_071,logical_reasoning,2.4,classification,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Which one is different: apple, banana, orange, car?"
+NEW_LOG_072,logical_reasoning,2.4,classification,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Which number is different: 2, 4, 6, 7?"
+NEW_LOG_073,logical_reasoning,2.4,classification,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Which one is different: circle, square, triangle, ball?"
+NEW_LOG_074,logical_reasoning,2.4,classification,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Which one is different: dog, cat, fish, cow?"
+NEW_LOG_075,logical_reasoning,2.4,classification,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Which one is different: Monday, Tuesday, Wednesday, January?"
+NEW_LOG_076,logical_reasoning,2.4,classification,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Which number is different: 5, 10, 15, 12?"
+NEW_LOG_077,logical_reasoning,2.4,classification,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Which number is different: 3, 6, 9, 10?"
+NEW_LOG_078,logical_reasoning,2.4,classification,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Which shape is different: square, rectangle, rhombus, triangle?"
+NEW_LOG_079,logical_reasoning,2.4,classification,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Which number is different: 11, 13, 15, 17?"
+NEW_LOG_080,logical_reasoning,2.4,classification,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"Which animal is different: ant, spider, bee, butterfly?"
+NEW_LOG_081,logical_reasoning,2.4,classification,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Which number is different: 4, 9, 16, 20?"
+NEW_LOG_082,logical_reasoning,2.4,classification,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Which instrument is different: piano, violin, guitar, drum?"
+NEW_LOG_083,logical_reasoning,2.4,classification,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Which number is different: 21, 33, 44, 25?"
+NEW_LOG_084,logical_reasoning,2.4,classification,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Which shape is different: triangle, square, pentagon, circle?"
+NEW_LOG_085,logical_reasoning,2.4,classification,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Which number is different: 8, 27, 64, 50?"
+NEW_LOG_086,logical_reasoning,2.4,classification,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Which number is different: 36, 49, 64, 72?"
+NEW_LOG_087,logical_reasoning,2.4,classification,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,"Which number is different: 121, 144, 169, 180?"
+NEW_LOG_088,logical_reasoning,2.4,classification,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,"Which fraction is different: 1/2, 2/4, 3/6, 2/3?"
+NEW_LOG_089,logical_reasoning,2.4,classification,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,"Which number is different: 1, 8, 27, 36?"
+NEW_LOG_090,logical_reasoning,2.4,classification,Master,hard,D,N/A,N/A,Checked structurally,PASS,,,,Three of these numbers can be made by multiplying 2 by itself several times. Whi
+NEW_LOG_091,logical_reasoning,2.5,syllogism,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,All dogs bark. Bruno is a dog. What does Bruno do?
+NEW_LOG_092,logical_reasoning,2.5,syllogism,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,No fish can walk on land. Nemo is a fish. Can Nemo walk on land?
+NEW_LOG_093,logical_reasoning,2.5,syllogism,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,All pens in the box are blue. This pen is red. Is this pen from the box?
+NEW_LOG_094,logical_reasoning,2.5,syllogism_particular,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,Some boxes in the store contain toys. Box X is a box in the store. Using only th
+NEW_LOG_095,logical_reasoning,2.5,syllogism,Think,medium,A,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,All apples are fruits. All fruits grow on plants. Do apples grow on plants?
+NEW_LOG_096,logical_reasoning,2.5,syllogism,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,No cats are dogs. Tom is a cat. Is Tom a dog?
+NEW_LOG_097,logical_reasoning,2.5,syllogism_particular,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,All violins are instruments. Some instruments are made of wood. Using only these
+NEW_LOG_098,logical_reasoning,2.5,syllogism,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,All teachers in the school love reading. Mrs Tan does not love reading. Is Mrs T
+NEW_LOG_099,logical_reasoning,2.5,syllogism,Master,hard,A,N/A,N/A,Checked structurally,PASS,,,,All squares are rectangles. No rectangle is a circle. Is any square a circle?
+NEW_LOG_100,logical_reasoning,2.5,syllogism,Master,hard,D,N/A,N/A,Checked structurally,PASS,,,,Two sisters: one always tells the truth and the other always lies. Mei says: 'Su
+NEW_NUM_001,numerical_reasoning,1.1,number_sequence,Explore,easy,A,A,YES,"Constant diff +4, next = 21",PASS,,,,"Find the next number: 5, 9, 13, 17, ___?"
+NEW_NUM_002,numerical_reasoning,1.1,number_sequence,Explore,easy,D,D,YES,"Ratio ×2, next = 16",PASS,,,,"A lily pad doubles every day: 1 pad, 2 pads, 4 pads, 8 pads. How many pads on th"
+NEW_NUM_003,numerical_reasoning,1.1,number_sequence,Explore,easy,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the missing number: 40, 36, 32, ___, 24?"
+NEW_NUM_004,numerical_reasoning,1.1,number_sequence,Explore,easy,A,A,YES,"Constant diff +3, next = 17",PASS,,,,"Find the next number: 2, 5, 8, 11, 14, ___?"
+NEW_NUM_005,numerical_reasoning,1.1,number_sequence,Explore,easy,D,D,YES,"Constant diff +-10, next = 60",PASS,,,,"Find the next number: 100, 90, 80, 70, ___?"
+NEW_NUM_006,numerical_reasoning,1.1,number_sequence,Explore,easy,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 1, 9, 25, 49, ___? (Hint: 1×1, 3×3, 5×5, 7×7.)"
+NEW_NUM_007,numerical_reasoning,1.1,number_sequence,Explore,easy,A,N/A,N/A,Could not independently solve,PASS,,,,"Find the missing number: 7, 14, 21, ___, 35?"
+NEW_NUM_008,numerical_reasoning,1.1,number_sequence,Explore,easy,D,D,YES,"Ratio ×0, next = 1",PASS,,,,"Find the next number: 81, 27, 9, 3, ___?"
+NEW_NUM_009,numerical_reasoning,1.1,number_sequence,Explore,easy,D,D,YES,"Constant diff +11, next = 55",PASS,,,,"Find the next number: 11, 22, 33, 44, ___?"
+NEW_NUM_010,numerical_reasoning,1.1,number_sequence,Explore,easy,A,N/A,N/A,Could not independently solve,PASS,,,,"Find the missing number: 3, 7, ___, 15, 19?"
+NEW_NUM_011,numerical_reasoning,1.1,number_sequence,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 2, 6, 12, 20, 30, ___?"
+NEW_NUM_012,numerical_reasoning,1.1,number_sequence,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 5, 7, 12, 19, 31, ___?"
+NEW_NUM_013,numerical_reasoning,1.1,number_sequence,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 3, 4, 7, 11, 18, ___?"
+NEW_NUM_014,numerical_reasoning,1.1,number_sequence,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 1, 3, 7, 15, 31, ___?"
+NEW_NUM_015,numerical_reasoning,1.1,number_sequence,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 4, 7, 13, 25, 49, ___?"
+NEW_NUM_016,numerical_reasoning,1.1,number_sequence,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 100, 92, 83, 73, 62, ___?"
+NEW_NUM_017,numerical_reasoning,1.1,number_sequence,Think,medium,A,A,YES,"Ratio ×3, next = 81",PASS,,,,"Find the next number: 1, 3, 9, 27, ___?"
+NEW_NUM_018,numerical_reasoning,1.1,number_sequence,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 10, 17, 14, 21, 18, ___?"
+NEW_NUM_019,numerical_reasoning,1.1,number_sequence,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 2, 4, 7, 14, 17, ___?"
+NEW_NUM_020,numerical_reasoning,1.1,number_sequence,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 3, 8, 15, 24, 35, ___?"
+NEW_NUM_021,numerical_reasoning,1.1,number_sequence,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 50, 55, 53, 58, 56, ___?"
+NEW_NUM_022,numerical_reasoning,1.1,number_sequence,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 1, 10, 2, 20, 3, 30, 4, ___?"
+NEW_NUM_023,numerical_reasoning,1.1,number_sequence,Think,medium,C,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 4, 7, 12, 19, 28, ___?"
+NEW_NUM_024,numerical_reasoning,1.1,number_sequence,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 2, 4, 10, 28, ___?"
+NEW_NUM_025,numerical_reasoning,1.1,number_sequence,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 7, 8, 12, 21, 37, ___?"
+NEW_NUM_026,numerical_reasoning,1.1,number_sequence,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 3, 9, 6, 18, 15, ___?"
+NEW_NUM_027,numerical_reasoning,1.1,number_sequence,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 2, 3, 5, 9, 17, ___?"
+NEW_NUM_028,numerical_reasoning,1.1,number_sequence,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 1, 5, 4, 8, 7, 11, ___?"
+NEW_NUM_029,numerical_reasoning,1.1,number_sequence,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 200, 180, 162, 146, ___?"
+NEW_NUM_030,numerical_reasoning,1.1,number_sequence,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 6, 12, 20, 30, 42, ___?"
+NEW_NUM_031,numerical_reasoning,1.1,number_sequence,Challenge,hard,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 1, 4, 11, 34, 101, ___?"
+NEW_NUM_032,numerical_reasoning,1.1,number_sequence,Challenge,hard,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 2, 5, 11, 23, 47, ___?"
+NEW_NUM_033,numerical_reasoning,1.1,number_sequence,Challenge,hard,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 1, 2, 5, 14, 41, ___?"
+NEW_NUM_034,numerical_reasoning,1.1,number_sequence,Challenge,hard,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 10, 11, 14, 23, 50, ___?"
+NEW_NUM_035,numerical_reasoning,1.1,number_sequence,Master,hard,D,N/A,N/A,Could not independently solve,PASS,,,,"Find the next number: 10, 12, 15, 20, 27, ___?"
+NEW_NUM_036,numerical_reasoning,1.2,number_analogy,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,3 is to 12 as 5 is to ___?
+NEW_NUM_037,numerical_reasoning,1.2,number_analogy,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,4 is to 11 as 7 is to ___?
+NEW_NUM_038,numerical_reasoning,1.2,number_analogy,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,5 is to 28 as 6 is to ___?
+NEW_NUM_039,numerical_reasoning,1.2,number_analogy,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,2 is to 9 as 4 is to ___?
+NEW_NUM_040,numerical_reasoning,1.2,number_analogy,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,6 is to 15 as 8 is to ___?
+NEW_NUM_041,numerical_reasoning,1.2,number_analogy,Explore,easy,D,N/A,N/A,Could not independently solve,PASS,,,,9 is to 27 as 12 is to ___?
+NEW_NUM_042,numerical_reasoning,1.2,number_analogy,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,10 is to 29 as 7 is to ___?
+NEW_NUM_043,numerical_reasoning,1.2,number_analogy,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,3 is to 11 as 5 is to ___?
+NEW_NUM_044,numerical_reasoning,1.2,number_analogy,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,8 is to 20 as 11 is to ___?
+NEW_NUM_045,numerical_reasoning,1.2,number_analogy,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,1 is to 6 as 3 is to ___?
+NEW_NUM_046,numerical_reasoning,1.2,number_analogy,Explore,easy,D,N/A,N/A,Could not independently solve,PASS,,,,12 is to 4 as 21 is to ___?
+NEW_NUM_047,numerical_reasoning,1.2,number_analogy,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,7 is to 52 as 5 is to ___?
+NEW_NUM_048,numerical_reasoning,1.2,number_analogy,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,4 is to 20 as 9 is to ___?
+NEW_NUM_049,numerical_reasoning,1.2,number_analogy,Explore,easy,A,N/A,N/A,Could not independently solve,PASS,,,,15 is to 12 as 20 is to ___?
+NEW_NUM_050,numerical_reasoning,1.2,number_analogy,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,2 is to 7 as 6 is to ___?
+NEW_NUM_051,numerical_reasoning,1.2,number_analogy,Challenge,hard,D,N/A,N/A,Could not independently solve,PASS,,,,9 is to 82 as 4 is to ___?
+NEW_NUM_052,numerical_reasoning,1.2,number_analogy,Challenge,hard,D,N/A,N/A,Could not independently solve,PASS,,,,6 is to 37 as 8 is to ___?
+NEW_NUM_053,numerical_reasoning,1.2,number_analogy,Challenge,hard,D,N/A,N/A,Could not independently solve,PASS,,,,2 is to 9 as 3 is to ___?
+NEW_NUM_054,numerical_reasoning,1.2,number_analogy,Think,medium,C,N/A,N/A,Could not independently solve,PASS,,,,5 is to 17 as 8 is to ___?
+NEW_NUM_055,numerical_reasoning,1.2,number_analogy,Think,medium,C,N/A,N/A,Could not independently solve,PASS,,,,11 is to 32 as 9 is to ___?
+NEW_NUM_056,numerical_reasoning,1.2,number_analogy,Think,medium,C,N/A,N/A,Could not independently solve,PASS,,,,4 is to 14 as 10 is to ___?
+NEW_NUM_057,numerical_reasoning,1.2,number_analogy,Think,medium,C,N/A,N/A,Could not independently solve,PASS,,,,7 is to 16 as 12 is to ___?
+NEW_NUM_058,numerical_reasoning,1.2,number_analogy,Think,medium,C,N/A,N/A,Could not independently solve,PASS,,,,20 is to 41 as 15 is to ___?
+NEW_NUM_059,numerical_reasoning,1.2,number_analogy,Challenge,hard,C,N/A,N/A,Could not independently solve,PASS,,,,8 is to 65 as 5 is to ___?
+NEW_NUM_060,numerical_reasoning,1.2,number_analogy,Master,hard,C,N/A,N/A,Could not independently solve,PASS,,,,6 is to 217 as 4 is to ___?
+NEW_NUM_061,numerical_reasoning,1.3,weight_system,Explore,easy,A,N/A,N/A,Could not independently solve,PASS,,,,A melon and another identical melon weigh 12 kg altogether. How heavy is 1 melon
+NEW_NUM_062,numerical_reasoning,1.3,weight_system,Explore,easy,A,N/A,N/A,Could not independently solve,PASS,,,,An apple and a pear weigh 9 kg altogether. The apple weighs 4 kg. How heavy is t
+NEW_NUM_063,numerical_reasoning,1.3,weight_system,Explore,easy,A,N/A,N/A,Could not independently solve,PASS,,,,2 identical oranges and 1 apple weigh 11 kg altogether. The apple weighs 3 kg. H
+NEW_NUM_064,numerical_reasoning,1.3,weight_system,Explore,easy,C,N/A,N/A,Could not independently solve,PASS,,,,A cat and a dog weigh 14 kg altogether. The cat weighs 6 kg. How heavy is the do
+NEW_NUM_065,numerical_reasoning,1.3,weight_system,Explore,easy,C,N/A,N/A,Could not independently solve,PASS,,,,3 identical books weigh 15 kg altogether. How heavy is 1 book?
+NEW_NUM_066,numerical_reasoning,1.3,weight_system,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,A triangle and a square weigh 11 units. Two triangles and a square weigh 16 unit
+NEW_NUM_067,numerical_reasoning,1.3,weight_system,Think,medium,C,N/A,N/A,Could not independently solve,PASS,,,,A triangle and a star weigh 13 units. Two triangles and a star weigh 19 units. H
+NEW_NUM_068,numerical_reasoning,1.3,weight_system,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,"Three parcels: A + B = 12 kg, A + C = 15 kg, B + C = 13 kg. How heavy is the hea"
+NEW_NUM_069,numerical_reasoning,1.3,weight_system,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,A box with 2 balls weighs 17 units. The same box with 5 balls weighs 26 units. A
+NEW_NUM_070,numerical_reasoning,1.3,weight_system,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,2 pens and 1 ruler weigh 13 units. 1 pen and 2 rulers weigh 14 units. How heavy 
+NEW_NUM_071,numerical_reasoning,1.3,weight_system,Think,medium,C,N/A,N/A,Could not independently solve,PASS,,,,2 fish and 1 crab weigh 20 units. 1 fish and 2 crabs weigh 22 units. All fish ar
+NEW_NUM_072,numerical_reasoning,1.3,weight_system,Explore,easy,A,N/A,N/A,Could not independently solve,PASS,,,,A box weighs 2 kg. The box with a toy inside weighs 9 kg. How heavy is the toy?
+NEW_NUM_073,numerical_reasoning,1.3,weight_system,Think,medium,C,N/A,N/A,Could not independently solve,PASS,,,,2 red cubes and 1 blue cube weigh 15 units. 1 red cube and 2 blue cubes weigh 18
+NEW_NUM_074,numerical_reasoning,1.3,weight_system,Think,medium,C,N/A,N/A,Could not independently solve,PASS,,,,2 red marbles and 1 blue marble weigh 21 units. 1 red marble and 2 blue marbles 
+NEW_NUM_075,numerical_reasoning,1.3,weight_system,Challenge,hard,A,N/A,N/A,Could not independently solve,PASS,,,,"P + Q = 18, Q + R = 24, P + R = 20. What is the value of the lightest letter?"
+NEW_NUM_076,numerical_reasoning,1.3,weight_system,Challenge,hard,A,N/A,N/A,Could not independently solve,PASS,,,,3 cats and 2 dogs weigh 31 kg. 2 cats and 3 dogs weigh 29 kg. All cats are ident
+NEW_NUM_077,numerical_reasoning,1.3,weight_system,Challenge,hard,C,N/A,N/A,Could not independently solve,PASS,,,,2 bags and 1 toy weigh 22 units. 1 bag and 2 toys weigh 20 units. How heavy is 1
+NEW_NUM_078,numerical_reasoning,1.3,weight_system,Master,hard,C,N/A,N/A,Could not independently solve,PASS,,,,A + B + C = 24. A + A + B = 30. B + C + C = 26. What is the value of B?
+NEW_NUM_079,numerical_reasoning,1.3,weight_system,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,2 boxes and 1 teddy weigh 23 units. 1 box and 2 teddies weigh 22 units. How heav
+NEW_NUM_080,numerical_reasoning,1.3,weight_system,Explore,easy,A,N/A,N/A,Could not independently solve,PASS,,,,A duck and a chicken weigh 10 kg altogether. The duck weighs 6 kg. How heavy is 
+NEW_NUM_081,numerical_reasoning,1.3,weight_system,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,3 pencils and 1 eraser weigh 14 units. 1 pencil and 3 erasers weigh 18 units. Ho
+NEW_NUM_082,numerical_reasoning,1.3,weight_system,Challenge,hard,C,N/A,N/A,Could not independently solve,PASS,,,,"A + B = 25, B + C = 30, A + C = 27. What is the value of C?"
+NEW_NUM_083,numerical_reasoning,1.3,weight_system,Think,medium,A,N/A,N/A,Could not independently solve,PASS,,,,A watermelon and a pineapple weigh 17 kg. Two watermelons and a pineapple weigh 
+NEW_NUM_084,numerical_reasoning,1.3,weight_system,Explore,easy,C,N/A,N/A,Could not independently solve,PASS,,,,5 identical stickers weigh 35 g altogether. How heavy is 1 sticker?
+NEW_NUM_085,numerical_reasoning,1.3,weight_system,Challenge,hard,C,N/A,N/A,Could not independently solve,PASS,,,,4 stars and 1 moon weigh 29 units. 1 star and 4 moons weigh 26 units. All stars 
+NEW_NUM_086,numerical_reasoning,1.4,chain_comparison,Explore,easy,C,N/A,N/A,Could not independently solve,PASS,,,,Ali is taller than Bala. Bala is taller than Chen. Who is the shortest?
+NEW_NUM_087,numerical_reasoning,1.4,chain_comparison,Explore,easy,C,N/A,N/A,Could not independently solve,PASS,,,,Box A is heavier than Box B. Box B is heavier than Box C. Which box is the light
+NEW_NUM_088,numerical_reasoning,1.4,chain_comparison,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,Dan is older than Ann. Ann is older than Ben. Ben is older than Cara. Who is the
+NEW_NUM_089,numerical_reasoning,1.4,chain_comparison,Think,medium,C,N/A,N/A,Could not independently solve,PASS,,,,Raju scored more than Meera. Meera scored more than Siti. Who scored the least?
+NEW_NUM_090,numerical_reasoning,1.4,chain_comparison,Think,medium,C,N/A,N/A,Could not independently solve,PASS,,,,"In a race, Amy finished ahead of Beth. Beth finished ahead of Cleo. Cleo finishe"
+NEW_NUM_091,numerical_reasoning,1.4,chain_comparison,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,Ella is 2 years older than Farah. Farah is 3 years older than Gina. Holly is 1 y
+NEW_NUM_092,numerical_reasoning,1.4,chain_comparison,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,X is greater than Y. Y is greater than Z. W is greater than X. Which is the smal
+NEW_NUM_093,numerical_reasoning,1.4,chain_comparison,Challenge,hard,A,N/A,N/A,Could not independently solve,PASS,,,,Five houses stand in a row. The red house is just to the left of the blue house.
+NEW_NUM_094,numerical_reasoning,1.4,chain_comparison,Challenge,hard,C,N/A,N/A,Could not independently solve,PASS,,,,J is faster than F. F is faster than G. G is faster than H. H is faster than I. 
+NEW_NUM_095,numerical_reasoning,1.4,chain_comparison,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,Book P is thicker than Book Q. Book Q is thicker than Book R. Book R is thicker 
+NEW_NUM_096,numerical_reasoning,1.4,chain_comparison,Think,medium,D,N/A,N/A,Could not independently solve,PASS,,,,Kate has more stickers than Jill. Jill has more than Priya. Priya has more than 
+NEW_NUM_097,numerical_reasoning,1.4,chain_comparison,Challenge,hard,A,N/A,N/A,Could not independently solve,PASS,,,,Tree A is taller than Tree B. Tree C is shorter than Tree B but taller than Tree
+NEW_NUM_098,numerical_reasoning,1.4,chain_comparison,Challenge,hard,D,N/A,N/A,Could not independently solve,PASS,,,,M is heavier than N. N is heavier than O. P is lighter than O. Q is heavier than
+NEW_NUM_099,numerical_reasoning,1.4,chain_comparison,Master,hard,A,N/A,N/A,Could not independently solve,PASS,,,,"Five pupils A, B, C, D, E stand in a line. E is first. A is in front of B. B is "
+NEW_NUM_100,numerical_reasoning,1.4,chain_comparison,Master,hard,C,N/A,N/A,Could not independently solve,PASS,,,,"Five boxes P, Q, R, S, T are stacked. P is above Q. T is between P and Q. R is j"
+NEW_PAT_001,pattern_abstract,5.1,figure_sequence,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,"A row of boxes shows circles: 1 circle, then 2 circles, then 3 circles, then 4 c"
+NEW_PAT_002,pattern_abstract,5.1,figure_sequence,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,"Squares change colour in order: red, blue, red, blue. What colour is the next sq"
+NEW_PAT_003,pattern_abstract,5.1,figure_sequence,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"An arrow turns step by step: up, right, down, left. Which way does it point next"
+NEW_PAT_004,pattern_abstract,5.1,figure_sequence,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,"Dots are grouped: 2 dots, 4 dots, 6 dots, 8 dots. How many dots are in the next "
+NEW_PAT_005,pattern_abstract,5.1,figure_sequence,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,"Triangles appear in groups: 5, 4, 3, 2. How many triangles are in the next group"
+NEW_PAT_006,pattern_abstract,5.1,figure_sequence,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,"Stars change size in order: big, small, big, small. What size is the next star?"
+NEW_PAT_007,pattern_abstract,5.1,figure_sequence,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,"Hearts appear in groups: 1, 3, 5, 7. How many hearts are in the next group?"
+NEW_PAT_008,pattern_abstract,5.1,figure_sequence,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,"Flags change colour in a cycle: red, yellow, blue, red, yellow. What colour is t"
+NEW_PAT_009,pattern_abstract,5.1,figure_sequence,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Dots are grouped: 1, 3, 6, 10. How many dots are in the next group?"
+NEW_PAT_010,pattern_abstract,5.1,figure_sequence,Think,medium,A,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,"An arrow points north-east, then east, then south-east, then south. It keeps tur"
+NEW_PAT_011,pattern_abstract,5.1,figure_sequence,Think,medium,C,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,"Boxes show: 1 circle, 2 squares, 3 circles, 4 squares. What is in the next box?"
+NEW_PAT_012,pattern_abstract,5.1,figure_sequence,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"Shapes appear in order: triangle, square, pentagon, hexagon. What comes next?"
+NEW_PAT_013,pattern_abstract,5.1,figure_sequence,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Dots are grouped: 1, 2, 4, 8. How many dots are in the next group?"
+NEW_PAT_014,pattern_abstract,5.1,figure_sequence,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"Stars are grouped: 2, 5, 8, 11. How many stars are in the next group?"
+NEW_PAT_015,pattern_abstract,5.1,figure_sequence,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Beads follow a colour-count pattern: 1 red, 2 blue, 3 red, 4 blue. What comes ne"
+NEW_PAT_016,pattern_abstract,5.1,figure_sequence,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"An arrow turns anticlockwise: up, left, down, right. Which way does it point nex"
+NEW_PAT_017,pattern_abstract,5.1,figure_sequence,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"A big square contains small squares: 1, then 2, then 3. How many small squares a"
+NEW_PAT_018,pattern_abstract,5.1,figure_sequence,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"A shape is drawn with straight lines: first 3 lines, then 5 lines, then 7 lines,"
+NEW_PAT_019,pattern_abstract,5.1,figure_sequence,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"A circle has a dot that moves clockwise: top, right, bottom. Where is the dot ne"
+NEW_PAT_020,pattern_abstract,5.1,figure_sequence,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Moon shapes grow: new moon (dark), crescent, half moon, gibbous (almost full). W"
+NEW_PAT_021,pattern_abstract,5.1,figure_sequence,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Dots are grouped: 2, 3, 5, 9. How many dots are in the next group? (Hint: look a"
+NEW_PAT_022,pattern_abstract,5.1,figure_sequence,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"Pictures build up: a circle, then circle + square, then circle + square + triang"
+NEW_PAT_023,pattern_abstract,5.1,figure_sequence,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"A 2-by-2 grid of small squares fills up: 1 filled, 2 filled, 3 filled. What come"
+NEW_PAT_024,pattern_abstract,5.1,figure_sequence,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"An arrow flips end to end each step: up, down, up, down. Which way does it point"
+NEW_PAT_025,pattern_abstract,5.1,figure_sequence,Challenge,hard,B,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,"Boxes show: 1 circle, 2 squares, 3 triangles, 4 circles. What is in the next box"
+NEW_PAT_026,pattern_abstract,5.1,figure_sequence,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,"Dot arrays form squares: 4 dots (2 by 2), 9 dots (3 by 3), 16 dots (4 by 4). How"
+NEW_PAT_027,pattern_abstract,5.1,figure_sequence,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,An arrow rotates 90 degrees clockwise each step and gains one dot each step: up 
+NEW_PAT_028,pattern_abstract,5.1,figure_sequence,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,"Beads follow a colour cycle (red, yellow, blue) with growing counts: 1 red, 2 ye"
+NEW_PAT_029,pattern_abstract,5.1,figure_sequence,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,"Shapes gain sides and dots: triangle with 1 dot, square with 2 dots, pentagon wi"
+NEW_PAT_030,pattern_abstract,5.1,figure_sequence,Master,hard,C,N/A,N/A,Checked structurally,PASS,,,,"Figures change in a cycle of two rules: add one side, then add one dot. Start: t"
+NEW_PAT_031,pattern_abstract,5.4,figure_analogy,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,Big circle is to big circle with a small dot inside as small square is to ___?
+NEW_PAT_032,pattern_abstract,5.4,figure_analogy,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,Red triangle is to blue triangle as red square is to ___?
+NEW_PAT_033,pattern_abstract,5.4,figure_analogy,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,1 star is to 2 stars as 1 heart is to ___?
+NEW_PAT_034,pattern_abstract,5.4,figure_analogy,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,White circle is to black circle as white square is to ___?
+NEW_PAT_035,pattern_abstract,5.4,figure_analogy,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,Small triangle is to big triangle as small star is to ___?
+NEW_PAT_036,pattern_abstract,5.4,figure_analogy,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,Plain square is to square with a diagonal line as plain triangle is to ___?
+NEW_PAT_037,pattern_abstract,5.4,figure_analogy,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,2 dots is to 3 dots as 4 dots is to ___?
+NEW_PAT_038,pattern_abstract,5.4,figure_analogy,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,Up arrow is to down arrow as left arrow is to ___?
+NEW_PAT_039,pattern_abstract,5.4,figure_analogy,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Up arrow is to right arrow as left arrow is to ___? (The change is one 90-degree
+NEW_PAT_040,pattern_abstract,5.4,figure_analogy,Think,medium,B,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,Arrow pointing north-east is to arrow pointing north-west as arrow pointing sout
+NEW_PAT_041,pattern_abstract,5.4,figure_analogy,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,Triangle is to square (one more side) as pentagon is to ___?
+NEW_PAT_042,pattern_abstract,5.4,figure_analogy,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,1 red circle is to 2 blue circles as 1 red square is to ___?
+NEW_PAT_043,pattern_abstract,5.4,figure_analogy,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,3 dots is to 2 dots as 5 dots is to ___?
+NEW_PAT_044,pattern_abstract,5.4,figure_analogy,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Circle outside with square inside is to square outside with circle inside as tri
+NEW_PAT_045,pattern_abstract,5.4,figure_analogy,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Plain circle is to circle with a ring around it as plain triangle is to ___?
+NEW_PAT_046,pattern_abstract,5.4,figure_analogy,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,4 stars is to 2 stars as 6 stars is to ___?
+NEW_PAT_047,pattern_abstract,5.4,figure_analogy,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,Up arrow is to down arrow (half-turn) as right arrow is to ___?
+NEW_PAT_048,pattern_abstract,5.4,figure_analogy,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,In a colour cycle red → yellow → blue → red: red badge is to yellow badge as blu
+NEW_PAT_049,pattern_abstract,5.4,figure_analogy,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Square with 4 dots (one at each corner) is to square with 3 dots as pentagon wit
+NEW_PAT_050,pattern_abstract,5.4,figure_analogy,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,1 circle is to 2 circles as 1 square is to ___?
+NEW_PAT_051,pattern_abstract,5.4,figure_analogy,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,2 black dots is to 3 white dots as 1 black star is to ___?
+NEW_PAT_052,pattern_abstract,5.4,figure_analogy,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,Red fish facing left is to blue fish facing right as red bird facing left is to 
+NEW_PAT_053,pattern_abstract,5.4,figure_analogy,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Triangle with 0 dots is to square with 1 dot as pentagon with 1 dot is to ___?
+NEW_PAT_054,pattern_abstract,5.4,figure_analogy,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Circle around a square is to the square alone as square around a triangle is to 
+NEW_PAT_055,pattern_abstract,5.4,figure_analogy,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,Up arrow is to right arrow with a dot as down arrow is to ___? (The change is a 
+NEW_PAT_056,pattern_abstract,5.4,figure_analogy,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,3 white circles is to 2 black circles as 4 white squares is to ___? (The change 
+NEW_PAT_057,pattern_abstract,5.4,figure_analogy,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,Big red triangle is to small blue triangle as big yellow square is to ___? (The 
+NEW_PAT_058,pattern_abstract,5.4,figure_analogy,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,Square with 4 corner dots is to square with 3 corner dots as pentagon with 5 cor
+NEW_PAT_059,pattern_abstract,5.4,figure_analogy,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,Circle with up arrow and 1 dot is to circle with right arrow and 2 dots as squar
+NEW_PAT_060,pattern_abstract,5.4,figure_analogy,Master,hard,B,N/A,N/A,Checked structurally,PASS,,,,A red left-pointing flag is to a blue right-pointing flag as a red up-pointing f
+NEW_PAT_061,pattern_abstract,5.3,figure_odd_one_out,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,Four apples: three are red and one is green. Which apple is different?
+NEW_PAT_062,pattern_abstract,5.3,figure_odd_one_out,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,"Four shapes: circle, circle, circle, square. Which shape is different?"
+NEW_PAT_063,pattern_abstract,5.3,figure_odd_one_out,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,"Four balls: big, big, big, small. Which ball is different?"
+NEW_PAT_064,pattern_abstract,5.3,figure_odd_one_out,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Four animals: dog, cat, cow, chicken. Which animal is different?"
+NEW_PAT_065,pattern_abstract,5.3,figure_odd_one_out,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Four arrows point: up, up, up, down. Which arrow is different?"
+NEW_PAT_066,pattern_abstract,5.3,figure_odd_one_out,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Four numbers: 4, 6, 8, 7. Which number is different?"
+NEW_PAT_067,pattern_abstract,5.3,figure_odd_one_out,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,"Four stars: white, white, white, black. Which star is different?"
+NEW_PAT_068,pattern_abstract,5.3,figure_odd_one_out,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Four picture frames hold: 3 dots, 3 dots, 3 dots, 4 dots. Which frame is differe"
+NEW_PAT_069,pattern_abstract,5.3,figure_odd_one_out,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Four triangles each contain dots: 2, 2, 2, 3. Which triangle is different?"
+NEW_PAT_070,pattern_abstract,5.3,figure_odd_one_out,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Four squares are blue, blue, blue and red, all the same size. Which square is di"
+NEW_PAT_071,pattern_abstract,5.3,figure_odd_one_out,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"Four circles each have a small dot: top, top, top, bottom. Which circle is diffe"
+NEW_PAT_072,pattern_abstract,5.3,figure_odd_one_out,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Four groups of stars: 3, 3, 3, 4. Which group is different?"
+NEW_PAT_073,pattern_abstract,5.3,figure_odd_one_out,Think,medium,D,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,"Four arrows should turn 90 degrees clockwise each step: up, right, down, up. Whi"
+NEW_PAT_074,pattern_abstract,5.3,figure_odd_one_out,Think,medium,D,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,"Four nestings: square-in-circle, square-in-circle, square-in-circle, circle-in-s"
+NEW_PAT_075,pattern_abstract,5.3,figure_odd_one_out,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Four numbers: 12, 20, 28, 26. Three are multiples of 4. Which one is different?"
+NEW_PAT_076,pattern_abstract,5.3,figure_odd_one_out,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Four shapes: square, hexagon, octagon, pentagon. Three have an even number of si"
+NEW_PAT_077,pattern_abstract,5.3,figure_odd_one_out,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Four patterns use stripes, stripes, stripes and dots. Which pattern is different"
+NEW_PAT_078,pattern_abstract,5.3,figure_odd_one_out,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Four figures contain 2 elements each, except one that contains 3 elements: circl"
+NEW_PAT_079,pattern_abstract,5.3,figure_odd_one_out,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Four circles shrink step by step: big, medium, small, medium. Which circle break"
+NEW_PAT_080,pattern_abstract,5.3,figure_odd_one_out,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Three frames match border and fill: red border + red fill, blue + blue, green + "
+NEW_PAT_081,pattern_abstract,5.3,figure_odd_one_out,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,"Four figures pair sides with dots: triangle + 3 dots, square + 4 dots, pentagon "
+NEW_PAT_082,pattern_abstract,5.3,figure_odd_one_out,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,"Four arrows should each turn 90 degrees clockwise from the previous: up, right, "
+NEW_PAT_083,pattern_abstract,5.3,figure_odd_one_out,Challenge,hard,D,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,"Four dot groups: 2, 4, 6, 7. Three are even counts. Which group is different?"
+NEW_PAT_084,pattern_abstract,5.3,figure_odd_one_out,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,"Four shapes: triangle, pentagon, heptagon, hexagon. Three have an odd number of "
+NEW_PAT_085,pattern_abstract,5.3,figure_odd_one_out,Master,hard,D,N/A,N/A,Checked structurally,PASS,,,,"Four figures pair sides with dots: triangle + 2 dots, square + 3 dots, pentagon "
+NEW_PAT_086,pattern_abstract,5.2,matrix,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,"Row 1: 1 dot, 2 dots, 3 dots. Row 2: 1 star, 2 stars, ? What completes Row 2 the"
+NEW_PAT_087,pattern_abstract,5.2,matrix,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,"Row 1: circle, 2 circles, 3 circles. Row 2: triangle, 2 triangles, ? What comple"
+NEW_PAT_088,pattern_abstract,5.2,matrix,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,"Row 1: small heart, medium heart, big heart. Row 2: small star, medium star, ? W"
+NEW_PAT_089,pattern_abstract,5.2,matrix,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,"Row 1: white square, grey square, black square. Row 2: white circle, grey circle"
+NEW_PAT_090,pattern_abstract,5.2,matrix,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Row 1: square, square + 1 dot, square + 2 dots. Row 2: triangle, triangle + 1 do"
+NEW_PAT_091,pattern_abstract,5.2,matrix,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"Row 1: up arrow, right arrow (a 90-degree clockwise turn). Row 2: left arrow, ? "
+NEW_PAT_092,pattern_abstract,5.2,matrix,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"Row 1: 2 dots, 4 dots (doubled). Row 2: 3 dots, ? What completes Row 2 the same "
+NEW_PAT_093,pattern_abstract,5.2,matrix,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"Row 1: red circle, blue circle (recoloured). Row 2: red square, ? What completes"
+NEW_PAT_094,pattern_abstract,5.2,matrix,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Row 1: small white circle, big black circle (grows + flips colour). Row 2: small"
+NEW_PAT_095,pattern_abstract,5.2,matrix,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Row 1: triangle (3 sides), square (4 sides). Row 2: pentagon (5 sides), ? What c"
+NEW_PAT_096,pattern_abstract,5.2,matrix,Think,medium,B,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,"A 2-by-2 grid: top-left 1 dot, top-right 3 dots (+2 across the top row). Bottom-"
+NEW_PAT_097,pattern_abstract,5.2,matrix,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Row 1: circle, circle with 1 line, circle with 2 lines. Row 2: square, square wi"
+NEW_PAT_098,pattern_abstract,5.2,matrix,Challenge,hard,C,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,"Row 1: up arrow, right arrow, down arrow (90-degree clockwise turns). Row 2: dow"
+NEW_PAT_099,pattern_abstract,5.2,matrix,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,"Row 1: white square, black square, black square with a dot. Row 2: white circle,"
+NEW_PAT_100,pattern_abstract,5.5,matrix,Master,hard,B,N/A,N/A,Checked structurally,PASS,,,,"A 2-by-2 grid follows two rules at once. Top row: 1 red circle, 2 red circles (c"
+NEW_SOL_001,problem_solving,6.1,working_backwards,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,Mei thinks of a number. She adds 5 and gets 12. What was her number?
+NEW_SOL_002,problem_solving,6.1,working_backwards,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,Raj thinks of a number. He doubles it and gets 18. What was his number?
+NEW_SOL_003,problem_solving,6.1,working_backwards,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,Siti had some stickers. She gave 6 to her brother and has 9 left. How many did s
+NEW_SOL_004,problem_solving,6.1,working_backwards,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,A bus had some passengers. 7 got off and 13 remained. How many were on the bus a
+NEW_SOL_005,problem_solving,6.1,working_backwards,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,Ben thinks of a number. He subtracts 8 and gets 11. What was his number?
+NEW_SOL_006,problem_solving,6.1,working_backwards,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Devi thinks of a number. She multiplies it by 3, then adds 5, and gets 29. What "
+NEW_SOL_007,problem_solving,6.1,working_backwards,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"Kumar thinks of a number. He adds 7, then doubles the result, and gets 40. What "
+NEW_SOL_008,problem_solving,6.1,working_backwards,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"A shop had some apples in the morning. It sold half of them, then sold 10 more, "
+NEW_SOL_009,problem_solving,6.1,working_backwards,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Priya spent half her pocket money, then spent $4 more, and has $8 left. How much"
+NEW_SOL_010,problem_solving,6.1,working_backwards,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"A tank was partly filled. 20 litres were added, then half the water was used, le"
+NEW_SOL_011,problem_solving,6.1,working_backwards,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Jia thinks of a number. She subtracts 9, then multiplies by 4, and gets 48. What"
+NEW_SOL_012,problem_solving,6.1,working_backwards,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"A farmer sold half her eggs, then sold 6 more, leaving 12 eggs. How many eggs di"
+NEW_SOL_013,problem_solving,6.1,working_backwards,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Tom is 3 years older than twice Siti's age. Tom is 15. How old is Siti?
+NEW_SOL_014,problem_solving,6.1,working_backwards,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"A box contains red and blue marbles. Half are red. 8 more red marbles are added,"
+NEW_SOL_015,problem_solving,6.1,working_backwards,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"After giving half her stickers to her sister and 5 more to her brother, Ann has "
+NEW_SOL_016,problem_solving,6.1,working_backwards,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,"A number is tripled, then 6 is subtracted, then the result is halved, giving 12."
+NEW_SOL_017,problem_solving,6.1,working_backwards,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,Father is 4 years younger than 3 times his son's age. Father is 32. How old is h
+NEW_SOL_018,problem_solving,6.1,working_backwards,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,"A library lent out half its storybooks, then lent out 15 more, leaving 20. How m"
+NEW_SOL_019,problem_solving,6.1,working_backwards,Challenge,hard,B,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,Ming saved money for 3 weeks. Each week he saved $5 more than the week before. I
+NEW_SOL_020,problem_solving,6.1,working_backwards,Master,hard,A,N/A,N/A,Checked structurally,PASS,,,,A bottle and its cap cost $11. The bottle costs $10 more than the cap. How much 
+NEW_SOL_021,problem_solving,6.3,before_after,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,Ali had 10 marbles and gave 3 to Bala. How many does Ali have now?
+NEW_SOL_022,problem_solving,6.3,before_after,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,Mei had 15 stickers and her brother gave her 5 more. How many does Mei have now?
+NEW_SOL_023,problem_solving,6.3,before_after,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,A box held 20 apples. 8 were sold. How many are left in the box?
+NEW_SOL_024,problem_solving,6.3,before_after,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,A tank held 30 litres. 12 more litres were added. How much water is in the tank 
+NEW_SOL_025,problem_solving,6.3,before_after,Explore,easy,D,N/A,N/A,Checked structurally,PASS,,,,"Sara ran 60 metres, rested, then ran 25 metres more. How far did she run in tota"
+NEW_SOL_026,problem_solving,6.3,before_after_transfer,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,A has 20 stickers and B has 12 stickers. How many stickers must A give B so that
+NEW_SOL_027,problem_solving,6.3,before_after_transfer,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,X has 30 marbles and Y has 18 marbles. How many must X give Y so that both have 
+NEW_SOL_028,problem_solving,6.3,before_after_transfer,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Ali has 45 cards and Bala has 25 cards. Ali gives some cards to Bala and now bot
+NEW_SOL_029,problem_solving,6.3,before_after_transfer,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,A gave B 5 stickers and now both have 20 stickers. How many stickers did A start
+NEW_SOL_030,problem_solving,6.3,before_after_transfer,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"After B gives A 6 marbles, both have 30 marbles. How many marbles did B start wi"
+NEW_SOL_031,problem_solving,6.3,before_after_transfer,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,C had twice as many stamps as D. C gave D 10 stamps and now both have the same n
+NEW_SOL_032,problem_solving,6.3,before_after_transfer,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,E had 3 times as many coins as F. E gave F 12 coins and now both have the same n
+NEW_SOL_033,problem_solving,6.3,before_after_transfer,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,G and H end up equal after G gives H 7 marbles. G started with 40 marbles. How m
+NEW_SOL_034,problem_solving,6.3,before_after_transfer,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"After I gives J 9 pens, I has 25 pens and J has 31 pens. How many pens did I sta"
+NEW_SOL_035,problem_solving,6.3,before_after_transfer,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,K gives L 8 stickers. K now has 22 stickers and L now has 30 stickers. How many 
+NEW_SOL_036,problem_solving,6.3,before_after_transfer,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,A started with 30 stickers. First A gives B 6 stickers so A and B are equal. The
+NEW_SOL_037,problem_solving,6.3,before_after_transfer,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,"P had twice as many marbles as Q. After P gives Q 15 marbles, Q has twice as man"
+NEW_SOL_038,problem_solving,6.3,before_after_transfer,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,"A has 36 stickers, B has 24 and C has 12. They share so that all three end up eq"
+NEW_SOL_039,problem_solving,6.3,before_after_transfer,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,M gives N half of M's marbles. Then N gives M 5 marbles back. In the end M has 2
+NEW_SOL_040,problem_solving,6.3,before_after_transfer,Master,hard,C,N/A,N/A,Checked structurally,PASS,,,,"A has 60 marbles, B has 20 and C has 10. A gives B enough marbles to double B's "
+NEW_SOL_041,problem_solving,6.6,pattern_application,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Cans are stacked: bottom row 5 cans, then 4, then 3, then 2, then 1 on top. How "
+NEW_SOL_042,problem_solving,6.6,pattern_application,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Matchsticks make squares in a row sharing sides. 1 square needs 4 sticks. Each e
+NEW_SOL_043,problem_solving,6.6,pattern_application,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Matchsticks make triangles in a row sharing sides. 1 triangle needs 3 sticks. Ea
+NEW_SOL_044,problem_solving,6.6,pattern_application,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,"Square tables join in a row. 1 table seats 4, 2 tables seat 6, 3 tables seat 8. "
+NEW_SOL_045,problem_solving,6.6,pattern_application,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,Floor tiles form a 4-by-4 square. How many tiles are on the border (outer edge) 
+NEW_SOL_046,problem_solving,6.6,pattern_application,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Bowling pins stand in rows: 1 pin, then 2, then 3, then 4. How many pins are the"
+NEW_SOL_047,problem_solving,6.6,pattern_application,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,4 friends meet. Each pair shakes hands exactly once. How many handshakes are the
+NEW_SOL_048,problem_solving,6.6,pattern_application,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,5 points are drawn on a circle. Lines join every pair of points. How many lines 
+NEW_SOL_049,problem_solving,6.6,pattern_application,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,Matchsticks make 10 squares in a row sharing sides. 1 square needs 4 sticks and 
+NEW_SOL_050,problem_solving,6.6,pattern_application,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,6 pupils meet. Each pair shakes hands exactly once. How many handshakes are ther
+NEW_SOL_051,problem_solving,6.6,pattern_application,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,Floor tiles form a 5-by-5 square. How many tiles are on the border of the square
+NEW_SOL_052,problem_solving,6.6,pattern_application,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Oranges are stacked in square layers: 1 orange, then 4 (2 by 2), then 9 (3 by 3)"
+NEW_SOL_053,problem_solving,6.6,pattern_application,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,Pentagons join in a row sharing sides. 1 pentagon needs 5 sticks. Each extra pen
+NEW_SOL_054,problem_solving,6.6,pattern_application,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Hexagons join in a row sharing sides. 1 hexagon needs 6 sticks. Each extra hexag
+NEW_SOL_055,problem_solving,6.6,pattern_application,Master,hard,B,N/A,N/A,Checked structurally,PASS,,,,Matchstick triangles alternate pointing up and down to make a flat strip of 10 t
+NEW_SOL_056,problem_solving,6.2,guess_check,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,A farm has chickens and rabbits: 5 heads and 14 legs in total. How many chickens
+NEW_SOL_057,problem_solving,6.2,guess_check,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,A farm has chickens and rabbits: 8 heads and 22 legs in total. How many rabbits 
+NEW_SOL_058,problem_solving,6.2,guess_check,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"A machine sells 10 ride tokens: some $2 tokens and some $3 tokens, totalling $26"
+NEW_SOL_059,problem_solving,6.2,guess_check,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,A quiz has 8 questions. Correct answers score 5 points; wrong answers lose 2 poi
+NEW_SOL_060,problem_solving,6.2,guess_check,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,Father and son are 50 years old altogether. Father is 30 years older than his so
+NEW_SOL_061,problem_solving,6.2,guess_check,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Two numbers add to 20 and differ by 4. What is the smaller number?
+NEW_SOL_062,problem_solving,6.2,guess_check,Think,medium,A,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,A rectangle has perimeter 30 cm. Its length is 5 cm more than its width. What is
+NEW_SOL_063,problem_solving,6.2,guess_check,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,A farm has chickens and rabbits: 12 heads and 34 legs in total. How many rabbits
+NEW_SOL_064,problem_solving,6.2,guess_check,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,"A purse has 10 coins: some 50-cent and some 20-cent coins, totalling $3.80. How "
+NEW_SOL_065,problem_solving,6.2,guess_check,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,Two numbers multiply to 36 and differ by 5. What is the smaller number?
+NEW_SOL_066,problem_solving,6.2,guess_check,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,"In a game, 2-pointers and 3-pointers: 10 successful shots score 24 points. How m"
+NEW_SOL_067,problem_solving,6.2,guess_check,Master,hard,C,N/A,N/A,Checked structurally,PASS,,,,"A farm has chickens, rabbits and ducks: 10 heads and 28 legs. There are twice as"
+NEW_SOL_068,problem_solving,6.2,guess_check,Think,medium,B,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,A rectangle's length is twice its width. Its perimeter is 36 cm. What is the wid
+NEW_SOL_069,problem_solving,6.2,guess_check,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,Three consecutive whole numbers add to 36. What is the middle number?
+NEW_SOL_070,problem_solving,6.2,guess_check,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,Three consecutive even numbers add to 30. What is the largest of the three?
+NEW_SOL_071,problem_solving,6.5,make_list,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,How many 2-digit numbers can you make using only the digits 1 and 2 (digits may 
+NEW_SOL_072,problem_solving,6.5,make_list,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,You have 2 shirts and 3 pairs of pants. How many different shirt-and-pants outfi
+NEW_SOL_073,problem_solving,6.5,make_list,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"How many 3-digit numbers can you make using the digits 1, 2 and 3 exactly once e"
+NEW_SOL_074,problem_solving,6.5,make_list,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,An ice-cream stall has 3 flavours and 2 cone types. How many different flavour-a
+NEW_SOL_075,problem_solving,6.5,make_list,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"How many 2-digit numbers can you make from the digits 2, 5 and 8 without repeati"
+NEW_SOL_076,problem_solving,6.5,make_list,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"Three runners compete for gold, silver and bronze medals. In how many different "
+NEW_SOL_077,problem_solving,6.5,make_list,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,In how many ways can you make exactly 10 cents using 5-cent and 1-cent coins?
+NEW_SOL_078,problem_solving,6.5,make_list,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"How many 2-digit even numbers can you make from the digits 1, 2 and 3 without re"
+NEW_SOL_079,problem_solving,6.5,make_list,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"How many 3-digit numbers can you make from the digits 4, 5 and 6 without repeati"
+NEW_SOL_080,problem_solving,6.5,make_list,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"A pizza can have exactly 2 of these 3 toppings: cheese, mushroom, corn. How many"
+NEW_SOL_081,problem_solving,6.5,make_list,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,In how many ways can you make exactly 20 cents using 10-cent and 5-cent coins?
+NEW_SOL_082,problem_solving,6.5,make_list,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,"How many 3-digit even numbers can you make from the digits 1, 2, 3 and 4 without"
+NEW_SOL_083,problem_solving,6.5,make_list,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,"Four runners compete for gold, silver and bronze medals (only the top 3 get meda"
+NEW_SOL_084,problem_solving,6.5,make_list,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,"How many 2-digit numbers can you make from the digits 0, 1 and 2 without repeati"
+NEW_SOL_085,problem_solving,6.5,make_list,Master,hard,B,N/A,N/A,Checked structurally,PASS,,,,"How many 3-digit numbers from the digits 1, 2, 3, 4 and 5 (no repeats) are divis"
+NEW_SOL_086,problem_solving,6.4,draw_diagram,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,Trees are planted 5 metres apart in a straight row. The first tree is at 0 m. Wh
+NEW_SOL_087,problem_solving,6.4,draw_diagram,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,School starts at 8:00 am. The bus ride takes 30 minutes. What time must Mei leav
+NEW_SOL_088,problem_solving,6.4,draw_diagram,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"10 trees stand in a row, 4 metres apart. What is the distance from the 1st tree "
+NEW_SOL_089,problem_solving,6.4,draw_diagram,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"12 lamp posts stand in a row, 5 metres apart. What is the distance from the 1st "
+NEW_SOL_090,problem_solving,6.4,draw_diagram,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,A staircase has 10 steps. Each step is 20 cm high. How high is the top of the st
+NEW_SOL_091,problem_solving,6.4,draw_diagram,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"15 lamp posts stand in a row, 6 metres apart. What is the distance from the 1st "
+NEW_SOL_092,problem_solving,6.4,draw_diagram,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"A snail climbs a 10-metre wall. Each day it climbs 3 m up, then slides 2 m down "
+NEW_SOL_093,problem_solving,6.4,draw_diagram,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,"20 trees stand in a row, 3 metres apart. What is the distance from the 1st tree "
+NEW_SOL_094,problem_solving,6.4,draw_diagram,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,"A snail climbs a 17-metre wall. Each day it climbs 5 m up, then slides 3 m down "
+NEW_SOL_095,problem_solving,6.4,draw_diagram,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,"A clock chimes once at 1 o'clock, twice at 2 o'clock, and so on up to 6 times at"
+NEW_SOL_096,problem_solving,6.4,draw_diagram,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,"Fence posts stand every 2 metres along a straight 20-metre fence, with a post at"
+NEW_SOL_097,problem_solving,6.4,draw_diagram,Master,hard,B,N/A,N/A,Checked structurally,PASS,,,,"Two equal candles: candle A burns out in 6 hours, candle B in 3 hours. Both are "
+NEW_SOL_098,problem_solving,6.4,draw_diagram,Master,hard,C,N/A,N/A,Checked structurally,PASS,,,,Towns A and B are 60 km apart. A car leaves A at 40 km/h and a car leaves B at 2
+NEW_SOL_099,problem_solving,6.4,draw_diagram,Master,hard,B,N/A,N/A,Checked structurally,PASS,,,,One bell rings every 6 minutes and a whistle blows every 8 minutes. Both sound t
+NEW_SOL_100,problem_solving,6.4,draw_diagram,Master,hard,A,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,Two snails race up a 12-metre wall. Snail A climbs 3 m and slides 1 m each day. 
+NEW_VER_001,verbal_reasoning,3.3,codes_ciphers,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,"In a code, A = 1, B = 2, C = 3 and so on. What is the code for CAT?"
+NEW_VER_002,verbal_reasoning,3.3,codes_ciphers,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,"In a code, A = 1, B = 2, C = 3 and so on. What is the code for DOG?"
+NEW_VER_003,verbal_reasoning,3.3,codes_ciphers,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,"In a code, A = 1, B = 2, C = 3 and so on. Which word has code 30?"
+NEW_VER_004,verbal_reasoning,3.3,codes_ciphers,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,"In a code, each letter moves one step forward: A becomes B, B becomes C. CAT bec"
+NEW_VER_005,verbal_reasoning,3.3,codes_ciphers,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,"In a code, each letter moves one step backward: B becomes A, C becomes B. DBU be"
+NEW_VER_006,verbal_reasoning,3.3,codes_ciphers,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"In a code, Z = 1, Y = 2, X = 3 and so on backwards (A = 26). What is the code fo"
+NEW_VER_007,verbal_reasoning,3.3,codes_ciphers,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"In a code, each letter is replaced by its position doubled: A = 2, B = 4, C = 6."
+NEW_VER_008,verbal_reasoning,3.3,codes_ciphers,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,CAT is coded as 24 (3+1+20). DOG is coded as 26 (4+15+7). How is PIG coded? (P=1
+NEW_VER_009,verbal_reasoning,3.3,codes_ciphers,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"Each letter moves 2 steps forward: CAT becomes ECV (C→E, A→C, T→V). What does BO"
+NEW_VER_010,verbal_reasoning,3.3,codes_ciphers,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"Vowels are worth 5 each and consonants are worth their position (B=2, C=3...). W"
+NEW_VER_011,verbal_reasoning,3.3,codes_ciphers,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"In a code, the word's letters are reversed: CAT becomes TAC. What does STOP beco"
+NEW_VER_012,verbal_reasoning,3.3,codes_ciphers,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"In a code, only the consonants count (A=1...Z=26, vowels = 0). APPLE = P(16) + P"
+NEW_VER_013,verbal_reasoning,3.3,codes_ciphers,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,SUN is coded as 54 (19+21+14). MOON is coded as 57 (13+15+15+14). How is STAR co
+NEW_VER_014,verbal_reasoning,3.3,codes_ciphers,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"Each letter moves 3 steps forward: DOG becomes GRJ (D→G, O→R, G→J). What does CA"
+NEW_VER_015,verbal_reasoning,3.3,codes_ciphers,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,First and last letters swap: STOP becomes PTOS. MART becomes ___?
+NEW_VER_016,verbal_reasoning,3.3,codes_ciphers,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,"Vowels shift +1 (A→B, E→F, I→J, O→P, U→V) and consonants stay the same. APPLE be"
+NEW_VER_017,verbal_reasoning,3.3,codes_ciphers,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,"Z=1 ... A=26 (reversed). EVIL is coded as 22+5+18+15 = 60? Compute: E=22, V=5, I"
+NEW_VER_018,verbal_reasoning,3.3,codes_ciphers,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,"Each consonant moves +1 and each vowel moves −1 (A→Z wrapping): CAT (C→D, A→Z, T"
+NEW_VER_019,verbal_reasoning,3.3,codes_ciphers,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,Vowels are written twice and consonants stay the same: APPLE becomes AAPPLEE. Wh
+NEW_VER_020,verbal_reasoning,3.3,codes_ciphers,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,A word's code is (first letter value) × (number of letters). CAT = 3 × 3 = 9. Wh
+NEW_VER_021,verbal_reasoning,3.3,codes_ciphers,Master,hard,B,N/A,N/A,Checked structurally,PASS,,,,Each letter is replaced by (its position × its order in the word): CAT → C(3×1) 
+NEW_VER_022,verbal_reasoning,3.3,codes_ciphers,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"In a code, A = 1 ... Z = 26. FISH = 6+9+19+8 = 42. What is BIRD? (B=2, I=9, R=18"
+NEW_VER_023,verbal_reasoning,3.3,codes_ciphers,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"In a code, A = 1 ... Z = 26. LION = 12+9+15+14 = 50. What is TIGER? (T=20, I=9, "
+NEW_VER_024,verbal_reasoning,3.3,codes_ciphers,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"Each letter moves 1 step forward. SUN becomes TVO. What does MOON become? (M→N, "
+NEW_VER_025,verbal_reasoning,3.3,codes_ciphers,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"In a code, words are written backwards and then each letter moves +1: CAT → TAC "
+NEW_VER_026,verbal_reasoning,3.1,verbal_analogy,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,Hot is to cold as day is to ___?
+NEW_VER_027,verbal_reasoning,3.1,verbal_analogy,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,Big is to small as happy is to ___?
+NEW_VER_028,verbal_reasoning,3.1,verbal_analogy,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,Fast is to slow as up is to ___?
+NEW_VER_029,verbal_reasoning,3.1,verbal_analogy,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,Dog is to puppy as cat is to ___?
+NEW_VER_030,verbal_reasoning,3.1,verbal_analogy,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,Bird is to nest as bee is to ___?
+NEW_VER_031,verbal_reasoning,3.1,verbal_analogy,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,Cow is to moo as dog is to ___?
+NEW_VER_032,verbal_reasoning,3.1,verbal_analogy,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Book is to read as song is to ___?
+NEW_VER_033,verbal_reasoning,3.1,verbal_analogy,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Pen is to write as knife is to ___?
+NEW_VER_034,verbal_reasoning,3.1,verbal_analogy,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,Doctor is to hospital as teacher is to ___?
+NEW_VER_035,verbal_reasoning,3.1,verbal_analogy,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,Fish is to water as bird is to ___?
+NEW_VER_036,verbal_reasoning,3.1,verbal_analogy,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Car is to road as train is to ___?
+NEW_VER_037,verbal_reasoning,3.1,verbal_analogy,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,Hammer is to nail as scissors is to ___?
+NEW_VER_038,verbal_reasoning,3.1,verbal_analogy,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Spider is to web as bird is to ___?
+NEW_VER_039,verbal_reasoning,3.1,verbal_analogy,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Hot is to cold as light (not heavy) is to ___?
+NEW_VER_040,verbal_reasoning,3.1,verbal_analogy,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,Beginning is to end as morning is to ___?
+NEW_VER_041,verbal_reasoning,3.1,verbal_analogy,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,Smile is to happy as frown is to ___?
+NEW_VER_042,verbal_reasoning,3.1,verbal_analogy,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,Wing is to bird as fin is to ___?
+NEW_VER_043,verbal_reasoning,3.1,verbal_analogy,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Page is to book as brick is to ___?
+NEW_VER_044,verbal_reasoning,3.1,verbal_analogy,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,Seed is to plant as egg is to ___?
+NEW_VER_045,verbal_reasoning,3.1,verbal_analogy,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,Clock is to time as thermometer is to ___?
+NEW_VER_046,verbal_reasoning,3.1,verbal_analogy,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,Author is to book as composer is to ___?
+NEW_VER_047,verbal_reasoning,3.1,verbal_analogy,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,Hungry is to eat as thirsty is to ___?
+NEW_VER_048,verbal_reasoning,3.1,verbal_analogy,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,Caterpillar is to butterfly as tadpole is to ___?
+NEW_VER_049,verbal_reasoning,3.1,verbal_analogy,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,Lens is to camera as string is to ___?
+NEW_VER_050,verbal_reasoning,3.1,verbal_analogy,Master,hard,A,N/A,N/A,Checked structurally,PASS,,,,Chapter is to book as act is to ___?
+NEW_VER_051,verbal_reasoning,3.6,letter_series,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,"What comes next: A, B, C, D, ___?"
+NEW_VER_052,verbal_reasoning,3.6,letter_series,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,"What comes next: A, C, E, G, ___? (Skip one letter each time.)"
+NEW_VER_053,verbal_reasoning,3.6,letter_series,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"What comes next: Z, Y, X, W, ___?"
+NEW_VER_054,verbal_reasoning,3.6,letter_series,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"What comes next: A, B, D, G, K, ___? (The jumps grow: +1, +2, +3, +4.)"
+NEW_VER_055,verbal_reasoning,3.6,letter_series,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"What comes next: A, E, I, M, ___? (Jump 4 each time.)"
+NEW_VER_056,verbal_reasoning,3.6,letter_series,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"What comes next: B, D, H, N, ___? (The jumps grow: +2, +4, +6.)"
+NEW_VER_057,verbal_reasoning,3.6,letter_series,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"What comes next: A, Z, B, Y, C, ___? (Take from the front, then the back, altern"
+NEW_VER_058,verbal_reasoning,3.6,letter_series,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"What comes next: E, G, J, L, O, ___? (Jumps alternate +2, +3.)"
+NEW_VER_059,verbal_reasoning,3.6,letter_series,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"What comes next: Q, P, O, N, ___?"
+NEW_VER_060,verbal_reasoning,3.6,letter_series,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"What comes next: D, H, L, P, ___? (Jump 4 each time.)"
+NEW_VER_061,verbal_reasoning,3.6,letter_series,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,"What comes next: A, D, G, J, ___? (Jump 3 each time.)"
+NEW_VER_062,verbal_reasoning,3.6,letter_series,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,"What comes next: Z, X, V, T, ___? (Step back 2 each time.)"
+NEW_VER_063,verbal_reasoning,3.6,letter_series,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,"What comes next: A, C, F, J, O, ___? (The jumps grow: +2, +3, +4, +5.)"
+NEW_VER_064,verbal_reasoning,3.6,letter_series,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,"What comes next: A, F, K, P, U, ___? (Jump 5 each time.)"
+NEW_VER_065,verbal_reasoning,3.6,letter_series,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,"Two series take turns: A, B, Z, Y, C, D, X, ___? (Odd positions: A, Z, C, X... e"
+NEW_VER_066,verbal_reasoning,3.6,letter_series,Master,hard,C,N/A,N/A,Checked structurally,PASS,,,,"What comes next: A, B, D, G, K, P, ___? (The jumps grow: +1, +2, +3, +4, +5.)"
+NEW_VER_067,verbal_reasoning,3.6,letter_series,Master,hard,B,N/A,N/A,Checked structurally,PASS,,,,"What comes next: Z, A, Y, B, X, ___? (Take from the back, then the front, altern"
+NEW_VER_068,verbal_reasoning,3.6,letter_series,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"What comes next: E, F, H, K, N, ___? (The jumps grow: +1, +2, +3, +4.)"
+NEW_VER_069,verbal_reasoning,3.6,letter_series,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"What comes next: J, L, N, P, ___?"
+NEW_VER_070,verbal_reasoning,3.6,letter_series,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"What comes next: C, F, I, L, ___?"
+NEW_VER_071,verbal_reasoning,3.5,sentence_logic,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,All apples in the basket are red. This fruit is an apple from the basket. What c
+NEW_VER_072,verbal_reasoning,3.5,sentence_logic,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,Ben is taller than Sam. Who is shorter?
+NEW_VER_073,verbal_reasoning,3.5,sentence_logic,Think,medium,A,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,A always tells the truth. A says: 'B is lying.' Is B lying?
+NEW_VER_074,verbal_reasoning,3.5,sentence_logic,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"If all Bloops are Razzies, and some Razzies are green, must some Bloops be green"
+NEW_VER_075,verbal_reasoning,3.5,sentence_logic,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,No fish can fly. A trout is a fish. Can a trout fly?
+NEW_VER_076,verbal_reasoning,3.5,sentence_logic,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,Some cakes at the bakery are sweet. This cake is sweet. Using only these stateme
+NEW_VER_077,verbal_reasoning,3.5,sentence_logic,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,All squares have equal sides. Figure X does not have equal sides. Is Figure X a 
+NEW_VER_078,verbal_reasoning,3.5,sentence_logic,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"If today is Saturday, there is no school. There is no school today. Is today Sat"
+NEW_VER_079,verbal_reasoning,3.5,sentence_logic,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,School rule (no exceptions): all teachers arrive before 8am. Mr Lee arrived at 9
+NEW_VER_080,verbal_reasoning,3.5,sentence_logic,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Dogs have 4 legs. This animal has 4 legs. Using only these statements, is it a d"
+NEW_VER_081,verbal_reasoning,3.5,sentence_logic,Challenge,hard,A,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,A says: 'B and I are both lying.' B says nothing. Exactly one of A and B is lyin
+NEW_VER_082,verbal_reasoning,3.5,sentence_logic,Challenge,hard,B,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,Two boxes A and B. Note on A: 'The treasure is here.' Note on B: 'The treasure i
+NEW_VER_083,verbal_reasoning,3.5,sentence_logic,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,"Everyone who ate cake is happy. Siti is happy. Using only these statements, did "
+NEW_VER_084,verbal_reasoning,3.5,sentence_logic,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,No reptiles are warm-blooded. A snake is a reptile. Is a snake warm-blooded?
+NEW_VER_085,verbal_reasoning,3.5,sentence_logic,Master,hard,C,N/A,N/A,Checked structurally,PASS,,,,"A, B and C each either always tell the truth or always lie. A says: 'B lies.' B "
+NEW_VER_086,verbal_reasoning,3.2,word_manipulation,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,Which word can be made using the letters of CAT?
+NEW_VER_087,verbal_reasoning,3.2,word_manipulation,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,Remove one letter from STONE to make a new word. Which word can you make?
+NEW_VER_088,verbal_reasoning,3.2,word_manipulation,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,Which animal hides inside the word 'pirate'?
+NEW_VER_089,verbal_reasoning,3.2,word_manipulation,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,Change exactly one letter in CAT to name a flying animal. Which word do you get?
+NEW_VER_090,verbal_reasoning,3.2,word_manipulation,Think,medium,A,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,Which word reads exactly the same backwards as forwards?
+NEW_VER_091,verbal_reasoning,3.2,word_manipulation,Think,medium,B,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,"Take the first letters of Apple, Banana, Cherry. You get ABC. Take the first let"
+NEW_VER_092,verbal_reasoning,3.2,word_manipulation,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,BREAD without its first letter is READ. TRAIN without its first letter is ___?
+NEW_VER_093,verbal_reasoning,3.2,word_manipulation,Think,medium,A,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,Rearrange all the letters of LISTEN to make a real word. Which word can you make
+NEW_VER_094,verbal_reasoning,3.2,word_manipulation,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"Which pair of words are anagrams (same letters, different order)?"
+NEW_VER_095,verbal_reasoning,3.4,word_manipulation,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,Remove the first AND last letters of HEART to get a body part. What do you get?
+NEW_VER_096,verbal_reasoning,3.4,word_manipulation,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,Which body part hides inside the word 'heard'?
+NEW_VER_097,verbal_reasoning,3.4,word_manipulation,Challenge,hard,A,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,Rearrange the letters of PEACH to name something cheap. What do you get?
+NEW_VER_098,verbal_reasoning,3.4,word_manipulation,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,Remove exactly one letter from PLANT to name an item of clothing. What do you ge
+NEW_VER_099,verbal_reasoning,3.6,word_manipulation,Master,hard,D,N/A,N/A,Checked structurally,PASS,,,,"Using each letter of STOP exactly once, which of these words CANNOT be formed?"
+NEW_VER_100,verbal_reasoning,3.6,word_manipulation,Master,hard,C,N/A,N/A,Checked structurally,PASS,,,,CAT and DOG differ in all 3 letter positions. Changing exactly one letter per st
+NEW_VIS_001,visual_spatial,4.1,rotation,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,A weather-vane arrow points north. A gust of wind turns it 90 degrees clockwise.
+NEW_VIS_002,visual_spatial,4.1,rotation,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,A signpost arrow points east. It is spun 90 degrees clockwise once. Which compas
+NEW_VIS_003,visual_spatial,4.1,rotation,Explore,easy,D,N/A,N/A,Visual question with image: images/NEW_VIS_003.svg - needs manual SVG check,PASS,,,,"An arrow turns 90 degrees clockwise at each step: up, right, down. Which way doe"
+NEW_VIS_004,visual_spatial,4.1,rotation,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,A triangle points up. It is spun halfway around (180 degrees). Which way does it
+NEW_VIS_005,visual_spatial,4.1,rotation,Explore,easy,C,N/A,N/A,Visual question with image: images/NEW_VIS_005.svg - needs manual SVG check,PASS,,,,A square has a dot at its top-right corner. The square is turned 90 degrees cloc
+NEW_VIS_006,visual_spatial,4.1,rotation,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,A clock's minute hand points to 12. It moves a quarter-turn clockwise. Which num
+NEW_VIS_007,visual_spatial,4.1,rotation,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,An arrow points down. It is turned 90 degrees anticlockwise once. Which way does
+NEW_VIS_008,visual_spatial,4.1,rotation,Explore,easy,B,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,The letter F is spun halfway around (180 degrees). What does it look like now?
+NEW_VIS_009,visual_spatial,4.4,rotation,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"A compass needle points north. It swings 90 degrees clockwise, then 90 degrees m"
+NEW_VIS_010,visual_spatial,4.4,rotation,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,A square has a dot at its top-left corner. It is turned 90 degrees clockwise thr
+NEW_VIS_011,visual_spatial,4.4,rotation,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,A clock's hour hand points to 3. It moves two quarter-turns clockwise. Which num
+NEW_VIS_012,visual_spatial,4.4,rotation,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,A windmill blade points up. The windmill spins 90 degrees anticlockwise twice. W
+NEW_VIS_013,visual_spatial,4.4,rotation,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,A pentagon has a star at one corner. The pentagon is turned so that each corner 
+NEW_VIS_014,visual_spatial,4.4,rotation,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"An arrow points north-east. It turns 90 degrees clockwise, then 90 degrees antic"
+NEW_VIS_015,visual_spatial,4.4,rotation,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,A rectangular sign has a red stripe along its top edge. The sign is rotated 90 d
+NEW_VIS_016,visual_spatial,4.4,rotation,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,A picture of a dog faces left. The picture is turned upside down (half-turn). Wh
+NEW_VIS_017,visual_spatial,4.4,rotation,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,A spinner arrow points to 6 on a clock face. It spins 3 quarter-turns clockwise.
+NEW_VIS_018,visual_spatial,4.4,rotation,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"A hexagon has numbers 1 to 6 at its corners, clockwise from the top. The hexagon"
+NEW_VIS_019,visual_spatial,4.4,rotation,Think,medium,B,N/A,N/A,Visual question with image: images/NEW_VIS_019.svg - needs manual SVG check,PASS,,,,"An L-shaped tile covers the top-left, top-middle and middle-left squares of a 3-"
+NEW_VIS_020,visual_spatial,4.4,rotation,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"A flag on a pole points east. The wind turns it 90 degrees anticlockwise, then 1"
+NEW_VIS_021,visual_spatial,4.4,rotation,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,"A square has different symbols at its corners: star (top-left), circle (top-righ"
+NEW_VIS_022,visual_spatial,4.4,rotation,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,A dial points to 2. Each turn moves it 3 hours forward (clockwise). After 4 turn
+NEW_VIS_023,visual_spatial,4.4,rotation,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,"A pinwheel has 4 coloured blades in clockwise order: red (top), yellow, blue, gr"
+NEW_VIS_024,visual_spatial,4.4,rotation,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,A square has a red dot at the midpoint of its top edge. It is rotated 90 degrees
+NEW_VIS_025,visual_spatial,4.4,rotation,Master,hard,C,N/A,N/A,Checked structurally,PASS,,,,A cube has a star sticker on its top face. The cube is rolled 90 degrees forward
+NEW_VIS_026,visual_spatial,4.2,mirror_reflection,Explore,easy,B,N/A,N/A,Visual question with image: images/NEW_VIS_026.svg - needs manual SVG check,PASS,,,,An arrow points left. It is flipped in a mirror placed vertically (left-right fl
+NEW_VIS_027,visual_spatial,4.2,mirror_reflection,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,"Which capital letter looks the same in a left-right mirror: A, F, H, R?"
+NEW_VIS_028,visual_spatial,4.2,mirror_reflection,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,A fish swims to the left. Its reflection is seen in a flat mirror standing verti
+NEW_VIS_029,visual_spatial,4.2,mirror_reflection,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,"A ball sits on the left side of a box. In a left-right mirror, where does the ba"
+NEW_VIS_030,visual_spatial,4.2,mirror_reflection,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,Which shape looks exactly the same after a left-right mirror flip: triangle poin
+NEW_VIS_031,visual_spatial,4.2,mirror_reflection,Think,medium,B,N/A,N/A,Visual question with image: images/NEW_VIS_031.svg - needs manual SVG check,PASS,,,,An arrow points up. It is reflected in a flat mirror lying horizontally below it
+NEW_VIS_032,visual_spatial,4.2,mirror_reflection,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,A square has a dot at its top-right corner. It is flipped left-to-right in a mir
+NEW_VIS_033,visual_spatial,4.2,mirror_reflection,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,The word 'BED' is held up to a left-right mirror. Which word is seen? (Each lett
+NEW_VIS_034,visual_spatial,4.2,mirror_reflection,Think,medium,A,N/A,N/A,Checked structurally,PASS,,,,"A shape is flipped left-to-right twice (mirrored, then mirrored again). What is "
+NEW_VIS_035,visual_spatial,4.2,mirror_reflection,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"A triangle has numbers 1 (top), 2 (bottom-left), 3 (bottom-right) at its corners"
+NEW_VIS_036,visual_spatial,4.2,mirror_reflection,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"A clock shows 3:00 (minute hand up, hour hand right). In a left-right mirror, wh"
+NEW_VIS_037,visual_spatial,4.2,mirror_reflection,Challenge,hard,D,N/A,N/A,Checked structurally,PASS,,,,"An arrow points north-east. It is mirrored left-to-right, then mirrored top-to-b"
+NEW_VIS_038,visual_spatial,4.2,mirror_reflection,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,"An arrow points right. It is mirrored left-to-right, then rotated 90 degrees clo"
+NEW_VIS_039,visual_spatial,4.2,mirror_reflection,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,A 2-by-2 tile has a dot in its top-left small square. It is flipped left-to-righ
+NEW_VIS_040,visual_spatial,4.2,mirror_reflection,Master,hard,B,N/A,N/A,Checked structurally,PASS,,,,A flag has a red left half and a blue right half with a white star on the red si
+NEW_VIS_041,visual_spatial,4.3,cube_net,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,A cube net is cut out and folded into a cube. How many faces will the cube have?
+NEW_VIS_042,visual_spatial,4.3,cube_net,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,Which of these can fold into a closed cube? A) 5 squares in a cross. B) 6 square
+NEW_VIS_043,visual_spatial,4.3,cube_net,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,A cube net must be made of how many joined squares?
+NEW_VIS_044,visual_spatial,4.3,cube_net,Explore,easy,C,N/A,N/A,Visual question with image: images/NEW_VIS_044.svg - needs manual SVG check,PASS,,,,"A cross-shaped net has 5 squares: centre star, heart above, dot below, moon left"
+NEW_VIS_045,visual_spatial,4.3,cube_net,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,A net of 6 squares is folded into a cube. Each square becomes what part of the c
+NEW_VIS_046,visual_spatial,4.3,cube_net,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,"In a cube, how many faces meet at one corner?"
+NEW_VIS_047,visual_spatial,4.3,cube_net,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,Every face of a real cube must be which shape?
+NEW_VIS_048,visual_spatial,4.3,cube_net,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,"A net has squares labelled in a row: P, Q, R, S (4 in a row), with T above Q. Wh"
+NEW_VIS_049,visual_spatial,4.3,cube_net,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"Cross net: centre star, heart above, dot below, moon left, sun right, cloud atta"
+NEW_VIS_050,visual_spatial,4.3,cube_net,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"Cross net: centre star, heart above, dot below, moon left, sun right, cloud atta"
+NEW_VIS_051,visual_spatial,4.3,cube_net,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Cross net: centre fish, cat above, dog below, bird left, frog right, snake attac"
+NEW_VIS_052,visual_spatial,4.3,cube_net,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Cross net: centre star, heart above, dot below, moon left, sun right, cloud abov"
+NEW_VIS_053,visual_spatial,4.3,cube_net,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Cross net: centre star, heart above, dot below, moon left, sun right, cloud abov"
+NEW_VIS_054,visual_spatial,4.3,cube_net,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"Cross net: centre star, heart above, dot below, moon left, sun right, cloud abov"
+NEW_VIS_055,visual_spatial,4.3,cube_net,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"Cross net: centre star, heart above, dot below, moon left, sun right, cloud abov"
+NEW_VIS_056,visual_spatial,4.3,cube_net,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Net: a row of 4 squares P, Q, R, S with T above Q and U below R. When folded wit"
+NEW_VIS_057,visual_spatial,4.3,cube_net,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Net: a row of 4 squares P, Q, R, S with T above Q and U below R. Which two squar"
+NEW_VIS_058,visual_spatial,4.3,cube_net,Think,medium,A,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,"Net: a row of 4 squares P, Q, R, S with T above Q and U below R. T is placed on "
+NEW_VIS_059,visual_spatial,4.3,cube_net,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"Net: a row of 4 squares P, Q, R, S with T above Q and U below R. Can P face the "
+NEW_VIS_060,visual_spatial,4.3,cube_net,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"A standard die has opposite faces adding to 7 (1–6, 2–5, 3–4). A net shows 1 opp"
+NEW_VIS_061,visual_spatial,4.3,cube_net,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,Which of these nets CANNOT fold into a closed cube? A) Cross of 5 squares plus a
+NEW_VIS_062,visual_spatial,4.3,cube_net,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,"A cube has a red top, blue bottom and green front. Its cross net has green centr"
+NEW_VIS_063,visual_spatial,4.3,cube_net,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,"A standard die has opposite faces adding to 7. A cross net shows: centre 2 dots,"
+NEW_VIS_064,visual_spatial,4.3,cube_net,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,"A cross die net shows: centre 3 dots, above 1 dot, below 4 dots, left 2 dots, ri"
+NEW_VIS_065,visual_spatial,4.3,cube_net,Master,hard,D,N/A,N/A,Checked structurally,PASS,,,,"A cross die net shows: centre 3 dots, above 4 dots, below 1 dot, left 2 dots, ri"
+NEW_VIS_066,visual_spatial,4.5,position,Explore,easy,B,N/A,N/A,Visual question with image: images/NEW_VIS_066.svg - needs manual SVG check,PASS,,,,A 3-by-3 grid has rows 1–3 (top to bottom) and columns 1–3 (left to right). A st
+NEW_VIS_067,visual_spatial,4.5,position,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,"On a 3-by-3 grid (rows top to bottom, columns left to right), an ant starts at r"
+NEW_VIS_068,visual_spatial,4.5,position,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,A cat sits above a dog. The dog sits above a bird. Who is at the bottom?
+NEW_VIS_069,visual_spatial,4.5,position,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,A ball is inside a box. The box is on a table. Where is the ball?
+NEW_VIS_070,visual_spatial,4.5,position,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,The moon is to the left of the star. The star is to the left of a cloud. Which i
+NEW_VIS_071,visual_spatial,4.5,position,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,"In a row of 4 chairs, Sam sits 2nd from the left. How many chairs are to his rig"
+NEW_VIS_072,visual_spatial,4.5,position,Think,medium,B,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,"On a 3-by-3 grid (rows top to bottom, columns left to right), a cat starts at th"
+NEW_VIS_073,visual_spatial,4.5,position,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"On a 3-by-3 grid, a dog starts at the bottom-left corner (row 3, column 1). It m"
+NEW_VIS_074,visual_spatial,4.5,position,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,A is left of B. B is left of C. C is left of D. Who is second from the right?
+NEW_VIS_075,visual_spatial,4.5,position,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Ann, Ben, Cara and Devi sit around a square table facing the centre. Ann sits op"
+NEW_VIS_076,visual_spatial,4.5,position,Think,medium,A,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,"On a 4-by-4 grid (rows/columns 1–4), treasure is buried at row 3, column 2. A pi"
+NEW_VIS_077,visual_spatial,4.5,position,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,A bee starts at the centre of a 3-by-3 grid. It visits the middle square of each
+NEW_VIS_078,visual_spatial,4.5,position,Think,medium,A,N/A,N/A,Checked structurally,WARN质量,,explanation_no_answer_reference,,"On a 3-by-3 grid, Ant A moves 2 squares right from row 2, column 1. Ant B moves "
+NEW_VIS_079,visual_spatial,4.5,position,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,"Mei starts on floor 1 of a building. She goes up 3 floors, then down 1 floor. Wh"
+NEW_VIS_080,visual_spatial,4.5,position,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,"Six chairs in a row, seats 1–6. Ann sits 2nd from the left (seat 2). Ben sits 2n"
+NEW_VIS_081,visual_spatial,4.5,position,Think,medium,D,N/A,N/A,Checked structurally,PASS,,,,"You face north, turn to face east (a right turn), then make an about-face (half-"
+NEW_VIS_082,visual_spatial,4.5,position,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,"On a 3-by-3 grid, a robot starts at row 1, column 1 and must visit row 1 column "
+NEW_VIS_083,visual_spatial,4.5,position,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,"Six houses stand in a circle in order: F, A, B, C, D, E. A is between F and B. B"
+NEW_VIS_084,visual_spatial,4.5,position,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,"On a 3-by-3 grid, the centre square is blocked. An ant walks from the top-left c"
+NEW_VIS_085,visual_spatial,4.5,position,Master,hard,B,N/A,N/A,Checked structurally,PASS,,,,"On a 4-by-4 grid (rows/columns 1–4), treasure is buried in a square that: is not"
+NEW_VIS_086,visual_spatial,4.6,transformation,Explore,easy,B,N/A,N/A,Checked structurally,PASS,,,,A big circle becomes a small circle. A big square becomes ___ (following the sam
+NEW_VIS_087,visual_spatial,4.6,transformation,Explore,easy,A,N/A,N/A,Checked structurally,PASS,,,,A circle with a dot inside loses its dot and becomes a plain circle. A square wi
+NEW_VIS_088,visual_spatial,4.6,transformation,Explore,easy,C,N/A,N/A,Checked structurally,PASS,,,,"Shapes shrink one step at a time: big, medium, ___?"
+NEW_VIS_089,visual_spatial,4.6,transformation,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,A square paper is folded in half so the top edge meets the bottom edge. A hole i
+NEW_VIS_090,visual_spatial,4.6,transformation,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,A square paper is folded in half so the left edge meets the right edge. A hole i
+NEW_VIS_091,visual_spatial,4.6,transformation,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,A square paper is folded in half so the bottom edge meets the top edge. A hole i
+NEW_VIS_092,visual_spatial,4.6,transformation,Think,medium,B,N/A,N/A,Checked structurally,PASS,,,,A circle with a thick border becomes a circle with a thin border. A square with 
+NEW_VIS_093,visual_spatial,4.6,transformation,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,Two identical squares overlap exactly halfway side by side (shifted horizontally
+NEW_VIS_094,visual_spatial,4.6,transformation,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,A circle is cut into 2 equal halves. Each half is cut into 2 equal parts. How ma
+NEW_VIS_095,visual_spatial,4.6,transformation,Think,medium,C,N/A,N/A,Checked structurally,PASS,,,,A square paper is folded along its diagonal (corner to opposite corner). What sh
+NEW_VIS_096,visual_spatial,4.6,transformation,Challenge,hard,C,N/A,N/A,Checked structurally,PASS,,,,"A square paper is folded in half top-to-bottom, then in half left-to-right (a qu"
+NEW_VIS_097,visual_spatial,4.6,transformation,Challenge,hard,A,N/A,N/A,Checked structurally,PASS,,,,A square paper is folded in half left-to-right. A hole is punched in the top-rig
+NEW_VIS_098,visual_spatial,4.6,transformation,Challenge,hard,B,N/A,N/A,Checked structurally,PASS,,,,A 2-by-2 block of small squares is drawn. How many squares of all sizes can you 
+NEW_VIS_099,visual_spatial,4.6,transformation,Master,hard,A,N/A,N/A,Checked structurally,PASS,,,,"A square paper is folded in half top-to-bottom, then in half left-to-right. A ho"
+NEW_VIS_100,visual_spatial,4.6,transformation,Master,hard,B,N/A,N/A,Checked structurally,PASS,,,,"A square paper is folded in half top-to-bottom, then in half left-to-right, then"

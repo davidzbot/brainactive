@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="262" viewBox="0 0 360 262">
+<rect width="360" height="262" fill="#fbfcfe"/>
+<text x="180" y="24" font-size="16" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Arrow turns 90 deg clockwise</text>
+<polygon points="55,96 65,133 45,133" fill="#2b2d42"/>
+<text x="55" y="170" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">step 1: up</text>
+<polygon points="177,120 140,130 140,110" fill="#2b2d42"/>
+<text x="158" y="170" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">step 2: right</text>
+<polygon points="262,144 252,107 272,107" fill="#2b2d42"/>
+<text x="262" y="170" font-size="12" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif" font-weight="bold">step 3: down</text>
+<text x="180" y="220" font-size="14" fill="#2b2d42" text-anchor="middle" font-family="sans-serif">Which way next?</text>
+</svg>

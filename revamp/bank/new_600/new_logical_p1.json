@@ -1,0 +1,407 @@
+[
+ {
+  "id": "NEW_LOG_001",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Four children queue for ice cream: Ali, Mei, Raj, Siti in that order. Who is just behind Mei?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Siti"
+   },
+   {
+    "id": "B",
+    "text": "Ali"
+   },
+   {
+    "id": "C",
+    "text": "Mei"
+   },
+   {
+    "id": "D",
+    "text": "Raj"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The order is Ali (1st), Mei (2nd), Raj (3rd), Siti (4th). Just behind Mei is Raj.",
+  "reasoning": "Reading a fixed order.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_002",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Tom finished 1st in a race, Aisha finished 2nd, and Ben finished 3rd. Who finished last?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "Tom"
+   },
+   {
+    "id": "C",
+    "text": "Aisha"
+   },
+   {
+    "id": "D",
+    "text": "Ben"
+   }
+  ],
+  "answer": "D",
+  "explanation": "With three runners, 3rd place is last. Ben finished 3rd, so Ben is last.",
+  "reasoning": "Reading a fixed order.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_003",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Kim lives above Lee. Lee lives above Tan. Who lives in the middle floor?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Lee"
+   },
+   {
+    "id": "B",
+    "text": "Tan"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Kim"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Top to bottom: Kim, Lee, Tan. Lee is in the middle.",
+  "reasoning": "Building a vertical order.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_004",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Book A sits on top of Book B. Book B sits on top of Book C. Which book is at the bottom of the stack?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "Book A"
+   },
+   {
+    "id": "C",
+    "text": "Book B"
+   },
+   {
+    "id": "D",
+    "text": "Book C"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Top to bottom: A, B, C. Book C is at the bottom.",
+  "reasoning": "Building a vertical order.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_005",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Sara, Devi, Ming and Raj stand in a queue in that order. Who is third in the queue?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Raj"
+   },
+   {
+    "id": "B",
+    "text": "Sara"
+   },
+   {
+    "id": "C",
+    "text": "Devi"
+   },
+   {
+    "id": "D",
+    "text": "Ming"
+   }
+  ],
+  "answer": "D",
+  "explanation": "1st Sara, 2nd Devi, 3rd Ming, 4th Raj. Third is Ming.",
+  "reasoning": "Reading a fixed order.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_006",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "The red car is ahead of the blue car. The blue car is ahead of the green car. Which car is last?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "Red car"
+   },
+   {
+    "id": "C",
+    "text": "Blue car"
+   },
+   {
+    "id": "D",
+    "text": "Green car"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Front to back: red, blue, green. The green car is last.",
+  "reasoning": "Building an order from clues.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_007",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Grandpa is the oldest in the family. Father is younger than Grandpa but older than Son. Who is the youngest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "Grandpa"
+   },
+   {
+    "id": "C",
+    "text": "Father"
+   },
+   {
+    "id": "D",
+    "text": "Son"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Oldest to youngest: Grandpa, Father, Son. The youngest is Son.",
+  "reasoning": "Building an age order.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_008",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A is taller than B. B is taller than C. C is taller than D. Who is the second tallest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "B"
+   },
+   {
+    "id": "B",
+    "text": "C"
+   },
+   {
+    "id": "C",
+    "text": "D"
+   },
+   {
+    "id": "D",
+    "text": "A"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Tallest to shortest: A, B, C, D. Second tallest is B.",
+  "reasoning": "Building a full order.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_009",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.1",
+  "archetype": "linear_order",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Five children queue up. Lin is 4th. Two children stand between Lin and Kumar, and Kumar is ahead of Lin. Who is first in the queue?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Kumar"
+   },
+   {
+    "id": "B",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "C",
+    "text": "Lin and Kumar"
+   },
+   {
+    "id": "D",
+    "text": "Lin"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Lin is 4th and Kumar is ahead of Lin with exactly two children between them, so Kumar must be 1st (positions 1 and 4). Kumar is first in the queue.",
+  "reasoning": "Placing positions with gap constraints.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "ordering"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ }
+]

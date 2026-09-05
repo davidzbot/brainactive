@@ -1,0 +1,1127 @@
+[
+ {
+  "id": "NEW_LOG_076",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "Which number is different: 5, 10, 15, 12?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5"
+   },
+   {
+    "id": "B",
+    "text": "10"
+   },
+   {
+    "id": "C",
+    "text": "15"
+   },
+   {
+    "id": "D",
+    "text": "12"
+   }
+  ],
+  "answer": "D",
+  "explanation": "5, 10 and 15 are all in the 5 times table. 12 is not.",
+  "reasoning": "Grouping by multiples.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_077",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which number is different: 3, 6, 9, 10?",
+  "options": [
+   {
+    "id": "A",
+    "text": "3"
+   },
+   {
+    "id": "B",
+    "text": "6"
+   },
+   {
+    "id": "C",
+    "text": "9"
+   },
+   {
+    "id": "D",
+    "text": "10"
+   }
+  ],
+  "answer": "D",
+  "explanation": "3, 6 and 9 are all in the 3 times table. 10 is not.",
+  "reasoning": "Grouping by multiples.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_078",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which shape is different: square, rectangle, rhombus, triangle?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Square"
+   },
+   {
+    "id": "B",
+    "text": "Rectangle"
+   },
+   {
+    "id": "C",
+    "text": "Rhombus"
+   },
+   {
+    "id": "D",
+    "text": "Triangle"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Square, rectangle and rhombus each have 4 sides. A triangle has only 3 sides.",
+  "reasoning": "Grouping by number of sides.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_079",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which number is different: 11, 13, 15, 17?",
+  "options": [
+   {
+    "id": "A",
+    "text": "17"
+   },
+   {
+    "id": "B",
+    "text": "11"
+   },
+   {
+    "id": "C",
+    "text": "13"
+   },
+   {
+    "id": "D",
+    "text": "15"
+   }
+  ],
+  "answer": "D",
+  "explanation": "11, 13 and 17 can only be split into 1 group or single items (they have no other equal groupings). 15 can be split into 3 groups of 5 or 5 groups of 3.",
+  "reasoning": "Grouping by whether equal grouping is possible.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_080",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which animal is different: ant, spider, bee, butterfly?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Spider"
+   },
+   {
+    "id": "B",
+    "text": "Bee"
+   },
+   {
+    "id": "C",
+    "text": "Butterfly"
+   },
+   {
+    "id": "D",
+    "text": "Ant"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Ant, bee and butterfly are insects with 6 legs. A spider has 8 legs and is not an insect.",
+  "reasoning": "Grouping by leg count and insect family.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_081",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which number is different: 4, 9, 16, 20?",
+  "options": [
+   {
+    "id": "A",
+    "text": "4"
+   },
+   {
+    "id": "B",
+    "text": "9"
+   },
+   {
+    "id": "C",
+    "text": "16"
+   },
+   {
+    "id": "D",
+    "text": "20"
+   }
+  ],
+  "answer": "D",
+  "explanation": "4 = 2×2, 9 = 3×3, 16 = 4×4 — each is a number multiplied by itself. 20 cannot be made that way.",
+  "reasoning": "Grouping square numbers.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_082",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which instrument is different: piano, violin, guitar, drum?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Piano"
+   },
+   {
+    "id": "B",
+    "text": "Violin"
+   },
+   {
+    "id": "C",
+    "text": "Guitar"
+   },
+   {
+    "id": "D",
+    "text": "Drum"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Piano, violin and guitar all make sound from strings. A drum is hit and has no strings.",
+  "reasoning": "Grouping by how sound is made.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_083",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which number is different: 21, 33, 44, 25?",
+  "options": [
+   {
+    "id": "A",
+    "text": "21"
+   },
+   {
+    "id": "B",
+    "text": "33"
+   },
+   {
+    "id": "C",
+    "text": "44"
+   },
+   {
+    "id": "D",
+    "text": "25"
+   }
+  ],
+  "answer": "D",
+  "explanation": "21, 33 and 44 are all in the 11 times table (11×2, 11×3, 11×4). 25 is not.",
+  "reasoning": "Grouping by multiples of 11.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_084",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which shape is different: triangle, square, pentagon, circle?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Triangle"
+   },
+   {
+    "id": "B",
+    "text": "Square"
+   },
+   {
+    "id": "C",
+    "text": "Pentagon"
+   },
+   {
+    "id": "D",
+    "text": "Circle"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Triangle, square and pentagon are made of straight sides meeting at corners. A circle has no straight sides and no corners.",
+  "reasoning": "Grouping straight-sided vs curved shapes.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_085",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which number is different: 8, 27, 64, 50?",
+  "options": [
+   {
+    "id": "A",
+    "text": "8"
+   },
+   {
+    "id": "B",
+    "text": "27"
+   },
+   {
+    "id": "C",
+    "text": "64"
+   },
+   {
+    "id": "D",
+    "text": "50"
+   }
+  ],
+  "answer": "D",
+  "explanation": "8 = 2×2×2, 27 = 3×3×3, 64 = 4×4×4 — each is a number multiplied by itself three times. 50 cannot be made that way.",
+  "reasoning": "Grouping cube numbers.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_086",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Which number is different: 36, 49, 64, 72?",
+  "options": [
+   {
+    "id": "A",
+    "text": "36"
+   },
+   {
+    "id": "B",
+    "text": "49"
+   },
+   {
+    "id": "C",
+    "text": "64"
+   },
+   {
+    "id": "D",
+    "text": "72"
+   }
+  ],
+  "answer": "D",
+  "explanation": "36 = 6×6, 49 = 7×7, 64 = 8×8 — each is a number multiplied by itself. 72 cannot be made that way.",
+  "reasoning": "Grouping square numbers.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_087",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Which number is different: 121, 144, 169, 180?",
+  "options": [
+   {
+    "id": "A",
+    "text": "121"
+   },
+   {
+    "id": "B",
+    "text": "144"
+   },
+   {
+    "id": "C",
+    "text": "169"
+   },
+   {
+    "id": "D",
+    "text": "180"
+   }
+  ],
+  "answer": "D",
+  "explanation": "121 = 11×11, 144 = 12×12, 169 = 13×13 — each is a number multiplied by itself. 180 cannot be made that way.",
+  "reasoning": "Grouping large square numbers.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_088",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Which fraction is different: 1/2, 2/4, 3/6, 2/3?",
+  "options": [
+   {
+    "id": "A",
+    "text": "1/2"
+   },
+   {
+    "id": "B",
+    "text": "2/4"
+   },
+   {
+    "id": "C",
+    "text": "3/6"
+   },
+   {
+    "id": "D",
+    "text": "2/3"
+   }
+  ],
+  "answer": "D",
+  "explanation": "1/2, 2/4 and 3/6 are all equal to one half. 2/3 is larger than one half.",
+  "reasoning": "Grouping equivalent fractions.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_089",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Which number is different: 1, 8, 27, 36?",
+  "options": [
+   {
+    "id": "A",
+    "text": "1"
+   },
+   {
+    "id": "B",
+    "text": "8"
+   },
+   {
+    "id": "C",
+    "text": "27"
+   },
+   {
+    "id": "D",
+    "text": "36"
+   }
+  ],
+  "answer": "D",
+  "explanation": "1 = 1×1×1, 8 = 2×2×2, 27 = 3×3×3 — each is a number multiplied by itself three times. 36 cannot be made that way.",
+  "reasoning": "Grouping cube numbers.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_090",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.4",
+  "archetype": "classification",
+  "level": "Master",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Three of these numbers can be made by multiplying 2 by itself several times. Which one cannot: 16, 32, 64, 100?",
+  "options": [
+   {
+    "id": "A",
+    "text": "16"
+   },
+   {
+    "id": "B",
+    "text": "32"
+   },
+   {
+    "id": "C",
+    "text": "64"
+   },
+   {
+    "id": "D",
+    "text": "100"
+   }
+  ],
+  "answer": "D",
+  "explanation": "16 = 2×2×2×2, 32 = 2×2×2×2×2, 64 = 2×2×2×2×2×2. 100 cannot be made by multiplying only 2s (100 = 2×2×5×5).",
+  "reasoning": "Grouping powers of 2.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "classification"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_091",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.5",
+  "archetype": "syllogism",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "All dogs bark. Bruno is a dog. What does Bruno do?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Barks"
+   },
+   {
+    "id": "B",
+    "text": "Meows"
+   },
+   {
+    "id": "C",
+    "text": "Swims"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Every dog barks, and Bruno is a dog, so Bruno barks.",
+  "reasoning": "Applying a universal rule to one member.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "syllogism"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_092",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.5",
+  "archetype": "syllogism",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "No fish can walk on land. Nemo is a fish. Can Nemo walk on land?",
+  "options": [
+   {
+    "id": "A",
+    "text": "No"
+   },
+   {
+    "id": "B",
+    "text": "Sometimes"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Yes"
+   }
+  ],
+  "answer": "A",
+  "explanation": "No fish can walk on land, and Nemo is a fish, so Nemo cannot walk on land.",
+  "reasoning": "Applying a universal negative rule.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "syllogism"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_093",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.5",
+  "archetype": "syllogism",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "All pens in the box are blue. This pen is red. Is this pen from the box?",
+  "options": [
+   {
+    "id": "A",
+    "text": "No"
+   },
+   {
+    "id": "B",
+    "text": "Maybe"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Yes"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Everything in the box is blue. This pen is red, so it cannot be from the box.",
+  "reasoning": "Excluding by a mismatched property.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "syllogism"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_094",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.5",
+  "archetype": "syllogism_particular",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Some boxes in the store contain toys. Box X is a box in the store. Using only these statements, does Box X contain toys?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Only red toys"
+   },
+   {
+    "id": "B",
+    "text": "Yes"
+   },
+   {
+    "id": "C",
+    "text": "No"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "D",
+  "explanation": "'Some' means at least one box has toys, but Box X might or might not be one of them. The statements do not say enough — cannot tell.",
+  "reasoning": "Recognising that 'some' does not cover every member.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "syllogism"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_095",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.5",
+  "archetype": "syllogism",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "All apples are fruits. All fruits grow on plants. Do apples grow on plants?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Yes"
+   },
+   {
+    "id": "B",
+    "text": "No"
+   },
+   {
+    "id": "C",
+    "text": "Only red apples"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Apples are fruits, and all fruits grow on plants, so apples grow on plants.",
+  "reasoning": "Chaining two 'all' statements.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "syllogism"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_096",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.5",
+  "archetype": "syllogism",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "No cats are dogs. Tom is a cat. Is Tom a dog?",
+  "options": [
+   {
+    "id": "A",
+    "text": "No"
+   },
+   {
+    "id": "B",
+    "text": "Sometimes"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Yes"
+   }
+  ],
+  "answer": "A",
+  "explanation": "No cat is a dog, and Tom is a cat, so Tom is not a dog.",
+  "reasoning": "Applying a 'no' statement to a member.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "syllogism"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_097",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.5",
+  "archetype": "syllogism_particular",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "All violins are instruments. Some instruments are made of wood. Using only these statements, is a violin made of wood?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Only old violins"
+   },
+   {
+    "id": "B",
+    "text": "Yes, surely"
+   },
+   {
+    "id": "C",
+    "text": "No"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "D",
+  "explanation": "'Some instruments are wooden' does not tell us which ones. The violin might be wooden or not — using only the given statements, we cannot tell. (Reason from the statements, not from real life!)",
+  "reasoning": "Recognising that 'some' plus 'all' does not transfer properties.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "syllogism"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_098",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.5",
+  "archetype": "syllogism",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "All teachers in the school love reading. Mrs Tan does not love reading. Is Mrs Tan a teacher in the school?",
+  "options": [
+   {
+    "id": "A",
+    "text": "No"
+   },
+   {
+    "id": "B",
+    "text": "Maybe"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Yes"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Every teacher in the school loves reading. Mrs Tan does not, so she cannot be a teacher in the school.",
+  "reasoning": "Excluding by a mismatched property.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "syllogism"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_099",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.5",
+  "archetype": "syllogism",
+  "level": "Master",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "All squares are rectangles. No rectangle is a circle. Is any square a circle?",
+  "options": [
+   {
+    "id": "A",
+    "text": "No"
+   },
+   {
+    "id": "B",
+    "text": "Some are"
+   },
+   {
+    "id": "C",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "D",
+    "text": "Yes"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Every square is a rectangle, and no rectangle is a circle, so no square can be a circle.",
+  "reasoning": "Chaining 'all' with 'no'.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "syllogism"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_LOG_100",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.5",
+  "archetype": "syllogism",
+  "level": "Master",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Two sisters: one always tells the truth and the other always lies. Mei says: 'Sue and I both always lie.' What can you conclude?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cannot tell"
+   },
+   {
+    "id": "B",
+    "text": "Both lie"
+   },
+   {
+    "id": "C",
+    "text": "Mei tells the truth, Sue lies"
+   },
+   {
+    "id": "D",
+    "text": "Mei lies, Sue tells the truth"
+   }
+  ],
+  "answer": "D",
+  "explanation": "If Mei told the truth, her statement 'we both lie' would be true — but then Mei herself lies, a contradiction. So Mei lies. Her statement is false, meaning it is NOT true that both lie — so Sue tells the truth.",
+  "reasoning": "Resolving a self-referential paradox.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "logical",
+   "syllogism"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ }
+]
