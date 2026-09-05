@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="300" viewBox="0 0 360 300">
+<rect width="360" height="300" fill="#fbfcfe"/>
+<text x="180" y="24" font-size="16" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Clock face positions</text>
+<circle cx="180" cy="150" r="90" fill="#ffffff" stroke="#2b2d42" stroke-width="3"/>
+<g font-family="sans-serif" text-anchor="middle" font-size="18" fill="#2b2d42" font-weight="bold">
+<text x="180" y="80">12</text>
+<text x="252" y="156">3</text>
+<text x="180" y="232">6</text>
+<text x="108" y="156">9</text>
+</g>
+<circle cx="180" cy="150" r="5" fill="#e63946"/>
+<line x1="180" y1="150" x2="180" y2="75" stroke="#e63946" stroke-width="3"/>
+<text x="180" y="270" font-size="13" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif">clockwise: 12 → 3 → 6 → 9 → 12</text>
+</svg>

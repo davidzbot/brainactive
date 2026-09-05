@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="300" viewBox="0 0 360 300">
+<rect width="360" height="300" fill="#fbfcfe"/>
+<text x="180" y="24" font-size="16" fill="#2b2d42" text-anchor="middle" font-family="sans-serif" font-weight="bold">Cross net: opposite pairs</text>
+<g font-family="sans-serif" text-anchor="middle">
+<rect x="155" y="60" width="50" height="50" fill="#e8f4fd" stroke="#2b2d42" stroke-width="2"/>
+<text x="180" y="90" font-size="15" fill="#2b2d42">above</text>
+<rect x="105" y="110" width="50" height="50" fill="#e8f4fd" stroke="#2b2d42" stroke-width="2"/>
+<text x="130" y="140" font-size="15" fill="#2b2d42">left</text>
+<rect x="155" y="110" width="50" height="50" fill="#fff3b0" stroke="#2b2d42" stroke-width="3"/>
+<text x="180" y="140" font-size="15" fill="#2b2d42">centre</text>
+<rect x="205" y="110" width="50" height="50" fill="#e8f4fd" stroke="#2b2d42" stroke-width="2"/>
+<text x="230" y="140" font-size="15" fill="#2b2d42">right</text>
+<rect x="155" y="160" width="50" height="50" fill="#e8f4fd" stroke="#2b2d42" stroke-width="2"/>
+<text x="180" y="190" font-size="15" fill="#2b2d42">below</text>
+</g>
+<text x="180" y="228" font-size="13" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif">opposites: above↔below, left↔right,</text>
+<text x="180" y="250" font-size="13" fill="#9aa0a6" text-anchor="middle" font-family="sans-serif">centre↔extra square</text>
+</svg>

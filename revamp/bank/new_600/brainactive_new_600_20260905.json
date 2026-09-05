@@ -9853,9 +9853,12 @@
     "pattern",
     "sequence"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2058.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -10033,9 +10036,12 @@
     "pattern",
     "sequence"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2062.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -22782,9 +22788,12 @@
     "spatial",
     "rotation"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2345.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -23007,9 +23016,12 @@
     "spatial",
     "rotation"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2345.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -23277,9 +23289,12 @@
     "spatial",
     "rotation"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2345.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -23507,9 +23522,12 @@
     "spatial",
     "rotation"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2345.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -24149,9 +24167,12 @@
     "spatial",
     "reflection"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2345.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -24742,9 +24763,12 @@
     "spatial",
     "cube"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2388.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -24787,9 +24811,12 @@
     "spatial",
     "cube"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2388.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -24832,9 +24859,12 @@
     "spatial",
     "cube"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2388.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -24877,9 +24907,12 @@
     "spatial",
     "cube"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2388.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -24922,9 +24955,12 @@
     "spatial",
     "cube"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2388.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -24967,9 +25003,12 @@
     "spatial",
     "cube"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2388.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -25798,9 +25837,12 @@
     "spatial",
     "position"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2411.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -25843,9 +25885,12 @@
     "spatial",
     "position"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2411.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -26248,9 +26293,12 @@
     "spatial",
     "position"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2411.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -26338,9 +26386,12 @@
     "spatial",
     "position"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2411.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",
@@ -26383,9 +26434,12 @@
     "spatial",
     "position"
    ],
-   "visual_required": false,
-   "visual_spec": null,
-   "image_path": null,
+   "visual_required": true,
+   "visual_spec": {
+    "type": "diagram",
+    "note": "see image"
+   },
+   "image_path": "p3/BA_P3_2411.svg",
    "is_active": true,
    "created_at": "2026-09-05T00:00:00+00:00",
    "updated_at": "2026-09-05T00:00:00+00:00",

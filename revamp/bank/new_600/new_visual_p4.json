@@ -1,462 +1,923 @@
 [
-  {
-    "id": "NEW_VIS_066",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Explore",
-    "difficulty": "easy",
-    "question_type": "multiple_choice",
-    "question": "A 3-by-3 grid has rows 1–3 (top to bottom) and columns 1–3 (left to right). A star sits in row 2, column 3. Where is the star?",
-    "options": [{"id": "A", "text": "Row 2, column 2"}, {"id": "B", "text": "Row 2, column 3"}, {"id": "C", "text": "Row 3, column 2"}, {"id": "D", "text": "Row 1, column 3"}],
-    "answer": "B",
-    "explanation": "The star is in the middle row (row 2), rightmost column (column 3).",
-    "reasoning": "Reading grid coordinates.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": true,
-    "visual_spec": {"type": "grid_position", "grid": "3x3", "mark": "star", "row": 2, "col": 3},
-    "image_path": "p3/NEW_VIS_066.svg",
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
+ {
+  "id": "NEW_VIS_066",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A 3-by-3 grid has rows 1–3 (top to bottom) and columns 1–3 (left to right). A star sits in row 2, column 3. Where is the star?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Row 2, column 2"
+   },
+   {
+    "id": "B",
+    "text": "Row 2, column 3"
+   },
+   {
+    "id": "C",
+    "text": "Row 3, column 2"
+   },
+   {
+    "id": "D",
+    "text": "Row 1, column 3"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The star is in the middle row (row 2), rightmost column (column 3).",
+  "reasoning": "Reading grid coordinates.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": true,
+  "visual_spec": {
+   "type": "grid_position",
+   "grid": "3x3",
+   "mark": "star",
+   "row": 2,
+   "col": 3
   },
-  {
-    "id": "NEW_VIS_067",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Explore",
-    "difficulty": "easy",
-    "question_type": "multiple_choice",
-    "question": "On a 3-by-3 grid (rows top to bottom, columns left to right), an ant starts at row 1, column 1 and crawls 2 squares to the right. Where is it now?",
-    "options": [{"id": "A", "text": "Row 1, column 2"}, {"id": "B", "text": "Row 1, column 3"}, {"id": "C", "text": "Row 3, column 1"}, {"id": "D", "text": "Row 2, column 1"}],
-    "answer": "B",
-    "explanation": "Moving right changes only the column: column 1 → column 3. Row stays 1.",
-    "reasoning": "Moving on a grid in one direction.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
+  "image_path": "p3/NEW_VIS_066.svg",
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_067",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "On a 3-by-3 grid (rows top to bottom, columns left to right), an ant starts at row 1, column 1 and crawls 2 squares to the right. Where is it now?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Row 1, column 2"
+   },
+   {
+    "id": "B",
+    "text": "Row 1, column 3"
+   },
+   {
+    "id": "C",
+    "text": "Row 3, column 1"
+   },
+   {
+    "id": "D",
+    "text": "Row 2, column 1"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Moving right changes only the column: column 1 → column 3. Row stays 1.",
+  "reasoning": "Moving on a grid in one direction.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_068",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A cat sits above a dog. The dog sits above a bird. Who is at the bottom?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cat"
+   },
+   {
+    "id": "B",
+    "text": "Dog"
+   },
+   {
+    "id": "C",
+    "text": "Bird"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Top to bottom: cat, dog, bird. The bird is at the bottom.",
+  "reasoning": "Stacking three items vertically.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_069",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "A ball is inside a box. The box is on a table. Where is the ball?",
+  "options": [
+   {
+    "id": "A",
+    "text": "On the table"
+   },
+   {
+    "id": "B",
+    "text": "Inside the box"
+   },
+   {
+    "id": "C",
+    "text": "Under the table"
+   },
+   {
+    "id": "D",
+    "text": "Next to the box"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The ball is inside the box (which happens to sit on the table). Its direct position is inside the box.",
+  "reasoning": "Understanding inside vs on.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_070",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "The moon is to the left of the star. The star is to the left of a cloud. Which is rightmost in the sky?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Moon"
+   },
+   {
+    "id": "B",
+    "text": "Star"
+   },
+   {
+    "id": "C",
+    "text": "Cloud"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Left to right: moon, star, cloud. The cloud is rightmost.",
+  "reasoning": "Ordering three items left to right.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_071",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Explore",
+  "difficulty": "easy",
+  "question_type": "multiple_choice",
+  "question": "In a row of 4 chairs, Sam sits 2nd from the left. How many chairs are to his right?",
+  "options": [
+   {
+    "id": "A",
+    "text": "1"
+   },
+   {
+    "id": "B",
+    "text": "2"
+   },
+   {
+    "id": "C",
+    "text": "3"
+   },
+   {
+    "id": "D",
+    "text": "4"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Chairs 3 and 4 are to the right of chair 2. That is 2 chairs.",
+  "reasoning": "Counting seats to one side.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_072",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "On a 3-by-3 grid (rows top to bottom, columns left to right), a cat starts at the centre (row 2, column 2). It moves up 1, right 1, then down 2. Where is it now?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Row 1, column 3"
+   },
+   {
+    "id": "B",
+    "text": "Row 3, column 3"
+   },
+   {
+    "id": "C",
+    "text": "Row 3, column 1"
+   },
+   {
+    "id": "D",
+    "text": "Row 2, column 3"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Start (2,2). Up 1 → (1,2). Right 1 → (1,3). Down 2 → (3,3).",
+  "reasoning": "Following multi-step grid moves.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": true,
+  "visual_spec": {
+   "type": "diagram",
+   "note": "see image"
   },
-  {
-    "id": "NEW_VIS_068",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Explore",
-    "difficulty": "easy",
-    "question_type": "multiple_choice",
-    "question": "A cat sits above a dog. The dog sits above a bird. Who is at the bottom?",
-    "options": [{"id": "A", "text": "Cat"}, {"id": "B", "text": "Dog"}, {"id": "C", "text": "Bird"}, {"id": "D", "text": "Cannot tell"}],
-    "answer": "C",
-    "explanation": "Top to bottom: cat, dog, bird. The bird is at the bottom.",
-    "reasoning": "Stacking three items vertically.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
+  "image_path": "p3/BA_P3_2411.svg",
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_073",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "On a 3-by-3 grid, a dog starts at the bottom-left corner (row 3, column 1). It moves right 2, then up 2. Where is it now?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Top-left corner"
+   },
+   {
+    "id": "B",
+    "text": "Top-right corner"
+   },
+   {
+    "id": "C",
+    "text": "Bottom-right corner"
+   },
+   {
+    "id": "D",
+    "text": "Centre"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Start (3,1). Right 2 → (3,3). Up 2 → (1,3), the top-right corner.",
+  "reasoning": "Following multi-step grid moves.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": true,
+  "visual_spec": {
+   "type": "diagram",
+   "note": "see image"
   },
-  {
-    "id": "NEW_VIS_069",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Explore",
-    "difficulty": "easy",
-    "question_type": "multiple_choice",
-    "question": "A ball is inside a box. The box is on a table. Where is the ball?",
-    "options": [{"id": "A", "text": "On the table"}, {"id": "B", "text": "Inside the box"}, {"id": "C", "text": "Under the table"}, {"id": "D", "text": "Next to the box"}],
-    "answer": "B",
-    "explanation": "The ball is inside the box (which happens to sit on the table). Its direct position is inside the box.",
-    "reasoning": "Understanding inside vs on.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
+  "image_path": "p3/BA_P3_2411.svg",
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_074",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A is left of B. B is left of C. C is left of D. Who is second from the right?",
+  "options": [
+   {
+    "id": "A",
+    "text": "A"
+   },
+   {
+    "id": "B",
+    "text": "B"
+   },
+   {
+    "id": "C",
+    "text": "C"
+   },
+   {
+    "id": "D",
+    "text": "D"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Left to right: A, B, C, D. Second from the right is C.",
+  "reasoning": "Counting from the right end.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_075",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Ann, Ben, Cara and Devi sit around a square table facing the centre. Ann sits opposite Ben. Cara sits to Ann's left. Who sits to Ann's right?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ben"
+   },
+   {
+    "id": "B",
+    "text": "Cara"
+   },
+   {
+    "id": "C",
+    "text": "Devi"
+   },
+   {
+    "id": "D",
+    "text": "Nobody"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Ann faces the centre with Ben opposite. Ann's left and right seats are taken by Cara and Devi. Since Cara is on the left, Devi is on the right.",
+  "reasoning": "Placing seats around a table.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_076",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "On a 4-by-4 grid (rows/columns 1–4), treasure is buried at row 3, column 2. A pirate starts at row 1, column 2 and digs 2 squares straight down. Does the pirate find the treasure?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Yes"
+   },
+   {
+    "id": "B",
+    "text": "No, one square short"
+   },
+   {
+    "id": "C",
+    "text": "No, wrong column"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Moving straight down 2 from (1,2) lands on (3,2) — exactly the treasure square.",
+  "reasoning": "Moving straight on a grid.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_077",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A bee starts at the centre of a 3-by-3 grid. It visits the middle square of each edge (up, right, down, left) and returns to the centre. How many different squares has it visited?",
+  "options": [
+   {
+    "id": "A",
+    "text": "4"
+   },
+   {
+    "id": "B",
+    "text": "5"
+   },
+   {
+    "id": "C",
+    "text": "6"
+   },
+   {
+    "id": "D",
+    "text": "9"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Centre + 4 edge-middles = 5 different squares.",
+  "reasoning": "Counting distinct visited squares.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_078",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "On a 3-by-3 grid, Ant A moves 2 squares right from row 2, column 1. Ant B moves 2 squares left from row 2, column 3. Have they swapped places?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Yes"
+   },
+   {
+    "id": "B",
+    "text": "No"
+   },
+   {
+    "id": "C",
+    "text": "They meet in the middle only"
+   },
+   {
+    "id": "D",
+    "text": "Cannot tell"
+   }
+  ],
+  "answer": "A",
+  "explanation": "A lands on (2,3) — B's start. B lands on (2,1) — A's start. They swapped.",
+  "reasoning": "Tracking two movers.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_079",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Mei starts on floor 1 of a building. She goes up 3 floors, then down 1 floor. Which floor is she on now?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Floor 2"
+   },
+   {
+    "id": "B",
+    "text": "Floor 3"
+   },
+   {
+    "id": "C",
+    "text": "Floor 4"
+   },
+   {
+    "id": "D",
+    "text": "Floor 5"
+   }
+  ],
+  "answer": "B",
+  "explanation": "1 + 3 = 4, then 4 − 1 = 3. Floor 3.",
+  "reasoning": "Tracking up-down moves.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_080",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Six chairs in a row, seats 1–6. Ann sits 2nd from the left (seat 2). Ben sits 2nd from the right (seat 5). Cara sits just right of Ann. Devi sits just left of Ben. Which two children sit in the middle seats (3 and 4)?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ann and Ben"
+   },
+   {
+    "id": "B",
+    "text": "Ann and Cara"
+   },
+   {
+    "id": "C",
+    "text": "Cara and Devi"
+   },
+   {
+    "id": "D",
+    "text": "Devi and Ben"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Ann = 2, Cara = 3 (just right of Ann), Ben = 5, Devi = 4 (just left of Ben). Seats 3 and 4 hold Cara and Devi.",
+  "reasoning": "Pinning seats from both ends.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_081",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "You face north, turn to face east (a right turn), then make an about-face (half-turn). Which way do you face now?",
+  "options": [
+   {
+    "id": "A",
+    "text": "North"
+   },
+   {
+    "id": "B",
+    "text": "East"
+   },
+   {
+    "id": "C",
+    "text": "South"
+   },
+   {
+    "id": "D",
+    "text": "West"
+   }
+  ],
+  "answer": "D",
+  "explanation": "North → east, then half-turn from east → west.",
+  "reasoning": "Combining a quarter-turn with a half-turn.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_082",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "On a 3-by-3 grid, a robot starts at row 1, column 1 and must visit row 1 column 3, then row 3 column 3, then row 3 column 1, moving only up/down/left/right one square at a time. How many moves does the whole trip take?",
+  "options": [
+   {
+    "id": "A",
+    "text": "4"
+   },
+   {
+    "id": "B",
+    "text": "5"
+   },
+   {
+    "id": "C",
+    "text": "6"
+   },
+   {
+    "id": "D",
+    "text": "8"
+   }
+  ],
+  "answer": "C",
+  "explanation": "(1,1)→(1,3): 2 right. →(3,3): 2 down. →(3,1): 2 left. Total 2 + 2 + 2 = 6 moves.",
+  "reasoning": "Adding shortest legs of a grid tour.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": true,
+  "visual_spec": {
+   "type": "diagram",
+   "note": "see image"
   },
-  {
-    "id": "NEW_VIS_070",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Explore",
-    "difficulty": "easy",
-    "question_type": "multiple_choice",
-    "question": "The moon is to the left of the star. The star is to the left of a cloud. Which is rightmost in the sky?",
-    "options": [{"id": "A", "text": "Moon"}, {"id": "B", "text": "Star"}, {"id": "C", "text": "Cloud"}, {"id": "D", "text": "Cannot tell"}],
-    "answer": "C",
-    "explanation": "Left to right: moon, star, cloud. The cloud is rightmost.",
-    "reasoning": "Ordering three items left to right.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
+  "image_path": "p3/BA_P3_2411.svg",
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_083",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Six houses stand in a circle in order: F, A, B, C, D, E. A is between F and B. B is between A and C. C is between B and D. D is between C and E. E is between D and F. Which house is directly opposite C?",
+  "options": [
+   {
+    "id": "A",
+    "text": "A"
+   },
+   {
+    "id": "B",
+    "text": "B"
+   },
+   {
+    "id": "C",
+    "text": "F"
+   },
+   {
+    "id": "D",
+    "text": "E"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Around the circle: F-A-B-C-D-E. Opposite means 3 steps away in a circle of 6. C's opposite is F.",
+  "reasoning": "Finding opposites on a circle.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_084",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "On a 3-by-3 grid, the centre square is blocked. An ant walks from the top-left corner to the bottom-right corner, moving only right or down one square at a time. What is the shortest possible number of moves?",
+  "options": [
+   {
+    "id": "A",
+    "text": "3"
+   },
+   {
+    "id": "B",
+    "text": "4"
+   },
+   {
+    "id": "C",
+    "text": "5"
+   },
+   {
+    "id": "D",
+    "text": "6"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Top-left to bottom-right needs 2 rights + 2 downs = 4 moves. Going around the edge (e.g. right, right, down, down) never enters the blocked centre, so 4 moves is achievable.",
+  "reasoning": "Routing around a blocked square.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": true,
+  "visual_spec": {
+   "type": "diagram",
+   "note": "see image"
   },
-  {
-    "id": "NEW_VIS_071",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Explore",
-    "difficulty": "easy",
-    "question_type": "multiple_choice",
-    "question": "In a row of 4 chairs, Sam sits 2nd from the left. How many chairs are to his right?",
-    "options": [{"id": "A", "text": "1"}, {"id": "B", "text": "2"}, {"id": "C", "text": "3"}, {"id": "D", "text": "4"}],
-    "answer": "B",
-    "explanation": "Chairs 3 and 4 are to the right of chair 2. That is 2 chairs.",
-    "reasoning": "Counting seats to one side.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
+  "image_path": "p3/BA_P3_2411.svg",
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ },
+ {
+  "id": "NEW_VIS_085",
+  "domain": "visual_spatial",
+  "topic": "Visual & Spatial",
+  "skill": "4.5",
+  "archetype": "position",
+  "level": "Master",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "On a 4-by-4 grid (rows/columns 1–4), treasure is buried in a square that: is not in row 1 or row 4, is not in column 1 or column 4, is not on the main diagonal (row = column), is in row 3, and shares a side with the fountain at row 2, column 2. Which square holds the treasure?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Row 2, column 3"
+   },
+   {
+    "id": "B",
+    "text": "Row 3, column 2"
+   },
+   {
+    "id": "C",
+    "text": "Row 3, column 3"
+   },
+   {
+    "id": "D",
+    "text": "Row 2, column 2"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Inside rows 2–3 and columns 2–3, excluding the diagonal (2,2) and (3,3): left with (2,3) and (3,2). Row 3 forces (3,2), which indeed shares a side with the fountain at (2,2).",
+  "reasoning": "Intersecting five positional clues.",
+  "tags": [
+   "p3",
+   "high_ability",
+   "spatial",
+   "position"
+  ],
+  "visual_required": true,
+  "visual_spec": {
+   "type": "diagram",
+   "note": "see image"
   },
-  {
-    "id": "NEW_VIS_072",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Think",
-    "difficulty": "medium",
-    "question_type": "multiple_choice",
-    "question": "On a 3-by-3 grid (rows top to bottom, columns left to right), a cat starts at the centre (row 2, column 2). It moves up 1, right 1, then down 2. Where is it now?",
-    "options": [{"id": "A", "text": "Row 1, column 3"}, {"id": "B", "text": "Row 3, column 3"}, {"id": "C", "text": "Row 3, column 1"}, {"id": "D", "text": "Row 2, column 3"}],
-    "answer": "B",
-    "explanation": "Start (2,2). Up 1 → (1,2). Right 1 → (1,3). Down 2 → (3,3).",
-    "reasoning": "Following multi-step grid moves.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
-  },
-  {
-    "id": "NEW_VIS_073",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Think",
-    "difficulty": "medium",
-    "question_type": "multiple_choice",
-    "question": "On a 3-by-3 grid, a dog starts at the bottom-left corner (row 3, column 1). It moves right 2, then up 2. Where is it now?",
-    "options": [{"id": "A", "text": "Top-left corner"}, {"id": "B", "text": "Top-right corner"}, {"id": "C", "text": "Bottom-right corner"}, {"id": "D", "text": "Centre"}],
-    "answer": "B",
-    "explanation": "Start (3,1). Right 2 → (3,3). Up 2 → (1,3), the top-right corner.",
-    "reasoning": "Following multi-step grid moves.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
-  },
-  {
-    "id": "NEW_VIS_074",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Think",
-    "difficulty": "medium",
-    "question_type": "multiple_choice",
-    "question": "A is left of B. B is left of C. C is left of D. Who is second from the right?",
-    "options": [{"id": "A", "text": "A"}, {"id": "B", "text": "B"}, {"id": "C", "text": "C"}, {"id": "D", "text": "D"}],
-    "answer": "C",
-    "explanation": "Left to right: A, B, C, D. Second from the right is C.",
-    "reasoning": "Counting from the right end.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
-  },
-  {
-    "id": "NEW_VIS_075",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Think",
-    "difficulty": "medium",
-    "question_type": "multiple_choice",
-    "question": "Ann, Ben, Cara and Devi sit around a square table facing the centre. Ann sits opposite Ben. Cara sits to Ann's left. Who sits to Ann's right?",
-    "options": [{"id": "A", "text": "Ben"}, {"id": "B", "text": "Cara"}, {"id": "C", "text": "Devi"}, {"id": "D", "text": "Nobody"}],
-    "answer": "C",
-    "explanation": "Ann faces the centre with Ben opposite. Ann's left and right seats are taken by Cara and Devi. Since Cara is on the left, Devi is on the right.",
-    "reasoning": "Placing seats around a table.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
-  },
-  {
-    "id": "NEW_VIS_076",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Think",
-    "difficulty": "medium",
-    "question_type": "multiple_choice",
-    "question": "On a 4-by-4 grid (rows/columns 1–4), treasure is buried at row 3, column 2. A pirate starts at row 1, column 2 and digs 2 squares straight down. Does the pirate find the treasure?",
-    "options": [{"id": "A", "text": "Yes"}, {"id": "B", "text": "No, one square short"}, {"id": "C", "text": "No, wrong column"}, {"id": "D", "text": "Cannot tell"}],
-    "answer": "A",
-    "explanation": "Moving straight down 2 from (1,2) lands on (3,2) — exactly the treasure square.",
-    "reasoning": "Moving straight on a grid.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
-  },
-  {
-    "id": "NEW_VIS_077",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Think",
-    "difficulty": "medium",
-    "question_type": "multiple_choice",
-    "question": "A bee starts at the centre of a 3-by-3 grid. It visits the middle square of each edge (up, right, down, left) and returns to the centre. How many different squares has it visited?",
-    "options": [{"id": "A", "text": "4"}, {"id": "B", "text": "5"}, {"id": "C", "text": "6"}, {"id": "D", "text": "9"}],
-    "answer": "B",
-    "explanation": "Centre + 4 edge-middles = 5 different squares.",
-    "reasoning": "Counting distinct visited squares.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
-  },
-  {
-    "id": "NEW_VIS_078",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Think",
-    "difficulty": "medium",
-    "question_type": "multiple_choice",
-    "question": "On a 3-by-3 grid, Ant A moves 2 squares right from row 2, column 1. Ant B moves 2 squares left from row 2, column 3. Have they swapped places?",
-    "options": [{"id": "A", "text": "Yes"}, {"id": "B", "text": "No"}, {"id": "C", "text": "They meet in the middle only"}, {"id": "D", "text": "Cannot tell"}],
-    "answer": "A",
-    "explanation": "A lands on (2,3) — B's start. B lands on (2,1) — A's start. They swapped.",
-    "reasoning": "Tracking two movers.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
-  },
-  {
-    "id": "NEW_VIS_079",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Think",
-    "difficulty": "medium",
-    "question_type": "multiple_choice",
-    "question": "Mei starts on floor 1 of a building. She goes up 3 floors, then down 1 floor. Which floor is she on now?",
-    "options": [{"id": "A", "text": "Floor 2"}, {"id": "B", "text": "Floor 3"}, {"id": "C", "text": "Floor 4"}, {"id": "D", "text": "Floor 5"}],
-    "answer": "B",
-    "explanation": "1 + 3 = 4, then 4 − 1 = 3. Floor 3.",
-    "reasoning": "Tracking up-down moves.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
-  },
-  {
-    "id": "NEW_VIS_080",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Think",
-    "difficulty": "medium",
-    "question_type": "multiple_choice",
-    "question": "Six chairs in a row, seats 1–6. Ann sits 2nd from the left (seat 2). Ben sits 2nd from the right (seat 5). Cara sits just right of Ann. Devi sits just left of Ben. Which two children sit in the middle seats (3 and 4)?",
-    "options": [{"id": "A", "text": "Ann and Ben"}, {"id": "B", "text": "Ann and Cara"}, {"id": "C", "text": "Cara and Devi"}, {"id": "D", "text": "Devi and Ben"}],
-    "answer": "C",
-    "explanation": "Ann = 2, Cara = 3 (just right of Ann), Ben = 5, Devi = 4 (just left of Ben). Seats 3 and 4 hold Cara and Devi.",
-    "reasoning": "Pinning seats from both ends.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
-  },
-  {
-    "id": "NEW_VIS_081",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Think",
-    "difficulty": "medium",
-    "question_type": "multiple_choice",
-    "question": "You face north, turn to face east (a right turn), then make an about-face (half-turn). Which way do you face now?",
-    "options": [{"id": "A", "text": "North"}, {"id": "B", "text": "East"}, {"id": "C", "text": "South"}, {"id": "D", "text": "West"}],
-    "answer": "D",
-    "explanation": "North → east, then half-turn from east → west.",
-    "reasoning": "Combining a quarter-turn with a half-turn.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
-  },
-  {
-    "id": "NEW_VIS_082",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Challenge",
-    "difficulty": "hard",
-    "question_type": "multiple_choice",
-    "question": "On a 3-by-3 grid, a robot starts at row 1, column 1 and must visit row 1 column 3, then row 3 column 3, then row 3 column 1, moving only up/down/left/right one square at a time. How many moves does the whole trip take?",
-    "options": [{"id": "A", "text": "4"}, {"id": "B", "text": "5"}, {"id": "C", "text": "6"}, {"id": "D", "text": "8"}],
-    "answer": "C",
-    "explanation": "(1,1)→(1,3): 2 right. →(3,3): 2 down. →(3,1): 2 left. Total 2 + 2 + 2 = 6 moves.",
-    "reasoning": "Adding shortest legs of a grid tour.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
-  },
-  {
-    "id": "NEW_VIS_083",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Challenge",
-    "difficulty": "hard",
-    "question_type": "multiple_choice",
-    "question": "Six houses stand in a circle in order: F, A, B, C, D, E. A is between F and B. B is between A and C. C is between B and D. D is between C and E. E is between D and F. Which house is directly opposite C?",
-    "options": [{"id": "A", "text": "A"}, {"id": "B", "text": "B"}, {"id": "C", "text": "F"}, {"id": "D", "text": "E"}],
-    "answer": "C",
-    "explanation": "Around the circle: F-A-B-C-D-E. Opposite means 3 steps away in a circle of 6. C's opposite is F.",
-    "reasoning": "Finding opposites on a circle.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
-  },
-  {
-    "id": "NEW_VIS_084",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Challenge",
-    "difficulty": "hard",
-    "question_type": "multiple_choice",
-    "question": "On a 3-by-3 grid, the centre square is blocked. An ant walks from the top-left corner to the bottom-right corner, moving only right or down one square at a time. What is the shortest possible number of moves?",
-    "options": [{"id": "A", "text": "3"}, {"id": "B", "text": "4"}, {"id": "C", "text": "5"}, {"id": "D", "text": "6"}],
-    "answer": "B",
-    "explanation": "Top-left to bottom-right needs 2 rights + 2 downs = 4 moves. Going around the edge (e.g. right, right, down, down) never enters the blocked centre, so 4 moves is achievable.",
-    "reasoning": "Routing around a blocked square.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
-  },
-  {
-    "id": "NEW_VIS_085",
-    "domain": "visual_spatial",
-    "topic": "Visual & Spatial",
-    "skill": "4.5",
-    "archetype": "position",
-    "level": "Master",
-    "difficulty": "hard",
-    "question_type": "multiple_choice",
-    "question": "On a 4-by-4 grid (rows/columns 1–4), treasure is buried in a square that: is not in row 1 or row 4, is not in column 1 or column 4, is not on the main diagonal (row = column), is in row 3, and shares a side with the fountain at row 2, column 2. Which square holds the treasure?",
-    "options": [{"id": "A", "text": "Row 2, column 3"}, {"id": "B", "text": "Row 3, column 2"}, {"id": "C", "text": "Row 3, column 3"}, {"id": "D", "text": "Row 2, column 2"}],
-    "answer": "B",
-    "explanation": "Inside rows 2–3 and columns 2–3, excluding the diagonal (2,2) and (3,3): left with (2,3) and (3,2). Row 3 forces (3,2), which indeed shares a side with the fountain at (2,2).",
-    "reasoning": "Intersecting five positional clues.",
-    "tags": ["p3", "high_ability", "spatial", "position"],
-    "visual_required": false,
-    "visual_spec": null,
-    "image_path": null,
-    "is_active": true,
-    "created_at": "2026-09-05T00:00:00+00:00",
-    "updated_at": "2026-09-05T00:00:00+00:00",
-    "qa_status": "new_draft_20260905"
-  }
+  "image_path": "p3/BA_P3_2411.svg",
+  "is_active": true,
+  "created_at": "2026-09-05T00:00:00+00:00",
+  "updated_at": "2026-09-05T00:00:00+00:00",
+  "qa_status": "new_draft_20260905"
+ }
 ]

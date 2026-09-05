@@ -19,13 +19,17 @@ def req(method, url, body=None, headers=None):
 
 
 ASSIGN = {
-    "BA_P3_2428": "BA_P3_2428.svg", "BA_P3_2429": "BA_P3_2429.svg",
-    "BA_P3_2430": "BA_P3_2430.svg", "BA_P3_2435": "BA_P3_2435.svg",
-    "BA_P3_2436": "BA_P3_2429.svg", "BA_P3_2438": "BA_P3_2438.svg",
-    "BA_P3_2439": "BA_P3_2439.svg", "BA_P3_2395": "BA_P3_2395.svg",
-    "BA_P3_2396": "BA_P3_2395.svg", "BA_P3_2397": "BA_P3_2395.svg",
-    "BA_P3_2398": "BA_P3_2395.svg", "BA_P3_2381": "BA_P3_2381.svg",
-    "BA_P3_2400": "BA_P3_2400.svg",
+    "BA_P3_2411": "BA_P3_2411.svg", "BA_P3_2412": "BA_P3_2411.svg",
+    "BA_P3_2421": "BA_P3_2411.svg", "BA_P3_2423": "BA_P3_2411.svg",
+    "BA_P3_2424": "BA_P3_2411.svg",
+    "BA_P3_2345": "BA_P3_2345.svg", "BA_P3_2350": "BA_P3_2345.svg",
+    "BA_P3_2356": "BA_P3_2345.svg", "BA_P3_2361": "BA_P3_2345.svg",
+    "BA_P3_2375": "BA_P3_2345.svg",
+    "BA_P3_2388": "BA_P3_2388.svg", "BA_P3_2389": "BA_P3_2388.svg",
+    "BA_P3_2390": "BA_P3_2388.svg", "BA_P3_2391": "BA_P3_2388.svg",
+    "BA_P3_2392": "BA_P3_2388.svg", "BA_P3_2393": "BA_P3_2388.svg",
+    "BA_P3_2062": "BA_P3_2062.svg",
+    "BA_P3_2058": "BA_P3_2058.svg",
 }
 import time
 fails = []
