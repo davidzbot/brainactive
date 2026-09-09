@@ -23728,11 +23728,11 @@
       "level": "Explore",
       "difficulty": "easy",
       "question_type": "multiple_choice",
-      "question": "Which capital letter looks the same in a left-right mirror: A, F, H, R?",
+      "question": "Which capital letter looks the same in a left-right mirror: K, F, H, R?",
       "options": [
         {
           "id": "A",
-          "text": "A"
+          "text": "K"
         },
         {
           "id": "B",
@@ -23748,7 +23748,7 @@
         }
       ],
       "answer": "C",
-      "explanation": "Let's solve it together! 🧠\n\nH is symmetric left-to-right: its mirror image is still H. (A is symmetric top-to-bottom, not left-to-right; F and R change.)",
+      "explanation": "Let's solve it together! 🧠\n\nH is symmetric left-to-right: its mirror image is still H. K, F and R all change direction in the mirror.",
       "reasoning": "Testing left-right symmetry of letters.",
       "tags": [
         "p3",
