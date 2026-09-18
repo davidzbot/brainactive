@@ -818,7 +818,7 @@ export default function QuizContent() {
           })}
         </View>
 
-        {/* Action Row: Ask Hero AI Button + Skip + Bottom Home Link */}
+        {/* Action Row: Ask Hero AI Button + Skip */}
         <View className="quiz-action-row">
           <AskHeroButton
             lang={lang}
@@ -829,12 +829,18 @@ export default function QuizContent() {
               <Text className="skip-btn-text">{copy.skip}</Text>
             </View>
           )}
-          <View className="global-home-bottom-link" onClick={handleExit}>
+        </View>
+        {/* Single centered utility row: exit + secondary links */}
+        <View className="quiz-utility-row">
+          <View className="global-home-bottom-link utility-home" onClick={handleExit}>
             <Text className="bottom-home-icon">⌂</Text>
           </View>
-        </View>
-        <View className="report-question-row" onClick={() => setShowReportModal(true)}>
-          <Text className="report-question-link-text">
+          {isAnswerSubmitted && selectedOptionId && selectedOptionId !== currentQ.answer && (
+            <Text className="utility-link" onClick={() => setShowAskHero(true)}>
+              {lang === 'zh' ? '觉得你的答案是对的？让 Hero 检查一下。' : 'Think your answer is correct? Check with Hero.'}
+            </Text>
+          )}
+          <Text className="utility-link" onClick={() => setShowReportModal(true)}>
             {lang === 'zh' ? '反馈题目问题' : 'Report question issue'}
           </Text>
         </View>
