@@ -167,46 +167,78 @@ function buildMessages(
 
 async function callModel(system: string, messages: any[]): Promise<string> {
   const apiKey = Deno.env.get('AGNESI_API_KEY') || Deno.env.get('AGNES_API_KEY') || Deno.env.get('OPENAI_API_KEY') || ''
-  
+
   if (!apiKey) {
     // Fallback response if AI API key is not yet set in environment
     return "💡 Here's a helpful thinking tip: Start by identifying what information is known, look for repeated shapes or numbers, and test each option one by one!"
   }
 
-  const payload = {
-    model: 'agnes-2.0-flash',
+  // Follow PSLE Hero / Math Hero: Agnes agnes-2.5-flash with thinking disabled.
+  const payload: any = {
+    model: 'agnes-2.5-flash',
     temperature: 0.2,
     max_tokens: 1000,
+    chat_template_kwargs: { enable_thinking: false },
     messages: [{ role: 'system', content: system }, ...messages]
   }
 
-  const controller = new AbortController()
-  const timer = setTimeout(() => controller.abort(), HARD_TIMEOUT_MS)
+  // Retry transient upstream failures (5xx / gateway / network / empty) with
+  // backoff, mirroring the sibling ask-hero functions. AbortError (hard
+  // timeout) and non-5xx statuses surface immediately so the quiz never blocks.
+  const MAX_ATTEMPTS = 3
+  const isRetryable = (status: number) => status >= 500 && status < 600
+  let lastErr: any = null
 
-  try {
-    const resp = await fetch(`${AGNES_BASE_URL}/chat/completions`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`
-      },
-      body: JSON.stringify(payload),
-      signal: controller.signal
-    })
+  for (let attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
+    const controller = new AbortController()
+    const timer = setTimeout(() => controller.abort(), HARD_TIMEOUT_MS)
 
-    if (!resp.ok) {
-      throw new Error(`Model API HTTP ${resp.status}`)
+    try {
+      const resp = await fetch(`${AGNES_BASE_URL}/chat/completions`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${apiKey}`
+        },
+        body: JSON.stringify(payload),
+        signal: controller.signal
+      })
+
+      if (!resp.ok) {
+        if (!isRetryable(resp.status)) {
+          const httpError: any = new Error(`Model API HTTP ${resp.status}`)
+          httpError.status = resp.status
+          throw httpError
+        }
+        lastErr = new Error(`Model API HTTP ${resp.status}`)
+        ;(lastErr as any).status = resp.status
+        continue
+      }
+
+      const data = await resp.json()
+      const text = data?.choices?.[0]?.message?.content
+      if (typeof text !== 'string' || !text.trim()) {
+        lastErr = new Error('Empty model response')
+        continue
+      }
+      return text.trim()
+    } catch (e: any) {
+      // AbortError (hard timeout) is not retryable — surface immediately.
+      if (e?.name === 'AbortError') throw e
+      // Non-retryable HTTP error constructed above — surface immediately.
+      if (typeof e?.status === 'number' && !isRetryable(e.status)) throw e
+      lastErr = e
+    } finally {
+      clearTimeout(timer)
     }
 
-    const data = await resp.json()
-    const text = data?.choices?.[0]?.message?.content
-    if (typeof text !== 'string' || !text.trim()) {
-      throw new Error('Empty model response')
+    if (attempt < MAX_ATTEMPTS - 1) {
+      const backoff = 300 * Math.pow(2, attempt)
+      await new Promise((r) => setTimeout(r, backoff))
     }
-    return text.trim()
-  } finally {
-    clearTimeout(timer)
   }
+
+  throw lastErr || new Error('Model call failed after retries')
 }
 
 Deno.serve(async (req) => {
@@ -266,7 +298,31 @@ Deno.serve(async (req) => {
     )
 
     // 4. Generate AI Tutor Response
-    const reply = await callModel(system, messages)
+    // If the provider rejects the image-attached (multimodal) payload
+    // (e.g. SVG diagrams it cannot process), retry once text-only with the
+    // same prompt so diagram questions still get a tutor reply. Never retry
+    // rate-limit (429) responses or timeouts — those must surface to the
+    // client retry UI instead of doubling provider load.
+    let reply: string
+    try {
+      reply = await callModel(system, messages)
+    } catch (modelErr: any) {
+      const status = modelErr?.status
+      const isAbort = modelErr?.name === 'AbortError'
+      if (imageDataUri && !isAbort && typeof status === 'number' && status !== 429) {
+        const fallback = buildMessages(
+          mode,
+          q,
+          student_answer,
+          student_question,
+          history,
+          null
+        )
+        reply = await callModel(fallback.system, fallback.messages)
+      } else {
+        throw modelErr
+      }
+    }
 
     return standardResponse(true, {
       ok: true,

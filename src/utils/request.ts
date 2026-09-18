@@ -176,7 +176,7 @@ export async function askBrainActiveHero(payload: AskHeroPayload): Promise<AskHe
   } catch (err: any) {
     console.error('[Ask Hero AI Error]', err)
     return {
-      ok: true,
+      ok: false,
       message: "💡 Here's a thinking tip: Look carefully at the relationships between parts of the question. Try testing each option step-by-step!"
     }
   }
