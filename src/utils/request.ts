@@ -31,6 +31,7 @@ export interface RequestOptions {
   data?: any
   header?: Record<string, string>
   timeout?: number
+  _isRetry?: boolean // Internal: one-time transport retry guard
 }
 
 export async function request<T = any>(options: RequestOptions): Promise<any> {
@@ -59,6 +60,15 @@ export async function request<T = any>(options: RequestOptions): Promise<any> {
     }
     throw new Error(res.data?.error?.message || `HTTP ${res.statusCode}`)
   } catch (err: any) {
+    // One-time retry on transport failure (timeout / network blip), mirroring
+    // PSLE Hero and Math Hero. HTTP/validation errors are never retried.
+    const msg = String(err?.message || err?.errMsg || '')
+    const isHttpError = /^HTTP \d+/.test(msg)
+    const isTransportFailure = !isHttpError && /timeout|network|fail/i.test(msg)
+    if (!options._isRetry && isTransportFailure) {
+      console.warn(`[BrainActive API] Transport retry on ${fullUrl}`)
+      return request({ ...options, _isRetry: true })
+    }
     console.error(`[BrainActive API] Error on ${fullUrl}:`, err.message)
     throw err
   }
