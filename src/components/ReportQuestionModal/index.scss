@@ -189,7 +189,7 @@
     border-color: #334155;
   }
 
-  Text {
+  .taro-text {
     font-size: 21px;
     font-weight: 800;
     color: #475569;
@@ -221,8 +221,11 @@
   border-radius: 50%;
   background: #dcfce7;
   color: #15803d;
-  font-size: 46px;
-  font-weight: 900;
+
+  .taro-text {
+    font-size: 46px;
+    font-weight: 900;
+  }
 }
 
 .report-thanks-title {
