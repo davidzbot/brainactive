@@ -70,12 +70,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 48px;
+  width: 100%;
+  min-height: 56px;
   margin-top: 12px;
-  padding: 8px 16px;
+  padding: 10px 20px;
+  background: #f1f5f9;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
   color: #475569;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 19px;
   line-height: 1.2;
-  text-decoration: underline;
+  box-sizing: border-box;
 }
