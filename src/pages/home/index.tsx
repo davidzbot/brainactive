@@ -20,7 +20,6 @@ import {
   canWatchAdForRound,
   getWrongQuestions,
   getQuizHistory,
-  setProExpiry,
   FREE_ROUNDS_PER_DAY,
   MAX_AD_ROUNDS_PER_DAY,
   MAX_TOTAL_DAILY_ROUNDS
@@ -274,10 +273,6 @@ export default function HomePage() {
         .then(data => {
           if (data) {
             if (data.is_pro) setProStatus(true)
-            // Backend is authoritative for the pro_expiry mirror: a non-pro
-            // verdict means any restored/stale mirror must go (reinstalls
-            // with backup enabled can otherwise resurrect Pro).
-            else setProExpiry(null)
             if (data.streak_count) setStreakCount(data.streak_count)
           }
         })
