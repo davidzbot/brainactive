@@ -306,7 +306,7 @@ export default function ResultContent() {
 
         {/* Bottom Home Link */}
         <View className="global-home-bottom-link" onClick={handleHome}>
-          <Text className="bottom-home-icon">🏠</Text>
+          <Text className="bottom-home-icon">⌂</Text>
         </View>
 
         <View className="footer-spacer" />

@@ -66,8 +66,8 @@
 .btn-watch-ad {
   background: #2563eb;
   color: #ffffff;
-  font-size: 17px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 800;
   border-radius: 16px;
   min-height: 56px;
   line-height: 1.2;
@@ -78,23 +78,32 @@
   background: #f8fafc;
   color: #0f172a;
   border: 1.5px solid #e2e8f0;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 800;
   border-radius: 16px;
-  min-height: 54px;
+  min-height: 56px;
   line-height: 1.2;
 }
 
 .btn-close-link {
-  min-height: 44px;
+  width: 100%;
+  min-height: 52px;
+  padding: 8px 16px;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
-  color: #94a3b8;
-  font-weight: 600;
+  background: #f1f5f9;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 16px;
+  font-size: 19px;
+  color: #475569;
+  font-weight: 800;
   cursor: pointer;
-  padding: 8px 12px;
+
+  &:active {
+    transform: scale(0.98);
+  }
 }
 
 @media (max-width: 420px) {
