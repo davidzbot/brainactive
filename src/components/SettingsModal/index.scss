@@ -70,23 +70,35 @@
 
 .lang-options {
   display: flex;
-  gap: 12px;
+  gap: 0;
+  background: #f1f5f9;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 5px;
 
   .btn-lang {
-    flex: 1;
-    background: #f1f5f9;
-    color: #475569;
-    font-weight: 600;
-    font-size: 17px;
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0;
+    padding: 0 12px;
+    background: transparent;
+    color: #64748b;
+    font-weight: 800;
+    font-size: 18px;
     border-radius: 14px;
     min-height: 52px;
-    line-height: 1.2;
-    border: 1.5px solid transparent;
+    line-height: 52px;
+    border: none;
+    text-align: center;
+
+    &::after {
+      border: none;
+    }
 
     &.active {
-      background: #eff6ff;
+      background: #ffffff;
       color: #2563eb;
-      border-color: #3b82f6;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12);
     }
   }
 }
@@ -169,8 +181,8 @@
   }
 
   .settings-card .card-header .title { font-size: 23px; }
-  .lang-options { gap: 8px; }
-  .lang-options .btn-lang { font-size: 16px; min-height: 48px; }
+  .lang-options { gap: 0; }
+  .lang-options .btn-lang { font-size: 16px; min-height: 48px; line-height: 48px; }
   .support-email,
   .website-url { font-size: 15px; }
 }

@@ -223,6 +223,30 @@ page.dark .home-viewport {
   }
 }
 
+.gep-tagline-ribbon {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 60%, #d97706 100%);
+  padding: 10px 26px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  box-shadow: 0 6px 0 #92400e, 0 12px 24px rgba(217, 119, 6, 0.30);
+  max-width: 100%;
+  box-sizing: border-box;
+
+  body.dark &,
+  page.dark & {
+    box-shadow: 0 6px 0 #451a03, 0 12px 24px rgba(0, 0, 0, 0.40);
+  }
+}
+
+.gep-tagline-text {
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  color: #451a03;
+  line-height: 1.25;
+}
+
 /* =========================================================
    USAGE SUMMARY BOX
    ========================================================= */
@@ -1111,6 +1135,8 @@ page.dark .home-viewport {
 
   .badge-text { font-size: 22px; line-height: 1.2; text-align: center; }
   .top-school-badge { padding: 8px 16px; }
+  .gep-tagline-ribbon { padding: 8px 20px; }
+  .gep-tagline-text { font-size: 22px; }
   .invite-friends-card { padding: 18px; gap: 12px; }
   .invite-friends-title { font-size: 21px; line-height: 1.2; }
   .invite-friends-sub { font-size: 16px; line-height: 1.35; }
