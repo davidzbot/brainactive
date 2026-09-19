@@ -44,8 +44,7 @@ const QUIZ_COPY = {
     leaveTitle: 'Leave this practice round?',
     leaveContent: 'Your round score will not be saved. Questions you skip may still appear in Review Mistakes.',
     leave: 'Leave to Home',
-    stay: 'Stay',
-    exit: '✕ Exit'
+    stay: 'Stay'
   },
   zh: {
     loading: '正在准备你的思维挑战',
@@ -63,8 +62,7 @@ const QUIZ_COPY = {
     leaveTitle: '要离开本轮练习吗？',
     leaveContent: '本轮成绩不会保存。你跳过的题目仍可能出现在错题复习中。',
     leave: '离开并返回首页',
-    stay: '留下练习',
-    exit: '✕ 退出'
+    stay: '留下练习'
   }
 }
 
@@ -832,21 +830,19 @@ export default function QuizContent() {
             </View>
           )}
         </View>
-        {/* Single centered utility row: exit + secondary actions */}
+        {/* Single centered utility row: home + secondary actions */}
         <View className="quiz-utility-row">
-          <View className="utility-pill" onClick={handleExit}>
-            <Text className="utility-pill-text">{copy.exit}</Text>
+          <View className="global-home-bottom-link utility-home" onClick={handleExit}>
+            <Text className="bottom-home-icon">⌂</Text>
           </View>
           {isAnswerSubmitted && selectedOptionId && selectedOptionId !== currentQ.answer && (
             <Text className="utility-link" onClick={() => setShowAskHero(true)}>
               {lang === 'zh' ? '觉得你的答案是对的？让 Hero 检查一下。' : 'Think your answer is correct? Check with Hero.'}
             </Text>
           )}
-          <View className="utility-pill" onClick={() => setShowReportModal(true)}>
-            <Text className="utility-pill-text">
-              {lang === 'zh' ? '反馈题目问题' : 'Report question issue'}
-            </Text>
-          </View>
+          <Text className="utility-link" onClick={() => setShowReportModal(true)}>
+            {lang === 'zh' ? '反馈题目问题' : 'Report question issue'}
+          </Text>
         </View>
 
         {/* Explanation and Reasoning Reveal */}
