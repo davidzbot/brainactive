@@ -236,6 +236,9 @@ export default function ProPage() {
               const diff = Math.max(0, Math.ceil((expDate.getTime() - Date.now()) / (1000 * 3600 * 24)))
               setDaysLeft(diff)
             }
+          } else {
+            // Authoritative non-pro verdict: drop the stale backend mirror.
+            setProExpiry(null)
           }
         }
       })
