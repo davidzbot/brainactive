@@ -203,7 +203,6 @@ export default function HomePage() {
 
   const [wrongCount, setWrongCount] = useState(0)
   const [weeklyCount, setWeeklyCount] = useState(0)
-  const [topicActivity, setTopicActivity] = useState<{ topic: string; count: number }[]>([])
 
   const [showReferral, setShowReferral] = useState(false)
   const [showQuota, setShowQuota] = useState(false)
@@ -254,17 +253,6 @@ export default function HomePage() {
       const recent = history.filter((a: any) => new Date(a.date).getTime() >= weekAgo)
       const totalWeeklyQuestions = recent.reduce((sum: number, a: any) => sum + (a.total || 5), 0)
       setWeeklyCount(totalWeeklyQuestions)
-
-      const topicMap: Record<string, number> = {}
-      recent.forEach((a: any) => {
-        if (a.topic) topicMap[a.topic] = (topicMap[a.topic] || 0) + 1
-      })
-      setTopicActivity(
-        Object.entries(topicMap)
-          .sort((a, b) => b[1] - a[1])
-          .slice(0, 4)
-          .map(([topic, count]) => ({ topic, count }))
-      )
     }
   }
 
@@ -609,45 +597,6 @@ export default function HomePage() {
         {/* ================= PAGE 2: PROGRESS, MISTAKES, HEURISTICS ================= */}
         <SwiperItem>
           <ScrollView className='home-page-scroll' scrollY>
-            {/* Progress Journey Widget */}
-            <View className='progress-section'>
-              <Text className='progress-title'>{t.progress_title}</Text>
-
-              {/* 3-Column Stats Grid */}
-              <View className='progress-stats-grid'>
-                <View className='progress-stat-col'>
-                  <Text className='progress-stat-val'>{weeklyCount}</Text>
-                  <Text className='progress-stat-lbl'>{t.progress_weekly}</Text>
-                </View>
-                <View className='progress-stat-col'>
-                  <Text className='progress-stat-val'>{streakCount}</Text>
-                  <Text className='progress-stat-lbl'>{lang === 'en' ? 'Streak' : '连胜天数'}</Text>
-                </View>
-                <View className='progress-stat-col'>
-                  <Text className='progress-stat-val'>{wrongCount}</Text>
-                  <Text className='progress-stat-lbl'>{t.progress_mistakes}</Text>
-                </View>
-              </View>
-
-              {topicActivity.length > 0 ? (
-                <View className='progress-topics'>
-                  <Text className='progress-topics-title'>{t.progress_topics}</Text>
-                  <View className='progress-topics-list'>
-                    {topicActivity.map((item, idx) => (
-                      <View key={idx} className='progress-topic-tag'>
-                        <Text className='progress-topic-name'>{item.topic}</Text>
-                        <Text className='progress-topic-count'>{item.count}x</Text>
-                      </View>
-                    ))}
-                  </View>
-                </View>
-              ) : (
-                <View className='progress-empty'>
-                  <Text className='progress-empty-text'>{t.progress_empty}</Text>
-                </View>
-              )}
-            </View>
-
             {/* Review Mistakes Card */}
             <View className={`retry-mistakes-section ${wrongCount === 0 ? 'disabled' : ''}`} onClick={handleRetryWrong}>
               <View className='retry-mistakes-card'>
