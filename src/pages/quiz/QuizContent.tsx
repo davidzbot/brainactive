@@ -823,6 +823,9 @@ export default function QuizContent() {
           <AskHeroButton
             lang={lang}
             onClick={() => setShowAskHero(true)}
+            checkHint={isAnswerSubmitted && selectedOptionId && selectedOptionId !== currentQ.answer
+              ? (lang === 'zh' ? '觉得你的答案是对的？让 Hero 检查一下。' : 'Think your answer is correct? Check with Hero.')
+              : undefined}
           />
           {!isAnswerSubmitted && (
             <View className="skip-btn" onClick={handleSkipQuestion}>
@@ -835,11 +838,6 @@ export default function QuizContent() {
           <View className="global-home-bottom-link utility-home" onClick={handleExit}>
             <Text className="bottom-home-icon">⌂</Text>
           </View>
-          {isAnswerSubmitted && selectedOptionId && selectedOptionId !== currentQ.answer && (
-            <Text className="utility-link" onClick={() => setShowAskHero(true)}>
-              {lang === 'zh' ? '觉得你的答案是对的？让 Hero 检查一下。' : 'Think your answer is correct? Check with Hero.'}
-            </Text>
-          )}
           <Text className="utility-link" onClick={() => setShowReportModal(true)}>
             {lang === 'zh' ? '反馈题目问题' : 'Report question issue'}
           </Text>

@@ -35,7 +35,7 @@ import './index.scss'
 const i18n = {
   en: {
     title: 'BrainActive',
-    curriculum_badge: 'Singapore Primary 3',
+    curriculum_badge: 'Singapore Primary 3 GEP High Ability Thinking Skills',
     gep_tagline: 'GEP High-Ability Practice',
     daily_title: 'Daily Practice Round',
     daily_specs: '5 Questions · 5–8 Mins · Non-Routine Reasoning',
@@ -102,7 +102,7 @@ const i18n = {
   },
   zh: {
     title: 'BrainActive',
-    curriculum_badge: '新加坡小学三年级',
+    curriculum_badge: '新加坡小学三年级 GEP 高能力思维特训',
     gep_tagline: 'GEP 高能力资优特训',
     daily_title: '今日思维特训',
     daily_specs: '5 道题 · 5–8 分钟 · 高难度思维拓展',
@@ -443,9 +443,7 @@ export default function HomePage() {
           <View className='title-section'>
             <View className='hero-brand-mark'>
               <Text className='hero-brand-title'>{t.title}</Text>
-            </View>
-            <View className='gep-tagline-ribbon'>
-              <Text className='gep-tagline-text'>✦ {t.gep_tagline}</Text>
+              <Text className='hero-brand-sub'>{t.gep_tagline}</Text>
             </View>
           </View>
         </View>

@@ -1,10 +1,11 @@
 .ask-hero-button {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 6px;
   min-height: 80px;
-  padding: 0 24px;
+  padding: 12px 24px;
   border-radius: 28px;
   background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
   box-shadow:
@@ -41,6 +42,21 @@
     font-weight: 1000;
     line-height: 1;
   }
+}
+
+.ask-hero-button-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ask-hero-button-hint {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.4;
+  text-align: center;
 }
 
 .ask-hero-button-text {
