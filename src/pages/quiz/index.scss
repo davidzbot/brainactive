@@ -641,36 +641,22 @@
   animation: loadingPulse 1.2s ease-in-out infinite;
 }
 
-.bottom-action-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 16px 24px calc(env(safe-area-inset-bottom, 24px) + 16px);
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-top: 1.5px solid #e2e8f0;
-  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.08);
-  z-index: 200;
+.quiz-footer {
+  width: 100%;
+  margin: 16px 0 8px;
+}
 
-  body.dark &,
-  page.dark & {
-    background: rgba(15, 23, 42, 0.96);
-    border-top-color: rgba(255, 255, 255, 0.08);
-  }
-
-  .btn-next-action {
-    background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
-    color: #ffffff;
-    font-size: 28px;
-    font-weight: 900;
-    border-radius: 28px;
-    height: 72px;
-    line-height: 72px;
-    border: none;
-    box-shadow: 0 8px 0 #1E40AF, 0 12px 24px rgba(37, 99, 235, 0.35);
-  }
+.btn-next-action {
+  width: 100%;
+  background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 900;
+  border-radius: 28px;
+  height: 72px;
+  line-height: 72px;
+  border: none;
+  box-shadow: 0 8px 0 #1E40AF, 0 12px 24px rgba(37, 99, 235, 0.35);
 }
 
 @media (max-width: 420px) {
@@ -737,6 +723,5 @@
 
   .explanation-card { padding: 22px 18px; }
   .explanation-card .exp-body { font-size: 22px; }
-  .bottom-action-bar { padding-left: 16px; padding-right: 16px; }
-  .bottom-action-bar .btn-next-action { font-size: 23px; height: 64px; line-height: 64px; }
+  .quiz-footer .btn-next-action { font-size: 23px; height: 64px; line-height: 64px; }
 }

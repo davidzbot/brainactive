@@ -818,6 +818,15 @@ export default function QuizContent() {
           })}
         </View>
 
+        {/* Continue (post-answer): in-flow action zone, same position as sibling apps */}
+        {isAnswerSubmitted && (
+          <View className='quiz-footer'>
+            <Button className='btn-next-action' onClick={handleNext}>
+              {currentIndex < questions.length - 1 ? copy.continue : copy.results}
+            </Button>
+          </View>
+        )}
+
         {/* Action Row: Ask Hero AI Button + Skip */}
         <View className="quiz-action-row">
           <AskHeroButton
@@ -885,15 +894,6 @@ export default function QuizContent() {
           lang={lang}
           onClose={() => setShowReportModal(false)}
         />
-      )}
-
-      {/* Bottom Action Footer */}
-      {isAnswerSubmitted && (
-        <View className="bottom-action-bar">
-          <Button className="btn-next-action" onClick={handleNext}>
-            {currentIndex < questions.length - 1 ? copy.continue : copy.results}
-          </Button>
-        </View>
       )}
 
       {/* Exit Confirmation Modal */}
