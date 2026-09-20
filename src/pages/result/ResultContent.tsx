@@ -13,6 +13,7 @@ import { Share } from '@capacitor/share'
 import QuotaOverlay from '@/components/QuotaOverlay'
 import WeakAreaInsightModal from '@/components/WeakAreaInsightModal'
 import { findMeaningfulWeakArea, TopicPerformance } from '@/utils/quizInsights'
+import { maybeRequestInAppReview } from '@/utils/inAppReview'
 import './index.scss'
 
 const i18n = {
@@ -105,6 +106,22 @@ export default function ResultContent() {
       setShowWeakAreaInsight(Boolean(insight))
     } catch (error) {
       console.warn('[BrainActive Result] Weak-area insight unavailable', error)
+    }
+
+    // [IN-APP REVIEW — isolated] Counts NEW Quick Test sessions toward review
+    // eligibility and, when due, initiates ONE native Play review request
+    // asynchronously. Fire-and-forget: never blocks or alters Result behavior.
+    // router.params.mode === 'quick_test' only for fresh Quick Tests
+    // (retry/pro sessions carry a different or no mode and are skipped).
+    try {
+      void maybeRequestInAppReview({
+        mode: router.params.mode,
+        totalQuestions: total,
+        isQuickMode: router.params.mode === 'quick_test',
+        resultKey: `ba|${score}|${total}|${timeSec}`,
+      })
+    } catch {
+      // Review is non-critical; the Result flow continues untouched.
     }
 
     const duration = 700

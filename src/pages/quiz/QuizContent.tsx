@@ -470,7 +470,7 @@ export default function QuizContent() {
           mode
         }).catch(e => console.warn('Attempt submit notice:', e))
         Taro.redirectTo({
-          url: `/pages/result/index?score=${correctCount}&total=${questions.length}&time=${secondsSpent}&flawless=0`
+          url: `/pages/result/index?score=${correctCount}&total=${questions.length}&time=${secondsSpent}&flawless=0&mode=${mode}`
         })
         return
       }
@@ -661,7 +661,7 @@ export default function QuizContent() {
       }
 
       Taro.redirectTo({
-        url: `/pages/result/index?score=${correctCount}&total=${questions.length}&time=${secondsSpent}&flawless=${flawless ? 1 : 0}`
+        url: `/pages/result/index?score=${correctCount}&total=${questions.length}&time=${secondsSpent}&flawless=${flawless ? 1 : 0}&mode=${mode}`
       })
     }
   }
