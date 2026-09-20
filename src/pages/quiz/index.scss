@@ -444,7 +444,7 @@
   justify-content: center;
   gap: 12px;
   width: 100%;
-  margin: 16px 0 8px;
+  margin: 8px 0;
 
   .ask-hero-button {
     flex: 1;
@@ -643,7 +643,7 @@
 
 .quiz-footer {
   width: 100%;
-  margin: 16px 0 8px;
+  margin: 8px 0 0;
 }
 
 .btn-next-action {
@@ -652,11 +652,18 @@
   color: #ffffff;
   font-size: 28px;
   font-weight: 900;
-  border-radius: 28px;
-  height: 72px;
-  line-height: 72px;
+  letter-spacing: 0.02em;
+  border-radius: 24px;
+  height: 80px;
+  line-height: 80px;
   border: none;
-  box-shadow: 0 8px 0 #1E40AF, 0 12px 24px rgba(37, 99, 235, 0.35);
+  box-shadow: 0 6px 0 #1E40AF, 0 12px 24px rgba(37, 99, 235, 0.35);
+  transition: all 0.12s ease-out;
+
+  &:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #1E40AF;
+  }
 }
 
 @media (max-width: 420px) {
