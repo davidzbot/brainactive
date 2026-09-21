@@ -1,0 +1,7450 @@
+[
+ {
+  "id": "BA_P3_0001",
+  "archetype": "pattern_discovery",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule grow",
+  "derived": "22"
+ },
+ {
+  "id": "BA_P3_0002",
+  "archetype": "pattern_discovery",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "no clean rule; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0003",
+  "archetype": "numerical_relationships",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous analogy options; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0004",
+  "archetype": "number_puzzles_systems",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "Square"
+ },
+ {
+  "id": "BA_P3_0005",
+  "archetype": "quantitative_logic",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "chain anchor unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0006",
+  "archetype": "number_puzzles_systems",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "balance pairs unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0007",
+  "archetype": "deductive_ordering",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "could not parse order edges; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0008",
+  "archetype": "constraint_matching",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0009",
+  "archetype": "conditional_logic",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0010",
+  "archetype": "classification_sets",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates: ['explanation never states answer']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0011",
+  "archetype": "syllogisms",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "syllogism hits not unique; gates: ['explanation never states answer']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0012",
+  "archetype": "constraint_matching",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0016",
+  "archetype": "sentence_logic",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "no if-rules parsed; gates: ['explanation never states answer']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0017",
+  "archetype": "single_rotation",
+  "verdict": "REVIEW",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation has big stray number 180']",
+  "derived": "down"
+ },
+ {
+  "id": "BA_P3_0018",
+  "archetype": "reflection",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0019",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates: ['explanation never states answer']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0020",
+  "archetype": "shape_transformation",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates: ['explanation never states answer']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0021",
+  "archetype": "rotation_3d",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0023",
+  "archetype": "figure_matrices",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0025",
+  "archetype": "figure_analogy",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "analogy figure parse incomplete; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0026",
+  "archetype": "count_sequence",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "series unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0028",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "6"
+ },
+ {
+  "id": "BA_P3_0029",
+  "archetype": "guess_check",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "coin form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0031",
+  "archetype": "pattern_discovery",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "no clean rule; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0032",
+  "archetype": "numerical_relationships",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous analogy options; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0034",
+  "archetype": "deductive_ordering",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "endpoint read-off",
+  "derived": "Lee"
+ },
+ {
+  "id": "BA_P3_0035",
+  "archetype": "conditional_logic",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates: ['explanation never states answer']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0036",
+  "archetype": "classification_sets",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0045",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "17"
+ },
+ {
+  "id": "BA_P3_0046",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "6"
+ },
+ {
+  "id": "BA_P3_0047",
+  "archetype": "guess_check",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved coin split",
+  "derived": "3"
+ },
+ {
+  "id": "BA_P3_0049",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "tile pattern unparsed; gates: ['explanation never states answer']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0052",
+  "archetype": "interleaved_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-jump",
+  "derived": "12"
+ },
+ {
+  "id": "BA_P3_0053",
+  "archetype": "growing_difference",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule grow",
+  "derived": "23"
+ },
+ {
+  "id": "BA_P3_0054",
+  "archetype": "alternating_rule",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "no clean rule; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0056",
+  "archetype": "compound_rule_analogy",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous analogy options; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0057",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "15"
+ },
+ {
+  "id": "BA_P3_0058",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "Square"
+ },
+ {
+  "id": "BA_P3_0059",
+  "archetype": "chained_comparison",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "chain anchor unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0060",
+  "archetype": "linear_order",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "could not parse order edges; gates: ['explanation never states answer']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0061",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "assembled chain",
+  "derived": "D, A, B, C"
+ },
+ {
+  "id": "BA_P3_0062",
+  "archetype": "seating_constraint",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0063",
+  "archetype": "multi_clue_assignment",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0064",
+  "archetype": "modus_tollens",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0065",
+  "archetype": "chained_conditionals",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0066",
+  "archetype": "figure_classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0067",
+  "archetype": "syllogism",
+  "verdict": "REVIEW",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "All cats are living things"
+ },
+ {
+  "id": "BA_P3_0068",
+  "archetype": "syllogism_particular",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "syllogism hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0070",
+  "archetype": "two_step_rotation",
+  "verdict": "REVIEW",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation has big stray number 180']",
+  "derived": "down"
+ },
+ {
+  "id": "BA_P3_0071",
+  "archetype": "mirror_reflection",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0072",
+  "archetype": "mirror_reflection",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0073",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0074",
+  "archetype": "rotation_3d",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0075",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0076",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0077",
+  "archetype": "count_sequence",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "series unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0079",
+  "archetype": "analogy_matrix",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0080",
+  "archetype": "analogy_matrix",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0087",
+  "archetype": "figure_analogy",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "analogy figure parse incomplete; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0089",
+  "archetype": "draw_diagram",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "counts unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0090",
+  "archetype": "make_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0105",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "50"
+ },
+ {
+  "id": "BA_P3_0107",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule fib",
+  "derived": "45"
+ },
+ {
+  "id": "BA_P3_0110",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "198"
+ },
+ {
+  "id": "BA_P3_0111",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-jump",
+  "derived": "16"
+ },
+ {
+  "id": "BA_P3_0112",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "58"
+ },
+ {
+  "id": "BA_P3_0113",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "64"
+ },
+ {
+  "id": "BA_P3_0114",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule fib",
+  "derived": "60"
+ },
+ {
+  "id": "BA_P3_0115",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "72"
+ },
+ {
+  "id": "BA_P3_0117",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "132"
+ },
+ {
+  "id": "BA_P3_0124",
+  "archetype": "number_analogy",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous analogy options; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0125",
+  "archetype": "number_sequence",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "no clean rule; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0126",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-jump",
+  "derived": "11"
+ },
+ {
+  "id": "BA_P3_0130",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule grow",
+  "derived": "52"
+ },
+ {
+  "id": "BA_P3_0132",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "237"
+ },
+ {
+  "id": "BA_P3_0133",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "225"
+ },
+ {
+  "id": "BA_P3_0135",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-jump",
+  "derived": "9"
+ },
+ {
+  "id": "BA_P3_0136",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule fib",
+  "derived": "57"
+ },
+ {
+  "id": "BA_P3_0137",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-jump",
+  "derived": "14"
+ },
+ {
+  "id": "BA_P3_0138",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule fib",
+  "derived": "102"
+ },
+ {
+  "id": "BA_P3_0139",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "171"
+ },
+ {
+  "id": "BA_P3_0140",
+  "archetype": "number_analogy",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous analogy options; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0141",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "159"
+ },
+ {
+  "id": "BA_P3_0146",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "264"
+ },
+ {
+  "id": "BA_P3_0148",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "60"
+ },
+ {
+  "id": "BA_P3_0149",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-jump",
+  "derived": "12"
+ },
+ {
+  "id": "BA_P3_0152",
+  "archetype": "number_sequence",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "no clean rule; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0154",
+  "archetype": "number_analogy",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous analogy options; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0157",
+  "archetype": "number_sequence",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "no clean rule; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0161",
+  "archetype": "number_analogy",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous analogy options; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0162",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule fib",
+  "derived": "47"
+ },
+ {
+  "id": "BA_P3_0166",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "186"
+ },
+ {
+  "id": "BA_P3_0169",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule fib",
+  "derived": "60"
+ },
+ {
+  "id": "BA_P3_0170",
+  "archetype": "number_analogy",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous analogy options; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0171",
+  "archetype": "number_analogy",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous analogy options; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0172",
+  "archetype": "number_analogy",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous analogy options; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0173",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-jump",
+  "derived": "15"
+ },
+ {
+  "id": "BA_P3_0175",
+  "archetype": "number_analogy",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous analogy options; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0179",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "144"
+ },
+ {
+  "id": "BA_P3_0182",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule grow",
+  "derived": "34"
+ },
+ {
+  "id": "BA_P3_0185",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule grow",
+  "derived": "47"
+ },
+ {
+  "id": "BA_P3_0188",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-jump",
+  "derived": "15"
+ },
+ {
+  "id": "BA_P3_0189",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "52"
+ },
+ {
+  "id": "BA_P3_0191",
+  "archetype": "number_analogy",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous analogy options; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0192",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "80"
+ },
+ {
+  "id": "BA_P3_0195",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule double",
+  "derived": "96"
+ },
+ {
+  "id": "BA_P3_0196",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-jump",
+  "derived": "18"
+ },
+ {
+  "id": "BA_P3_0206",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "88"
+ },
+ {
+  "id": "BA_P3_0210",
+  "archetype": "number_sequence",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "no clean rule; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0213",
+  "archetype": "number_sequence",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous sequence rules; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0216",
+  "archetype": "number_analogy",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous analogy options; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0218",
+  "archetype": "number_sequence",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous sequence rules; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0219",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "210"
+ },
+ {
+  "id": "BA_P3_0220",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "66"
+ },
+ {
+  "id": "BA_P3_0221",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "36"
+ },
+ {
+  "id": "BA_P3_0224",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule grow",
+  "derived": "27"
+ },
+ {
+  "id": "BA_P3_0227",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule grow",
+  "derived": "36"
+ },
+ {
+  "id": "BA_P3_0228",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule fib",
+  "derived": "42"
+ },
+ {
+  "id": "BA_P3_0239",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-jump",
+  "derived": "14"
+ },
+ {
+  "id": "BA_P3_0241",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule fib",
+  "derived": "89"
+ },
+ {
+  "id": "BA_P3_0243",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule const",
+  "derived": "23"
+ },
+ {
+  "id": "BA_P3_0250",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "74"
+ },
+ {
+  "id": "BA_P3_0251",
+  "archetype": "number_analogy",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous analogy options; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0262",
+  "archetype": "number_analogy",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous analogy options; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0263",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-ops",
+  "derived": "105"
+ },
+ {
+  "id": "BA_P3_0266",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule grow",
+  "derived": "28"
+ },
+ {
+  "id": "BA_P3_0267",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule fib",
+  "derived": "81"
+ },
+ {
+  "id": "BA_P3_0269",
+  "archetype": "number_sequence",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous sequence rules; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0270",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-jump",
+  "derived": "11"
+ },
+ {
+  "id": "BA_P3_0284",
+  "archetype": "constraint",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0285",
+  "archetype": "constraint",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0289",
+  "archetype": "constraint",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0290",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0292",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0296",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0298",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0300",
+  "archetype": "conditional",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0304",
+  "archetype": "constraint",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0306",
+  "archetype": "constraint",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0315",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0316",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0317",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0323",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates: ['explanation never states answer']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0332",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0337",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0360",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0367",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0374",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0375",
+  "archetype": "constraint",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0376",
+  "archetype": "constraint",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0383",
+  "archetype": "constraint",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0384",
+  "archetype": "constraint",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0385",
+  "archetype": "constraint",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0389",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0392",
+  "archetype": "conditional",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0402",
+  "archetype": "constraint",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0408",
+  "archetype": "constraint",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0414",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0420",
+  "archetype": "conditional",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0424",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0425",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0426",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0433",
+  "archetype": "conditional",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0444",
+  "archetype": "constraint",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0450",
+  "archetype": "constraint",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0451",
+  "archetype": "conditional",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0462",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0466",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0472",
+  "archetype": "constraint",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0474",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0476",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0483",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0490",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0500",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0502",
+  "archetype": "constraint",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0503",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0504",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0506",
+  "archetype": "classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0511",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0512",
+  "archetype": "codes_ciphers",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "shift cipher",
+  "derived": "ARE"
+ },
+ {
+  "id": "BA_P3_0514",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0515",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0517",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0519",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0523",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0526",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "cipher needs review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0527",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "cipher needs review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0533",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "ZQD"
+ },
+ {
+  "id": "BA_P3_0535",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0543",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0549",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "UBD"
+ },
+ {
+  "id": "BA_P3_0552",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "VCE"
+ },
+ {
+  "id": "BA_P3_0553",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "RCO"
+ },
+ {
+  "id": "BA_P3_0554",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "cipher needs review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0555",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "cipher needs review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0561",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0562",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0571",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "FGT"
+ },
+ {
+  "id": "BA_P3_0577",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "cipher needs review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0578",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0580",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0582",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "GHU"
+ },
+ {
+  "id": "BA_P3_0585",
+  "archetype": "codes_ciphers",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "shift cipher",
+  "derived": "QPU"
+ },
+ {
+  "id": "BA_P3_0586",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0588",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "cipher needs review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0591",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "cipher needs review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0594",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "cipher needs review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0598",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0599",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "cipher needs review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0603",
+  "archetype": "codes_ciphers",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "shift cipher",
+  "derived": "PGR"
+ },
+ {
+  "id": "BA_P3_0606",
+  "archetype": "codes_ciphers",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "shift cipher",
+  "derived": "JRG"
+ },
+ {
+  "id": "BA_P3_0607",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0610",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0630",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "cipher needs review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0635",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0643",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0652",
+  "archetype": "codes_ciphers",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "shift cipher",
+  "derived": "YPC"
+ },
+ {
+  "id": "BA_P3_0654",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "cipher needs review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0658",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0659",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "QBN"
+ },
+ {
+  "id": "BA_P3_0664",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0665",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "cipher needs review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0671",
+  "archetype": "codes_ciphers",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "shift cipher",
+  "derived": "OVT"
+ },
+ {
+  "id": "BA_P3_0672",
+  "archetype": "rotation_3d",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0673",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0676",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0680",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0682",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0683",
+  "archetype": "rotation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "simulated turns",
+  "derived": "up"
+ },
+ {
+  "id": "BA_P3_0690",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0691",
+  "archetype": "rotation_3d",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0694",
+  "archetype": "rotation_3d",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0695",
+  "archetype": "transformation",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0696",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0698",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0700",
+  "archetype": "rotation_3d",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0702",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0703",
+  "archetype": "rotation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "simulated turns",
+  "derived": "down"
+ },
+ {
+  "id": "BA_P3_0704",
+  "archetype": "rotation_3d",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0706",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0708",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0724",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0725",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0733",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0734",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0738",
+  "archetype": "reflection",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0739",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0741",
+  "archetype": "rotation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "simulated turns",
+  "derived": "left"
+ },
+ {
+  "id": "BA_P3_0744",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0747",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0750",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0753",
+  "archetype": "rotation_3d",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0757",
+  "archetype": "rotation_3d",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0769",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0770",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0774",
+  "archetype": "rotation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "simulated turns",
+  "derived": "right"
+ },
+ {
+  "id": "BA_P3_0775",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0776",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0784",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0791",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0792",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0797",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0799",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0801",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0803",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0805",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0806",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0809",
+  "archetype": "rotation_3d",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0811",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0812",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0820",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0823",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0826",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0827",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0828",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0831",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0832",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0833",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0834",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0837",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0840",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0842",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0843",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0848",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0853",
+  "archetype": "rotation_3d",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0855",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0858",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0861",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0862",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0864",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0876",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0877",
+  "archetype": "rotation_3d",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0894",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0899",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0903",
+  "archetype": "cube_net",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_0904",
+  "archetype": "position",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_1111",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "6"
+ },
+ {
+  "id": "BA_P3_1112",
+  "archetype": "guess_check",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved coin split",
+  "derived": "4"
+ },
+ {
+  "id": "BA_P3_1115",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "9"
+ },
+ {
+  "id": "BA_P3_1116",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "5"
+ },
+ {
+  "id": "BA_P3_1119",
+  "archetype": "guess_check",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved coin split",
+  "derived": "3"
+ },
+ {
+  "id": "BA_P3_1134",
+  "archetype": "before_after",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "tie outcome; gates: ['explanation never states answer']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_1145",
+  "archetype": "before_after",
+  "verdict": "REVIEW",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Ben, by 2"
+ },
+ {
+  "id": "BA_P3_1149",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "7"
+ },
+ {
+  "id": "BA_P3_1151",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "3"
+ },
+ {
+  "id": "BA_P3_1159",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "7"
+ },
+ {
+  "id": "BA_P3_1162",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "7"
+ },
+ {
+  "id": "BA_P3_1165",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "7"
+ },
+ {
+  "id": "BA_P3_1168",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "6"
+ },
+ {
+  "id": "BA_P3_1169",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "7"
+ },
+ {
+  "id": "BA_P3_1173",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "4"
+ },
+ {
+  "id": "BA_P3_1176",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "7"
+ },
+ {
+  "id": "BA_P3_1187",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "3"
+ },
+ {
+  "id": "BA_P3_1192",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "3"
+ },
+ {
+  "id": "BA_P3_1199",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "5"
+ },
+ {
+  "id": "BA_P3_1200",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "6"
+ },
+ {
+  "id": "BA_P3_1209",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "7"
+ },
+ {
+  "id": "BA_P3_1219",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "3"
+ },
+ {
+  "id": "BA_P3_1226",
+  "archetype": "guess_check",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved coin split",
+  "derived": "1"
+ },
+ {
+  "id": "BA_P3_1232",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "9"
+ },
+ {
+  "id": "BA_P3_1234",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "9"
+ },
+ {
+  "id": "BA_P3_1236",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "9"
+ },
+ {
+  "id": "BA_P3_1239",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "4"
+ },
+ {
+  "id": "BA_P3_ADD_0001",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule const",
+  "derived": "41"
+ },
+ {
+  "id": "BA_P3_ADD_0002",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule double",
+  "derived": "128"
+ },
+ {
+  "id": "BA_P3_ADD_0003",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-jump",
+  "derived": "14"
+ },
+ {
+  "id": "BA_P3_ADD_0004",
+  "archetype": "number_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule fib",
+  "derived": "39"
+ },
+ {
+  "id": "BA_P3_ADD_0006",
+  "archetype": "number_analogy",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ambiguous analogy options; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0016",
+  "archetype": "chained_comparison",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "chain anchor unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0017",
+  "archetype": "chained_comparison",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "chain anchor unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0018",
+  "archetype": "chained_comparison",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "chain anchor unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0019",
+  "archetype": "chained_comparison",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "chain anchor unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0020",
+  "archetype": "chained_comparison",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "chain anchor unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0021",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0022",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0023",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0024",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0025",
+  "archetype": "verbal_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0026",
+  "archetype": "verbal_classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0027",
+  "archetype": "verbal_classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0028",
+  "archetype": "verbal_classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0029",
+  "archetype": "verbal_classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0030",
+  "archetype": "verbal_classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0031",
+  "archetype": "word_manipulation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "word rule applied",
+  "derived": "ETAR"
+ },
+ {
+  "id": "BA_P3_ADD_0032",
+  "archetype": "word_manipulation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "word rule applied",
+  "derived": "RAET"
+ },
+ {
+  "id": "BA_P3_ADD_0033",
+  "archetype": "word_manipulation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "word rule applied",
+  "derived": "LAMEF"
+ },
+ {
+  "id": "BA_P3_ADD_0034",
+  "archetype": "word_manipulation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "word rule applied",
+  "derived": "LANTP"
+ },
+ {
+  "id": "BA_P3_ADD_0035",
+  "archetype": "word_manipulation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "word rule applied",
+  "derived": "TSIL"
+ },
+ {
+  "id": "BA_P3_ADD_0036",
+  "archetype": "sentence_logic",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "no if-rules parsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0037",
+  "archetype": "sentence_logic",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "no if-rules parsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0038",
+  "archetype": "sentence_logic",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "no if-rules parsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0039",
+  "archetype": "sentence_logic",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "no if-rules parsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0040",
+  "archetype": "sentence_logic",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "no if-rules parsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0044",
+  "archetype": "figure_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule const",
+  "derived": "12"
+ },
+ {
+  "id": "BA_P3_ADD_0047",
+  "archetype": "matrix",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0048",
+  "archetype": "matrix",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0049",
+  "archetype": "matrix",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0050",
+  "archetype": "matrix",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0063",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "3"
+ },
+ {
+  "id": "BA_P3_ADD_0064",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "7"
+ },
+ {
+  "id": "BA_P3_ADD_0065",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "8"
+ },
+ {
+  "id": "BA_P3_ADD_0066",
+  "archetype": "guess_check",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved coin split",
+  "derived": "5"
+ },
+ {
+  "id": "BA_P3_ADD_0067",
+  "archetype": "guess_check",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved coin split",
+  "derived": "3"
+ },
+ {
+  "id": "BA_P3_ADD_0068",
+  "archetype": "guess_check",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved coin split",
+  "derived": "4"
+ },
+ {
+  "id": "BA_P3_ADD_0070",
+  "archetype": "guess_check",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved coin split",
+  "derived": "0"
+ },
+ {
+  "id": "BA_P3_ADD_0071",
+  "archetype": "guess_check",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved coin split",
+  "derived": "5"
+ },
+ {
+  "id": "BA_P3_ADD_0077",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0078",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0085",
+  "archetype": "codes_ciphers",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "shift cipher",
+  "derived": "SRW"
+ },
+ {
+  "id": "BA_P3_ADD_0086",
+  "archetype": "codes_ciphers",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "shift cipher",
+  "derived": "QHS"
+ },
+ {
+  "id": "BA_P3_ADD_0088",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "5"
+ },
+ {
+  "id": "BA_P3_ADD_0089",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "4"
+ },
+ {
+  "id": "BA_P3_ADD_0090",
+  "archetype": "matrix",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0091",
+  "archetype": "matrix",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0092",
+  "archetype": "matrix",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_ADD_0093",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "3"
+ },
+ {
+  "id": "BA_P3_ADD_0094",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "9"
+ },
+ {
+  "id": "BA_P3_G001",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "circle"
+ },
+ {
+  "id": "BA_P3_G002",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "star"
+ },
+ {
+  "id": "BA_P3_G003",
+  "archetype": "weight_system",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "weight ask unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G004",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "summed one-each total",
+  "derived": "16 kg"
+ },
+ {
+  "id": "BA_P3_G005",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "cone"
+ },
+ {
+  "id": "BA_P3_G006",
+  "archetype": "weight_system",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "balance pairs unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G007",
+  "archetype": "weight_system",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "balance pairs unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G008",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "summed one-each total",
+  "derived": "20 kg"
+ },
+ {
+  "id": "BA_P3_G009",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "emerald"
+ },
+ {
+  "id": "BA_P3_G010",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "pyramid"
+ },
+ {
+  "id": "BA_P3_G011",
+  "archetype": "weight_system",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "weight ask unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G012",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "summed one-each total",
+  "derived": "20 kg"
+ },
+ {
+  "id": "BA_P3_G013",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "cross"
+ },
+ {
+  "id": "BA_P3_G014",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "pentagon"
+ },
+ {
+  "id": "BA_P3_G015",
+  "archetype": "weight_system",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "weight ask unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G016",
+  "archetype": "weight_system",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "balance pairs unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G017",
+  "archetype": "weight_system",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "balance pairs unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G018",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "apple"
+ },
+ {
+  "id": "BA_P3_G019",
+  "archetype": "weight_system",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "weight ask unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G020",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "summed one-each total",
+  "derived": "22 kg"
+ },
+ {
+  "id": "BA_P3_G021",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "circle"
+ },
+ {
+  "id": "BA_P3_G022",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "star"
+ },
+ {
+  "id": "BA_P3_G023",
+  "archetype": "weight_system",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "weight ask unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G024",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "summed one-each total",
+  "derived": "25 kg"
+ },
+ {
+  "id": "BA_P3_G025",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "cone"
+ },
+ {
+  "id": "BA_P3_G026",
+  "archetype": "weight_system",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "balance pairs unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G027",
+  "archetype": "weight_system",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "balance pairs unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G028",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "summed one-each total",
+  "derived": "25 kg"
+ },
+ {
+  "id": "BA_P3_G029",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "emerald"
+ },
+ {
+  "id": "BA_P3_G030",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "pyramid"
+ },
+ {
+  "id": "BA_P3_G031",
+  "archetype": "weight_system",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "weight ask unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G032",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "summed one-each total",
+  "derived": "23 kg"
+ },
+ {
+  "id": "BA_P3_G033",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "cross"
+ },
+ {
+  "id": "BA_P3_G034",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "pentagon"
+ },
+ {
+  "id": "BA_P3_G035",
+  "archetype": "weight_system",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "weight ask unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G036",
+  "archetype": "weight_system",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "balance pairs unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G037",
+  "archetype": "weight_system",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "balance pairs unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G038",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "apple"
+ },
+ {
+  "id": "BA_P3_G039",
+  "archetype": "weight_system",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "weight ask unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G040",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "summed one-each total",
+  "derived": "27 kg"
+ },
+ {
+  "id": "BA_P3_G041",
+  "archetype": "chain_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained counts",
+  "derived": "Cai"
+ },
+ {
+  "id": "BA_P3_G042",
+  "archetype": "chain_comparison",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "ask form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G043",
+  "archetype": "chain_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained count",
+  "derived": "21 marbles"
+ },
+ {
+  "id": "BA_P3_G061",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G062",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G063",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G064",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G065",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G066",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G067",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G068",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G069",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G070",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G071",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G072",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G073",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G074",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G075",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G076",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G077",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G078",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G079",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G080",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G081",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G082",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G083",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G084",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G085",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G086",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G087",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G088",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G089",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G090",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G091",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G092",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G093",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G094",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G095",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G096",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G097",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G098",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G099",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G100",
+  "archetype": "constraint_placement",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "spatial CSP needs human review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G101",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "15 is not a multiple of 4"
+ },
+ {
+  "id": "BA_P3_G102",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "A circle is not a rectangle"
+ },
+ {
+  "id": "BA_P3_G103",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "37 is not a multiple of 5"
+ },
+ {
+  "id": "BA_P3_G104",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "Figure G is not a triangle"
+ },
+ {
+  "id": "BA_P3_G105",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "Tuesday afternoon is not rainy"
+ },
+ {
+  "id": "BA_P3_G106",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "21 is not a multiple of 6"
+ },
+ {
+  "id": "BA_P3_G107",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "A dolphin is not a bird"
+ },
+ {
+  "id": "BA_P3_G108",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "Card #9 does not have a star symbol"
+ },
+ {
+  "id": "BA_P3_G109",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "54 is not divisible by 10"
+ },
+ {
+  "id": "BA_P3_G110",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "8 is not an odd integer"
+ },
+ {
+  "id": "BA_P3_G111",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "A car is not a bicycle"
+ },
+ {
+  "id": "BA_P3_G112",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "The number 28 is not greater than 50"
+ },
+ {
+  "id": "BA_P3_G113",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G114",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "Lucas did not score full marks"
+ },
+ {
+  "id": "BA_P3_G115",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "Shape X is not a square"
+ },
+ {
+  "id": "BA_P3_G126",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G127",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G128",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G129",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G130",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G131",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G132",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G133",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G134",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G135",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G156",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "simulated transfers",
+  "derived": "Amy, by 2"
+ },
+ {
+  "id": "BA_P3_G157",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "simulated transfers",
+  "derived": "Chloe, by 2"
+ },
+ {
+  "id": "BA_P3_G158",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "simulated transfers",
+  "derived": "Ella, by 12"
+ },
+ {
+  "id": "BA_P3_G186",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "18 m"
+ },
+ {
+  "id": "BA_P3_G187",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "32 m"
+ },
+ {
+  "id": "BA_P3_G189",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "42 m"
+ },
+ {
+  "id": "BA_P3_G206",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "24 m"
+ },
+ {
+  "id": "BA_P3_G216",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates: ['explanation has big stray number 25']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G217",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "count not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G218",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G219",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G220",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G221",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G222",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G223",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G224",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates: ['explanation has big stray number 34']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G225",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G226",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G227",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates: ['explanation has big stray number 57']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G228",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G229",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G230",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G231",
+  "archetype": "make_a_list",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "counted cases",
+  "derived": "6"
+ },
+ {
+  "id": "BA_P3_G232",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates: ['explanation has big stray number 25']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G233",
+  "archetype": "make_a_list",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "counted cases",
+  "derived": "6"
+ },
+ {
+  "id": "BA_P3_G234",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "count not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G235",
+  "archetype": "make_a_list",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "counted cases",
+  "derived": "6"
+ },
+ {
+  "id": "BA_P3_G236",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation has big stray number 477']",
+  "derived": "8"
+ },
+ {
+  "id": "BA_P3_G237",
+  "archetype": "make_a_list",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "counted cases",
+  "derived": "9"
+ },
+ {
+  "id": "BA_P3_G238",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G239",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates: ['explanation has big stray number 42']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G240",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates: ['explanation has big stray number 41']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G241",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G242",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G243",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G244",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates: ['explanation has big stray number 37']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G245",
+  "archetype": "make_a_list",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "combinatorial form unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G246",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G247",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G248",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G249",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G250",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G251",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G252",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G253",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G254",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G255",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G256",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G257",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G258",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G259",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G260",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G261",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G262",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G263",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G264",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G265",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_G269",
+  "archetype": "pattern_application",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "machine examples unparsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_V01",
+  "archetype": "word_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_V02",
+  "archetype": "word_analogy",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_V04",
+  "archetype": "word_classification",
+  "verdict": "REVIEW",
+  "check": "needs-human",
+  "note": "no solver for class; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_V05",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "cipher needs review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_V06",
+  "archetype": "codes_ciphers",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "cipher needs review; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_V07",
+  "archetype": "word_manipulation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "word rule applied",
+  "derived": "OUSEH"
+ },
+ {
+  "id": "BA_P3_V08",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "P"
+ },
+ {
+  "id": "BA_P3_V09",
+  "archetype": "sentence_logic",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "no if-rules parsed; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_HA_0001",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure A"
+ },
+ {
+  "id": "BA_P3_HA_0002",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure D"
+ },
+ {
+  "id": "BA_P3_HA_0003",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure A"
+ },
+ {
+  "id": "BA_P3_HA_0004",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure C"
+ },
+ {
+  "id": "BA_P3_HA_0005",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure B"
+ },
+ {
+  "id": "BA_P3_HA_0006",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure C"
+ },
+ {
+  "id": "BA_P3_HA_0007",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure D"
+ },
+ {
+  "id": "BA_P3_HA_0008",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure C"
+ },
+ {
+  "id": "BA_P3_HA_0009",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure C"
+ },
+ {
+  "id": "BA_P3_HA_0010",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure A"
+ },
+ {
+  "id": "BA_P3_HA_0011",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure C"
+ },
+ {
+  "id": "BA_P3_HA_0012",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure A"
+ },
+ {
+  "id": "BA_P3_HA_0013",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure C"
+ },
+ {
+  "id": "BA_P3_HA_0014",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure B"
+ },
+ {
+  "id": "BA_P3_HA_0015",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure C"
+ },
+ {
+  "id": "BA_P3_HA_0016",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure A"
+ },
+ {
+  "id": "BA_P3_HA_0017",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure D"
+ },
+ {
+  "id": "BA_P3_HA_0018",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure D"
+ },
+ {
+  "id": "BA_P3_HA_0019",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure B"
+ },
+ {
+  "id": "BA_P3_HA_0020",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure B"
+ },
+ {
+  "id": "BA_P3_HA_0021",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure B"
+ },
+ {
+  "id": "BA_P3_HA_0022",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure A"
+ },
+ {
+  "id": "BA_P3_HA_0023",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure B"
+ },
+ {
+  "id": "BA_P3_HA_0024",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure A"
+ },
+ {
+  "id": "BA_P3_HA_0025",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure C"
+ },
+ {
+  "id": "BA_P3_HA_0026",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure A"
+ },
+ {
+  "id": "BA_P3_HA_0027",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure A"
+ },
+ {
+  "id": "BA_P3_HA_0028",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure A"
+ },
+ {
+  "id": "BA_P3_HA_0029",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure C"
+ },
+ {
+  "id": "BA_P3_HA_0030",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure D"
+ },
+ {
+  "id": "BA_P3_HA_0031",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure A"
+ },
+ {
+  "id": "BA_P3_HA_0032",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure D"
+ },
+ {
+  "id": "BA_P3_HA_0033",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure D"
+ },
+ {
+  "id": "BA_P3_HA_0034",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure A"
+ },
+ {
+  "id": "BA_P3_HA_0035",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure D"
+ },
+ {
+  "id": "BA_P3_HA_0036",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure D"
+ },
+ {
+  "id": "BA_P3_HA_0037",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure B"
+ },
+ {
+  "id": "BA_P3_HA_0038",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure C"
+ },
+ {
+  "id": "BA_P3_HA_0039",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure D"
+ },
+ {
+  "id": "BA_P3_HA_0040",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure A"
+ },
+ {
+  "id": "BA_P3_HA_0041",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure C"
+ },
+ {
+  "id": "BA_P3_HA_0042",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure D"
+ },
+ {
+  "id": "BA_P3_HA_0043",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure A"
+ },
+ {
+  "id": "BA_P3_HA_0044",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure A"
+ },
+ {
+  "id": "BA_P3_HA_0045",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure D"
+ },
+ {
+  "id": "BA_P3_HA_0046",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure D"
+ },
+ {
+  "id": "BA_P3_HA_0047",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure B"
+ },
+ {
+  "id": "BA_P3_HA_0048",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure B"
+ },
+ {
+  "id": "BA_P3_HA_0049",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure C"
+ },
+ {
+  "id": "BA_P3_HA_0050",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure A"
+ },
+ {
+  "id": "BA_P3_HA_0051",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure C"
+ },
+ {
+  "id": "BA_P3_HA_0052",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure C"
+ },
+ {
+  "id": "BA_P3_HA_0053",
+  "archetype": "figure_odd_one_rule",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "all fitting rules agree",
+  "derived": "Figure B"
+ },
+ {
+  "id": "BA_P3_HA_0054",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small red triangle with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0055",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small blue square"
+ },
+ {
+  "id": "BA_P3_HA_0056",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small blue pentagon"
+ },
+ {
+  "id": "BA_P3_HA_0057",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large red square with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0058",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small blue square"
+ },
+ {
+  "id": "BA_P3_HA_0059",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small red square"
+ },
+ {
+  "id": "BA_P3_HA_0060",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large blue hexagon"
+ },
+ {
+  "id": "BA_P3_HA_0061",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large red square with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0062",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large green hexagon"
+ },
+ {
+  "id": "BA_P3_HA_0063",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small blue hexagon with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0064",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large blue square"
+ },
+ {
+  "id": "BA_P3_HA_0065",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large blue pentagon with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0066",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large blue hexagon with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0067",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small blue triangle with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0068",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large red square"
+ },
+ {
+  "id": "BA_P3_HA_0069",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large blue pentagon"
+ },
+ {
+  "id": "BA_P3_HA_0070",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large blue hexagon"
+ },
+ {
+  "id": "BA_P3_HA_0071",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small blue hexagon"
+ },
+ {
+  "id": "BA_P3_HA_0072",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small green triangle"
+ },
+ {
+  "id": "BA_P3_HA_0073",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small red pentagon"
+ },
+ {
+  "id": "BA_P3_HA_0074",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large green square"
+ },
+ {
+  "id": "BA_P3_HA_0075",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large blue hexagon with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0076",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small blue square with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0077",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large red square"
+ },
+ {
+  "id": "BA_P3_HA_0078",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small red square with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0079",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large green pentagon"
+ },
+ {
+  "id": "BA_P3_HA_0080",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large green pentagon with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0081",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small red hexagon"
+ },
+ {
+  "id": "BA_P3_HA_0082",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small green hexagon with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0083",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large green square"
+ },
+ {
+  "id": "BA_P3_HA_0084",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small red triangle with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0085",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small green triangle"
+ },
+ {
+  "id": "BA_P3_HA_0086",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small red square with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0087",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large green triangle with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0088",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small red triangle"
+ },
+ {
+  "id": "BA_P3_HA_0089",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small red pentagon"
+ },
+ {
+  "id": "BA_P3_HA_0090",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large green hexagon"
+ },
+ {
+  "id": "BA_P3_HA_0091",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large green square with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0092",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small red triangle with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0093",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large red square"
+ },
+ {
+  "id": "BA_P3_HA_0094",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large red square"
+ },
+ {
+  "id": "BA_P3_HA_0095",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small red hexagon"
+ },
+ {
+  "id": "BA_P3_HA_0096",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small green hexagon with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0097",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large red pentagon with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0098",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large green pentagon with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0099",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small blue pentagon with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0100",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large green pentagon"
+ },
+ {
+  "id": "BA_P3_HA_0101",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small green hexagon"
+ },
+ {
+  "id": "BA_P3_HA_0102",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "large green square with a dot"
+ },
+ {
+  "id": "BA_P3_HA_0103",
+  "archetype": "figure_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "projected change unique match",
+  "derived": "small blue square"
+ },
+ {
+  "id": "BA_P3_HA_0104",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "assembled chain",
+  "derived": "Ivan, Eva, Bella, Gus"
+ },
+ {
+  "id": "BA_P3_HA_0105",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "position read-off",
+  "derived": "Hari"
+ },
+ {
+  "id": "BA_P3_HA_0106",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "only true claim",
+  "derived": "Gus beats Iris"
+ },
+ {
+  "id": "BA_P3_HA_0107",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "assembled chain",
+  "derived": "Ali, Jay, Jia, Gina"
+ },
+ {
+  "id": "BA_P3_HA_0108",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "position read-off",
+  "derived": "Jia"
+ },
+ {
+  "id": "BA_P3_HA_0109",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "only true claim",
+  "derived": "Bella beats Eli"
+ },
+ {
+  "id": "BA_P3_HA_0110",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "assembled chain",
+  "derived": "Eli, Jay, Cindy, Finn"
+ },
+ {
+  "id": "BA_P3_HA_0111",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "position read-off",
+  "derived": "Bella"
+ },
+ {
+  "id": "BA_P3_HA_0112",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "only true claim",
+  "derived": "Diya beats Finn"
+ },
+ {
+  "id": "BA_P3_HA_0113",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "assembled chain",
+  "derived": "Ben, Amy, Gina, Iris"
+ },
+ {
+  "id": "BA_P3_HA_0114",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "position read-off",
+  "derived": "Diya"
+ },
+ {
+  "id": "BA_P3_HA_0115",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "only true claim",
+  "derived": "Cindy beats Gina"
+ },
+ {
+  "id": "BA_P3_HA_0116",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "assembled chain",
+  "derived": "Bella, Finn, Ivan, Gus"
+ },
+ {
+  "id": "BA_P3_HA_0117",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "position read-off",
+  "derived": "Cai"
+ },
+ {
+  "id": "BA_P3_HA_0118",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "only true claim",
+  "derived": "Eli beats Ali"
+ },
+ {
+  "id": "BA_P3_HA_0119",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "assembled chain",
+  "derived": "Ben, Cai, Gus, Cindy"
+ },
+ {
+  "id": "BA_P3_HA_0120",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "position read-off",
+  "derived": "Diya"
+ },
+ {
+  "id": "BA_P3_HA_0121",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "only true claim",
+  "derived": "Diya beats Ben"
+ },
+ {
+  "id": "BA_P3_HA_0122",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "assembled chain",
+  "derived": "Dan, Jia, Hari, Bella"
+ },
+ {
+  "id": "BA_P3_HA_0123",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "position read-off",
+  "derived": "Hari"
+ },
+ {
+  "id": "BA_P3_HA_0124",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "only true claim",
+  "derived": "Fiona beats Jay"
+ },
+ {
+  "id": "BA_P3_HA_0125",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "assembled chain",
+  "derived": "Iris, Finn, Cai, Jia"
+ },
+ {
+  "id": "BA_P3_HA_0126",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "position read-off",
+  "derived": "Eva"
+ },
+ {
+  "id": "BA_P3_HA_0127",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "only true claim",
+  "derived": "Hari beats Gina"
+ },
+ {
+  "id": "BA_P3_HA_0128",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "assembled chain",
+  "derived": "Eva, Hari, Diya, Eli"
+ },
+ {
+  "id": "BA_P3_HA_0129",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "position read-off",
+  "derived": "Cindy"
+ },
+ {
+  "id": "BA_P3_HA_0130",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "only true claim",
+  "derived": "Cai beats Finn"
+ },
+ {
+  "id": "BA_P3_HA_0131",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "assembled chain",
+  "derived": "Ben, Eva, Cai, Dan"
+ },
+ {
+  "id": "BA_P3_HA_0132",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "position read-off",
+  "derived": "Jay"
+ },
+ {
+  "id": "BA_P3_HA_0133",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "only true claim",
+  "derived": "Hana beats Finn"
+ },
+ {
+  "id": "BA_P3_HA_0134",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "assembled chain",
+  "derived": "Gina, Eli, Ali, Jay, Amy"
+ },
+ {
+  "id": "BA_P3_HA_0135",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "position read-off",
+  "derived": "Bella"
+ },
+ {
+  "id": "BA_P3_HA_0136",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "only true claim",
+  "derived": "Jay beats Hana"
+ },
+ {
+  "id": "BA_P3_HA_0137",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "assembled chain",
+  "derived": "Hari, Ali, Jay, Gina, Ben"
+ },
+ {
+  "id": "BA_P3_HA_0138",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "position read-off",
+  "derived": "Finn"
+ },
+ {
+  "id": "BA_P3_HA_0139",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "only true claim",
+  "derived": "Finn beats Cindy"
+ },
+ {
+  "id": "BA_P3_HA_0140",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "assembled chain",
+  "derived": "Cindy, Gus, Eli, Jay, Ben"
+ },
+ {
+  "id": "BA_P3_HA_0141",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "position read-off",
+  "derived": "Hari"
+ },
+ {
+  "id": "BA_P3_HA_0142",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "only true claim",
+  "derived": "Amy beats Eli"
+ },
+ {
+  "id": "BA_P3_HA_0143",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "assembled chain",
+  "derived": "Gus, Eva, Jay, Gina, Eli"
+ },
+ {
+  "id": "BA_P3_HA_0144",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "position read-off",
+  "derived": "Hari"
+ },
+ {
+  "id": "BA_P3_HA_0145",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "only true claim",
+  "derived": "Cindy beats Hari"
+ },
+ {
+  "id": "BA_P3_HA_0146",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "assembled chain",
+  "derived": "Diya, Ali, Amy, Gina, Ben"
+ },
+ {
+  "id": "BA_P3_HA_0147",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "position read-off",
+  "derived": "Eva"
+ },
+ {
+  "id": "BA_P3_HA_0148",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "only true claim",
+  "derived": "Eli beats Gus"
+ },
+ {
+  "id": "BA_P3_HA_0149",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "assembled chain",
+  "derived": "Ivan, Dan, Eli, Ali, Bella"
+ },
+ {
+  "id": "BA_P3_HA_0150",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "position read-off",
+  "derived": "Hana"
+ },
+ {
+  "id": "BA_P3_HA_0151",
+  "archetype": "merge_partial_orders",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "only true claim",
+  "derived": "Bella beats Ivan"
+ },
+ {
+  "id": "BA_P3_HA_0152",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Dan by 11"
+ },
+ {
+  "id": "BA_P3_HA_0153",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Eva by 5"
+ },
+ {
+  "id": "BA_P3_HA_0154",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Eva by 11"
+ },
+ {
+  "id": "BA_P3_HA_0155",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Jay by 12"
+ },
+ {
+  "id": "BA_P3_HA_0156",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Cindy by 9"
+ },
+ {
+  "id": "BA_P3_HA_0157",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Cai by 2"
+ },
+ {
+  "id": "BA_P3_HA_0158",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Ali by 9"
+ },
+ {
+  "id": "BA_P3_HA_0159",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Amy by 12"
+ },
+ {
+  "id": "BA_P3_HA_0160",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Bella by 1"
+ },
+ {
+  "id": "BA_P3_HA_0161",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Gina by 9"
+ },
+ {
+  "id": "BA_P3_HA_0162",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Dan by 1"
+ },
+ {
+  "id": "BA_P3_HA_0163",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Gina by 4"
+ },
+ {
+  "id": "BA_P3_HA_0164",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Cai by 21"
+ },
+ {
+  "id": "BA_P3_HA_0165",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Eva by 28"
+ },
+ {
+  "id": "BA_P3_HA_0166",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Ben by 10"
+ },
+ {
+  "id": "BA_P3_HA_0167",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Ben by 3"
+ },
+ {
+  "id": "BA_P3_HA_0168",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Dan by 10"
+ },
+ {
+  "id": "BA_P3_HA_0169",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Gus by 23"
+ },
+ {
+  "id": "BA_P3_HA_0170",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "hidden total backwards",
+  "derived": "41"
+ },
+ {
+  "id": "BA_P3_HA_0171",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "hidden total backwards",
+  "derived": "34"
+ },
+ {
+  "id": "BA_P3_HA_0172",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "hidden total backwards",
+  "derived": "37"
+ },
+ {
+  "id": "BA_P3_HA_0173",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "hidden total backwards",
+  "derived": "39"
+ },
+ {
+  "id": "BA_P3_HA_0174",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "hidden total backwards",
+  "derived": "42"
+ },
+ {
+  "id": "BA_P3_HA_0175",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "hidden total backwards",
+  "derived": "38"
+ },
+ {
+  "id": "BA_P3_HA_0176",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "hidden total backwards",
+  "derived": "39"
+ },
+ {
+  "id": "BA_P3_HA_0177",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "hidden total backwards",
+  "derived": "21"
+ },
+ {
+  "id": "BA_P3_HA_0178",
+  "archetype": "before_after_transfer",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "hidden total backwards",
+  "derived": "35"
+ },
+ {
+  "id": "BA_P3_HA_0179",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "32 m"
+ },
+ {
+  "id": "BA_P3_HA_0180",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "36 m"
+ },
+ {
+  "id": "BA_P3_HA_0181",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "16 m"
+ },
+ {
+  "id": "BA_P3_HA_0182",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "36 m"
+ },
+ {
+  "id": "BA_P3_HA_0183",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "36 m"
+ },
+ {
+  "id": "BA_P3_HA_0184",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "60 m"
+ },
+ {
+  "id": "BA_P3_HA_0185",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "24 m"
+ },
+ {
+  "id": "BA_P3_HA_0186",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "84 m"
+ },
+ {
+  "id": "BA_P3_HA_0187",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "14 m"
+ },
+ {
+  "id": "BA_P3_HA_0188",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "27 m"
+ },
+ {
+  "id": "BA_P3_HA_0189",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "50 m"
+ },
+ {
+  "id": "BA_P3_HA_0190",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "70 m"
+ },
+ {
+  "id": "BA_P3_HA_0191",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "42 m"
+ },
+ {
+  "id": "BA_P3_HA_0192",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "56 m"
+ },
+ {
+  "id": "BA_P3_HA_0193",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "20 m"
+ },
+ {
+  "id": "BA_P3_HA_0194",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "44 m"
+ },
+ {
+  "id": "BA_P3_HA_0195",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "50 m"
+ },
+ {
+  "id": "BA_P3_HA_0196",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "60 m"
+ },
+ {
+  "id": "BA_P3_HA_0197",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "35 m"
+ },
+ {
+  "id": "BA_P3_HA_0198",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "36 m"
+ },
+ {
+  "id": "BA_P3_HA_0199",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "12 m"
+ },
+ {
+  "id": "BA_P3_HA_0200",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "20 m"
+ },
+ {
+  "id": "BA_P3_HA_0201",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "40 m"
+ },
+ {
+  "id": "BA_P3_HA_0202",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "36 m"
+ },
+ {
+  "id": "BA_P3_HA_0203",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "24 m"
+ },
+ {
+  "id": "BA_P3_HA_0204",
+  "archetype": "draw_diagram_gaps",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap count rule",
+  "derived": "28 m"
+ },
+ {
+  "id": "BA_P3_HA_0205",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "19"
+ },
+ {
+  "id": "BA_P3_HA_0206",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "14"
+ },
+ {
+  "id": "BA_P3_HA_0207",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "18"
+ },
+ {
+  "id": "BA_P3_HA_0208",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "11"
+ },
+ {
+  "id": "BA_P3_HA_0209",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "5"
+ },
+ {
+  "id": "BA_P3_HA_0210",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "9"
+ },
+ {
+  "id": "BA_P3_HA_0211",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "7"
+ },
+ {
+  "id": "BA_P3_HA_0212",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "26"
+ },
+ {
+  "id": "BA_P3_HA_0213",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "8"
+ },
+ {
+  "id": "BA_P3_HA_0214",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "19"
+ },
+ {
+  "id": "BA_P3_HA_0215",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "23"
+ },
+ {
+  "id": "BA_P3_HA_0216",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "6"
+ },
+ {
+  "id": "BA_P3_HA_0217",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "28"
+ },
+ {
+  "id": "BA_P3_HA_0218",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "19"
+ },
+ {
+  "id": "BA_P3_HA_0219",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "3"
+ },
+ {
+  "id": "BA_P3_HA_0220",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "29"
+ },
+ {
+  "id": "BA_P3_HA_0221",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "21"
+ },
+ {
+  "id": "BA_P3_HA_0222",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "19"
+ },
+ {
+  "id": "BA_P3_HA_0223",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "8"
+ },
+ {
+  "id": "BA_P3_HA_0224",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "39"
+ },
+ {
+  "id": "BA_P3_HA_0225",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "10"
+ },
+ {
+  "id": "BA_P3_HA_0226",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "16"
+ },
+ {
+  "id": "BA_P3_HA_0227",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "7"
+ },
+ {
+  "id": "BA_P3_HA_0228",
+  "archetype": "compound_rule_analogy",
+  "verdict": "PASS",
+  "check": "solver-match-medium",
+  "note": "rules fitting pair1",
+  "derived": "16"
+ },
+ {
+  "id": "BA_P3_HA_0229",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "Z"
+ },
+ {
+  "id": "BA_P3_HA_0230",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "W"
+ },
+ {
+  "id": "BA_P3_HA_0231",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "N"
+ },
+ {
+  "id": "BA_P3_HA_0232",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "T"
+ },
+ {
+  "id": "BA_P3_HA_0233",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "M"
+ },
+ {
+  "id": "BA_P3_HA_0234",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "L"
+ },
+ {
+  "id": "BA_P3_HA_0235",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "P"
+ },
+ {
+  "id": "BA_P3_HA_0236",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "Q"
+ },
+ {
+  "id": "BA_P3_HA_0237",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "X"
+ },
+ {
+  "id": "BA_P3_HA_0238",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "W"
+ },
+ {
+  "id": "BA_P3_HA_0239",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "W"
+ },
+ {
+  "id": "BA_P3_HA_0240",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "L"
+ },
+ {
+  "id": "BA_P3_HA_0241",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "S"
+ },
+ {
+  "id": "BA_P3_HA_0242",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "O"
+ },
+ {
+  "id": "BA_P3_HA_0243",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "Y"
+ },
+ {
+  "id": "BA_P3_HA_0244",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "P"
+ },
+ {
+  "id": "BA_P3_HA_0245",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "T"
+ },
+ {
+  "id": "BA_P3_HA_0246",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "Y"
+ },
+ {
+  "id": "BA_P3_HA_0247",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "Q"
+ },
+ {
+  "id": "BA_P3_HA_0248",
+  "archetype": "letter_patterns",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "gap pattern found",
+  "derived": "Z"
+ },
+ {
+  "id": "BA_P3_HA_0249",
+  "archetype": "chained_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained count",
+  "derived": "20"
+ },
+ {
+  "id": "BA_P3_HA_0250",
+  "archetype": "chained_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained counts",
+  "derived": "Bella"
+ },
+ {
+  "id": "BA_P3_HA_0251",
+  "archetype": "chained_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained counts",
+  "derived": "Cai"
+ },
+ {
+  "id": "BA_P3_HA_0252",
+  "archetype": "chained_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained counts",
+  "derived": "Jay"
+ },
+ {
+  "id": "BA_P3_HA_0253",
+  "archetype": "chained_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained count",
+  "derived": "18"
+ },
+ {
+  "id": "BA_P3_HA_0254",
+  "archetype": "chained_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained counts",
+  "derived": "Dan"
+ },
+ {
+  "id": "BA_P3_HA_0255",
+  "archetype": "chained_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained count",
+  "derived": "26"
+ },
+ {
+  "id": "BA_P3_HA_0256",
+  "archetype": "chained_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained count",
+  "derived": "28"
+ },
+ {
+  "id": "BA_P3_HA_0257",
+  "archetype": "chained_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained counts",
+  "derived": "Eli"
+ },
+ {
+  "id": "BA_P3_HA_0258",
+  "archetype": "chained_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained count",
+  "derived": "11"
+ },
+ {
+  "id": "BA_P3_HA_0259",
+  "archetype": "chained_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained counts",
+  "derived": "Hari"
+ },
+ {
+  "id": "BA_P3_HA_0260",
+  "archetype": "chained_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained counts",
+  "derived": "Fiona"
+ },
+ {
+  "id": "BA_P3_HA_0261",
+  "archetype": "chained_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained count",
+  "derived": "26"
+ },
+ {
+  "id": "BA_P3_HA_0262",
+  "archetype": "chained_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained counts",
+  "derived": "Bella"
+ },
+ {
+  "id": "BA_P3_HA_0263",
+  "archetype": "chained_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained count",
+  "derived": "16"
+ },
+ {
+  "id": "BA_P3_HA_0264",
+  "archetype": "chained_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained count",
+  "derived": "17"
+ },
+ {
+  "id": "BA_P3_HA_0265",
+  "archetype": "chained_comparison",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained counts",
+  "derived": "Jay"
+ },
+ {
+  "id": "BA_P3_HA_0266",
+  "archetype": "pattern_application",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "31"
+ },
+ {
+  "id": "BA_P3_HA_0267",
+  "archetype": "pattern_application",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "31"
+ },
+ {
+  "id": "BA_P3_HA_0268",
+  "archetype": "pattern_application",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "27"
+ },
+ {
+  "id": "BA_P3_HA_0269",
+  "archetype": "pattern_application",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "17"
+ },
+ {
+  "id": "BA_P3_HA_0270",
+  "archetype": "pattern_application",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "22"
+ },
+ {
+  "id": "BA_P3_HA_0271",
+  "archetype": "pattern_application",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "37"
+ },
+ {
+  "id": "BA_P3_HA_0272",
+  "archetype": "pattern_application",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "25"
+ },
+ {
+  "id": "BA_P3_HA_0273",
+  "archetype": "pattern_application",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "31"
+ },
+ {
+  "id": "BA_P3_HA_0274",
+  "archetype": "pattern_application",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "40"
+ },
+ {
+  "id": "BA_P3_HA_0275",
+  "archetype": "pattern_application",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "25"
+ },
+ {
+  "id": "BA_P3_HA_0276",
+  "archetype": "pattern_application",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "37"
+ },
+ {
+  "id": "BA_P3_HA_0277",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "79 is not a multiple of 4"
+ },
+ {
+  "id": "BA_P3_HA_0278",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "37 does not end in 0"
+ },
+ {
+  "id": "BA_P3_HA_0281",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "61 is not a multiple of 4"
+ },
+ {
+  "id": "BA_P3_HA_0282",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates: ['explanation never states answer']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_HA_0283",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "41 does not end in 0"
+ },
+ {
+  "id": "BA_P3_HA_0284",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates: ['explanation never states answer']",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_HA_0285",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_HA_0286",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_HA_0287",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_HA_0288",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_HA_0289",
+  "archetype": "two_step_rotation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "simulated turns",
+  "derived": "DOWN"
+ },
+ {
+  "id": "BA_P3_HA_0290",
+  "archetype": "two_step_rotation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "simulated turns",
+  "derived": "RIGHT"
+ },
+ {
+  "id": "BA_P3_HA_0291",
+  "archetype": "two_step_rotation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "simulated turns",
+  "derived": "RIGHT"
+ },
+ {
+  "id": "BA_P3_HA_0292",
+  "archetype": "two_step_rotation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "simulated turns",
+  "derived": "LEFT"
+ },
+ {
+  "id": "BA_P3_HA_0293",
+  "archetype": "two_step_rotation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "simulated turns",
+  "derived": "LEFT"
+ },
+ {
+  "id": "BA_P3_HA_0295",
+  "archetype": "two_step_rotation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "simulated turns",
+  "derived": "LEFT"
+ },
+ {
+  "id": "BA_P3_HA_0297",
+  "archetype": "two_step_rotation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "simulated turns",
+  "derived": "DOWN"
+ },
+ {
+  "id": "BA_P3_HA_0298",
+  "archetype": "two_step_rotation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "simulated turns",
+  "derived": "RIGHT"
+ },
+ {
+  "id": "BA_P3_HA_0299",
+  "archetype": "two_step_rotation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "simulated turns",
+  "derived": "UP"
+ },
+ {
+  "id": "BA_P3_HA_0300",
+  "archetype": "two_step_rotation",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "simulated turns",
+  "derived": "DOWN"
+ },
+ {
+  "id": "BA_P3_HA_0301",
+  "archetype": "interleaved_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule x2+1",
+  "derived": "46"
+ },
+ {
+  "id": "BA_P3_HA_0302",
+  "archetype": "alternating_rule",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation too short']",
+  "derived": "22"
+ },
+ {
+  "id": "BA_P3_HA_0303",
+  "archetype": "interleaved_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-jump",
+  "derived": "12"
+ },
+ {
+  "id": "BA_P3_HA_0304",
+  "archetype": "interleaved_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule x2+1",
+  "derived": "46"
+ },
+ {
+  "id": "BA_P3_HA_0305",
+  "archetype": "alternating_rule",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation too short']",
+  "derived": "26"
+ },
+ {
+  "id": "BA_P3_HA_0306",
+  "archetype": "interleaved_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule alt-jump",
+  "derived": "12"
+ },
+ {
+  "id": "BA_P3_HA_0307",
+  "archetype": "before_after",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Eva by 6"
+ },
+ {
+  "id": "BA_P3_HA_0308",
+  "archetype": "before_after",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Iris by 9"
+ },
+ {
+  "id": "BA_P3_HA_0309",
+  "archetype": "before_after",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Hana by 2"
+ },
+ {
+  "id": "BA_P3_HA_0310",
+  "archetype": "before_after",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Gina by 6"
+ },
+ {
+  "id": "BA_P3_HA_0311",
+  "archetype": "before_after",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Hari by 9"
+ },
+ {
+  "id": "BA_P3_HA_0312",
+  "archetype": "before_after",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "Ivan by 2"
+ },
+ {
+  "id": "BA_P3_HA_0313",
+  "archetype": "working_backwards",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "inverted operations",
+  "derived": "12"
+ },
+ {
+  "id": "BA_P3_HA_0367",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "diamond"
+ },
+ {
+  "id": "BA_P3_HA_0368",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "7"
+ },
+ {
+  "id": "BA_P3_HA_0369",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "triangle"
+ },
+ {
+  "id": "BA_P3_HA_0370",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "9"
+ },
+ {
+  "id": "BA_P3_HA_0314",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "triangle"
+ },
+ {
+  "id": "BA_P3_HA_0315",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "10"
+ },
+ {
+  "id": "BA_P3_HA_0316",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "oval"
+ },
+ {
+  "id": "BA_P3_HA_0317",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "11"
+ },
+ {
+  "id": "BA_P3_HA_0318",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "pentagon"
+ },
+ {
+  "id": "BA_P3_HA_0319",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "4"
+ },
+ {
+  "id": "BA_P3_HA_0320",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "triangle"
+ },
+ {
+  "id": "BA_P3_HA_0321",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "8"
+ },
+ {
+  "id": "BA_P3_HA_0322",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "star"
+ },
+ {
+  "id": "BA_P3_HA_0323",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "7"
+ },
+ {
+  "id": "BA_P3_HA_0324",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "square"
+ },
+ {
+  "id": "BA_P3_HA_0325",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "5"
+ },
+ {
+  "id": "BA_P3_HA_0326",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "star"
+ },
+ {
+  "id": "BA_P3_HA_0327",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "11"
+ },
+ {
+  "id": "BA_P3_HA_0328",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "oval"
+ },
+ {
+  "id": "BA_P3_HA_0329",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "4"
+ },
+ {
+  "id": "BA_P3_HA_0330",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "diamond"
+ },
+ {
+  "id": "BA_P3_HA_0331",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "2"
+ },
+ {
+  "id": "BA_P3_HA_0332",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "diamond"
+ },
+ {
+  "id": "BA_P3_HA_0333",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "7"
+ },
+ {
+  "id": "BA_P3_HA_0334",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "hexagon"
+ },
+ {
+  "id": "BA_P3_HA_0335",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "3"
+ },
+ {
+  "id": "BA_P3_HA_0336",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "star"
+ },
+ {
+  "id": "BA_P3_HA_0337",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "8"
+ },
+ {
+  "id": "BA_P3_HA_0338",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "circle"
+ },
+ {
+  "id": "BA_P3_HA_0339",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "10"
+ },
+ {
+  "id": "BA_P3_HA_0340",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "triangle"
+ },
+ {
+  "id": "BA_P3_HA_0341",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "18"
+ },
+ {
+  "id": "BA_P3_HA_0342",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "pentagon"
+ },
+ {
+  "id": "BA_P3_HA_0343",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "18"
+ },
+ {
+  "id": "BA_P3_HA_0344",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "pentagon"
+ },
+ {
+  "id": "BA_P3_HA_0345",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "12"
+ },
+ {
+  "id": "BA_P3_HA_0346",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "oval"
+ },
+ {
+  "id": "BA_P3_HA_0347",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "10"
+ },
+ {
+  "id": "BA_P3_HA_0348",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "oval"
+ },
+ {
+  "id": "BA_P3_HA_0349",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "14"
+ },
+ {
+  "id": "BA_P3_HA_0350",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "square"
+ },
+ {
+  "id": "BA_P3_HA_0351",
+  "archetype": "weight_system",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved system weight",
+  "derived": "13"
+ },
+ {
+  "id": "BA_P3_HA_0352",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "Card 17 does not belong in the red tray"
+ },
+ {
+  "id": "BA_P3_HA_0353",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "27 is not a multiple of 10"
+ },
+ {
+  "id": "BA_P3_HA_0354",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "37 is not a multiple of 10"
+ },
+ {
+  "id": "BA_P3_HA_0355",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "33 is not a multiple of 10"
+ },
+ {
+  "id": "BA_P3_HA_0356",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "43 is not a multiple of 8"
+ },
+ {
+  "id": "BA_P3_HA_0357",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "68 does not end in 0"
+ },
+ {
+  "id": "BA_P3_HA_0358",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "35 is not a multiple of 4"
+ },
+ {
+  "id": "BA_P3_HA_0359",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "33 is not a multiple of 8"
+ },
+ {
+  "id": "BA_P3_HA_0360",
+  "archetype": "conditional_contrapositive",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule engine unique entailment",
+  "derived": "33 is not a multiple of 4"
+ },
+ {
+  "id": "BA_P3_HA_0361",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_HA_0362",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_HA_0363",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_HA_0364",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_HA_0365",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_HA_0366",
+  "archetype": "conditional_contrapositive",
+  "verdict": "REVIEW",
+  "check": "solver-abstain-low",
+  "note": "rule engine hits not unique; gates clean",
+  "derived": ""
+ },
+ {
+  "id": "BA_P3_HA_0371",
+  "archetype": "figure_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule x2+1",
+  "derived": "46"
+ },
+ {
+  "id": "BA_P3_HA_0372",
+  "archetype": "figure_sequence",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation too short']",
+  "derived": "29"
+ },
+ {
+  "id": "BA_P3_HA_0373",
+  "archetype": "figure_sequence",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation too short']",
+  "derived": "18"
+ },
+ {
+  "id": "BA_P3_HA_0375",
+  "archetype": "figure_sequence",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation too short']",
+  "derived": "8"
+ },
+ {
+  "id": "BA_P3_HA_0377",
+  "archetype": "figure_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule x2+1",
+  "derived": "94"
+ },
+ {
+  "id": "BA_P3_HA_0378",
+  "archetype": "figure_sequence",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation too short']",
+  "derived": "18"
+ },
+ {
+  "id": "BA_P3_HA_0379",
+  "archetype": "figure_sequence",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation too short']",
+  "derived": "23"
+ },
+ {
+  "id": "BA_P3_HA_0380",
+  "archetype": "figure_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule x2+1",
+  "derived": "62"
+ },
+ {
+  "id": "BA_P3_HA_0381",
+  "archetype": "figure_sequence",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation too short']",
+  "derived": "13"
+ },
+ {
+  "id": "BA_P3_HA_0382",
+  "archetype": "figure_sequence",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation too short']",
+  "derived": "18"
+ },
+ {
+  "id": "BA_P3_HA_0383",
+  "archetype": "figure_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule x2+1",
+  "derived": "94"
+ },
+ {
+  "id": "BA_P3_HA_0384",
+  "archetype": "figure_sequence",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation too short']",
+  "derived": "27"
+ },
+ {
+  "id": "BA_P3_HA_0385",
+  "archetype": "figure_sequence",
+  "verdict": "PASS",
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation too short']",
+  "derived": "22"
+ },
+ {
+  "id": "BA_P3_HA_0386",
+  "archetype": "figure_sequence",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule x2+1",
+  "derived": "78"
+ }
+]

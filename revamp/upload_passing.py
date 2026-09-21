@@ -25,7 +25,7 @@ CANONICAL = os.path.join(BANKDIR, "brainactive_p3_question_bank_production.json"
 RESDIR = os.path.join(BANKDIR, "qa_batches")
 IMGDIR = os.path.join(BANKDIR, "images")
 PAGE_SIZE = 100
-APPROVED_QA_STATUSES = {"validated_baseline_v041", "validated_fix_20260831"}
+APPROVED_QA_STATUSES = {"validated_baseline_v041", "validated_fix_20260831", "validated_ha_20260921"}
 
 DOMAIN_TOPIC = {
     "numerical_reasoning": "Numerical Thinking",

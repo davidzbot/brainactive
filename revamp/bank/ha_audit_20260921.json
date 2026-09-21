@@ -1,0 +1,3734 @@
+{
+ "BA_P3_0001": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0002": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0003": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0004": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0005": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0006": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0007": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0008": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0009": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0010": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0011": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0012": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0016": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0017": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0018": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0019": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0020": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0021": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0023": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0025": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0026": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0028": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0029": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0031": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0032": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0034": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0035": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0036": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0039": {
+  "verdict": "delete",
+  "reason": "R8: single 90-degree turn, HA needs multi-step"
+ },
+ "BA_P3_0042": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0044": {
+  "verdict": "delete",
+  "reason": "R9: one-step arithmetic, not heuristic"
+ },
+ "BA_P3_0045": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0046": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0047": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0049": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0052": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0053": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0054": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0055": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_0056": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0057": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0058": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0059": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0060": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0061": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0062": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0063": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0064": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0065": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0066": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0067": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0068": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0069": {
+  "verdict": "delete",
+  "reason": "R8: single 90-degree turn, HA needs multi-step"
+ },
+ "BA_P3_0070": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0071": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0072": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0073": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0074": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0075": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0076": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0077": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0079": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0080": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0086": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0087": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0089": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0090": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0101": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0102": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0104": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0105": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0107": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0108": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0109": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0110": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0111": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0112": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0113": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0114": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0115": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0117": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0120": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0121": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_0123": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0124": {
+  "verdict": "keep",
+  "reason": "dual-relation analogy, stray token is the rule constant only, solver to verify"
+ },
+ "BA_P3_0125": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0126": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0130": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0132": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0133": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0134": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_0135": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0136": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0137": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0138": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0139": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0140": {
+  "verdict": "keep",
+  "reason": "dual-relation analogy, stray token is the rule constant only, solver to verify"
+ },
+ "BA_P3_0141": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0144": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_0145": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0146": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0148": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0149": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0150": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_0151": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0152": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0153": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_0154": {
+  "verdict": "keep",
+  "reason": "dual-relation analogy, stray token is the rule constant only, solver to verify"
+ },
+ "BA_P3_0155": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0156": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0157": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0158": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0160": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_0161": {
+  "verdict": "keep",
+  "reason": "dual-relation analogy, stray token is the rule constant only, solver to verify"
+ },
+ "BA_P3_0162": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0164": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0165": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_0166": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0168": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_0169": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0170": {
+  "verdict": "keep",
+  "reason": "dual-relation analogy, stray token is the rule constant only, solver to verify"
+ },
+ "BA_P3_0171": {
+  "verdict": "keep",
+  "reason": "dual-relation analogy, stray token is the rule constant only, solver to verify"
+ },
+ "BA_P3_0172": {
+  "verdict": "keep",
+  "reason": "dual-relation analogy, stray token is the rule constant only, solver to verify"
+ },
+ "BA_P3_0173": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0174": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0175": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0176": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_0179": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0181": {
+  "verdict": "delete",
+  "reason": "R6c: copy-pasted sequence explanation in analogy item plus single-op rule"
+ },
+ "BA_P3_0182": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0183": {
+  "verdict": "delete",
+  "reason": "R6c: copy-pasted sequence explanation in analogy item plus single-op rule"
+ },
+ "BA_P3_0185": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0186": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0187": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0188": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0189": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0190": {
+  "verdict": "delete",
+  "reason": "R6c: copy-pasted sequence explanation in analogy item plus single-op rule"
+ },
+ "BA_P3_0191": {
+  "verdict": "keep",
+  "reason": "dual-relation analogy, stray token is the rule constant only, solver to verify"
+ },
+ "BA_P3_0192": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0193": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_0194": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_0195": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0196": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0198": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0201": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_0203": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0204": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0206": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0210": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0211": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_0213": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0215": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0216": {
+  "verdict": "keep",
+  "reason": "dual-relation analogy, stray token is the rule constant only, solver to verify"
+ },
+ "BA_P3_0218": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0219": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0220": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0221": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0224": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0227": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0228": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0230": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0235": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0236": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_0237": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0238": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0239": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0240": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0241": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0242": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0243": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0245": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0246": {
+  "verdict": "delete",
+  "reason": "R6c: copy-pasted sequence explanation in analogy item plus single-op rule"
+ },
+ "BA_P3_0247": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0249": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0250": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0251": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0252": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0255": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_0256": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0260": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0262": {
+  "verdict": "keep",
+  "reason": "dual-relation analogy, stray token is the rule constant only, solver to verify"
+ },
+ "BA_P3_0263": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0266": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0267": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0269": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0270": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0271": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0272": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0274": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0275": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0276": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0282": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0284": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0285": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0286": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0287": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0288": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0289": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0290": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0292": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0293": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0296": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0297": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0298": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0300": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0304": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0306": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0315": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0316": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0317": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0318": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0323": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0328": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0329": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0330": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0332": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0335": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0337": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0340": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0341": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0342": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0346": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0348": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0351": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0353": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0355": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0358": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0360": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0365": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0366": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0367": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0368": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0372": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0373": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0374": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0375": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0376": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0377": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0383": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0384": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0385": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0389": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0392": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0394": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0398": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0402": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0407": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0408": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0410": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0414": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0419": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0420": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0424": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0425": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0426": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0427": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0429": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0431": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0433": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0438": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0441": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0444": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0450": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0451": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0460": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0462": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0463": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0464": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0466": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0469": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0471": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0472": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0473": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0474": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0476": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0480": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0482": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0483": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0485": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0490": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0493": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0497": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0498": {
+  "verdict": "delete",
+  "reason": "R2: order fully given, transcription not inference"
+ },
+ "BA_P3_0500": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0502": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0503": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0504": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0506": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0511": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0512": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0514": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0515": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0517": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0519": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0523": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0524": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0525": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0526": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0527": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0532": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0533": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0535": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0538": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0543": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0549": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0552": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0553": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0554": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0555": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0558": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0561": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0562": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0564": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0566": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0571": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0577": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0578": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0579": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0580": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0582": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0585": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0586": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0588": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0591": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0594": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0598": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0599": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0601": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0603": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0606": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0607": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0609": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0610": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0613": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0617": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0629": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0630": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0631": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0635": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0639": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0642": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0643": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0652": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0654": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0658": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0659": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0664": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0665": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0671": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0672": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0673": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0676": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0680": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0682": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0683": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0684": {
+  "verdict": "delete",
+  "reason": "R8: single 90-degree turn, HA needs multi-step"
+ },
+ "BA_P3_0689": {
+  "verdict": "delete",
+  "reason": "R8: single 90-degree turn, HA needs multi-step"
+ },
+ "BA_P3_0690": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0691": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0694": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0695": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0696": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0698": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0699": {
+  "verdict": "delete",
+  "reason": "R8: single 90-degree turn, HA needs multi-step"
+ },
+ "BA_P3_0700": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0702": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0703": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0704": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0706": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0708": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0711": {
+  "verdict": "delete",
+  "reason": "R8: single 90-degree turn, HA needs multi-step"
+ },
+ "BA_P3_0713": {
+  "verdict": "delete",
+  "reason": "R8: single 90-degree turn, HA needs multi-step"
+ },
+ "BA_P3_0718": {
+  "verdict": "delete",
+  "reason": "R8: single 90-degree turn, HA needs multi-step"
+ },
+ "BA_P3_0722": {
+  "verdict": "delete",
+  "reason": "R8: single 90-degree turn, HA needs multi-step"
+ },
+ "BA_P3_0724": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0725": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0733": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0734": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0738": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0739": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0741": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0744": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0747": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0750": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0753": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0757": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0769": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0770": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0771": {
+  "verdict": "delete",
+  "reason": "R8: single 90-degree turn, HA needs multi-step"
+ },
+ "BA_P3_0774": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0775": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0776": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0784": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0791": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0792": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0797": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0799": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0801": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0803": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0805": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0806": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0809": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0811": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0812": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0820": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0823": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0826": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0827": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0828": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0831": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0832": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0833": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0834": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0837": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0840": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0842": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0843": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0848": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0853": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0855": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0858": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0861": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0862": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0864": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0876": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0877": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0894": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0899": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0903": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0904": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0909": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0910": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0913": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0914": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0916": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0917": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0918": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0920": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0921": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0922": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0923": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0924": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0925": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0928": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0930": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0932": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0933": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0934": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0938": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0940": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0941": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0942": {
+  "verdict": "delete",
+  "reason": "R7: pure doubling dot-count, HA needs compound rules"
+ },
+ "BA_P3_0946": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0947": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0949": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0951": {
+  "verdict": "delete",
+  "reason": "R7: pure doubling dot-count, HA needs compound rules"
+ },
+ "BA_P3_0952": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0954": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0959": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0960": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0962": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0963": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0964": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0966": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0969": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0970": {
+  "verdict": "delete",
+  "reason": "R7: pure doubling dot-count, HA needs compound rules"
+ },
+ "BA_P3_0971": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0973": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0974": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0975": {
+  "verdict": "delete",
+  "reason": "R7: pure doubling dot-count, HA needs compound rules"
+ },
+ "BA_P3_0977": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0978": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0979": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0980": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0982": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_0984": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0985": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0986": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0989": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0990": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_0991": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0993": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0995": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0997": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_0998": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1002": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1003": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1006": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1007": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1009": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1011": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1012": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1016": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1017": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1019": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1020": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1021": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1022": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1025": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1026": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1027": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1029": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1030": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1031": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1036": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1037": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1038": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1039": {
+  "verdict": "delete",
+  "reason": "R7: pure doubling dot-count, HA needs compound rules"
+ },
+ "BA_P3_1040": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1042": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1043": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1044": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1045": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1046": {
+  "verdict": "delete",
+  "reason": "R7: pure doubling dot-count, HA needs compound rules"
+ },
+ "BA_P3_1048": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1050": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1052": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1053": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1054": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1057": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1058": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1061": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1063": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1064": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1065": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1066": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1067": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1068": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1071": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1072": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1073": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1074": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1080": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1084": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1086": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1087": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1092": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1094": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_1096": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1099": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1101": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_1111": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1112": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1115": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1116": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1119": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1134": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1145": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1149": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1151": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1159": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1162": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1165": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1168": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1169": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1173": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1176": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1178": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_1184": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_1187": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1192": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1199": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1200": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1209": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1219": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1226": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1232": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1234": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1236": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_1239": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0001": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0002": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0003": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0004": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0006": {
+  "verdict": "keep",
+  "reason": "dual-relation analogy, stray token is the rule constant only, solver to verify"
+ },
+ "BA_P3_ADD_0007": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_ADD_0008": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_ADD_0009": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_ADD_0010": {
+  "verdict": "delete",
+  "reason": "R6: single-operation rule on small numbers, HA needs dual-relation"
+ },
+ "BA_P3_ADD_0011": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0012": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0013": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0014": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0015": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0016": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0017": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0018": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0019": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0020": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0021": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0022": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0023": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0024": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0025": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0026": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0027": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0028": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0029": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0030": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0031": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0032": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0033": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0034": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0035": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0036": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0037": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0038": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0039": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0040": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0044": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0046": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0047": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0048": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0049": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0050": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0051": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_ADD_0052": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_ADD_0053": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_ADD_0054": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_ADD_0055": {
+  "verdict": "delete",
+  "reason": "R1: single-feature discrimination, GEP needs abstract SPONCS rule"
+ },
+ "BA_P3_ADD_0056": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_ADD_0057": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_ADD_0058": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_ADD_0059": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_ADD_0060": {
+  "verdict": "delete",
+  "reason": "R3: single-attribute change stated in stem"
+ },
+ "BA_P3_ADD_0063": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0064": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0065": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0066": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0067": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0068": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0070": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0071": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0072": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_ADD_0073": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_ADD_0074": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_ADD_0075": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_ADD_0077": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0078": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0080": {
+  "verdict": "delete",
+  "reason": "R10: near-identical machine-rule template swarm, keep 2 exemplars per rule"
+ },
+ "BA_P3_ADD_0081": {
+  "verdict": "delete",
+  "reason": "R10: near-identical machine-rule template swarm, keep 2 exemplars per rule"
+ },
+ "BA_P3_ADD_0085": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0086": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0088": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0089": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0090": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0091": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0092": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0093": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_ADD_0094": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G001": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G002": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G003": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G004": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G005": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G006": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G007": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G008": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G009": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G010": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G011": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G012": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G013": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G014": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G015": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G016": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G017": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G018": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G019": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G020": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G021": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G022": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G023": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G024": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G025": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G026": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G027": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G028": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G029": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G030": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G031": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G032": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G033": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G034": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G035": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G036": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G037": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G038": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G039": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G040": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G041": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G042": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G043": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G044": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G045": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G046": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G047": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G048": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G049": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G050": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G051": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G052": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G053": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G054": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G055": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G056": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G057": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G058": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G059": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G060": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G061": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G062": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G063": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G064": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G065": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G066": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G067": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G068": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G069": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G070": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G071": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G072": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G073": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G074": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G075": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G076": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G077": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G078": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G079": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G080": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G081": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G082": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G083": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G084": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G085": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G086": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G087": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G088": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G089": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G090": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G091": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G092": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G093": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G094": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G095": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G096": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G097": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G098": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G099": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G100": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G101": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G102": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G103": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G104": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G105": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G106": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G107": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G108": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G109": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G110": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G111": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G112": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G113": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G114": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G115": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G116": {
+  "verdict": "delete",
+  "reason": "R5: direct modus ponens read-off, not contrapositive"
+ },
+ "BA_P3_G117": {
+  "verdict": "delete",
+  "reason": "R5: direct modus ponens read-off, not contrapositive"
+ },
+ "BA_P3_G118": {
+  "verdict": "delete",
+  "reason": "R5: direct modus ponens read-off, not contrapositive"
+ },
+ "BA_P3_G119": {
+  "verdict": "delete",
+  "reason": "R5: direct modus ponens read-off, not contrapositive"
+ },
+ "BA_P3_G120": {
+  "verdict": "delete",
+  "reason": "R5: direct modus ponens read-off, not contrapositive"
+ },
+ "BA_P3_G121": {
+  "verdict": "delete",
+  "reason": "R5: direct modus ponens read-off, not contrapositive"
+ },
+ "BA_P3_G122": {
+  "verdict": "delete",
+  "reason": "R5: direct modus ponens read-off, not contrapositive"
+ },
+ "BA_P3_G123": {
+  "verdict": "delete",
+  "reason": "R5: direct modus ponens read-off, not contrapositive"
+ },
+ "BA_P3_G124": {
+  "verdict": "delete",
+  "reason": "R5: direct modus ponens read-off, not contrapositive"
+ },
+ "BA_P3_G125": {
+  "verdict": "delete",
+  "reason": "R5: direct modus ponens read-off, not contrapositive"
+ },
+ "BA_P3_G126": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G127": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G128": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G129": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G130": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G131": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G132": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G133": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G134": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G135": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G136": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G137": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G138": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G139": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G140": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G141": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G142": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G143": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G144": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G145": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G146": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G147": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G148": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G149": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G150": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G151": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G152": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G153": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G154": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G155": {
+  "verdict": "delete",
+  "reason": "R4: gap rule stated in stem, application not discovery"
+ },
+ "BA_P3_G156": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G157": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G158": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G159": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G160": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G161": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G162": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G163": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G164": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G165": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G166": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G167": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G168": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G169": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G170": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G171": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G172": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G173": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G174": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G175": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G176": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G177": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G178": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G179": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G180": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G181": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G182": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G183": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G184": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G185": {
+  "verdict": "delete",
+  "reason": "R11: routine-arithmetic template swarm, keep exemplars"
+ },
+ "BA_P3_G186": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G187": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G188": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G189": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G190": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G191": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G192": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G193": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G194": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G195": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G196": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G197": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G198": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G199": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G200": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G201": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G202": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G203": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G204": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G205": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G206": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G207": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G208": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G209": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G210": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G211": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G212": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G213": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G214": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G215": {
+  "verdict": "delete",
+  "reason": "R11: routine fencepost template swarm, keep 2 straight plus 2 circular"
+ },
+ "BA_P3_G216": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G217": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G218": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G219": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G220": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G221": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G222": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G223": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G224": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G225": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G226": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G227": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G228": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G229": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G230": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G231": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G232": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G233": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G234": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G235": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G236": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G237": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G238": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G239": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G240": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G241": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G242": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G243": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G244": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G245": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G246": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G247": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G248": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G249": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G250": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G251": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G252": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G253": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G254": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G255": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G256": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G257": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G258": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G259": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G260": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G261": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G262": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G263": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G264": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G265": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G266": {
+  "verdict": "delete",
+  "reason": "R10: near-identical machine-rule template swarm, keep 2 exemplars per rule"
+ },
+ "BA_P3_G267": {
+  "verdict": "delete",
+  "reason": "R10: near-identical machine-rule template swarm, keep 2 exemplars per rule"
+ },
+ "BA_P3_G268": {
+  "verdict": "delete",
+  "reason": "R10: near-identical machine-rule template swarm, keep 2 exemplars per rule"
+ },
+ "BA_P3_G269": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_G270": {
+  "verdict": "delete",
+  "reason": "R10: near-identical machine-rule template swarm, keep 2 exemplars per rule"
+ },
+ "BA_P3_G271": {
+  "verdict": "delete",
+  "reason": "R10: near-identical machine-rule template swarm, keep 2 exemplars per rule"
+ },
+ "BA_P3_G272": {
+  "verdict": "delete",
+  "reason": "R10: near-identical machine-rule template swarm, keep 2 exemplars per rule"
+ },
+ "BA_P3_G273": {
+  "verdict": "delete",
+  "reason": "R10: near-identical machine-rule template swarm, keep 2 exemplars per rule"
+ },
+ "BA_P3_G274": {
+  "verdict": "delete",
+  "reason": "R10: near-identical machine-rule template swarm, keep 2 exemplars per rule"
+ },
+ "BA_P3_G275": {
+  "verdict": "delete",
+  "reason": "R10: near-identical machine-rule template swarm, keep 2 exemplars per rule"
+ },
+ "BA_P3_V01": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_V02": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_V04": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_V05": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_V06": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_V07": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_V08": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ },
+ "BA_P3_V09": {
+  "verdict": "keep",
+  "reason": "passes HA bar or needs solver sample-check"
+ }
+}

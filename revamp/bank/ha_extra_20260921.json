@@ -1,0 +1,3197 @@
+[
+ {
+  "id": "BA_P3_HA_0367",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A circle and a diamond together weigh 6. A diamond and a oval together weigh 7. A circle and a oval together weigh 5. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "B",
+    "text": "diamond"
+   },
+   {
+    "id": "C",
+    "text": "oval"
+   },
+   {
+    "id": "D",
+    "text": "circle"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 9. Then circle = 2, diamond = 4, oval = 3. The heaviest is the diamond.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0368",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A square and a star together weigh 13. A pentagon and a star together weigh 16. A square and a pentagon together weigh 17. How much does one square weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "6"
+   },
+   {
+    "id": "B",
+    "text": "8"
+   },
+   {
+    "id": "C",
+    "text": "7"
+   },
+   {
+    "id": "D",
+    "text": "10"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 23. The other two shapes weigh 16, so one square weighs 23 - 16 = 7.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0369",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A circle and a triangle together weigh 19. A triangle and a hexagon together weigh 17. A circle and a hexagon together weigh 14. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "circle"
+   },
+   {
+    "id": "C",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "D",
+    "text": "hexagon"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 25. Then circle = 8, triangle = 11, hexagon = 6. The heaviest is the triangle.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0370",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A square and a circle together weigh 12. A circle and a oval together weigh 16. A square and a oval together weigh 10. How much does one circle weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "10"
+   },
+   {
+    "id": "B",
+    "text": "3"
+   },
+   {
+    "id": "C",
+    "text": "8"
+   },
+   {
+    "id": "D",
+    "text": "9"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 19. The other two shapes weigh 10, so one circle weighs 19 - 10 = 9.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0314",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a oval together weigh 19. A triangle and a pentagon together weigh 21. A pentagon and a oval together weigh 18. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "C",
+    "text": "oval"
+   },
+   {
+    "id": "D",
+    "text": "pentagon"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 29. Then triangle = 11, pentagon = 10, oval = 8. The heaviest is the triangle.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0315",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A oval and a triangle together weigh 16. A hexagon and a oval together weigh 17. A hexagon and a triangle together weigh 19. How much does one hexagon weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "7"
+   },
+   {
+    "id": "B",
+    "text": "10"
+   },
+   {
+    "id": "C",
+    "text": "9"
+   },
+   {
+    "id": "D",
+    "text": "11"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 26. The other two shapes weigh 16, so one hexagon weighs 26 - 16 = 10.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0316",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A pentagon and a triangle together weigh 5. A oval and a pentagon together weigh 12. A oval and a triangle together weigh 13. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "oval"
+   },
+   {
+    "id": "C",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "D",
+    "text": "pentagon"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 15. Then oval = 10, pentagon = 2, triangle = 3. The heaviest is the oval.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0317",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A square and a pentagon together weigh 11. A square and a oval together weigh 15. A oval and a pentagon together weigh 18. How much does one oval weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "4"
+   },
+   {
+    "id": "B",
+    "text": "11"
+   },
+   {
+    "id": "C",
+    "text": "12"
+   },
+   {
+    "id": "D",
+    "text": "10"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 22. The other two shapes weigh 11, so one oval weighs 22 - 11 = 11.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0318",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A hexagon and a diamond together weigh 5. A pentagon and a diamond together weigh 13. A hexagon and a pentagon together weigh 14. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "B",
+    "text": "diamond"
+   },
+   {
+    "id": "C",
+    "text": "pentagon"
+   },
+   {
+    "id": "D",
+    "text": "hexagon"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 16. Then hexagon = 3, pentagon = 11, diamond = 2. The heaviest is the pentagon.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0319",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A oval and a pentagon together weigh 6. A oval and a circle together weigh 11. A pentagon and a circle together weigh 9. How much does one oval weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5"
+   },
+   {
+    "id": "B",
+    "text": "3"
+   },
+   {
+    "id": "C",
+    "text": "4"
+   },
+   {
+    "id": "D",
+    "text": "2"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 13. The other two shapes weigh 9, so one oval weighs 13 - 9 = 4.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0320",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A hexagon and a diamond together weigh 13. A diamond and a triangle together weigh 16. A hexagon and a triangle together weigh 15. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "diamond"
+   },
+   {
+    "id": "B",
+    "text": "hexagon"
+   },
+   {
+    "id": "C",
+    "text": "triangle"
+   },
+   {
+    "id": "D",
+    "text": "All weigh the same"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 22. Then hexagon = 6, diamond = 7, triangle = 9. The heaviest is the triangle.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0321",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A pentagon and a hexagon together weigh 19. A hexagon and a circle together weigh 18. A pentagon and a circle together weigh 21. How much does one hexagon weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "11"
+   },
+   {
+    "id": "B",
+    "text": "9"
+   },
+   {
+    "id": "C",
+    "text": "8"
+   },
+   {
+    "id": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 29. The other two shapes weigh 21, so one hexagon weighs 29 - 21 = 8.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0322",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A star and a triangle together weigh 8. A triangle and a square together weigh 5. A star and a square together weigh 7. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "star"
+   },
+   {
+    "id": "B",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "C",
+    "text": "triangle"
+   },
+   {
+    "id": "D",
+    "text": "square"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 10. Then star = 5, triangle = 3, square = 2. The heaviest is the star.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0323",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A circle and a star together weigh 12. A triangle and a star together weigh 15. A triangle and a circle together weigh 17. How much does one circle weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "8"
+   },
+   {
+    "id": "B",
+    "text": "6"
+   },
+   {
+    "id": "C",
+    "text": "10"
+   },
+   {
+    "id": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 22. The other two shapes weigh 15, so one circle weighs 22 - 15 = 7.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0324",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A star and a oval together weigh 11. A star and a square together weigh 18. A oval and a square together weigh 15. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "oval"
+   },
+   {
+    "id": "B",
+    "text": "square"
+   },
+   {
+    "id": "C",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "D",
+    "text": "star"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 22. Then star = 7, oval = 4, square = 11. The heaviest is the square.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0325",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a hexagon together weigh 16. A triangle and a pentagon together weigh 15. A pentagon and a hexagon together weigh 11. How much does one pentagon weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5"
+   },
+   {
+    "id": "B",
+    "text": "6"
+   },
+   {
+    "id": "C",
+    "text": "10"
+   },
+   {
+    "id": "D",
+    "text": "4"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 21. The other two shapes weigh 16, so one pentagon weighs 21 - 16 = 5.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0326",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A pentagon and a star together weigh 21. A hexagon and a star together weigh 14. A hexagon and a pentagon together weigh 13. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "B",
+    "text": "hexagon"
+   },
+   {
+    "id": "C",
+    "text": "star"
+   },
+   {
+    "id": "D",
+    "text": "pentagon"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 24. Then hexagon = 3, pentagon = 10, star = 11. The heaviest is the star.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0327",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A hexagon and a oval together weigh 13. A star and a oval together weigh 7. A hexagon and a star together weigh 16. How much does one hexagon weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5"
+   },
+   {
+    "id": "B",
+    "text": "11"
+   },
+   {
+    "id": "C",
+    "text": "10"
+   },
+   {
+    "id": "D",
+    "text": "12"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 18. The other two shapes weigh 7, so one hexagon weighs 18 - 7 = 11.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0328",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A circle and a oval together weigh 18. A triangle and a circle together weigh 10. A triangle and a oval together weigh 16. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "oval"
+   },
+   {
+    "id": "B",
+    "text": "circle"
+   },
+   {
+    "id": "C",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "D",
+    "text": "triangle"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 22. Then triangle = 4, circle = 6, oval = 12. The heaviest is the oval.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0329",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A hexagon and a oval together weigh 16. A hexagon and a square together weigh 12. A oval and a square together weigh 20. How much does one hexagon weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "4"
+   },
+   {
+    "id": "B",
+    "text": "5"
+   },
+   {
+    "id": "C",
+    "text": "12"
+   },
+   {
+    "id": "D",
+    "text": "3"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 24. The other two shapes weigh 20, so one hexagon weighs 24 - 20 = 4.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0330",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A diamond and a pentagon together weigh 15. A star and a pentagon together weigh 14. A star and a diamond together weigh 23. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "pentagon"
+   },
+   {
+    "id": "B",
+    "text": "diamond"
+   },
+   {
+    "id": "C",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "D",
+    "text": "star"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 26. Then star = 11, diamond = 12, pentagon = 3. The heaviest is the diamond.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0331",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a star together weigh 11. A star and a circle together weigh 15. A triangle and a circle together weigh 8. How much does one triangle weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "9"
+   },
+   {
+    "id": "B",
+    "text": "2"
+   },
+   {
+    "id": "C",
+    "text": "1"
+   },
+   {
+    "id": "D",
+    "text": "3"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 17. The other two shapes weigh 15, so one triangle weighs 17 - 15 = 2.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0332",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A diamond and a star together weigh 16. A diamond and a hexagon together weigh 14. A hexagon and a star together weigh 10. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "hexagon"
+   },
+   {
+    "id": "B",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "C",
+    "text": "star"
+   },
+   {
+    "id": "D",
+    "text": "diamond"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 20. Then diamond = 10, hexagon = 4, star = 6. The heaviest is the diamond.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0333",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A square and a pentagon together weigh 11. A triangle and a pentagon together weigh 9. A square and a triangle together weigh 12. How much does one square weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "6"
+   },
+   {
+    "id": "B",
+    "text": "5"
+   },
+   {
+    "id": "C",
+    "text": "8"
+   },
+   {
+    "id": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 16. The other two shapes weigh 9, so one square weighs 16 - 9 = 7.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0334",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A diamond and a star together weigh 16. A diamond and a hexagon together weigh 17. A star and a hexagon together weigh 21. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "B",
+    "text": "hexagon"
+   },
+   {
+    "id": "C",
+    "text": "diamond"
+   },
+   {
+    "id": "D",
+    "text": "star"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 27. Then diamond = 6, star = 10, hexagon = 11. The heaviest is the hexagon.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0335",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A square and a hexagon together weigh 14. A square and a star together weigh 12. A star and a hexagon together weigh 8. How much does one star weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "2"
+   },
+   {
+    "id": "B",
+    "text": "9"
+   },
+   {
+    "id": "C",
+    "text": "3"
+   },
+   {
+    "id": "D",
+    "text": "4"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 17. The other two shapes weigh 14, so one star weighs 17 - 14 = 3.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0336",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A star and a oval together weigh 7. A star and a square together weigh 6. A oval and a square together weigh 5. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "square"
+   },
+   {
+    "id": "B",
+    "text": "oval"
+   },
+   {
+    "id": "C",
+    "text": "star"
+   },
+   {
+    "id": "D",
+    "text": "All weigh the same"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 9. Then star = 4, oval = 3, square = 2. The heaviest is the star.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0337",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A star and a triangle together weigh 10. A pentagon and a star together weigh 14. A pentagon and a triangle together weigh 8. How much does one star weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "6"
+   },
+   {
+    "id": "B",
+    "text": "7"
+   },
+   {
+    "id": "C",
+    "text": "8"
+   },
+   {
+    "id": "D",
+    "text": "9"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 16. The other two shapes weigh 8, so one star weighs 16 - 8 = 8.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0338",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A hexagon and a circle together weigh 14. A oval and a circle together weigh 22. A oval and a hexagon together weigh 12. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "oval"
+   },
+   {
+    "id": "B",
+    "text": "hexagon"
+   },
+   {
+    "id": "C",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "D",
+    "text": "circle"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 24. Then oval = 10, hexagon = 2, circle = 12. The heaviest is the circle.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0339",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A oval and a circle together weigh 14. A square and a circle together weigh 16. A square and a oval together weigh 22. How much does one oval weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "9"
+   },
+   {
+    "id": "B",
+    "text": "12"
+   },
+   {
+    "id": "C",
+    "text": "11"
+   },
+   {
+    "id": "D",
+    "text": "10"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 26. The other two shapes weigh 16, so one oval weighs 26 - 16 = 10.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0340",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Challenge",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a star together weigh 35. A star and a circle together weigh 23. A triangle and a circle together weigh 24. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "circle"
+   },
+   {
+    "id": "C",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "D",
+    "text": "star"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 41. Then triangle = 18, star = 17, circle = 6. The heaviest is the triangle.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0341",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Challenge",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A circle and a diamond together weigh 34. A circle and a square together weigh 31. A diamond and a square together weigh 29. How much does one circle weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "16"
+   },
+   {
+    "id": "B",
+    "text": "17"
+   },
+   {
+    "id": "C",
+    "text": "19"
+   },
+   {
+    "id": "D",
+    "text": "18"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 47. The other two shapes weigh 29, so one circle weighs 47 - 29 = 18.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0342",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Challenge",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A oval and a pentagon together weigh 25. A square and a pentagon together weigh 29. A square and a oval together weigh 20. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "B",
+    "text": "pentagon"
+   },
+   {
+    "id": "C",
+    "text": "oval"
+   },
+   {
+    "id": "D",
+    "text": "square"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 37. Then square = 12, oval = 8, pentagon = 17. The heaviest is the pentagon.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0343",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Challenge",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A diamond and a star together weigh 23. A diamond and a oval together weigh 13. A star and a oval together weigh 26. How much does one star weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "17"
+   },
+   {
+    "id": "B",
+    "text": "19"
+   },
+   {
+    "id": "C",
+    "text": "5"
+   },
+   {
+    "id": "D",
+    "text": "18"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 31. The other two shapes weigh 13, so one star weighs 31 - 13 = 18.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0344",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Challenge",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A triangle and a pentagon together weigh 20. A square and a pentagon together weigh 24. A square and a triangle together weigh 18. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "triangle"
+   },
+   {
+    "id": "B",
+    "text": "pentagon"
+   },
+   {
+    "id": "C",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "D",
+    "text": "square"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 31. Then square = 11, triangle = 7, pentagon = 13. The heaviest is the pentagon.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0345",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Challenge",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A oval and a pentagon together weigh 25. A pentagon and a square together weigh 19. A oval and a square together weigh 30. How much does one square weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "18"
+   },
+   {
+    "id": "B",
+    "text": "13"
+   },
+   {
+    "id": "C",
+    "text": "12"
+   },
+   {
+    "id": "D",
+    "text": "11"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 37. The other two shapes weigh 25, so one square weighs 37 - 25 = 12.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0346",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Challenge",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A circle and a oval together weigh 17. A circle and a square together weigh 16. A oval and a square together weigh 19. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "oval"
+   },
+   {
+    "id": "B",
+    "text": "square"
+   },
+   {
+    "id": "C",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "D",
+    "text": "circle"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 26. Then circle = 7, oval = 10, square = 9. The heaviest is the oval.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0347",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Challenge",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A pentagon and a square together weigh 31. A triangle and a square together weigh 29. A triangle and a pentagon together weigh 22. How much does one triangle weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "9"
+   },
+   {
+    "id": "B",
+    "text": "12"
+   },
+   {
+    "id": "C",
+    "text": "11"
+   },
+   {
+    "id": "D",
+    "text": "10"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 41. The other two shapes weigh 31, so one triangle weighs 41 - 31 = 10.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0348",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Challenge",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A pentagon and a oval together weigh 22. A hexagon and a pentagon together weigh 20. A hexagon and a oval together weigh 30. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "oval"
+   },
+   {
+    "id": "B",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "C",
+    "text": "pentagon"
+   },
+   {
+    "id": "D",
+    "text": "hexagon"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 36. Then hexagon = 14, pentagon = 6, oval = 16. The heaviest is the oval.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0349",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Challenge",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A square and a diamond together weigh 19. A square and a star together weigh 29. A diamond and a star together weigh 20. How much does one square weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "5"
+   },
+   {
+    "id": "B",
+    "text": "14"
+   },
+   {
+    "id": "C",
+    "text": "15"
+   },
+   {
+    "id": "D",
+    "text": "13"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 34. The other two shapes weigh 20, so one square weighs 34 - 20 = 14.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0350",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Challenge",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A square and a hexagon together weigh 25. A oval and a square together weigh 26. A oval and a hexagon together weigh 19. Which shape is the heaviest?",
+  "options": [
+   {
+    "id": "A",
+    "text": "oval"
+   },
+   {
+    "id": "B",
+    "text": "All weigh the same"
+   },
+   {
+    "id": "C",
+    "text": "hexagon"
+   },
+   {
+    "id": "D",
+    "text": "square"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 35. Then oval = 10, square = 16, hexagon = 9. The heaviest is the square.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0351",
+  "domain": "numerical_reasoning",
+  "topic": "Numerical Thinking",
+  "skill": "1.3",
+  "archetype": "weight_system",
+  "level": "Challenge",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "A circle and a square together weigh 25. A star and a square together weigh 31. A star and a circle together weigh 20. How much does one star weigh?",
+  "options": [
+   {
+    "id": "A",
+    "text": "13"
+   },
+   {
+    "id": "B",
+    "text": "14"
+   },
+   {
+    "id": "C",
+    "text": "12"
+   },
+   {
+    "id": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add all three pair-weights: each shape is counted twice, so one of each weighs 38. The other two shapes weigh 25, so one star weighs 38 - 25 = 13.",
+  "reasoning": "Solve a 3-variable balance system by summing pairs.",
+  "tags": [
+   "weight_system",
+   "balance"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0352",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Rule: If a card belongs in the red tray, then it has a star. Given: Card 17 has no star. What MUST be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Card 17 belongs in the red tray"
+   },
+   {
+    "id": "B",
+    "text": "Card 17 does not belong in the red tray"
+   },
+   {
+    "id": "C",
+    "text": "Card 17 has a star"
+   },
+   {
+    "id": "D",
+    "text": "the red tray throws away all its stars"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Deny the result, deny the cause. Card 17 has no star. So card 17 does not belong in the red tray.",
+  "reasoning": "Use the contrapositive.",
+  "tags": [
+   "logic",
+   "contrapositive"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0353",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Rule: If a number is a multiple of 10, then it is even. Given: 27 is not even. What MUST be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "27 is not a multiple of 10"
+   },
+   {
+    "id": "B",
+    "text": "27 is half of 10"
+   },
+   {
+    "id": "C",
+    "text": "27 is even"
+   },
+   {
+    "id": "D",
+    "text": "27 is a multiple of 10"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Deny the result, deny the cause. 27 is not even. So 27 is not a multiple of 10.",
+  "reasoning": "Use the contrapositive.",
+  "tags": [
+   "logic",
+   "contrapositive"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0354",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Rule: If a number is a multiple of 10, then it is even. Given: 37 is not even. What MUST be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "37 is half of 10"
+   },
+   {
+    "id": "B",
+    "text": "37 is a multiple of 10"
+   },
+   {
+    "id": "C",
+    "text": "37 is not a multiple of 10"
+   },
+   {
+    "id": "D",
+    "text": "37 is even"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Deny the result, deny the cause. 37 is not even. So 37 is not a multiple of 10.",
+  "reasoning": "Use the contrapositive.",
+  "tags": [
+   "logic",
+   "contrapositive"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0355",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Rule: If a number is a multiple of 10, then it is even. Given: 33 is not even. What MUST be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "33 is a multiple of 10"
+   },
+   {
+    "id": "B",
+    "text": "33 is even"
+   },
+   {
+    "id": "C",
+    "text": "33 is half of 10"
+   },
+   {
+    "id": "D",
+    "text": "33 is not a multiple of 10"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Deny the result, deny the cause. 33 is not even. So 33 is not a multiple of 10.",
+  "reasoning": "Use the contrapositive.",
+  "tags": [
+   "logic",
+   "contrapositive"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0356",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Rule: If a number is a multiple of 8, then it is even. Given: 43 is not even. What MUST be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "43 is not a multiple of 8"
+   },
+   {
+    "id": "B",
+    "text": "43 is a multiple of 8"
+   },
+   {
+    "id": "C",
+    "text": "43 is half of 8"
+   },
+   {
+    "id": "D",
+    "text": "43 is even"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Deny the result, deny the cause. 43 is not even. So 43 is not a multiple of 8.",
+  "reasoning": "Use the contrapositive.",
+  "tags": [
+   "logic",
+   "contrapositive"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0357",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Rule: If a number ends in 0, then it is a multiple of 5. Given: 68 is not a multiple of 5. What MUST be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "68 ends in 5"
+   },
+   {
+    "id": "B",
+    "text": "68 ends in 0"
+   },
+   {
+    "id": "C",
+    "text": "68 is a multiple of 5"
+   },
+   {
+    "id": "D",
+    "text": "68 does not end in 0"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Deny the result, deny the cause. 68 is not a multiple of 5. So 68 does not end in 0.",
+  "reasoning": "Use the contrapositive.",
+  "tags": [
+   "logic",
+   "contrapositive"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0358",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Rule: If a number is a multiple of 4, then it is even. Given: 35 is not even. What MUST be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "35 is half of 4"
+   },
+   {
+    "id": "B",
+    "text": "35 is a multiple of 4"
+   },
+   {
+    "id": "C",
+    "text": "35 is not a multiple of 4"
+   },
+   {
+    "id": "D",
+    "text": "35 is even"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Deny the result, deny the cause. 35 is not even. So 35 is not a multiple of 4.",
+  "reasoning": "Use the contrapositive.",
+  "tags": [
+   "logic",
+   "contrapositive"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0359",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Rule: If a number is a multiple of 8, then it is even. Given: 33 is not even. What MUST be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "33 is a multiple of 8"
+   },
+   {
+    "id": "B",
+    "text": "33 is even"
+   },
+   {
+    "id": "C",
+    "text": "33 is half of 8"
+   },
+   {
+    "id": "D",
+    "text": "33 is not a multiple of 8"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Deny the result, deny the cause. 33 is not even. So 33 is not a multiple of 8.",
+  "reasoning": "Use the contrapositive.",
+  "tags": [
+   "logic",
+   "contrapositive"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0360",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Rule: If a number is a multiple of 4, then it is even. Given: 33 is not even. What MUST be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "33 is not a multiple of 4"
+   },
+   {
+    "id": "B",
+    "text": "33 is a multiple of 4"
+   },
+   {
+    "id": "C",
+    "text": "33 is half of 4"
+   },
+   {
+    "id": "D",
+    "text": "33 is even"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Deny the result, deny the cause. 33 is not even. So 33 is not a multiple of 4.",
+  "reasoning": "Use the contrapositive.",
+  "tags": [
+   "logic",
+   "contrapositive"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0361",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "If Finn finishes homework early, Finn reads a book. If Finn reads a book, Finn learns new words. Today Finn does NOT learn new words. What MUST be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Finn did NOT finish homework early"
+   },
+   {
+    "id": "B",
+    "text": "Finn learns new words"
+   },
+   {
+    "id": "C",
+    "text": "Finn finishes homework early"
+   },
+   {
+    "id": "D",
+    "text": "Finn reads a book"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Chain backwards: no final step means the middle step did not happen, so the first step did not happen. Finn did NOT finish homework early.",
+  "reasoning": "Chain two contrapositives.",
+  "tags": [
+   "logic",
+   "chained_contrapositive"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0362",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "If Diya finishes homework early, Diya reads a book. If Diya reads a book, Diya learns new words. Today Diya does NOT learn new words. What MUST be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Diya learns new words"
+   },
+   {
+    "id": "B",
+    "text": "Diya did NOT finish homework early"
+   },
+   {
+    "id": "C",
+    "text": "Diya reads a book"
+   },
+   {
+    "id": "D",
+    "text": "Diya finishes homework early"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Chain backwards: no final step means the middle step did not happen, so the first step did not happen. Diya did NOT finish homework early.",
+  "reasoning": "Chain two contrapositives.",
+  "tags": [
+   "logic",
+   "chained_contrapositive"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0363",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "If Ali finishes homework early, Ali reads a book. If Ali reads a book, Ali learns new words. Today Ali does NOT learn new words. What MUST be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ali did NOT finish homework early"
+   },
+   {
+    "id": "B",
+    "text": "Ali reads a book"
+   },
+   {
+    "id": "C",
+    "text": "Ali learns new words"
+   },
+   {
+    "id": "D",
+    "text": "Ali finishes homework early"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Chain backwards: no final step means the middle step did not happen, so the first step did not happen. Ali did NOT finish homework early.",
+  "reasoning": "Chain two contrapositives.",
+  "tags": [
+   "logic",
+   "chained_contrapositive"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0364",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "If Ali saves $10, Ali buys a model kit. If Ali buys a model kit, Ali builds it on Sunday. Today Ali saves $10. What MUST be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Ali does NOT build it on Sunday"
+   },
+   {
+    "id": "B",
+    "text": "Ali does NOT buy a model kit"
+   },
+   {
+    "id": "C",
+    "text": "Ali does NOT save $10"
+   },
+   {
+    "id": "D",
+    "text": "Ali builds it on Sunday"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Chain forwards: the first step happened, so the middle step happened, so the final step happened. Ali builds it on Sunday.",
+  "reasoning": "Chain two rules forwards.",
+  "tags": [
+   "logic",
+   "chained_affirm"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0365",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "If Finn finishes homework early, Finn reads a book. If Finn reads a book, Finn learns new words. Today Finn finishes homework early. What MUST be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Finn does NOT read a book"
+   },
+   {
+    "id": "B",
+    "text": "Finn does NOT learn new words"
+   },
+   {
+    "id": "C",
+    "text": "Finn learns new words"
+   },
+   {
+    "id": "D",
+    "text": "Finn does NOT finish homework early"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Chain forwards: the first step happened, so the middle step happened, so the final step happened. Finn learns new words.",
+  "reasoning": "Chain two rules forwards.",
+  "tags": [
+   "logic",
+   "chained_affirm"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0366",
+  "domain": "logical_reasoning",
+  "topic": "Logical Thinking",
+  "skill": "2.3",
+  "archetype": "conditional_contrapositive",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "If Cai hears the bell, Cai lines up. If Cai lines up, Cai walks to class quietly. Today Cai hears the bell. What MUST be true?",
+  "options": [
+   {
+    "id": "A",
+    "text": "Cai does NOT walk to class quietly"
+   },
+   {
+    "id": "B",
+    "text": "Cai walks to class quietly"
+   },
+   {
+    "id": "C",
+    "text": "Cai does NOT line up"
+   },
+   {
+    "id": "D",
+    "text": "Cai does NOT hear the bell"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Chain forwards: the first step happened, so the middle step happened, so the final step happened. Cai walks to class quietly.",
+  "reasoning": "Chain two rules forwards.",
+  "tags": [
+   "logic",
+   "chained_affirm"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round2 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0371",
+  "domain": "pattern_abstract",
+  "topic": "Pattern and Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 2, 4, 5, 10, 11, 22, 23, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "24"
+   },
+   {
+    "id": "B",
+    "text": "46"
+   },
+   {
+    "id": "C",
+    "text": "45"
+   },
+   {
+    "id": "D",
+    "text": "47"
+   }
+  ],
+  "answer": "B",
+  "explanation": "Alternate two steps: times 2, then plus 1. Next is 23 x 2 = 46.",
+  "reasoning": "Spot two alternating rules.",
+  "tags": [
+   "sequence",
+   "interleaved"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round3 figseq 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0372",
+  "domain": "pattern_abstract",
+  "topic": "Pattern and Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Each number is the sum of the two before it: 4, 7, 11, 18, ___, 47, 76. What is the missing number?",
+  "options": [
+   {
+    "id": "A",
+    "text": "29"
+   },
+   {
+    "id": "B",
+    "text": "30"
+   },
+   {
+    "id": "C",
+    "text": "31"
+   },
+   {
+    "id": "D",
+    "text": "28"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add neighbours: 11 + 18 = 29. Check: 18 + 29 = 47.",
+  "reasoning": "Use the addition rule to fill the gap.",
+  "tags": [
+   "sequence",
+   "fibonacci_gap"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round3 figseq 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0373",
+  "domain": "pattern_abstract",
+  "topic": "Pattern and Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 9, 14, 12, 17, 15, 20, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "20"
+   },
+   {
+    "id": "B",
+    "text": "18"
+   },
+   {
+    "id": "C",
+    "text": "19"
+   },
+   {
+    "id": "D",
+    "text": "17"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The jumps alternate +5 then -2. The next jump is +5: 18.",
+  "reasoning": "Spot the alternating jumps.",
+  "tags": [
+   "sequence",
+   "alternating_jumps"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round3 figseq 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0375",
+  "domain": "pattern_abstract",
+  "topic": "Pattern and Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Each number is the sum of the two before it: 1, 2, 3, 5, ___, 13, 21. What is the missing number?",
+  "options": [
+   {
+    "id": "A",
+    "text": "8"
+   },
+   {
+    "id": "B",
+    "text": "10"
+   },
+   {
+    "id": "C",
+    "text": "9"
+   },
+   {
+    "id": "D",
+    "text": "7"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add neighbours: 3 + 5 = 8. Check: 5 + 8 = 13.",
+  "reasoning": "Use the addition rule to fill the gap.",
+  "tags": [
+   "sequence",
+   "fibonacci_gap"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round3 figseq 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0377",
+  "domain": "pattern_abstract",
+  "topic": "Pattern and Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 5, 10, 11, 22, 23, 46, 47, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "94"
+   },
+   {
+    "id": "B",
+    "text": "93"
+   },
+   {
+    "id": "C",
+    "text": "95"
+   },
+   {
+    "id": "D",
+    "text": "48"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Alternate two steps: times 2, then plus 1. Next is 47 x 2 = 94.",
+  "reasoning": "Spot two alternating rules.",
+  "tags": [
+   "sequence",
+   "interleaved"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round3 figseq 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0378",
+  "domain": "pattern_abstract",
+  "topic": "Pattern and Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Each number is the sum of the two before it: 3, 4, 7, 11, ___, 29, 47. What is the missing number?",
+  "options": [
+   {
+    "id": "A",
+    "text": "18"
+   },
+   {
+    "id": "B",
+    "text": "20"
+   },
+   {
+    "id": "C",
+    "text": "17"
+   },
+   {
+    "id": "D",
+    "text": "19"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add neighbours: 7 + 11 = 18. Check: 11 + 18 = 29.",
+  "reasoning": "Use the addition rule to fill the gap.",
+  "tags": [
+   "sequence",
+   "fibonacci_gap"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round3 figseq 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0379",
+  "domain": "pattern_abstract",
+  "topic": "Pattern and Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 8, 10, 13, 15, 18, 20, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "25"
+   },
+   {
+    "id": "B",
+    "text": "24"
+   },
+   {
+    "id": "C",
+    "text": "22"
+   },
+   {
+    "id": "D",
+    "text": "23"
+   }
+  ],
+  "answer": "D",
+  "explanation": "The jumps alternate +2 then 3. The next jump is +2: 23.",
+  "reasoning": "Spot the alternating jumps.",
+  "tags": [
+   "sequence",
+   "alternating_jumps"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round3 figseq 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0380",
+  "domain": "pattern_abstract",
+  "topic": "Pattern and Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 3, 6, 7, 14, 15, 30, 31, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "62"
+   },
+   {
+    "id": "B",
+    "text": "63"
+   },
+   {
+    "id": "C",
+    "text": "61"
+   },
+   {
+    "id": "D",
+    "text": "32"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Alternate two steps: times 2, then plus 1. Next is 31 x 2 = 62.",
+  "reasoning": "Spot two alternating rules.",
+  "tags": [
+   "sequence",
+   "interleaved"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round3 figseq 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0381",
+  "domain": "pattern_abstract",
+  "topic": "Pattern and Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Each number is the sum of the two before it: 2, 3, 5, 8, ___, 21, 34. What is the missing number?",
+  "options": [
+   {
+    "id": "A",
+    "text": "12"
+   },
+   {
+    "id": "B",
+    "text": "15"
+   },
+   {
+    "id": "C",
+    "text": "14"
+   },
+   {
+    "id": "D",
+    "text": "13"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Add neighbours: 5 + 8 = 13. Check: 8 + 13 = 21.",
+  "reasoning": "Use the addition rule to fill the gap.",
+  "tags": [
+   "sequence",
+   "fibonacci_gap"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round3 figseq 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0382",
+  "domain": "pattern_abstract",
+  "topic": "Pattern and Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 9, 14, 12, 17, 15, 20, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "19"
+   },
+   {
+    "id": "B",
+    "text": "17"
+   },
+   {
+    "id": "C",
+    "text": "18"
+   },
+   {
+    "id": "D",
+    "text": "20"
+   }
+  ],
+  "answer": "C",
+  "explanation": "The jumps alternate +5 then -2. The next jump is +5: 18.",
+  "reasoning": "Spot the alternating jumps.",
+  "tags": [
+   "sequence",
+   "alternating_jumps"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round3 figseq 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0383",
+  "domain": "pattern_abstract",
+  "topic": "Pattern and Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 5, 10, 11, 22, 23, 46, 47, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "48"
+   },
+   {
+    "id": "B",
+    "text": "93"
+   },
+   {
+    "id": "C",
+    "text": "94"
+   },
+   {
+    "id": "D",
+    "text": "95"
+   }
+  ],
+  "answer": "C",
+  "explanation": "Alternate two steps: times 2, then plus 1. Next is 47 x 2 = 94.",
+  "reasoning": "Spot two alternating rules.",
+  "tags": [
+   "sequence",
+   "interleaved"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round3 figseq 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0384",
+  "domain": "pattern_abstract",
+  "topic": "Pattern and Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Challenge",
+  "difficulty": "hard",
+  "question_type": "multiple_choice",
+  "question": "Each number is the sum of the two before it: 3, 7, 10, 17, ___, 44, 71. What is the missing number?",
+  "options": [
+   {
+    "id": "A",
+    "text": "27"
+   },
+   {
+    "id": "B",
+    "text": "26"
+   },
+   {
+    "id": "C",
+    "text": "29"
+   },
+   {
+    "id": "D",
+    "text": "28"
+   }
+  ],
+  "answer": "A",
+  "explanation": "Add neighbours: 10 + 17 = 27. Check: 17 + 27 = 44.",
+  "reasoning": "Use the addition rule to fill the gap.",
+  "tags": [
+   "sequence",
+   "fibonacci_gap"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round3 figseq 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0385",
+  "domain": "pattern_abstract",
+  "topic": "Pattern and Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 7, 9, 12, 14, 17, 19, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "21"
+   },
+   {
+    "id": "B",
+    "text": "22"
+   },
+   {
+    "id": "C",
+    "text": "24"
+   },
+   {
+    "id": "D",
+    "text": "23"
+   }
+  ],
+  "answer": "B",
+  "explanation": "The jumps alternate +2 then 3. The next jump is +2: 22.",
+  "reasoning": "Spot the alternating jumps.",
+  "tags": [
+   "sequence",
+   "alternating_jumps"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round3 figseq 2026-09-21",
+   "regenerated": true
+  }
+ },
+ {
+  "id": "BA_P3_HA_0386",
+  "domain": "pattern_abstract",
+  "topic": "Pattern and Abstract",
+  "skill": "5.1",
+  "archetype": "figure_sequence",
+  "level": "Think",
+  "difficulty": "medium",
+  "question_type": "multiple_choice",
+  "question": "Find the next number: 4, 8, 9, 18, 19, 38, 39, ___?",
+  "options": [
+   {
+    "id": "A",
+    "text": "40"
+   },
+   {
+    "id": "B",
+    "text": "79"
+   },
+   {
+    "id": "C",
+    "text": "77"
+   },
+   {
+    "id": "D",
+    "text": "78"
+   }
+  ],
+  "answer": "D",
+  "explanation": "Alternate two steps: times 2, then plus 1. Next is 39 x 2 = 78.",
+  "reasoning": "Spot two alternating rules.",
+  "tags": [
+   "sequence",
+   "interleaved"
+  ],
+  "visual_required": false,
+  "visual_spec": null,
+  "image_path": null,
+  "is_active": false,
+  "qa_status": "validated_ha_20260921",
+  "provenance": {
+   "basis": "HA purge regen round3 figseq 2026-09-21",
+   "regenerated": true
+  }
+ }
+]
