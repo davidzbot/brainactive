@@ -34,10 +34,10 @@
  {
   "id": "BA_P3_0005",
   "archetype": "quantitative_logic",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "chain anchor unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained counts",
+  "derived": "Ali"
  },
  {
   "id": "BA_P3_0006",
@@ -60,7 +60,7 @@
   "archetype": "constraint_matching",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -69,14 +69,6 @@
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
   "note": "rule engine hits not unique; gates clean",
-  "derived": ""
- },
- {
-  "id": "BA_P3_0010",
-  "archetype": "classification_sets",
-  "verdict": "REVIEW",
-  "check": "needs-human",
-  "note": "no solver for class; gates: ['explanation never states answer']",
   "derived": ""
  },
  {
@@ -92,7 +84,7 @@
   "archetype": "constraint_matching",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -192,14 +184,6 @@
   "derived": ""
  },
  {
-  "id": "BA_P3_0032",
-  "archetype": "numerical_relationships",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "ambiguous analogy options; gates clean",
-  "derived": ""
- },
- {
   "id": "BA_P3_0034",
   "archetype": "deductive_ordering",
   "verdict": "PASS",
@@ -213,14 +197,6 @@
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
   "note": "rule engine hits not unique; gates: ['explanation never states answer']",
-  "derived": ""
- },
- {
-  "id": "BA_P3_0036",
-  "archetype": "classification_sets",
-  "verdict": "REVIEW",
-  "check": "needs-human",
-  "note": "no solver for class; gates clean",
   "derived": ""
  },
  {
@@ -251,9 +227,9 @@
   "id": "BA_P3_0049",
   "archetype": "pattern_application",
   "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "tile pattern unparsed; gates: ['explanation never states answer']",
-  "derived": ""
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation never states answer']",
+  "derived": "12th blue, 13th red"
  },
  {
   "id": "BA_P3_0052",
@@ -306,10 +282,10 @@
  {
   "id": "BA_P3_0059",
   "archetype": "chained_comparison",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "chain anchor unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained counts",
+  "derived": "Ravi"
  },
  {
   "id": "BA_P3_0060",
@@ -332,7 +308,7 @@
   "archetype": "seating_constraint",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -426,25 +402,17 @@
  {
   "id": "BA_P3_0075",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0076",
   "archetype": "position",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
- },
- {
-  "id": "BA_P3_0077",
-  "archetype": "count_sequence",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "series unparsed; gates clean",
+  "note": "grid ask unparsed; gates clean",
   "derived": ""
  },
  {
@@ -570,10 +538,10 @@
  {
   "id": "BA_P3_0125",
   "archetype": "number_sequence",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "no clean rule; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule triple",
+  "derived": "162"
  },
  {
   "id": "BA_P3_0126",
@@ -690,10 +658,10 @@
  {
   "id": "BA_P3_0152",
   "archetype": "number_sequence",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "no clean rule; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule squares",
+  "derived": "36"
  },
  {
   "id": "BA_P3_0154",
@@ -706,10 +674,10 @@
  {
   "id": "BA_P3_0157",
   "archetype": "number_sequence",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "no clean rule; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule squares",
+  "derived": "49"
  },
  {
   "id": "BA_P3_0161",
@@ -866,18 +834,10 @@
  {
   "id": "BA_P3_0210",
   "archetype": "number_sequence",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "no clean rule; gates clean",
-  "derived": ""
- },
- {
-  "id": "BA_P3_0213",
-  "archetype": "number_sequence",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "ambiguous sequence rules; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "rule squares",
+  "derived": "25"
  },
  {
   "id": "BA_P3_0216",
@@ -885,14 +845,6 @@
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
   "note": "ambiguous analogy options; gates clean",
-  "derived": ""
- },
- {
-  "id": "BA_P3_0218",
-  "archetype": "number_sequence",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "ambiguous sequence rules; gates clean",
   "derived": ""
  },
  {
@@ -1016,14 +968,6 @@
   "derived": "81"
  },
  {
-  "id": "BA_P3_0269",
-  "archetype": "number_sequence",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "ambiguous sequence rules; gates clean",
-  "derived": ""
- },
- {
   "id": "BA_P3_0270",
   "archetype": "number_sequence",
   "verdict": "PASS",
@@ -1036,7 +980,7 @@
   "archetype": "constraint",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating ask unparsed; gates clean",
   "derived": ""
  },
  {
@@ -1044,7 +988,7 @@
   "archetype": "constraint",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating ask unparsed; gates clean",
   "derived": ""
  },
  {
@@ -1052,7 +996,7 @@
   "archetype": "constraint",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating ask unparsed; gates clean",
   "derived": ""
  },
  {
@@ -1100,7 +1044,7 @@
   "archetype": "constraint",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating ask unparsed; gates clean",
   "derived": ""
  },
  {
@@ -1108,7 +1052,7 @@
   "archetype": "constraint",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating ask unparsed; gates clean",
   "derived": ""
  },
  {
@@ -1140,7 +1084,7 @@
   "archetype": "classification",
   "verdict": "REVIEW",
   "check": "needs-human",
-  "note": "no solver for class; gates: ['explanation never states answer']",
+  "note": "no solver for class; gates clean",
   "derived": ""
  },
  {
@@ -1188,7 +1132,7 @@
   "archetype": "constraint",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating ask unparsed; gates clean",
   "derived": ""
  },
  {
@@ -1196,7 +1140,7 @@
   "archetype": "constraint",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating ask unparsed; gates clean",
   "derived": ""
  },
  {
@@ -1204,7 +1148,7 @@
   "archetype": "constraint",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating ask unparsed; gates clean",
   "derived": ""
  },
  {
@@ -1212,7 +1156,7 @@
   "archetype": "constraint",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating ask unparsed; gates clean",
   "derived": ""
  },
  {
@@ -1220,7 +1164,7 @@
   "archetype": "constraint",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating ask unparsed; gates clean",
   "derived": ""
  },
  {
@@ -1244,7 +1188,7 @@
   "archetype": "constraint",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating ask unparsed; gates clean",
   "derived": ""
  },
  {
@@ -1252,7 +1196,7 @@
   "archetype": "constraint",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating ask unparsed; gates clean",
   "derived": ""
  },
  {
@@ -1308,7 +1252,7 @@
   "archetype": "constraint",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating ask unparsed; gates clean",
   "derived": ""
  },
  {
@@ -1316,7 +1260,7 @@
   "archetype": "constraint",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating ask unparsed; gates clean",
   "derived": ""
  },
  {
@@ -1348,7 +1292,7 @@
   "archetype": "constraint",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating ask unparsed; gates clean",
   "derived": ""
  },
  {
@@ -1396,7 +1340,7 @@
   "archetype": "constraint",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating ask unparsed; gates clean",
   "derived": ""
  },
  {
@@ -1482,25 +1426,25 @@
  {
   "id": "BA_P3_0526",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "cipher needs review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "decode shift",
+  "derived": "MOON"
  },
  {
   "id": "BA_P3_0527",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "cipher needs review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "square worth reverse",
+  "derived": "H"
  },
  {
   "id": "BA_P3_0533",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "gatewarn",
-  "note": "answer verified high; notes: ['explanation never states answer']",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "shift cipher",
   "derived": "ZQD"
  },
  {
@@ -1522,42 +1466,42 @@
  {
   "id": "BA_P3_0549",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "gatewarn",
-  "note": "answer verified high; notes: ['explanation never states answer']",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "shift cipher",
   "derived": "UBD"
  },
  {
   "id": "BA_P3_0552",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "gatewarn",
-  "note": "answer verified high; notes: ['explanation never states answer']",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "shift cipher",
   "derived": "VCE"
  },
  {
   "id": "BA_P3_0553",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "gatewarn",
-  "note": "answer verified high; notes: ['explanation never states answer']",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "shift cipher",
   "derived": "RCO"
  },
  {
   "id": "BA_P3_0554",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "cipher needs review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "square worth reverse",
+  "derived": "E"
  },
  {
   "id": "BA_P3_0555",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "cipher needs review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "square worth reverse",
+  "derived": "G"
  },
  {
   "id": "BA_P3_0561",
@@ -1578,18 +1522,18 @@
  {
   "id": "BA_P3_0571",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "gatewarn",
-  "note": "answer verified high; notes: ['explanation never states answer']",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "shift cipher",
   "derived": "FGT"
  },
  {
   "id": "BA_P3_0577",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "cipher needs review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "decode shift",
+  "derived": "BLUE"
  },
  {
   "id": "BA_P3_0578",
@@ -1610,9 +1554,9 @@
  {
   "id": "BA_P3_0582",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "gatewarn",
-  "note": "answer verified high; notes: ['explanation never states answer']",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "shift cipher",
   "derived": "GHU"
  },
  {
@@ -1634,26 +1578,26 @@
  {
   "id": "BA_P3_0588",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "cipher needs review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "square worth reverse",
+  "derived": "F"
  },
  {
   "id": "BA_P3_0591",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "cipher needs review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "decode shift",
+  "derived": "STAR"
  },
  {
   "id": "BA_P3_0594",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "cipher needs review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "decode shift",
+  "derived": "TIME"
  },
  {
   "id": "BA_P3_0598",
@@ -1666,10 +1610,10 @@
  {
   "id": "BA_P3_0599",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "cipher needs review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "decode shift",
+  "derived": "MOON"
  },
  {
   "id": "BA_P3_0603",
@@ -1706,10 +1650,10 @@
  {
   "id": "BA_P3_0630",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "cipher needs review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "decode shift",
+  "derived": "CODE"
  },
  {
   "id": "BA_P3_0635",
@@ -1738,10 +1682,10 @@
  {
   "id": "BA_P3_0654",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "cipher needs review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "square worth reverse",
+  "derived": "D"
  },
  {
   "id": "BA_P3_0658",
@@ -1754,9 +1698,9 @@
  {
   "id": "BA_P3_0659",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "gatewarn",
-  "note": "answer verified high; notes: ['explanation never states answer']",
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "shift cipher",
   "derived": "QBN"
  },
  {
@@ -1770,10 +1714,10 @@
  {
   "id": "BA_P3_0665",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "cipher needs review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "decode shift",
+  "derived": "TIME"
  },
  {
   "id": "BA_P3_0671",
@@ -1794,10 +1738,10 @@
  {
   "id": "BA_P3_0673",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0676",
@@ -1810,10 +1754,10 @@
  {
   "id": "BA_P3_0680",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0682",
@@ -1866,18 +1810,18 @@
  {
   "id": "BA_P3_0696",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0698",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0700",
@@ -1914,10 +1858,10 @@
  {
   "id": "BA_P3_0706",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0708",
@@ -1938,10 +1882,10 @@
  {
   "id": "BA_P3_0725",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0733",
@@ -1954,10 +1898,10 @@
  {
   "id": "BA_P3_0734",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0738",
@@ -1970,10 +1914,10 @@
  {
   "id": "BA_P3_0739",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0741",
@@ -1986,10 +1930,10 @@
  {
   "id": "BA_P3_0744",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0747",
@@ -2026,10 +1970,10 @@
  {
   "id": "BA_P3_0769",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0770",
@@ -2050,10 +1994,10 @@
  {
   "id": "BA_P3_0775",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0776",
@@ -2098,10 +2042,10 @@
  {
   "id": "BA_P3_0799",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0801",
@@ -2130,10 +2074,10 @@
  {
   "id": "BA_P3_0806",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0809",
@@ -2154,18 +2098,18 @@
  {
   "id": "BA_P3_0812",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0820",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0823",
@@ -2186,10 +2130,10 @@
  {
   "id": "BA_P3_0827",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0828",
@@ -2298,10 +2242,10 @@
  {
   "id": "BA_P3_0861",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_0862",
@@ -2362,10 +2306,10 @@
  {
   "id": "BA_P3_0904",
   "archetype": "position",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "grid tracked",
+  "derived": "middle row, middle column"
  },
  {
   "id": "BA_P3_1111",
@@ -2626,42 +2570,42 @@
  {
   "id": "BA_P3_ADD_0016",
   "archetype": "chained_comparison",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "chain anchor unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained counts",
+  "derived": "Cai"
  },
  {
   "id": "BA_P3_ADD_0017",
   "archetype": "chained_comparison",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "chain anchor unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained counts",
+  "derived": "Ela"
  },
  {
   "id": "BA_P3_ADD_0018",
   "archetype": "chained_comparison",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "chain anchor unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained counts",
+  "derived": "Ali"
  },
  {
   "id": "BA_P3_ADD_0019",
   "archetype": "chained_comparison",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "chain anchor unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained counts",
+  "derived": "Fox"
  },
  {
   "id": "BA_P3_ADD_0020",
   "archetype": "chained_comparison",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "chain anchor unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "chained counts",
+  "derived": "Ben"
  },
  {
   "id": "BA_P3_ADD_0021",
@@ -2824,14 +2768,6 @@
   "derived": ""
  },
  {
-  "id": "BA_P3_ADD_0044",
-  "archetype": "figure_sequence",
-  "verdict": "PASS",
-  "check": "solver-match-high",
-  "note": "rule const",
-  "derived": "12"
- },
- {
   "id": "BA_P3_ADD_0047",
   "archetype": "matrix",
   "verdict": "REVIEW",
@@ -2930,18 +2866,18 @@
  {
   "id": "BA_P3_ADD_0077",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "31"
  },
  {
   "id": "BA_P3_ADD_0078",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "34"
  },
  {
   "id": "BA_P3_ADD_0085",
@@ -3034,10 +2970,10 @@
  {
   "id": "BA_P3_G003",
   "archetype": "weight_system",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "weight ask unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved one weight",
+  "derived": "6 units"
  },
  {
   "id": "BA_P3_G004",
@@ -3058,18 +2994,18 @@
  {
   "id": "BA_P3_G006",
   "archetype": "weight_system",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "balance pairs unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "red block"
  },
  {
   "id": "BA_P3_G007",
   "archetype": "weight_system",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "balance pairs unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved one weight",
+  "derived": "6 units"
  },
  {
   "id": "BA_P3_G008",
@@ -3098,10 +3034,10 @@
  {
   "id": "BA_P3_G011",
   "archetype": "weight_system",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "weight ask unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved one weight",
+  "derived": "7 units"
  },
  {
   "id": "BA_P3_G012",
@@ -3130,26 +3066,26 @@
  {
   "id": "BA_P3_G015",
   "archetype": "weight_system",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "weight ask unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved one weight",
+  "derived": "8 units"
  },
  {
   "id": "BA_P3_G016",
   "archetype": "weight_system",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "balance pairs unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "summed one-each total",
+  "derived": "20 kg"
  },
  {
   "id": "BA_P3_G017",
   "archetype": "weight_system",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "balance pairs unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "bronze coin"
  },
  {
   "id": "BA_P3_G018",
@@ -3162,10 +3098,10 @@
  {
   "id": "BA_P3_G019",
   "archetype": "weight_system",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "weight ask unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved one weight",
+  "derived": "8 units"
  },
  {
   "id": "BA_P3_G020",
@@ -3194,10 +3130,10 @@
  {
   "id": "BA_P3_G023",
   "archetype": "weight_system",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "weight ask unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved one weight",
+  "derived": "6 units"
  },
  {
   "id": "BA_P3_G024",
@@ -3218,18 +3154,18 @@
  {
   "id": "BA_P3_G026",
   "archetype": "weight_system",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "balance pairs unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "red block"
  },
  {
   "id": "BA_P3_G027",
   "archetype": "weight_system",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "balance pairs unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved one weight",
+  "derived": "9 units"
  },
  {
   "id": "BA_P3_G028",
@@ -3258,10 +3194,10 @@
  {
   "id": "BA_P3_G031",
   "archetype": "weight_system",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "weight ask unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved one weight",
+  "derived": "8 units"
  },
  {
   "id": "BA_P3_G032",
@@ -3290,26 +3226,26 @@
  {
   "id": "BA_P3_G035",
   "archetype": "weight_system",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "weight ask unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved one weight",
+  "derived": "8 units"
  },
  {
   "id": "BA_P3_G036",
   "archetype": "weight_system",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "balance pairs unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "summed one-each total",
+  "derived": "22 kg"
  },
  {
   "id": "BA_P3_G037",
   "archetype": "weight_system",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "balance pairs unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved 3-variable system",
+  "derived": "bronze coin"
  },
  {
   "id": "BA_P3_G038",
@@ -3322,10 +3258,10 @@
  {
   "id": "BA_P3_G039",
   "archetype": "weight_system",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "weight ask unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "solved one weight",
+  "derived": "8 units"
  },
  {
   "id": "BA_P3_G040",
@@ -3364,7 +3300,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3372,7 +3308,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3380,7 +3316,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3388,7 +3324,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3396,7 +3332,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3404,7 +3340,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3412,7 +3348,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3420,7 +3356,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3428,7 +3364,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3436,7 +3372,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3444,7 +3380,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3452,7 +3388,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3460,7 +3396,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3468,7 +3404,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3476,7 +3412,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3484,7 +3420,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3492,7 +3428,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3500,7 +3436,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3508,7 +3444,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3516,7 +3452,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3524,7 +3460,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3532,7 +3468,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3540,7 +3476,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3548,7 +3484,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3556,7 +3492,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3564,7 +3500,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3572,7 +3508,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3580,7 +3516,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3588,7 +3524,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3596,7 +3532,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "seating solutions not unique; gates clean",
   "derived": ""
  },
  {
@@ -3604,7 +3540,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3612,7 +3548,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3620,7 +3556,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3628,7 +3564,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3636,7 +3572,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3644,7 +3580,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3652,7 +3588,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3660,7 +3596,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3668,7 +3604,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3676,7 +3612,7 @@
   "archetype": "constraint_placement",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "spatial CSP needs human review; gates clean",
+  "note": "complex seating wording; gates clean",
   "derived": ""
  },
  {
@@ -3939,33 +3875,33 @@
   "id": "BA_P3_G216",
   "archetype": "make_a_list",
   "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "combinatorial form unparsed; gates: ['explanation has big stray number 25']",
-  "derived": ""
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation has big stray number 82']",
+  "derived": "6"
  },
  {
   "id": "BA_P3_G217",
   "archetype": "make_a_list",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "count not unique; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "counted cases",
+  "derived": "16"
  },
  {
   "id": "BA_P3_G218",
   "archetype": "make_a_list",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "combinatorial form unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "counted cases",
+  "derived": "12"
  },
  {
   "id": "BA_P3_G219",
   "archetype": "make_a_list",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "combinatorial form unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "counted cases",
+  "derived": "6"
  },
  {
   "id": "BA_P3_G220",
@@ -4004,7 +3940,7 @@
   "archetype": "make_a_list",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "combinatorial form unparsed; gates: ['explanation has big stray number 34']",
+  "note": "combinatorial form unparsed; gates: ['explanation has big stray number 32']",
   "derived": ""
  },
  {
@@ -4027,9 +3963,9 @@
   "id": "BA_P3_G227",
   "archetype": "make_a_list",
   "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "combinatorial form unparsed; gates: ['explanation has big stray number 57']",
-  "derived": ""
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation has big stray number 79']",
+  "derived": "9"
  },
  {
   "id": "BA_P3_G228",
@@ -4082,10 +4018,10 @@
  {
   "id": "BA_P3_G234",
   "archetype": "make_a_list",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "count not unique; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "counted cases",
+  "derived": "6"
  },
  {
   "id": "BA_P3_G235",
@@ -4124,7 +4060,7 @@
   "archetype": "make_a_list",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "combinatorial form unparsed; gates: ['explanation has big stray number 42']",
+  "note": "combinatorial form unparsed; gates: ['explanation has big stray number 33']",
   "derived": ""
  },
  {
@@ -4163,9 +4099,9 @@
   "id": "BA_P3_G244",
   "archetype": "make_a_list",
   "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "combinatorial form unparsed; gates: ['explanation has big stray number 37']",
-  "derived": ""
+  "check": "gatewarn",
+  "note": "answer verified high; notes: ['explanation has big stray number 37']",
+  "derived": "6"
  },
  {
   "id": "BA_P3_G245",
@@ -4178,41 +4114,41 @@
  {
   "id": "BA_P3_G246",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "15"
  },
  {
   "id": "BA_P3_G247",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "17"
  },
  {
   "id": "BA_P3_G248",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "15"
  },
  {
   "id": "BA_P3_G249",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "17"
  },
  {
   "id": "BA_P3_G250",
   "archetype": "pattern_application",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
+  "note": "machine rules not unique; gates clean",
   "derived": ""
  },
  {
@@ -4220,128 +4156,128 @@
   "archetype": "pattern_application",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
+  "note": "machine rules not unique; gates clean",
   "derived": ""
  },
  {
   "id": "BA_P3_G252",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "16"
  },
  {
   "id": "BA_P3_G253",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "17"
  },
  {
   "id": "BA_P3_G254",
   "archetype": "pattern_application",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
+  "note": "machine rules not unique; gates clean",
   "derived": ""
  },
  {
   "id": "BA_P3_G255",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "28"
  },
  {
   "id": "BA_P3_G256",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "18"
  },
  {
   "id": "BA_P3_G257",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "19"
  },
  {
   "id": "BA_P3_G258",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "19"
  },
  {
   "id": "BA_P3_G259",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "25"
  },
  {
   "id": "BA_P3_G260",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "24"
  },
  {
   "id": "BA_P3_G261",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "19"
  },
  {
   "id": "BA_P3_G262",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "21"
  },
  {
   "id": "BA_P3_G263",
   "archetype": "pattern_application",
   "verdict": "REVIEW",
   "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
+  "note": "machine rules not unique; gates clean",
   "derived": ""
  },
  {
   "id": "BA_P3_G264",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "18"
  },
  {
   "id": "BA_P3_G265",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "21"
  },
  {
   "id": "BA_P3_G269",
   "archetype": "pattern_application",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "machine examples unparsed; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "refitted machine rule",
+  "derived": "19"
  },
  {
   "id": "BA_P3_V01",
@@ -4370,10 +4306,10 @@
  {
   "id": "BA_P3_V05",
   "archetype": "codes_ciphers",
-  "verdict": "REVIEW",
-  "check": "solver-abstain-low",
-  "note": "cipher needs review; gates clean",
-  "derived": ""
+  "verdict": "PASS",
+  "check": "solver-match-high",
+  "note": "square worth reverse",
+  "derived": "E"
  },
  {
   "id": "BA_P3_V06",

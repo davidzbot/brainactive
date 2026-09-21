@@ -1,0 +1,466 @@
+### BA_P3_0010 [classification_sets/Think] (needs-human)
+Q: Four figures: A red square, B red square, C red square, D blue square. Which does not belong, and why?
+OPTS: A:A (it is a square) | B:B (it is red) | C:D (it is the only blue one) | D:C (it is the only triangle) ANS:C
+EXP: Let's think this through together! 🔍
+
+Three figures share BOTH shape (square) and colour (red).
+D is also a square but is blue, so the distinguishing dimension is colour: D is the odd one.
+Option D is a trap (there is no triangle).
+
+### BA_P3_0036 [classification_sets/Explore] (needs-human)
+Q: Which is the odd one out? A red square   B red triangle   C blue square   D red square
+OPTS: A:A | B:B | C:C | D:D ANS:C
+EXP: Let's solve it together! 🧠
+
+Three of the four are red (A, B, D).
+C is the only blue one, so by the majority property (colour) C is the odd one out.
+Shape alone is a trap (B is the only triangle).
+
+### BA_P3_0063 [multi_clue_assignment/Challenge] (needs-human)
+Q: Three boxes are red, blue and green. Each holds one thing: a ball, a coin or a key. The blue box holds the coin. The red box does not hold the ball. What is in the green box?
+OPTS: A:ball | B:coin | C:key | D:cannot tell ANS:A
+EXP: Let's think this through together! 🔍
+
+Blue = coin, so red and green share ball and key. Red does not hold the ball, so red = key and green = ball.
+
+### BA_P3_0066 [figure_classification/Think] (needs-human)
+Q: Which shape does NOT belong?  A triangle  B square  C circle  D rectangle
+OPTS: A:triangle | B:square | C:circle | D:rectangle ANS:C
+EXP: Let's think this through together! 🔍
+
+Triangle, square and rectangle are polygons with straight sides. The circle is the only curved shape, so it does not belong.
+
+### BA_P3_0290 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A pink  B green  C leaf  D yellow
+OPTS: A:green | B:yellow | C:pink | D:leaf ANS:D
+EXP: Let's solve it together! 🧠
+
+pink, yellow and green are all colour. leaf does not belong to that group.
+
+### BA_P3_0292 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A dog  B lion  C key  D cat
+OPTS: A:dog | B:key | C:cat | D:lion ANS:B
+EXP: Let's solve it together! 🧠
+
+dog, cat and lion are all animal. key does not belong to that group.
+
+### BA_P3_0296 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A blue  B cup  C yellow  D pink
+OPTS: A:cup | B:pink | C:blue | D:yellow ANS:A
+EXP: Let's solve it together! 🧠
+
+yellow, blue and pink are all colour. cup does not belong to that group.
+
+### BA_P3_0298 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A green  B blue  C spoon  D pink
+OPTS: A:pink | B:green | C:spoon | D:blue ANS:C
+EXP: Let's solve it together! 🧠
+
+blue, pink and green are all colour. spoon does not belong to that group.
+
+### BA_P3_0315 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A grape  B pear  C clock  D banana
+OPTS: A:grape | B:banana | C:clock | D:pear ANS:C
+EXP: Come, let's work this out together! 💪
+
+banana, pear and grape are all fruit. clock does not belong to that group.
+
+### BA_P3_0316 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A grape  B orange  C pear  D spoon
+OPTS: A:pear | B:orange | C:grape | D:spoon ANS:D
+EXP: Come, let's work this out together! 💪
+
+orange, grape and pear are all fruit. spoon does not belong to that group.
+
+### BA_P3_0317 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A apple  B banana  C key  D orange
+OPTS: A:apple | B:orange | C:key | D:banana ANS:C
+EXP: Come, let's work this out together! 💪
+
+orange, apple and banana are all fruit. key does not belong to that group.
+
+### BA_P3_0323 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A dog  B cat  C book  D fish
+OPTS: A:fish | B:cat | C:book | D:dog ANS:C
+EXP: Let's solve it together! 🧠
+
+Each cat is an animal and each animal is a living thing, so every cat is a living thing. The other choices reverse the direction.
+
+### BA_P3_0332 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A pear  B grape  C orange  D shoe
+OPTS: A:shoe | B:pear | C:orange | D:grape ANS:A
+EXP: Let's break it down together! 🧩
+
+pear, orange and grape are all fruit. shoe does not belong to that group.
+
+### BA_P3_0337 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A table  B cat  C fish  D dog
+OPTS: A:table | B:dog | C:fish | D:cat ANS:A
+EXP: Let's break it down together! 🧩
+
+cat, dog and fish are all animal. table does not belong to that group.
+
+### BA_P3_0360 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A train  B bus  C plane  D shoe
+OPTS: A:train | B:shoe | C:bus | D:plane ANS:B
+EXP: Come, let's work this out together! 💪
+
+plane, bus and train are all vehicle. shoe does not belong to that group.
+
+### BA_P3_0367 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A boat  B plane  C shoe  D bus
+OPTS: A:bus | B:shoe | C:boat | D:plane ANS:B
+EXP: Come, let's work this out together! 💪
+
+boat, bus and plane are all vehicle. shoe does not belong to that group.
+
+### BA_P3_0374 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A triangle  B clock  C oval  D square
+OPTS: A:triangle | B:oval | C:clock | D:square ANS:C
+EXP: Let's solve it together! 🧠
+
+triangle, square and oval are all shape. clock does not belong to that group.
+
+### BA_P3_0389 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A cat  B dog  C leaf  D fish
+OPTS: A:cat | B:fish | C:dog | D:leaf ANS:D
+EXP: Let's break it down together! 🧩
+
+fish, cat and dog are all animal. leaf does not belong to that group.
+
+### BA_P3_0414 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A bird  B dog  C cat  D cup
+OPTS: A:dog | B:cup | C:cat | D:bird ANS:B
+EXP: Let's break it down together! 🧩
+
+dog, bird and cat are all animal. cup does not belong to that group.
+
+### BA_P3_0424 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A cup  B green  C blue  D pink
+OPTS: A:cup | B:blue | C:green | D:pink ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+pink, blue and green are all colour. cup does not belong to that group.
+
+### BA_P3_0425 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A grape  B apple  C orange  D key
+OPTS: A:apple | B:key | C:grape | D:orange ANS:B
+EXP: Good question — let's solve it together! ⭐
+
+apple, orange and grape are all fruit. key does not belong to that group.
+
+### BA_P3_0426 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A square  B shoe  C triangle  D circle
+OPTS: A:circle | B:triangle | C:square | D:shoe ANS:D
+EXP: Good question — let's solve it together! ⭐
+
+square, triangle and circle are all shape. shoe does not belong to that group.
+
+### BA_P3_0462 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A cat  B dog  C shoe  D lion
+OPTS: A:lion | B:cat | C:shoe | D:dog ANS:C
+EXP: Let's break it down together! 🧩
+
+cat, dog and lion are all animal. shoe does not belong to that group.
+
+### BA_P3_0466 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A book  B pear  C apple  D orange
+OPTS: A:apple | B:book | C:orange | D:pear ANS:B
+EXP: Let's break it down together! 🧩
+
+orange, pear and apple are all fruit. book does not belong to that group.
+
+### BA_P3_0474 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A blue  B pink  C yellow  D shoe
+OPTS: A:blue | B:shoe | C:pink | D:yellow ANS:B
+EXP: Good question — let's solve it together! ⭐
+
+blue, pink and yellow are all colour. shoe does not belong to that group.
+
+### BA_P3_0476 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A car  B boat  C train  D clock
+OPTS: A:boat | B:clock | C:train | D:car ANS:B
+EXP: Good question — let's solve it together! ⭐
+
+car, boat and train are all vehicle. clock does not belong to that group.
+
+### BA_P3_0483 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A cup  B circle  C oval  D rectangle
+OPTS: A:rectangle | B:circle | C:cup | D:oval ANS:C
+EXP: Let's think this through together! 🔍
+
+oval, circle and rectangle are all shape. cup does not belong to that group.
+
+### BA_P3_0490 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A plane  B bus  C spoon  D boat
+OPTS: A:bus | B:plane | C:boat | D:spoon ANS:D
+EXP: Come, let's work this out together! 💪
+
+boat, bus and plane are all vehicle. spoon does not belong to that group.
+
+### BA_P3_0500 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A pink  B blue  C red  D spoon
+OPTS: A:blue | B:pink | C:spoon | D:red ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+red, pink and blue are all colour. spoon does not belong to that group.
+
+### BA_P3_0503 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A spoon  B oval  C triangle  D rectangle
+OPTS: A:spoon | B:rectangle | C:triangle | D:oval ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+oval, rectangle and triangle are all shape. spoon does not belong to that group.
+
+### BA_P3_0504 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A cup  B fish  C dog  D bird
+OPTS: A:cup | B:bird | C:fish | D:dog ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+bird, fish and dog are all animal. cup does not belong to that group.
+
+### BA_P3_0506 [classification/Think] (needs-human)
+Q: Which word is the odd one out? A cup  B orange  C banana  D pear
+OPTS: A:banana | B:orange | C:pear | D:cup ANS:D
+EXP: Good question — let's solve it together! ⭐
+
+banana, pear and orange are all fruit. cup does not belong to that group.
+
+### BA_P3_0511 [verbal_analogy/Think] (needs-human)
+Q: circle is to shape as red is to ___?
+OPTS: A:run | B:meow | C:sing | D:colour ANS:D
+EXP: Let's think this through together! 🔍
+
+Relation: category. circle : shape, so red : colour.
+
+### BA_P3_0514 [verbal_analogy/Think] (needs-human)
+Q: knife is to cut as brush is to ___?
+OPTS: A:paint | B:fruit | C:walk | D:sleep ANS:A
+EXP: Let's think this through together! 🔍
+
+Relation: function. knife : cut, so brush : paint.
+
+### BA_P3_0515 [verbal_analogy/Think] (needs-human)
+Q: wheel is to car as leaf is to ___?
+OPTS: A:call | B:walk | C:tree | D:read ANS:C
+EXP: Let's think this through together! 🔍
+
+Relation: part-whole. wheel : car, so leaf : tree.
+
+### BA_P3_0517 [verbal_analogy/Think] (needs-human)
+Q: key is to open as pen is to ___?
+OPTS: A:sing | B:run | C:space | D:write ANS:D
+EXP: Let's think this through together! 🔍
+
+Relation: function. key : open, so pen : write.
+
+### BA_P3_0519 [verbal_analogy/Think] (needs-human)
+Q: dog is to house as cow is to ___?
+OPTS: A:sing | B:farm | C:sit | D:hit ANS:B
+EXP: Let's think this through together! 🔍
+
+Relation: object-location. dog : house, so cow : farm.
+
+### BA_P3_0523 [verbal_analogy/Think] (needs-human)
+Q: spoon is to eat as key is to ___?
+OPTS: A:open | B:cold | C:sit | D:jump ANS:A
+EXP: Come, let's work this out together! 💪
+
+Relation: function. spoon : eat, so key : open.
+
+### BA_P3_0535 [verbal_analogy/Think] (needs-human)
+Q: star is to space as bird is to ___?
+OPTS: A:open | B:sky | C:walk | D:run ANS:B
+EXP: Let's solve it together! 🧠
+
+Relation: object-location. star : space, so bird : sky.
+
+### BA_P3_0543 [verbal_analogy/Think] (needs-human)
+Q: wheel is to car as petal is to ___?
+OPTS: A:cold | B:sleep | C:eat | D:flower ANS:D
+EXP: Let's break it down together! 🧩
+
+Relation: part-whole. wheel : car, so petal : flower.
+
+### BA_P3_0561 [verbal_analogy/Think] (needs-human)
+Q: ruler is to measure as comb is to ___?
+OPTS: A:small | B:walk | C:brush | D:sing ANS:C
+EXP: Let's think this through together! 🔍
+
+Relation: tool-action. ruler : measure, so comb : brush.
+
+### BA_P3_0562 [verbal_analogy/Think] (needs-human)
+Q: knife is to cut as key is to ___?
+OPTS: A:eat | B:sit | C:shut | D:open ANS:D
+EXP: Let's think this through together! 🔍
+
+Relation: function. knife : cut, so key : open.
+
+### BA_P3_0578 [verbal_analogy/Think] (needs-human)
+Q: scissors is to cut as fork is to ___?
+OPTS: A:run | B:lift | C:animal | D:sit ANS:B
+EXP: Come, let's work this out together! 💪
+
+Relation: tool-action. scissors : cut, so fork : lift.
+
+### BA_P3_0580 [verbal_analogy/Think] (needs-human)
+Q: ruler is to measure as fork is to ___?
+OPTS: A:read | B:animal | C:sing | D:lift ANS:D
+EXP: Let's solve it together! 🧠
+
+Relation: tool-action. ruler : measure, so fork : lift.
+
+### BA_P3_0586 [verbal_analogy/Think] (needs-human)
+Q: key is to open as brush is to ___?
+OPTS: A:jump | B:paint | C:walk | D:measure ANS:B
+EXP: Let's solve it together! 🧠
+
+Relation: function. key : open, so brush : paint.
+
+### BA_P3_0598 [verbal_analogy/Think] (needs-human)
+Q: dog is to house as bird is to ___?
+OPTS: A:animal | B:sky | C:sit | D:walk ANS:B
+EXP: Let's break it down together! 🧩
+
+Relation: object-location. dog : house, so bird : sky.
+
+### BA_P3_0607 [verbal_analogy/Think] (needs-human)
+Q: circle is to shape as cat is to ___?
+OPTS: A:animal | B:run | C:write | D:sleep ANS:A
+EXP: Come, let's work this out together! 💪
+
+Relation: category. circle : shape, so cat : animal.
+
+### BA_P3_0610 [verbal_analogy/Think] (needs-human)
+Q: brush is to paint as knife is to ___?
+OPTS: A:sleep | B:sing | C:car | D:cut ANS:D
+EXP: Let's solve it together! 🧠
+
+Relation: function. brush : paint, so knife : cut.
+
+### BA_P3_0635 [verbal_analogy/Think] (needs-human)
+Q: key is to open as knife is to ___?
+OPTS: A:sit | B:farm | C:cut | D:run ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+Relation: function. key : open, so knife : cut.
+
+### BA_P3_0643 [verbal_analogy/Think] (needs-human)
+Q: phone is to call as brush is to ___?
+OPTS: A:sleep | B:paint | C:animal | D:walk ANS:B
+EXP: Let's think this through together! 🔍
+
+Relation: function. phone : call, so brush : paint.
+
+### BA_P3_0658 [verbal_analogy/Think] (needs-human)
+Q: brick is to wall as leaf is to ___?
+OPTS: A:tree | B:animal | C:jump | D:read ANS:A
+EXP: Come, let's work this out together! 💪
+
+Relation: part-whole. brick : wall, so leaf : tree.
+
+### BA_P3_0664 [verbal_analogy/Think] (needs-human)
+Q: spoon is to eat as pen is to ___?
+OPTS: A:cut | B:read | C:write | D:jump ANS:C
+EXP: Let's solve it together! 🧠
+
+Relation: function. spoon : eat, so pen : write.
+
+### BA_P3_ADD_0021 [verbal_analogy/Think] (needs-human)
+Q: hot is to cold as happy is to ___?
+OPTS: A:cut | B:jump | C:read | D:sad ANS:D
+EXP: Let's think this through together! 🔍
+
+Relation: antonym. hot : cold, so happy : sad.
+
+### BA_P3_ADD_0022 [verbal_analogy/Think] (needs-human)
+Q: hammer is to hit as ruler is to ___?
+OPTS: A:eat | B:jump | C:measure | D:car ANS:C
+EXP: Come, let's work this out together! 💪
+
+Relation: tool-action. hammer : hit, so ruler : measure.
+
+### BA_P3_ADD_0023 [verbal_analogy/Think] (needs-human)
+Q: cat is to meow as duck is to ___?
+OPTS: A:lift | B:quack | C:eat | D:run ANS:B
+EXP: Let's solve it together! 🧠
+
+Relation: animal-sound. cat : meow, so duck : quack.
+
+### BA_P3_ADD_0024 [verbal_analogy/Think] (needs-human)
+Q: phone is to call as pen is to ___?
+OPTS: A:write | B:hit | C:sit | D:run ANS:A
+EXP: Let's break it down together! 🧩
+
+Relation: function. phone : call, so pen : write.
+
+### BA_P3_ADD_0025 [verbal_analogy/Think] (needs-human)
+Q: sheep is to baa as duck is to ___?
+OPTS: A:quack | B:colour | C:sit | D:jump ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+Relation: animal-sound. sheep : baa, so duck : quack.
+
+### BA_P3_ADD_0026 [verbal_classification/Think] (needs-human)
+Q: Which word is the odd one out? A apple  B chair  C banana  D pear
+OPTS: A:apple | B:banana | C:pear | D:chair ANS:D
+EXP: Let's think this through together! 🔍
+
+banana, apple and pear are all fruit. chair does not belong.
+
+### BA_P3_ADD_0027 [verbal_classification/Think] (needs-human)
+Q: Which word is the odd one out? A yellow  B blue  C table  D pink
+OPTS: A:table | B:blue | C:pink | D:yellow ANS:A
+EXP: Come, let's work this out together! 💪
+
+pink, blue and yellow are all colour. table does not belong.
+
+### BA_P3_ADD_0028 [verbal_classification/Think] (needs-human)
+Q: Which word is the odd one out? A chair  B car  C boat  D plane
+OPTS: A:chair | B:car | C:boat | D:plane ANS:A
+EXP: Let's solve it together! 🧠
+
+plane, car and boat are all vehicle. chair does not belong.
+
+### BA_P3_ADD_0029 [verbal_classification/Think] (needs-human)
+Q: Which word is the odd one out? A banana  B apple  C cup  D pear
+OPTS: A:cup | B:apple | C:banana | D:pear ANS:A
+EXP: Let's break it down together! 🧩
+
+pear, banana and apple are all fruit. cup does not belong.
+
+### BA_P3_ADD_0030 [verbal_classification/Think] (needs-human)
+Q: Which word is the odd one out? A bird  B leaf  C lion  D fish
+OPTS: A:lion | B:leaf | C:bird | D:fish ANS:B
+EXP: Come, let's work this out together! 💪
+
+fish, lion and bird are all animal. leaf does not belong.
+
+### BA_P3_V01 [word_analogy/Think] (needs-human)
+Q: Leaf is to tree as page is to ___?
+OPTS: A:book | B:paper | C:word | D:cover ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+Relation: a single part that, together with many others, makes up the whole.
+A leaf is one part of a tree; a page is one part of a book.
+(Paper is made from trees; word is what is printed on a page; cover is one part of a book but not t
+
+### BA_P3_V02 [word_analogy/Challenge] (needs-human)
+Q: Cup, plate, bowl : rose, tulip, sunflower : apple, banana, ___?
+OPTS: A:orange | B:carrot | C:leaf | D:tree ANS:A
+EXP: Let's think this through together! 🔍
+
+The relation is NOT a word pair.
+Each group is a set of three things in the same category: Group 1 = things you eat from (dishes); Group 2 = flowers; Group 3 = fruits.
+The missing member of the fruit set is orange.
+(Carrot is a vegetable, not
+
+### BA_P3_V04 [word_classification/Think] (needs-human)
+Q: Which does NOT belong?  A clock  B watch  C timer  D ruler
+OPTS: A:clock | B:watch | C:timer | D:ruler ANS:D
+EXP: Let's solve it together! 🧠
+
+Clock, watch and timer are all things that tell or measure TIME.
+A ruler measures LENGTH, not time, so it is the odd one out.
+The grouping is by function, not by how the objects look.
+

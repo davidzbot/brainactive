@@ -1,0 +1,335 @@
+### BA_P3_0017 [single_rotation] notes:answer verified high; notes: ['explanation has big stray number 180']
+Q: An arrow points up. It is rotated 90 degrees clockwise, then another 90 degrees clockwise. Which way does it point now?
+OPTS: A:up | B:right | C:down | D:left ANS:C
+EXP: Let's think this through together! 🔍
+
+Up -> right (first turn) -> down (second turn). Two 90-degree clockwise turns = 180 degrees, so the arrow points down.
+
+### BA_P3_0049 [pattern_application] notes:answer verified high; notes: ['explanation never states answer']
+Q: A row of tiles repeats: red, blue, red, blue, red... (1st, 3rd, 5th are red). What colour is the 12th tile, and what colour is the 13th?
+OPTS: A:12th blue, 13th red | B:both red | C:both blue | D:12th red, 13th blue ANS:A
+EXP: Let's break it down together! 🧩
+
+Odd positions are red, even positions are blue. 12 is even -> blue; 13 is odd -> red.
+
+### BA_P3_0067 [syllogism] notes:answer verified high; notes: ['explanation never states answer']
+Q: All cats are animals. All animals are living things. Which MUST be true?
+OPTS: A:All cats are living things | B:All living things are cats | C:All animals are cats | D:Cats are not living ANS:A
+EXP: Let's think this through together! 🔍
+
+Every cat is an animal, and every animal is living, so every cat is living. The others reverse the direction of the rules.
+
+### BA_P3_0070 [two_step_rotation] notes:answer verified high; notes: ['explanation has big stray number 180']
+Q: An arrow points UP. It is rotated 90 degrees clockwise twice. Which way does it point now?
+OPTS: A:down | B:right | C:left | D:up ANS:A
+EXP: Come, let's work this out together! 💪
+
+Two 90-degree clockwise turns = 180 degrees, so UP becomes DOWN.
+
+### BA_P3_0533 [codes_ciphers] notes:answer verified high; notes: ['explanation never states answer']
+Q: Secret code: move every letter forward 2 places (A->C), then reverse the whole word. What does BOX become?
+OPTS: A:BOX | B:DQZ | C:XOB | D:ZQD ANS:D
+EXP: Let's solve it together! 🧠
+
+Shift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.
+For example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.
+Apply the same to the new word.
+
+### BA_P3_0549 [codes_ciphers] notes:answer verified high; notes: ['explanation never states answer']
+Q: Secret code: move every letter forward 1 places (A->B), then reverse the whole word. What does CAT become?
+OPTS: A:UBD | B:CAT | C:DBU | D:TAC ANS:A
+EXP: Let's break it down together! 🧩
+
+Shift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.
+For example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.
+Apply the same to the new word.
+
+### BA_P3_0552 [codes_ciphers] notes:answer verified high; notes: ['explanation never states answer']
+Q: Secret code: move every letter forward 2 places (A->C), then reverse the whole word. What does CAT become?
+OPTS: A:CAT | B:TAC | C:VCE | D:ECV ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+Shift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.
+For example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.
+Apply the same to the new word.
+
+### BA_P3_0553 [codes_ciphers] notes:answer verified high; notes: ['explanation never states answer']
+Q: Secret code: move every letter forward 2 places (A->C), then reverse the whole word. What does MAP become?
+OPTS: A:OCR | B:MAP | C:RCO | D:PAM ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+Shift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.
+For example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.
+Apply the same to the new word.
+
+### BA_P3_0571 [codes_ciphers] notes:answer verified high; notes: ['explanation never states answer']
+Q: Secret code: move every letter forward 2 places (A->C), then reverse the whole word. What does RED become?
+OPTS: A:TGF | B:RED | C:DER | D:FGT ANS:D
+EXP: Come, let's work this out together! 💪
+
+Shift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.
+For example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.
+Apply the same to the new word.
+
+### BA_P3_0582 [codes_ciphers] notes:answer verified high; notes: ['explanation never states answer']
+Q: Secret code: move every letter forward 3 places (A->D), then reverse the whole word. What does RED become?
+OPTS: A:RED | B:GHU | C:DER | D:UHG ANS:B
+EXP: Let's solve it together! 🧠
+
+Shift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.
+For example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.
+Apply the same to the new word.
+
+### BA_P3_0659 [codes_ciphers] notes:answer verified high; notes: ['explanation never states answer']
+Q: Secret code: move every letter forward 1 places (A->B), then reverse the whole word. What does MAP become?
+OPTS: A:MAP | B:PAM | C:NBQ | D:QBN ANS:D
+EXP: Come, let's work this out together! 💪
+
+Shift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.
+For example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.
+Apply the same to the new word.
+
+### BA_P3_1145 [before_after] notes:answer verified high; notes: ['explanation never states answer']
+Q: Amy has 4 more stickers than Ben. Amy gives Ben 3 sticker(s). Now who has more stickers, and by how many?
+OPTS: A:They are equal | B:Ben, by 2 | C:Ben, by 4 | D:Amy, by 7 ANS:B
+EXP: Let's break it down together! 🧩
+
+Originally Amy leads by 4. Giving 3 reduces the gap by 6 (2 x 3), so the gap is now -2.
+
+### BA_P3_G112 [conditional_contrapositive] notes:answer verified high; notes: ['explanation never states answer']
+Q: Rule: If a number is greater than 50, then it is marked with a red tag. Given: The number 28 is not marked with a red tag. What must be true?
+OPTS: A:All numbers are marked red | B:The number 28 is not greater than 50 | C:The number 28 has a red tag | D:The number 28 is greater than 50 ANS:B
+EXP: Come, let's work this out together! 💪
+
+Mia reads if it is Saturday or if it is raining.
+Today she is not reading, so it is neither Saturday nor raining.
+If either were true, she would be reading.
+
+### BA_P3_G216 [make_a_list] notes:answer verified high; notes: ['explanation has big stray number 58']
+Q: How many different 2-digit numbers can you form using the digits 2, 5, and 8 without repeating any digit?
+OPTS: A:6 | B:9 | C:3 | D:8 ANS:A
+EXP: Let's break it down together! 🧩
+
+List systematically by tens digit: 25, 28 (2 numbers); 52, 58 (2 numbers); 82, 85 (2 numbers). Total = 3 × 2 = 6 numbers.
+
+### BA_P3_G227 [make_a_list] notes:answer verified high; notes: ['explanation has big stray number 79']
+Q: How many 2-digit numbers greater than 50 can be formed using the digits 3, 5, 7, and 9 without repeating any digit?
+OPTS: A:12 | B:8 | C:9 | D:6 ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+The tens digit must be 5, 7, or 9 (3 choices).
+For each tens digit, there are 3 remaining choices for the ones digit.
+Total = 3 × 3 = 9 numbers (53, 57, 59, 73, 75, 79, 93, 95, 97).
+
+### BA_P3_G236 [make_a_list] notes:answer verified high; notes: ['explanation has big stray number 447']
+Q: How many different 3-digit numbers can be formed using ONLY the digits 4 and 7 (repetition is allowed)?
+OPTS: A:8 | B:9 | C:6 | D:4 ANS:A
+EXP: Let's think this through together! 🔍
+
+List systematically: 444, 447, 474, 477, 744, 747, 774, 777. Total = 2 × 2 × 2 = 8 numbers.
+
+### BA_P3_G244 [make_a_list] notes:answer verified high; notes: ['explanation has big stray number 35']
+Q: How many 2-digit numbers less than 50 can be formed using the digits 1, 3, 5, and 7 without repeating any digit?
+OPTS: A:6 | B:4 | C:12 | D:8 ANS:A
+EXP: Come, let's work this out together! 💪
+
+The tens digit must be 1 or 3 (2 choices).
+For each, there are 3 remaining choices for the ones digit.
+List: 13, 15, 17, 31, 35, 37.
+Total = 6 numbers.
+
+### BA_P3_HA_0152 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Dan has 39 buttons and Fiona has 22 buttons. Dan gives Fiona 5 buttons, then Fiona gives Dan 2 buttons. Now who has more buttons, and by how many?
+OPTS: A:Dan by 7 | B:Dan by 11 | C:Tied | D:Fiona by 11 ANS:B
+EXP: After the first gift: Dan has 34, Fiona has 27. After the second gift: Dan has 36, Fiona has 25. So Dan has more by 11.
+
+### BA_P3_HA_0153 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Eva has 48 coins and Fiona has 31 coins. Eva gives Fiona 9 coins, then Fiona gives Eva 3 coins. Now who has more coins, and by how many?
+OPTS: A:Eva by 5 | B:Fiona by 5 | C:Eva by 1 | D:Tied ANS:A
+EXP: After the first gift: Eva has 39, Fiona has 40. After the second gift: Eva has 42, Fiona has 37. So Eva has more by 5.
+
+### BA_P3_HA_0154 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Eva has 31 marbles and Ivan has 18 marbles. Eva gives Ivan 3 marbles, then Ivan gives Eva 2 marbles. Now who has more marbles, and by how many?
+OPTS: A:Tied | B:Eva by 11 | C:Eva by 7 | D:Ivan by 11 ANS:B
+EXP: After the first gift: Eva has 28, Ivan has 21. After the second gift: Eva has 30, Ivan has 19. So Eva has more by 11.
+
+### BA_P3_HA_0155 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Cindy has 29 cards and Jay has 39 cards. Cindy gives Jay 9 cards, then Jay gives Cindy 8 cards. Now who has more cards, and by how many?
+OPTS: A:Cindy by 12 | B:Jay by 28 | C:Tied | D:Jay by 12 ANS:D
+EXP: After the first gift: Cindy has 20, Jay has 48. After the second gift: Cindy has 28, Jay has 40. So Jay has more by 12.
+
+### BA_P3_HA_0156 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Diya has 22 marbles and Cindy has 19 marbles. Diya gives Cindy 7 marbles, then Cindy gives Diya 1 marbles. Now who has more marbles, and by how many?
+OPTS: A:Cindy by 9 | B:Diya by 9 | C:Tied | D:Cindy by 11 ANS:A
+EXP: After the first gift: Diya has 15, Cindy has 26. After the second gift: Diya has 16, Cindy has 25. So Cindy has more by 9.
+
+### BA_P3_HA_0157 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Cai has 29 coins and Ben has 23 coins. Cai gives Ben 9 coins, then Ben gives Cai 7 coins. Now who has more coins, and by how many?
+OPTS: A:Cai by 2 | B:Cai by 12 | C:Tied | D:Ben by 2 ANS:A
+EXP: After the first gift: Cai has 20, Ben has 32. After the second gift: Cai has 27, Ben has 25. So Cai has more by 2.
+
+### BA_P3_HA_0158 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Ali has 26 cards and Eli has 13 cards. Ali gives Eli 7 cards, then Eli gives Ali 5 cards. Now who has more cards, and by how many?
+OPTS: A:Ali by 1 | B:Eli by 9 | C:Ali by 9 | D:Tied ANS:C
+EXP: After the first gift: Ali has 19, Eli has 20. After the second gift: Ali has 24, Eli has 15. So Ali has more by 9.
+
+### BA_P3_HA_0159 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Ben has 23 coins and Amy has 33 coins. Ben gives Amy 6 coins, then Amy gives Ben 5 coins. Now who has more coins, and by how many?
+OPTS: A:Amy by 22 | B:Tied | C:Ben by 12 | D:Amy by 12 ANS:D
+EXP: After the first gift: Ben has 17, Amy has 39. After the second gift: Ben has 22, Amy has 34. So Amy has more by 12.
+
+### BA_P3_HA_0160 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Ali has 23 coins and Bella has 16 coins. Ali gives Bella 6 coins, then Bella gives Ali 2 coins. Now who has more coins, and by how many?
+OPTS: A:Bella by 5 | B:Bella by 1 | C:Ali by 1 | D:Tied ANS:B
+EXP: After the first gift: Ali has 17, Bella has 22. After the second gift: Ali has 19, Bella has 20. So Bella has more by 1.
+
+### BA_P3_HA_0161 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Gina has 26 buttons and Ali has 13 buttons. Gina gives Ali 5 buttons, then Ali gives Gina 3 buttons. Now who has more buttons, and by how many?
+OPTS: A:Gina by 9 | B:Ali by 9 | C:Tied | D:Gina by 3 ANS:A
+EXP: After the first gift: Gina has 21, Ali has 18. After the second gift: Gina has 24, Ali has 15. So Gina has more by 9.
+
+### BA_P3_HA_0162 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Dan has 26 buttons and Gina has 23 buttons. Dan gives Gina 7 buttons, then Gina gives Dan 6 buttons. Now who has more buttons, and by how many?
+OPTS: A:Gina by 1 | B:Dan by 1 | C:Tied | D:Dan by 11 ANS:B
+EXP: After the first gift: Dan has 19, Gina has 30. After the second gift: Dan has 25, Gina has 24. So Dan has more by 1.
+
+### BA_P3_HA_0163 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Diya has 26 coins and Gina has 20 coins. Diya gives Gina 7 coins, then Gina gives Diya 2 coins. Now who has more coins, and by how many?
+OPTS: A:Gina by 8 | B:Tied | C:Gina by 4 | D:Diya by 4 ANS:C
+EXP: After the first gift: Diya has 19, Gina has 27. After the second gift: Diya has 21, Gina has 25. So Gina has more by 4.
+
+### BA_P3_HA_0164 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Cai has 47 coins and Finn has 24 coins. Cai gives Finn 6 coins, then Finn gives Cai 5 coins. Now who has more coins, and by how many?
+OPTS: A:Cai by 11 | B:Tied | C:Finn by 21 | D:Cai by 21 ANS:D
+EXP: After the first gift: Cai has 41, Finn has 30. After the second gift: Cai has 46, Finn has 25. So Cai has more by 21.
+
+### BA_P3_HA_0165 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Eva has 43 cards and Gina has 13 cards. Eva gives Gina 3 cards, then Gina gives Eva 2 cards. Now who has more cards, and by how many?
+OPTS: A:Tied | B:Eva by 28 | C:Eva by 24 | D:Gina by 28 ANS:B
+EXP: After the first gift: Eva has 40, Gina has 16. After the second gift: Eva has 42, Gina has 14. So Eva has more by 28.
+
+### BA_P3_HA_0166 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Ben has 22 stamps and Gus has 10 stamps. Ben gives Gus 3 stamps, then Gus gives Ben 2 stamps. Now who has more stamps, and by how many?
+OPTS: A:Ben by 10 | B:Gus by 10 | C:Tied | D:Ben by 6 ANS:A
+EXP: After the first gift: Ben has 19, Gus has 13. After the second gift: Ben has 21, Gus has 11. So Ben has more by 10.
+
+### BA_P3_HA_0167 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Ben has 27 cards and Jay has 10 cards. Ben gives Jay 8 cards, then Jay gives Ben 1 cards. Now who has more cards, and by how many?
+OPTS: A:Tied | B:Ben by 1 | C:Ben by 3 | D:Jay by 3 ANS:C
+EXP: After the first gift: Ben has 19, Jay has 18. After the second gift: Ben has 20, Jay has 17. So Ben has more by 3.
+
+### BA_P3_HA_0168 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Dan has 36 stamps and Ivan has 16 stamps. Dan gives Ivan 8 stamps, then Ivan gives Dan 3 stamps. Now who has more stamps, and by how many?
+OPTS: A:Dan by 4 | B:Tied | C:Dan by 10 | D:Ivan by 10 ANS:C
+EXP: After the first gift: Dan has 28, Ivan has 24. After the second gift: Dan has 31, Ivan has 21. So Dan has more by 10.
+
+### BA_P3_HA_0169 [before_after_transfer] notes:answer verified high; notes: ['explanation never states answer']
+Q: Eva has 31 buttons and Gus has 40 buttons. Eva gives Gus 9 buttons, then Gus gives Eva 2 buttons. Now who has more buttons, and by how many?
+OPTS: A:Gus by 23 | B:Eva by 23 | C:Tied | D:Gus by 27 ANS:A
+EXP: After the first gift: Eva has 22, Gus has 49. After the second gift: Eva has 24, Gus has 47. So Gus has more by 23.
+
+### BA_P3_HA_0277 [conditional_contrapositive] notes:answer verified high; notes: ['explanation never states answer']
+Q: Rule: If a number is a multiple of 4, then it is even. Given: 79 is not even. What MUST be true?
+OPTS: A:79 is not a multiple of 4 | B:All odd numbers end in 9 | C:79 is a multiple of 4 | D:79 is even ANS:A
+EXP: Multiples of 4 are always even. Since 79 is not even, it cannot be a multiple of 4.
+
+### BA_P3_HA_0278 [conditional_contrapositive] notes:answer verified high; notes: ['explanation never states answer']
+Q: Rule: If a number ends in 0, then it is a multiple of 5. Given: 37 is not a multiple of 5. What MUST be true?
+OPTS: A:37 ends in 0 | B:37 ends in 5 | C:37 is a multiple of 5 | D:37 does not end in 0 ANS:D
+EXP: Ending in 0 forces a multiple of 5. Since 37 is not a multiple of 5, it cannot end in 0.
+
+### BA_P3_HA_0281 [conditional_contrapositive] notes:answer verified high; notes: ['explanation never states answer']
+Q: Rule: If a number is a multiple of 4, then it is even. Given: 61 is not even. What MUST be true?
+OPTS: A:61 is not a multiple of 4 | B:61 is even | C:61 is a multiple of 4 | D:All odd numbers end in 1 ANS:A
+EXP: Multiples of 4 are always even. Since 61 is not even, it cannot be a multiple of 4.
+
+### BA_P3_HA_0283 [conditional_contrapositive] notes:answer verified high; notes: ['explanation never states answer']
+Q: Rule: If a number ends in 0, then it is a multiple of 5. Given: 41 is not a multiple of 5. What MUST be true?
+OPTS: A:41 ends in 0 | B:41 ends in 5 | C:41 is a multiple of 5 | D:41 does not end in 0 ANS:D
+EXP: Ending in 0 forces a multiple of 5. Since 41 is not a multiple of 5, it cannot end in 0.
+
+### BA_P3_HA_0302 [alternating_rule] notes:answer verified high; notes: ['explanation too short']
+Q: Each number is the sum of the two before it: 2, 6, 8, 14, ___, 36, 58. What is the missing number?
+OPTS: A:24 | B:21 | C:22 | D:23 ANS:C
+EXP: Add neighbours: 8 + 14 = 22. Check forward: 14 + 22 = 36.
+
+### BA_P3_HA_0305 [alternating_rule] notes:answer verified high; notes: ['explanation too short']
+Q: Each number is the sum of the two before it: 4, 6, 10, 16, ___, 42, 68. What is the missing number?
+OPTS: A:25 | B:27 | C:26 | D:28 ANS:C
+EXP: Add neighbours: 10 + 16 = 26. Check forward: 16 + 26 = 42.
+
+### BA_P3_HA_0307 [before_after] notes:answer verified high; notes: ['explanation never states answer']
+Q: Eva has 10 more cards than Amy. Eva gives Amy 2 cards. Now who has more cards, and by how many?
+OPTS: A:Tied | B:Amy by 6 | C:Eva by 10 | D:Eva by 6 ANS:D
+EXP: Start: Eva leads by 10. The gift moves 2 each way, closing the gap by 4. New gap is 6 to Eva.
+
+### BA_P3_HA_0308 [before_after] notes:answer verified high; notes: ['explanation never states answer']
+Q: Cai has 5 more stickers than Iris. Cai gives Iris 7 stickers. Now who has more stickers, and by how many?
+OPTS: A:Iris by 5 | B:Cai by 9 | C:Tied | D:Iris by 9 ANS:D
+EXP: Start: Cai leads by 5. The gift moves 7 each way, closing the gap by 14. New gap is 9 to Iris.
+
+### BA_P3_HA_0309 [before_after] notes:answer verified high; notes: ['explanation never states answer']
+Q: Cai has 14 more coins than Hana. Cai gives Hana 8 coins. Now who has more coins, and by how many?
+OPTS: A:Cai by 2 | B:Hana by 2 | C:Hana by 14 | D:Tied ANS:B
+EXP: Start: Cai leads by 14. The gift moves 8 each way, closing the gap by 16. New gap is 2 to Hana.
+
+### BA_P3_HA_0310 [before_after] notes:answer verified high; notes: ['explanation never states answer']
+Q: Bella has 4 more stickers than Gina. Bella gives Gina 5 stickers. Now who has more stickers, and by how many?
+OPTS: A:Gina by 4 | B:Bella by 6 | C:Tied | D:Gina by 6 ANS:D
+EXP: Start: Bella leads by 4. The gift moves 5 each way, closing the gap by 10. New gap is 6 to Gina.
+
+### BA_P3_HA_0311 [before_after] notes:answer verified high; notes: ['explanation never states answer']
+Q: Dan has 5 more cards than Hari. Dan gives Hari 7 cards. Now who has more cards, and by how many?
+OPTS: A:Tied | B:Hari by 5 | C:Hari by 9 | D:Dan by 9 ANS:C
+EXP: Start: Dan leads by 5. The gift moves 7 each way, closing the gap by 14. New gap is 9 to Hari.
+
+### BA_P3_HA_0312 [before_after] notes:answer verified high; notes: ['explanation never states answer']
+Q: Ivan has 6 more buttons than Hari. Ivan gives Hari 2 buttons. Now who has more buttons, and by how many?
+OPTS: A:Tied | B:Ivan by 2 | C:Hari by 2 | D:Ivan by 6 ANS:B
+EXP: Start: Ivan leads by 6. The gift moves 2 each way, closing the gap by 4. New gap is 2 to Ivan.
+
+### BA_P3_HA_0372 [figure_sequence] notes:answer verified high; notes: ['explanation too short']
+Q: Each number is the sum of the two before it: 4, 7, 11, 18, ___, 47, 76. What is the missing number?
+OPTS: A:29 | B:30 | C:31 | D:28 ANS:A
+EXP: Add neighbours: 11 + 18 = 29. Check: 18 + 29 = 47.
+
+### BA_P3_HA_0373 [figure_sequence] notes:answer verified high; notes: ['explanation too short']
+Q: Find the next number: 9, 14, 12, 17, 15, 20, ___?
+OPTS: A:20 | B:18 | C:19 | D:17 ANS:B
+EXP: The jumps alternate +5 then -2. The next jump is +5: 18.
+
+### BA_P3_HA_0375 [figure_sequence] notes:answer verified high; notes: ['explanation too short']
+Q: Each number is the sum of the two before it: 1, 2, 3, 5, ___, 13, 21. What is the missing number?
+OPTS: A:8 | B:10 | C:9 | D:7 ANS:A
+EXP: Add neighbours: 3 + 5 = 8. Check: 5 + 8 = 13.
+
+### BA_P3_HA_0378 [figure_sequence] notes:answer verified high; notes: ['explanation too short']
+Q: Each number is the sum of the two before it: 3, 4, 7, 11, ___, 29, 47. What is the missing number?
+OPTS: A:18 | B:20 | C:17 | D:19 ANS:A
+EXP: Add neighbours: 7 + 11 = 18. Check: 11 + 18 = 29.
+
+### BA_P3_HA_0379 [figure_sequence] notes:answer verified high; notes: ['explanation too short']
+Q: Find the next number: 8, 10, 13, 15, 18, 20, ___?
+OPTS: A:25 | B:24 | C:22 | D:23 ANS:D
+EXP: The jumps alternate +2 then 3. The next jump is +2: 23.
+
+### BA_P3_HA_0381 [figure_sequence] notes:answer verified high; notes: ['explanation too short']
+Q: Each number is the sum of the two before it: 2, 3, 5, 8, ___, 21, 34. What is the missing number?
+OPTS: A:12 | B:15 | C:14 | D:13 ANS:D
+EXP: Add neighbours: 5 + 8 = 13. Check: 8 + 13 = 21.
+
+### BA_P3_HA_0382 [figure_sequence] notes:answer verified high; notes: ['explanation too short']
+Q: Find the next number: 9, 14, 12, 17, 15, 20, ___?
+OPTS: A:19 | B:17 | C:18 | D:20 ANS:C
+EXP: The jumps alternate +5 then -2. The next jump is +5: 18.
+
+### BA_P3_HA_0384 [figure_sequence] notes:answer verified high; notes: ['explanation too short']
+Q: Each number is the sum of the two before it: 3, 7, 10, 17, ___, 44, 71. What is the missing number?
+OPTS: A:27 | B:26 | C:29 | D:28 ANS:A
+EXP: Add neighbours: 10 + 17 = 27. Check: 17 + 27 = 44.
+
+### BA_P3_HA_0385 [figure_sequence] notes:answer verified high; notes: ['explanation too short']
+Q: Find the next number: 7, 9, 12, 14, 17, 19, ___?
+OPTS: A:21 | B:22 | C:24 | D:23 ANS:B
+EXP: The jumps alternate +2 then 3. The next jump is +2: 22.
+

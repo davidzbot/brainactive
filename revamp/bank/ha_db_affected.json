@@ -1,0 +1,222 @@
+[
+ {
+  "id": "BA_P3_0003",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0010",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0032",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0036",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0056",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0077",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0124",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0140",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0154",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0161",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0170",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0171",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0172",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0175",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0191",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0213",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0216",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0218",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0251",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0262",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0269",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0323",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0533",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0549",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0552",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0553",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0571",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0582",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_0659",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_ADD_0006",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_ADD_0016",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_ADD_0017",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_ADD_0018",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_ADD_0019",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_ADD_0020",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_ADD_0036",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_ADD_0037",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_ADD_0038",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_ADD_0039",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_ADD_0040",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_ADD_0044",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_ADD_0090",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_ADD_0091",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ },
+ {
+  "id": "BA_P3_G112",
+  "qa_status": "validated_fix_20260831",
+  "is_active": true
+ }
+]

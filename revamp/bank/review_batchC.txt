@@ -1,0 +1,637 @@
+### BA_P3_0002 [pattern_discovery/Think] (solver-abstain-low :: no clean rule; gates clean)
+Q: Find the next number: 3, 6, 5, 12, 7, 24, 9, ___?
+OPTS: A:36 | B:48 | C:40 | D:52 ANS:B
+EXP: Good question — let's solve it together! ⭐
+
+Two woven sequences.
+Odd positions: 3, 5, 7, 9 (+2).
+Even positions: 6, 12, 24 (x2).
+The missing 8th term is the next even-position term: 24 x 2 = 48.
+
+### BA_P3_0003 [numerical_relationships/Think] (solver-abstain-low :: ambiguous analogy options; gates clean)
+Q: 2 is to 5 as 4 is to ___? (The rule is not a simple round multiplier.)
+OPTS: A:8 | B:9 | C:10 | D:11 ANS:B
+EXP: Good question — let's solve it together! ⭐
+
+Rule: x2 then +1.
+2 -> 5; so 4 -> (4x2)+1 = 9.
+Distractors use x2 (8) and off-by-one (10, 11).
+
+### BA_P3_0006 [number_puzzles_systems/Challenge] (solver-abstain-low :: balance pairs unparsed; gates clean)
+Q: A, B and C are single digits. A + B = 10, B + C = 8, and A + C = 6. What is A?
+OPTS: A:2 | B:4 | C:5 | D:6 ANS:B
+EXP: Good question — let's solve it together! ⭐
+
+Try digits: if A = 4 then B = 6 (A+B=10) and C = 2 (B+C=8); check A+C = 4+2 = 6. Works, so A = 4.
+
+### BA_P3_0007 [deductive_ordering/Think] (solver-abstain-low :: could not parse order edges; gates clean)
+Q: Four teams race. Red finishes before Blue. Green finishes after Yellow. Blue finishes before Green. Yellow finishes before Red. Order them from fastest to slowest.
+OPTS: A:Yellow, Red, Blue, Green | B:Red, Blue, Green, Yellow | C:Yellow, Blue, Red, Green | D:Green, Yellow, Red, Blue ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+From the clues: Yellow < Red < Blue (Yellow before Red, Red before Blue).
+Also Blue < Green and Yellow < Green.
+Together: Yellow < Red < Blue < Green.
+Fastest to slowest: Yellow, Red, Blue, Green.
+
+### BA_P3_0009 [conditional_logic/Think] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If it is sunny, the cat sits by the window. The cat is NOT by the window. What can we conclude?
+OPTS: A:It is sunny | B:It is not sunny | C:The cat is outside | D:The cat is sleeping ANS:B
+EXP: Good question — let's solve it together! ⭐
+
+Rule: sunny -> cat by window.
+Cat NOT by window, so it cannot be sunny.
+You cannot tell where the cat is, only that it is not sunny.
+
+### BA_P3_0011 [syllogisms/Challenge] (solver-abstain-low :: syllogism hits not unique; gates: ['explanation never states answer'])
+Q: All squares are blue. All blue things are small. Which MUST be true?
+OPTS: A:All squares are small | B:All small things are squares | C:All blue things are squares | D:All squares are heavy ANS:A
+EXP: Let's think this through together! 🔍
+
+Every square is blue, and everything blue is small, so every square is small. The others reverse the direction of the rules and need not be true.
+
+### BA_P3_0016 [sentence_logic/Think] (solver-abstain-low :: no if-rules parsed; gates: ['explanation never states answer'])
+Q: Mei reads every Saturday. She also reads whenever it rains. Today she is NOT reading. What MUST be true?
+OPTS: A:It is not Saturday and not raining | B:It is Saturday | C:It is raining | D:Mei is sleeping ANS:A
+EXP: Let's think this through together! 🔍
+
+She reads if Saturday OR raining.
+Today she does NOT read, so neither condition holds: it is not Saturday and it is not raining.
+B and C would make her read; D adds info we are not given.
+
+### BA_P3_0025 [figure_analogy/Think] (solver-abstain-low :: analogy figure parse incomplete; gates clean)
+Q: A small red square changes into a large blue square (size flips AND colour flips, shape stays). Using the same change, a small blue circle changes into a ___?
+OPTS: A:large red circle | B:small red circle | C:large blue circle | D:large blue square ANS:A
+EXP: Come, let's work this out together! 💪
+
+Two changes: size small->large, and colour flips (red->blue, so blue->red).
+Shape stays the same.
+So small blue circle -> large red circle.
+
+### BA_P3_0026 [count_sequence/Explore] (solver-abstain-low :: series unparsed; gates clean)
+Q: Groups of dots: 2, then 3, then 5, then 8, then 13. How many dots come next?
+OPTS: A:18 | B:20 | C:21 | D:26 ANS:C
+EXP: Come, let's work this out together! 💪
+
+Each group has as many dots as the two previous groups combined: 2+3=5, 3+5=8, 5+8=13, so 8+13=21.
+
+### BA_P3_0029 [guess_check/Think] (solver-abstain-low :: coin form unparsed; gates clean)
+Q: There are some 2-dollar and 5-dollar coins. There are 6 coins in total and they make 18 dollars. How many 5-dollar coins are there?
+OPTS: A:1 | B:2 | C:3 | D:4 ANS:B
+EXP: Come, let's work this out together! 💪
+
+Try 2 five-dollar coins (=10) and 4 two-dollar coins (=8).
+Total value 18 and total coins 6.
+That fits, so there are 2 five-dollar coins.
+
+### BA_P3_0031 [pattern_discovery/Challenge] (solver-abstain-low :: no clean rule; gates clean)
+Q: Find the next number: 1, 2, 6, 24, 120, ___?
+OPTS: A:240 | B:600 | C:720 | D:144 ANS:C
+EXP: Let's solve it together! 🧠
+
+Each term is the previous term multiplied by a growing integer: x2, x3, x4, x5. Next is x6: 120 x 6 = 720.
+
+### BA_P3_0032 [numerical_relationships/Explore] (solver-abstain-low :: ambiguous analogy options; gates clean)
+Q: 4 is to 7 as 5 is to ___? (Find the relationship in the first pair, then use it.)
+OPTS: A:8 | B:9 | C:10 | D:11 ANS:A
+EXP: Let's solve it together! 🧠
+
+Relationship: +3. 4 + 3 = 7, so 5 + 3 = 8.
+
+### BA_P3_0035 [conditional_logic/Challenge] (solver-abstain-low :: rule engine hits not unique; gates: ['explanation never states answer')
+Q: If it rains, the match is cancelled. If the match is cancelled, the picnic moves indoors. It is raining. What MUST be true?
+OPTS: A:The picnic is indoors | B:It is not raining | C:The match is playing | D:The picnic is outside ANS:A
+EXP: Let's solve it together! 🧠
+
+It rains -> match cancelled -> picnic indoors.
+So the picnic must be indoors.
+The others contradict the chain.
+
+### BA_P3_0054 [alternating_rule/Challenge] (solver-abstain-low :: no clean rule; gates clean)
+Q: Find the next number: 1, 2, 4, 5, 10, ___?
+OPTS: A:11 | B:20 | C:21 | D:10 ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+The rule alternates +1, then x2: 1->2 (+1), 2->4 (x2), 4->5 (+1), 5->10 (x2). After the x2 step the next step is +1, so 10 + 1 = 11.
+
+### BA_P3_0056 [compound_rule_analogy/Think] (solver-abstain-low :: ambiguous analogy options; gates clean)
+Q: 5 is to 11 as 6 is to ___?
+OPTS: A:12 | B:13 | C:14 | D:17 ANS:B
+EXP: Good question — let's solve it together! ⭐
+
+Rule: x2 then +1.
+5 -> 11; so 6 -> (6 x 2) + 1 = 13.
+Distractors use x2 only (12) or x2+2 (14).
+
+### BA_P3_0060 [linear_order/Explore] (solver-abstain-low :: could not parse order edges; gates: ['explanation never states answer')
+Q: P and Q are taller than R. Q is shorter than P. Order them from tallest to shortest.
+OPTS: A:P, Q, R | B:Q, P, R | C:R, P, Q | D:P, R, Q ANS:A
+EXP: Let's think this through together! 🔍
+
+P is tallest (P > Q and P > R). Q is shorter than P but taller than R, so P > Q > R.
+
+### BA_P3_0062 [seating_constraint/Think] (solver-abstain-low :: seating solutions not unique; gates clean)
+Q: Ali, Ben, Cai and Dee sit in a row of four. Ali is at the left end. Cai is in the middle. Ben is not next to Ali. Who sits second from the left?
+OPTS: A:Dee | B:Ben | C:Cai | D:Ali ANS:A
+EXP: Let's think this through together! 🔍
+
+Seats: 1 Ali, 3 Cai.
+Seats 2 and 4 are Ben and Dee.
+Ben is not next to Ali (seat 2 is next to Ali), so Ben is seat 4 and Dee is seat 2.
+Second from left = Dee.
+
+### BA_P3_0064 [modus_tollens/Think] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If a number is even, it is coloured blue. The number 7 is NOT blue. What can we conclude?
+OPTS: A:7 is not even | B:7 is even | C:7 is blue | D:cannot tell ANS:A
+EXP: Let's think this through together! 🔍
+
+Rule: even -> blue.
+7 is not blue, so by the contrapositive 7 is not even.
+You cannot tell its colour otherwise.
+
+### BA_P3_0065 [chained_conditionals/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If it is hot, we swim. If we swim, we are happy. It is hot. What MUST be true?
+OPTS: A:We are happy | B:It is cold | C:We do not swim | D:We are sad ANS:A
+EXP: Let's think this through together! 🔍
+
+Hot -> swim -> happy.
+Since it is hot, we swim and we are happy.
+The only MUST-be-true option is 'we are happy'.
+
+### BA_P3_0068 [syllogism_particular/Challenge] (solver-abstain-low :: syllogism hits not unique; gates clean)
+Q: Some squares are red. All red things are small. Which MUST be true?
+OPTS: A:Some squares are small | B:All squares are small | C:All small things are squares | D:No squares are small ANS:A
+EXP: Let's think this through together! 🔍
+
+The red squares are squares AND red; all red things are small, so those squares are small.
+Thus SOME squares are small.
+'All squares are small' need not be true.
+
+### BA_P3_0077 [count_sequence/Explore] (solver-abstain-low :: series unparsed; gates clean)
+Q: Groups of dots: 1, then 2, then 4, then 8. How many dots come next?
+OPTS: A:16 | B:10 | C:12 | D:9 ANS:A
+EXP: Come, let's work this out together! 💪
+
+Each group has twice as many dots as the previous group: 1, 2, 4, 8, so 8 x 2 = 16.
+
+### BA_P3_0087 [figure_analogy/Think] (solver-abstain-low :: analogy figure parse incomplete; gates clean)
+Q: A small red circle changes into a large blue circle (size flips AND colour flips red<->blue, shape stays). Using the same change, a small blue square changes into a ___?
+OPTS: A:large red square | B:small red square | C:large blue square | D:large blue circle ANS:A
+EXP: Let's solve it together! 🧠
+
+Two changes: size small->large, and colour flips (red->blue, so blue->red).
+Shape stays the same.
+So small blue square -> large red square.
+
+### BA_P3_0089 [draw_diagram/Think] (solver-abstain-low :: counts unparsed; gates clean)
+Q: Five trees are planted in a straight line, 2 metres apart. How long is the row from the first tree to the last tree?
+OPTS: A:8 m | B:10 m | C:5 m | D:6 m ANS:A
+EXP: Let's solve it together! 🧠
+
+Draw a diagram: with 5 trees there are 4 gaps between them.
+Each gap is 2 m, so the row is 4 x 2 = 8 m.
+(Not 5 x 2.)
+
+### BA_P3_0090 [make_list/Think] (solver-abstain-low :: combinatorial form unparsed; gates clean)
+Q: How many two-letter codes can you make using the letters A, B and C if you may repeat a letter (e.g. AA, AB)?
+OPTS: A:9 | B:6 | C:8 | D:12 ANS:A
+EXP: Let's break it down together! 🧩
+
+List them systematically: AA, AB, AC, BA, BB, BC, CA, CB, CC = 9 codes. (3 choices for the first letter x 3 for the second = 9.)
+
+### BA_P3_0124 [number_analogy/Think] (solver-abstain-low :: ambiguous analogy options; gates clean)
+Q: 3 is to 14 as 4 is to ___?
+OPTS: A:8 | B:17 | C:28 | D:15 ANS:B
+EXP: Let's break it down together! 🧩
+
+Relation: x3 then +5. 3 -> 14, so 4 -> 17.
+
+### BA_P3_0140 [number_analogy/Think] (solver-abstain-low :: ambiguous analogy options; gates clean)
+Q: 4 is to 12 as 3 is to ___?
+OPTS: A:18 | B:9 | C:11 | D:10 ANS:D
+EXP: Let's think this through together! 🔍
+
+Relation: x2 then +4. 4 -> 12, so 3 -> 10.
+
+### BA_P3_0154 [number_analogy/Think] (solver-abstain-low :: ambiguous analogy options; gates clean)
+Q: 7 is to 24 as 4 is to ___?
+OPTS: A:15 | B:8 | C:21 | D:14 ANS:A
+EXP: Come, let's work this out together! 💪
+
+Relation: x3 then +3. 7 -> 24, so 4 -> 15.
+
+### BA_P3_0161 [number_analogy/Think] (solver-abstain-low :: ambiguous analogy options; gates clean)
+Q: 7 is to 10 as 6 is to ___?
+OPTS: A:11 | B:8 | C:12 | D:7 ANS:B
+EXP: Let's solve it together! 🧠
+
+Relation: x2 then -4. 7 -> 10, so 6 -> 8.
+
+### BA_P3_0170 [number_analogy/Think] (solver-abstain-low :: ambiguous analogy options; gates clean)
+Q: 6 is to 17 as 7 is to ___?
+OPTS: A:14 | B:20 | C:31 | D:19 ANS:B
+EXP: Let's break it down together! 🧩
+
+Relation: x3 then -1. 6 -> 17, so 7 -> 20.
+
+### BA_P3_0171 [number_analogy/Think] (solver-abstain-low :: ambiguous analogy options; gates clean)
+Q: 4 is to 8 as 6 is to ___?
+OPTS: A:10 | B:13 | C:14 | D:12 ANS:C
+EXP: Let's break it down together! 🧩
+
+Relation: x3 then -4. 4 -> 8, so 6 -> 14.
+
+### BA_P3_0172 [number_analogy/Think] (solver-abstain-low :: ambiguous analogy options; gates clean)
+Q: 3 is to 10 as 8 is to ___?
+OPTS: A:24 | B:25 | C:15 | D:32 ANS:B
+EXP: Let's break it down together! 🧩
+
+Relation: x3 then +1. 3 -> 10, so 8 -> 25.
+
+### BA_P3_0175 [number_analogy/Think] (solver-abstain-low :: ambiguous analogy options; gates clean)
+Q: 2 is to 2 as 3 is to ___?
+OPTS: A:4 | B:41 | C:6 | D:3 ANS:A
+EXP: Let's break it down together! 🧩
+
+Relation: x2 then -2. 2 -> 2, so 3 -> 4.
+
+### BA_P3_0191 [number_analogy/Think] (solver-abstain-low :: ambiguous analogy options; gates clean)
+Q: 8 is to 22 as 5 is to ___?
+OPTS: A:13 | B:27 | C:19 | D:10 ANS:A
+EXP: Let's think this through together! 🔍
+
+Relation: x3 then -2. 8 -> 22, so 5 -> 13.
+
+### BA_P3_0213 [number_sequence/Think] (solver-abstain-low :: ambiguous sequence rules; gates clean)
+Q: Find the next number: 6, 15, 24, 33, 42, ___?
+OPTS: A:60 | B:33 | C:52 | D:51 ANS:D
+EXP: Good question — let's solve it together! ⭐
+
+The rule is: add 9 each step. So the next number is 51.
+
+### BA_P3_0216 [number_analogy/Think] (solver-abstain-low :: ambiguous analogy options; gates clean)
+Q: 3 is to 8 as 5 is to ___?
+OPTS: A:10 | B:19 | C:13 | D:14 ANS:D
+EXP: Good question — let's solve it together! ⭐
+
+Relation: x3 then -1. 3 -> 8, so 5 -> 14.
+
+### BA_P3_0218 [number_sequence/Think] (solver-abstain-low :: ambiguous sequence rules; gates clean)
+Q: Find the next number: 3, 9, 15, 21, 27, 33, ___?
+OPTS: A:40 | B:39 | C:45 | D:27 ANS:B
+EXP: Good question — let's solve it together! ⭐
+
+The rule is: add 6 each step. So the next number is 39.
+
+### BA_P3_0251 [number_analogy/Think] (solver-abstain-low :: ambiguous analogy options; gates clean)
+Q: 3 is to 13 as 2 is to ___?
+OPTS: A:20 | B:10 | C:9 | D:4 ANS:B
+EXP: Let's break it down together! 🧩
+
+Relation: x3 then +4. 3 -> 13, so 2 -> 10.
+
+### BA_P3_0262 [number_analogy/Think] (solver-abstain-low :: ambiguous analogy options; gates clean)
+Q: 8 is to 21 as 2 is to ___?
+OPTS: A:15 | B:4 | C:9 | D:8 ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+Relation: x2 then +5. 8 -> 21, so 2 -> 9.
+
+### BA_P3_0269 [number_sequence/Think] (solver-abstain-low :: ambiguous sequence rules; gates clean)
+Q: Find the next number: 5, 14, 23, 32, 41, ___?
+OPTS: A:59 | B:32 | C:51 | D:50 ANS:D
+EXP: Good question — let's solve it together! ⭐
+
+The rule is: add 9 each step. So the next number is 50.
+
+### BA_P3_0300 [conditional/Think] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If a number is even, it is coloured blue. The number 27 is NOT blue. What can we conclude?
+OPTS: A:It is even | B:It is blue | C:cannot tell | D:It is not even ANS:D
+EXP: Let's think this through together! 🔍
+
+Rule: even -> blue. 27 is not blue, so by the contrapositive it is not even.
+
+### BA_P3_0392 [conditional/Think] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If a number is even, it is coloured blue. The number 25 is NOT blue. What can we conclude?
+OPTS: A:cannot tell | B:It is even | C:It is blue | D:It is not even ANS:D
+EXP: Good question — let's solve it together! ⭐
+
+Rule: even -> blue. 25 is not blue, so by the contrapositive it is not even.
+
+### BA_P3_0420 [conditional/Think] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If a number is even, it is coloured blue. The number 23 is NOT blue. What can we conclude?
+OPTS: A:It is not even | B:cannot tell | C:It is blue | D:It is even ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+Rule: even -> blue. 23 is not blue, so by the contrapositive it is not even.
+
+### BA_P3_0433 [conditional/Think] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If a number is even, it is coloured blue. The number 11 is NOT blue. What can we conclude?
+OPTS: A:It is blue | B:It is not even | C:cannot tell | D:It is even ANS:B
+EXP: Let's think this through together! 🔍
+
+Rule: even -> blue. 11 is not blue, so by the contrapositive it is not even.
+
+### BA_P3_0451 [conditional/Think] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If a number is even, it is coloured blue. The number 29 is NOT blue. What can we conclude?
+OPTS: A:It is not even | B:It is even | C:It is blue | D:cannot tell ANS:A
+EXP: Let's solve it together! 🧠
+
+Rule: even -> blue. 29 is not blue, so by the contrapositive it is not even.
+
+### BA_P3_0533 [codes_ciphers/Master] (gatewarn :: answer verified high; notes: ['explanation never states answer'])
+Q: Secret code: move every letter forward 2 places (A->C), then reverse the whole word. What does BOX become?
+OPTS: A:BOX | B:DQZ | C:XOB | D:ZQD ANS:D
+EXP: Let's solve it together! 🧠
+
+Shift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.
+For example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.
+Apply the same to the new word.
+
+### BA_P3_0549 [codes_ciphers/Master] (gatewarn :: answer verified high; notes: ['explanation never states answer'])
+Q: Secret code: move every letter forward 1 places (A->B), then reverse the whole word. What does CAT become?
+OPTS: A:UBD | B:CAT | C:DBU | D:TAC ANS:A
+EXP: Let's break it down together! 🧩
+
+Shift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.
+For example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.
+Apply the same to the new word.
+
+### BA_P3_0552 [codes_ciphers/Master] (gatewarn :: answer verified high; notes: ['explanation never states answer'])
+Q: Secret code: move every letter forward 2 places (A->C), then reverse the whole word. What does CAT become?
+OPTS: A:CAT | B:TAC | C:VCE | D:ECV ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+Shift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.
+For example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.
+Apply the same to the new word.
+
+### BA_P3_0553 [codes_ciphers/Master] (gatewarn :: answer verified high; notes: ['explanation never states answer'])
+Q: Secret code: move every letter forward 2 places (A->C), then reverse the whole word. What does MAP become?
+OPTS: A:OCR | B:MAP | C:RCO | D:PAM ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+Shift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.
+For example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.
+Apply the same to the new word.
+
+### BA_P3_0571 [codes_ciphers/Master] (gatewarn :: answer verified high; notes: ['explanation never states answer'])
+Q: Secret code: move every letter forward 2 places (A->C), then reverse the whole word. What does RED become?
+OPTS: A:TGF | B:RED | C:DER | D:FGT ANS:D
+EXP: Come, let's work this out together! 💪
+
+Shift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.
+For example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.
+Apply the same to the new word.
+
+### BA_P3_0582 [codes_ciphers/Master] (gatewarn :: answer verified high; notes: ['explanation never states answer'])
+Q: Secret code: move every letter forward 3 places (A->D), then reverse the whole word. What does RED become?
+OPTS: A:RED | B:GHU | C:DER | D:UHG ANS:B
+EXP: Let's solve it together! 🧠
+
+Shift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.
+For example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.
+Apply the same to the new word.
+
+### BA_P3_0659 [codes_ciphers/Master] (gatewarn :: answer verified high; notes: ['explanation never states answer'])
+Q: Secret code: move every letter forward 1 places (A->B), then reverse the whole word. What does MAP become?
+OPTS: A:MAP | B:PAM | C:NBQ | D:QBN ANS:D
+EXP: Come, let's work this out together! 💪
+
+Shift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.
+For example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.
+Apply the same to the new word.
+
+### BA_P3_1134 [before_after/Think] (solver-abstain-low :: tie outcome; gates: ['explanation never states answer'])
+Q: Amy has 4 more stickers than Ben. Amy gives Ben 2 sticker(s). Now who has more stickers, and by how many?
+OPTS: A:They are equal | B:Amy, by 6 | C:Ben, by 4 | D:Ben, by 1 ANS:A
+EXP: Let's solve it together! 🧠
+
+Originally Amy leads by 4. Giving 2 reduces the gap by 4 (2 x 2), so the gap is now 0.
+
+### BA_P3_1145 [before_after/Think] (gatewarn :: answer verified high; notes: ['explanation never states answer'])
+Q: Amy has 4 more stickers than Ben. Amy gives Ben 3 sticker(s). Now who has more stickers, and by how many?
+OPTS: A:They are equal | B:Ben, by 2 | C:Ben, by 4 | D:Amy, by 7 ANS:B
+EXP: Let's break it down together! 🧩
+
+Originally Amy leads by 4. Giving 3 reduces the gap by 6 (2 x 3), so the gap is now -2.
+
+### BA_P3_ADD_0006 [number_analogy/Think] (solver-abstain-low :: ambiguous analogy options; gates clean)
+Q: 6 is to 19 as 7 is to ___?
+OPTS: A:20 | B:22 | C:14 | D:21 ANS:B
+EXP: Come, let's work this out together! 💪
+
+Relation: x3 then +1. 6 -> 19, so 7 -> 22.
+
+### BA_P3_ADD_0036 [sentence_logic/Challenge] (solver-abstain-low :: no if-rules parsed; gates clean)
+Q: Three friends each do a different activity: swimming, cycling, or running. Cai swims. Ali runs. Ben does not cycle. Who is cycling?
+OPTS: A:Ali | B:Ben | C:Cai | D:Ben1 ANS:B
+EXP: Let's solve it together! 🧠
+
+From the clues, Cai=swimming and Ali=running, so Ben=cycling; therefore Ben is cycling.
+
+### BA_P3_ADD_0037 [sentence_logic/Challenge] (solver-abstain-low :: no if-rules parsed; gates clean)
+Q: Three friends each do a different activity: swimming, cycling, or running. Cai cycles. Ben swims. Ali does not run. Who is running?
+OPTS: A:Ali1 | B:Ben | C:Cai | D:Ali ANS:D
+EXP: Let's break it down together! 🧩
+
+From the clues, Cai=cycling and Ben=swimming, so Ali=running; therefore Ali is running.
+
+### BA_P3_ADD_0038 [sentence_logic/Challenge] (solver-abstain-low :: no if-rules parsed; gates clean)
+Q: Three friends each do a different activity: swimming, cycling, or running. Cai swims. Ben runs. Ali does not cycle. Who is cycling?
+OPTS: A:Cai | B:Ali | C:Ali1 | D:Ben ANS:B
+EXP: Good question — let's solve it together! ⭐
+
+From the clues, Cai=swimming and Ben=running, so Ali=cycling; therefore Ali is cycling.
+
+### BA_P3_ADD_0039 [sentence_logic/Challenge] (solver-abstain-low :: no if-rules parsed; gates clean)
+Q: Three friends each do a different activity: swimming, cycling, or running. Cai cycles. Ali swims. Ben does not run. Who is running?
+OPTS: A:Ali | B:Ben | C:Ben1 | D:Cai ANS:B
+EXP: Let's think this through together! 🔍
+
+From the clues, Cai=cycling and Ali=swimming, so Ben=running; therefore Ben is running.
+
+### BA_P3_ADD_0040 [sentence_logic/Challenge] (solver-abstain-low :: no if-rules parsed; gates clean)
+Q: Three friends each do a different activity: swimming, cycling, or running. Ali swims. Cai runs. Ben does not cycle. Who is cycling?
+OPTS: A:Ben1 | B:Cai | C:Ali | D:Ben ANS:D
+EXP: Let's break it down together! 🧩
+
+From the clues, Ali=swimming and Cai=running, so Ben=cycling; therefore Ben is cycling.
+
+### BA_P3_G042 [chain_comparison/Think] (solver-abstain-low :: ask form unparsed; gates clean)
+Q: Dan has 5 fewer stickers than Eve. Eve has 3 more stickers than Fay. Fay has 20 stickers. Who has the fewest stickers?
+OPTS: A:Eve | B:Fay | C:cannot tell | D:Dan ANS:D
+EXP: Let's solve it together! 🧠
+
+Find each person's amount step by step: Fay = 20.
+Eve = 23.
+Dan = 18.
+Comparing 18, 23, and 20, Dan has the fewest (18 stickers).
+
+### BA_P3_G112 [conditional_contrapositive/Think] (gatewarn :: answer verified high; notes: ['explanation never states answer'])
+Q: Rule: If a number is greater than 50, then it is marked with a red tag. Given: The number 28 is not marked with a red tag. What must be true?
+OPTS: A:All numbers are marked red | B:The number 28 is not greater than 50 | C:The number 28 has a red tag | D:The number 28 is greater than 50 ANS:B
+EXP: Come, let's work this out together! 💪
+
+Mia reads if it is Saturday or if it is raining.
+Today she is not reading, so it is neither Saturday nor raining.
+If either were true, she would be reading.
+
+### BA_P3_G113 [conditional_contrapositive/Think] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: Rule: If a day is Sunday, then the library is closed. Given: On Friday the library is not closed. What must be true?
+OPTS: A:Friday is not Sunday | B:Friday is Sunday | C:The library is never open | D:The library is closed on Friday ANS:A
+EXP: Come, let's work this out together! 💪
+
+The given rule is: 'a day is Sunday → the library is closed'.
+We are given that On Friday the library is not closed (the opposite of the conclusion).
+By the logical rule of contrapositive (if Not Q, then Not P), we can validly conclude that:
+
+### BA_P3_G126 [conditional_contrapositive/Explore] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If it is sunny on Saturday, Ken goes to the swimming pool. If Ken goes to the swimming pool, he wears his blue goggles. It is sunny on Saturday. What must be true?
+OPTS: A:Ken does not go to the pool | B:Ken wears his blue goggles | C:It is not sunny on Saturday | D:Ken wears red goggles ANS:B
+EXP: Let's solve it together! 🧠
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: 'Ken wears his blue goggles'.
+
+### BA_P3_G127 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If a number is a multiple of 12, it is a multiple of 6. If a number is a multiple of 6, it is an even number. The number 36 is a multiple of 12. What must be true?
+OPTS: A:36 is an odd number | B:36 is an even number | C:36 is not divisible by 3 | D:36 is not a multiple of 6 ANS:B
+EXP: Let's solve it together! 🧠
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: '36 is an even number'.
+
+### BA_P3_G128 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If Zoe finishes her homework early, she reads a book. If Zoe reads a book, she learns new vocabulary words. Zoe finishes her homework early today. What must be true?
+OPTS: A:Zoe does not read a book | B:Zoe learns new vocabulary words | C:Zoe watches television | D:Zoe does not finish her homework ANS:B
+EXP: Let's solve it together! 🧠
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: 'Zoe learns new vocabulary words'.
+
+### BA_P3_G129 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If an animal is a robin, it is a bird. If an animal is a bird, it has wings. Chirpy is a robin. What must be true?
+OPTS: A:Chirpy has wings | B:Chirpy does not have wings | C:Chirpy is not a bird | D:Chirpy cannot fly ANS:A
+EXP: Let's solve it together! 🧠
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: 'Chirpy has wings'.
+
+### BA_P3_G130 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If a shape is a square, it is a rectangle. If a shape is a rectangle, it has 4 right angles. Shape S is a square. What must be true?
+OPTS: A:Shape S has 3 sides | B:Shape S has only 2 right angles | C:Shape S is not a rectangle | D:Shape S has 4 right angles ANS:D
+EXP: Let's break it down together! 🧩
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: 'Shape S has 4 right angles'.
+
+### BA_P3_G131 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If a student joins the chess club, they receive a club badge. If a student receives a club badge, they can enter the tournament. Liam joins the chess club. What must be true?
+OPTS: A:Liam leaves the chess club | B:Liam does not receive a club badge | C:Liam cannot enter the tournament | D:Liam can enter the tournament ANS:D
+EXP: Let's break it down together! 🧩
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: 'Liam can enter the tournament'.
+
+### BA_P3_G132 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If a plant receives enough sunlight, it makes food. If a plant makes food, it grows healthy green leaves. Plant A receives enough sunlight. What must be true?
+OPTS: A:Plant A receives no sunlight | B:Plant A wilts | C:Plant A does not make food | D:Plant A grows healthy green leaves ANS:D
+EXP: Let's break it down together! 🧩
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: 'Plant A grows healthy green leaves'.
+
+### BA_P3_G133 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If a number is a multiple of 20, it is a multiple of 10. If a number is a multiple of 10, its last digit is 0. The number 60 is a multiple of 20. What must be true?
+OPTS: A:60 has a last digit of 0 | B:60 is not a multiple of 10 | C:60 is an odd number | D:60 ends in 5 ANS:A
+EXP: Let's break it down together! 🧩
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: '60 has a last digit of 0'.
+
+### BA_P3_G134 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If David saves $10 this week, he buys a model airplane kit. If David buys a model airplane kit, he builds it on Sunday. David saves $10 this week. What must be true?
+OPTS: A:David sells his kit | B:David does not buy the kit | C:David does not save $10 | D:David builds the model airplane kit on Sunday ANS:D
+EXP: Let's break it down together! 🧩
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: 'David builds the model airplane kit on Sunday'.
+
+### BA_P3_G135 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If a polygon is a regular hexagon, all 6 of its sides are equal. If all 6 sides are equal, its perimeter is 6 times one side. Shape H is a regular hexagon with side length 3 cm. What must be true?
+OPTS: A:Shape H has a perimeter of 18 cm | B:Shape H has unequal sides | C:Shape H has 5 sides | D:Shape H has a perimeter of 12 cm ANS:A
+EXP: Let's break it down together! 🧩
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: 'Shape H has a perimeter of 18 cm'.
+
+### BA_P3_V06 [codes_ciphers/Challenge] (solver-abstain-low :: cipher needs review; gates clean)
+Q: In a code, DOG becomes GLJ and CAT becomes FDW. The rule is: move the 1st letter forward 3, the 2nd letter back 3, the 3rd letter forward 3, and keep alternating. What does PIG become?
+OPTS: A:SFJ | B:SLJ | C:SFD | D:MFJ ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+Apply the alternating rule to PIG: P forward 3 = S; I back 3 = F; G forward 3 = J.
+So PIG becomes SFJ.
+(SLJ is if every letter moved forward 3; SFD is if the last letter also moved back; MFJ is if the first moved back.)
+
+### BA_P3_V09 [sentence_logic/Challenge] (solver-abstain-low :: no if-rules parsed; gates clean)
+Q: Three boxes are red, blue and green. Each holds one thing: a book, a ball or a coin. (1) The blue box holds the book. (2) The red box does not hold the ball. (3) The green box does not hold the coin. What does the green box hold?
+OPTS: A:ball | B:book | C:coin | D:cannot tell ANS:A
+EXP: Let's solve it together! 🧠
+
+Blue = book, so red and green share ball and coin.
+Red does NOT hold the ball, so red = coin.
+That leaves green = ball.
+Clue (3) is the consistency check: green does not hold the coin - true, so the assignment holds.
+
+### BA_P3_HA_0282 [conditional_contrapositive/Think] (solver-abstain-low :: rule engine hits not unique; gates: ['explanation never states answer')
+Q: Rule: If a card belongs in the blue box, then it has a star. Given: Card 9 has no star. What MUST be true?
+OPTS: A:Card 9 does not belong in the blue box | B:Card 9 has a star | C:the blue box has no cards with stars | D:Card 9 belongs in the blue box ANS:A
+EXP: The rule says belonging needs a star. Card 9 has no star, so it cannot belong in the blue box.
+
+### BA_P3_HA_0284 [conditional_contrapositive/Think] (solver-abstain-low :: rule engine hits not unique; gates: ['explanation never states answer')
+Q: Rule: If a card belongs in Box A, then it has a star. Given: Card 9 has no star. What MUST be true?
+OPTS: A:Card 9 does not belong in Box A | B:Card 9 has a star | C:Box A has no cards with stars | D:Card 9 belongs in Box A ANS:A
+EXP: The rule says belonging needs a star. Card 9 has no star, so it cannot belong in Box A.
+
+### BA_P3_HA_0285 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If Gus saves $10, Gus buys a model kit. If Gus buys a model kit, Gus builds it on Sunday. Today Gus does NOT build it on Sunday. What MUST be true?
+OPTS: A:Gus saves $10 | B:Gus builds it on Sunday | C:Gus did NOT save $10 | D:Gus buys a model kit ANS:C
+EXP: Chain the rules backwards: no final step means the middle step did not happen, which means the first step did not happen either. So Gus did NOT save $10.
+
+### BA_P3_HA_0286 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If Fiona finishes homework early, Fiona reads a book. If Fiona reads a book, Fiona learns new words. Today Fiona does NOT learn new words. What MUST be true?
+OPTS: A:Fiona finishes homework early | B:Fiona learns new words | C:Fiona reads a book | D:Fiona did NOT finish homework early ANS:D
+EXP: Chain the rules backwards: no final step means the middle step did not happen, which means the first step did not happen either. So Fiona did NOT finish homework early.
+
+### BA_P3_HA_0287 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If Ali hears the bell, Ali lines up. If Ali lines up, Ali walks to class quietly. Today Ali does NOT walk to class quietly. What MUST be true?
+OPTS: A:Ali lines up | B:Ali did NOT hear the bell | C:Ali walks to class quietly | D:Ali hears the bell ANS:B
+EXP: Chain the rules backwards: no final step means the middle step did not happen, which means the first step did not happen either. So Ali did NOT hear the bell.
+
+### BA_P3_HA_0288 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If Iris saves $10, Iris buys a model kit. If Iris buys a model kit, Iris builds it on Sunday. Today Iris does NOT build it on Sunday. What MUST be true?
+OPTS: A:Iris buys a model kit | B:Iris builds it on Sunday | C:Iris did NOT save $10 | D:Iris saves $10 ANS:C
+EXP: Chain the rules backwards: no final step means the middle step did not happen, which means the first step did not happen either. So Iris did NOT save $10.
+
+### BA_P3_HA_0361 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If Finn finishes homework early, Finn reads a book. If Finn reads a book, Finn learns new words. Today Finn does NOT learn new words. What MUST be true?
+OPTS: A:Finn did NOT finish homework early | B:Finn learns new words | C:Finn finishes homework early | D:Finn reads a book ANS:A
+EXP: Chain backwards: no final step means the middle step did not happen, so the first step did not happen. Finn did NOT finish homework early.
+
+### BA_P3_HA_0362 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If Diya finishes homework early, Diya reads a book. If Diya reads a book, Diya learns new words. Today Diya does NOT learn new words. What MUST be true?
+OPTS: A:Diya learns new words | B:Diya did NOT finish homework early | C:Diya reads a book | D:Diya finishes homework early ANS:B
+EXP: Chain backwards: no final step means the middle step did not happen, so the first step did not happen. Diya did NOT finish homework early.
+
+### BA_P3_HA_0363 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If Ali finishes homework early, Ali reads a book. If Ali reads a book, Ali learns new words. Today Ali does NOT learn new words. What MUST be true?
+OPTS: A:Ali did NOT finish homework early | B:Ali reads a book | C:Ali learns new words | D:Ali finishes homework early ANS:A
+EXP: Chain backwards: no final step means the middle step did not happen, so the first step did not happen. Ali did NOT finish homework early.
+
+### BA_P3_HA_0364 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If Ali saves $10, Ali buys a model kit. If Ali buys a model kit, Ali builds it on Sunday. Today Ali saves $10. What MUST be true?
+OPTS: A:Ali does NOT build it on Sunday | B:Ali does NOT buy a model kit | C:Ali does NOT save $10 | D:Ali builds it on Sunday ANS:D
+EXP: Chain forwards: the first step happened, so the middle step happened, so the final step happened. Ali builds it on Sunday.
+
+### BA_P3_HA_0365 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If Finn finishes homework early, Finn reads a book. If Finn reads a book, Finn learns new words. Today Finn finishes homework early. What MUST be true?
+OPTS: A:Finn does NOT read a book | B:Finn does NOT learn new words | C:Finn learns new words | D:Finn does NOT finish homework early ANS:C
+EXP: Chain forwards: the first step happened, so the middle step happened, so the final step happened. Finn learns new words.
+
+### BA_P3_HA_0366 [conditional_contrapositive/Challenge] (solver-abstain-low :: rule engine hits not unique; gates clean)
+Q: If Cai hears the bell, Cai lines up. If Cai lines up, Cai walks to class quietly. Today Cai hears the bell. What MUST be true?
+OPTS: A:Cai does NOT walk to class quietly | B:Cai walks to class quietly | C:Cai does NOT line up | D:Cai does NOT hear the bell ANS:B
+EXP: Chain forwards: the first step happened, so the middle step happened, so the final step happened. Cai walks to class quietly.
+

@@ -1,0 +1,1155 @@
+### BA_P3_0002 [pattern_discovery/Think] (no clean rule; gates clean)
+Q: Find the next number: 3, 6, 5, 12, 7, 24, 9, ___?
+OPTS: A:36 | B:48 | C:40 | D:52 ANS:B
+EXP: Good question — let's solve it together! ⭐
+
+Two woven sequences.
+Odd positions: 3, 5, 7, 9 (+2).
+Even positions: 6, 12, 24 (x2).
+The missing 8th term is the next even-position term: 24 x 2 = 48.
+
+### BA_P3_0006 [number_puzzles_systems/Challenge] (balance pairs unparsed; gates clean)
+Q: A, B and C are single digits. A + B = 10, B + C = 8, and A + C = 6. What is A?
+OPTS: A:2 | B:4 | C:5 | D:6 ANS:B
+EXP: Good question — let's solve it together! ⭐
+
+Try digits: if A = 4 then B = 6 (A+B=10) and C = 2 (B+C=8); check A+C = 4+2 = 6. Works, so A = 4.
+
+### BA_P3_0007 [deductive_ordering/Think] (could not parse order edges; gates clean)
+Q: Four teams race. Red finishes before Blue. Green finishes after Yellow. Blue finishes before Green. Yellow finishes before Red. Order them from fastest to slowest.
+OPTS: A:Yellow, Red, Blue, Green | B:Red, Blue, Green, Yellow | C:Yellow, Blue, Red, Green | D:Green, Yellow, Red, Blue ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+From the clues: Yellow < Red < Blue (Yellow before Red, Red before Blue).
+Also Blue < Green and Yellow < Green.
+Together: Yellow < Red < Blue < Green.
+Fastest to slowest: Yellow, Red, Blue, Green.
+
+### BA_P3_0008 [constraint_matching/Think] (seating solutions not unique; gates clean)
+Q: Anya, Ben and Cai sit in a row of three. Anya is in the middle. Ben is not at the left end. Who sits at the left end?
+OPTS: A:Anya | B:Ben | C:Cai | D:Cannot tell ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+Anya is in the middle (seat 2).
+Left (1) and right (3) are Ben and Cai.
+Ben is not left, so Ben is right and Cai is left.
+
+### BA_P3_0009 [conditional_logic/Think] (rule engine hits not unique; gates clean)
+Q: If it is sunny, the cat sits by the window. The cat is NOT by the window. What can we conclude?
+OPTS: A:It is sunny | B:It is not sunny | C:The cat is outside | D:The cat is sleeping ANS:B
+EXP: Good question — let's solve it together! ⭐
+
+Rule: sunny -> cat by window.
+Cat NOT by window, so it cannot be sunny.
+You cannot tell where the cat is, only that it is not sunny.
+
+### BA_P3_0011 [syllogisms/Challenge] (syllogism hits not unique; gates: ['explanation never states answer'])
+Q: All squares are blue. All blue things are small. Which MUST be true?
+OPTS: A:All squares are small | B:All small things are squares | C:All blue things are squares | D:All squares are heavy ANS:A
+EXP: Let's think this through together! 🔍
+
+Every square is blue, and everything blue is small, so every square is small. The others reverse the direction of the rules and need not be true.
+
+### BA_P3_0012 [constraint_matching/Challenge] (seating solutions not unique; gates clean)
+Q: Four friends each do a different activity: swimming, cycling, running, skating. (1) Ben cycles. (2) Cindy runs. (3) Amy does not swim. (4) Dan does not skate. Who swims?
+OPTS: A:Amy | B:Ben | C:Cindy | D:Dan ANS:D
+EXP: Let's think this through together! 🔍
+
+Ben cycles and Cindy runs, leaving swimming and skating for Amy and Dan.
+Amy does not swim, so Amy skates and Dan swims.
+Check clue 4: Dan does not skate - true, he swims.
+Consistent.
+
+### BA_P3_0016 [sentence_logic/Think] (no if-rules parsed; gates: ['explanation never states answer'])
+Q: Mei reads every Saturday. She also reads whenever it rains. Today she is NOT reading. What MUST be true?
+OPTS: A:It is not Saturday and not raining | B:It is Saturday | C:It is raining | D:Mei is sleeping ANS:A
+EXP: Let's think this through together! 🔍
+
+She reads if Saturday OR raining.
+Today she does NOT read, so neither condition holds: it is not Saturday and it is not raining.
+B and C would make her read; D adds info we are not given.
+
+### BA_P3_0025 [figure_analogy/Think] (analogy figure parse incomplete; gates clean)
+Q: A small red square changes into a large blue square (size flips AND colour flips, shape stays). Using the same change, a small blue circle changes into a ___?
+OPTS: A:large red circle | B:small red circle | C:large blue circle | D:large blue square ANS:A
+EXP: Come, let's work this out together! 💪
+
+Two changes: size small->large, and colour flips (red->blue, so blue->red).
+Shape stays the same.
+So small blue circle -> large red circle.
+
+### BA_P3_0026 [count_sequence/Explore] (series unparsed; gates clean)
+Q: Groups of dots: 2, then 3, then 5, then 8, then 13. How many dots come next?
+OPTS: A:18 | B:20 | C:21 | D:26 ANS:C
+EXP: Come, let's work this out together! 💪
+
+Each group has as many dots as the two previous groups combined: 2+3=5, 3+5=8, 5+8=13, so 8+13=21.
+
+### BA_P3_0029 [guess_check/Think] (coin form unparsed; gates clean)
+Q: There are some 2-dollar and 5-dollar coins. There are 6 coins in total and they make 18 dollars. How many 5-dollar coins are there?
+OPTS: A:1 | B:2 | C:3 | D:4 ANS:B
+EXP: Come, let's work this out together! 💪
+
+Try 2 five-dollar coins (=10) and 4 two-dollar coins (=8).
+Total value 18 and total coins 6.
+That fits, so there are 2 five-dollar coins.
+
+### BA_P3_0031 [pattern_discovery/Challenge] (no clean rule; gates clean)
+Q: Find the next number: 1, 2, 6, 24, 120, ___?
+OPTS: A:240 | B:600 | C:720 | D:144 ANS:C
+EXP: Let's solve it together! 🧠
+
+Each term is the previous term multiplied by a growing integer: x2, x3, x4, x5. Next is x6: 120 x 6 = 720.
+
+### BA_P3_0035 [conditional_logic/Challenge] (rule engine hits not unique; gates: ['explanation never states answer')
+Q: If it rains, the match is cancelled. If the match is cancelled, the picnic moves indoors. It is raining. What MUST be true?
+OPTS: A:The picnic is indoors | B:It is not raining | C:The match is playing | D:The picnic is outside ANS:A
+EXP: Let's solve it together! 🧠
+
+It rains -> match cancelled -> picnic indoors.
+So the picnic must be indoors.
+The others contradict the chain.
+
+### BA_P3_0054 [alternating_rule/Challenge] (no clean rule; gates clean)
+Q: Find the next number: 1, 2, 4, 5, 10, ___?
+OPTS: A:11 | B:20 | C:21 | D:10 ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+The rule alternates +1, then x2: 1->2 (+1), 2->4 (x2), 4->5 (+1), 5->10 (x2). After the x2 step the next step is +1, so 10 + 1 = 11.
+
+### BA_P3_0060 [linear_order/Explore] (could not parse order edges; gates: ['explanation never states answer')
+Q: P and Q are taller than R. Q is shorter than P. Order them from tallest to shortest.
+OPTS: A:P, Q, R | B:Q, P, R | C:R, P, Q | D:P, R, Q ANS:A
+EXP: Let's think this through together! 🔍
+
+P is tallest (P > Q and P > R). Q is shorter than P but taller than R, so P > Q > R.
+
+### BA_P3_0062 [seating_constraint/Think] (seating solutions not unique; gates clean)
+Q: Ali, Ben, Cai and Dee sit in a row of four. Ali is at the left end. Cai is in the middle. Ben is not next to Ali. Who sits second from the left?
+OPTS: A:Dee | B:Ben | C:Cai | D:Ali ANS:A
+EXP: Let's think this through together! 🔍
+
+Seats: 1 Ali, 3 Cai.
+Seats 2 and 4 are Ben and Dee.
+Ben is not next to Ali (seat 2 is next to Ali), so Ben is seat 4 and Dee is seat 2.
+Second from left = Dee.
+
+### BA_P3_0064 [modus_tollens/Think] (rule engine hits not unique; gates clean)
+Q: If a number is even, it is coloured blue. The number 7 is NOT blue. What can we conclude?
+OPTS: A:7 is not even | B:7 is even | C:7 is blue | D:cannot tell ANS:A
+EXP: Let's think this through together! 🔍
+
+Rule: even -> blue.
+7 is not blue, so by the contrapositive 7 is not even.
+You cannot tell its colour otherwise.
+
+### BA_P3_0065 [chained_conditionals/Challenge] (rule engine hits not unique; gates clean)
+Q: If it is hot, we swim. If we swim, we are happy. It is hot. What MUST be true?
+OPTS: A:We are happy | B:It is cold | C:We do not swim | D:We are sad ANS:A
+EXP: Let's think this through together! 🔍
+
+Hot -> swim -> happy.
+Since it is hot, we swim and we are happy.
+The only MUST-be-true option is 'we are happy'.
+
+### BA_P3_0068 [syllogism_particular/Challenge] (syllogism hits not unique; gates clean)
+Q: Some squares are red. All red things are small. Which MUST be true?
+OPTS: A:Some squares are small | B:All squares are small | C:All small things are squares | D:No squares are small ANS:A
+EXP: Let's think this through together! 🔍
+
+The red squares are squares AND red; all red things are small, so those squares are small.
+Thus SOME squares are small.
+'All squares are small' need not be true.
+
+### BA_P3_0076 [position/Think] (grid ask unparsed; gates clean)
+Q: A is to the left of B. C is above A. D is to the right of C. Which letter is in the top-right position?
+OPTS: A:D | B:A | C:B | D:C ANS:A
+EXP: Come, let's work this out together! 💪
+
+Place A left of B (same row).
+C above A (col1, row above).
+D right of C (col2, row above).
+The top-right position is D.
+
+### BA_P3_0087 [figure_analogy/Think] (analogy figure parse incomplete; gates clean)
+Q: A small red circle changes into a large blue circle (size flips AND colour flips red<->blue, shape stays). Using the same change, a small blue square changes into a ___?
+OPTS: A:large red square | B:small red square | C:large blue square | D:large blue circle ANS:A
+EXP: Let's solve it together! 🧠
+
+Two changes: size small->large, and colour flips (red->blue, so blue->red).
+Shape stays the same.
+So small blue square -> large red square.
+
+### BA_P3_0089 [draw_diagram/Think] (counts unparsed; gates clean)
+Q: Five trees are planted in a straight line, 2 metres apart. How long is the row from the first tree to the last tree?
+OPTS: A:8 m | B:10 m | C:5 m | D:6 m ANS:A
+EXP: Let's solve it together! 🧠
+
+Draw a diagram: with 5 trees there are 4 gaps between them.
+Each gap is 2 m, so the row is 4 x 2 = 8 m.
+(Not 5 x 2.)
+
+### BA_P3_0090 [make_list/Think] (combinatorial form unparsed; gates clean)
+Q: How many two-letter codes can you make using the letters A, B and C if you may repeat a letter (e.g. AA, AB)?
+OPTS: A:9 | B:6 | C:8 | D:12 ANS:A
+EXP: Let's break it down together! 🧩
+
+List them systematically: AA, AB, AC, BA, BB, BC, CA, CB, CC = 9 codes. (3 choices for the first letter x 3 for the second = 9.)
+
+### BA_P3_0284 [constraint/Think] (seating ask unparsed; gates clean)
+Q: Cai, Ben, Dee and Eva sit in a row of four. Cai is at the left end. Ben sits next to Cai. Dee sits at the right end. Who sits third from the left?
+OPTS: A:Ben | B:Cai | C:Dee | D:Eva ANS:D
+EXP: Come, let's work this out together! 💪
+
+Seat 1 = Cai (left end).
+Ben sits next to Cai, so seat 2 = Ben.
+Dee is at the right end (seat 4), so the only seat left for Eva is seat 3.
+Therefore seat 3 (third from the left) = Eva.
+
+### BA_P3_0285 [constraint/Think] (seating ask unparsed; gates clean)
+Q: Ben, Ali, Dee and Cai sit in a row of four. Ben is at the left end. Ali sits next to Ben. Dee sits at the right end. Who sits third from the left?
+OPTS: A:Cai | B:Ben | C:Ali | D:Dee ANS:A
+EXP: Come, let's work this out together! 💪
+
+Seat 1 = Ben (left end).
+Ali sits next to Ben, so seat 2 = Ali.
+Dee is at the right end (seat 4), so the only seat left for Cai is seat 3.
+Therefore seat 3 (third from the left) = Cai.
+
+### BA_P3_0289 [constraint/Think] (seating ask unparsed; gates clean)
+Q: Ben, Ali, Cai and Dee sit in a row of four. Ben is at the left end. Ali sits next to Ben. Cai sits at the right end. Who sits second from the left?
+OPTS: A:Dee | B:Ben | C:Cai | D:Ali ANS:D
+EXP: Come, let's work this out together! 💪
+
+Seat 1 = Ben (left end).
+Ali sits next to Ben, so seat 2 = Ali.
+Cai is at the right end (seat 4), so the only seat left for Dee is seat 3.
+Therefore seat 2 (second from the left) = Ali.
+
+### BA_P3_0300 [conditional/Think] (rule engine hits not unique; gates clean)
+Q: If a number is even, it is coloured blue. The number 27 is NOT blue. What can we conclude?
+OPTS: A:It is even | B:It is blue | C:cannot tell | D:It is not even ANS:D
+EXP: Let's think this through together! 🔍
+
+Rule: even -> blue. 27 is not blue, so by the contrapositive it is not even.
+
+### BA_P3_0304 [constraint/Think] (seating ask unparsed; gates clean)
+Q: Ali, Cai, Ben and Dee sit in a row of four. Ali is at the left end. Cai sits next to Ali. Ben sits at the right end. Who sits second from the left?
+OPTS: A:Ali | B:Cai | C:Ben | D:Dee ANS:B
+EXP: Let's think this through together! 🔍
+
+Seat 1 = Ali (left end).
+Cai sits next to Ali, so seat 2 = Cai.
+Ben is at the right end (seat 4), so the only seat left for Dee is seat 3.
+Therefore seat 2 (second from the left) = Cai.
+
+### BA_P3_0306 [constraint/Think] (seating ask unparsed; gates clean)
+Q: Eva, Ben, Dee and Ali sit in a row of four. Eva is at the left end. Ben sits next to Eva. Dee sits at the right end. Who sits second from the left?
+OPTS: A:Eva | B:Ali | C:Dee | D:Ben ANS:D
+EXP: Let's think this through together! 🔍
+
+Seat 1 = Eva (left end).
+Ben sits next to Eva, so seat 2 = Ben.
+Dee is at the right end (seat 4), so the only seat left for Ali is seat 3.
+Therefore seat 2 (second from the left) = Ben.
+
+### BA_P3_0375 [constraint/Think] (seating ask unparsed; gates clean)
+Q: Cai, Dee, Eva and Ali sit in a row of four. Cai is at the left end. Dee sits next to Cai. Eva sits at the right end. Who sits third from the left?
+OPTS: A:Cai | B:Eva | C:Dee | D:Ali ANS:D
+EXP: Let's solve it together! 🧠
+
+Seat 1 = Cai (left end).
+Dee sits next to Cai, so seat 2 = Dee.
+Eva is at the right end (seat 4), so the only seat left for Ali is seat 3.
+Therefore seat 3 (third from the left) = Ali.
+
+### BA_P3_0376 [constraint/Think] (seating ask unparsed; gates clean)
+Q: Ali, Cai, Dee and Eva sit in a row of four. Ali is at the left end. Cai sits next to Ali. Dee sits at the right end. Who sits second from the left?
+OPTS: A:Eva | B:Cai | C:Dee | D:Ali ANS:B
+EXP: Let's solve it together! 🧠
+
+Seat 1 = Ali (left end).
+Cai sits next to Ali, so seat 2 = Cai.
+Dee is at the right end (seat 4), so the only seat left for Eva is seat 3.
+Therefore seat 2 (second from the left) = Cai.
+
+### BA_P3_0383 [constraint/Think] (seating ask unparsed; gates clean)
+Q: Dee, Eva, Ben and Ali sit in a row of four. Dee is at the left end. Eva sits next to Dee. Ben sits at the right end. Who sits third from the left?
+OPTS: A:Dee | B:Eva | C:Ali | D:Ben ANS:C
+EXP: Let's break it down together! 🧩
+
+Seat 1 = Dee (left end).
+Eva sits next to Dee, so seat 2 = Eva.
+Ben is at the right end (seat 4), so the only seat left for Ali is seat 3.
+Therefore seat 3 (third from the left) = Ali.
+
+### BA_P3_0384 [constraint/Think] (seating ask unparsed; gates clean)
+Q: Ali, Eva, Cai and Ben sit in a row of four. Ali is at the left end. Eva sits next to Ali. Cai sits at the right end. Who sits second from the left?
+OPTS: A:Ben | B:Ali | C:Cai | D:Eva ANS:D
+EXP: Let's break it down together! 🧩
+
+Seat 1 = Ali (left end).
+Eva sits next to Ali, so seat 2 = Eva.
+Cai is at the right end (seat 4), so the only seat left for Ben is seat 3.
+Therefore seat 2 (second from the left) = Eva.
+
+### BA_P3_0385 [constraint/Think] (seating ask unparsed; gates clean)
+Q: Dee, Eva, Cai and Ali sit in a row of four. Dee is at the left end. Eva sits next to Dee. Cai sits at the right end. Who sits third from the left?
+OPTS: A:Eva | B:Ali | C:Dee | D:Cai ANS:B
+EXP: Let's break it down together! 🧩
+
+Seat 1 = Dee (left end).
+Eva sits next to Dee, so seat 2 = Eva.
+Cai is at the right end (seat 4), so the only seat left for Ali is seat 3.
+Therefore seat 3 (third from the left) = Ali.
+
+### BA_P3_0392 [conditional/Think] (rule engine hits not unique; gates clean)
+Q: If a number is even, it is coloured blue. The number 25 is NOT blue. What can we conclude?
+OPTS: A:cannot tell | B:It is even | C:It is blue | D:It is not even ANS:D
+EXP: Good question — let's solve it together! ⭐
+
+Rule: even -> blue. 25 is not blue, so by the contrapositive it is not even.
+
+### BA_P3_0402 [constraint/Think] (seating ask unparsed; gates clean)
+Q: Dee, Ben, Eva and Ali sit in a row of four. Dee is at the left end. Ben sits next to Dee. Eva sits at the right end. Who sits second from the left?
+OPTS: A:Eva | B:Ali | C:Dee | D:Ben ANS:D
+EXP: Let's solve it together! 🧠
+
+Seat 1 = Dee (left end).
+Ben sits next to Dee, so seat 2 = Ben.
+Eva is at the right end (seat 4), so the only seat left for Ali is seat 3.
+Therefore seat 2 (second from the left) = Ben.
+
+### BA_P3_0408 [constraint/Think] (seating ask unparsed; gates clean)
+Q: Ali, Eva, Cai and Dee sit in a row of four. Ali is at the left end. Eva sits next to Ali. Cai sits at the right end. Who sits second from the left?
+OPTS: A:Eva | B:Dee | C:Cai | D:Ali ANS:A
+EXP: Let's solve it together! 🧠
+
+Seat 1 = Ali (left end).
+Eva sits next to Ali, so seat 2 = Eva.
+Cai is at the right end (seat 4), so the only seat left for Dee is seat 3.
+Therefore seat 2 (second from the left) = Eva.
+
+### BA_P3_0420 [conditional/Think] (rule engine hits not unique; gates clean)
+Q: If a number is even, it is coloured blue. The number 23 is NOT blue. What can we conclude?
+OPTS: A:It is not even | B:cannot tell | C:It is blue | D:It is even ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+Rule: even -> blue. 23 is not blue, so by the contrapositive it is not even.
+
+### BA_P3_0433 [conditional/Think] (rule engine hits not unique; gates clean)
+Q: If a number is even, it is coloured blue. The number 11 is NOT blue. What can we conclude?
+OPTS: A:It is blue | B:It is not even | C:cannot tell | D:It is even ANS:B
+EXP: Let's think this through together! 🔍
+
+Rule: even -> blue. 11 is not blue, so by the contrapositive it is not even.
+
+### BA_P3_0444 [constraint/Think] (seating ask unparsed; gates clean)
+Q: Dee, Cai, Eva and Ben sit in a row of four. Dee is at the left end. Cai sits next to Dee. Eva sits at the right end. Who sits second from the left?
+OPTS: A:Ben | B:Eva | C:Dee | D:Cai ANS:D
+EXP: Come, let's work this out together! 💪
+
+Seat 1 = Dee (left end).
+Cai sits next to Dee, so seat 2 = Cai.
+Eva is at the right end (seat 4), so the only seat left for Ben is seat 3.
+Therefore seat 2 (second from the left) = Cai.
+
+### BA_P3_0450 [constraint/Think] (seating ask unparsed; gates clean)
+Q: Ben, Ali, Cai and Dee sit in a row of four. Ben is at the left end. Ali sits next to Ben. Cai sits at the right end. Who sits third from the left?
+OPTS: A:Ali | B:Ben | C:Cai | D:Dee ANS:D
+EXP: Let's solve it together! 🧠
+
+Seat 1 = Ben (left end).
+Ali sits next to Ben, so seat 2 = Ali.
+Cai is at the right end (seat 4), so the only seat left for Dee is seat 3.
+Therefore seat 3 (third from the left) = Dee.
+
+### BA_P3_0451 [conditional/Think] (rule engine hits not unique; gates clean)
+Q: If a number is even, it is coloured blue. The number 29 is NOT blue. What can we conclude?
+OPTS: A:It is not even | B:It is even | C:It is blue | D:cannot tell ANS:A
+EXP: Let's solve it together! 🧠
+
+Rule: even -> blue. 29 is not blue, so by the contrapositive it is not even.
+
+### BA_P3_0472 [constraint/Think] (seating ask unparsed; gates clean)
+Q: Eva, Cai, Dee and Ben sit in a row of four. Eva is at the left end. Cai sits next to Eva. Dee sits at the right end. Who sits second from the left?
+OPTS: A:Eva | B:Ben | C:Cai | D:Dee ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+Seat 1 = Eva (left end).
+Cai sits next to Eva, so seat 2 = Cai.
+Dee is at the right end (seat 4), so the only seat left for Ben is seat 3.
+Therefore seat 2 (second from the left) = Cai.
+
+### BA_P3_0502 [constraint/Think] (seating ask unparsed; gates clean)
+Q: Ali, Cai, Ben and Dee sit in a row of four. Ali is at the left end. Cai sits next to Ali. Ben sits at the right end. Who sits third from the left?
+OPTS: A:Cai | B:Ali | C:Ben | D:Dee ANS:D
+EXP: Good question — let's solve it together! ⭐
+
+Seat 1 = Ali (left end).
+Cai sits next to Ali, so seat 2 = Cai.
+Ben is at the right end (seat 4), so the only seat left for Dee is seat 3.
+Therefore seat 3 (third from the left) = Dee.
+
+### BA_P3_1134 [before_after/Think] (tie outcome; gates: ['explanation never states answer'])
+Q: Amy has 4 more stickers than Ben. Amy gives Ben 2 sticker(s). Now who has more stickers, and by how many?
+OPTS: A:They are equal | B:Amy, by 6 | C:Ben, by 4 | D:Ben, by 1 ANS:A
+EXP: Let's solve it together! 🧠
+
+Originally Amy leads by 4. Giving 2 reduces the gap by 4 (2 x 2), so the gap is now 0.
+
+### BA_P3_G042 [chain_comparison/Think] (ask form unparsed; gates clean)
+Q: Dan has 5 fewer stickers than Eve. Eve has 3 more stickers than Fay. Fay has 20 stickers. Who has the fewest stickers?
+OPTS: A:Eve | B:Fay | C:cannot tell | D:Dan ANS:D
+EXP: Let's solve it together! 🧠
+
+Find each person's amount step by step: Fay = 20.
+Eve = 23.
+Dan = 18.
+Comparing 18, 23, and 20, Dan has the fewest (18 stickers).
+
+### BA_P3_G061 [constraint_placement/Think] (complex seating wording; gates clean)
+Q: Ali, Ben, Cai, and Dan sit in a cinema row with seats 1 to 4 from left to right. Dan sits in position 1 at the left end. Ben is not at either end. Cai sits immediately to the right of Ben. Who sits in seat 2?
+OPTS: A:Dan | B:Ali | C:Cai | D:Ben ANS:D
+EXP: Good question — let's solve it together! ⭐
+
+Position 1 is occupied by Dan.
+Since Ben is not at either end and Cai sits immediately to the right of Ben, Ben and Cai must occupy positions 2 and 3 respectively (with Ben in 2 and Cai in 3).
+This leaves position 4 
+
+### BA_P3_G062 [constraint_placement/Think] (complex seating wording; gates clean)
+Q: Eve, Fay, Gil, and Han are seated in a classroom row from seat 1 (left) to seat 4 (right). Han sits in position 1 at the left end. Fay is not at either end. Gil sits immediately to the right of Fay. Who sits in seat 3?
+OPTS: A:Han | B:Fay | C:Gil | D:Eve ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+Position 1 is occupied by Han.
+Since Fay is not at either end and Gil sits immediately to the right of Fay, Fay and Gil must occupy positions 2 and 3 respectively (with Fay in 2 and Gil in 3).
+This leaves position 4 
+
+### BA_P3_G063 [constraint_placement/Think] (complex seating wording; gates clean)
+Q: Ina, Jay, Ken, and Leo sit on a park bench with four numbered spots 1 to 4 from left to right. Leo sits in position 1 at the left end. Jay is not at either end. Ken sits immediately to the right of Jay. Who sits in spot 2?
+OPTS: A:Ken | B:Leo | C:Jay | D:Ina ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+Position 1 is occupied by Leo.
+Since Jay is not at either end and Ken sits immediately to the right of Jay, Jay and Ken must occupy positions 2 and 3 respectively (with Jay in 2 and Ken in 3).
+This leaves position 4 
+
+### BA_P3_G064 [constraint_placement/Think] (complex seating wording; gates clean)
+Q: Mia, Nora, Owen, and Pam are seated in four consecutive bus seats (1 to 4). Pam sits in position 1 at the left end. Nora is not at either end. Owen sits immediately to the right of Nora. Who sits in seat 3?
+OPTS: A:Owen | B:Nora | C:Pam | D:Mia ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+Position 1 is occupied by Pam.
+Since Nora is not at either end and Owen sits immediately to the right of Nora, Nora and Owen must occupy positions 2 and 3 respectively (with Nora in 2 and Owen in 3).
+This leaves posi
+
+### BA_P3_G065 [constraint_placement/Think] (complex seating wording; gates clean)
+Q: Roy, Sam, Tina, and Uma sit at a computer lab row (stations 1 to 4 from left to right). Uma sits in position 1 at the left end. Sam is not at either end. Tina sits immediately to the right of Sam. Who sits in station 2?
+OPTS: A:Tina | B:Roy | C:Uma | D:Sam ANS:D
+EXP: Good question — let's solve it together! ⭐
+
+Position 1 is occupied by Uma.
+Since Sam is not at either end and Tina sits immediately to the right of Sam, Sam and Tina must occupy positions 2 and 3 respectively (with Sam in 2 and Tina in 3).
+This leaves position
+
+### BA_P3_G066 [constraint_placement/Think] (complex seating wording; gates clean)
+Q: Amy, Bob, Chloe, and Dave are sitting in four front-row theater seats 1 to 4. Dave sits in position 1 at the left end. Bob is not at either end. Chloe sits immediately to the right of Bob. Who sits in seat 3?
+OPTS: A:Chloe | B:Bob | C:Amy | D:Dave ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+Position 1 is occupied by Dave.
+Since Bob is not at either end and Chloe sits immediately to the right of Bob, Bob and Chloe must occupy positions 2 and 3 respectively (with Bob in 2 and Chloe in 3).
+This leaves posi
+
+### BA_P3_G067 [constraint_placement/Think] (complex seating wording; gates clean)
+Q: Ella, Fred, Gina, and Hugo sit in a library study booth with 4 chairs in a row. Hugo sits in position 1 at the left end. Fred is not at either end. Gina sits immediately to the right of Fred. Who sits in chair 2?
+OPTS: A:Fred | B:Ella | C:Gina | D:Hugo ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+Position 1 is occupied by Hugo.
+Since Fred is not at either end and Gina sits immediately to the right of Fred, Fred and Gina must occupy positions 2 and 3 respectively (with Fred in 2 and Gina in 3).
+This leaves pos
+
+### BA_P3_G068 [constraint_placement/Think] (complex seating wording; gates clean)
+Q: Ivy, Jack, Kira, and Luke are seated in four auditorium chairs numbered 1 to 4. Luke sits in position 1 at the left end. Jack is not at either end. Kira sits immediately to the right of Jack. Who sits in chair 3?
+OPTS: A:Ivy | B:Kira | C:Jack | D:Luke ANS:B
+EXP: Good question — let's solve it together! ⭐
+
+Position 1 is occupied by Luke.
+Since Jack is not at either end and Kira sits immediately to the right of Jack, Jack and Kira must occupy positions 2 and 3 respectively (with Jack in 2 and Kira in 3).
+This leaves pos
+
+### BA_P3_G069 [constraint_placement/Think] (complex seating wording; gates clean)
+Q: Maya, Noah, Olga, and Paul sit in four consecutive train seats 1 to 4. Paul sits in position 1 at the left end. Noah is not at either end. Olga sits immediately to the right of Noah. Who sits in seat 2?
+OPTS: A:Paul | B:Maya | C:Noah | D:Olga ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+Position 1 is occupied by Paul.
+Since Noah is not at either end and Olga sits immediately to the right of Noah, Noah and Olga must occupy positions 2 and 3 respectively (with Noah in 2 and Olga in 3).
+This leaves pos
+
+### BA_P3_G070 [constraint_placement/Think] (complex seating wording; gates clean)
+Q: Quin, Rita, Seth, and Toby are sitting on a wooden bench at spots 1 to 4. Toby sits in position 1 at the left end. Rita is not at either end. Seth sits immediately to the right of Rita. Who sits in spot 3?
+OPTS: A:Rita | B:Toby | C:Quin | D:Seth ANS:D
+EXP: Let's think this through together! 🔍
+
+Position 1 is occupied by Toby.
+Since Rita is not at either end and Seth sits immediately to the right of Rita, Rita and Seth must occupy positions 2 and 3 respectively (with Rita in 2 and Seth in 3).
+This leaves position 
+
+### BA_P3_G071 [constraint_placement/Think] (seating solutions not unique; gates clean)
+Q: Alex, Beth, Cole, and Dora are seated in desks 1 to 4 from left to right. Alex sits in position 4 at the far right. Beth sits immediately to the left of Alex. Dora sits somewhere to the left of Cole. Who sits in desk 2?
+OPTS: A:Beth | B:Alex | C:Dora | D:Cole ANS:D
+EXP: Let's think this through together! 🔍
+
+Position 4 is Alex.
+Beth sits immediately to the left of Alex, placing Beth in position 3.
+Positions 1 and 2 remain for Dora and Cole.
+Since Dora is to the left of Cole, Dora is in position 1 and Cole in position 2.
+Full o
+
+### BA_P3_G072 [constraint_placement/Think] (seating solutions not unique; gates clean)
+Q: Eric, Finn, Gwen, and Hank sit in a row of four reading chairs (1 to 4). Eric sits in position 4 at the far right. Finn sits immediately to the left of Eric. Hank sits somewhere to the left of Gwen. Who sits in chair 1?
+OPTS: A:Gwen | B:Finn | C:Hank | D:Eric ANS:C
+EXP: Let's think this through together! 🔍
+
+Position 4 is Eric.
+Finn sits immediately to the left of Eric, placing Finn in position 3.
+Positions 1 and 2 remain for Hank and Gwen.
+Since Hank is to the left of Gwen, Hank is in position 1 and Gwen in position 2.
+Full o
+
+### BA_P3_G073 [constraint_placement/Think] (seating solutions not unique; gates clean)
+Q: Ivan, Jade, Kurt, and Lily are seated in four concert seats from left to right. Ivan sits in position 4 at the far right. Jade sits immediately to the left of Ivan. Lily sits somewhere to the left of Kurt. Who sits in seat 2?
+OPTS: A:Ivan | B:Lily | C:Jade | D:Kurt ANS:D
+EXP: Let's think this through together! 🔍
+
+Position 4 is Ivan.
+Jade sits immediately to the left of Ivan, placing Jade in position 3.
+Positions 1 and 2 remain for Lily and Kurt.
+Since Lily is to the left of Kurt, Lily is in position 1 and Kurt in position 2.
+Full o
+
+### BA_P3_G074 [constraint_placement/Think] (seating solutions not unique; gates clean)
+Q: Mark, Nina, Oscar, and Penny sit in four consecutive exam desks numbered 1 to 4. Mark sits in position 4 at the far right. Nina sits immediately to the left of Mark. Penny sits somewhere to the left of Oscar. Who sits in desk 1?
+OPTS: A:Nina | B:Penny | C:Oscar | D:Mark ANS:B
+EXP: Let's think this through together! 🔍
+
+Position 4 is Mark.
+Nina sits immediately to the left of Mark, placing Nina in position 3.
+Positions 1 and 2 remain for Penny and Oscar.
+Since Penny is to the left of Oscar, Penny is in position 1 and Oscar in position 2.
+
+
+### BA_P3_G075 [constraint_placement/Think] (seating solutions not unique; gates clean)
+Q: Ross, Sara, Tom, and Una are sitting in four cafe chairs in a row. Ross sits in position 4 at the far right. Sara sits immediately to the left of Ross. Una sits somewhere to the left of Tom. Who sits in chair 2?
+OPTS: A:Tom | B:Una | C:Ross | D:Sara ANS:A
+EXP: Let's think this through together! 🔍
+
+Position 4 is Ross.
+Sara sits immediately to the left of Ross, placing Sara in position 3.
+Positions 1 and 2 remain for Una and Tom.
+Since Una is to the left of Tom, Una is in position 1 and Tom in position 2.
+Full order: 
+
+### BA_P3_G076 [constraint_placement/Think] (seating solutions not unique; gates clean)
+Q: Vince, Wendy, Xavier, and Yara sit in a row of four stadium seats (1 to 4). Vince sits in position 4 at the far right. Wendy sits immediately to the left of Vince. Yara sits somewhere to the left of Xavier. Who sits in seat 1?
+OPTS: A:Xavier | B:Yara | C:Wendy | D:Vince ANS:B
+EXP: Let's think this through together! 🔍
+
+Position 4 is Vince.
+Wendy sits immediately to the left of Vince, placing Wendy in position 3.
+Positions 1 and 2 remain for Yara and Xavier.
+Since Yara is to the left of Xavier, Yara is in position 1 and Xavier in position
+
+### BA_P3_G077 [constraint_placement/Think] (seating solutions not unique; gates clean)
+Q: Zack, Anna, Boris, and Celia are seated in four music room chairs. Zack sits in position 4 at the far right. Anna sits immediately to the left of Zack. Celia sits somewhere to the left of Boris. Who sits in chair 2?
+OPTS: A:Boris | B:Celia | C:Anna | D:Zack ANS:A
+EXP: Let's think this through together! 🔍
+
+Position 4 is Zack.
+Anna sits immediately to the left of Zack, placing Anna in position 3.
+Positions 1 and 2 remain for Celia and Boris.
+Since Celia is to the left of Boris, Celia is in position 1 and Boris in position 2.
+
+
+### BA_P3_G078 [constraint_placement/Think] (seating solutions not unique; gates clean)
+Q: Dean, Emma, Felix, and Grace sit in four chairs arranged in a line from 1 to 4. Dean sits in position 4 at the far right. Emma sits immediately to the left of Dean. Grace sits somewhere to the left of Felix. Who sits in chair 1?
+OPTS: A:Emma | B:Grace | C:Felix | D:Dean ANS:B
+EXP: Let's think this through together! 🔍
+
+Position 4 is Dean.
+Emma sits immediately to the left of Dean, placing Emma in position 3.
+Positions 1 and 2 remain for Grace and Felix.
+Since Grace is to the left of Felix, Grace is in position 1 and Felix in position 2.
+
+
+### BA_P3_G079 [constraint_placement/Think] (seating solutions not unique; gates clean)
+Q: Harry, Isla, Jacob, and Kate are seated at four cafeteria spots from left to right. Harry sits in position 4 at the far right. Isla sits immediately to the left of Harry. Kate sits somewhere to the left of Jacob. Who sits in spot 2?
+OPTS: A:Isla | B:Kate | C:Harry | D:Jacob ANS:D
+EXP: Let's think this through together! 🔍
+
+Position 4 is Harry.
+Isla sits immediately to the left of Harry, placing Isla in position 3.
+Positions 1 and 2 remain for Kate and Jacob.
+Since Kate is to the left of Jacob, Kate is in position 1 and Jacob in position 2.
+F
+
+### BA_P3_G080 [constraint_placement/Think] (seating solutions not unique; gates clean)
+Q: Leo, Mila, Nico, and Olive sit in four laboratory seats numbered 1 to 4. Leo sits in position 4 at the far right. Mila sits immediately to the left of Leo. Olive sits somewhere to the left of Nico. Who sits in seat 1?
+OPTS: A:Nico | B:Mila | C:Leo | D:Olive ANS:D
+EXP: Come, let's work this out together! 💪
+
+Position 4 is Leo.
+Mila sits immediately to the left of Leo, placing Mila in position 3.
+Positions 1 and 2 remain for Olive and Nico.
+Since Olive is to the left of Nico, Olive is in position 1 and Nico in position 2.
+Full
+
+### BA_P3_G081 [constraint_placement/Explore] (seating solutions not unique; gates clean)
+Q: Peter, Quinn, Rose, and Sean competed in a 100m sprint race. There were no ties. Quinn finished in 2nd place. Peter finished after Rose. Sean did not finish in 1st place. Who finished in 1st place?
+OPTS: A:Quinn | B:Peter | C:Rose | D:Sean ANS:C
+EXP: Come, let's work this out together! 💪
+
+Quinn is 2nd.
+Peter finished after Rose.
+If Rose were 3rd, Peter would be 4th, leaving Sean in 1st, which is not allowed.
+Therefore, Rose must be 1st.
+Peter and Sean take 3rd and 4th in either order.
+So Rose finished in 1
+
+### BA_P3_G082 [constraint_placement/Explore] (seating solutions not unique; gates clean)
+Q: Tara, Umar, Vicky, and Walter took part in a swimming race. There were no ties. Umar finished in 2nd place. Tara finished after Vicky. Walter finished in 4th place. Who finished in 3rd place?
+OPTS: A:Tara | B:Vicky | C:Walter | D:Umar ANS:A
+EXP: Come, let's work this out together! 💪
+
+Umar is 2nd and Walter is 4th.
+The remaining places, 1st and 3rd, go to Vicky and Tara.
+Because Tara finished after Vicky, Vicky must be 1st and Tara must be 3rd.
+Therefore, Tara finished in 3rd place.
+
+### BA_P3_G083 [constraint_placement/Explore] (seating solutions not unique; gates clean)
+Q: Xander, Yasmine, Zane, and Alice competed in a cycling time trial. There were no ties. Yasmine finished in 2nd place. Xander finished after Zane. Alice did not finish in 1st place. Who finished in 1st place?
+OPTS: A:Alice | B:Zane | C:Yasmine | D:Xander ANS:B
+EXP: Come, let's work this out together! 💪
+
+Yasmine is 2nd.
+Xander finished after Zane.
+If Zane were 3rd, Xander would be 4th, leaving Alice in 1st, which is not allowed.
+Therefore, Zane must be 1st.
+Xander and Alice take 3rd and 4th in either order.
+So Zane finish
+
+### BA_P3_G084 [constraint_placement/Explore] (seating solutions not unique; gates clean)
+Q: Brian, Clara, David, and Emily ran in a cross-country race. There were no ties. Clara finished in 2nd place. Brian finished after David. Emily finished in 4th place. Who finished in 3rd place?
+OPTS: A:David | B:Clara | C:Emily | D:Brian ANS:D
+EXP: Come, let's work this out together! 💪
+
+Clara is 2nd and Emily is 4th.
+The remaining places, 1st and 3rd, go to David and Brian.
+Because Brian finished after David, David must be 1st and Brian must be 3rd.
+Therefore, Brian finished in 3rd place.
+
+### BA_P3_G085 [constraint_placement/Explore] (seating solutions not unique; gates clean)
+Q: Frank, Gloria, Henry, and Iris competed in an obstacle course race. There were no ties. Gloria finished in 2nd place. Frank finished after Henry. Iris did not finish in 1st place. Who finished in 1st place?
+OPTS: A:Gloria | B:Iris | C:Frank | D:Henry ANS:D
+EXP: Come, let's work this out together! 💪
+
+Gloria is 2nd.
+Frank finished after Henry.
+If Henry were 3rd, Frank would be 4th, leaving Iris in 1st, which is not allowed.
+Therefore, Henry must be 1st.
+Frank and Iris take 3rd and 4th in either order.
+So Henry finished
+
+### BA_P3_G086 [constraint_placement/Explore] (seating solutions not unique; gates clean)
+Q: James, Kelly, Liam, and Megan competed in a 200m track race. There were no ties. Kelly finished in 2nd place. James finished after Liam. Megan finished in 4th place. Who finished in 3rd place?
+OPTS: A:Kelly | B:Megan | C:Liam | D:James ANS:D
+EXP: Come, let's work this out together! 💪
+
+Kelly is 2nd and Megan is 4th.
+The remaining places, 1st and 3rd, go to Liam and James.
+Because James finished after Liam, Liam must be 1st and James must be 3rd.
+Therefore, James finished in 3rd place.
+
+### BA_P3_G087 [constraint_placement/Explore] (seating solutions not unique; gates clean)
+Q: Nathan, Olivia, Patrick, and Queen took part in a school math race. There were no ties. Olivia finished in 2nd place. Nathan finished after Patrick. Queen did not finish in 1st place. Who finished in 1st place?
+OPTS: A:Nathan | B:Patrick | C:Olivia | D:Queen ANS:B
+EXP: Come, let's work this out together! 💪
+
+Olivia is 2nd.
+Nathan finished after Patrick.
+If Patrick were 3rd, Nathan would be 4th, leaving Queen in 1st, which is not allowed.
+Therefore, Patrick must be 1st.
+Nathan and Queen take 3rd and 4th in either order.
+So Pat
+
+### BA_P3_G088 [constraint_placement/Explore] (seating solutions not unique; gates clean)
+Q: Ryan, Sophia, Thomas, and Ursula competed in a roller-skating race. There were no ties. Sophia finished in 2nd place. Ryan finished after Thomas. Ursula finished in 4th place. Who finished in 3rd place?
+OPTS: A:Ryan | B:Sophia | C:Ursula | D:Thomas ANS:A
+EXP: Come, let's work this out together! 💪
+
+Sophia is 2nd and Ursula is 4th.
+The remaining places, 1st and 3rd, go to Thomas and Ryan.
+Because Ryan finished after Thomas, Thomas must be 1st and Ryan must be 3rd.
+Therefore, Ryan finished in 3rd place.
+
+### BA_P3_G089 [constraint_placement/Explore] (seating solutions not unique; gates clean)
+Q: Victor, Willa, Xeno, and Yvonne raced in a friendly sprint. There were no ties. Willa finished in 2nd place. Victor finished after Xeno. Yvonne did not finish in 1st place. Who finished in 1st place?
+OPTS: A:Victor | B:Willa | C:Yvonne | D:Xeno ANS:D
+EXP: Come, let's work this out together! 💪
+
+Willa is 2nd.
+Victor finished after Xeno.
+If Xeno were 3rd, Victor would be 4th, leaving Yvonne in 1st, which is not allowed.
+Therefore, Xeno must be 1st.
+Victor and Yvonne take 3rd and 4th in either order.
+So Xeno finish
+
+### BA_P3_G090 [constraint_placement/Explore] (seating solutions not unique; gates clean)
+Q: Zara, Adam, Bella, and Chris competed in a 50m freestyle swim. There were no ties. Adam finished in 2nd place. Zara finished after Bella. Chris finished in 4th place. Who finished in 3rd place?
+OPTS: A:Zara | B:Bella | C:Chris | D:Adam ANS:A
+EXP: Let's solve it together! 🧠
+
+Adam is 2nd and Chris is 4th.
+The remaining places, 1st and 3rd, go to Bella and Zara.
+Because Zara finished after Bella, Bella must be 1st and Zara must be 3rd.
+Therefore, Zara finished in 3rd place.
+
+### BA_P3_G091 [constraint_placement/Challenge] (complex seating wording; gates clean)
+Q: Daisy, Ethan, Flora, and George are standing in a queue for ice cream. Daisy is 1st in line. Flora is standing behind Ethan. George is standing immediately between Daisy and Ethan. Who is 2nd in line?
+OPTS: A:Ethan | B:Flora | C:Daisy | D:George ANS:D
+EXP: Let's solve it together! 🧠
+
+Daisy is 1st.
+George is immediately between Daisy and Ethan, placing George 2nd and Ethan 3rd.
+Since Flora is behind Ethan, Flora must be 4th in line.
+Queue order: 1st:Daisy, 2nd:George, 3rd:Ethan, 4th:Flora.
+So George is 2nd in lin
+
+### BA_P3_G092 [constraint_placement/Challenge] (complex seating wording; gates clean)
+Q: Hannah, Ian, Julia, and Kevin are lining up at the school canteen. Hannah is 1st in line. Julia is standing behind Ian. Kevin is standing immediately between Hannah and Ian. Who is 4th in line?
+OPTS: A:Julia | B:Kevin | C:Ian | D:Hannah ANS:A
+EXP: Let's solve it together! 🧠
+
+Hannah is 1st.
+Kevin is immediately between Hannah and Ian, placing Kevin 2nd and Ian 3rd.
+Since Julia is behind Ian, Julia must be 4th in line.
+Queue order: 1st:Hannah, 2nd:Kevin, 3rd:Ian, 4th:Julia.
+So Julia is 4th in line.
+
+### BA_P3_G093 [constraint_placement/Challenge] (complex seating wording; gates clean)
+Q: Laura, Max, Naomi, and Oliver are queued up at the library counter. Laura is 1st in line. Naomi is standing behind Max. Oliver is standing immediately between Laura and Max. Who is 2nd in line?
+OPTS: A:Naomi | B:Max | C:Laura | D:Oliver ANS:D
+EXP: Let's solve it together! 🧠
+
+Laura is 1st.
+Oliver is immediately between Laura and Max, placing Oliver 2nd and Max 3rd.
+Since Naomi is behind Max, Naomi must be 4th in line.
+Queue order: 1st:Laura, 2nd:Oliver, 3rd:Max, 4th:Naomi.
+So Oliver is 2nd in line.
+
+### BA_P3_G094 [constraint_placement/Challenge] (complex seating wording; gates clean)
+Q: Paige, Quentin, Ruby, and Simon are standing in line to board the school bus. Paige is 1st in line. Ruby is standing behind Quentin. Simon is standing immediately between Paige and Quentin. Who is 4th in line?
+OPTS: A:Quentin | B:Simon | C:Ruby | D:Paige ANS:C
+EXP: Let's solve it together! 🧠
+
+Paige is 1st.
+Simon is immediately between Paige and Quentin, placing Simon 2nd and Quentin 3rd.
+Since Ruby is behind Quentin, Ruby must be 4th in line.
+Queue order: 1st:Paige, 2nd:Simon, 3rd:Quentin, 4th:Ruby.
+So Ruby is 4th in lin
+
+### BA_P3_G095 [constraint_placement/Challenge] (complex seating wording; gates clean)
+Q: Talia, Uri, Valerie, and Wyatt are lined up to buy cinema tickets. Talia is 1st in line. Valerie is standing behind Uri. Wyatt is standing immediately between Talia and Uri. Who is 2nd in line?
+OPTS: A:Wyatt | B:Valerie | C:Talia | D:Uri ANS:A
+EXP: Let's solve it together! 🧠
+
+Talia is 1st.
+Wyatt is immediately between Talia and Uri, placing Wyatt 2nd and Uri 3rd.
+Since Valerie is behind Uri, Valerie must be 4th in line.
+Queue order: 1st:Talia, 2nd:Wyatt, 3rd:Uri, 4th:Valerie.
+So Wyatt is 2nd in line.
+
+### BA_P3_G096 [constraint_placement/Challenge] (complex seating wording; gates clean)
+Q: Xena, Yosef, Zelda, and Aaron are standing in a queue at the art room. Xena is 1st in line. Zelda is standing behind Yosef. Aaron is standing immediately between Xena and Yosef. Who is 4th in line?
+OPTS: A:Yosef | B:Zelda | C:Xena | D:Aaron ANS:B
+EXP: Let's solve it together! 🧠
+
+Xena is 1st.
+Aaron is immediately between Xena and Yosef, placing Aaron 2nd and Yosef 3rd.
+Since Zelda is behind Yosef, Zelda must be 4th in line.
+Queue order: 1st:Xena, 2nd:Aaron, 3rd:Yosef, 4th:Zelda.
+So Zelda is 4th in line.
+
+### BA_P3_G097 [constraint_placement/Challenge] (complex seating wording; gates clean)
+Q: Brooke, Caleb, Diana, and Eli are waiting in line for a ride at the theme park. Brooke is 1st in line. Diana is standing behind Caleb. Eli is standing immediately between Brooke and Caleb. Who is 2nd in line?
+OPTS: A:Brooke | B:Eli | C:Diana | D:Caleb ANS:B
+EXP: Let's solve it together! 🧠
+
+Brooke is 1st.
+Eli is immediately between Brooke and Caleb, placing Eli 2nd and Caleb 3rd.
+Since Diana is behind Caleb, Diana must be 4th in line.
+Queue order: 1st:Brooke, 2nd:Eli, 3rd:Caleb, 4th:Diana.
+So Eli is 2nd in line.
+
+### BA_P3_G098 [constraint_placement/Challenge] (complex seating wording; gates clean)
+Q: Faith, Gavin, Hope, and Isaac are lining up to return their sports equipment. Faith is 1st in line. Hope is standing behind Gavin. Isaac is standing immediately between Faith and Gavin. Who is 4th in line?
+OPTS: A:Gavin | B:Hope | C:Isaac | D:Faith ANS:B
+EXP: Let's solve it together! 🧠
+
+Faith is 1st.
+Isaac is immediately between Faith and Gavin, placing Isaac 2nd and Gavin 3rd.
+Since Hope is behind Gavin, Hope must be 4th in line.
+Queue order: 1st:Faith, 2nd:Isaac, 3rd:Gavin, 4th:Hope.
+So Hope is 4th in line.
+
+### BA_P3_G099 [constraint_placement/Challenge] (complex seating wording; gates clean)
+Q: Joy, Keith, Luna, and Milo are queued up at the bookshop register. Joy is 1st in line. Luna is standing behind Keith. Milo is standing immediately between Joy and Keith. Who is 2nd in line?
+OPTS: A:Joy | B:Luna | C:Milo | D:Keith ANS:C
+EXP: Let's solve it together! 🧠
+
+Joy is 1st.
+Milo is immediately between Joy and Keith, placing Milo 2nd and Keith 3rd.
+Since Luna is behind Keith, Luna must be 4th in line.
+Queue order: 1st:Joy, 2nd:Milo, 3rd:Keith, 4th:Luna.
+So Milo is 2nd in line.
+
+### BA_P3_G100 [constraint_placement/Challenge] (complex seating wording; gates clean)
+Q: Nora, Orson, Pippa, and Quinn are standing in a line for the water fountain. Nora is 1st in line. Pippa is standing behind Orson. Quinn is standing immediately between Nora and Orson. Who is 4th in line?
+OPTS: A:Orson | B:Pippa | C:Quinn | D:Nora ANS:B
+EXP: Let's think this through together! 🔍
+
+Nora is 1st.
+Quinn is immediately between Nora and Orson, placing Quinn 2nd and Orson 3rd.
+Since Pippa is behind Orson, Pippa must be 4th in line.
+Queue order: 1st:Nora, 2nd:Quinn, 3rd:Orson, 4th:Pippa.
+So Pippa is 4th in 
+
+### BA_P3_G113 [conditional_contrapositive/Think] (rule engine hits not unique; gates clean)
+Q: Rule: If a day is Sunday, then the library is closed. Given: On Friday the library is not closed. What must be true?
+OPTS: A:Friday is not Sunday | B:Friday is Sunday | C:The library is never open | D:The library is closed on Friday ANS:A
+EXP: Come, let's work this out together! 💪
+
+The given rule is: 'a day is Sunday → the library is closed'.
+We are given that On Friday the library is not closed (the opposite of the conclusion).
+By the logical rule of contrapositive (if Not Q, then Not P), we can va
+
+### BA_P3_G126 [conditional_contrapositive/Explore] (rule engine hits not unique; gates clean)
+Q: If it is sunny on Saturday, Ken goes to the swimming pool. If Ken goes to the swimming pool, he wears his blue goggles. It is sunny on Saturday. What must be true?
+OPTS: A:Ken does not go to the pool | B:Ken wears his blue goggles | C:It is not sunny on Saturday | D:Ken wears red goggles ANS:B
+EXP: Let's solve it together! 🧠
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: 'Ken wears his blue goggles'.
+
+### BA_P3_G127 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If a number is a multiple of 12, it is a multiple of 6. If a number is a multiple of 6, it is an even number. The number 36 is a multiple of 12. What must be true?
+OPTS: A:36 is an odd number | B:36 is an even number | C:36 is not divisible by 3 | D:36 is not a multiple of 6 ANS:B
+EXP: Let's solve it together! 🧠
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: '36 is an even number'.
+
+### BA_P3_G128 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If Zoe finishes her homework early, she reads a book. If Zoe reads a book, she learns new vocabulary words. Zoe finishes her homework early today. What must be true?
+OPTS: A:Zoe does not read a book | B:Zoe learns new vocabulary words | C:Zoe watches television | D:Zoe does not finish her homework ANS:B
+EXP: Let's solve it together! 🧠
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: 'Zoe learns new vocabulary words'.
+
+### BA_P3_G129 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If an animal is a robin, it is a bird. If an animal is a bird, it has wings. Chirpy is a robin. What must be true?
+OPTS: A:Chirpy has wings | B:Chirpy does not have wings | C:Chirpy is not a bird | D:Chirpy cannot fly ANS:A
+EXP: Let's solve it together! 🧠
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: 'Chirpy has wings'.
+
+### BA_P3_G130 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If a shape is a square, it is a rectangle. If a shape is a rectangle, it has 4 right angles. Shape S is a square. What must be true?
+OPTS: A:Shape S has 3 sides | B:Shape S has only 2 right angles | C:Shape S is not a rectangle | D:Shape S has 4 right angles ANS:D
+EXP: Let's break it down together! 🧩
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: 'Shape S has 4 right angles'.
+
+### BA_P3_G131 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If a student joins the chess club, they receive a club badge. If a student receives a club badge, they can enter the tournament. Liam joins the chess club. What must be true?
+OPTS: A:Liam leaves the chess club | B:Liam does not receive a club badge | C:Liam cannot enter the tournament | D:Liam can enter the tournament ANS:D
+EXP: Let's break it down together! 🧩
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: 'Liam can enter the tournament'.
+
+### BA_P3_G132 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If a plant receives enough sunlight, it makes food. If a plant makes food, it grows healthy green leaves. Plant A receives enough sunlight. What must be true?
+OPTS: A:Plant A receives no sunlight | B:Plant A wilts | C:Plant A does not make food | D:Plant A grows healthy green leaves ANS:D
+EXP: Let's break it down together! 🧩
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: 'Plant A grows healthy green leaves'.
+
+### BA_P3_G133 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If a number is a multiple of 20, it is a multiple of 10. If a number is a multiple of 10, its last digit is 0. The number 60 is a multiple of 20. What must be true?
+OPTS: A:60 has a last digit of 0 | B:60 is not a multiple of 10 | C:60 is an odd number | D:60 ends in 5 ANS:A
+EXP: Let's break it down together! 🧩
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: '60 has a last digit of 0'.
+
+### BA_P3_G134 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If David saves $10 this week, he buys a model airplane kit. If David buys a model airplane kit, he builds it on Sunday. David saves $10 this week. What must be true?
+OPTS: A:David sells his kit | B:David does not buy the kit | C:David does not save $10 | D:David builds the model airplane kit on Sunday ANS:D
+EXP: Let's break it down together! 🧩
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: 'David builds the model airplane kit on Sunday'.
+
+### BA_P3_G135 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If a polygon is a regular hexagon, all 6 of its sides are equal. If all 6 sides are equal, its perimeter is 6 times one side. Shape H is a regular hexagon with side length 3 cm. What must be true?
+OPTS: A:Shape H has a perimeter of 18 cm | B:Shape H has unequal sides | C:Shape H has 5 sides | D:Shape H has a perimeter of 12 cm ANS:A
+EXP: Let's break it down together! 🧩
+
+Following the chain of conditions step by step leads directly to the conclusion. Therefore, the statement that must be true is: 'Shape H has a perimeter of 18 cm'.
+
+### BA_P3_G220 [make_a_list/Think] (combinatorial form unparsed; gates clean)
+Q: How many different 3-letter words (real or made-up) can you form using the letters X, Y, and Z using each letter exactly once?
+OPTS: A:27 | B:3 | C:6 | D:9 ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+List systematically: XYZ, XZY, YXZ, YZX, ZXY, ZYX. There are 6 different arrangements.
+
+### BA_P3_G221 [make_a_list/Think] (combinatorial form unparsed; gates clean)
+Q: A set meal allows you to choose 1 main dish, 1 drink, and 1 dessert. The menu offers 2 mains, 3 drinks, and 2 desserts. How many different meal combinations can you choose?
+OPTS: A:10 | B:18 | C:12 | D:7 ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+Organised counting: Multiply the number of choices for each course: 2 (mains) × 3 (drinks) × 2 (desserts) = 12 combinations.
+
+### BA_P3_G222 [make_a_list/Think] (combinatorial form unparsed; gates clean)
+Q: How many different ways can you pay exactly 40 cents using only 10-cent and 20-cent coins?
+OPTS: A:5 | B:2 | C:3 | D:4 ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+List combinations systematically by number of 20-cent coins: (1) Two 20¢ coins; (2) One 20¢ and two 10¢ coins; (3) Four 10¢ coins. Total = 3 ways.
+
+### BA_P3_G223 [make_a_list/Think] (combinatorial form unparsed; gates clean)
+Q: A teacher wants to choose 2 captains from a group of 5 students (A, B, C, D, E). How many different pairs of captains can be chosen?
+OPTS: A:5 | B:20 | C:10 | D:15 ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+List pairs systematically: AB, AC, AD, AE (4); BC, BD, BE (3); CD, CE (2); DE (1). Total = 4 + 3 + 2 + 1 = 10 pairs.
+
+### BA_P3_G224 [make_a_list/Think] (combinatorial form unparsed; gates: ['explanation has big stray number)
+Q: How many 2-digit EVEN numbers can be formed using the digits 1, 2, 3, and 4 without repeating any digit?
+OPTS: A:6 | B:4 | C:12 | D:8 ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+An even number must end in 2 or 4.
+If ending in 2: 12, 32, 42 (3 numbers).
+If ending in 4: 14, 24, 34 (3 numbers).
+Total = 3 + 3 = 6 even numbers.
+
+### BA_P3_G225 [make_a_list/Think] (combinatorial form unparsed; gates clean)
+Q: At a chess club meeting, 5 members each play exactly one game against every other member. How many games are played altogether?
+OPTS: A:10 | B:8 | C:15 | D:20 ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+List all pairings systematically: Player 1 plays 4 games; Player 2 plays 3 remaining games; Player 3 plays 2 games; Player 4 plays 1 game. Total = 4 + 3 + 2 + 1 = 10 games.
+
+### BA_P3_G226 [make_a_list/Think] (combinatorial form unparsed; gates clean)
+Q: How many different 3-digit numbers can be formed using only the digits 1, 2, and 3 if digits CAN be repeated?
+OPTS: A:9 | B:18 | C:27 | D:12 ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+There are 3 choices for the hundreds digit, 3 choices for the tens digit, and 3 choices for the ones digit: 3 × 3 × 3 = 27 numbers.
+
+### BA_P3_G228 [make_a_list/Think] (combinatorial form unparsed; gates clean)
+Q: On a 2 × 2 grid of squares, how many different paths lead from the top-left corner to the bottom-right corner if you can only move Right and Down along grid lines?
+OPTS: A:8 | B:4 | C:6 | D:5 ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+Every path consists of 2 Right (R) and 2 Down (D) steps: RRDD, RDRD, RDDR, DRRD, DRDR, DDRR. Listing them systematically gives 6 paths.
+
+### BA_P3_G229 [make_a_list/Think] (combinatorial form unparsed; gates clean)
+Q: How many different combinations of 10-cent, 20-cent, and 50-cent coins total exactly 50 cents?
+OPTS: A:6 | B:3 | C:4 | D:5 ANS:C
+EXP: Good question — let's solve it together! ⭐
+
+List by 50¢ and 20¢ coins: (1) One 50¢; (2) Two 20¢ + one 10¢; (3) One 20¢ + three 10¢; (4) Five 10¢ coins. Total = 4 ways.
+
+### BA_P3_G230 [make_a_list/Think] (combinatorial form unparsed; gates clean)
+Q: An ice cream shop offers 2 types of cones, 3 flavours of ice cream, and 2 choices of toppings. How many different single-scoop ice cream treats with 1 topping can you create?
+OPTS: A:8 | B:7 | C:12 | D:18 ANS:C
+EXP: Let's think this through together! 🔍
+
+List choices systematically: 2 (cone types) × 3 (flavours) × 2 (toppings) = 12 different ice cream treats.
+
+### BA_P3_G232 [make_a_list/Explore] (combinatorial form unparsed; gates: ['explanation has big stray number)
+Q: How many 2-digit ODD numbers can you make using the digits 2, 4, 5, and 7 without repeating any digit?
+OPTS: A:6 | B:12 | C:8 | D:4 ANS:A
+EXP: Let's think this through together! 🔍
+
+The units digit must be odd (5 or 7).
+If units is 5: 25, 45, 75 (3 numbers).
+If units is 7: 27, 47, 57 (3 numbers).
+Total = 3 + 3 = 6 odd numbers.
+
+### BA_P3_G238 [make_a_list/Explore] (combinatorial form unparsed; gates clean)
+Q: How many different ways can you make exactly 30 cents using only 10-cent and 20-cent coins?
+OPTS: A:4 | B:2 | C:1 | D:3 ANS:B
+EXP: Let's think this through together! 🔍
+
+List combinations: (1) One 20¢ + one 10¢; (2) Three 10¢ coins. Total = 2 ways.
+
+### BA_P3_G239 [make_a_list/Challenge] (combinatorial form unparsed; gates: ['explanation has big stray number)
+Q: How many 2-digit numbers have digits that add up to 6?
+OPTS: A:6 | B:5 | C:7 | D:4 ANS:A
+EXP: Let's think this through together! 🔍
+
+List systematically starting from tens digit 1 to 6: 15, 24, 33, 42, 51, 60. Total = 6 numbers.
+
+### BA_P3_G240 [make_a_list/Challenge] (combinatorial form unparsed; gates: ['explanation has big stray number)
+Q: How many 2-digit numbers have digits that add up to 5?
+OPTS: A:5 | B:4 | C:3 | D:6 ANS:A
+EXP: Come, let's work this out together! 💪
+
+List systematically by tens digit: 14, 23, 32, 41, 50. Total = 5 numbers.
+
+### BA_P3_G241 [make_a_list/Challenge] (combinatorial form unparsed; gates clean)
+Q: In a school soccer tournament with 6 teams, every team plays against every other team once. How many matches are played in total?
+OPTS: A:12 | B:18 | C:15 | D:30 ANS:C
+EXP: Come, let's work this out together! 💪
+
+List systematically: Team 1 plays 5 games; Team 2 plays 4 remaining; Team 3 plays 3; Team 4 plays 2; Team 5 plays 1. Total = 5 + 4 + 3 + 2 + 1 = 15 matches.
+
+### BA_P3_G242 [make_a_list/Challenge] (combinatorial form unparsed; gates clean)
+Q: Four books (Math, Science, English, Art) are placed on a shelf in a row. If the Math book must always be on the far left, in how many different orders can all four books be arranged?
+OPTS: A:4 | B:8 | C:6 | D:24 ANS:C
+EXP: Come, let's work this out together! 💪
+
+The Math book is fixed in position 1. The remaining 3 positions can be filled by Science, English, and Art in 3 × 2 × 1 = 6 different ways.
+
+### BA_P3_G243 [make_a_list/Challenge] (combinatorial form unparsed; gates clean)
+Q: A cafeteria lunch menu has 4 main dishes and 3 side dishes. How many different lunches containing 1 main dish and 1 side dish can you choose?
+OPTS: A:7 | B:9 | C:12 | D:14 ANS:C
+EXP: Come, let's work this out together! 💪
+
+Multiply choices: 4 (mains) × 3 (sides) = 12 different lunch combinations.
+
+### BA_P3_G245 [make_a_list/Challenge] (combinatorial form unparsed; gates clean)
+Q: When rolling two standard 6-sided dice, in how many different ways can the two rolled numbers sum to 8?
+OPTS: A:7 | B:4 | C:5 | D:6 ANS:C
+EXP: Come, let's work this out together! 💪
+
+List all pairs (Die 1, Die 2): (2,6), (3,5), (4,4), (5,3), (6,2). Total = 5 ways.
+
+### BA_P3_G250 [pattern_application/Think] (machine rules not unique; gates clean)
+Q: A secret code machine changes numbers following a secret rule: 2 → 5, 3 → 10, 4 → 17. If the input is 5, what number comes out?
+OPTS: A:26 | B:24 | C:25 | D:27 ANS:A
+EXP: Let's solve it together! 🧠
+
+Discover the rule by testing the examples: 2 follows output = (2 × 2) + 1 = 5, 3 follows output = (3 × 3) + 1 = 10, 4 follows output = (4 × 4) + 1 = 17.
+The rule is: output = (input × input) + 1.
+Applying this rule to the input 5: o
+
+### BA_P3_G251 [pattern_application/Think] (machine rules not unique; gates clean)
+Q: A number transformer changes numbers following a secret rule: 2 → 3, 3 → 8, 4 → 15. If the input is 6, what number comes out?
+OPTS: A:35 | B:36 | C:34 | D:37 ANS:A
+EXP: Let's solve it together! 🧠
+
+Discover the rule by testing the examples: 2 follows output = (2 × 2) − 1 = 3, 3 follows output = (3 × 3) − 1 = 8, 4 follows output = (4 × 4) − 1 = 15.
+The rule is: output = (input × input) − 1.
+Applying this rule to the input 6: ou
+
+### BA_P3_G254 [pattern_application/Think] (machine rules not unique; gates clean)
+Q: A number processor changes numbers following a secret rule: 2 → 6, 3 → 12, 4 → 20. If the input is 5, what number comes out?
+OPTS: A:28 | B:30 | C:35 | D:25 ANS:B
+EXP: Let's solve it together! 🧠
+
+Discover the rule by testing the examples: 2 follows output = 2 × (2 + 1) = 6, 3 follows output = 3 × (3 + 1) = 12, 4 follows output = 4 × (4 + 1) = 20.
+The rule is: output = input × (input + 1).
+Applying this rule to the input 5: o
+
+### BA_P3_G263 [pattern_application/Explore] (machine rules not unique; gates clean)
+Q: A function machine changes numbers following a secret rule: 1 → 3, 2 → 6, 3 → 11. If the input is 5, what number comes out?
+OPTS: A:26 | B:27 | C:28 | D:25 ANS:B
+EXP: Let's break it down together! 🧩
+
+Discover the rule by testing the examples: 1 follows output = (1 × 1) + 2 = 3, 2 follows output = (2 × 2) + 2 = 6, 3 follows output = (3 × 3) + 2 = 11.
+The rule is: output = (input × input) + 2.
+Applying this rule to the input 
+
+### BA_P3_V06 [codes_ciphers/Challenge] (cipher needs review; gates clean)
+Q: In a code, DOG becomes GLJ and CAT becomes FDW. The rule is: move the 1st letter forward 3, the 2nd letter back 3, the 3rd letter forward 3, and keep alternating. What does PIG become?
+OPTS: A:SFJ | B:SLJ | C:SFD | D:MFJ ANS:A
+EXP: Good question — let's solve it together! ⭐
+
+Apply the alternating rule to PIG: P forward 3 = S; I back 3 = F; G forward 3 = J.
+So PIG becomes SFJ.
+(SLJ is if every letter moved forward 3; SFD is if the last letter also moved back; MFJ is if the first moved bac
+
+### BA_P3_V09 [sentence_logic/Challenge] (no if-rules parsed; gates clean)
+Q: Three boxes are red, blue and green. Each holds one thing: a book, a ball or a coin. (1) The blue box holds the book. (2) The red box does not hold the ball. (3) The green box does not hold the coin. What does the green box hold?
+OPTS: A:ball | B:book | C:coin | D:cannot tell ANS:A
+EXP: Let's solve it together! 🧠
+
+Blue = book, so red and green share ball and coin.
+Red does NOT hold the ball, so red = coin.
+That leaves green = ball.
+Clue (3) is the consistency check: green does not hold the coin - true, so the assignment holds.
+
+### BA_P3_HA_0282 [conditional_contrapositive/Think] (rule engine hits not unique; gates: ['explanation never states answer')
+Q: Rule: If a card belongs in the blue box, then it has a star. Given: Card 9 has no star. What MUST be true?
+OPTS: A:Card 9 does not belong in the blue box | B:Card 9 has a star | C:the blue box has no cards with stars | D:Card 9 belongs in the blue box ANS:A
+EXP: The rule says belonging needs a star. Card 9 has no star, so it cannot belong in the blue box.
+
+### BA_P3_HA_0284 [conditional_contrapositive/Think] (rule engine hits not unique; gates: ['explanation never states answer')
+Q: Rule: If a card belongs in Box A, then it has a star. Given: Card 9 has no star. What MUST be true?
+OPTS: A:Card 9 does not belong in Box A | B:Card 9 has a star | C:Box A has no cards with stars | D:Card 9 belongs in Box A ANS:A
+EXP: The rule says belonging needs a star. Card 9 has no star, so it cannot belong in Box A.
+
+### BA_P3_HA_0285 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If Gus saves $10, Gus buys a model kit. If Gus buys a model kit, Gus builds it on Sunday. Today Gus does NOT build it on Sunday. What MUST be true?
+OPTS: A:Gus saves $10 | B:Gus builds it on Sunday | C:Gus did NOT save $10 | D:Gus buys a model kit ANS:C
+EXP: Chain the rules backwards: no final step means the middle step did not happen, which means the first step did not happen either. So Gus did NOT save $10.
+
+### BA_P3_HA_0286 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If Fiona finishes homework early, Fiona reads a book. If Fiona reads a book, Fiona learns new words. Today Fiona does NOT learn new words. What MUST be true?
+OPTS: A:Fiona finishes homework early | B:Fiona learns new words | C:Fiona reads a book | D:Fiona did NOT finish homework early ANS:D
+EXP: Chain the rules backwards: no final step means the middle step did not happen, which means the first step did not happen either. So Fiona did NOT finish homework early.
+
+### BA_P3_HA_0287 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If Ali hears the bell, Ali lines up. If Ali lines up, Ali walks to class quietly. Today Ali does NOT walk to class quietly. What MUST be true?
+OPTS: A:Ali lines up | B:Ali did NOT hear the bell | C:Ali walks to class quietly | D:Ali hears the bell ANS:B
+EXP: Chain the rules backwards: no final step means the middle step did not happen, which means the first step did not happen either. So Ali did NOT hear the bell.
+
+### BA_P3_HA_0288 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If Iris saves $10, Iris buys a model kit. If Iris buys a model kit, Iris builds it on Sunday. Today Iris does NOT build it on Sunday. What MUST be true?
+OPTS: A:Iris buys a model kit | B:Iris builds it on Sunday | C:Iris did NOT save $10 | D:Iris saves $10 ANS:C
+EXP: Chain the rules backwards: no final step means the middle step did not happen, which means the first step did not happen either. So Iris did NOT save $10.
+
+### BA_P3_HA_0361 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If Finn finishes homework early, Finn reads a book. If Finn reads a book, Finn learns new words. Today Finn does NOT learn new words. What MUST be true?
+OPTS: A:Finn did NOT finish homework early | B:Finn learns new words | C:Finn finishes homework early | D:Finn reads a book ANS:A
+EXP: Chain backwards: no final step means the middle step did not happen, so the first step did not happen. Finn did NOT finish homework early.
+
+### BA_P3_HA_0362 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If Diya finishes homework early, Diya reads a book. If Diya reads a book, Diya learns new words. Today Diya does NOT learn new words. What MUST be true?
+OPTS: A:Diya learns new words | B:Diya did NOT finish homework early | C:Diya reads a book | D:Diya finishes homework early ANS:B
+EXP: Chain backwards: no final step means the middle step did not happen, so the first step did not happen. Diya did NOT finish homework early.
+
+### BA_P3_HA_0363 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If Ali finishes homework early, Ali reads a book. If Ali reads a book, Ali learns new words. Today Ali does NOT learn new words. What MUST be true?
+OPTS: A:Ali did NOT finish homework early | B:Ali reads a book | C:Ali learns new words | D:Ali finishes homework early ANS:A
+EXP: Chain backwards: no final step means the middle step did not happen, so the first step did not happen. Ali did NOT finish homework early.
+
+### BA_P3_HA_0364 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If Ali saves $10, Ali buys a model kit. If Ali buys a model kit, Ali builds it on Sunday. Today Ali saves $10. What MUST be true?
+OPTS: A:Ali does NOT build it on Sunday | B:Ali does NOT buy a model kit | C:Ali does NOT save $10 | D:Ali builds it on Sunday ANS:D
+EXP: Chain forwards: the first step happened, so the middle step happened, so the final step happened. Ali builds it on Sunday.
+
+### BA_P3_HA_0365 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If Finn finishes homework early, Finn reads a book. If Finn reads a book, Finn learns new words. Today Finn finishes homework early. What MUST be true?
+OPTS: A:Finn does NOT read a book | B:Finn does NOT learn new words | C:Finn learns new words | D:Finn does NOT finish homework early ANS:C
+EXP: Chain forwards: the first step happened, so the middle step happened, so the final step happened. Finn learns new words.
+
+### BA_P3_HA_0366 [conditional_contrapositive/Challenge] (rule engine hits not unique; gates clean)
+Q: If Cai hears the bell, Cai lines up. If Cai lines up, Cai walks to class quietly. Today Cai hears the bell. What MUST be true?
+OPTS: A:Cai does NOT walk to class quietly | B:Cai walks to class quietly | C:Cai does NOT line up | D:Cai does NOT hear the bell ANS:B
+EXP: Chain forwards: the first step happened, so the middle step happened, so the final step happened. Cai walks to class quietly.
+

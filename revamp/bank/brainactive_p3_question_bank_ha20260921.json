@@ -389,6 +389,12 @@
    "BA_P3_1030": "rejected_too_simple",
    "BA_P3_1045": "rejected_too_simple",
    "BA_P3_1064": "rejected_too_simple"
+  },
+  "finalize": {
+   "date": "2026-09-21",
+   "activate": 896,
+   "hold": 28,
+   "deleted_r4": 8
   }
  },
  "questions": [
@@ -525,7 +531,7 @@
    "is_active": true,
    "created_at": "2026-08-30T04:53:58.340785+00:00",
    "updated_at": "2026-08-30T04:53:58.340785+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_0004",
@@ -837,10 +843,10 @@
    "visual_required": false,
    "visual_spec": null,
    "image_path": null,
-   "is_active": true,
+   "is_active": false,
    "created_at": "2026-08-29T04:39:02.415793+00:00",
    "updated_at": "2026-08-29T04:39:02.415793+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "rejected_too_simple"
   },
   {
    "id": "BA_P3_0011",
@@ -1604,10 +1610,10 @@
    "visual_required": false,
    "visual_spec": null,
    "image_path": null,
-   "is_active": true,
+   "is_active": false,
    "created_at": "2026-08-30T04:53:58.167606+00:00",
    "updated_at": "2026-08-30T04:53:58.167606+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "rejected_too_simple"
   },
   {
    "id": "BA_P3_0034",
@@ -1739,10 +1745,10 @@
    "visual_required": false,
    "visual_spec": null,
    "image_path": null,
-   "is_active": true,
+   "is_active": false,
    "created_at": "2026-08-29T04:39:02.415793+00:00",
    "updated_at": "2026-08-29T04:39:02.415793+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "rejected_too_simple"
   },
   {
    "id": "BA_P3_0039",
@@ -2300,7 +2306,7 @@
    "is_active": true,
    "created_at": "2026-08-30T04:53:59.879131+00:00",
    "updated_at": "2026-08-30T04:53:59.879131+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_0057",
@@ -3305,10 +3311,10 @@
     ]
    },
    "image_path": "p3/BA_P3_0077.svg",
-   "is_active": true,
+   "is_active": false,
    "created_at": "2026-08-29T04:39:02.415793+00:00",
    "updated_at": "2026-08-29T04:39:02.415793+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "rejected_too_simple"
   },
   {
    "id": "BA_P3_0079",
@@ -4533,7 +4539,7 @@
    "is_active": true,
    "created_at": "2026-08-30T04:51:25.299022+00:00",
    "updated_at": "2026-08-30T04:51:25.299022+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_0125",
@@ -5076,7 +5082,7 @@
    "is_active": true,
    "created_at": "2026-08-30T04:51:25.299022+00:00",
    "updated_at": "2026-08-30T04:51:25.299022+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_0141",
@@ -5574,7 +5580,7 @@
    "is_active": true,
    "created_at": "2026-08-30T04:51:25.299022+00:00",
    "updated_at": "2026-08-30T04:51:25.299022+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_0155",
@@ -5844,7 +5850,7 @@
    "is_active": true,
    "created_at": "2026-08-30T04:51:25.299022+00:00",
    "updated_at": "2026-08-30T04:51:25.299022+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_0162",
@@ -6206,7 +6212,7 @@
    "is_active": true,
    "created_at": "2026-08-30T04:51:25.299022+00:00",
    "updated_at": "2026-08-30T04:51:25.299022+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_0171",
@@ -6251,7 +6257,7 @@
    "is_active": true,
    "created_at": "2026-08-30T04:51:25.299022+00:00",
    "updated_at": "2026-08-30T04:51:25.299022+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_0172",
@@ -6296,7 +6302,7 @@
    "is_active": true,
    "created_at": "2026-08-30T04:54:01.837974+00:00",
    "updated_at": "2026-08-30T04:54:01.837974+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_0173",
@@ -6431,7 +6437,7 @@
    "is_active": true,
    "created_at": "2026-08-30T04:54:02.293548+00:00",
    "updated_at": "2026-08-30T04:54:02.293548+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_0176",
@@ -7019,7 +7025,7 @@
    "is_active": true,
    "created_at": "2026-08-29T04:39:02.415793+00:00",
    "updated_at": "2026-08-29T04:39:02.415793+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_0192",
@@ -7649,10 +7655,10 @@
    "visual_required": false,
    "visual_spec": null,
    "image_path": null,
-   "is_active": true,
+   "is_active": false,
    "created_at": "2026-08-29T04:39:02.415793+00:00",
    "updated_at": "2026-08-29T04:39:02.415793+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "rejected_too_simple"
   },
   {
    "id": "BA_P3_0215",
@@ -7742,7 +7748,7 @@
    "is_active": true,
    "created_at": "2026-08-29T04:39:02.415793+00:00",
    "updated_at": "2026-08-29T04:39:02.415793+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_0217",
@@ -7830,10 +7836,10 @@
    "visual_required": false,
    "visual_spec": null,
    "image_path": null,
-   "is_active": true,
+   "is_active": false,
    "created_at": "2026-08-29T04:39:02.415793+00:00",
    "updated_at": "2026-08-29T04:39:02.415793+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "rejected_too_simple"
   },
   {
    "id": "BA_P3_0219",
@@ -8965,7 +8971,7 @@
    "is_active": true,
    "created_at": "2026-08-29T04:39:02.415793+00:00",
    "updated_at": "2026-08-29T04:39:02.415793+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_0252",
@@ -9327,7 +9333,7 @@
    "is_active": true,
    "created_at": "2026-08-29T04:39:02.415793+00:00",
    "updated_at": "2026-08-29T04:39:02.415793+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_0263",
@@ -9551,10 +9557,10 @@
    "visual_required": false,
    "visual_spec": null,
    "image_path": null,
-   "is_active": true,
+   "is_active": false,
    "created_at": "2026-08-29T04:39:02.415793+00:00",
    "updated_at": "2026-08-29T04:39:02.415793+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "rejected_too_simple"
   },
   {
    "id": "BA_P3_0270",
@@ -10845,7 +10851,7 @@
     }
    ],
    "answer": "C",
-   "explanation": "Let's solve it together! 🧠\n\nEach cat is an animal and each animal is a living thing, so every cat is a living thing. The other choices reverse the direction.",
+   "explanation": "Dog, cat and fish are all animals. A book is not an animal, so book is the odd one out.",
    "reasoning": "Finding the category three share and the odd one.",
    "tags": [
     "p3",
@@ -15031,7 +15037,7 @@
     }
    ],
    "answer": "D",
-   "explanation": "Let's solve it together! 🧠\n\nShift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.\nFor example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.\nApply the same to the new word.",
+   "explanation": "Shift each letter forward by 2 (A goes to C). BOX becomes DQZ, then reverse to get ZQD.",
    "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
    "tags": [
     "p3",
@@ -15212,7 +15218,7 @@
     }
    ],
    "answer": "A",
-   "explanation": "Let's break it down together! 🧩\n\nShift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.\nFor example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.\nApply the same to the new word.",
+   "explanation": "Shift each letter forward by 1 (A goes to B). CAT becomes DBU, then reverse to get UBD.",
    "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
    "tags": [
     "p3",
@@ -15258,7 +15264,7 @@
     }
    ],
    "answer": "C",
-   "explanation": "Good question — let's solve it together! ⭐\n\nShift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.\nFor example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.\nApply the same to the new word.",
+   "explanation": "Shift each letter forward by 2 (A goes to C). CAT becomes ECV, then reverse to get VCE.",
    "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
    "tags": [
     "p3",
@@ -15304,7 +15310,7 @@
     }
    ],
    "answer": "C",
-   "explanation": "Good question — let's solve it together! ⭐\n\nShift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.\nFor example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.\nApply the same to the new word.",
+   "explanation": "Shift each letter forward by 2 (A goes to C). MAP becomes OCR, then reverse to get RCO.",
    "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
    "tags": [
     "p3",
@@ -15665,7 +15671,7 @@
     }
    ],
    "answer": "D",
-   "explanation": "Come, let's work this out together! 💪\n\nShift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.\nFor example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.\nApply the same to the new word.",
+   "explanation": "Shift each letter forward by 2 (A goes to C). RED becomes TGF, then reverse to get FGT.",
    "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
    "tags": [
     "p3",
@@ -15891,7 +15897,7 @@
     }
    ],
    "answer": "B",
-   "explanation": "Let's solve it together! 🧠\n\nShift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.\nFor example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.\nApply the same to the new word.",
+   "explanation": "Shift each letter forward by 3 (A goes to D). RED becomes UHG, then reverse to get GHU.",
    "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
    "tags": [
     "p3",
@@ -17066,7 +17072,7 @@
     }
    ],
    "answer": "D",
-   "explanation": "Come, let's work this out together! 💪\n\nShift each letter forward by the rule (e.g., P→S is +3, E→H is +3) then reverse the word.\nFor example, BOX→ERA is B+3→E, O+3→R, X+3→A so ERA, then reverse to ARE.\nApply the same to the new word.",
+   "explanation": "Shift each letter forward by 1 (A goes to B). MAP becomes NBQ, then reverse to get QBN.",
    "reasoning": "Two-step cipher (shift then reverse) — rule discovery (expert).",
    "tags": [
     "p3",
@@ -30627,7 +30633,7 @@
    "is_active": true,
    "created_at": "2026-08-30T11:00:30.122352+00:00",
    "updated_at": "2026-08-30T11:00:30.122352+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_ADD_0007",
@@ -31077,7 +31083,7 @@
    "is_active": true,
    "created_at": "2026-08-30T11:00:31.167453+00:00",
    "updated_at": "2026-08-30T11:00:31.167453+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_ADD_0017",
@@ -31122,7 +31128,7 @@
    "is_active": true,
    "created_at": "2026-08-30T11:00:31.273716+00:00",
    "updated_at": "2026-08-30T11:00:31.273716+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_ADD_0018",
@@ -31167,7 +31173,7 @@
    "is_active": true,
    "created_at": "2026-08-30T11:00:31.372347+00:00",
    "updated_at": "2026-08-30T11:00:31.372347+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_ADD_0019",
@@ -31212,7 +31218,7 @@
    "is_active": true,
    "created_at": "2026-08-30T11:00:31.466398+00:00",
    "updated_at": "2026-08-30T11:00:31.466398+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_ADD_0020",
@@ -31257,7 +31263,7 @@
    "is_active": true,
    "created_at": "2026-08-30T11:00:31.575031+00:00",
    "updated_at": "2026-08-30T11:00:31.575031+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_ADD_0021",
@@ -31977,7 +31983,7 @@
    "is_active": true,
    "created_at": "2026-08-30T11:00:33.186676+00:00",
    "updated_at": "2026-08-30T11:00:33.186676+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_ADD_0037",
@@ -32022,7 +32028,7 @@
    "is_active": true,
    "created_at": "2026-08-30T11:00:33.305207+00:00",
    "updated_at": "2026-08-30T11:00:33.305207+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_ADD_0038",
@@ -32067,7 +32073,7 @@
    "is_active": true,
    "created_at": "2026-08-30T11:00:33.398013+00:00",
    "updated_at": "2026-08-30T11:00:33.398013+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_ADD_0039",
@@ -32112,7 +32118,7 @@
    "is_active": true,
    "created_at": "2026-08-30T11:00:33.503482+00:00",
    "updated_at": "2026-08-30T11:00:33.503482+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_ADD_0040",
@@ -32157,7 +32163,7 @@
    "is_active": true,
    "created_at": "2026-08-30T11:00:33.596823+00:00",
    "updated_at": "2026-08-30T11:00:33.596823+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_ADD_0041",
@@ -32371,10 +32377,10 @@
     ]
    },
    "image_path": "p3/BA_P3_ADD_0044.svg",
-   "is_active": true,
+   "is_active": false,
    "created_at": "2026-08-30T11:00:33.955555+00:00",
    "updated_at": "2026-08-30T11:00:33.955555+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "rejected_too_simple"
   },
   {
    "id": "BA_P3_ADD_0045",
@@ -34663,7 +34669,7 @@
    "is_active": true,
    "created_at": "2026-08-30T11:00:38.479771+00:00",
    "updated_at": "2026-08-30T11:00:38.479771+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_ADD_0091",
@@ -34730,7 +34736,7 @@
    "is_active": true,
    "created_at": "2026-08-30T11:00:38.573221+00:00",
    "updated_at": "2026-08-30T11:00:38.573221+00:00",
-   "qa_status": "validated_fix_20260831"
+   "qa_status": "needs_option_fix_20260921"
   },
   {
    "id": "BA_P3_ADD_0092",
@@ -40064,7 +40070,7 @@
     }
    ],
    "answer": "B",
-   "explanation": "Come, let's work this out together! 💪\n\nMia reads if it is Saturday or if it is raining.\nToday she is not reading, so it is neither Saturday nor raining.\nIf either were true, she would be reading.",
+   "explanation": "Numbers greater than 50 get a red tag. 28 has no red tag, so 28 cannot be greater than 50.",
    "reasoning": "Applying the contrapositive deduction rule (If P then Q; Not Q therefore Not P).",
    "tags": [
     "p3",
@@ -64689,7 +64695,7 @@
     }
    ],
    "answer": "B",
-   "explanation": "The jumps alternate +5 then -2. The next jump is +5: 18.",
+   "explanation": "The jumps alternate +5 then -2. The next jump is -2: 18.",
    "reasoning": "Spot the alternating jumps.",
    "tags": [
     "sequence",
@@ -64869,7 +64875,7 @@
     }
    ],
    "answer": "D",
-   "explanation": "The jumps alternate +2 then 3. The next jump is +2: 23.",
+   "explanation": "The jumps alternate +2 then +3. The next jump is +3: 23.",
    "reasoning": "Spot the alternating jumps.",
    "tags": [
     "sequence",
@@ -65004,7 +65010,7 @@
     }
    ],
    "answer": "C",
-   "explanation": "The jumps alternate +5 then -2. The next jump is +5: 18.",
+   "explanation": "The jumps alternate +5 then -2. The next jump is -2: 18.",
    "reasoning": "Spot the alternating jumps.",
    "tags": [
     "sequence",
@@ -65139,7 +65145,7 @@
     }
    ],
    "answer": "B",
-   "explanation": "The jumps alternate +2 then 3. The next jump is +2: 22.",
+   "explanation": "The jumps alternate +2 then +3. The next jump is +3: 22.",
    "reasoning": "Spot the alternating jumps.",
    "tags": [
     "sequence",

@@ -45,6 +45,7 @@ def solver(*archs):
     return deco
 SIDES = {"triangle": 3, "square": 4, "pentagon": 5, "hexagon": 6}
 DIRS = ["UP", "RIGHT", "DOWN", "LEFT"]
+NUMW = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10, "eleven": 11, "twelve": 12}
 
 EDGEPATS = [re.compile(r"(\w+) beats (\w+)"), re.compile(r"(\w+) is taller than (\w+)"), re.compile(r"(\w+) finishes before (\w+)"), re.compile(r"(\w+) finishes after (\w+)")]
 def parse_order(stem):
@@ -286,6 +287,12 @@ def solve_seq(q):
                 break
         if ok:
             cands["x2+1"] = vals[-1] * 2
+    if len(vals) >= 4 and all(vals[i] == vals[i-1] * 3 for i in range(1, len(vals))):
+        cands["triple"] = vals[-1] * 3
+    if len(vals) >= 4:
+        rts = [round(v ** 0.5) for v in vals]
+        if all(r * r == v for r, v in zip(rts, vals)) and rts == list(range(rts[0], rts[0] + len(rts))):
+            cands["squares"] = (rts[-1] + 1) ** 2
     if not cands and len(vals) >= 5:
         ops = []
         for i in range(1, len(vals)):
@@ -535,10 +542,10 @@ def solve_ba(q):
 @solver("chained_comparison", "chain_comparison", "quantitative_logic")
 def solve_chain4(q):
     t = q["question"]
-    rels = re.findall(r"(\w+) has (\d+) (more|fewer) .*? than (\w+)", t)
+    rels = re.findall(r"(\w+) has (\d+) (more|fewer)\s+(?:.*?\s+)?than\s+(\w+)", t)
     if not rels:
         return None, "low", "chain relations unparsed"
-    cands = [(m.group(1), int(m.group(2))) for m in re.finditer(r"(\w+) has (\d+) \w+\.", t) if "more" not in m.group(0) and "fewer" not in m.group(0)]
+    cands = [(m.group(1), int(m.group(2))) for m in re.finditer(r"(\w+) has (\d+)(?: \w+)?\.", t) if "more" not in m.group(0) and "fewer" not in m.group(0)]
     if not cands:
         return None, "low", "chain anchor unparsed"
     aname, aval = cands[-1]
@@ -597,16 +604,28 @@ def solve_machine(q):
     t = q["question"].replace("ARR", "->")
     if "repeats" in t or "1st" in t:
         m = re.search(r"repeats: ([a-z, ]+?)[\.\(]", t, re.I)
-        asks = [int(x) for x in re.findall(r"(\d+)(?:st|nd|rd|th)", t)]
+        askt = t[t.find("What"): ] if "What" in t else t
+        asks = [int(x) for x in re.findall(r"(\d+)(?:st|nd|rd|th)", askt)]
         if m and asks:
             period = [c.strip() for c in m.group(1).split(",") if c.strip()]
             wants = [period[(a - 1) % len(period)] for a in asks]
-            hits = [o["text"] for o in q["options"] if all(norm(w) in norm(o["text"]) for w in wants)]
+            hits = []
+            for o in q["options"]:
+                pos = -1
+                ok = True
+                for w in wants:
+                    p = norm(o["text"]).find(norm(w), pos + 1)
+                    if p < 0:
+                        ok = False
+                        break
+                    pos = p
+                if ok:
+                    hits.append(o["text"])
             if len(hits) == 1:
                 return hits[0], "high", "periodic positions"
         return None, "low", "tile pattern unparsed"
     t = t.replace(chr(0x2192), "->")
-    pairs = re.findall("(\\d+)\\s*(?:becomes|-|to)\\s*(\\d+)", t)
+    pairs = re.findall("(\\d+)\\s*(?:becomes|-+>|to)\\s*(\\d+)", t)
     mi = re.search(r"input is (\d+)", t) or re.search(r"What should (\d+) become", t)
     if len(pairs) >= 2 and mi:
         xs = [int(a) for a, _ in pairs]
@@ -671,7 +690,13 @@ import itertools
 @solver("weight_system", "number_puzzles_systems")
 def solve_weight(q):
     t = q["question"].lower()
-    pairs = re.findall(r"(?:a|an|the) (\w+) and (?:a|an|the) (\w+) together weigh (\d+)", t)
+    pairs = re.findall(r"(?:a|an|the) (\w+ \w+) and (?:a|an|the) (\w+ \w+) together weigh (\d+)", t)
+    if not pairs:
+        pairs = re.findall(r"(?:a|an|the) (\w+ \w+) and (?:a|an|the) (\w+ \w+) weigh (\d+)[^.\n]*?together", t)
+    if not pairs:
+        pairs = re.findall(r"(?:a|an|the) (\w+ \w+) and (?:a|an|the) (\w+ \w+) balance (\d+)", t)
+    if not pairs:
+        pairs = re.findall(r"(?:a|an|the) (\w+) and (?:a|an|the) (\w+) together weigh (\d+)", t)
     if not pairs:
         pairs = re.findall(r"(?:a|an|the) (\w+) and (?:a|an|the) (\w+) weigh (\d+)[^.\n]*?together", t)
     if not pairs:
@@ -733,6 +758,18 @@ def solve_weight(q):
             if len(hits) == 1:
                 return hits[0], "high", "summed one-each total"
             return None, "low", "total not unique"
+        m = re.search(r"weight of one ([\w ]+?)(?:\?|\.|$)", t)
+        if m:
+            nm = m.group(1).strip().lower()
+            if nm in vm:
+                hits = []
+                for o in q["options"]:
+                    mm = re.search(r"-?\d+", str(o["text"]))
+                    if mm and int(mm.group()) == vm[nm]:
+                        hits.append(o["text"])
+                if len(hits) == 1:
+                    return hits[0], "high", "solved one weight"
+                return None, "low", "one weight not unique"
         m = re.search(r"how (?:much|many).*?does (?:the|a|an|one) (\w+) weigh", t)
         if m and m.group(1) in vm:
             hits = []
@@ -803,10 +840,10 @@ def solve_combi(q):
         if m:
             pred = math.comb(int(m.group(2)), int(m.group(1)))
         else:
-            m = re.search(r"(\d+)-letter codes.*?letters ([A-Z](, [A-Z])*)", t)
+            m = re.search(r"(\d+)-letter codes.*?letters (.*?)(?: if |\.|$)", t)
             if m:
                 k = int(m.group(1))
-                lets = m.group(2).split(", ")
+                lets = re.findall(r"[A-Z]", m.group(2))
                 if re.search(r"without repeating|no letter can be used more than once", t):
                     pred = math.perm(len(lets), k)
                 else:
@@ -823,6 +860,41 @@ def solve_combi(q):
                         m = re.search(r"using ONLY the digits (\d) and (\d)", t)
                         if m and "3-digit" in t:
                             pred = 2 ** 3
+    if pred is None:
+        m = re.search(r"(\d+)-digit numbers (greater|less) than (\d+).*?digits (.*?)(?: without|\.)", t)
+        if m and int(m.group(1)) == 2:
+            cmp, T = m.group(2), int(m.group(3))
+            dg = re.findall(r"\d", m.group(4))
+            if dg and "0" not in dg:
+                if re.search(r"without repeat", t):
+                    pool = [a + b for a, b in itertools.permutations(dg, 2)]
+                else:
+                    pool = [a + b for a in dg for b in dg]
+                nums = [int(x) for x in pool]
+                pred = sum(1 for x in nums if (x > T if cmp == "greater" else x < T))
+    if pred is None:
+        m = re.search(r"(\d+)-digit numbers.*?digits (.*?)(?: without|\.)", t)
+        if m:
+            k = int(m.group(1))
+            dg = re.findall(r"\d", m.group(2))
+            if dg and "0" not in dg:
+                if re.search(r"without repeat", t):
+                    pred = math.perm(len(dg), k)
+                else:
+                    pred = len(dg) ** k
+    if pred is None:
+        m = re.search(r"(\d+)\s+\w+.*?and (\d+)\s+.*?outfits?", t)
+        if m:
+            pred = int(m.group(1)) * int(m.group(2))
+    if pred is None:
+        if re.search(r"shake hands", t):
+            m = re.search(r"(\d+) (?:friends|people|children|players)", t)
+            n = int(m.group(1)) if m else 0
+            if not n:
+                m = re.search(r"\b(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve)\b", t, re.I)
+                n = NUMW.get(m.group(1).lower(), 0) if m else 0
+            if n >= 2:
+                pred = math.comb(n, 2)
     if pred is None:
         return None, "low", "combinatorial form unparsed"
     hits = []
@@ -846,8 +918,27 @@ def solve_code(q):
         if len(hits) == 1:
             return hits[0], "high", "shift cipher"
         return None, "low", "cipher not unique"
+    m = re.search(r"means the letter (\d+) steps? before it.*?code word is (\w+)", t, re.I)
+    if m:
+        n, w = int(m.group(1)), m.group(2).upper()
+        pred = "".join(chr(65 + (ord(c) - 65 - n) % 26) for c in w)
+        hits = [o["text"] for o in q["options"] if norm(o["text"]) == norm(pred)]
+        if len(hits) == 1:
+            return hits[0], "high", "decode shift"
+        return None, "low", "decode not unique"
     if "square" in t.lower():
         m = re.search(r"What (?:is|does) (\w+)", t)
+        m2 = re.search(r"which letter is worth (\d+)", t, re.I)
+        if m2:
+            import math as _mm
+            v = int(m2.group(1))
+            r = _mm.isqrt(v)
+            if r * r == v:
+                want = chr(64 + r)
+                hits = [o["text"] for o in q["options"] if norm(o["text"]) == norm(want)]
+                if len(hits) == 1:
+                    return hits[0], "high", "square worth reverse"
+                return None, "low", "square reverse not unique"
         if m and len(m.group(1)) == 1:
             pred = (ord(m.group(1).upper()) - 64) ** 2
             hits = []
@@ -858,9 +949,125 @@ def solve_code(q):
             if len(hits) == 1:
                 return hits[0], "high", "square code"
     return None, "low", "cipher needs review"
-@solver("constraint_placement", "constraint", "seating_constraint", "constraint_matching", "position")
-def solve_seatpos(q):
-    return None, "low", "spatial CSP needs human review"
+@solver("constraint_placement", "constraint", "seating_constraint", "constraint_matching")
+def solve_seat(q):
+    import itertools as _it
+    t = q["question"]
+    if re.search(r"between|either|unless|if ", t, re.I):
+        return None, "low", "complex seating wording"
+    stop = {"Four", "Three", "Two", "Five", "Who", "Which", "What", "Each", "How", "In", "On", "At", "If", "Cinema", "Row", "Seats", "Seat", "Left", "Right", "Position", "Box", "Class", "School", "Bus", "Car", "Table", "Room", "Team"}
+    cands = [w for w in re.findall(r"[A-Z][a-z]+", t) if w not in stop]
+    pers = []
+    for w in cands:
+        if w not in pers:
+            pers.append(w)
+    if len(pers) < 3 or len(pers) > 6:
+        return None, "low", "person count out of range"
+    m = re.search(r"seats? 1 to (\d+)|row of (\d+)|positions? 1 to (\d+)", t)
+    n = int(m.group(1) or m.group(2) or m.group(3)) if m else len(pers)
+    if n != len(pers):
+        return None, "low", "seat person mismatch"
+    seats = list(range(1, n + 1))
+    fixed = {}
+    banned = set()
+    adj = []
+    for p in pers:
+        m = re.search(p + r" (?:sits|is) in position (\d+)", t)
+        if m:
+            fixed[p] = int(m.group(1))
+        for mm in re.finditer(p + r" (?:does not sit|is not) in position (\d+)", t):
+            banned.add((p, int(mm.group(1))))
+        if re.search(p + r" (?:is|sits) at the left end", t):
+            fixed[p] = 1
+        if re.search(p + r" (?:is|sits) at the right end", t):
+            fixed[p] = n
+        for mm in re.finditer(p + r" sits next to ([A-Z][a-z]+)", t):
+            adj.append((p, mm.group(1)))
+        for mm in re.finditer(p + r" is next to ([A-Z][a-z]+)", t):
+            adj.append((p, mm.group(1)))
+    sols = []
+    for perm in _it.permutations(seats):
+        mp = dict(zip(pers, perm))
+        ok = True
+        for p, s in fixed.items():
+            if mp.get(p) != s:
+                ok = False
+        for p, s in banned:
+            if mp.get(p) == s:
+                ok = False
+        for a, b in adj:
+            if b not in mp or abs(mp[a] - mp[b]) != 1:
+                ok = False
+        if ok:
+            sols.append(mp)
+    if len(sols) != 1:
+        return None, "low", "seating solutions not unique"
+    mp = sols[0]
+    m = re.search(r"Who sits in position (\d+)\?", t)
+    if m:
+        want = [p for p in pers if mp[p] == int(m.group(1))]
+        if len(want) == 1:
+            hits = [o["text"] for o in q["options"] if norm(o["text"]) == norm(want[0])]
+            if len(hits) == 1:
+                return hits[0], "high", "unique seating"
+            return None, "low", "seat answer not unique"
+    m = re.search(r"Where does ([A-Z][a-z]+) sit\?", t)
+    if m and m.group(1) in mp:
+        hits = []
+        for o in q["options"]:
+            mm = re.search(r"(\d+)", str(o["text"]))
+            if mm and int(mm.group()) == mp[m.group(1)]:
+                hits.append(o["text"])
+        if len(hits) == 1:
+            return hits[0], "high", "unique seating"
+        return None, "low", "seat number not unique"
+    m = re.search(r"Who sits at the (left|right) end\?", t)
+    if m:
+        want = [p for p in pers if mp[p] == (1 if m.group(1) == "left" else n)]
+        if len(want) == 1:
+            hits = [o["text"] for o in q["options"] if norm(o["text"]) == norm(want[0])]
+            if len(hits) == 1:
+                return hits[0], "high", "unique seating"
+    return None, "low", "seating ask unparsed"
+@solver("position")
+def solve_pos(q):
+    t = q["question"]
+    cells = {"top-left": (0, 0), "top-middle": (1, 0), "top-center": (1, 0), "top": (1, 0), "top-right": (2, 0), "middle-left": (0, 1), "left-middle": (0, 1), "left": (0, 1), "center": (1, 1), "centre": (1, 1), "middle": (1, 1), "middle-right": (2, 1), "right-middle": (2, 1), "right": (2, 1), "bottom-left": (0, 2), "bottom-middle": (1, 2), "bottom-center": (1, 2), "bottom": (1, 2), "bottom-right": (2, 2)}
+    mv = {"below": (0, 1), "above": (0, -1), "to the left of": (-1, 0), "left of": (-1, 0), "to the right of": (1, 0), "right of": (1, 0)}
+    at = {}
+    def cell_at(desc):
+        for k, v in cells.items():
+            if k in desc:
+                return v
+        return None
+    for _ in range(6):
+        grew = False
+        for m in re.finditer(r"(?:the )?(\w+) is in (?:the )?([a-z\- ]+?)(?: square|\.|,)", t):
+            obj, cd = m.group(1).lower(), m.group(2).lower()
+            c = cell_at(cd)
+            if c and obj not in at:
+                at[obj] = c
+                grew = True
+        for m in re.finditer(r"(?:the )?(\w+) is (?:directly )?(below|above|to the left of|left of|to the right of|right of) (?:the )?(\w+)", t):
+            obj, rel, ref = m.group(1).lower(), m.group(2).lower(), m.group(3).lower()
+            if ref in at and obj not in at:
+                dx, dy = mv[rel]
+                at[obj] = (at[ref][0] + dx, at[ref][1] + dy)
+                grew = True
+        if not grew:
+            break
+    m = re.search(r"Where is (?:the )?(\w+)\?", t)
+    if m and m.group(1).lower() in at:
+        c = at[m.group(1).lower()]
+        names = [k for k, v in cells.items() if v == c and len(k) > 5]
+        for nm in sorted(names, key=len, reverse=True):
+            hits = [o["text"] for o in q["options"] if nm in norm(o["text"])]
+            if len(hits) == 1:
+                return hits[0], "high", "grid tracked"
+        return None, "low", "cell answer not unique"
+    return None, "low", "grid ask unparsed"
+
+
 for q in live:
     arch = q["archetype"]
     is_new = q["id"].startswith("BA_P3_HA_")
